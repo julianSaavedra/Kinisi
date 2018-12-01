@@ -1,0 +1,11 @@
+language: smalltalk
+
+os:
+	- linux
+
+smallralk_vm:
+	- Pharo-6.0
+
+smallralk:
+	- Pharo-6.0
+

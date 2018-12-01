@@ -1,0 +1,10 @@
+SmalltalkCISpec {
+  #name: 'Three Body problem simulation'
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Aconcagua',
+      #directory : 'repository',
+      #platforms : [#pharo]
+    }
+  ]
+}
