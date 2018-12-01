@@ -1,15 +1,14 @@
 SmalltalkCISpec {
-  #loading : [
-    SCIMonticelloLoadSpec {
-       #url : 'https://github.com/julianSaavedra/threeBodySimulation',
-       #packages : ['ThreeBodySimulation-Playground'],
-       #platforms : [ #pharo ]
-    }
-  ]
-  #testing : {
-    #coverage : {
-      #packages : [ 'ThreeBodySimulation-Playground' ]
-    }
+ #loading : [
+  SCIMonticelloLoadSpec {
+   #url : ''https://github.com/julianSaavedra/threeBodySimulation'',
+   #packages : [''ThreeBodySimulation-Playground''],
+   #platforms : [ #pharo ]
   }
+ ]
+ #testing : {
+  #coverage : {
+   #packages : [ ''ThreeBodySimulation-Playground'' ]
+  }
+ }
 }
-
