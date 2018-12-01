@@ -1,6 +1,9 @@
 SmalltalkCISpec {
   #loading : [
-    SCIMetacelloLoadSpec {
+    SCIMonticelloLoadSpec {
+      #url : 'https://github.com/ba-st/Aconcagua',
+      #packages : ['Aconcagua-Core', 'Aconcagua-Tests'],
+      #platforms : [#pharo]
     }
   ]
 }
