@@ -1,9 +1,6 @@
 SmalltalkCISpec {
-  #name: 'Three Body problem simulation'
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'Aconcagua',
-      #platforms : [#pharo]
     }
   ]
 }
