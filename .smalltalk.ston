@@ -1,9 +1,9 @@
 SmalltalkCISpec {
  #loading : [
-  SCIMonticelloLoadSpec {
-   #url : 'https://github.com/julianSaavedra/threeBodySimulation/repository',
-   #packages: ['ThreeBodySimulation-Playground'],
-   #platforms : [ #pharo ]
+  SCIMetacelloLoadSpec {
+   #baseline : 'ThreeBodySimulationPlayground',
+   #repository : 'https://github.com/julianSaavedra/threeBodySimulation',
+   #directory : 'repository'
   }
  ],
  #testing : {
