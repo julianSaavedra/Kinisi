@@ -2,7 +2,6 @@ SmalltalkCISpec {
  #loading : [
   SCIMetacelloLoadSpec {
    #baseline : 'ThreeBodySimulationPlayground',
-   #repository : 'https://github.com/julianSaavedra/threeBodySimulation',
    #directory : 'repository'
   }
  ],

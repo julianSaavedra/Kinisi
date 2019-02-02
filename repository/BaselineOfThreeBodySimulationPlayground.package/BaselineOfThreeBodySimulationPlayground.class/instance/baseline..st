@@ -9,6 +9,6 @@ baseline: spec
 		
 		spec baseline: 'Aconcagua' with: [
 			spec
-				repository: 'github://ba-st/aconcagua:v6.0.0/repository';
-				loads: #('Deployment' 'Development') ]
+				repository: 'github://ba-st/Aconcagua:v7.0.0/repository';
+				loads: #('Development') ]
 		]
