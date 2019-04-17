@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "ThreeBodySimulation-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"newton",
+		"meter",
+		"oneNewton",
+		"oneMeter"
+	],
+	"name" : "MeasureVectorTest",
+	"type" : "normal"
+}
