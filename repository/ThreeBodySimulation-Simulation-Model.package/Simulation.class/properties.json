@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"totalDuration",
+		"stepDuration",
+		"stepResults",
+		"result"
+	],
+	"name" : "Simulation",
+	"type" : "normal"
+}
