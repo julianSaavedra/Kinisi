@@ -1,9 +1,9 @@
 tests
 testClearSoleInstance
 
-	| aProvider anotherProvider |
+	| aProvider |
 	aProvider := UnitProvider soleInstance.
-	UnitProvider clearSoleInstance.
-	anotherProvider := UnitProvider soleInstance.
 	
-	self deny: aProvider == anotherProvider
+	UnitProvider clearSoleInstance.
+	
+	self deny: aProvider == UnitProvider soleInstance

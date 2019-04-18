@@ -2,8 +2,8 @@ tests
 testMilimeter
 
 	| milimeter |
-	milimeter := UnitProvider soleInstance milimeter.
+	milimeter := unitProvider milimeter.
 	
 	self assert: milimeter name equals: 'Milimeter'.
-	self assert: milimeter sign equals: 'N'.
-	self assert: UnitProvider soleInstance meter == milimeter baseUnit
+	self assert: milimeter sign equals: 'mm'.
+	self assert: milimeter baseUnit equals: unitProvider meter 

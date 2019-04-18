@@ -9,7 +9,8 @@
 		"newton",
 		"meter",
 		"oneNewton",
-		"oneMeter"
+		"oneMeter",
+		"unitProvider"
 	],
 	"name" : "MeasureVectorTest",
 	"type" : "normal"

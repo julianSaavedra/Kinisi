@@ -2,4 +2,4 @@ running
 setUp
 
 	super setUp.
-	UnitProvider soleInstance
+	unitProvider := UnitProvider soleInstance
