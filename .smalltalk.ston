@@ -7,7 +7,7 @@ SmalltalkCISpec {
  ],
  #testing : {
   #coverage : {
-   #packages : [ 'ThreeBodySimulation-Playground']
+   #packages : [ 'ThreeBodySimulation-*']
   }
  }
 }
