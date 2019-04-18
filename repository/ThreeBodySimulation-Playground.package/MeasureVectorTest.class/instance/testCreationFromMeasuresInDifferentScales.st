@@ -2,8 +2,8 @@ tests
 testCreationFromMeasuresInDifferentScales
 
 	| milimeter kilometer |
-	milimeter := ProportionalDerivedUnit baseUnit: meter conversionFactor: (1/1000) named: 'Milimeter'.
-	kilometer := ProportionalDerivedUnit baseUnit: meter conversionFactor: 1000 named: 'Kilometer'.
+	milimeter := unitProvider milimeter.
+	kilometer := unitProvider kilometer.
 	
 	self
 		assert: (MeasureVector x: (meter with: 1) y: (milimeter with: 1) z: (kilometer with: 1))

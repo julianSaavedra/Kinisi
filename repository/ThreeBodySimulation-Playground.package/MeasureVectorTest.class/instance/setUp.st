@@ -1,7 +1,8 @@
 tests
 setUp
 
-	newton := UnitProvider soleInstance newton.
-	meter := UnitProvider soleInstance meter.
+	unitProvider := UnitProvider soleInstance.
+	newton := unitProvider newton.
+	meter := unitProvider meter.
 	oneNewton := newton with: 1.
 	oneMeter := meter with: 1
