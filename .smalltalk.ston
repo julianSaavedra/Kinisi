@@ -6,8 +6,11 @@ SmalltalkCISpec {
   }
  ],
  #testing : {
+  #include:{
+   #packages : ['ThreeBodySimulation-*-Test']
+  }
   #coverage : {
-   #packages : [ 'ThreeBodySimulation-*']
+   #packages : ['ThreeBodySimulation-*-Model']
   }
  }
 }
