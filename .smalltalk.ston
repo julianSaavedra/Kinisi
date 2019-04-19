@@ -8,7 +8,7 @@ SmalltalkCISpec {
  #testing : {
   #include:{
    #packages : ['ThreeBodySimulation-*-Test']
-  }
+  },
   #coverage : {
    #packages : ['ThreeBodySimulation-*-Model']
   }
