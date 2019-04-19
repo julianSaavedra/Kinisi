@@ -9,7 +9,7 @@ baseline: spec
 		spec package: 'ThreeBodySimulation-Physics-Test' with: [ spec requires: 'ThreeBodySimulation-Physics-Model' ].
 
 		spec package: 'ThreeBodySimulation-Simulation-Model'.
-		spec package: 'ThreeBodySimulation-Physics-Test' with: [ spec requires: 'Aconcagua' ].		
+		spec package: 'ThreeBodySimulation-Simulation-Test' with: [ spec requires: 'Aconcagua' ].		
 		
 		spec package: 'ThreeBodySimulation-Playground' with: [ spec requires: 'Aconcagua' ].		
 		
