@@ -1,4 +1,4 @@
-as yet unclassified
+initalize
 initializeWithMass: aMeasure 
 	
 	mass := aMeasure

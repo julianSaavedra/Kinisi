@@ -1,4 +1,4 @@
-accesing
+accessing
 meter
 
 	^self unitNamed: self meterName

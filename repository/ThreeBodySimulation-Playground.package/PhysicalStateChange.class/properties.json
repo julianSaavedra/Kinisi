@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"originalState",
+		"cause",
+		"deltaTime"
+	],
+	"name" : "PhysicalStateChange",
+	"type" : "normal"
+}
