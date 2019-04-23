@@ -1,7 +1,7 @@
 tests
-testStateChangeByForceAppliedToItDuringATimePeriod
+testStateDoesNotChangeIfForceIsAppliedDuringZeroSeconds
 
-	| position velocity acceleration meter second originalState aForce stateChange expectedFinalState kilogram mass |
+	| position velocity acceleration meter second originalState aForce stateChange kilogram mass |
  
 	kilogram := UnitProvider soleInstance kilogram.
 	meter := UnitProvider soleInstance meter.
@@ -14,15 +14,10 @@ testStateChangeByForceAppliedToItDuringATimePeriod
 
 	originalState := PhysicalState
 		withMass: mass
-		position: (MeasureVector nullWith: meter)
-		velocity: (MeasureVector nullWith: meter / second)
-		andAcceleration: (MeasureVector nullWith: meter / second / second).
-	expectedFinalState := PhysicalState
-		withMass: mass
 		position: position
 		velocity: velocity
 		andAcceleration: acceleration.
 
-	stateChange := PhysicalStateChange of: originalState causedBy: aForce during: (second with: 2).
+	stateChange := PhysicalStateChange of: originalState causedBy: aForce during: (second with: 0).
 
-	self assert: stateChange finalState equals: expectedFinalState
+	self assert: stateChange finalState equals: originalState
