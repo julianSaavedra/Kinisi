@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "ThreeBodySimulation-Physics-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"meter",
+		"second",
+		"kilogram"
+	],
+	"name" : "PhysicalStateTest",
+	"type" : "normal"
+}
