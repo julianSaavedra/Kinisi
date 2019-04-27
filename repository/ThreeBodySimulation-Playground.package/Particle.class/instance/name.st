@@ -1,4 +1,4 @@
 accessing
-mass
+name
 
-	^mass
+	^name

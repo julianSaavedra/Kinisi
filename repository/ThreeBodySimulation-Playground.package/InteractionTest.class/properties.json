@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ForceTest",
+	"name" : "InteractionTest",
 	"type" : "normal"
 }

@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"x",
-		"y",
-		"unit"
+		"timelessParticle",
+		"physicalState",
+		"momentInTime"
 	],
-	"name" : "Force",
+	"name" : "InTimeParticle",
 	"type" : "normal"
 }

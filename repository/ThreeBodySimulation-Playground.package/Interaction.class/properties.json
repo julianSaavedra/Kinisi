@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name"
+		"overParticle",
+		"causingParticle"
 	],
-	"name" : "Particle",
+	"name" : "Interaction",
 	"type" : "normal"
 }

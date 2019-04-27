@@ -1,7 +1,7 @@
 arithmetic
-* aNumber
+* aNumeberOrMeasure
 
 	^MeasureVector
-		x: self x * aNumber
-		y: self y * aNumber
-		z: self z * aNumber
+		x: self x * aNumeberOrMeasure
+		y: self y * aNumeberOrMeasure
+		z: self z * aNumeberOrMeasure

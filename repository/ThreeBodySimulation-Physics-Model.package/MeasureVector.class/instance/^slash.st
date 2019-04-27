@@ -1,4 +1,4 @@
 arithmetic
 / aNumberOrMeasure
 
-	^ self * (1 / aNumberOrMeasure)
+	^self * (1 / aNumberOrMeasure)
