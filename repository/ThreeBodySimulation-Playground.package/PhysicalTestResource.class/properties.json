@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"originalState",
-		"netForce",
-		"deltaTime"
+		"unitProvider"
 	],
-	"name" : "PhysicalStateChange",
+	"name" : "PhysicalTestResource",
 	"type" : "normal"
 }

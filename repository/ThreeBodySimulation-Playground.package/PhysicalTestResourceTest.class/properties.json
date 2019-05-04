@@ -1,15 +1,16 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "TestCase",
 	"category" : "ThreeBodySimulation-Playground",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [
-		"originalState",
-		"netForce",
-		"deltaTime"
+	"classvars" : [
+		"instance"
 	],
-	"name" : "PhysicalStateChange",
+	"instvars" : [
+		"testResource",
+		"unitProvider"
+	],
+	"name" : "PhysicalTestResourceTest",
 	"type" : "normal"
 }

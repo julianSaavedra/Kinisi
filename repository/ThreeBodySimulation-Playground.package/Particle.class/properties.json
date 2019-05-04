@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name"
+		"name",
+		"physicalState"
 	],
 	"name" : "Particle",
 	"type" : "normal"

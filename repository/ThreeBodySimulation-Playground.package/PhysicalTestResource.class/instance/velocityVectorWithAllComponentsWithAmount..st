@@ -1,0 +1,4 @@
+utilities
+velocityVectorWithAllComponentsWithAmount: aNumber
+
+	^self vectorWithAllComponentsIn: unitProvider standardVelocityUnit withAmount: aNumber
