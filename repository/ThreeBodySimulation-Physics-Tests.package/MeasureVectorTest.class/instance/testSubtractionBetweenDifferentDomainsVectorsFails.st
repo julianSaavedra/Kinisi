@@ -7,4 +7,4 @@ testSubtractionBetweenDifferentDomainsVectorsFails
 
 	self
 		should: [ newtonMeasureVector - meterVectorialMeasure ]
-		raise: SimulationError
+		raise: PhysicsModelError

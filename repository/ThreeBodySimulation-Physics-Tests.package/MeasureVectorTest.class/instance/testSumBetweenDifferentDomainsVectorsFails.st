@@ -7,4 +7,4 @@ testSumBetweenDifferentDomainsVectorsFails
 
 	self
 		should: [ newtonVectorialMeasure + meterVectorialMeasure ]
-		raise: SimulationError
+		raise: PhysicsModelError

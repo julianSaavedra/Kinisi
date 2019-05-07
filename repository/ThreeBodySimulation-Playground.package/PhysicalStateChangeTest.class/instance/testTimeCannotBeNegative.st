@@ -13,4 +13,4 @@ testTimeCannotBeNegative
 				of: originalState
 				during: testResource negativeTime
 				perceiving: testResource nullForce ]
-		raise: SimulationError
+		raise: PhysicsModelError

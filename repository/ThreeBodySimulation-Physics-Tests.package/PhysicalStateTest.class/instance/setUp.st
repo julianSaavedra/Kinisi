@@ -1,6 +1,8 @@
 tests
 setUp
 
-	meter:= UnitProvider soleInstance meter.
-	second := UnitProvider soleInstance second.
-	kilogram := UnitProvider soleInstance kilogram
+	testResource := PhysicsTestResource new.
+	oneKilogram := testResource oneKilogram.
+	position := testResource oneMeterInAllComponentsVector.
+	velocity := testResource velocityVectorWithAllComponentsWithAmount: 2.
+	acceleration := testResource velocityVectorWithAllComponentsWithAmount: 3.

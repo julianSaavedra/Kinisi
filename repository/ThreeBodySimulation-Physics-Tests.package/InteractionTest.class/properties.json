@@ -6,15 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"meter",
-		"second",
-		"kilogram",
-		"testResource",
-		"oneKilogram",
-		"position",
-		"velocity",
-		"acceleration"
+		"unitProvider",
+		"testResource"
 	],
-	"name" : "PhysicalStateTest",
+	"name" : "InteractionTest",
 	"type" : "normal"
 }

@@ -6,15 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"meter",
-		"second",
-		"kilogram",
-		"testResource",
-		"oneKilogram",
-		"position",
-		"velocity",
-		"acceleration"
+		"testResource"
 	],
-	"name" : "PhysicalStateTest",
+	"name" : "ParticleTest",
 	"type" : "normal"
 }

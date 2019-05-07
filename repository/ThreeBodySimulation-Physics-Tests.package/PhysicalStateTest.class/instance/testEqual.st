@@ -1,39 +1,45 @@
 tests
 testEqual
 
-	| aState position velocity acceleration anotherState mass |
+	| aState anotherState |
 
-	mass := kilogram with: 1.
-	position := MeasureVector x: 2 y: 2 z: 2 with: meter.
-	velocity := MeasureVector x: 3 y: 3 z: 3 with: meter / second.
-	acceleration := MeasureVector x: 4 y: 4 z: 4 with: meter / second / second.
-	aState := PhysicalState withMass: mass position: position velocity: velocity andAcceleration: acceleration.
+	aState := PhysicalState
+		withMass: oneKilogram
+		position: position
+		velocity: velocity
+		andAcceleration: acceleration.
 
-	anotherState := PhysicalState withMass: mass position: position velocity: velocity andAcceleration: acceleration.
+	anotherState := PhysicalState
+		withMass: oneKilogram
+		position: position
+		velocity: velocity
+		andAcceleration: acceleration.
 	self assert: aState equals: anotherState.
 
 	anotherState := PhysicalState
-		withMass: (MeasureVector nullWith: kilogram)
+		withMass: testResource twoKilograms
 		position: position
 		velocity: velocity
-		andAcceleration: acceleration.
-	self deny: aState equals: anotherState.
-
-	anotherState := PhysicalState withMass: mass
-		position: (MeasureVector nullWith: meter)
-		velocity: velocity
-		andAcceleration: acceleration.
-	self deny: aState equals: anotherState.
-
-	anotherState := PhysicalState withMass: mass
-		position: position
-		velocity: (MeasureVector nullWith: meter / second)
 		andAcceleration: acceleration.
 	self deny: aState equals: anotherState.
 
 	anotherState := PhysicalState
-		withMass: mass
+		withMass: oneKilogram
+		position: testResource nullPosition
+		velocity: velocity
+		andAcceleration: acceleration.
+	self deny: aState equals: anotherState.
+
+	anotherState := PhysicalState
+		withMass: oneKilogram
+		position: position
+		velocity: testResource nullVelocity
+		andAcceleration: acceleration.
+	self deny: aState equals: anotherState.
+
+	anotherState := PhysicalState
+		withMass: oneKilogram
 		position: position
 		velocity: acceleration
-		andAcceleration: (MeasureVector nullWith: meter / second / second).
+		andAcceleration: testResource nullAcceleration.
 	self deny: aState equals: anotherState
