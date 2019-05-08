@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "ThreeBodySimulation-General-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"instance"
+	],
+	"instvars" : [
+		"testResource",
+		"unitProvider"
+	],
+	"name" : "PhysicsTestResourceTest",
+	"type" : "normal"
+}

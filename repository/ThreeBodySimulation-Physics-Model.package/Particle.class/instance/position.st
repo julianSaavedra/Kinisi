@@ -1,0 +1,4 @@
+accessing
+position
+
+	^physicalState position

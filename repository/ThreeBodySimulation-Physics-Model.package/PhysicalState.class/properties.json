@@ -8,7 +8,8 @@
 	"instvars" : [
 		"position",
 		"velocity",
-		"acceleration"
+		"acceleration",
+		"mass"
 	],
 	"name" : "PhysicalState",
 	"type" : "normal"
