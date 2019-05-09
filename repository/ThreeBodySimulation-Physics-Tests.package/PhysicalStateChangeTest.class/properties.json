@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "ThreeBodySimulation-Playground",
+	"category" : "ThreeBodySimulation-Physics-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DragForceTest",
+	"instvars" : [
+		"testResource"
+	],
+	"name" : "PhysicalStateChangeTest",
 	"type" : "normal"
 }
