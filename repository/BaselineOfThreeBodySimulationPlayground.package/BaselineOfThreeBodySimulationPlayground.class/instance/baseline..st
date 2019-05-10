@@ -21,8 +21,8 @@ baseline: spec
 				repository: 'github://ba-st/Aconcagua:v7.0.0/repository';
 				loads: #('Development') ].
 
-		spec baseline: 'Roassal' with: [
+		spec baseline: 'Roassal2' with: [
 			spec
-				repository: 'gitlocal:///Users/alexandrebergel/Dropbox/GitRepos/Roassal2' ].			
+				repository: 'github://ObjectProfile/Roassal2/src' ].			
 			
 		]
