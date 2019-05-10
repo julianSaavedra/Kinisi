@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"originalState",
-		"netForce",
-		"deltaTime"
-	],
-	"name" : "PhysicalStateChange",
+	"instvars" : [ ],
+	"name" : "GraphicsScriptExamples",
 	"type" : "normal"
 }
