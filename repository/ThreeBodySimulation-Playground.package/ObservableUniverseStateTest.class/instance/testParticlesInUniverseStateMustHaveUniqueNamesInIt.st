@@ -2,7 +2,7 @@ tests
 testParticlesInUniverseStateMustHaveUniqueNamesInIt
 
 	| particleCollection particleNameAInTheOrigin particleANotInTheOrigin |
-	particleNameAInTheOrigin := testResource particleNamed: #ParticleA in: testResource nullPosition.
+	particleNameAInTheOrigin := testResource particleAtOriginPositionNamed: #ParticleA.
 	particleANotInTheOrigin := testResource particleNamed: #ParticleA in: testResource oneMeterInAllComponentsVector.
 	particleCollection := Array with: particleNameAInTheOrigin with: particleANotInTheOrigin.
 
