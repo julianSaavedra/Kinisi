@@ -1,5 +1,5 @@
 tests
-testNetForceByOneParticleIsTheSameAsTheForceCausedByThatParticle
+testNetForceByOneParticleIsEqualAsTheForceCausedByThatParticle
 
 	| aParticle netForce testResource anotherParticle expectedNetForce |
 	testResource := PhysicsTestResource new.
