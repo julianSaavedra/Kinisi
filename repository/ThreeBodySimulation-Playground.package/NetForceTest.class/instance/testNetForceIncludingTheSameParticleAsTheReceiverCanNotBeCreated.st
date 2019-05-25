@@ -1,9 +1,8 @@
 tests
 testNetForceIncludingTheSameParticleAsTheReceiverCanNotBeCreated
 
-	| aParticle testResource |
-	testResource := PhysicsTestResource new.
-	aParticle := testResource particleNamed: #ParticleA.
+	| aParticle |
+	aParticle := self particleA.
 
 	self
 		should: [ NetForce over: aParticle causedByAll: (Array with: aParticle) ]

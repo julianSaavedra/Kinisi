@@ -1,4 +1,9 @@
 as yet unclassified
 finalState
 
-	^originalState
+	| originalParticles finalParticles |
+	originalParticles := originalState particles.
+
+	finalParticles := originalParticles collect: [:aParticle | aParticle].
+
+	^ObservableUniverseState with: originalParticles

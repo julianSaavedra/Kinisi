@@ -1,10 +1,8 @@
 tests
 testNetForceByNoParticlesIsNull
 
-	| aParticle netForce testResource |
-	testResource := PhysicsTestResource new.
-	aParticle := testResource particleNamed: #ParticleA.
-	netForce := NetForce over: aParticle causedByAll: #().
+	| netForce |
+	netForce := NetForce over: self particleA causedByAll: #().
 	
 	self
 		assert: netForce result

@@ -5,7 +5,7 @@ testFinalUniverseStateOfUniverseWithTwoParticlesResultsAsExpected
 	unitProvider := UnitProvider soleInstance.
 	originalParticleA := testResource particleNamed: #ParticleA in: testResource nullPosition with: testResource twoKilograms.
 	originalParticleB := testResource particleNamed: #ParticleB in: (MeasureVector x: 1 y: 0 z: 0 with: unitProvider meter) with: testResource oneKilogram.
-	originalParticles := OrderedCollection with: originalParticleA with: originalParticleB.
+	originalParticles := Array with: originalParticleA with: originalParticleB.
 	originalState := ObservableUniverseState with: originalParticles.
 	
 	universeStateChange := UniverseStateChange from: originalState during: testResource oneSecond. 
@@ -25,7 +25,7 @@ testFinalUniverseStateOfUniverseWithTwoParticlesResultsAsExpected
 		andAcceleration: (MeasureVector x: 2 * gValue negated y: 0 z: 0 with: unitProvider standardAccelerationUnit).
 		
 	expectedParticleB := Particle named: #ParticleB with: expectedStateB.
-	expectedParticles := OrderedCollection with: expectedParticleA with: expectedParticleB.
+	expectedParticles := Array with: expectedParticleA with: expectedParticleB.
 	expectedState := ObservableUniverseState with: expectedParticles.
 	
 	self assert: universeStateChange finalState equals: expectedState 

@@ -1,4 +1,4 @@
 accessing
 particles
 
-	^particles
+	^particles copy
