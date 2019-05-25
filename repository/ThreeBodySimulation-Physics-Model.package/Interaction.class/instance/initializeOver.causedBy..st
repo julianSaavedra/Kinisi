@@ -1,5 +1,5 @@
 initialize
-initializeOver: aParticle causedBy: anotherParticle
+initializeOver: aBody causedBy: anotherBody
 
-	overParticle := aParticle.
-	causingParticle := anotherParticle
+	overBody := aBody.
+	causingBody := anotherBody

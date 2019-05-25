@@ -1,4 +1,4 @@
-instance creation
+asserting
 assert: aParticle isNotTheSameAs: anotherParticle
 
 	aParticle = anotherParticle

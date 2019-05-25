@@ -3,7 +3,7 @@ testInteractionCannotBeCreatedBetweenTheSameParticle
 
 	| aParticle |
 
-	aParticle := self
+	aParticle := testResource
 		particleNamed: #ParticleA
 		in: testResource oneMeterInAllComponentsVector
 		with: testResource oneKilogram.

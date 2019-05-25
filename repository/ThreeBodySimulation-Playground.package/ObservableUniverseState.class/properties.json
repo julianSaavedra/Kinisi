@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "ThreeBodySimulation-Physics-Model",
+	"category" : "ThreeBodySimulation-Playground",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"overBody",
-		"causingBody"
+		"particles"
 	],
-	"name" : "Interaction",
+	"name" : "ObservableUniverseState",
 	"type" : "normal"
 }

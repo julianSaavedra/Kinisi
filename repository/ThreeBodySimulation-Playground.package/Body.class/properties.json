@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "ThreeBodySimulation-Physics-Model",
+	"category" : "ThreeBodySimulation-Playground",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"overBody",
-		"causingBody"
+		"mass",
+		"position"
 	],
-	"name" : "Interaction",
+	"name" : "Body",
 	"type" : "normal"
 }

@@ -3,11 +3,11 @@ testResultOfInteractionIsAForce
 
 	| particleA particleB interaction |
 
-	particleA := self
+	particleA := testResource
 		particleNamed: #ParticleA
 		in: testResource nullPosition
 		with: testResource oneKilogram.
-	particleB := self
+	particleB := testResource
 		particleNamed: #ParticleB
 		in:	(testResource vectorWithAllComponentsInMeterAndAmount: 1 / 3 sqrt)
 		with: testResource twoKilograms.

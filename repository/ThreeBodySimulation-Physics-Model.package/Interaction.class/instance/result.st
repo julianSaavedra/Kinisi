@@ -2,9 +2,9 @@ accessing
 result
 
 	| distanceVector squaredDistance |
-	distanceVector := causingParticle position - overParticle position.
+	distanceVector := causingBody position - overBody position.
 	squaredDistance := distanceVector norm * distanceVector norm.
 	^distanceVector normalized
 		*
-			(self gravitationalConstant * causingParticle mass * overParticle mass
+			(self gravitationalConstant * causingBody mass * overBody mass
 				/ squaredDistance)
