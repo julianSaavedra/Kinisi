@@ -1,7 +1,7 @@
 test objects
 particleA
 
-	^ testResource
+	^testResource
 		particleNamed: #ParticleA
 		in: testResource nullPosition
 		with: testResource oneKilogram
