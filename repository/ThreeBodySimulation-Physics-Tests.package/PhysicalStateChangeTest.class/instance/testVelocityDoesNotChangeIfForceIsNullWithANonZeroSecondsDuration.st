@@ -1,19 +1,14 @@
 tests
 testVelocityDoesNotChangeIfForceIsNullWithANonZeroSecondsDuration
 
-	| originalState stateChange |
-
-	originalState := PhysicalState
-		withMass: testResource oneKilogram
-		position: testResource oneMeterInAllComponentsVector
-		velocity: (testResource velocityVectorWithAllComponentsWithAmount: 2)
-		andAcceleration: (testResource accelerationVectorWithAllComponentsWithAmount: 1).
-
+	| originalVelocity originalState stateChange |
+	originalVelocity := testResource velocityVectorWithAllComponentsWithAmount: 2.
+	originalState := testResource physicalStateWithVelocity: originalVelocity.
 	stateChange := PhysicalStateChange
 		of: originalState
-		during: testResource zeroSeconds
+		during: testResource oneSecond
 		perceiving: testResource nullForce.
 
 	self
 		assert: stateChange finalState velocity
-		equals: originalState velocity
+		equals: originalVelocity

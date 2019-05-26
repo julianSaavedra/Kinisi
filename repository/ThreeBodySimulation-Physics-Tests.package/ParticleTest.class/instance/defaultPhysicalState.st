@@ -1,4 +1,6 @@
 test support - defaults
 defaultPhysicalState
 
-	^self physicalStateWithPosition: self defaultPosition andMass: self defaultMass
+	^testResource
+		physicalStateWith: testResource oneKilogram
+		in: testResource nullPosition

@@ -9,7 +9,8 @@
 		"position",
 		"velocity",
 		"acceleration",
-		"mass"
+		"mass",
+		"particleName"
 	],
 	"name" : "PhysicalState",
 	"type" : "normal"

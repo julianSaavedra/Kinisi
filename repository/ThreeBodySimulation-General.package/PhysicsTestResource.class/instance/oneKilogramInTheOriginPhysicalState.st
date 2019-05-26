@@ -1,6 +1,6 @@
-as yet unclassified
+constants
 oneKilogramInTheOriginPhysicalState
 
 	^self
-		physicalStateWith: self nullPosition
-		and: self oneKilogram
+		physicalStateWith: self oneKilogram
+		in: self nullPosition

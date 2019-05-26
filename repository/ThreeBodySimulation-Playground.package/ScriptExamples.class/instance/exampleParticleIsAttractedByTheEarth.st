@@ -8,18 +8,40 @@ exampleParticleIsAttractedByTheEarth
 	testResource := PhysicsTestResource new.
 
 	earthAsParticleState := PhysicalState
-		withMass: (unitProvider kilogram with: 5.9722e24)
-		position: (MeasureVector x: 0 y: -6371 z: 0 with: unitProvider kilometer)
-		velocity: (MeasureVector x: 0 y: 0 z: 0 with: unitProvider standardVelocityUnit)
-		andAcceleration: testResource nullAcceleration.
+		forParticleNamed: (unitProvider kilogram with: 5.9722e24)
+		withMass:
+			(MeasureVector
+				x: 0
+				y: -6371
+				z: 0
+				with: unitProvider kilometer)
+		position:
+			(MeasureVector
+				x: 0
+				y: 0
+				z: 0
+				with: unitProvider standardVelocityUnit)
+		velocity: testResource nullAcceleration
+		andAcceleration: nil.
 
 	earthAsParticle := Particle named: #Earth with: earthAsParticleState.
 
 	originalState := PhysicalState
-		withMass: testResource oneKilogram
-		position: (MeasureVector x: 0 y: 0 z: 0 	with: unitProvider standardDistanceUnit)
-		velocity: (MeasureVector x: 8.66 y: 5 z: 0 with: unitProvider standardVelocityUnit)
-		andAcceleration: testResource nullAcceleration.
+		forParticleNamed: testResource oneKilogram
+		withMass:
+			(MeasureVector
+				x: 0
+				y: 0
+				z: 0
+				with: unitProvider standardDistanceUnit)
+		position:
+			(MeasureVector
+				x: 8.66
+				y: 5
+				z: 0
+				with: unitProvider standardVelocityUnit)
+		velocity: testResource nullAcceleration
+		andAcceleration: nil.
 
 	initialTime := second with: 0.
 	finalTime := second with: 1.1.
@@ -41,5 +63,5 @@ exampleParticleIsAttractedByTheEarth
 			newState := stateChange finalState.
 			states add: aTimeMoment -> newState.
 			newState ].
-	
+
 	states

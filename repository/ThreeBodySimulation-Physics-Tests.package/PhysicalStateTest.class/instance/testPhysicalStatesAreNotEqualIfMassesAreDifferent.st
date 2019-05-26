@@ -1,8 +1,7 @@
 tests
-testHash
+testPhysicalStatesAreNotEqualIfMassesAreDifferent
 
 	| aState anotherState |
-
 	aState := PhysicalState
 		forParticleNamed: 'ParticleA'
 		withMass: oneKilogram
@@ -11,9 +10,9 @@ testHash
 		andAcceleration: acceleration.
 	anotherState := PhysicalState
 		forParticleNamed: 'ParticleA'
-		withMass: oneKilogram
+		withMass: testResource twoKilograms
 		position: position
 		velocity: velocity
 		andAcceleration: acceleration.
-
-	self assert: aState hash equals: anotherState hash
+		
+	self deny: aState equals: anotherState

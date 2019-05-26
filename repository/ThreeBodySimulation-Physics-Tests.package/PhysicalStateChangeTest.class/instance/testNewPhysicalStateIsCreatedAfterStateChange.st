@@ -3,12 +3,7 @@ testNewPhysicalStateIsCreatedAfterStateChange
 
 	| originalState aForce stateChange |
 	aForce := testResource oneNewtonInAllComponentsVector.
-	originalState := PhysicalState
-		withMass: testResource oneKilogram
-		position: testResource oneMeterInAllComponentsVector
-		velocity: testResource nullVelocity
-		andAcceleration: testResource nullAcceleration.
-
+	originalState := testResource oneKilogramInTheOriginPhysicalState..
 	stateChange := PhysicalStateChange
 		of: originalState
 		during: testResource oneSecond
