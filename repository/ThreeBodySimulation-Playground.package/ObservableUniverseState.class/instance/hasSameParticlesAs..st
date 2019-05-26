@@ -1,4 +1,0 @@
-private
-hasSameParticlesAs: anObservableUniverseState
-
-	^anObservableUniverseState includesAllAndOnly: particles

@@ -1,4 +1,4 @@
 initialize
-initializeWith: particlesCollection
+initializeWith: physicalStatesCollection
 	
-	particles := particlesCollection
+	physicalStates := physicalStatesCollection

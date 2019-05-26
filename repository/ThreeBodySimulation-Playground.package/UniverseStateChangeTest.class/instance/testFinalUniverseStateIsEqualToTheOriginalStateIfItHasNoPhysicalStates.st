@@ -1,5 +1,5 @@
 tests
-testFinalUniverseStateIsEqualToTheOriginalStateIfItHasNoParticle
+testFinalUniverseStateIsEqualToTheOriginalStateIfItHasNoPhysicalStates
 
 	| originalState universeStateChange |
 	originalState := ObservableUniverseState with: #().

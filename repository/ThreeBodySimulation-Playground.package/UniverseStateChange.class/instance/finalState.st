@@ -1,14 +1,14 @@
-as yet unclassified
+accessing
 finalState
 
-	| originalParticles finalParticles |
-	originalParticles := originalState particles.
+	| originalPhysicalStates finalPhysicalStates |
+	originalPhysicalStates := originalState physicalStates.
 
-	finalParticles := originalParticles collect: [:aParticle |
+	finalPhysicalStates := originalState physicalStates collect: [:aPhysicalState |
 		| netForce physicalStateChange |
-		netForce := NetForce over: aParticle causedByAll: (originalParticles copyWithout: aParticle).
-		physicalStateChange := PhysicalStateChange of: aParticle physicalState during: deltaTime perceiving: netForce result.
-		Particle named: aParticle name with: physicalStateChange finalState
+		netForce := NetForce over: aPhysicalState causedByAll: (originalPhysicalStates copyWithout: aPhysicalState).
+		physicalStateChange := PhysicalStateChange of: aPhysicalState during: deltaTime perceiving: netForce result.
+		physicalStateChange finalState
 		].
 
-	^ObservableUniverseState with: finalParticles
+	^ObservableUniverseState with: finalPhysicalStates

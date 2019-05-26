@@ -2,7 +2,6 @@ tests
 testHash
 
 	| aState anotherState |
-
 	aState := PhysicalState
 		forParticleNamed: 'ParticleA'
 		withMass: oneKilogram

@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 physicalStateIn: positionVector withVelocity: velocityVector
 
 	^self

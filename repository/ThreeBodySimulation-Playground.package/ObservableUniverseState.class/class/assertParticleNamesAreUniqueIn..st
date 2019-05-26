@@ -1,5 +1,7 @@
 asserting
-assertParticleNamesAreUniqueIn: particleCollection
+assertParticleNamesAreUniqueIn: physicalStates
 
-	(particleCollection collect: [:particle | particle name]) asSet size = particleCollection size
-		ifFalse: [ PhysicsModelError signal: 'Two or more particles are named equally' ]
+	self
+		assertIn: physicalStates
+		uniqueElementsGivenBy: [:physicalState | physicalState particleName ]
+		ifNotRaiseSignal: 'Two or more particles are named equally'
