@@ -1,18 +1,18 @@
 tests
 testResultOfInteractionIsAForce
 
-	| particleA particleB interaction |
+	| physicalStateA physicalStateB interaction |
 
-	particleA := testResource
-		particleNamed: #ParticleA
-		in: testResource nullPosition
-		with: testResource oneKilogram.
-	particleB := testResource
-		particleNamed: #ParticleB
-		in:	(testResource vectorWithAllComponentsInMeterAndAmount: 1 / 3 sqrt)
-		with: testResource twoKilograms.
+	physicalStateA := testResource
+		physicalStateForParticleNamed: 'ParticleA'
+		with: testResource oneKilogram
+		in: testResource nullPosition.
+	physicalStateB := testResource
+		physicalStateForParticleNamed: 'ParticleB'
+		with: testResource twoKilograms
+		in:	(testResource vectorWithAllComponentsInMeterAndAmount: 1 / 3 sqrt).
 
-	interaction := Interaction over: particleA causedBy: particleB.
+	interaction := Interaction over: physicalStateA causedBy: physicalStateB.
 
 	self
 		assert: interaction result norm
