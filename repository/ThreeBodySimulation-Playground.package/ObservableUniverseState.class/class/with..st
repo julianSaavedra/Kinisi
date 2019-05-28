@@ -1,6 +1,6 @@
 instance creation
-with: particlesCollection
+with: physicalStates
 
-	self assertParticleNamesAreUniqueIn: particlesCollection.
-	self assertParticlePositionsAreUniqueIn: particlesCollection.
-	^self new initializeWith: particlesCollection
+	self assertParticleNamesAreUniqueIn: physicalStates.
+	self assertParticlePositionsAreUniqueIn: physicalStates.
+	^self new initializeWith: physicalStates

@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"overBody",
-		"causingBody"
+		"overParticlePhysicalState",
+		"causingParticlePhysicalState"
 	],
 	"name" : "Interaction",
 	"type" : "normal"

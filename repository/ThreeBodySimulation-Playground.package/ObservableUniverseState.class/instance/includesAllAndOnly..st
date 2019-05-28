@@ -1,8 +1,8 @@
 private
-includesAllAndOnly: particlesCollection
+includesAllAndOnly: physicalStateCollection
 
-	^particles size = particlesCollection size and: [
-		particles allSatisfy: [:selfParticle |
-			particlesCollection anySatisfy: [:collectionParticle |
-				collectionParticle = selfParticle ] ]
+	^physicalStates size = physicalStateCollection size and: [
+		physicalStates allSatisfy: [:ownPhysicalState |
+			physicalStateCollection anySatisfy: [:collectionPhysicalState |
+				collectionPhysicalState = ownPhysicalState ] ]
 		]

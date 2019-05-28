@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"testResource"
+		"testResource",
+		"unitProvider"
 	],
 	"name" : "UniverseStateChangeTest",
 	"type" : "normal"

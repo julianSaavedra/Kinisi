@@ -1,0 +1,4 @@
+tests
+physicalStateInTheOriginForParticleB
+
+	^testResource physicalStateForParticleInTheOriginNamed: 'ParticleB'

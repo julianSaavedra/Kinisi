@@ -1,4 +1,6 @@
 tests
 setUp
 
-	testResource := PhysicsTestResource new
+	super setUp.
+	testResource := PhysicsTestResource new.
+	unitProvider := UnitProvider soleInstance

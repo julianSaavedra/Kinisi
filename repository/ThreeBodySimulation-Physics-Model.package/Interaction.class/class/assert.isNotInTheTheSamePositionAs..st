@@ -1,5 +1,5 @@
 asserting
-assert: aParticle isNotInTheTheSamePositionAs: anotherParticle
+assert: aPhysicalState isNotInTheTheSamePositionAs: anotherPhysicalState
 
-	(aParticle isInTheSamePositionAs: anotherParticle)
+	(aPhysicalState position = anotherPhysicalState position)
 		ifTrue: [ PhysicsModelError signal: 	'Particles can not be in the same position when interacting to each other.' ]

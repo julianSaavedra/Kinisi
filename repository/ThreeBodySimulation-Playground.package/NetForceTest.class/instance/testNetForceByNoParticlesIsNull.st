@@ -2,7 +2,9 @@ tests
 testNetForceByNoParticlesIsNull
 
 	| netForce |
-	netForce := NetForce over: self particleA causedByAll: #().
+	netForce := NetForce
+		overParticleWith: self physicalStateForParticleA
+		causedByParticlesWithAll: #().
 	
 	self
 		assert: netForce result

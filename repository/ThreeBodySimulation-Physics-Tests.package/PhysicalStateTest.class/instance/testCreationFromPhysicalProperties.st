@@ -3,11 +3,14 @@ testCreationFromPhysicalProperties
 
 	| state |
 
-	state := PhysicalState withMass: oneKilogram
+	state := PhysicalState
+		forParticleNamed: 'ParticleA'
+		withMass: oneKilogram
 		position: position
 		velocity: velocity
 		andAcceleration: acceleration.
 
+	self assert: state particleName equals: #ParticleA.
 	self assert: state mass equals: oneKilogram.
 	self assert: state position equals: position.
 	self assert: state velocity equals: velocity.

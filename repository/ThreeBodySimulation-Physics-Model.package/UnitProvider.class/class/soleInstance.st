@@ -1,5 +1,5 @@
-acce
+instance creation
 soleInstance
 
-	^instance ifNil: [ instance := self new initialize ].
+	^instance ifNil: [ instance := self new ]
 	

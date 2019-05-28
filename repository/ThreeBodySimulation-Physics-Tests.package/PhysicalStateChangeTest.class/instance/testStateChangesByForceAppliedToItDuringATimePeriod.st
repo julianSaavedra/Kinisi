@@ -3,12 +3,9 @@ testStateChangesByForceAppliedToItDuringATimePeriod
 
 	| originalState aForce stateChange expectedFinalState |
 	aForce := testResource oneNewtonInAllComponentsVector.
-	originalState := PhysicalState
-		withMass: testResource oneKilogram
-		position: testResource nullPosition
-		velocity: testResource nullVelocity
-		andAcceleration: testResource nullAcceleration.
+	originalState := testResource physicalStateWith: testResource oneKilogram.	
 	expectedFinalState := PhysicalState
+		forParticleNamed: 'ParticleA' 
 		withMass: testResource oneKilogram
 		position: (testResource vectorWithAllComponentsInMeterAndAmount: 0.5)
 		velocity: (testResource velocityVectorWithAllComponentsWithAmount: 1)

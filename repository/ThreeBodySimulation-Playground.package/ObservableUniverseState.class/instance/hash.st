@@ -1,0 +1,4 @@
+comparing
+hash
+
+	^physicalStates hash

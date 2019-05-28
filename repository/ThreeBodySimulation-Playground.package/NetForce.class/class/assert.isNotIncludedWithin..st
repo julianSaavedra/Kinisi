@@ -1,6 +1,6 @@
 asserting
-assert: aParticle isNotIncludedWithin: causingParticles
+assert: physicalState isNotIncludedWithin: causingParticlesPhysicalStates
 
-	causingParticles
-		detect: [:causingParticle | causingParticle = aParticle ]
+	causingParticlesPhysicalStates
+		detect: [:causingParticlePhysicalState | causingParticlePhysicalState = physicalState ]
 		ifFound: [ PhysicsModelError 	signal: 'Net force should not be calculated within same particle' ]

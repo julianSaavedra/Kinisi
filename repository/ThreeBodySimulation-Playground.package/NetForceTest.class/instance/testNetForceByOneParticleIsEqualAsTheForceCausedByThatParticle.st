@@ -1,12 +1,14 @@
 tests
 testNetForceByOneParticleIsEqualAsTheForceCausedByThatParticle
 
-	| aParticle netForce anotherParticle expectedNetForce |
-	aParticle := self particleA.
-	anotherParticle := self particleB.
+	| aPhysicalState anotherPhysicalState netForce expectedNetForce |
+	aPhysicalState := self physicalStateForParticleA.
+	anotherPhysicalState := self physicalStateForParticleB.
 	netForce := NetForce
-		over: aParticle
-		causedByAll: (Array with: anotherParticle).
+		overParticleWith: aPhysicalState
+		causedByParticlesWithAll: (Array with: anotherPhysicalState).
 
-	expectedNetForce := self forceOver: aParticle causedBy: anotherParticle.
-	self assert: netForce result equals: expectedNetForce
+	expectedNetForce := self forceOverParticleWith: aPhysicalState causedByParticleWith: anotherPhysicalState.
+	self
+		assert: netForce result
+		equals: expectedNetForce

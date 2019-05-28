@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"overParticle",
-		"causingParticles"
+		"overParticlePhysicalState",
+		"causingParticlesPhysicalStates"
 	],
 	"name" : "NetForce",
 	"type" : "normal"

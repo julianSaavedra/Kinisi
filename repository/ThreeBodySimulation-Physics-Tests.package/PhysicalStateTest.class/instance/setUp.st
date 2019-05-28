@@ -1,6 +1,7 @@
 tests
 setUp
 
+	super setUp.
 	testResource := PhysicsTestResource new.
 	oneKilogram := testResource oneKilogram.
 	position := testResource oneMeterInAllComponentsVector.

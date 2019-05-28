@@ -2,12 +2,8 @@ tests
 testTimeCannotBeNegative
 
 	| originalState |
-	originalState := PhysicalState
-		withMass: testResource oneKilogram
-		position: testResource nullPosition
-		velocity: testResource nullVelocity
-		andAcceleration: testResource nullAcceleration.
-
+	originalState := testResource physicalStateWith: testResource oneKilogram.
+	
 	self
 		should: [ PhysicalStateChange
 				of: originalState

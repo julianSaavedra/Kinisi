@@ -1,0 +1,4 @@
+accessing
+physicalStates
+
+	^physicalStates copy

@@ -1,0 +1,4 @@
+private
+hasSamePhysicalStatesAs: anObservableUniverseState
+
+	^anObservableUniverseState includesAllAndOnly: physicalStates

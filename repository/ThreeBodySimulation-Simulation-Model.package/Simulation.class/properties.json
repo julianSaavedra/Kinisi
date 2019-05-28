@@ -8,8 +8,7 @@
 	"instvars" : [
 		"totalDuration",
 		"stepDuration",
-		"stepResults",
-		"result"
+		"stepResults"
 	],
 	"name" : "Simulation",
 	"type" : "normal"

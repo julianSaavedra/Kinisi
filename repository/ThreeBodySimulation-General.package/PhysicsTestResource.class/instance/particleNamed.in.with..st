@@ -3,4 +3,4 @@ particleNamed: aName in: position with: mass
 	
 	^Particle
 		named: aName
-		with: (self physicalStateWith: position and: mass)
+		with: (self physicalStateForParticleNamed: aName with: mass in: position)

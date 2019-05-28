@@ -1,7 +1,7 @@
 arithmetic
 opposite
 
-	^MeasureVector
+	^self class
 		x: self x negated
 		y: self y negated
 		z: self z negated
