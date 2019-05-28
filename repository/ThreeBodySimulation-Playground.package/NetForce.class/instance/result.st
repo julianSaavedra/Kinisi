@@ -1,7 +1,9 @@
 accessing
 result
 
-	^causingParticles
+	^causingParticlesPhysicalStates
 		inject: (MeasureVector nullWith: UnitProvider soleInstance newton)
-		into: [:netForce :aParticle | 	
-				netForce + (Interaction over: overParticle causedBy: aParticle) result ]
+		into: [:netForce :aPhysicalState |
+			netForce + (Interaction
+				overParticleWith: overParticlePhysicalState
+				causedByParticleWith: aPhysicalState) result ]

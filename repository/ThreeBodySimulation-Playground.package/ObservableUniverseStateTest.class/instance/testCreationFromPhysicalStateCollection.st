@@ -1,12 +1,8 @@
 tests
 testCreationFromPhysicalStateCollection
 
-	| physicalStateA physicalStateB particleCollection observableUniverseState |
-	physicalStateA := testResource physicalStateForParticleInTheOriginNamed: 'ParticleA'.
-	physicalStateB := testResource physicalStateForParticleNamed: 'ParticleB' in: testResource oneMeterInAllComponentsVector.
-	particleCollection := Array with: physicalStateA with: physicalStateB.
-
-	observableUniverseState := ObservableUniverseState with: particleCollection.
+	| observableUniverseState |
+	observableUniverseState := ObservableUniverseState with: self twoPhysicalStatesCollection.
 
 	self assert: observableUniverseState physicalStates size equals: 2
 

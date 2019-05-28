@@ -1,12 +1,14 @@
 tests
 testPhysicalStatesinUniverseStateMustHaveDifferentPositions
 
-	| physicalStateCollection physicalStateInTheOrigin anotherPhysicalStateInTheOrigin |
-	physicalStateInTheOrigin := testResource physicalStateForParticleInTheOriginNamed: 'ParticleA'.
-	anotherPhysicalStateInTheOrigin := testResource physicalStateForParticleInTheOriginNamed: 'ParticleB'.
-	physicalStateCollection := Array with: physicalStateInTheOrigin with: anotherPhysicalStateInTheOrigin.
+	| physicalStates |
+	physicalStates := Array
+		with: self physicalStateInTheOriginForParticleA
+		with: self physicalStateInTheOriginForParticleB.
 
-	self should: [ ObservableUniverseState with: physicalStateCollection ] raise: PhysicsModelError
+	self
+		should: [ ObservableUniverseState with: physicalStates ]
+		raise: PhysicsModelError
 	
 
 	

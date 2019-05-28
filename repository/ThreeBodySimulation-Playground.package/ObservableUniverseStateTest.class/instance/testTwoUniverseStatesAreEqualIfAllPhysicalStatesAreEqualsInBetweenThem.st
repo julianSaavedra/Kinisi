@@ -1,12 +1,9 @@
 tests
 testTwoUniverseStatesAreEqualIfAllPhysicalStatesAreEqualsInBetweenThem
 
-	| physicalStateForParticleA physicalStateForParticleB physicalStateCollection anotherPhysicalStateCollection |
-	physicalStateForParticleA := testResource physicalStateForParticleInTheOriginNamed: 'ParticleA'.
-	physicalStateForParticleB := testResource physicalStateForParticleNamed: 'ParticleB' in: testResource oneMeterInAllComponentsVector.
-	physicalStateCollection := Array with: physicalStateForParticleA with: physicalStateForParticleB.
-	anotherPhysicalStateCollection := Array with: physicalStateForParticleA copy with: physicalStateForParticleB copy.
+	| physicalStateCollection |
+	physicalStateCollection := self twoPhysicalStatesCollection.
 
 	self
 		assert: (ObservableUniverseState with: physicalStateCollection)
-		equals: (ObservableUniverseState with: anotherPhysicalStateCollection)
+		equals: (ObservableUniverseState with: physicalStateCollection copy)

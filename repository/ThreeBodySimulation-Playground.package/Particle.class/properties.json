@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "ThreeBodySimulation-Physics-Tests",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-Playground",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"testResource"
+		"name",
+		"physicalState"
 	],
-	"name" : "ParticleTest",
+	"name" : "Particle",
 	"type" : "normal"
 }

@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 physicalStateForParticleInTheOriginNamed: particleName
 
 	^self

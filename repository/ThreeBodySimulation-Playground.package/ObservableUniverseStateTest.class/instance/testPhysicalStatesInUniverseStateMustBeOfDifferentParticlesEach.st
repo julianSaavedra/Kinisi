@@ -1,12 +1,11 @@
 tests
 testPhysicalStatesInUniverseStateMustBeOfDifferentParticlesEach
 
-	| physicalStateForParticleA anotherPhysicalStateForParticleA physicalStateCollection |
-	physicalStateForParticleA := testResource physicalStateForParticleInTheOriginNamed: 'ParticleA'.
-	anotherPhysicalStateForParticleA := testResource physicalStateForParticleNamed: 'ParticleA' in: testResource oneMeterInAllComponentsVector.
-	physicalStateCollection := Array with: physicalStateForParticleA with: anotherPhysicalStateForParticleA.
+	| physicalStateCollection |
+	physicalStateCollection := Array
+		with: self physicalStateInTheOriginForParticleA
+		with: self physicalStateNotInTheOriginForParticleA.
 
-	self should: [ ObservableUniverseState with: physicalStateCollection ] raise: PhysicsModelError
-	
-
-	
+	self
+		should: [ ObservableUniverseState with: physicalStateCollection ]
+		raise: PhysicsModelError

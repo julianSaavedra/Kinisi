@@ -6,7 +6,7 @@ finalState
 
 	finalPhysicalStates := originalState physicalStates collect: [:aPhysicalState |
 		| netForce physicalStateChange |
-		netForce := NetForce over: aPhysicalState causedByAll: (originalPhysicalStates copyWithout: aPhysicalState).
+		netForce := NetForce overParticleWith: aPhysicalState causedByParticlesWithAll: (originalPhysicalStates copyWithout: aPhysicalState).
 		physicalStateChange := PhysicalStateChange of: aPhysicalState during: deltaTime perceiving: netForce result.
 		physicalStateChange finalState
 		].

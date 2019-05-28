@@ -1,4 +1,4 @@
-initialize
+initialization
 initializeUnitDictionary
 
 	unitDictionary := Dictionary new.

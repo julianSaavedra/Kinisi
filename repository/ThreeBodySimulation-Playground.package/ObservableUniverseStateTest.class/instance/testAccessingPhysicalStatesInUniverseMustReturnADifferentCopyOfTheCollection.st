@@ -1,11 +1,8 @@
 tests
 testAccessingPhysicalStatesInUniverseMustReturnADifferentCopyOfTheCollection
 
-	| physicalStateForParticleA physicalStateForParticleB physicalStates observableUniverseState |
-	physicalStateForParticleA := testResource physicalStateForParticleInTheOriginNamed: 'ParticleA'.
-	physicalStateForParticleB := testResource physicalStateForParticleNamed: 'ParticleB' in: testResource oneMeterInAllComponentsVector.
-	physicalStates := Array with: physicalStateForParticleA with: physicalStateForParticleB.
-	observableUniverseState := ObservableUniverseState with: physicalStates.
+	| observableUniverseState |
+	observableUniverseState := ObservableUniverseState with: self twoPhysicalStatesCollection.
 
 	self
 		assert: observableUniverseState physicalStates

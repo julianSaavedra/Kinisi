@@ -1,10 +1,9 @@
 tests
 testTwoUniverseStatesAreNotEqualIfAtLeastOnePhysicalStateIsMissingFromOneOfThem
 
-	| physicalStateForParticleA physicalStateForParticleB |
-	physicalStateForParticleA := testResource physicalStateForParticleInTheOriginNamed: #ParticleA.
-	physicalStateForParticleB := testResource physicalStateForParticleNamed: #ParticleB in: testResource oneMeterInAllComponentsVector.
-
+	| twoPhysicalStates |
+	twoPhysicalStates := self twoPhysicalStatesCollection.
+	
 	self
-		deny: (ObservableUniverseState with: (Array with: physicalStateForParticleA with: physicalStateForParticleB))
-		equals: (ObservableUniverseState with: (Array with: physicalStateForParticleA copy))
+		deny: (ObservableUniverseState with: twoPhysicalStates)
+		equals: (ObservableUniverseState with: twoPhysicalStates allButLast)

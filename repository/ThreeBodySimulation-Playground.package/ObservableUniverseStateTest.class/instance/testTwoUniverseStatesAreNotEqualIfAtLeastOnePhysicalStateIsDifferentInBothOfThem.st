@@ -1,10 +1,10 @@
 tests
 testTwoUniverseStatesAreNotEqualIfAtLeastOnePhysicalStateIsDifferentInBothOfThem
 
-	| atOriginPhysicalState notAtOriginPhysicalState |
-	atOriginPhysicalState := testResource physicalStateForParticleInTheOriginNamed: 'ParticleA'.
-	notAtOriginPhysicalState := testResource physicalStateForParticleNamed: 'ParticleA' in: testResource oneMeterInAllComponentsVector.
+	| atOriginPhysicalStateArray notAtOriginPhysicalStateArray |
+	atOriginPhysicalStateArray := Array with: self physicalStateInTheOriginForParticleA.
+	notAtOriginPhysicalStateArray := Array with: self physicalStateNotInTheOriginForParticleA.
 
 	self
-		deny: (ObservableUniverseState with: (Array with: atOriginPhysicalState))
-		equals: (ObservableUniverseState with: (Array with: notAtOriginPhysicalState))
+		deny: (ObservableUniverseState with: atOriginPhysicalStateArray)
+		equals: (ObservableUniverseState with: notAtOriginPhysicalStateArray)

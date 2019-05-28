@@ -1,6 +1,6 @@
 asserting
-assert: aParticle isNotTheSameAs: anotherParticle
+assert: aPhysicalState isNotTheSameAs: anotherPhysicalState
 
-	aParticle = anotherParticle
+	aPhysicalState = anotherPhysicalState
 		ifTrue: [ PhysicsModelError
 				signal: 'Interactions are not possible between the same particle.' ]

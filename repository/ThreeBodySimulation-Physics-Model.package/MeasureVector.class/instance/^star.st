@@ -1,7 +1,7 @@
 arithmetic
 * aNumeberOrMeasure
 
-	^MeasureVector
+	^self class
 		x: self x * aNumeberOrMeasure
 		y: self y * aNumeberOrMeasure
 		z: self z * aNumeberOrMeasure
