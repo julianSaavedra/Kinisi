@@ -39,4 +39,4 @@ exampleParticleIsAttractedByTheEarth
 			states add: aTimeMoment -> newState.
 			newState ].
 
-	states
+	^states
