@@ -10,8 +10,8 @@ exampleParticleIsAttractedByTheEarth
 	earthState := PhysicalState
 		forParticleNamed: 'Earth'
 		withMass: (unitProvider kilogram with: 5.9722e24)
-		position: (MeasureVector x: 0 y: -6371 z: 0 with: unitProvider kilometer)
-		velocity: (MeasureVector nullWith: unitProvider standardVelocityUnit)
+		position: (MeasureVector y: -6371 with: unitProvider kilometer)
+		velocity: testResource nullVelocity
 		andAcceleration: testResource nullAcceleration.
 
 	originalState := PhysicalState
