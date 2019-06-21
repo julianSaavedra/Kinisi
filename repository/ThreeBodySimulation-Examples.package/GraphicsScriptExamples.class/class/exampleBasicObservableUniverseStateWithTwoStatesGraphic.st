@@ -38,4 +38,5 @@ exampleBasicObservableUniverseStateWithTwoStatesGraphic
 	"If position is multiple of the grid size, then shapes are in points of the grid."
 	particlesGroup first translateTo: 0 @ 0.
 	particlesGroup second translateTo: 70 @ 110.
+	AxisReferenceRenderer new drawIn: view.
 	^ view open
