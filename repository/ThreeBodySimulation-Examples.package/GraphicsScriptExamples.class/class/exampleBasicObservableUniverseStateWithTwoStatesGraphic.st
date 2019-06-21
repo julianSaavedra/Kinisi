@@ -1,5 +1,5 @@
-examples
-exampleObservableUniverseStateWithTwoStatesGraphic
+examples - grid
+exampleBasicObservableUniverseStateWithTwoStatesGraphic
 
 	"based on RTInteractionExample >> exampleGridDraggable"
 	

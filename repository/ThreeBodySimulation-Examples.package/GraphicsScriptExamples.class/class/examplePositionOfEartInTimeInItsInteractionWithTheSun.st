@@ -1,9 +1,9 @@
-examples - curves
-examplePositionInTimeOfParticle
+examples - to do
+examplePositionOfEartInTimeInItsInteractionWithTheSun
 
 	| formatedData inputArray grapher |
 	"Preparing the data"
-	inputArray := self timeAndPhysicalStateAssociations collect: [:timeStateAssociation |
+	inputArray := self timeAndObservableUniverseStateAssociations collect: [:timeStateAssociation |
 		Array
 			with: timeStateAssociation key amount
 			with: timeStateAssociation value particleName
