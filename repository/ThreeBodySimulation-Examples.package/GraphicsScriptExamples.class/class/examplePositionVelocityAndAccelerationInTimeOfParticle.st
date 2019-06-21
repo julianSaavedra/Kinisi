@@ -1,4 +1,4 @@
-examples
+examples - curves
 examplePositionVelocityAndAccelerationInTimeOfParticle
 
 	| rawTimeStateResults colorNormalizer formatedData inputArray grapher valuesToGraph |
