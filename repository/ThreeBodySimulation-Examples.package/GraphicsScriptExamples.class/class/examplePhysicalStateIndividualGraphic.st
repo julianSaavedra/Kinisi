@@ -3,11 +3,11 @@ examplePhysicalStateIndividualGraphic
 
 	"Description: render a single particle in an no grid canvas."
 	| physicalState view viewSize particleShape physicalStateElement particleColor particleSize windowTitle |
-	physicalState := self physicalStateInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent.	
+	physicalState := self physicalStateInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent.
+
 	view := RTView new.
 	viewSize := 250@250.
 	view canvas color: Color black.
-	
 	"Create shapes for particles"
 	particleColor := Color blue alpha: 0.7.
 	particleSize := (viewSize x min: viewSize y) // 4.
@@ -28,7 +28,12 @@ examplePhysicalStateIndividualGraphic
 		basedOn: physicalState velocity
 		holdBy: physicalStateElement.
 	
-	AxisReferenceRenderer new drawIn: view movedFromCenterToLeftBottomCornerBy: 100.
-
+	PositionMarksRenderer new
+		drawIn: view
+		basedOn: physicalState position
+		movedFromCenterBy: 80.
+	AxisReferenceRenderer new drawIn: view movedFromCenterToLeftBottomCornerBy: 80.
+			
 	windowTitle := physicalState particleName.
-	view openInWindowSized: viewSize titled: windowTitle
+	view openInWindowSized: viewSize titled: windowTitle.
+	view canvas camera translateTo: 0@0

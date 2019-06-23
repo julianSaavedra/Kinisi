@@ -1,11 +1,10 @@
 tests
 testAxisReferenceIsDrawnInTheOriginOfTheCanvas
 
-	| view axisReference|
+	| view |
 	view := RTView new.	
-	axisReference := AxisReferenceRenderer new.
-	
-	axisReference drawIn: view.
+
+	AxisReferenceRenderer new drawIn: view.
 	
 	self
 		assertAxisReferencePointsAreMovedBy: 0@0

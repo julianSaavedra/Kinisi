@@ -1,11 +1,10 @@
 tests
 testOriginIsConnectedToBothXAndY
 
-	| view axisReference originElement |
+	| view originElement |
 	view := RTView new.	
-	axisReference := AxisReferenceRenderer new.
 	
-	axisReference drawIn: view.
+	AxisReferenceRenderer new drawIn: view.
 	
 	originElement := view elements detect: [:element | element model = self originModel ].
 	originElement connectedEdges do: [:edge |
