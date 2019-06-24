@@ -9,6 +9,6 @@ originalPhysicalStates
 	originalStateB := testResource
 		physicalStateForParticleNamed: #ParticleB
 		with: testResource oneKilogram
-		in: (MeasureVector x: 1 with: unitProvider meter).
+		in: testResource oneMeterInXVector.
 
 	^Array with: originalStateA with: originalStateB

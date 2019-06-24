@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "ThreeBodySimulation-Playground",
+	"category" : "ThreeBodySimulation-Physics-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"testResource"
+		"testResource",
+		"unitProvider"
 	],
-	"name" : "NetForceTest",
+	"name" : "UniverseStateChangeTest",
 	"type" : "normal"
 }

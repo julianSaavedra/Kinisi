@@ -2,7 +2,6 @@ tests
 testOneKilogramInTheOriginPhysicalState
 
 	| physicalState |
-	
 	physicalState := testResource oneKilogramInTheOriginPhysicalState.
 
 	self assert: physicalState mass equals: testResource oneKilogram.

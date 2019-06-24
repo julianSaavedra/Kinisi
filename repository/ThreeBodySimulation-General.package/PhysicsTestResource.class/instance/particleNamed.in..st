@@ -1,4 +1,4 @@
-utilities
+not used
 particleNamed: aName in: position
 
 	^self
