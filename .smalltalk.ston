@@ -10,7 +10,7 @@ SmalltalkCISpec {
    #packages : ['ThreeBodySimulation-*-Test']
   },
   #coverage : {
-   #packages : ['ThreeBodySimulation-*-Model']
+   #packages : ['ThreeBodySimulation-*']
   }
  }
 }
