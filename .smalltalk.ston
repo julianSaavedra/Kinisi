@@ -2,7 +2,8 @@ SmalltalkCISpec {
  #loading : [
   SCIMetacelloLoadSpec {
    #baseline : 'ThreeBodySimulationPlayground',
-   #directory : 'repository'
+   #directory : 'repository',
+   #platforms : [ #pharo ]
   }
  ],
  #testing : {
@@ -10,7 +11,7 @@ SmalltalkCISpec {
    #packages : ['ThreeBodySimulation-*-Test']
   },
   #coverage : {
-   #packages : ['ThreeBodySimulation-*']
+   #packages : ['ThreeBodySimulation-*-Model']
   }
  }
 }
