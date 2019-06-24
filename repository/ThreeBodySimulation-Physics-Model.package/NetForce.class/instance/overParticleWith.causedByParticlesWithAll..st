@@ -1,5 +1,5 @@
 initialize
-initializeOver: physicalState causedByAll: physicalStateCollection
+overParticleWith: physicalState causedByParticlesWithAll: physicalStateCollection
 
 	overParticlePhysicalState := physicalState.
 	causingParticlesPhysicalStates := physicalStateCollection

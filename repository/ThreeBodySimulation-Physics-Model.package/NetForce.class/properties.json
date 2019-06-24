@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "ThreeBodySimulation-Playground",
+	"category" : "ThreeBodySimulation-Physics-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"originalState",
-		"deltaTime"
+		"overParticlePhysicalState",
+		"causingParticlesPhysicalStates"
 	],
-	"name" : "UniverseStateChange",
+	"name" : "NetForce",
 	"type" : "normal"
 }
