@@ -6,9 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"totalDuration",
 		"stepDuration",
-		"stepResults"
+		"simulationDuration",
+		"stepResults",
+		"changingBlock",
+		"initialState"
 	],
 	"name" : "Simulation",
 	"type" : "normal"

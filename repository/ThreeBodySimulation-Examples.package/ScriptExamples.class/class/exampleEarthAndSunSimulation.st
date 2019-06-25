@@ -1,39 +1,35 @@
 examples
 exampleEarthAndSunSimulation
 
-	| testResource unitProvider second earthInitialState sunInitialState initialObservableUniverseState initialTime finalTime stepDuration states |
+	| testResource unitProvider day earthInitialState sunInitialState initialObservableUniverseState simulation |
 
 	unitProvider := UnitProvider soleInstance.
-	second := unitProvider second.
+	day := unitProvider day.
 	testResource := PhysicsTestResource new.
 
 	earthInitialState := PhysicalState
 		forParticleNamed: 'Earth'
 		withMass: (unitProvider kilogram with: 5.9722e24)
 		position: (MeasureVector y: 150e6 with: unitProvider kilometer)
-		velocity: testResource nullVelocity
+		velocity: (MeasureVector y: 30000 with: unitProvider standardVelocityUnit)
 		andAcceleration: testResource nullAcceleration.
 
 	sunInitialState := PhysicalState
 		forParticleNamed: 'Sun'
 		withMass: (unitProvider kilogram with: 2e30)
-		position: (MeasureVector nullWith: unitProvider standardDistanceUnit)
+		position: testResource nullPosition
 		velocity: testResource nullVelocity
 		andAcceleration: testResource nullAcceleration.
 
-	initialTime := second with: 0.
-	finalTime := second with: 60.
 	initialObservableUniverseState := ObservableUniverseState with: (Array with: earthInitialState with: sunInitialState).
 
-	states := OrderedCollection with: initialTime -> initialObservableUniverseState.
-	stepDuration := second with: 1.
-	(initialTime + stepDuration to: finalTime by: stepDuration)
-		inject: initialObservableUniverseState
-		into: [:currentState :aTimeMoment |
-			| stateChange newState |
-			stateChange := UniverseStateChange from: currentState during: stepDuration. 
-			newState := stateChange finalState.
-			states add: aTimeMoment -> newState.
-			newState ].
+	simulation := Simulation
+		startingWith: initialObservableUniverseState
+		changingBy: [:stepDuration :currentState |
+			(UniverseStateChange from: currentState during: stepDuration) finalState ]
+		over: (day with: 1)
+		during: (day with: 365).
 
-	^states
+	simulation run.
+
+	^simulation result
