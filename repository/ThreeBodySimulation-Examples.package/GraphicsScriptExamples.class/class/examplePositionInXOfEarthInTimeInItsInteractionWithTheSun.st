@@ -1,14 +1,15 @@
-examples - to do
-examplePositionOfEartInTimeInItsInteractionWithTheSun
+examples - curves
+examplePositionInXOfEarthInTimeInItsInteractionWithTheSun
 
 	| formatedData inputArray grapher |
 	"Preparing the data"
-	inputArray := self timeAndObservableUniverseStateAssociations collect: [:timeStateAssociation |
+	inputArray := self earthAndSunSimulationResult withTimeAndStateCollect: [:time :state |
+		| earthState |
+		earthState := state physicalStates detect: [:particleState | particleState particleName = #Earth].
 		Array
-			with: timeStateAssociation key amount
-			with: timeStateAssociation value particleName
-			with: timeStateAssociation value position x amount ].
-
+			with: time amount
+			with: earthState particleName
+			with: earthState position x amount ].
 	formatedData := RTData new.
 	formatedData points: inputArray.
 	formatedData label: 'Position [X component]'.
@@ -30,7 +31,7 @@ examplePositionOfEartInTimeInItsInteractionWithTheSun
 	grapher axisX title: 'Time'.
 	grapher axisX decimal: 5.
 
-	grapher axisY numberOfTicks: inputArray size.
+	grapher axisY numberOfTicks: inputArray size/60.
 	grapher axisY title: 'Position [X component]'.
 	grapher axisY decimal: 5.
 	"grapher legend addText: 'Position [X component]'."

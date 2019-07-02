@@ -1,4 +1,4 @@
 data examples
-timeAndPhysicalStateAssociations
+particleAttractedByEarthSimulationResult
 
 	^ScriptExamples exampleParticleIsAttractedByTheEarth

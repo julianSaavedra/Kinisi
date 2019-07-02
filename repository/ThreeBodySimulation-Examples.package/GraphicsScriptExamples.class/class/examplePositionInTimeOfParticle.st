@@ -3,11 +3,11 @@ examplePositionInTimeOfParticle
 
 	| formatedData inputArray grapher |
 	"Preparing the data"
-	inputArray := self timeAndPhysicalStateAssociations collect: [:timeStateAssociation |
+	inputArray := self particleAttractedByEarthSimulationResult withTimeAndStateCollect: [:time :state |
 		Array
-			with: timeStateAssociation key amount
-			with: timeStateAssociation value particleName
-			with: timeStateAssociation value position x amount ].
+			with: time amount
+			with: state particleName
+			with: state position x amount ].
 
 	formatedData := RTData new.
 	formatedData points: inputArray.

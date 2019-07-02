@@ -1,10 +1,9 @@
 example - data
 observableUniverseStateWithTwoStates
 
-	| testResource unitProvider second particleAState particleBState states |
+	| testResource unitProvider particleAState particleBState states |
 
 	unitProvider := UnitProvider soleInstance.
-	second := unitProvider second.
 	testResource := PhysicsTestResource new.
 
 	particleAState := PhysicalState
