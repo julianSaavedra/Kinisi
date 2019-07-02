@@ -1,4 +1,4 @@
 data examples
-timeAndObservableUniverseStateAssociations
+earthAndSunSimulationResult
 
 	^ScriptExamples exampleEarthAndSunSimulation

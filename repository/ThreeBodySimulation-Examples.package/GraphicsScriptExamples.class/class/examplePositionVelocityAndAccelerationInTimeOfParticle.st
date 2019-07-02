@@ -3,20 +3,20 @@ examplePositionVelocityAndAccelerationInTimeOfParticle
 
 	| rawTimeStateResults colorNormalizer formatedData inputArray grapher valuesToGraph |
 	"Preparing the data"
-	rawTimeStateResults := self timeAndPhysicalStateAssociations.
+	rawTimeStateResults := self particleAttractedByEarthSimulationResult.
 	"Each diferent curves that are going to be drawn"
 	valuesToGraph := #(#position #velocity #acceleration).
 	grapher := RTGrapher new.
 	"Color 'feeder' - it's provides a given number of colors"
-	colorNormalizer := RTMultiLinearColorForIdentity new objects: (1 to: rawTimeStateResults size).
+	colorNormalizer := RTMultiLinearColorForIdentity new objects: (1 to: valuesToGraph size).
 	valuesToGraph withIndexDo: [:valueToGraph :index |
 		| color |
 		"Creation of each 'curve' (values + format)"
-		inputArray := rawTimeStateResults collect: [:timeStateAssociation |
+		inputArray := rawTimeStateResults withTimeAndStateCollect: [:time :state |
 			Array "Now it is an array; think of modelling like a 'curve point'"
-				with: timeStateAssociation key amount
-				with: timeStateAssociation value particleName
-				with: (timeStateAssociation value perform: valueToGraph) y amount ].
+				with: time amount
+				with: state particleName
+				with: (state perform: valueToGraph) y amount ].
 		formatedData := RTData new.
 		formatedData points: inputArray.
 		"Label would be shown in the graph together with the curve color"

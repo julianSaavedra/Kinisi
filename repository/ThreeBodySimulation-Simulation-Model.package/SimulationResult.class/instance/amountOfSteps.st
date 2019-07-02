@@ -1,4 +1,0 @@
-accessing
-amountOfSteps
-
-	^simulationSteps size
