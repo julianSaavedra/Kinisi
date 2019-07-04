@@ -6,13 +6,13 @@ exampleBasicObservableUniverseStateWithTwoStatesGraphic
 	| view particleAShape particleBShape particleAElement particleBElement |
 	view := RTView new.
 	"Background color"
-	view canvas color: Color gray.
+	view canvas color: Color black.
 	"#@: add an interaction to the node"
 	view @ RTDraggableView.
 	view
 		@
 			(RTGridView new
-				color: Color red;
+				color: (Color gray alpha: 0.7);
 				gridSize: 10). "Grid size - separation between lines of the grid"
 	view @ RTZoomableView.
 	
