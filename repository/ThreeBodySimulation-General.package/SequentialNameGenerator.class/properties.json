@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-General",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"prefix",
+		"nextSuffix"
+	],
+	"name" : "SequentialNameGenerator",
+	"type" : "normal"
+}
