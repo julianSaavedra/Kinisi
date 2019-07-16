@@ -1,0 +1,4 @@
+data examples
+earthAndSunInitialUniverseDraft
+
+	^ScriptExamples earthAndSunInitialUniverseDraft

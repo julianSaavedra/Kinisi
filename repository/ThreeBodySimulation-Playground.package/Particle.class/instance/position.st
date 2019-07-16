@@ -1,4 +1,4 @@
 accessing
 position
 
-	^physicalState position
+	^position

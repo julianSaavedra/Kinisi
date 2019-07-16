@@ -1,18 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "TestCase",
 	"category" : "ThreeBodySimulation-Playground",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name",
-		"color",
-		"mass",
-		"position",
-		"velocity",
-		"acceleration"
+		"meter",
+		"second",
+		"testResource"
 	],
-	"name" : "Particle",
+	"name" : "ObservableUniverseTests",
 	"type" : "normal"
 }

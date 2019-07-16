@@ -1,29 +1,15 @@
 examples - grid
 exampleEarthAndSunObservableUniverseStateGraphic
 
-	| view viewSize observableUniverseState descriptions |
-
-	"Background color"
-	"#@: add an interaction to the node"
-	"view @ RTDraggableView."
-	"Grid size - separation between lines of the grid"
-	"massScale := UnitProvider soleInstance kilogram with: 1e6.
-	sizeTranslationBlock := [:mass | mass / massScale ]"
+	| view viewSize draft |
 	view := RTView new.
+	"Background color"
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
+
+	draft := self earthAndSunInitialUniverseDraft.
+	self updateDraft: draft basedOn: self earthAndSunSingleObservableUniverseState.
+	self drawIn: view basedOnDraft: draft.
 	
-	observableUniverseState := self earthAndSunSingleObservableUniverseState.
-	descriptions := self earthAndSunDescriptionBasedOn: observableUniverseState.
-	self drawIn: descriptions basedOn: view.
-	view canvas camera focusOnCenter.
-	
-	"currentPosition := initialPosition.
-	animation := RTActiveAnimation new.
-	animation intervalInMilliseconds: 40.
-	animation blockToExecute: [
-		currentPosition := currentPosition  + (1@1).
-		particleElement translateTo: currentPosition ].
-	Starts animation
-	animation inView: view."
+	view canvas camera focusOnCenter

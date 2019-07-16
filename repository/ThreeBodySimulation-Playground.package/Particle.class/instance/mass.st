@@ -1,4 +1,4 @@
 accessing
 mass
 
-	^physicalState mass
+	^mass

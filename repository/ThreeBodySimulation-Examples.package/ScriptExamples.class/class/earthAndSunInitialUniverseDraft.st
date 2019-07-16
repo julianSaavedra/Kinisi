@@ -22,6 +22,6 @@ earthAndSunInitialUniverseDraft
 		mass: (unitProvider kilogram with: 2e30);
 		velocity: testResource nullVelocity;
 		acceleration: testResource nullAcceleration;
-		color: (Color yellow alpha: 0.7).
+		color: Color yellow.
 	
 	^universeDraft
