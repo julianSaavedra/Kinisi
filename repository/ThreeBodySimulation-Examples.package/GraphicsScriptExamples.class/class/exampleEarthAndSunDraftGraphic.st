@@ -13,10 +13,13 @@ exampleEarthAndSunDraftGraphic
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
-	
-	self drawIn: view basedOnDraft: self earthAndSunInitialUniverseDraft.
-	view canvas camera focusOnCenter.
-	
+
+	self
+		drawIn: view
+		basedOnDraft: self earthAndSunInitialUniverseDraft
+		withGridScale: (UnitProvider soleInstance kilometer with: 0.5e6).
+	view canvas camera focusOnCenter
+
 	"currentPosition := initialPosition.
 	animation := RTActiveAnimation new.
 	animation intervalInMilliseconds: 40.

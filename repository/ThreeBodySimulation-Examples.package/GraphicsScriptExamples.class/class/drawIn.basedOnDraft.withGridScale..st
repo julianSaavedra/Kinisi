@@ -1,17 +1,17 @@
 utilities
-drawIn: view basedOnDraft: universeDraft
+drawIn: view basedOnDraft: universeDraft withGridScale: gridScale
 
-	| positionTranslationBlock gridScale particleDrafts sizeTranslationBlock |
+	| positionTranslationBlock particleDrafts sizeTranslationBlock gridSize |
+	"Grid scale -> Grid size - separation between lines of the grid"
 	"#@: add an interaction to the node"
 	view canvas clean.
 	view @ RTZoomableView.
+	gridSize := 10.
 	view
 		@
 			(RTGridView new
 				color: (Color gray alpha: 0.7);
-				gridSize: 10).
-	"Grid size - separation between lines of the grid"
-	gridScale := UnitProvider soleInstance kilometer with: 0.5e6.
+				gridSize: gridSize).
 	"massScale := UnitProvider soleInstance kilogram with: 1e6."
 	
 	sizeTranslationBlock := [:mass |
@@ -22,10 +22,10 @@ drawIn: view basedOnDraft: universeDraft
 		(1 max: mass amount log - minScale) * baseSize
 		].
 	
-	positionTranslationBlock := [ :position | (position x / gridScale) @ (position y / gridScale) ].
+	positionTranslationBlock := [ :position | ((position x / gridScale) @ (position y / gridScale)) * gridSize ].
 	particleDrafts := universeDraft particleDrafts.
 	particleDrafts do: [:aParticleDraft | 
-			| physicalStateShape physicalStateElement physicalStateElementPositionInGrid |
+			| physicalStateShape physicalStateElement |
 			physicalStateShape := RTEllipse new
 				borderColor: Color black;
 				color: aParticleDraft color;
@@ -33,4 +33,6 @@ drawIn: view basedOnDraft: universeDraft
 			physicalStateElement := physicalStateShape elementOn: aParticleDraft particleName.
 			view add: physicalStateElement.
 			physicalStateElement translateTo: (positionTranslationBlock value: aParticleDraft position).
-			physicalStateElement @ RTLabeled ]
+			physicalStateElement @ RTLabeled ].
+	
+	view signalUpdate

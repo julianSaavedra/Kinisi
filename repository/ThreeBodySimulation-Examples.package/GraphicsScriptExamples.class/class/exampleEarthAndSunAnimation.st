@@ -8,21 +8,20 @@ exampleEarthAndSunAnimation
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
 	view canvas camera focusOnCenter.
-	
-	
+
+
 	draft := self earthAndSunInitialUniverseDraft.
 	observableUniverseStates := OrderedCollection new.
 	ScriptExamples exampleEarthAndSunSimulation
-		withTimeAndStateDo: [:time :observableUniverseState |
-			observableUniverseStates add: observableUniverseState ].
+		withTimeAndStateDo:
+			[ :time :observableUniverseState | observableUniverseStates add: observableUniverseState ].
 
 	animation := RTActiveAnimation new.
 	animation intervalInMilliseconds: 40.
 	animation
-		blockToExecute: [
-			observableUniverseStates ifNotEmpty: [
-					self updateDraft: draft basedOn: observableUniverseStates first.
-					self drawIn: view basedOnDraft: draft.
+		blockToExecute: [ observableUniverseStates
+				ifNotEmpty: [ self updateDraft: draft basedOn: observableUniverseStates first.
+					self drawIn: view basedOnDraft: draft withGridScale: (UnitProvider soleInstance kilometer with: 0.5e6).
 					observableUniverseStates := observableUniverseStates allButFirst ] ].
 	"Starts animation"
 	animation inView: view

@@ -1,4 +1,4 @@
-example - physical state rendering
+example - single particle rendering
 exampleParticleObservationDraftGraphic
 
 	"Description: ParticleObservationDraft rendering"
