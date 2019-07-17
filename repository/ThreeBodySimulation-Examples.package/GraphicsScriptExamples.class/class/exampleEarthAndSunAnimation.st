@@ -1,29 +1,27 @@
 examples - grid - animation
 exampleEarthAndSunAnimation
 
-	| view viewSize animation observableUniverseStates descriptions |
+	| view viewSize animation draft observableUniverseStates |
+
 	view := RTView new.
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
 	view canvas camera focusOnCenter.
+
+
+	draft := self earthAndSunInitialUniverseDraft.
 	observableUniverseStates := OrderedCollection new.
-		
-	ScriptExamples exampleEarthAndSunSimulation withTimeAndStateDo:[:time :observableUniverseState |
-		observableUniverseStates add: observableUniverseState].
-			
-	"observableUniverseStates withTimeAndStateDo:[:time :observableUniverseState |
-		descriptions := self earthAndSunDescriptionBasedOn: observableUniverseState.
-		self drawIn: descriptions basedOn: view.
-		view canvas camera focusOnCenter.
-		(Delay forMilliseconds: 30) wait]"
+	ScriptExamples exampleEarthAndSunSimulation
+		withTimeAndStateDo:
+			[ :time :observableUniverseState | observableUniverseStates add: observableUniverseState ].
 
 	animation := RTActiveAnimation new.
-	animation intervalInMilliseconds: 25.
-	animation blockToExecute: [
-		observableUniverseStates ifNotEmpty: [
-			descriptions := self earthAndSunDescriptionBasedOn: observableUniverseStates first.
-			self drawIn: descriptions basedOn: view.
-			observableUniverseStates := observableUniverseStates allButFirst] ].
+	animation intervalInMilliseconds: 40.
+	animation
+		blockToExecute: [ observableUniverseStates
+				ifNotEmpty: [ self updateDraft: draft basedOn: observableUniverseStates first.
+					self drawIn: view basedOnDraft: draft withGridScale: (UnitProvider soleInstance kilometer with: 0.5e6).
+					observableUniverseStates := observableUniverseStates allButFirst ] ].
 	"Starts animation"
 	animation inView: view

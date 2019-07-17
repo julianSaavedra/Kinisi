@@ -6,13 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name",
-		"color",
-		"mass",
-		"position",
-		"velocity",
-		"acceleration"
+		"particles"
 	],
-	"name" : "Particle",
+	"name" : "ObservableUniverse",
 	"type" : "normal"
 }

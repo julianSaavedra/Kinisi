@@ -1,0 +1,4 @@
+validation
+assertPositionIsValid: aPosition
+
+	universeObservationDraft assertPositionIsNotAlreadyOccuppied: aPosition

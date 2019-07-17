@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"particleDrafts",
+		"nameGenerator",
+		"positionGenerator"
+	],
+	"name" : "UniverseObservationDraft",
+	"type" : "normal"
+}
