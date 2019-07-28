@@ -1,5 +1,5 @@
 action
 install
 
-	overridenMethod := overridenClass methodDictionary at: overridenSelector ifAbsent: [ ].
+	self storeOriginalMethod.
 	overridenClass methodDictionary at: overridenSelector put: self

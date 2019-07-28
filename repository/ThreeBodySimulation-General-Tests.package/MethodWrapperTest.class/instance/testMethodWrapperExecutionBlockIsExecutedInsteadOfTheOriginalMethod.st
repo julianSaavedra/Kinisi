@@ -1,7 +1,7 @@
 tests
 testMethodWrapperExecutionBlockIsExecutedInsteadOfTheOriginalMethod
 
-	| object wrapper |
+	| object wrapper result |
 	object := MethodWrapperTest new.
 	self assert: object methodReturningEight equals: 8.
 
@@ -11,7 +11,8 @@ testMethodWrapperExecutionBlockIsExecutedInsteadOfTheOriginalMethod
 		with: [:receiver :arguments | 0 ].
 	wrapper install.
 
-	[ self assert: object methodReturningEight equals: 0 ]
+	[ result := object methodReturningEight]
 		ensure: [ wrapper uninstall ].
 
+	self assert: result equals: 0.
 	self assert: object methodReturningEight equals: 8

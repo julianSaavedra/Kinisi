@@ -1,20 +1,19 @@
 tests
 testMethodWrapperExecutionBlockHasReceiverAndMessageArgumentsAsArguments
 
-	| object methodWasSent firstArgument secondArgument |	
+	| object firstArgument secondArgument passedReceiver passedArguments |	
 	object := MethodWrapperTest new.
 	firstArgument := #AAA.
 	secondArgument := #BBB.
-	methodWasSent := false.
 	
 	MethodWrapper
 		on: #methodWith:and:
 		in: MethodWrapperTest
 		with: [:receiver :arguments |
-			methodWasSent := true.
-			self assert: receiver equals: object.
-			self assert: arguments first equals: firstArgument.
-			self assert: arguments second equals: secondArgument ]
+			passedReceiver := receiver.
+			passedArguments := arguments ]
 		during: [ object methodWith: firstArgument and: secondArgument].
 
-	self assert: methodWasSent
+	self assert: passedReceiver equals: object.
+	self assert: passedArguments first equals: firstArgument.
+	self assert: passedArguments second equals: secondArgument

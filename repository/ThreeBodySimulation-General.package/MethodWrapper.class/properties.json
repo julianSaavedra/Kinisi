@@ -9,7 +9,8 @@
 		"overrideBlock",
 		"overridenSelector",
 		"overridenClass",
-		"overridenMethod"
+		"overridenMethod",
+		"methodWasPresent"
 	],
 	"name" : "MethodWrapper",
 	"type" : "normal"

@@ -16,7 +16,9 @@ testShapeSizeIsSetWithTheResultOfTheMassTransfomation
 
 	self
 		overrideMethodNamed: #size:
-		in: RTShape
-		with: [:receiver :arguments | self assert: arguments first equals: massTrasnformationResult ]
+		in: RTEllipse
+		with: [:receiver :arguments |
+			self assert: arguments first equals: massTrasnformationResult.
+			receiver]
 		during: [ renderer drawIn: view basedOn: physicalState ]
 	

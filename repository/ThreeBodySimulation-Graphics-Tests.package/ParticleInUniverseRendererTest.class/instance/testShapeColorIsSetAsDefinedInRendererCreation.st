@@ -16,7 +16,7 @@ testShapeColorIsSetAsDefinedInRendererCreation
 
 	self
 		overrideMethodNamed: #color:
-		in: RTShape
+		in: RTEllipse
 		with: [:receiver :arguments | self assert: arguments first equals: color ]
 		during: [ renderer drawIn: view basedOn: physicalState ]
 	
