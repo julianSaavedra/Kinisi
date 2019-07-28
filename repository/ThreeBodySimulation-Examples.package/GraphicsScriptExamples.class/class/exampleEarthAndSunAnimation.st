@@ -13,15 +13,15 @@ exampleEarthAndSunAnimation
 	draft := self earthAndSunInitialUniverseDraft.
 	observableUniverseStates := OrderedCollection new.
 	ScriptExamples exampleEarthAndSunSimulation
-		withTimeAndStateDo:
-			[ :time :observableUniverseState | observableUniverseStates add: observableUniverseState ].
+		withTimeAndStateDo: [:time :observableUniverseState | observableUniverseStates add: observableUniverseState ].
+	observableUniverseStates removeFirst.
 
 	animation := RTActiveAnimation new.
 	animation intervalInMilliseconds: 40.
 	animation
 		blockToExecute: [ observableUniverseStates
 				ifNotEmpty: [ self updateDraft: draft basedOn: observableUniverseStates first.
-					self drawIn: view basedOnDraft: draft withGridScale: (UnitProvider soleInstance kilometer with: 0.5e6).
+					self drawIn: view basedOnDraft: draft withGridScale: (UnitProvider soleInstance kilometer with: 10e6).
 					observableUniverseStates := observableUniverseStates allButFirst ] ].
 	"Starts animation"
 	animation inView: view

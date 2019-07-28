@@ -1,4 +1,4 @@
 accessing
 finalTime
 
-	^simulationSteps last key
+	^simulationSteps last time

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-General",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"overrideBlock",
+		"overridenSelector",
+		"overridenClass",
+		"overridenMethod",
+		"methodWasPresent"
+	],
+	"name" : "MethodWrapper",
+	"type" : "normal"
+}

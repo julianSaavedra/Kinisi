@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-UserInteraction-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"minimunValue",
+		"scaleMinimun"
+	],
+	"name" : "RelativeMeasureToNumberTransformation",
+	"type" : "normal"
+}

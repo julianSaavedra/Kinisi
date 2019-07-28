@@ -3,7 +3,7 @@ testFinalTimeIsTheBiggestTimeAmongOfAllSteps
 
 	| second steps simulationResult |
 	second := UnitProvider soleInstance second.
-	steps := #(1 5 3 4 2) collect: [:index | (second with: index) -> index].
+	steps := self stepResultsWithTimeInSecondsBasedOn: #(1 5 3 4 2).
 	simulationResult := SimulationResult from: steps.
 	
 	self
