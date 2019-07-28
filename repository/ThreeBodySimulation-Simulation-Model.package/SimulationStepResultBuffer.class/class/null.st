@@ -1,0 +1,4 @@
+instanceCreation
+null
+
+	^NullSimulationStepResultBuffer new

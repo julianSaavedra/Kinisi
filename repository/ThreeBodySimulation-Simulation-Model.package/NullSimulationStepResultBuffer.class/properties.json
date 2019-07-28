@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepResultBuffer",
+	"category" : "ThreeBodySimulation-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NullSimulationStepResultBuffer",
+	"type" : "normal"
+}

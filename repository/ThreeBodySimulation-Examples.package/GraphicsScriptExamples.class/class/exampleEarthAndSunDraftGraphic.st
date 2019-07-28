@@ -17,7 +17,7 @@ exampleEarthAndSunDraftGraphic
 	self
 		drawIn: view
 		basedOnDraft: self earthAndSunInitialUniverseDraft
-		withGridScale: (UnitProvider soleInstance kilometer with: 0.5e6).
+		withGridScale: (UnitProvider soleInstance kilometer with: 10e6).
 	view canvas camera focusOnCenter
 
 	"currentPosition := initialPosition.

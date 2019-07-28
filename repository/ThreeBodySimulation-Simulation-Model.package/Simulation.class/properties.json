@@ -10,7 +10,8 @@
 		"simulationDuration",
 		"stepResults",
 		"changingBlock",
-		"initialState"
+		"initialState",
+		"buffer"
 	],
 	"name" : "Simulation",
 	"type" : "normal"

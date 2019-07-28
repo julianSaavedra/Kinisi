@@ -1,10 +1,9 @@
 tests
 testTimeMomentsMustBeUniqueForEachIndividualStep
 
-	| second steps |
-	second := UnitProvider soleInstance second.
-	steps := #(1 1 2 3) collect: [:index | (second with: index) -> index].
-
+	| steps |
+	steps := self stepResultsWithTimeInSecondsBasedOn: #(1 1 2 3).
+	
 	self
 		should: [ SimulationResult from: steps ]
 		raise: SimulationError

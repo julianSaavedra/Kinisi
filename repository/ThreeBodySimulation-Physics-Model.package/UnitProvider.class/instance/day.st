@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 day
 
 	^self unitNamed: self dayName

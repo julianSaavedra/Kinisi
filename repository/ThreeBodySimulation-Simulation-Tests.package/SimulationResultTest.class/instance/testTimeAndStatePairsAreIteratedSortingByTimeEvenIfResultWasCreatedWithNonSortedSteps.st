@@ -3,7 +3,7 @@ testTimeAndStatePairsAreIteratedSortingByTimeEvenIfResultWasCreatedWithNonSorted
 
 	| second steps simulationResult previousTime |
 	second := UnitProvider soleInstance second.
-	steps := #(3 2 1) collect: [:index | (second with: index) -> index].
+	steps := self stepResultsWithTimeInSecondsBasedOn: #(3 2 1).
 	simulationResult := SimulationResult from: steps.
 	
 	previousTime := second with: 0.

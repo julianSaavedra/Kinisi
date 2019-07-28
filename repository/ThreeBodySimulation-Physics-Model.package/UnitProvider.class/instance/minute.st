@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 minute
 
 	^self unitNamed: self minuteName
