@@ -20,7 +20,7 @@ baseline: spec
 		spec package: 'ThreeBodySimulation-Graphics-Model' with: [ spec requires: 'Roassal2' ].
 		spec package: 'ThreeBodySimulation-Graphics-Tests' with: [ spec requires: #('ThreeBodySimulation-Graphics-Model' 'Roassal2') ].	
 		
-		spec package: 'ThreeBodySimulation-UserInterface-Model' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General') ].	
+		spec package: 'ThreeBodySimulation-UserInterface-Model'.
 		spec package: 'ThreeBodySimulation-UserInterface-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General') ].		
 		spec baseline: 'Aconcagua' with: [
 			spec
