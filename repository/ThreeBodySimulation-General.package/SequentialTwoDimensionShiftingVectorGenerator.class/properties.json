@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "UserElementsGenerators",
 	"category" : "ThreeBodySimulation-General",
 	"classinstvars" : [ ],
 	"pools" : [ ],

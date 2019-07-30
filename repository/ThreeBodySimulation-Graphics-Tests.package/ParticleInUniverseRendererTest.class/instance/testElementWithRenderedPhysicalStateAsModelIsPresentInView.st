@@ -1,5 +1,5 @@
 tests
-testElementWithPhysicalStateParticleNameIsPresentInView
+testElementWithRenderedPhysicalStateAsModelIsPresentInView
 
 	| view testResource physicalState renderer |
 	view := RTView new.
@@ -16,4 +16,4 @@ testElementWithPhysicalStateParticleNameIsPresentInView
 
 	renderer drawIn: view basedOn: physicalState.
 	
-	self assert: (view elements anySatisfy: [:element | element model = physicalState particleName ])
+	self assert: (view elements anySatisfy: [:element | element model == physicalState ])

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ModelValuesTransformation",
 	"category" : "ThreeBodySimulation-UserInteraction-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

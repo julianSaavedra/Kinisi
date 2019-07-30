@@ -3,7 +3,7 @@ drawIn: aView basedOn: aPhysicalState
 
 	| element shape point |
 	element := RTElement new.
-	element model: aPhysicalState particleName.
+	element model: aPhysicalState.
 	shape := RTEllipse new
 			borderColor: Color black;
 			color: color;
@@ -12,4 +12,8 @@ drawIn: aView basedOn: aPhysicalState
 	aView add: element.
 	point := positionTranformation value: aPhysicalState position.
 	element translateTo: (point x @ point y negated).
-	elementLabelling ifTrue: [ element @ RTLabeled ]
+	elementLabelling ifTrue: [
+		| label |
+		label := RTLabeled new.
+		label text: [:model | model particleName ].
+		element addInteraction: label ]
