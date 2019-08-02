@@ -12,8 +12,4 @@ drawIn: aView basedOn: aPhysicalState
 	aView add: element.
 	point := positionTranformation value: aPhysicalState position.
 	element translateTo: (point x @ point y negated).
-	elementLabelling ifTrue: [
-		| label |
-		label := RTLabeled new.
-		label text: [:model | model particleName ].
-		element addInteraction: label ]
+	elementLabelling ifTrue: [(LabelDecoration using: [:model | model particleName ]) applyOn: element ]

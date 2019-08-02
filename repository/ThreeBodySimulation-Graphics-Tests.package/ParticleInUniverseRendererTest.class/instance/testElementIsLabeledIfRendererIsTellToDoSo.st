@@ -17,8 +17,8 @@ testElementIsLabeledIfRendererIsTellToDoSo
 
 	methodWasSent := false.
 	self
-		overrideMethodNamed: #initializeElement:
-		in: RTLabeled
+		overrideMethodNamed: #particleName
+		in: PhysicalState
 		with: [:receiver :arguments | methodWasSent := true ]
 		during: [ renderer drawIn: view basedOn: physicalState ].
 

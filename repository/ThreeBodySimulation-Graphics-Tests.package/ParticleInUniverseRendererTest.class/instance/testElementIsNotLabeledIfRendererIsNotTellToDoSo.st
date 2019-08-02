@@ -15,8 +15,8 @@ testElementIsNotLabeledIfRendererIsNotTellToDoSo
 
 	methodWasSent := false.
 	self
-		overrideMethodNamed: #initializeElement:
-		in: RTLabeled
+		overrideMethodNamed: #applyOn:
+		in: LabelDecoration
 		with: [:receiver :arguments | methodWasSent := true ]
 		during: [ renderer drawIn: view basedOn: physicalState ].
 
