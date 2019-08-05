@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ModelValuesTransformation",
+	"category" : "ThreeBodySimulation-PlaygroundGraphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"minimunValue",
+		"scaleMinimun"
+	],
+	"name" : "RelativeMeasureToNumberTransformation",
+	"type" : "normal"
+}

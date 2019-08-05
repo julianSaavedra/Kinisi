@@ -1,7 +1,7 @@
 examples - grid
 exampleEarthAndSunDraftGraphic
 
-	| view viewSize |
+	| view viewSize gridConfiguration |
 
 	"Background color"
 	"#@: add an interaction to the node"
@@ -13,11 +13,11 @@ exampleEarthAndSunDraftGraphic
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
-
+	gridConfiguration := self exampleEarthAndSunGridConfiguration.
 	self
 		drawIn: view
 		basedOnDraft: self earthAndSunInitialUniverseDraft
-		withGridScale: (UnitProvider soleInstance kilometer with: 10e6).
+		with: gridConfiguration.
 	view canvas camera focusOnCenter
 
 	"currentPosition := initialPosition.

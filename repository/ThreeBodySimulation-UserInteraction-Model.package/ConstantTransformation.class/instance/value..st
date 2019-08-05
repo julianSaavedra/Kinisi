@@ -1,4 +1,0 @@
-action
-value: aParameter
- 
-	^result

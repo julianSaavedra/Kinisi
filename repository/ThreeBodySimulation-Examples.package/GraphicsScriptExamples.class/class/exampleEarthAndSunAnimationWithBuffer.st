@@ -1,14 +1,14 @@
 examples - grid - animation
 exampleEarthAndSunAnimationWithBuffer
 
-	| view viewSize animation draft day simulation timeDelta duration buffer |
+	| view viewSize animation draft day simulation timeDelta duration buffer gridConfiguration |
 
 	view := RTView new.
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
 	view canvas camera focusOnCenter.
-
+	gridConfiguration := self exampleEarthAndSunGridConfiguration.
 	draft := self earthAndSunInitialUniverseDraft.
 
 	day := UnitProvider soleInstance day.
@@ -29,8 +29,8 @@ exampleEarthAndSunAnimationWithBuffer
 	animation intervalInMilliseconds: 40.
 	animation
 		blockToExecute: [
-			self updateDraft: draft basedOn: buffer next value.
-			self drawIn: view basedOnDraft: draft withGridScale: (UnitProvider soleInstance kilometer with: 10e6).
+			"self updateDraft: draft basedOn: buffer next value."
+			self drawIn: view basedOnDraft: buffer next value with: gridConfiguration.
 		].
 	"Starts animation"
 	animation inView: view

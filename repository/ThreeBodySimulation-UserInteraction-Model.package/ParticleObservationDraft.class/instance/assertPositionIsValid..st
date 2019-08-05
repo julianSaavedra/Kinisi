@@ -1,4 +1,6 @@
 validation
 assertPositionIsValid: aPosition
 
-	universeObservationDraft assertPositionIsNotAlreadyOccuppied: aPosition
+	universeObservationDraft
+		assert: aPosition
+		IsNotAlreadyOccuppiedExceptBy: self

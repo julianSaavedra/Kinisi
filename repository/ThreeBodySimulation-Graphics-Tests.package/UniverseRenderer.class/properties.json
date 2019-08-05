@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-Graphics-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"renderersMapping",
+		"gridConfiguration"
+	],
+	"name" : "UniverseRenderer",
+	"type" : "normal"
+}
