@@ -5,7 +5,7 @@ drawIn: view basedOn: universeState
 			renderersMapping
 				at: aPhysicalState particleName
 				ifPresent: [:color |
-					| element shape position factor |
+					| element shape position factor label |
 					element := RTElement new.
 					element model: aPhysicalState.
 					shape := RTEllipse new.
@@ -15,4 +15,7 @@ drawIn: view basedOn: universeState
 					position := aPhysicalState position.
 					factor :=  gridConfiguration size / gridConfiguration scale.
 					position := (position x * factor) @ (position y negated * factor).
-					element translateTo: position ] ].
+					element translateTo: position.
+					label := RTLabeled new.
+					label text: aPhysicalState particleName.
+					element addInteraction: label  ] ].
