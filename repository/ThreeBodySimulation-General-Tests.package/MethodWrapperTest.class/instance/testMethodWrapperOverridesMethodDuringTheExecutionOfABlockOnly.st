@@ -6,7 +6,7 @@ testMethodWrapperOverridesMethodDuringTheExecutionOfABlockOnly
 	self assert: object methodReturningEight equals: 8.
 
 	MethodWrapper
-		on: #methodReturningEight
+		overriding: #methodReturningEight
 		in: MethodWrapperTest
 		with: [:receiver :arguments | 0 ]
 		during: [ result := object methodReturningEight ].

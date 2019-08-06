@@ -1,5 +1,5 @@
 tests
-testMethodWrapperExecutionBlockHasReceiverAndMessageArgumentsAsArguments
+testMethodWrapperExecutionBlockHasReceiverAndMessageArgumentsAsArgumentsWhenMethodIsProxied
 
 	| object firstArgument secondArgument passedReceiver passedArguments |	
 	object := MethodWrapperTest new.
@@ -7,9 +7,9 @@ testMethodWrapperExecutionBlockHasReceiverAndMessageArgumentsAsArguments
 	secondArgument := #BBB.
 	
 	MethodWrapper
-		on: #methodWith:and:
+		before: #methodWith:and:
 		in: MethodWrapperTest
-		with: [:receiver :arguments |
+		execute: [:receiver :arguments |
 			passedReceiver := receiver.
 			passedArguments := arguments ]
 		during: [ object methodWith: firstArgument and: secondArgument].

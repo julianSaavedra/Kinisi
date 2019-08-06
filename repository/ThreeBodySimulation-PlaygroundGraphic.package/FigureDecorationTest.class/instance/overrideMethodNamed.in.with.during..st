@@ -2,7 +2,7 @@ support
 overrideMethodNamed: selector in: class with: overrideBlock during: aBlock 
 
 	MethodWrapper
-		on: selector
+		overriding: selector
 		in: class
 		with: overrideBlock
 		during: aBlock

@@ -1,7 +1,6 @@
 initialization
-initializeOnSelector: aSelector in: aClass with: twoArgumentsBlock
+initializeOnSelector: selector in: class with: aWrappingMode
 
-	overridenSelector := aSelector.
-	overridenClass := aClass.
-	overrideBlock := twoArgumentsBlock
-	
+	wrappedSelector := selector.
+	targetClass := class.
+	wrappingMode := aWrappingMode

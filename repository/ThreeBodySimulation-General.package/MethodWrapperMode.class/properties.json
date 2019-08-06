@@ -5,13 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"wrappingMode",
-		"wrappedSelector",
-		"targetClass",
-		"wrappedMethod",
-		"methodWasPresent"
-	],
-	"name" : "MethodWrapper",
+	"instvars" : [ ],
+	"name" : "MethodWrapperMode",
 	"type" : "normal"
 }

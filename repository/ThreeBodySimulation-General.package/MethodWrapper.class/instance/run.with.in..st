@@ -1,4 +1,8 @@
 wrapping
 run: selector with: arguments in: receiver
 
-	^overrideBlock value: receiver value: arguments
+	^wrappingMode
+		valueOf: selector
+		whenSentTo: receiver
+		with: arguments
+		and: wrappedMethod
