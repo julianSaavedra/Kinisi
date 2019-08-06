@@ -10,6 +10,7 @@ drawIn: view basedOn: universeState
 					element model: aPhysicalState.
 					shape := RTEllipse new.
 					shape color: color.
+					shape size: 10.
 					element addShape: shape.
 					view add: element.
 					position := aPhysicalState position.
