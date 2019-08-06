@@ -12,6 +12,6 @@ testElementsShapeSizeIsTenIfThereIsOnlyOneParticleDraftInTheRenderedUniverseDraf
 		before: #size:
 		in: RTEllipse
 		execute: [:receiver :arguments | shapeSize := arguments first ]
-		during: [ renderer drawIn: view basedOn: universeDraft] .
+		during: [ renderer drawIn: view basedOn: universeDraft].
 
 	self assert: shapeSize equals: 10
