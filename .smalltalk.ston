@@ -10,6 +10,9 @@ SmalltalkCISpec {
   #include:{
    #packages : ['ThreeBodySimulation-*-Test']
   },
+  #exclude : {
+   #classes : [ #MethodWrapperTest ]
+    },
   #coverage : {
    #packages : ['ThreeBodySimulation*']
   }
