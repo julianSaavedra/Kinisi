@@ -2,7 +2,7 @@ tests
 testMethodWrapperCreationFailsIfObjectOfClassToBeOverridenDoesNotUnderstandTheMessageWithTheSelectorToBeOverriden
 
 	self
-		should: [ MethodWrapper on: #notImplementedMethod in: MethodWrapperTest with: [ :receiver :arg |  ] ]
+		should: [ MethodWrapper overriding: #notImplementedMethod in: MethodWrapperTest with: [:receiver :arg |  ] ]
 		raise: Error
 		withExceptionDo: [ :exception |
 			self

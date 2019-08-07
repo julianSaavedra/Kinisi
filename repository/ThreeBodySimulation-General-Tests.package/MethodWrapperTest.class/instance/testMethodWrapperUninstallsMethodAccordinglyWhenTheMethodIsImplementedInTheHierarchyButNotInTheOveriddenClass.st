@@ -10,7 +10,7 @@ testMethodWrapperUninstallsMethodAccordinglyWhenTheMethodIsImplementedInTheHiera
 	
 	textToBeReturned := 'A dummy string.'.
 	MethodWrapper
-		on: #unexpectedEqualityStringBetween:and:
+		overriding: #unexpectedEqualityStringBetween:and:
 		in: MethodWrapperTest
 		with: [:receiver :arguments | textToBeReturned ]
 		during: [ returnedText := object unexpectedEqualityStringBetween: nil and: nil ].

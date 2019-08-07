@@ -1,9 +1,9 @@
 initialization
 storeOriginalMethod
 
-	overridenClass methodDictionary
-		at: overridenSelector
+	targetClass methodDictionary
+		at: wrappedSelector
 		ifPresent: [ :compiledMethod | 
 			methodWasPresent := true.
-			overridenMethod := compiledMethod ]
+			wrappedMethod := compiledMethod ]
 		ifAbsent: [ methodWasPresent := false ]

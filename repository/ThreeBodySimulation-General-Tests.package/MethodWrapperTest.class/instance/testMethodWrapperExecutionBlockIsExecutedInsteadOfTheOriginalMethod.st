@@ -6,7 +6,7 @@ testMethodWrapperExecutionBlockIsExecutedInsteadOfTheOriginalMethod
 	self assert: object methodReturningEight equals: 8.
 
 	wrapper := MethodWrapper
-		on: #methodReturningEight
+		overriding: #methodReturningEight
 		in: MethodWrapperTest
 		with: [:receiver :arguments | 0 ].
 	wrapper install.
