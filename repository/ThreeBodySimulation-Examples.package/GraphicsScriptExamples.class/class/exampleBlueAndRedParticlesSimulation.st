@@ -1,22 +1,24 @@
 examples - grid - animation
-exampleEarthAndSunAnimationWithBuffer
+exampleBlueAndRedParticlesSimulation
 
-	| view viewSize animation universeDraft day simulation timeDelta duration buffer gridConfiguration renderer |
-
+	| view viewSize gridConfiguration universeDraft renderer unitProvider meter second timeDelta duration buffer simulation animation |
 	view := RTView new.
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
-	view openInWindowSized: viewSize titled: 'Earth and Sun'.
-	universeDraft := self earthAndSunInitialUniverseDraft.
-	gridConfiguration := self earthAndSunExampleGridConfiguration.
+	view openInWindowSized: viewSize titled: 'Red and Blue'.	
+	unitProvider := UnitProvider soleInstance.
+	meter := unitProvider meter.
+	
+	universeDraft := self universeDraftBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections.
+	gridConfiguration := GridConfiguration withColor: Color gray size: 50 andScale: (meter with: 1).
 	
 	renderer := UniverseRenderer basedOn: universeDraft and: gridConfiguration.
 	renderer drawIn: view basedOn: universeDraft.
 	GridRenderer new drawIn: view basedOn: gridConfiguration.
-
-	day := UnitProvider soleInstance day.
-	timeDelta := day with: 1.
-	duration := day with: 365.
+	
+	second := unitProvider second.
+	timeDelta := second with: 0.1.
+	duration := second with: 100.
 	buffer := SimulationStepResultBuffer real.
 	simulation := Simulation
 		startingWith: universeDraft asUniverseState
@@ -29,7 +31,7 @@ exampleEarthAndSunAnimationWithBuffer
 	simulation run.
 	
 	animation := RTActiveAnimation new.
-	animation intervalInMilliseconds: 30.
+	animation intervalInMilliseconds: 40.
 	animation
 		blockToExecute: [
 			view clean.
