@@ -1,7 +1,7 @@
 as yet unclassified
-drawIn: view basedOn: universeState
+drawIn: view basedOn: universe
 
-	universeState particleDrafts do: [:aPhysicalState | 
+	universe withComponentsDo: [:aPhysicalState | 
 			renderersMapping
 				at: aPhysicalState particleName
 				ifPresent: [:color |
@@ -18,5 +18,5 @@ drawIn: view basedOn: universeState
 					position := (position x * factor) @ (position y negated * factor).
 					element translateTo: position.
 					label := RTLabeled new.
-					label text: aPhysicalState particleName.
+					label text: [:model | model particleName].
 					element addInteraction: label  ] ].

@@ -13,7 +13,7 @@ exampleEarthAndSunDraftGraphic
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
-	gridConfiguration := self exampleEarthAndSunGridConfiguration.
+	gridConfiguration := self earthAndSunExampleGridConfiguration.
 	self
 		drawIn: view
 		basedOnDraft: self earthAndSunInitialUniverseDraft

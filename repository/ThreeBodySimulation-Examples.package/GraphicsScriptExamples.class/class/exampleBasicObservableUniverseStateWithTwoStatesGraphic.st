@@ -1,4 +1,4 @@
-examples - grid
+examples - grid - animation
 exampleBasicObservableUniverseStateWithTwoStatesGraphic
 
 	"based on RTInteractionExample >> exampleGridDraggable"

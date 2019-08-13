@@ -8,7 +8,7 @@ exampleEarthAndSunAnimation
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
 	view canvas camera focusOnCenter.
-	gridConfiguration := self exampleEarthAndSunGridConfiguration.
+	gridConfiguration := self earthAndSunExampleGridConfiguration.
 
 	draft := self earthAndSunInitialUniverseDraft.
 	observableUniverseStates := OrderedCollection new.
