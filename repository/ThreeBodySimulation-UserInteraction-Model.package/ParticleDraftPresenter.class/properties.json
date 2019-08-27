@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "ThreeBodySimulation-UserInteraction-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"particleDraft",
+		"name",
+		"nameLabel",
+		"color",
+		"colorLabel",
+		"mass",
+		"position",
+		"velocity",
+		"acceleration",
+		"view"
+	],
+	"name" : "ParticleDraftPresenter",
+	"type" : "normal"
+}

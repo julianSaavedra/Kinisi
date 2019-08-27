@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "ThreeBodySimulation-UserInteraction-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"particleDraft",
+		"view"
+	],
+	"name" : "StatePresenter",
+	"type" : "normal"
+}
