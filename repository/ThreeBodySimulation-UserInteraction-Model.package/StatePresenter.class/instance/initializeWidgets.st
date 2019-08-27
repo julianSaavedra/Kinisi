@@ -5,7 +5,7 @@ initializeWidgets
 	view script: [:rtView :canvas |
 		| viewSize particleSize particleShape physicalStateElement |
 		canvas color: Color black.
-		rtView @ RTZoomableView.
+		"rtView @ RTZoomableView."
 		viewSize := 250@250.
 		particleSize := (viewSize x min: viewSize y) // 4.
 		particleShape := RTEllipse new
@@ -15,7 +15,8 @@ initializeWidgets
 			physicalStateElement := particleShape elementOn: particleDraft.
 			rtView add: physicalStateElement.
 			physicalStateElement translateTo: 0 @ 0.
-			physicalStateElement @ RTLabeled.
+			canvas camera focusOnCenterScaled: 65@65.
+			"physicalStateElement @ RTLabeled."
 		VelocityRenderer new drawIn: rtView basedOn: particleDraft velocity holdBy: physicalStateElement.
 		PositionMarksRenderer new drawIn: rtView basedOn: particleDraft position movedFromCenterBy: 80.
 		AxisReferenceRenderer new drawIn: rtView movedFromCenterToLeftBottomCornerBy: 80].
