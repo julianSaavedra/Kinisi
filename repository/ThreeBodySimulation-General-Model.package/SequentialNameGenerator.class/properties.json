@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "UserElementsGenerators",
+	"category" : "ThreeBodySimulation-General-Model-ThreeBodySimulation-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"prefix",
+		"nextSuffix"
+	],
+	"name" : "SequentialNameGenerator",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-General-Model-ThreeBodySimulation-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wrappingMode",
+		"wrappedSelector",
+		"targetClass",
+		"wrappedMethod",
+		"methodWasPresent"
+	],
+	"name" : "MethodWrapper",
+	"type" : "normal"
+}

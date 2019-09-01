@@ -1,0 +1,4 @@
+actions
+refresh
+
+	view refresh

@@ -3,7 +3,7 @@ testPositionReferenceMarksAreRenderedInView
 
 	| view position elementModels |
 	view := RTView new.
-	position := MeasureVector x: 100 y: 37.5 z: 0 with: UnitProvider soleInstance meter.
+	position := MeasureVector x: 100 y: 37.5 negated z: 0 with: UnitProvider soleInstance meter.
 	
 	PositionMarksRenderer new
 		drawIn: view
@@ -13,4 +13,4 @@ testPositionReferenceMarksAreRenderedInView
 	elementModels := view elements collect: [:element | element model ].
 	self
 		assertCollection: elementModels
-		includesAll: #(#'100 m' #'37.5 m')
+		includesAll: #(#'X: 100 m' #'Y: -37.5 m')

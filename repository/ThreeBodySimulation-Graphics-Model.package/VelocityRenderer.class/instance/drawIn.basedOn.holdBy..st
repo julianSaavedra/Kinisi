@@ -1,4 +1,4 @@
-actions
+private
 drawIn: aView basedOn: velocityVector holdBy: physicalStateElement
 
 	| velocityEndPointElement |

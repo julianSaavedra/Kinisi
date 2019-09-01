@@ -1,12 +1,10 @@
-test - review
+test
 testUniverseRendererDoesNotAddElementsToViewIfCreatedFromAnEmptyUniverseDraft
 
-	| view universeDraft renderer |
-	view := RTView new.
+	| universeDraft renderer |
 	universeDraft := UniverseObservationDraft new.
 	self assert: universeDraft particleDrafts isEmpty.
-
-	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfiguration.
+	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
 
 	renderer drawIn: view basedOn: universeDraft.
 

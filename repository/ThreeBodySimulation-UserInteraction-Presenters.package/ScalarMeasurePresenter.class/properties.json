@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "ThreeBodySimulation-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"measure",
+		"name",
+		"amount",
+		"unit",
+		"measureChangeBlock",
+		"unitOptions",
+		"label",
+		"postModelChangeAction"
+	],
+	"name" : "ScalarMeasurePresenter",
+	"type" : "normal"
+}
