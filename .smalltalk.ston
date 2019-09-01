@@ -14,7 +14,7 @@ SmalltalkCISpec {
    #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTests ]
     },
   #coverage : {
-   #packages : ['ThreeBodySimulation*']
+   #packages : ['ThreeBodySimulation-*-Model']
   }
  }
 }
