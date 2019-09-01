@@ -1,5 +1,5 @@
 tests
-testPositionMarksAreRenderedIfRendererIsTellToDoSo
+testPositionMarksAreRenderedIfRendererIsToldToDoSo
 
 	| renderer positionMarksWereRendered |
 	particleDraft position: testResource oneMeterInAllComponentsVector.

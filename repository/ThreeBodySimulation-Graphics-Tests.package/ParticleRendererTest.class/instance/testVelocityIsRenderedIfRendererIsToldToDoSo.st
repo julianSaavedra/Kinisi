@@ -1,5 +1,5 @@
 tests
-testVelocityIsRenderedIfRendererIsTellToDoSo
+testVelocityIsRenderedIfRendererIsToldToDoSo
 
 	| renderer velocityWasRendered |
 	particleDraft velocity: (testResource velocityVectorWithAllComponentsWithAmount: 1).

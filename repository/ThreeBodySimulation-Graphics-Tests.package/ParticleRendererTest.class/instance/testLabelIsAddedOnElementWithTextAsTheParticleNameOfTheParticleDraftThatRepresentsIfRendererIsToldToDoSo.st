@@ -1,5 +1,5 @@
 tests
-testLabelIsAddedOnElementWithTextAsTheParticleNameOfTheParticleDraftThatRepresentsIfRendererIsTellToDoSo
+testLabelIsAddedOnElementWithTextAsTheParticleNameOfTheParticleDraftThatRepresentsIfRendererIsToldToDoSo
 
 	| renderer labelText |
 	particleDraft particleName: 'ParticleABCDE'.
