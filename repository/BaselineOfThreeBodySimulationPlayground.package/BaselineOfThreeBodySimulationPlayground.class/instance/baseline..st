@@ -6,10 +6,10 @@ baseline: spec
 	spec for: #common do:[
 		
 		spec package: 'ThreeBodySimulation-Physics-Model' with: [ spec requires: 'Aconcagua' ].
-		spec package: 'ThreeBodySimulation-Physics-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General') ].
+		spec package: 'ThreeBodySimulation-Physics-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General-Model') ].
 		
 		spec package: 'ThreeBodySimulation-General-Model' with: [ spec requires: 'ThreeBodySimulation-Physics-Model' ].
-		spec package: 'ThreeBodySimulation-General-Tests' with: [ spec requires: 'ThreeBodySimulation-General' ].
+		spec package: 'ThreeBodySimulation-General-Tests' with: [ spec requires: 'ThreeBodySimulation-General-Model' ].
 
 		spec package: 'ThreeBodySimulation-Simulation-Model'.
 		spec package: 'ThreeBodySimulation-Simulation-Tests' with: [ spec requires: 'Aconcagua' ].		
@@ -23,7 +23,7 @@ baseline: spec
 		
 		spec package: 'ThreeBodySimulation-UserInteraction-Model'.
 		spec package: 'ThreeBodySimulation-UserInteraction-Presenters' with: [ spec requires: 'Roassal2' ].
-		spec package: 'ThreeBodySimulation-UserInteraction-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General') ].		
+		spec package: 'ThreeBodySimulation-UserInteraction-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General-Model') ].		
 		spec baseline: 'Aconcagua' with: [
 			spec
 				repository: 'github://ba-st/Aconcagua:v7.0.0/repository';
