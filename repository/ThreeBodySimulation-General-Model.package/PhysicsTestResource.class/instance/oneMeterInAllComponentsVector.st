@@ -1,0 +1,4 @@
+constants
+oneMeterInAllComponentsVector
+
+	^self vectorWithAllComponentsInMeterAndAmount: 1

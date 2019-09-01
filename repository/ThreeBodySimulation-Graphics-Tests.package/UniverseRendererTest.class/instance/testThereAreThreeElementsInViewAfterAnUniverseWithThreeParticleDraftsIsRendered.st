@@ -1,16 +1,14 @@
-test - review
+test
 testThereAreThreeElementsInViewAfterAnUniverseWithThreeParticleDraftsIsRendered
 
-	| view universeDraft renderer |
-	view := RTView new.
+	| universeDraft renderer |
 	universeDraft := UniverseObservationDraft new.
 	universeDraft
 		newParticleObservationDraft;
 		newParticleObservationDraft;
 		newParticleObservationDraft.
 	self assert: universeDraft particleDrafts size equals: 3.
-
-	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfiguration.
+	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
 
 	renderer drawIn: view basedOn: universeDraft.
 

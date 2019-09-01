@@ -1,12 +1,11 @@
-test - review
+test
 testLabelIsAddedOnElementWithTextAsTheParticleNameOfTheParticleDraftThatRepresents
 
-	| view universeDraft particleDraft renderer labelText |
-	view := RTView new.
+	| universeDraft particleDraft renderer labelText |
 	universeDraft := UniverseObservationDraft new.
 	particleDraft := universeDraft newParticleObservationDraft.
 	particleDraft particleName: 'ParticleABCDE'.
-	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfiguration.
+	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
 	
 	self
 		before: #text:

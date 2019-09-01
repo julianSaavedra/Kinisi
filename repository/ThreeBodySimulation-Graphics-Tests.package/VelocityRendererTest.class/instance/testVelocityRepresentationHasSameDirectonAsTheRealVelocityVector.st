@@ -15,7 +15,7 @@ testVelocityRepresentationHasSameDirectonAsTheRealVelocityVector
 		holdBy: physicalStateElement.
 
 	"Really bad way of obtaining Velocity edge - it depends on the order of internal storing of shapes.
-	Change to use it with physicalStateElement isntead (?)"
+	Change to use it with physicalStateElement instead (?)"
 	velocityEdge := view canvas shapeForPosition: 0@0.
 	self
 		assert: velocityEdge

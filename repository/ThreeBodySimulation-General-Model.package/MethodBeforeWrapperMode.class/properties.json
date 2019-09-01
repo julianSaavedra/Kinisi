@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MethodWrapperMode",
+	"category" : "ThreeBodySimulation-General-Model-ThreeBodySimulation-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"preMethodBlock"
+	],
+	"name" : "MethodBeforeWrapperMode",
+	"type" : "normal"
+}

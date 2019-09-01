@@ -8,7 +8,7 @@ baseline: spec
 		spec package: 'ThreeBodySimulation-Physics-Model' with: [ spec requires: 'Aconcagua' ].
 		spec package: 'ThreeBodySimulation-Physics-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General') ].
 		
-		spec package: 'ThreeBodySimulation-General' with: [ spec requires: 'ThreeBodySimulation-Physics-Model' ].
+		spec package: 'ThreeBodySimulation-General-Model' with: [ spec requires: 'ThreeBodySimulation-Physics-Model' ].
 		spec package: 'ThreeBodySimulation-General-Tests' with: [ spec requires: 'ThreeBodySimulation-General' ].
 
 		spec package: 'ThreeBodySimulation-Simulation-Model'.
@@ -22,6 +22,7 @@ baseline: spec
 		spec package: 'ThreeBodySimulation-Graphics-Tests' with: [ spec requires: #('ThreeBodySimulation-Graphics-Model' 'Roassal2') ].	
 		
 		spec package: 'ThreeBodySimulation-UserInteraction-Model'.
+		spec package: 'ThreeBodySimulation-UserInteraction-Presenters' with: [ spec requires: 'Roassal2' ].
 		spec package: 'ThreeBodySimulation-UserInteraction-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General') ].		
 		spec baseline: 'Aconcagua' with: [
 			spec

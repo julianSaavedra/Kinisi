@@ -2,6 +2,8 @@ initialization
 initializedBasedOn: universeDraft and: configuration
 
 	renderersMapping := Dictionary new.
-	gridConfiguration := configuration.
 	universeDraft particleDrafts do: [:particleDraft |
-		renderersMapping at: particleDraft particleName put: particleDraft color ].
+		| particleRenderer |
+		particleRenderer := ParticleRenderer basedOn: particleDraft with: 10 using: configuration size / configuration scale.
+		particleRenderer labelElementWhenRendering.
+		renderersMapping at: particleDraft particleName put: particleRenderer ].
