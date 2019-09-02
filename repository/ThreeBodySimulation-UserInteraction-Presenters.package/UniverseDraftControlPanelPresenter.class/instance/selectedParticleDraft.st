@@ -1,0 +1,4 @@
+initialization
+selectedParticleDraft
+
+	^selectedParticleDraft

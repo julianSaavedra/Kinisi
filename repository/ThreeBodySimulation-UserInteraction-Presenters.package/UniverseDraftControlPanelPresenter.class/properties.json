@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "ThreeBodySimulation-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"universeDraft",
+		"addButton",
+		"resetButton",
+		"particleDraftList",
+		"selectedParticleDraft"
+	],
+	"name" : "UniverseDraftControlPanelPresenter",
+	"type" : "normal"
+}
