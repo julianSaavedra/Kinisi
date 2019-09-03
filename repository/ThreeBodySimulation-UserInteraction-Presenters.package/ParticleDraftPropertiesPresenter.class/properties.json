@@ -15,7 +15,8 @@
 		"position",
 		"velocity",
 		"acceleration",
-		"postColorChangeBlock"
+		"postColorChangeBlock",
+		"postNameChangeBlock"
 	],
 	"name" : "ParticleDraftPropertiesPresenter",
 	"type" : "normal"

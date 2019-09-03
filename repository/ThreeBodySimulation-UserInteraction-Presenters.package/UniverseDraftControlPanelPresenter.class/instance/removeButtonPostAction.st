@@ -3,4 +3,5 @@ removeButtonPostAction
 
 	particleDraftList selectedItem ifNotNil: [:selection |
 		universeDraft remove: selection.
-		self resetParticleDraftList ]
+		self resetParticleDraftList ].
+	self performUniverseDraftUpdateAction

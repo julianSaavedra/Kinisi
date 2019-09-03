@@ -3,4 +3,5 @@ initializeNameWidgets
 
 	nameLabel := self newLabel.
 	nameLabel label: 'Name'.
-	name := self newTextInput
+	name := self newTextInput.
+	postNameChangeBlock := []

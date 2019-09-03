@@ -11,7 +11,8 @@
 		"removeButton",
 		"resetButton",
 		"particleDraftList",
-		"selectedParticleDraft"
+		"selectedParticleDraft",
+		"universeDraftUpdateAction"
 	],
 	"name" : "UniverseDraftControlPanelPresenter",
 	"type" : "normal"
