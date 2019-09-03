@@ -1,4 +1,4 @@
-validation
+private
 assertNoneSatisfy: oneArgumentBlock except: aParticleDraft ifFailsSignal: signalMessage
 
 	| particleDraftsToBeChecked |

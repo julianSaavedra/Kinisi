@@ -1,5 +1,5 @@
 tests
-testParticleNameModificationDoesNotFailsIfNewNameIsnIsCurrentlyTheSameForTheModifidedParticleDraft
+testParticleNameModificationDoesNotFailIfNewNameIsnIsCurrentlyTheSameForTheModifidedParticleDraft
 
 	| universeDraft aDraft anotherDraft |
 	universeDraft := UniverseObservationDraft new.

@@ -1,11 +1,8 @@
 initialization
 initializePresenter
 
-	addButton whenActionPerformedDo: [
-		| previousSelectedItem |
-		previousSelectedItem := particleDraftList selectedItem.
-		particleDraftList items: universeDraft particleDrafts.
-		previousSelectedItem ifNil: [ particleDraftList updateList ]].
-	
-	resetButton whenActionPerformedDo: [ particleDraftList items: universeDraft particleDrafts ].
-	particleDraftList whenSelectedItemChanged: [:selection | self updateParticleDraftPresenterWith: selection ]
+	addButton whenActionPerformedDo: [ self addButtonPostAction ].
+	removeButton action: [ self removeButtonPostAction ].
+	resetButton whenActionPerformedDo: [ self resetButtonPostAction ].
+	particleDraftList
+		whenSelectedItemChanged: [ :selection | self updateSelectedParticleDraft ]

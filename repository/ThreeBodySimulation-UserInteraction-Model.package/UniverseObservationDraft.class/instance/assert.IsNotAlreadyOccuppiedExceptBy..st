@@ -1,4 +1,4 @@
-private
+validation
 assert: aPosition IsNotAlreadyOccuppiedExceptBy: aParticleDraft
 
 	self
