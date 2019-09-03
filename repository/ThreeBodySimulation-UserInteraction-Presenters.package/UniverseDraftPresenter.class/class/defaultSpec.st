@@ -2,6 +2,6 @@ specs
 defaultSpec
 
 	^SpecRowLayout composed
-		add: #controlPanel;
+		add: #controlPanel width: 350;
 		add: #view;
 		yourself
