@@ -1,7 +1,7 @@
 specs
-defaultSpec
+rowSpec
 
 	^SpecRowLayout composed
-		add: #controlPanel;
+		add: #properties;
 		add: #view;
 		yourself

@@ -6,10 +6,17 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"universeDraft",
-		"controlPanel",
-		"view"
+		"particleDraft",
+		"name",
+		"nameLabel",
+		"color",
+		"colorLabel",
+		"mass",
+		"position",
+		"velocity",
+		"acceleration",
+		"postColorChangeBlock"
 	],
-	"name" : "UniverseDraftPresenter",
+	"name" : "ParticleDraftPropertiesPresenter",
 	"type" : "normal"
 }

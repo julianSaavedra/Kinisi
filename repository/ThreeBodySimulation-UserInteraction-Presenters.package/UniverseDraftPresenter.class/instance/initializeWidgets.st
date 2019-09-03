@@ -1,6 +1,7 @@
 initialization
 initializeWidgets
 
+	controlPanel := self instantiate: UniverseDraftControlPanelPresenter on: universeDraft.
 	view := self instantiate: RoassalModel.
 	view script: [ :rtView :canvas |
 		| gridConfiguration |
@@ -11,4 +12,4 @@ initializeWidgets
 		GridRenderer new drawIn: rtView basedOn: gridConfiguration
 			"canvas camera scale: 1; translateTo: 0@0" ].
 
-	self focusOrder add: view
+	self focusOrder add: controlPanel; add: view

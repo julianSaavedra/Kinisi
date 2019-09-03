@@ -6,4 +6,5 @@ initializeColorWidgets
 	color := self newDropList.
 	color
 		items: (Color registeredColorNames sort collect: [:colorName | Color named: colorName]);
-		displayBlock: [:selectedColor | selectedColor name ]
+		displayBlock: [:selectedColor | selectedColor name ].
+	postColorChangeBlock := [].
