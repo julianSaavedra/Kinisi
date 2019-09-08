@@ -9,8 +9,4 @@ initializePresenter
 			self updateTitle] on: Error do: [:error |
 				ErrorDialogWindow new text: error messageText; 	open.
 				name text: particleDraft particleName] ].
-	color
-		setSelectedItem: particleDraft color;
-		whenSelectedItemChanged: [:newColor |
-			particleDraft color: newColor.
-			postColorChangeBlock value ]
+	color changeModelWith: [:newColor | particleDraft color: newColor ]

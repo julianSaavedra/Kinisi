@@ -1,7 +1,7 @@
 accessing
 whenChangedDo: block
 
-	self whenNameChangesDo: block.
-	self whenPositionChangesDo: block.
-	self whenVelocityChangesDo: block.
-	self whenColorChangesDo: block
+	postNameChangeBlock := block.
+	position whenModelChangesDo: block.
+	velocity whenModelChangesDo: block.
+	color whenChangedDo: block

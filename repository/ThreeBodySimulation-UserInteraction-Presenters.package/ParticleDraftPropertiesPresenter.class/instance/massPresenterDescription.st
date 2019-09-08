@@ -10,6 +10,6 @@ massPresenterDescription
 	description := MeasurePresenterDescription
 		labeled: 'Mass'
 		with: particleDraft mass
-		changingModelWith: [ :newMass | particleDraft mass: newMass ]
+		changingModelWith: [:newMass | particleDraft mass: newMass ]
 		and: massUnitsArray.
 	^ description

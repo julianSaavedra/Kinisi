@@ -6,16 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"particleDraft",
-		"name",
-		"nameLabel",
-		"color",
-		"mass",
-		"position",
-		"velocity",
-		"acceleration",
-		"postNameChangeBlock"
+		"gridConfiguration"
 	],
-	"name" : "ParticleDraftPropertiesPresenter",
+	"name" : "GridConfigurationPresenter",
 	"type" : "normal"
 }
