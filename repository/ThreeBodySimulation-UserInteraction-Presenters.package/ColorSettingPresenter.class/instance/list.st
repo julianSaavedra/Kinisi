@@ -1,4 +1,4 @@
 initialization
-view
+list
 
-	^view
+	^list

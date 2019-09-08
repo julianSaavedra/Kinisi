@@ -7,10 +7,15 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"particleDraft",
-		"properties",
-		"view",
-		"particleDraftUpdatePostAction"
+		"name",
+		"nameLabel",
+		"color",
+		"mass",
+		"position",
+		"velocity",
+		"acceleration",
+		"postNameChangeBlock"
 	],
-	"name" : "ParticleDraftPresenter",
+	"name" : "ParticleDraftPropertiesPresenter",
 	"type" : "normal"
 }

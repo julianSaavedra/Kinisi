@@ -1,8 +1,6 @@
 initialization
 initializeWidgets
 
-	self initializeNameWidgets.
-	self initializeColorWidgets.
-	self initializeMeasureWidgets.
+	self initializeProperties.
 	self initializeView.
 	self setFocusOrder

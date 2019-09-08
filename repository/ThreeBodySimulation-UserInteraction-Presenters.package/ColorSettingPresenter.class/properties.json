@@ -6,11 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"particleDraft",
-		"properties",
-		"view",
-		"particleDraftUpdatePostAction"
+		"currentColor",
+		"label",
+		"list",
+		"modelChangingBlock",
+		"postColorChangeBlock"
 	],
-	"name" : "ParticleDraftPresenter",
+	"name" : "ColorSettingPresenter",
 	"type" : "normal"
 }

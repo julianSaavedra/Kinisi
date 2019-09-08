@@ -1,4 +1,4 @@
 initialization
-view
+label
 
-	^view
+	^label

@@ -6,11 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"particleDraft",
-		"properties",
-		"view",
-		"particleDraftUpdatePostAction"
+		"universeDraft",
+		"controlPanel",
+		"view"
 	],
-	"name" : "ParticleDraftPresenter",
+	"name" : "UniverseDraftPresenter",
 	"type" : "normal"
 }

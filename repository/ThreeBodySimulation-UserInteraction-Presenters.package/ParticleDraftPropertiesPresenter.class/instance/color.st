@@ -1,4 +1,4 @@
-api
+accessing
 color
 
 	^color

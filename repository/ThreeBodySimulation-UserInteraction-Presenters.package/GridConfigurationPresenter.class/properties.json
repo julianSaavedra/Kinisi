@@ -6,11 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"particleDraft",
-		"properties",
-		"view",
-		"particleDraftUpdatePostAction"
+		"gridConfiguration"
 	],
-	"name" : "ParticleDraftPresenter",
+	"name" : "GridConfigurationPresenter",
 	"type" : "normal"
 }

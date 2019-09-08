@@ -1,4 +1,4 @@
 initialization
-view
+extent
 
-	^view
+	^175@30

@@ -1,0 +1,5 @@
+private
+resetButtonPostAction
+
+	self resetParticleDraftList.
+	self performUniverseDraftUpdateAction

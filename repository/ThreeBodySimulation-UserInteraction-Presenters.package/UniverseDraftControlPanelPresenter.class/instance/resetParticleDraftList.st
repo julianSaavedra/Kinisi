@@ -1,0 +1,6 @@
+private
+resetParticleDraftList
+
+	self setParticleDraftListItemsFromUniverse.
+	self updateSelectedParticleDraft.
+	self buildSpecAgain

@@ -1,4 +1,0 @@
-api
-colorLabel
-
-	^colorLabel

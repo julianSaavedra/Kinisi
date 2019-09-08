@@ -1,4 +1,4 @@
 initialization
-view
+title
 
-	^view
+	^'Color'
