@@ -6,4 +6,4 @@ testGridConfigurationIsCreatedByDefaultHasMinimunSizeAndDefaultValues
 
 	self assert: configuration size equals: configuration minimunSize.
 	self assert: configuration color equals: configuration defaultColor.
-	self assert: configuration scale equals: configuration defaultMeasure
+	self assert: configuration distance equals: configuration defaultDistance

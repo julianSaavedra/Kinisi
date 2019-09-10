@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"gridConfiguration"
+		"gridConfiguration",
+		"color",
+		"size",
+		"distance"
 	],
 	"name" : "GridConfigurationPresenter",
 	"type" : "normal"

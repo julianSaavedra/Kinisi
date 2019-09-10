@@ -1,5 +1,5 @@
 tests
-testSizeIsModifiedTo100
+testSizeIsModifiedToOneHundred
 
 	| configuration |
 	configuration := GridConfiguration new.
