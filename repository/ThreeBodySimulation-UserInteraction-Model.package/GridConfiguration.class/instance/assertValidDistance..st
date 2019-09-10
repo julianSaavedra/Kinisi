@@ -1,5 +1,5 @@
 validation
-assertValidMeasure: newMeasure
+assertValidDistance: newMeasure
 
 	newMeasure negative
 		ifTrue: [ UserInterfaceError signal: 'Grid measure cannot be negative.' ]

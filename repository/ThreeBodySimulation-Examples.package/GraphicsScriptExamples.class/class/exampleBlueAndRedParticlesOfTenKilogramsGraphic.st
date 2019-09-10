@@ -10,7 +10,7 @@ exampleBlueAndRedParticlesOfTenKilogramsGraphic
 	gridConfiguration := GridConfiguration
 		withColor: Color gray
 		size: 50
-		andScale: (meter with: 1).
+		andDistance: (meter with: 1).
 		
 	universeDraft := self universeDraftBlueAndRedParticlesOfTenKilogramsMovingInOppositeDirections.
 		
