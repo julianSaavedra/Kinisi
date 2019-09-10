@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 metricTon
 
 	^self unitNamed: self metricTonName 

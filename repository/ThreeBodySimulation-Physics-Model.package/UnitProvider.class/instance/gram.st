@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 gram
 
 	^self unitNamed: self gramName

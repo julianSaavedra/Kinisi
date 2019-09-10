@@ -5,7 +5,8 @@ universeDraftBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections
 	unitProvider := UnitProvider soleInstance.
 	
 	oneMeterInXPosition := MeasureVector x: 1 with: unitProvider meter.
-	oneMeterPerSecondVelocity := MeasureVector y: 1 with: unitProvider standardVelocityUnit.
+	oneMeterPerSecondVelocity := MeasureVector y: 1.29 with: unitProvider standardVelocityUnit.
+	"oneMeterPerSecondVelocity := MeasureVector y: 1.82678406 with: unitProvider standardVelocityUnit."
 	oneTon := unitProvider kilogram with: 1e11.
 	
 	universeDraft := UniverseObservationDraft new.

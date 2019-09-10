@@ -1,4 +1,4 @@
-as yet unclassified
+unit names
 gramName
 
 	^#Gram
