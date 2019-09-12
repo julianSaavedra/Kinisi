@@ -5,8 +5,8 @@ defaultSpec
 		newRow:[:row |
 			row
 				add: #nameLabel left: 0 right: 0.9;
-				add: #name left: 0.1 right: 0.45;
-				add: #color left: 0.55 right: 0] height: 20;
+				add: #name left: 0.1 right: 0.5;
+				add: #color left: 0.5 right: 0] height: 20;
 		add: #mass height: 25;
 		add: #position height: 75;
 		add: #velocity height: 75;

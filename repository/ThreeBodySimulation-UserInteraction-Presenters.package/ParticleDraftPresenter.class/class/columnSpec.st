@@ -2,6 +2,6 @@ specs
 columnSpec
 
 	^SpecColumnLayout composed
-		add: #properties;
+		add: #properties height: 270;
 		add: #view;
 		yourself

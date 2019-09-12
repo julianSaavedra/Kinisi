@@ -1,6 +1,13 @@
 specs
 defaultSpec
-
+		
 	^SpecLayout composed
-		newRow: [:row | row add: #name left: 0 right: 0.9 ; add: #amount left: 0.1 right: 0.45; add: #unit left: 0.55 right: 0 ] height: 20;
+		newRow: [:row |
+			row
+				add: #name width: 70;
+				newRow: [:valuesRow |
+					valuesRow
+						add: #amount origin: 0@0 corner: 0.4@1;
+						add: #unit origin: 0.4@0 corner: 1@1]
+			] height: 20;
 		yourself
