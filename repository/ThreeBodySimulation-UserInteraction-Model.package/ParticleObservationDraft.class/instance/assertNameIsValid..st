@@ -1,5 +1,7 @@
 validation
-assertNameIsValid: aName
- 
-	aName ifEmpty: [ SimulationError signal: 'Name cannot be empty.' ].
-	universeObservationDraft assertNameIsNotAlreadyUsed: aName
+assertNameIsValid: futureName
+
+	self assertNotEmpty: futureName.
+	universeObservationDraft
+		assert: futureName
+		isNotAlreadyUsedExceptBy: self

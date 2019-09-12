@@ -1,4 +1,4 @@
 model access
 extent
 
-	^600@20
+	^250@20
