@@ -1,0 +1,4 @@
+initialization
+title
+
+	^'User workbench'
