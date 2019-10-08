@@ -1,0 +1,4 @@
+action
+processAsSimulationHasFinished
+
+	self subclassResponsibility

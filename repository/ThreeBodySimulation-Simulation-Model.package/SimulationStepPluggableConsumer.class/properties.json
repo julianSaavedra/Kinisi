@@ -1,18 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SimulationStepConsumer",
 	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stepDuration",
-		"simulationDuration",
-		"stepResults",
-		"changingBlock",
-		"initialState",
-		"consumer"
+		"consumingSimulationStepResultAction",
+		"finishedSimulationAction"
 	],
-	"name" : "Simulation",
+	"name" : "SimulationStepPluggableConsumer",
 	"type" : "normal"
 }

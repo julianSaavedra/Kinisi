@@ -29,12 +29,12 @@ exampleEarthAndSunAnimationWithBuffer
 	simulation run.
 	
 	animation := RTActiveAnimation new.
-	animation intervalInMilliseconds: 30.
+	animation intervalInMilliseconds: 40.
 	animation
 		blockToExecute: [
 			view clean.
 			renderer drawIn: view basedOn: buffer next value.
-			GridRenderer new drawIn: view basedOn: gridConfiguration
+			"GridRenderer new drawIn: view basedOn: gridConfiguration"
 		].
 	"Starts animation"
 	animation inView: view

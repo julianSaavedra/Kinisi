@@ -5,14 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"stepDuration",
-		"simulationDuration",
-		"stepResults",
-		"changingBlock",
-		"initialState",
-		"consumer"
-	],
-	"name" : "Simulation",
+	"instvars" : [ ],
+	"name" : "SimulationDataPackage",
 	"type" : "normal"
 }

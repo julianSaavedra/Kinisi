@@ -1,0 +1,4 @@
+initialization
+initializeWith: aSimulationStepResult
+
+	simulationStepResult := aSimulationStepResult
