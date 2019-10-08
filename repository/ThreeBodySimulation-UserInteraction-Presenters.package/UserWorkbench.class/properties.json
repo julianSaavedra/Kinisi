@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"initialState",
+		"simulationConfiguration",
+		"gridConfiguration"
+	],
+	"name" : "UserWorkbench",
+	"type" : "normal"
+}

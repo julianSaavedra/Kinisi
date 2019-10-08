@@ -1,5 +1,5 @@
 instance creation
-startingWith: initialState changingBy: aBlock over: stepDuration during: simulationDuration informingStepsTo: aBuffer
+startingWith: initialState changingBy: aBlock over: stepDuration during: simulationDuration informingStepsTo: consumer
 
 	self assertValid: simulationDuration and: stepDuration. 
 	^self new
@@ -7,4 +7,4 @@ startingWith: initialState changingBy: aBlock over: stepDuration during: simulat
 		changingBy: aBlock
 		over: stepDuration
 		during: simulationDuration
-		informingStepsTo: aBuffer
+		informingStepsTo: consumer

@@ -1,0 +1,4 @@
+action
+processSimulationStepResult: stepResult
+
+	self subclassResponsibility

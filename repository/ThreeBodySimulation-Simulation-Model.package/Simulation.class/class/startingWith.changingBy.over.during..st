@@ -6,4 +6,4 @@ startingWith: initialState changingBy: aBlock over: stepDuration during: simulat
 		changingBy: aBlock
 		over: stepDuration
 		during: simulationDuration
-		informingStepsTo: SimulationStepResultBuffer null
+		informingStepsTo: SimulationStepNullConsumer new

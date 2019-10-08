@@ -1,18 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SimulationDataPackage",
 	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stepDuration",
-		"simulationDuration",
-		"stepResults",
-		"changingBlock",
-		"initialState",
-		"consumer"
+		"simulationStepResult"
 	],
-	"name" : "Simulation",
+	"name" : "SimulationStepResultPackage",
 	"type" : "normal"
 }
