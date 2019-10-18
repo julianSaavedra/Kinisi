@@ -1,7 +1,7 @@
 examples - grid - animation
 exampleBlueAndRedParticlesSimulation
 
-	| view viewSize gridConfiguration universeDraft renderer unitProvider meter second timeDelta duration buffer simulation animation |
+	| view viewSize gridConfiguration universeDraft renderer unitProvider meter second timeDelta duration buffer bufferWriterConsumer reader endPointConsumer simulation animation |
 	view := RTView new.
 	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
@@ -19,24 +19,27 @@ exampleBlueAndRedParticlesSimulation
 	second := unitProvider second.
 	timeDelta := second with: 0.1.
 	duration := second with: 100.
-	buffer := SimulationStepResultBuffer real.
+	buffer := Buffer new.
+	reader := BufferPluggableReader on: buffer withDataDo: [:simulationStep | endPointConsumer process: simulationStep ].
+	endPointConsumer := SimulationStepPluggableConsumer do: [:simulationStep |
+		view clean.
+		renderer drawIn: view basedOn: simulationStep value.
+		GridRenderer new drawIn: view basedOn: gridConfiguration ].
+	
+	bufferWriterConsumer := SimulationStepBufferWriterConsumer on: buffer.
+	
 	simulation := Simulation
 		startingWith: universeDraft asUniverseState
 		changingBy: [:stepDuration :currentState |
 			(UniverseStateChange from: currentState during: stepDuration) finalState ]
 		over: timeDelta
 		during: duration
-		informingStepsTo: buffer.
+		informingStepsTo: bufferWriterConsumer.
 
 	simulation run.
 	
 	animation := RTActiveAnimation new.
 	animation intervalInMilliseconds: 40.
-	animation
-		blockToExecute: [
-			view clean.
-			renderer drawIn: view basedOn: buffer next value.
-			GridRenderer new drawIn: view basedOn: gridConfiguration
-		].
+	animation blockToExecute: [ reader read ].
 	"Starts animation"
 	animation inView: view

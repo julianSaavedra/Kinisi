@@ -1,0 +1,4 @@
+actions
+processPackageAsBufferIsNotStarted
+
+	bufferNotStartedAction value

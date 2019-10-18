@@ -1,4 +1,4 @@
 action
 process: simulationDataPackage
 
-	self subclassResponsibility
+	buffer store: simulationDataPackage

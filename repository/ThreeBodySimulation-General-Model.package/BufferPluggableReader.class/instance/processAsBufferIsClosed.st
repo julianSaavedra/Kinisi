@@ -1,0 +1,4 @@
+actions
+processAsBufferIsClosed
+
+	bufferIsClosed value

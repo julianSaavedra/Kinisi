@@ -1,4 +1,0 @@
-as yet unclassified
-beProcessedBy: consumer
-
-	consumer processPackageAsBufferIsNotStarted

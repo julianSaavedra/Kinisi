@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BufferPackage",
+	"category" : "ThreeBodySimulation-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dataFromBuffer",
+		"data"
+	],
+	"name" : "DataPackage",
+	"type" : "normal"
+}
