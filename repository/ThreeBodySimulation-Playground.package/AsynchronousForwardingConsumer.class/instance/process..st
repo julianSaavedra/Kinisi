@@ -1,4 +1,4 @@
 action
 process: simulationDataPackage
 
-	self subclassResponsibility
+	packages add: simulationDataPackage

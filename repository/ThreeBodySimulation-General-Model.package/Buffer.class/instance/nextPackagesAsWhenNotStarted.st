@@ -1,0 +1,4 @@
+private
+nextPackagesAsWhenNotStarted
+
+	^NotStartedBufferPackage new

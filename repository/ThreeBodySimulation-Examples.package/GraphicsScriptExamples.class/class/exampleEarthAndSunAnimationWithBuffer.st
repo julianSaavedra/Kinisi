@@ -1,7 +1,7 @@
 examples - grid - animation
 exampleEarthAndSunAnimationWithBuffer
 
-	| view viewSize animation universeDraft day simulation timeDelta duration buffer gridConfiguration renderer |
+	| view viewSize animation universeDraft day simulation timeDelta duration buffer gridConfiguration renderer endPointConsumer reader bufferWriterConsumer |
 
 	view := RTView new.
 	view canvas color: Color black.
@@ -17,24 +17,26 @@ exampleEarthAndSunAnimationWithBuffer
 	day := UnitProvider soleInstance day.
 	timeDelta := day with: 1.
 	duration := day with: 365.
-	buffer := SimulationStepResultBuffer real.
+	buffer := Buffer new.
+	reader := BufferPluggableReader on: buffer withDataDo: [:simulationStep | endPointConsumer process: simulationStep ].
+	endPointConsumer := SimulationStepPluggableConsumer do: [:simulationStep |
+		view clean.
+		renderer drawIn: view basedOn: simulationStep value.
+		"GridRenderer new drawIn: view basedOn: gridConfiguration"].
+	bufferWriterConsumer := SimulationStepBufferWriterConsumer on: buffer.
+	
 	simulation := Simulation
 		startingWith: universeDraft asUniverseState
 		changingBy: [:stepDuration :currentState |
 			(UniverseStateChange from: currentState during: stepDuration) finalState ]
 		over: timeDelta
 		during: duration
-		informingStepsTo: buffer.
+		informingStepsTo: bufferWriterConsumer.
 
 	simulation run.
 	
 	animation := RTActiveAnimation new.
 	animation intervalInMilliseconds: 40.
-	animation
-		blockToExecute: [
-			view clean.
-			renderer drawIn: view basedOn: buffer next value.
-			"GridRenderer new drawIn: view basedOn: gridConfiguration"
-		].
+	animation blockToExecute: [ reader read ].
 	"Starts animation"
 	animation inView: view

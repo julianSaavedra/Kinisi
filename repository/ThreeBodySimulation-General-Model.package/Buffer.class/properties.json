@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bufferIsOpen",
+		"packages",
+		"state",
+		"lastPackage"
+	],
+	"name" : "Buffer",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BufferState",
+	"category" : "ThreeBodySimulation-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OpenBufferState",
+	"type" : "normal"
+}
