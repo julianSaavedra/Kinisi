@@ -11,7 +11,8 @@ SmalltalkCISpec {
    #packages : ['ThreeBodySimulation-*-Test']
   },
   #exclude : {
-   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTests ]
+   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTests ],
+   #packages : ['ThreeBodySimulation-Playground', 'ThreeBodySimulation-PlaygroundGraphic' ]
     },
   #coverage : {
    #packages : ['ThreeBodySimulation-*-Model']
