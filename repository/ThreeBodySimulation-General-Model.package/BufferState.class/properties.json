@@ -5,12 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"bufferIsOpen",
-		"packages",
-		"state",
-		"lastPackage"
-	],
-	"name" : "Buffer",
+	"instvars" : [ ],
+	"name" : "BufferState",
 	"type" : "normal"
 }

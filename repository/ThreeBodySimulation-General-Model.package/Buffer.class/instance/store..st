@@ -1,5 +1,4 @@
-storing
-store: value
+accessing
+store: data
 
-	self assertBufferIsOpen.
-	values add: value
+	state store: data in: self 

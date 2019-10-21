@@ -1,5 +1,5 @@
 accessing
 close
 
-	self store: ClosedBufferPackage new.
-	bufferIsOpen := false
+	state := ClosedBufferState new.
+	self storePackage: ClosedBufferPackage new

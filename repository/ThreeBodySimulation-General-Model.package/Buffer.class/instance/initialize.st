@@ -2,5 +2,5 @@ initialization
 initialize
 
 	super initialize.
-	values := OrderedCollection new.
-	bufferIsOpen := true
+	state := NotStartedBufferState new.
+	packages := OrderedCollection new

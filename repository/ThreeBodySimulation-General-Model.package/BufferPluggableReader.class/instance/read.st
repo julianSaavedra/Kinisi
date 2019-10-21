@@ -1,4 +1,4 @@
 actions
 read
 
-	buffer next beProcessedBy: self 
+	buffer nextPackage beProcessedBy: self 
