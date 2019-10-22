@@ -1,4 +1,4 @@
 initialization
 startSimulation
 
-	self shouldBeImplemented
+	workbench start
