@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"consumers"
-	],
+	"instvars" : [ ],
 	"name" : "SimulationStepConsumer",
 	"type" : "normal"
 }
