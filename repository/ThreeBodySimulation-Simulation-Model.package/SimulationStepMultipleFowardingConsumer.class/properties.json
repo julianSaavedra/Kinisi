@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SimulationStepConsumer",
 	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"consumers"
 	],
-	"name" : "SimulationStepConsumer",
+	"name" : "SimulationStepMultipleFowardingConsumer",
 	"type" : "normal"
 }
