@@ -8,7 +8,8 @@
 	"instvars" : [
 		"initialState",
 		"simulationConfiguration",
-		"gridConfiguration"
+		"gridConfiguration",
+		"monitoring"
 	],
 	"name" : "UserWorkbench",
 	"type" : "normal"

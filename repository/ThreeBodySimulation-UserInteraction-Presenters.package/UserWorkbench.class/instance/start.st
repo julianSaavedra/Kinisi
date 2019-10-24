@@ -1,8 +1,6 @@
 actions
 start
 
-	| simulation |
-	simulation := self newSimulation.
-	simulation run.
-	
-	simulation result inspect
+	monitoring
+		ifTrue: [ self startWithMonitoring]
+		ifFalse: [self startWithoutMonitoring]

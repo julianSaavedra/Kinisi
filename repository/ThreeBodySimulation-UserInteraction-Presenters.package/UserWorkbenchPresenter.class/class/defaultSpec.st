@@ -6,7 +6,7 @@ defaultSpec
 			row
 				add: #simulationConfiguration;
 				addSplitter;
-				add: #gridConfiguration;
+				add: #monitoringFlag;
 				addSplitter;
 				add:#start] height: 50;
 		add: #initialState;
