@@ -9,7 +9,7 @@
 		"workbench",
 		"initialState",
 		"simulationConfiguration",
-		"gridConfiguration",
+		"monitoringFlag",
 		"start"
 	],
 	"name" : "UserWorkbenchPresenter",

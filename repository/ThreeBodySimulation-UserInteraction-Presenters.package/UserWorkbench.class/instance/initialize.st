@@ -3,4 +3,5 @@ initialize
 
 	initialState := UniverseObservationDraft new.
 	simulationConfiguration := SimulationConfiguration new.
-	gridConfiguration := GridConfiguration new
+	gridConfiguration := GridConfiguration new.
+	monitoring := false
