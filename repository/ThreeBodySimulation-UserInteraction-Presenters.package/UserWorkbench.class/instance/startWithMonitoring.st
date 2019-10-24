@@ -1,11 +1,11 @@
 actions
 startWithMonitoring
 
-	| simulation endPointConsumers stepConsumer transcriptConsumer finalInspectConsumer stopConsumer keepMonitoring buffer reader |
+	| simulation endPointConsumers bufferWriterConsumer transcriptConsumer finalInspectConsumer stopConsumer keepMonitoring buffer reader multipleForwardingConsumer |
 	endPointConsumers := OrderedCollection new.
 	buffer := Buffer new.
-	reader := BufferPluggableReader on: buffer withDataDo: [:data | endPointConsumers do: [:consumer | consumer process: data ]].
-	stepConsumer := SimulationStepBufferWriterConsumer on: buffer.
+	bufferWriterConsumer := SimulationStepBufferWriterConsumer on: buffer.
+	reader := BufferPluggableReader on: buffer withDataDo: [:data | multipleForwardingConsumer process: data].
 	 
 	Transcript open; clear.
 	transcriptConsumer := SimulationStepPluggableConsumer
@@ -27,8 +27,9 @@ startWithMonitoring
 	finalInspectConsumer := SimulationStepPluggableConsumer do: [:simulationStep |] ifFinishedDo: [ simulation result inspect ].
 	stopConsumer := SimulationStepPluggableConsumer do: [:simulationStep | ] ifFinishedDo: [ keepMonitoring := false ].
 	endPointConsumers add: transcriptConsumer; add: finalInspectConsumer; add: stopConsumer.
+	multipleForwardingConsumer := SimulationStepMultipleFowardingConsumer withAll: endPointConsumers.
 	
-	simulation := self newSimulationInformingStepsTo: stepConsumer.
+	simulation := self newSimulationInformingStepsTo: bufferWriterConsumer.
 	keepMonitoring := true.
 	[[keepMonitoring] whileTrue: [
 		(Delay forMilliseconds:500) wait.
