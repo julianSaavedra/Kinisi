@@ -3,7 +3,7 @@ testSimulationStepsAreConsumeByGivenConsumer
 
 	| simulationStepResults consumer simulation |
 	simulationStepResults := OrderedCollection new.
-	consumer := SimulationStepPluggableConsumer do: [:simulationStep | simulationStepResults add: simulationStep value].
+	consumer := SimulationStepPluggableConsumer processWith: [:simulationStep | simulationStepResults add: simulationStep value].
 	simulation := Simulation
 		startingWith: 0
 		changingBy: [:stepDuration :currentState | currentState + 1 ]

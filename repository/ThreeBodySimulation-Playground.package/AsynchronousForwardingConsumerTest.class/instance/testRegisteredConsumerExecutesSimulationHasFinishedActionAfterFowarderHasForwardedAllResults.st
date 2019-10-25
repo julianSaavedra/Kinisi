@@ -4,7 +4,7 @@ testRegisteredConsumerExecutesSimulationHasFinishedActionAfterFowarderHasForward
 	| finishedActionWasExecuted registeredConsumer forwarder simulation second |	
 	finishedActionWasExecuted := false.
 	registeredConsumer := SimulationStepPluggableConsumer
-		do: [:simulationStepResult | ]
+		processWith: [:simulationStepResult | ]
 		ifFinishedDo: [ finishedActionWasExecuted := true ].
 	forwarder := AsynchronousForwardingConsumer informTo: registeredConsumer.
 	second := UnitProvider soleInstance second.

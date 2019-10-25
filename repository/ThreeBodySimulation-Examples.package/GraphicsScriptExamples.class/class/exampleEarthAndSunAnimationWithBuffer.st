@@ -19,7 +19,7 @@ exampleEarthAndSunAnimationWithBuffer
 	duration := day with: 365.
 	buffer := Buffer new.
 	reader := BufferPluggableReader on: buffer withDataDo: [:simulationStep | endPointConsumer process: simulationStep ].
-	endPointConsumer := SimulationStepPluggableConsumer do: [:simulationStep |
+	endPointConsumer := SimulationStepPluggableConsumer processWith: [:simulationStep |
 		view clean.
 		renderer drawIn: view basedOn: simulationStep value.
 		"GridRenderer new drawIn: view basedOn: gridConfiguration"].

@@ -9,7 +9,7 @@ startWithMonitoring
 	 
 	Transcript open; clear.
 	transcriptConsumer := SimulationStepPluggableConsumer
-		do: [:simulationStep |
+		processWith: [:simulationStep |
 			Transcript show: ('Time: <1s>' expandMacrosWith: simulationStep time asString); cr.
 				simulationStep value withComponentsDo: [:physicalState |
 				| position measureToStringBlock |
@@ -24,8 +24,8 @@ startWithMonitoring
 				show: 'Finishing simulation.'; cr;
 				show: '----------------------------------------------------------'; cr;
 				show: '----------------------------------------------------------'; cr ].
-	finalInspectConsumer := SimulationStepPluggableConsumer do: [:simulationStep |] ifFinishedDo: [ simulation result inspect ].
-	stopConsumer := SimulationStepPluggableConsumer do: [:simulationStep | ] ifFinishedDo: [ keepMonitoring := false ].
+	finalInspectConsumer := SimulationStepPluggableConsumer processWith: [:simulationStep |] ifFinishedDo: [ simulation result inspect ].
+	stopConsumer := SimulationStepPluggableConsumer processWith: [:simulationStep | ] ifFinishedDo: [ keepMonitoring := false ].
 	endPointConsumers add: transcriptConsumer; add: finalInspectConsumer; add: stopConsumer.
 	multipleForwardingConsumer := SimulationStepMultipleFowardingConsumer withAll: endPointConsumers.
 	
