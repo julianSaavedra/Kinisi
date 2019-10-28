@@ -1,14 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "SimulationStepConsumer",
-	"category" : "ThreeBodySimulation-Simulation-Tests",
+	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"forwardingConsumer",
 		"packagesThreshold",
-		"currentCount"
+		"currentCount",
+		"policy"
 	],
 	"name" : "SimulationStepPolicyForwardingConsumer",
 	"type" : "normal"

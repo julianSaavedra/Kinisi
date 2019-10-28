@@ -1,4 +1,4 @@
 actions
 beProcessedBy: consumer
  
-	consumer processSimulationStepResult: simulationStepResult
+	consumer processSimulationStepResult: self

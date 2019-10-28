@@ -27,7 +27,7 @@ startWithMonitoring
 	finalInspectConsumer := SimulationStepPluggableConsumer processWith: [:simulationStep |] ifFinishedDo: [ simulation result inspect ].
 	stopConsumer := SimulationStepPluggableConsumer processWith: [:simulationStep | ] ifFinishedDo: [ keepMonitoring := false ].
 	endPointConsumers add: transcriptConsumer; add: finalInspectConsumer; add: stopConsumer.
-	multipleForwardingConsumer := SimulationStepMultipleFowardingConsumer withAll: endPointConsumers.
+	multipleForwardingConsumer := SimulationStepMultipleForwardingConsumer withAll: endPointConsumers.
 	
 	simulation := self newSimulationInformingStepsTo: bufferWriterConsumer.
 	keepMonitoring := true.

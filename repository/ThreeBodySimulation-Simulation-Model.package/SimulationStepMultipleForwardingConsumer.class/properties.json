@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SimulationDataPackage",
+	"super" : "SimulationStepConsumer",
 	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stepResult"
+		"consumers"
 	],
-	"name" : "SimulationStepResultPackage",
+	"name" : "SimulationStepMultipleForwardingConsumer",
 	"type" : "normal"
 }

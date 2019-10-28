@@ -1,4 +1,4 @@
 action
 beProcessedBy: consumer
  
-	consumer processAsSimulationHasFinished
+	consumer processAsSimulationHasFinished: self

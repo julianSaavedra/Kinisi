@@ -1,0 +1,4 @@
+action - double dispatch
+processAsSimulationHasFinished: simulationHasFinishedPackage
+ 
+	finishedSimulationAction cull: simulationHasFinishedPackage result

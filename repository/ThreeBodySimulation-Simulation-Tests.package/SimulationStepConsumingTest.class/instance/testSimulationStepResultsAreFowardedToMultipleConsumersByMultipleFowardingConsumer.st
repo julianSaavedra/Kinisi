@@ -2,7 +2,6 @@ tests
 testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleFowardingConsumer
 
 	| simulation simulationStepResultsA consumerAProcessedFinish simulationStepResultsB consumerBProcessedFinish simulationStepResultsC consumerCProcessedFinish consumerA consumerB consumerC endPointConsumers multipleFowardingConsumer |
-
 	simulationStepResultsA := OrderedCollection new.
 	consumerAProcessedFinish := false.
 	simulationStepResultsB := OrderedCollection new.
@@ -22,7 +21,7 @@ testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleFowardingConsum
 		with: consumerA
 		with: consumerB
 		with: consumerC.
-	multipleFowardingConsumer := SimulationStepMultipleFowardingConsumer
+	multipleFowardingConsumer := SimulationStepMultipleForwardingConsumer
 		withAll: endPointConsumers.
 
 	simulation := self

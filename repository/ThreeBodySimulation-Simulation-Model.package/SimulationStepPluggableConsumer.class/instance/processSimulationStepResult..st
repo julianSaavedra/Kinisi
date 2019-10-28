@@ -1,4 +1,4 @@
 action - double dispatch
-processSimulationStepResult: stepResult
+processSimulationStepResult: stepResultPackage
 
-	consumingSimulationStepResultAction value: stepResult
+	consumingSimulationStepResultAction value: stepResultPackage result
