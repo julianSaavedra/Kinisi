@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"action"
+		"action",
+		"startAction",
+		"finishAction"
 	],
 	"name" : "SimulationPluggableMonitor",
 	"type" : "normal"

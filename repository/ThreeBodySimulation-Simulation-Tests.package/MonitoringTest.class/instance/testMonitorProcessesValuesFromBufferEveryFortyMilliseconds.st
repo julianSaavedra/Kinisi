@@ -6,7 +6,7 @@ testMonitorProcessesValuesFromBufferEveryFortyMilliseconds
 	1 to: 5 do: [:data | buffer store: data].
 	buffer close.
 	receivedDataTimes := OrderedCollection new.
-	monitor := SimulationPluggableMonitor action: [:simulationResult |
+	monitor := SimulationPluggableMonitor processResultsWith: [:simulationResult |
 		| timePair |
 		timePair := lastResultTime -> Time now.
 		receivedDataTimes add: timePair.

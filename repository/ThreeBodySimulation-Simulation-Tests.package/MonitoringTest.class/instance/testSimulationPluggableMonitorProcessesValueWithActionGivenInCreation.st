@@ -2,7 +2,7 @@ tests
 testSimulationPluggableMonitorProcessesValueWithActionGivenInCreation
 
 	| monitor actionWasPerformed |
-	monitor := SimulationPluggableMonitor action: [:simulationStepResult | actionWasPerformed := true ].
+	monitor := SimulationPluggableMonitor processResultsWith: [:simulationStepResult | actionWasPerformed := true ].
 	actionWasPerformed := false.
 	
 	monitor process: 1.

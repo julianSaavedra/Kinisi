@@ -6,7 +6,7 @@ testMonitorProcessesValuesAfterMonitoringProcessIsStartedUntilMonitoringProcessI
 	1 to: 10 do: [:data | buffer store: data].
 	buffer close.
 	receivedData := OrderedCollection new.
-	monitor := SimulationPluggableMonitor action: [:simulationResult | receivedData add: simulationResult].
+	monitor := SimulationPluggableMonitor processResultsWith: [:simulationResult | receivedData add: simulationResult].
 	monitoringProcess := SimulationMonitoringProcess from: buffer to: monitor every: (Duration milliSeconds: 100).
 
 	self assert: receivedData isEmpty.

@@ -1,4 +1,4 @@
-tests
+to be removed
 testSimulationStepResultsAreForwardedEveryThreePackagesToEndPointConsumerByPolicyForwardingConsumer
 
 	| simulation forwardedSimulationStepResults endPointConsumer threePackagesPolicyForwarder |
