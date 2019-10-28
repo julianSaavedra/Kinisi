@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"simulationStepResult"
+		"stepResult"
 	],
 	"name" : "SimulationStepResultPackage",
 	"type" : "normal"

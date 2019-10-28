@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"result"
+	],
 	"name" : "SimulationHasFinishedPackage",
 	"type" : "normal"
 }

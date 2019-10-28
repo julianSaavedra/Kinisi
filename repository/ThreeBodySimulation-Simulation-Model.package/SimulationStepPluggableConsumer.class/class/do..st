@@ -1,4 +1,4 @@
 instance creation
 do: consumingAction
 
-	^self do: consumingAction ifFinishedDo: []
+	^self processWith: consumingAction ifFinishedDo: []

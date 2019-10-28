@@ -12,7 +12,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 	timeDelta := day with: 1.
 	duration := day with: 365.
 	consumer := SimulationStepPluggableConsumer
-		do: [:simulationStep |
+		processWith: [:simulationStep |
 			Transcript show: ('Time: <1s>' expandMacrosWith: simulationStep time asString); cr.
 			simulationStep value withComponentsDo: [:physicalState |
 				| position |

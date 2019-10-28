@@ -7,4 +7,4 @@ run
 	1 to: simulationDuration // stepDuration do: [:stepNumber |
 		currentState := changingBlock value: stepDuration value: currentState.
 		self newResultAt: stepDuration * stepNumber with: currentState ].
-	consumer process: SimulationHasFinishedPackage new
+	consumer process: (SimulationHasFinishedPackage with: self result)

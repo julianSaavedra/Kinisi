@@ -1,5 +1,5 @@
 instance creation
-do: consumingAction ifFinishedDo: finishedAction
+processWith: consumingAction ifFinishedDo: finishedAction
 
 	^self new
 		initializePerform: consumingAction

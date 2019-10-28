@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepConsumer",
+	"category" : "ThreeBodySimulation-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"forwardingConsumer",
+		"packagesThreshold",
+		"currentCount",
+		"policy"
+	],
+	"name" : "SimulationStepPolicyForwardingConsumer",
+	"type" : "normal"
+}
