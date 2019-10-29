@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"threshold",
-		"currentPackageCount",
 		"forwarder"
 	],
-	"name" : "SimulationPackagesForwardingPolicy",
+	"name" : "SimulationStepForwardAllForwardingPolicy",
 	"type" : "normal"
 }

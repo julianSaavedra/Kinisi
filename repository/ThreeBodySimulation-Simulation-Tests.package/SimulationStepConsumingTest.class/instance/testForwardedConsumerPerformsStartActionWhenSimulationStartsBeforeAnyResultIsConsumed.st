@@ -8,7 +8,7 @@ testForwardedConsumerPerformsStartActionWhenSimulationStartsBeforeAnyResultIsCon
 		andWhenFinishedDo: [].
 	forwarder := SimulationStepPolicyForwardingConsumer
 		forwardTo: endPointConsumer
-		every: 3.
+		basedOn: (StepResultsThresholdPolicyDefinition of: 1).
 	simulation := self simulationInformingStepsTo: forwarder.
 	noResultWasProcessYet := true.
 

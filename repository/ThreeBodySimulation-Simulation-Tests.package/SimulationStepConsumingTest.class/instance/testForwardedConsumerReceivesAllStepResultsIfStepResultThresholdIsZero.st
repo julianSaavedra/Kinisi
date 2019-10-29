@@ -1,11 +1,11 @@
 tests
-testSimulationStepResultsAreAllForwardedToEndPointConsumerByPolicyForwardingConsumerIfPackageThresholdIsZero
+testForwardedConsumerReceivesAllStepResultsIfStepResultThresholdIsZero
 
 	| simulation forwardedSimulationStepResults endPointConsumer threePackagesPolicyForwarder |
 	forwardedSimulationStepResults := OrderedCollection new.
 	endPointConsumer := SimulationStepPluggableConsumer
 		processWith: [:simulationStep | forwardedSimulationStepResults add: simulationStep value ].
-	threePackagesPolicyForwarder := SimulationStepPolicyForwardingConsumer forwardTo: endPointConsumer every: 0.
+	threePackagesPolicyForwarder := SimulationStepPolicyForwardingConsumer forwardTo: endPointConsumer basedOn: (StepResultsThresholdPolicyDefinition of: 0).
 	simulation := self
 		simulationGeneratingFrom: 0 to: 6
 		informingStepsTo: threePackagesPolicyForwarder.

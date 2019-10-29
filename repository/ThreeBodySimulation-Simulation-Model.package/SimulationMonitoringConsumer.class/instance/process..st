@@ -1,4 +1,4 @@
 action
 process: stepResult
 
-	buffer store: (SimulationStepResultPackage with: stepResult)
+	forwarder process: (SimulationStepResultPackage with: stepResult)

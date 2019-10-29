@@ -6,7 +6,7 @@ testPolicyMakesMonitorToProcessEveryThreeSimulationStepResultsOfAGivenSimulation
 	monitor := SimulationPluggableMonitor
 		processResultsWith: [:simulationStepResult | simulationStepResults add: simulationStepResult value ]
 		andWhenFinishedDo: [monitoringHasFinished := true].
-	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 50).
+	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 50) basedOn: (StepResultsThresholdPolicyDefinition of: 3).
 	
 	simulation := self
 		simulationGeneratingFrom: 0 to: 10

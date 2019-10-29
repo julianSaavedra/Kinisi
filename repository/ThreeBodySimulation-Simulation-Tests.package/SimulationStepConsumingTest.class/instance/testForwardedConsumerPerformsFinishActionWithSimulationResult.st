@@ -7,7 +7,7 @@ testForwardedConsumerPerformsFinishActionWithSimulationResult
 		andWhenFinishedDo: [:simulationResult | simulationTotalResult := simulationResult ].
 	forwarder := SimulationStepPolicyForwardingConsumer
 		forwardTo: endPointConsumer
-		every: 3.
+		basedOn: (StepResultsThresholdPolicyDefinition of: 3).
 	simulation := self simulationInformingStepsTo: forwarder.
 
 	simulation run.

@@ -8,7 +8,7 @@ testForwardedConsumerPerformsFinishActionWhenSimulationFinishesAfterStartAndProc
 		andWhenFinishedDo: [ finishActionWasPerformedAfterStartAndProcessAction := true and: [ startActionWasPerfomed and: [ processingActionWasPerfomed ] ] ].
 	forwarder := SimulationStepPolicyForwardingConsumer
 		forwardTo: endPointConsumer
-		every: 3.
+		basedOn: (StepResultsThresholdPolicyDefinition of: 3).
 	simulation := self simulationInformingStepsTo: forwarder.
 	processingActionWasPerfomed := false.
 	startActionWasPerfomed := false.

@@ -1,5 +1,4 @@
 action
 finishWith: simulationResult
 
-	buffer store: (SimulationHasFinishedPackage with: simulationResult).
-	buffer close
+	forwarder finishWith: (SimulationHasFinishedPackage with: simulationResult)
