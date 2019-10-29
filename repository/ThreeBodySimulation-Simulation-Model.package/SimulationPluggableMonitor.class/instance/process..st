@@ -1,4 +1,4 @@
 action
-process: simulationStepResult
+process: stepResult
 
-	action value: simulationStepResult
+	action value: stepResult

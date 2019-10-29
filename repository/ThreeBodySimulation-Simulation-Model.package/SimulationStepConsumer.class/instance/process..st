@@ -1,4 +1,4 @@
 action
-process: simulationDataPackage
+process: stepResult
 
 	self subclassResponsibility

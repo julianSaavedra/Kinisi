@@ -4,7 +4,8 @@ testSimulationHasFinishedActionIsPerformedWhenSimulationHasFinished
 	| consumer simulationHasFinishedBlockWasPerformed simulation |
 	consumer := SimulationStepPluggableConsumer
 		processWith: [ :simulationStepResult |  ]
-		ifFinishedDo: [ simulationHasFinishedBlockWasPerformed := true ].
+		onStartDo: []
+		andWhenFinishedDo: [ simulationHasFinishedBlockWasPerformed := true ].
 	simulation := self simulationInformingStepsTo: consumer.
 	simulationHasFinishedBlockWasPerformed := false.
 

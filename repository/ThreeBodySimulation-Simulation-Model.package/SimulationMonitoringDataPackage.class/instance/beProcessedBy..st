@@ -1,4 +1,4 @@
 actions
-beProcessedBy: consumer
+beProcessedBy: monitoringProcess
 
 	self subclassResponsibility

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepConsumer",
+	"category" : "ThreeBodySimulation-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buffer",
+		"monitoringProcess"
+	],
+	"name" : "SimulationMonitoringConsumer",
+	"type" : "normal"
+}

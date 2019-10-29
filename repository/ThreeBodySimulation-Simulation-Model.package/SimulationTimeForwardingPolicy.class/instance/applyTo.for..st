@@ -1,4 +1,4 @@
 applying policy
-applyTo: stepResultPackage for: forwardingConsumer
+applyTo: stepResult for: forwardingConsumer
 
-	(stepResultPackage resultTime \\ period) isZero ifTrue: [ forwardingConsumer forward: stepResultPackage ]
+	(stepResult time \\ period) isZero ifTrue: [ forwardingConsumer forward: stepResult ]

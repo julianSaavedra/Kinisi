@@ -1,0 +1,4 @@
+initialization
+processAsSimulationHasFinished: simulationMonitoringPackage
+
+	self terminate

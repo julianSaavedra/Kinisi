@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SimulationDataPackage",
+	"super" : "SimulationMonitoringDataPackage",
 	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

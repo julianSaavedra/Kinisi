@@ -1,7 +1,7 @@
 tests
-testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleFowardingConsumer
+testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleForwardingConsumer
 
-	| simulation simulationStepResultsA consumerAProcessedFinish simulationStepResultsB consumerBProcessedFinish simulationStepResultsC consumerCProcessedFinish consumerA consumerB consumerC endPointConsumers multipleFowardingConsumer |
+	| simulation simulationStepResultsA consumerAProcessedFinish simulationStepResultsB consumerBProcessedFinish simulationStepResultsC consumerCProcessedFinish consumerA consumerB consumerC endPointConsumers multipleFowardingConsumer consumerAProcessedStart consumerBProcessedStart consumerCProcessedStart |
 	simulationStepResultsA := OrderedCollection new.
 	consumerAProcessedFinish := false.
 	simulationStepResultsB := OrderedCollection new.
@@ -10,13 +10,16 @@ testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleFowardingConsum
 	consumerCProcessedFinish := false.
 	consumerA := SimulationStepPluggableConsumer
 		processWith: [ :simulationStep | simulationStepResultsA add: simulationStep value ]
-		ifFinishedDo: [ consumerAProcessedFinish := true ].
+		onStartDo: [ consumerAProcessedStart := true ]
+		andWhenFinishedDo: [ consumerAProcessedFinish := true ].
 	consumerB := SimulationStepPluggableConsumer
 		processWith: [ :simulationStep | simulationStepResultsB add: simulationStep value ]
-		ifFinishedDo: [ consumerBProcessedFinish := true ].
+		onStartDo: [ consumerBProcessedStart := true ]
+		andWhenFinishedDo: [ consumerBProcessedFinish := true ].
 	consumerC := SimulationStepPluggableConsumer
 		processWith: [ :simulationStep | simulationStepResultsC add: simulationStep value ]
-		ifFinishedDo: [ consumerCProcessedFinish := true ].
+		onStartDo: [ consumerCProcessedStart := true ]
+		andWhenFinishedDo: [ consumerCProcessedFinish := true ].
 	endPointConsumers := OrderedCollection
 		with: consumerA
 		with: consumerB
@@ -25,13 +28,17 @@ testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleFowardingConsum
 		withAll: endPointConsumers.
 
 	simulation := self
-		simulationGeneratingFrom: 0 to: 2
+		simulationGeneratingFrom: 0
+		to: 2
 		informingStepsTo: multipleFowardingConsumer.
-		
+
 	simulation run.
+	self assert: consumerAProcessedStart.
 	self assert: simulationStepResultsA asArray equals: #(0 1 2).
 	self assert: consumerAProcessedFinish.
+	self assert: consumerBProcessedStart.
 	self assert: simulationStepResultsB asArray equals: #(0 1 2).
 	self assert: consumerBProcessedFinish.
+	self assert: consumerCProcessedStart.
 	self assert: simulationStepResultsC asArray equals: #(0 1 2).
 	self assert: consumerCProcessedFinish

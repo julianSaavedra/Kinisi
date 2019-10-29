@@ -1,4 +1,4 @@
-to be removed
+tests
 testSimulationStepResultsAreForwardedEveryThreeSecondsOfSimulationTimeToEndPointConsumerByPolicyForwardingConsumer
 
 	| simulation timeOfForwardedSimulationStepResults endPointConsumer twoSecondsSimulationTimePolicyForwarder twoSeconds oneSecond tenSeconds expectedTimes |

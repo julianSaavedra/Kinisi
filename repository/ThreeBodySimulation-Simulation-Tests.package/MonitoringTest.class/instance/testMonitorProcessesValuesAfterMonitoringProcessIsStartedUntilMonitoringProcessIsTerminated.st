@@ -3,8 +3,7 @@ testMonitorProcessesValuesAfterMonitoringProcessIsStartedUntilMonitoringProcessI
 
 	| buffer receivedData monitor monitoringProcess postTerminationDataSize |
 	buffer := Buffer new.
-	1 to: 10 do: [:data | buffer store: data].
-	buffer close.
+	1 to: 10 do: [:data | buffer store: (SimulationStepResultPackage with: data)].
 	receivedData := OrderedCollection new.
 	monitor := SimulationPluggableMonitor processResultsWith: [:simulationResult | receivedData add: simulationResult].
 	monitoringProcess := SimulationMonitoringProcess from: buffer to: monitor every: (Duration milliSeconds: 100).

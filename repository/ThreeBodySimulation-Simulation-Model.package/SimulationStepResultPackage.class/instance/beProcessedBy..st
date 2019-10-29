@@ -1,4 +1,4 @@
 actions
-beProcessedBy: consumer
+beProcessedBy: monitoringProcess
  
-	consumer processSimulationStepResult: self
+	monitoringProcess processSimulationStepResult: self
