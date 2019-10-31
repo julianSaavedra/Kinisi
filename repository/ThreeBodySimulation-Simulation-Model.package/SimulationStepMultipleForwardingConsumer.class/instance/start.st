@@ -1,4 +1,4 @@
-as yet unclassified
+action
 start
 
 	consumers do: [:consumer | consumer start ]

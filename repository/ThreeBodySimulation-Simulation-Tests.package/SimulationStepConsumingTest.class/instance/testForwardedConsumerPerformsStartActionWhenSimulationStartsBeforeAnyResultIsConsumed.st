@@ -2,10 +2,12 @@ tests
 testForwardedConsumerPerformsStartActionWhenSimulationStartsBeforeAnyResultIsConsumed
 
 	| simulation endPointConsumer forwarder noResultWasProcessYet startActionWasPerformedBeforeAnyResult |
+
 	endPointConsumer := SimulationStepPluggableConsumer
-		processWith: [:simulationStepResult | noResultWasProcessYet := false ]
-		onStartDo: [ startActionWasPerformedBeforeAnyResult := true and: [ noResultWasProcessYet ]]
-		andWhenFinishedDo: [].
+		onStartDo: [ startActionWasPerformedBeforeAnyResult := true
+				and: [ noResultWasProcessYet ] ]
+		processWith: [ :simulationStepResult | noResultWasProcessYet := false ]
+		andWhenFinishedDo: [  ].
 	forwarder := SimulationStepPolicyForwardingConsumer
 		forwardTo: endPointConsumer
 		basedOn: (StepResultsThresholdPolicyDefinition of: 1).

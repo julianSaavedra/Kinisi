@@ -2,6 +2,7 @@ tests
 testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleForwardingConsumer
 
 	| simulation simulationStepResultsA consumerAProcessedFinish simulationStepResultsB consumerBProcessedFinish simulationStepResultsC consumerCProcessedFinish consumerA consumerB consumerC endPointConsumers multipleFowardingConsumer consumerAProcessedStart consumerBProcessedStart consumerCProcessedStart |
+
 	simulationStepResultsA := OrderedCollection new.
 	consumerAProcessedFinish := false.
 	simulationStepResultsB := OrderedCollection new.
@@ -9,16 +10,16 @@ testSimulationStepResultsAreFowardedToMultipleConsumersByMultipleForwardingConsu
 	simulationStepResultsC := OrderedCollection new.
 	consumerCProcessedFinish := false.
 	consumerA := SimulationStepPluggableConsumer
-		processWith: [ :simulationStep | simulationStepResultsA add: simulationStep value ]
 		onStartDo: [ consumerAProcessedStart := true ]
+		processWith: [ :simulationStep | simulationStepResultsA add: simulationStep value ]
 		andWhenFinishedDo: [ consumerAProcessedFinish := true ].
 	consumerB := SimulationStepPluggableConsumer
-		processWith: [ :simulationStep | simulationStepResultsB add: simulationStep value ]
 		onStartDo: [ consumerBProcessedStart := true ]
+		processWith: [ :simulationStep | simulationStepResultsB add: simulationStep value ]
 		andWhenFinishedDo: [ consumerBProcessedFinish := true ].
 	consumerC := SimulationStepPluggableConsumer
-		processWith: [ :simulationStep | simulationStepResultsC add: simulationStep value ]
 		onStartDo: [ consumerCProcessedStart := true ]
+		processWith: [ :simulationStep | simulationStepResultsC add: simulationStep value ]
 		andWhenFinishedDo: [ consumerCProcessedFinish := true ].
 	endPointConsumers := OrderedCollection
 		with: consumerA

@@ -16,6 +16,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 	timeDelta := day with: 1.
 	duration := day with: 365.
 	consumer := SimulationStepPluggableConsumer
+		onStartDo: nil
 		processWith: [ :simulationStep | 
 			Transcript
 				show: ('Time: <1s>' expandMacrosWith: simulationStep time asString);
@@ -33,7 +34,6 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 								with: (position x roundTo: 3) asString
 								with: (position y roundTo: 3) asString);
 						cr ] ]
-		onStartDo: nil
 		andWhenFinishedDo: [ Transcript
 				show: 'Finishing simulation.';
 				cr;

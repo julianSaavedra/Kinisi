@@ -5,17 +5,21 @@ startWithMonitoringAlmostVersionWithMonitor
 
 	consumers := OrderedCollection new.
 	transcriptMonitor := self transcriptMonitor.
-	monitoringConsumer := SimulationMonitoringConsumer for: transcriptMonitor every: (Duration milliSeconds: 500).
+	monitoringConsumer := SimulationMonitoringConsumer
+		for: transcriptMonitor
+		every: (Duration milliSeconds: 500).
 	consumers add: monitoringConsumer.
 
 	finalInspectConsumer := SimulationStepPluggableConsumer
+		onStartDo: [  ]
 		processWith: [ :simulationStep |  ]
-		onStartDo: []
 		andWhenFinishedDo: [ :totalResult | totalResult inspect ].
 	consumers add: finalInspectConsumer.
 
-	multipleForwardingConsumer := SimulationStepMultipleForwardingConsumer withAll: consumers.
+	multipleForwardingConsumer := SimulationStepMultipleForwardingConsumer
+		withAll: consumers.
 
-	simulation := self newSimulationInformingStepsTo: multipleForwardingConsumer.
+	simulation := self
+		newSimulationInformingStepsTo: multipleForwardingConsumer.
 
 	[ simulation run ] fork

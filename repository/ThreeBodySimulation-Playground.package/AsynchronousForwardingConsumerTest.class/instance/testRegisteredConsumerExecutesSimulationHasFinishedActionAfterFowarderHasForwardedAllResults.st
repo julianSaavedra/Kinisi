@@ -5,8 +5,8 @@ testRegisteredConsumerExecutesSimulationHasFinishedActionAfterFowarderHasForward
 
 	finishedActionWasExecuted := false.
 	registeredConsumer := SimulationStepPluggableConsumer
-		processWith: [ :simulationStepResult |  ]
 		onStartDo: nil
+		processWith: [ :simulationStepResult |  ]
 		andWhenFinishedDo: [ finishedActionWasExecuted := true ].
 	forwarder := AsynchronousForwardingConsumer
 		informTo: registeredConsumer.

@@ -1,4 +1,4 @@
 private
 forward: simulationDataPackage
  
-	forwardingConsumer process: simulationDataPackage
+	forwardedConsumer process: simulationDataPackage

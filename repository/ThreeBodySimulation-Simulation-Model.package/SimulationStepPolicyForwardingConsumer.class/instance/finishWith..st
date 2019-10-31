@@ -1,4 +1,4 @@
 action
 finishWith: simulationResult
 
-	forwardingConsumer finishWith: simulationResult
+	forwardedConsumer finishWith: simulationResult

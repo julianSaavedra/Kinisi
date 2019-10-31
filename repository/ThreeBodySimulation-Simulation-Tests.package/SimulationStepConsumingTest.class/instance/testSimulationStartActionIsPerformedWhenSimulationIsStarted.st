@@ -2,10 +2,12 @@ tests
 testSimulationStartActionIsPerformedWhenSimulationIsStarted
 
 	| consumer simulationStartBlockWasPerformedBeforeProcessBlock processActionWasNotExecutedYet simulation |
+
 	consumer := SimulationStepPluggableConsumer
-		processWith: [:simulationStepResult | processActionWasNotExecutedYet := false ]
-		onStartDo: [ simulationStartBlockWasPerformedBeforeProcessBlock := true and: [processActionWasNotExecutedYet] ]
-		andWhenFinishedDo: [ ] .
+		onStartDo: [ simulationStartBlockWasPerformedBeforeProcessBlock := true
+				and: [ processActionWasNotExecutedYet ] ]
+		processWith: [ :simulationStepResult | processActionWasNotExecutedYet := false ]
+		andWhenFinishedDo: [  ].
 	simulation := self simulationInformingStepsTo: consumer.
 	processActionWasNotExecutedYet := true.
 

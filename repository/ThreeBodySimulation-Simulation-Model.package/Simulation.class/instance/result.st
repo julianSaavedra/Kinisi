@@ -1,4 +1,4 @@
 accessing
 result
 
-	^SimulationResult from: stepResults
+	^SimulationTotalResult from: stepResults

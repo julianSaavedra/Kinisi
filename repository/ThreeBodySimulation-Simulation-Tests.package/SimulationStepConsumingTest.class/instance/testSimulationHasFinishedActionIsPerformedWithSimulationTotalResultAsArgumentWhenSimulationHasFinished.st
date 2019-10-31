@@ -2,10 +2,11 @@ tests
 testSimulationHasFinishedActionIsPerformedWithSimulationTotalResultAsArgumentWhenSimulationHasFinished
 
 	| consumer simulationStepResults simulation |
+
 	simulationStepResults := OrderedCollection new.
 	consumer := SimulationStepPluggableConsumer
+		onStartDo: [  ]
 		processWith: [ :simulationStepResult |  ]
-		onStartDo: [ ]
 		andWhenFinishedDo: [ :simulationResult | 
 			simulationResult
 				withTimeAndStateDo: [ :time :state | simulationStepResults add: state ] ].

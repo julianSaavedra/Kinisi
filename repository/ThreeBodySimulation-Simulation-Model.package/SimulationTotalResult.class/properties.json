@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SimulationMonitoringDataPackage",
+	"super" : "Object",
 	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"result"
+		"simulationSteps"
 	],
-	"name" : "SimulationHasFinishedPackage",
+	"name" : "SimulationTotalResult",
 	"type" : "normal"
 }

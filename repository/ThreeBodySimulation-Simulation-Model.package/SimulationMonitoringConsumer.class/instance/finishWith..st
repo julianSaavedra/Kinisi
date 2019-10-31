@@ -1,4 +1,4 @@
 action
 finishWith: simulationResult
 
-	forwarder finishWith: (SimulationHasFinishedPackage with: simulationResult)
+	forwarder finishWith: (SimulationTotalResultPackage with: simulationResult)

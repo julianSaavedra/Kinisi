@@ -1,4 +1,4 @@
 action
 start
 
-	forwardingConsumer start
+	forwardedConsumer start

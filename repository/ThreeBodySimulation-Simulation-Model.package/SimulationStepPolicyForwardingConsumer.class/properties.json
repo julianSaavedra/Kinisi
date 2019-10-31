@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"forwardingConsumer",
 		"packagesThreshold",
 		"currentCount",
-		"policy"
+		"policy",
+		"forwardedConsumer"
 	],
 	"name" : "SimulationStepPolicyForwardingConsumer",
 	"type" : "normal"

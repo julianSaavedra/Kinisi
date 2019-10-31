@@ -1,5 +1,5 @@
 initialization
-initializeProcessWith: aConsumingAction onStartDo: anStartingAction andWhenFinishedDo: aFinishingAction
+initializeOnStartDo: anStartingAction processWith: aConsumingAction andWhenFinishedDo: aFinishingAction
 
 	consumingAction := aConsumingAction.
 	startingAction := anStartingAction.
