@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SimulationStepResultForwardingPolicyDefinition",
-	"category" : "ThreeBodySimulation-Simulation-Tests",
+	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [
 		"threshold"
 	],

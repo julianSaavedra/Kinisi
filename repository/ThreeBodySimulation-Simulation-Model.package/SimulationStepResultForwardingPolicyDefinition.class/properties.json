@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "ThreeBodySimulation-Simulation-Tests",
+	"category" : "ThreeBodySimulation-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

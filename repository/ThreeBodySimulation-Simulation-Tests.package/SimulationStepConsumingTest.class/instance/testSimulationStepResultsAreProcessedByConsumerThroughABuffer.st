@@ -2,10 +2,9 @@ tests
 testSimulationStepResultsAreProcessedByConsumerThroughABuffer
 
 	| simulation simulationStepResults endPointConsumer buffer reader bufferWriterConsumer |
-
 	simulationStepResults := OrderedCollection new.
 	endPointConsumer := SimulationStepPluggableConsumer
-		processWith: [ :simulationStep | simulationStepResults add: simulationStep value ].
+		processWith: [:simulationStep | simulationStepResults add: simulationStep value ].
 	buffer := Buffer new.
 	reader := BufferPluggableReader
 		on: buffer

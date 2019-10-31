@@ -3,18 +3,14 @@ testMonitorFinishingActionIsPerformedAfterTheSimulationHasEnded
 
 	| monitor finishActionWasPerformed simulation monitoringConsumer |
 	monitor := SimulationPluggableMonitor
-		onStartDo: []
 		processResultsWith: [:simulationStepResult | ]
-		andWhenFinishedDo: [finishActionWasPerformed := true].
-		
+		andWhenFinishedDo: [ self monitoringHasFinished. finishActionWasPerformed := true ].
 	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 50).
-	
 	simulation := self
-		simulationGeneratingFrom: 0 to: 2
-		informingStepsTo: monitoringConsumer.
+		simulationGenerating: 3
+		stepsInformingThemTo: monitoringConsumer.
 	
 	finishActionWasPerformed := false.
-	simulation run.
+	self waitUntilMonitoringFinishesWhenRunning: simulation.
 	
-	(Duration milliSeconds: 400) wait.
 	self assert: finishActionWasPerformed

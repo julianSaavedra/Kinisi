@@ -1,20 +1,19 @@
 tests
 testMonitorProcessesValuesAfterMonitoringProcessIsStartedUntilMonitoringProcessIsTerminated
 
-	| buffer receivedData monitor monitoringProcess postTerminationDataSize |
-	buffer := Buffer new.
-	1 to: 10 do: [:data | buffer store: (SimulationStepResultPackage with: data)].
+	| receivedData monitor monitoringProcess |
 	receivedData := OrderedCollection new.
-	monitor := SimulationPluggableMonitor processResultsWith: [:simulationResult | receivedData add: simulationResult].
-	monitoringProcess := SimulationMonitoringProcess from: buffer to: monitor every: (Duration milliSeconds: 100).
+	monitor := SimulationPluggableMonitor
+		processResultsWith: [:simulationResult | receivedData add: simulationResult]
+		andWhenFinishedDo: [ self monitoringHasFinished ].
+	monitoringProcess := SimulationMonitoringProcess from: self bufferWithTenStepResults to: monitor every: (Duration milliSeconds: 100).
 
 	self assert: receivedData isEmpty.
+	
+	self resetFinishedMonitoringFlag.
 	monitoringProcess start.
-	(Duration milliSeconds: 300) wait.
+	self waitUntil: receivedData has: 5.
 	monitoringProcess terminate.
-	postTerminationDataSize := receivedData size.
+	self waitUntilMonitoringFinishes.
 	
-	self assert: receivedData notEmpty.
-	
-	(Duration milliSeconds: 300) wait.
-	self assert: receivedData size equals: postTerminationDataSize
+	self assert: receivedData size equals: 5
