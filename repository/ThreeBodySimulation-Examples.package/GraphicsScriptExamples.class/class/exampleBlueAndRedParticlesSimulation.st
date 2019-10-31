@@ -35,11 +35,11 @@ exampleBlueAndRedParticlesSimulation
 		over: timeDelta
 		during: duration
 		informingStepsTo: bufferWriterConsumer.
-
-	simulation run.
 	
 	animation := RTActiveAnimation new.
 	animation intervalInMilliseconds: 40.
 	animation blockToExecute: [ reader read ].
 	"Starts animation"
-	animation inView: view
+	animation inView: view.
+	
+	simulation run.
