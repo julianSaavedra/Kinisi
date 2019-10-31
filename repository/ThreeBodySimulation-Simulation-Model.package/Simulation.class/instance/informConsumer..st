@@ -1,4 +1,4 @@
 action
-informConsumer: initialStepResult
+informConsumer: stepResult
 
-	consumer process: (SimulationStepResultPackage with: initialStepResult)
+	consumer process: stepResult

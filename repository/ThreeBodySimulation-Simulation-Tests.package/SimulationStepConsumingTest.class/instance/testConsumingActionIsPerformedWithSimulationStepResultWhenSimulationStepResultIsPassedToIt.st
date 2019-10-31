@@ -7,7 +7,6 @@ testConsumingActionIsPerformedWithSimulationStepResultWhenSimulationStepResultIs
 		processWith: [:simulationStep | simulationStepResults add: simulationStep ].
 	simulation := self simulationInformingStepsTo: consumer.
 
-	self assert: simulationStepResults isEmpty.
 	simulation run.
-
-	self assert: simulationStepResults notEmpty
+	
+	self assert: simulationStepResults areTheOnesProducedBy: simulation

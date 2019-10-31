@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepResultForwardingPolicy",
+	"category" : "ThreeBodySimulation-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"forwarder"
+	],
+	"name" : "SimulationStepForwardAllForwardingPolicy",
+	"type" : "normal"
+}

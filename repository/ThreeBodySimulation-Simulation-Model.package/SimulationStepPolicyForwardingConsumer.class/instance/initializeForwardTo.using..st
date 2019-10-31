@@ -1,5 +1,5 @@
 initialization
 initializeForwardTo: consumer using: forwardingPolicy
 
-	forwardingConsumer := consumer.
+	forwardedConsumer := consumer.
 	policy := forwardingPolicy

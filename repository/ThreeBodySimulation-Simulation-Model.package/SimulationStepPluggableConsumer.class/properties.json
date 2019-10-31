@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"consumingSimulationStepResultAction",
-		"finishedSimulationAction"
+		"consumingAction",
+		"finishingAction",
+		"startingAction"
 	],
 	"name" : "SimulationStepPluggableConsumer",
 	"type" : "normal"

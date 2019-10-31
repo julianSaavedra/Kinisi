@@ -1,4 +1,4 @@
-initialization
-process: simulationDataPackage
+action
+process: stepResult
 
-	simulationDataPackage beProcessedBy: self 
+	consumingAction value: stepResult

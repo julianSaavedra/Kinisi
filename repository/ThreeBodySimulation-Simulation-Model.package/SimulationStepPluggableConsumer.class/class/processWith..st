@@ -1,4 +1,7 @@
 instance creation
 processWith: consumingAction
 
-	^self processWith: consumingAction ifFinishedDo: []
+	^ self
+		onStartDo: [  ]
+		processWith: consumingAction
+		andWhenFinishedDo: [  ]

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationMonitor",
+	"category" : "ThreeBodySimulation-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"action",
+		"startAction",
+		"finishAction"
+	],
+	"name" : "SimulationPluggableMonitor",
+	"type" : "normal"
+}

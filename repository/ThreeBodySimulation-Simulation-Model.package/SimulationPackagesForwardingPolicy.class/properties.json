@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"threshold",
-		"currentPackageCount"
+		"currentPackageCount",
+		"forwarder"
 	],
 	"name" : "SimulationPackagesForwardingPolicy",
 	"type" : "normal"

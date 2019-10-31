@@ -1,4 +1,0 @@
-accessing
-resultTime
-
-	^stepResult time

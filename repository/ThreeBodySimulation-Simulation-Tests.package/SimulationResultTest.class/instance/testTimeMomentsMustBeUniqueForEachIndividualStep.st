@@ -5,5 +5,5 @@ testTimeMomentsMustBeUniqueForEachIndividualStep
 	steps := self stepResultsWithTimeInSecondsBasedOn: #(1 1 2 3).
 	
 	self
-		should: [ SimulationResult from: steps ]
+		should: [ SimulationTotalResult from: steps ]
 		raise: SimulationError

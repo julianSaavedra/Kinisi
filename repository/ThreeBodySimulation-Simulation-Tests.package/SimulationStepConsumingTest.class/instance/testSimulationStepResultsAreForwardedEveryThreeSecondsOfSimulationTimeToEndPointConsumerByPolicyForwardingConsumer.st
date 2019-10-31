@@ -8,7 +8,7 @@ testSimulationStepResultsAreForwardedEveryThreeSecondsOfSimulationTimeToEndPoint
 	tenSeconds := oneSecond * 10.
 	endPointConsumer := SimulationStepPluggableConsumer
 		processWith: [:simulationStep | timeOfForwardedSimulationStepResults add: simulationStep time ].
-	twoSecondsSimulationTimePolicyForwarder := SimulationStepPolicyForwardingConsumer forwardTo: endPointConsumer everySimulationTime: twoSeconds.
+	twoSecondsSimulationTimePolicyForwarder := SimulationStepPolicyForwardingConsumer forwardTo: endPointConsumer basedOn: (SimulationTimePeriodPolicyDefinition of: twoSeconds).
 	simulation := self
 		simulationOver: oneSecond during: tenSeconds
 		informingStepsTo: twoSecondsSimulationTimePolicyForwarder.

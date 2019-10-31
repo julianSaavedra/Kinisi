@@ -1,12 +1,20 @@
 tests
 testSimulationHasFinishedActionIsPerformedWithSimulationTotalResultAsArgumentWhenSimulationHasFinished
 
-	| consumer simulationTotalResult simulation |
+	| consumer simulationStepResults simulation |
+
+	simulationStepResults := OrderedCollection new.
 	consumer := SimulationStepPluggableConsumer
-		processWith: [:simulationStepResult |  ]
-		ifFinishedDo: [:simulationResult | simulationTotalResult := simulationResult ].
-	simulation := self simulationInformingStepsTo: consumer.
+		onStartDo: [  ]
+		processWith: [ :simulationStepResult |  ]
+		andWhenFinishedDo: [ :simulationResult | 
+			simulationResult
+				withTimeAndStateDo: [ :time :state | simulationStepResults add: state ] ].
+	simulation := self
+		simulationGeneratingFrom: 0
+		to: 2
+		informingStepsTo: consumer.
 
 	simulation run.
 
-	self assert: simulationTotalResult notNil
+	self assert: simulationStepResults asArray equals: #(0 1 2)
