@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ThreeBodySimulation-ObservationMigration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"visualConfiguration",
+		"universeState"
+	],
+	"name" : "UniverseObservation",
+	"type" : "normal"
+}
