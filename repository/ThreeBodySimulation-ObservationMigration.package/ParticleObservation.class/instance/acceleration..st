@@ -1,13 +1,13 @@
 as yet unclassified
-particleName: targetName
-
+acceleration: targetAcceleration
+	
 	| targetParticleState targetObservation |
 	targetParticleState := PhysicalState
-		forParticleNamed: targetName
+		forParticleNamed: particleState particleName
 		withMass: particleState mass
 		position: particleState position
 		velocity: particleState velocity
-		andAcceleration: particleState acceleration.
+		andAcceleration: targetAcceleration.
 	targetObservation := ParticleObservation over: targetParticleState in: universeObservation.
 	
 	universeObservation update: self basedOn: targetObservation.

@@ -1,0 +1,4 @@
+accessing
+acceleration
+
+	^tentativeParticleState acceleration

@@ -2,4 +2,5 @@ initialization
 initialize
 
 	super initialize.
-	universeState := ObservableUniverseState with: #()
+	universeState := ObservableUniverseState with: #().
+	colorMapping := Dictionary new

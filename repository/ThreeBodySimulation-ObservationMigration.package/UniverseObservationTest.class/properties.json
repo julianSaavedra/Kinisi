@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"physicsResource"
+	],
 	"name" : "UniverseObservationTest",
 	"type" : "normal"
 }

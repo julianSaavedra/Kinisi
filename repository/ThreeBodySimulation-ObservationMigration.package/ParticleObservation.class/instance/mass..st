@@ -1,10 +1,10 @@
 as yet unclassified
-particleName: targetName
-
+mass: targetMass
+	
 	| targetParticleState targetObservation |
 	targetParticleState := PhysicalState
-		forParticleNamed: targetName
-		withMass: particleState mass
+		forParticleNamed: particleState particleName
+		withMass: targetMass
 		position: particleState position
 		velocity: particleState velocity
 		andAcceleration: particleState acceleration.

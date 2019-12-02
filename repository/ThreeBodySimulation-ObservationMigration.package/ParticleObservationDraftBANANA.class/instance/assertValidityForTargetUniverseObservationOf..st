@@ -1,0 +1,4 @@
+private
+assertValidityForTargetUniverseObservationOf: newParticleState
+
+	targetUniverseObservation copy addParticleWith: newParticleState

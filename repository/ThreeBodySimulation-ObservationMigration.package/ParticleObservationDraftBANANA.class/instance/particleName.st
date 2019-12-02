@@ -1,0 +1,4 @@
+accessing
+particleName
+
+	^tentativeParticleState particleName

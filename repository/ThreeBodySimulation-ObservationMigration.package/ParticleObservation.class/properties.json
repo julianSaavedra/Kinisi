@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"particleState"
+		"particleState",
+		"universeObservation",
+		"color"
 	],
 	"name" : "ParticleObservation",
 	"type" : "normal"
