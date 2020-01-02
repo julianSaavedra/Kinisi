@@ -5,3 +5,4 @@ over: particleState with: color in: universeObservation
 		initializeOver: particleState
 		with: color
 		in: universeObservation
+		as: ParticleObservationMode updating

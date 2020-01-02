@@ -1,4 +1,4 @@
 configuring
 newParticleObservationDraft
 
-	^ParticleObservationDraftBANANA for: self
+	^ParticleObservation draftFor: self

@@ -1,4 +1,0 @@
-accessing
-position
-
-	^tentativeParticleState position

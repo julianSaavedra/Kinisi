@@ -1,0 +1,4 @@
+test objects
+universeObservationWithTwoParticles
+
+	^self universeObservationWithParticleAAndParticleB

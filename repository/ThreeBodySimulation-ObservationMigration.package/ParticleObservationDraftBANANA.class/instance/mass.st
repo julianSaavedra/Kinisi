@@ -1,4 +1,0 @@
-accessing
-mass
-
-	^tentativeParticleState mass

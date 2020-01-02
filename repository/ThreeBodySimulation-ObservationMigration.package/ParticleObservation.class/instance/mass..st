@@ -1,14 +1,6 @@
-as yet unclassified
+user interaction
 mass: targetMass
-	
-	| targetParticleState targetObservation |
-	targetParticleState := PhysicalState
-		forParticleNamed: particleState particleName
-		withMass: targetMass
-		position: particleState position
-		velocity: particleState velocity
-		andAcceleration: particleState acceleration.
-	targetObservation := ParticleObservation over: targetParticleState in: universeObservation.
-	
-	universeObservation update: self basedOn: targetObservation.
-	particleState := targetParticleState
+
+	| targetParticleState |
+	targetParticleState := self newParticleStateWithMass: targetMass.
+	self updateState: targetParticleState
