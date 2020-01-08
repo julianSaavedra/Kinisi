@@ -1,7 +1,7 @@
 actions
 drawIn: view basedOn: universe
 
-	universe withComponentsDo: [:aParticleState | 
+	universe particleObservations do: [:particleObservation | 
 		renderersMapping
-			at: aParticleState particleName
-			ifPresent: [:renderer | renderer drawIn: view basedOn: aParticleState ]]
+			at: particleObservation particleName
+			ifPresent: [:renderer | renderer drawIn: view basedOn: particleObservation ]]

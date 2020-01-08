@@ -2,5 +2,5 @@ initialization
 initializeParticleDraftList
 
 	particleDraftList := self newList.
-	particleDraftList 	displayBlock: [ :particleDraft | particleDraft particleName ].
+	particleDraftList 	displayBlock: [:particle | particle particleName ].
 	self setParticleDraftListItemsFromUniverse

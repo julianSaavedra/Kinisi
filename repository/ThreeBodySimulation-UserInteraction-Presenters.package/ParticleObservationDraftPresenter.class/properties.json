@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleDraftPresenter",
+	"category" : "ThreeBodySimulation-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"saveButton",
+		"saveAction",
+		"cancelButton"
+	],
+	"name" : "ParticleObservationDraftPresenter",
+	"type" : "normal"
+}

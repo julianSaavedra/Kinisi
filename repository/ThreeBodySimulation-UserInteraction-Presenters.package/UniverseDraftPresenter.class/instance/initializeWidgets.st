@@ -1,7 +1,7 @@
 initialization
 initializeWidgets
 
-	controlPanel := self instantiate: UniverseDraftControlPanelPresenter on: universeDraft.
+	controlPanel := self instantiate: UniverseDraftTabPanelPresenter on: universeDraft.
 	view := self instantiate: RoassalModel.
 	view script: [ :rtView :canvas |
 		| gridConfiguration |
