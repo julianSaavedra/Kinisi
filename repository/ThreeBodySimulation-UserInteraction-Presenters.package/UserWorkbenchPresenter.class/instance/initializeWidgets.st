@@ -1,7 +1,7 @@
 initialization
 initializeWidgets
 
-	initialState := self instantiate: UniverseDraftPresenter on: workbench initialState.
+	initialState := self instantiate: UniverseObservationPresenter on: workbench initialState.
 	simulationConfiguration := self instantiate: SimulationConfigurationPresenter on: workbench simulationConfiguration.
 	monitoringFlag := self newRadioButton.
 	monitoringFlag canDeselectByClick: true.

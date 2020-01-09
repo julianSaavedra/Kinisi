@@ -6,4 +6,4 @@ exampleUniverseDraftPresenter
 	universeDraft
 		newParticleObservationDraft;
 		newParticleObservationDraft.
-	(UniverseDraftPresenter on: universeDraft) openWithSpec
+	(UniverseObservationPresenter on: universeDraft) openWithSpec

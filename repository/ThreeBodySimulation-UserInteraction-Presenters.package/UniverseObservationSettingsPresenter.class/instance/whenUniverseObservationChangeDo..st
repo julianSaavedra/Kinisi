@@ -1,0 +1,4 @@
+API
+whenUniverseObservationChangeDo: anUniverseChangeAction
+ 
+	universeChangeAction := anUniverseChangeAction

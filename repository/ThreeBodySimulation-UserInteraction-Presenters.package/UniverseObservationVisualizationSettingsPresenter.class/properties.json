@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ParticleObservationPresenter",
+	"super" : "ComposablePresenter",
 	"category" : "ThreeBodySimulation-UserInteraction-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"saveButton",
-		"saveAction",
-		"cancelButton"
-	],
-	"name" : "ParticleObservationDraftPresenter",
+	"instvars" : [ ],
+	"name" : "UniverseObservationVisualizationSettingsPresenter",
 	"type" : "normal"
 }

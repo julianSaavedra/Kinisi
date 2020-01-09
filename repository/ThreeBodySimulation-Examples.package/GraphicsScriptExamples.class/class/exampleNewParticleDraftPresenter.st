@@ -3,4 +3,4 @@ exampleNewParticleDraftPresenter
 
 	| particleDraft |
 	particleDraft := UniverseObservationDraft new newParticleObservationDraft.
-	(ParticleDraftPresenter on: particleDraft) openWithSpec 
+	(ParticleObservationPresenter on: particleDraft) openWithSpec 

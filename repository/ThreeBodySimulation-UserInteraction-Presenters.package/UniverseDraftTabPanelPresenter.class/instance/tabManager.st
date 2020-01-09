@@ -1,4 +1,0 @@
-initialization
-tabManager
-
-	^tabManager

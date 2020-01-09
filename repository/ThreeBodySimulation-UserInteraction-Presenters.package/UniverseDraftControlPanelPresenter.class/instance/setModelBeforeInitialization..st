@@ -1,4 +1,0 @@
-initialization
-setModelBeforeInitialization: universeObservation
-
-	universeDraft := universeObservation
