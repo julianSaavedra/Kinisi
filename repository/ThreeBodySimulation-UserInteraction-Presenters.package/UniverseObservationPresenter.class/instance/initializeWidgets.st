@@ -6,7 +6,7 @@ initializeWidgets
 	view script: [ :rtView :canvas |
 		| gridConfiguration |
 		gridConfiguration := self gridConfiguration.
-		canvas color: Color black.
+		canvas color: universeObservation background.
 		(UniverseRenderer basedOn: universeObservation and: gridConfiguration)
 			drawIn: rtView basedOn: universeObservation.
 		GridRenderer new drawIn: rtView basedOn: gridConfiguration.

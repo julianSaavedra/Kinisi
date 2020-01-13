@@ -1,11 +1,13 @@
 initialization
 initializeParticlesSettings
 
-	| particlesSettings |
-	particlesSettings := self newTab.
-	particlesSettings presenter: (UniverseObservationParticlesSettingsPresenter on: universeObservation).
-	particlesSettings
+	| particlesSettings particlesSettingsTab |
+	particlesSettings := UniverseObservationParticlesSettingsPresenter on: universeObservation.
+	settings add: particlesSettings.
+	particlesSettingsTab := self newTab.
+	particlesSettingsTab presenter: particlesSettings. 
+	particlesSettingsTab
 		label: 'Particles';
 		closeable: false;
 		icon: Smalltalk ui icons smallObjects.
-	settings addTab: particlesSettings
+	settingTabs addTab: particlesSettingsTab

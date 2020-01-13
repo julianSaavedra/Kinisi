@@ -1,4 +1,6 @@
 initialization
 initializeWidgets
 
-	1 ifNil: [ self halt ]
+	background := ColorSettingPresenter on: universeObservation background.
+	background label: 'Background'.
+	background changeModelWith: [:newColor | universeObservation background: newColor ]

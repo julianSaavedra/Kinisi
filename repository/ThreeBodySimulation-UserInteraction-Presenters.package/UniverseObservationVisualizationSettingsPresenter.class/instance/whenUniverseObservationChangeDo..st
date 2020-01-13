@@ -1,0 +1,4 @@
+API
+whenUniverseObservationChangeDo: anUniverseChangeAction
+ 
+	background whenChangedDo: anUniverseChangeAction

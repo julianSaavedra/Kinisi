@@ -1,4 +1,4 @@
 API
 whenUniverseObservationChangeDo: anUniverseChangeAction
  
-	universeChangeAction := anUniverseChangeAction
+	settings do: [:setting | setting whenUniverseObservationChangeDo: anUniverseChangeAction ]

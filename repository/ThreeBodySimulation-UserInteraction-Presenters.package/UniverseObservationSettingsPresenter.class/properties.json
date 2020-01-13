@@ -7,8 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"universeChangeAction",
-		"settings",
-		"universeObservation"
+		"universeObservation",
+		"settingTabs",
+		"settings"
 	],
 	"name" : "UniverseObservationSettingsPresenter",
 	"type" : "normal"

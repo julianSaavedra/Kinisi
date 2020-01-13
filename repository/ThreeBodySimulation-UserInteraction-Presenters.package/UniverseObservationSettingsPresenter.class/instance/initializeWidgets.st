@@ -1,6 +1,7 @@
 initialization
 initializeWidgets
 
-	settings := self newTabManager.
+	settings := OrderedCollection new.
+	settingTabs := self newTabManager.
 	self initializeParticlesSettings.
 	self initializeVisualizationSettings
