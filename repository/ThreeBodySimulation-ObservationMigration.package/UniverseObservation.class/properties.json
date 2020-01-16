@@ -9,7 +9,8 @@
 		"visualConfiguration",
 		"universeState",
 		"colorMapping",
-		"background"
+		"background",
+		"zoom"
 	],
 	"name" : "UniverseObservation",
 	"type" : "normal"
