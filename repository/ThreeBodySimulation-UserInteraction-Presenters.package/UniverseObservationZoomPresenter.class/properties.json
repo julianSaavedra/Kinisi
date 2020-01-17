@@ -7,9 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"universeObservation",
-		"background",
-		"zoom"
+		"zoomIn",
+		"zoomOut",
+		"postModelChangeAction"
 	],
-	"name" : "UniverseObservationVisualizationSettingsPresenter",
+	"name" : "UniverseObservationZoomPresenter",
 	"type" : "normal"
 }

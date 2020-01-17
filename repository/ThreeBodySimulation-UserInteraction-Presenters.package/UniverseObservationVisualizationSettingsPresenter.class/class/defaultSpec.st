@@ -1,7 +1,8 @@
 specs
 defaultSpec
 
-	^SpecLayout composed
-		newRow: [:row | row add: #background ] height: 20 ;
+	^SpecColumnLayout composed
+		add: #background;
+		add: #zoom;
 		yourself
 		

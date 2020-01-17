@@ -1,7 +1,7 @@
 accessing
-whenChangedDo: block
+whenModelChangesDo: block
 
 	postNameChangeBlock := block.
 	position whenModelChangesDo: block.
 	velocity whenModelChangesDo: block.
-	color whenChangedDo: block
+	color whenModelChangesDo: block

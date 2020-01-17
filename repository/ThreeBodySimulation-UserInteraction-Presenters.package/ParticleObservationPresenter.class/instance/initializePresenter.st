@@ -1,4 +1,4 @@
 initialization
 initializePresenter
 
-	properties whenChangedDo: self propertiesChangeAction
+	properties whenModelChangesDo: self propertiesChangeAction

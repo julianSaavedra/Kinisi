@@ -1,4 +1,5 @@
 API
 whenUniverseObservationChangeDo: anUniverseChangeAction
  
-	background whenChangedDo: anUniverseChangeAction
+	background whenModelChangesDo: anUniverseChangeAction.
+	zoom whenModelChangesDo: anUniverseChangeAction

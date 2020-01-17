@@ -1,4 +1,4 @@
 initialization
-whenChangedDo: block
+whenModelChangesDo: block
 
 	postColorChangeBlock := block

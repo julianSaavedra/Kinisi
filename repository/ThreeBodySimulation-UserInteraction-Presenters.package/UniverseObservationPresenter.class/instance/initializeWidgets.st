@@ -4,8 +4,12 @@ initializeWidgets
 	settings := self instantiate: UniverseObservationSettingsPresenter on: universeObservation.
 	view := self instantiate: RoassalModel.
 	view script: [ :rtView :canvas |
-		| gridConfiguration |
-		gridConfiguration := self gridConfiguration.
+		| gridConfiguration gridSize |
+		gridSize := universeObservation zoom measureBetween: 10 and: 50.
+		gridConfiguration := GridConfiguration
+			withColor: (Color gray alpha: 0.7)
+			size: gridSize
+			andDistance: (UnitProvider soleInstance meter with: 0.1).
 		canvas color: universeObservation background.
 		(UniverseRenderer basedOn: universeObservation and: gridConfiguration)
 			drawIn: rtView basedOn: universeObservation.
