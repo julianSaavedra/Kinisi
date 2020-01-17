@@ -8,7 +8,8 @@
 	"instvars" : [
 		"universeObservation",
 		"background",
-		"zoom"
+		"zoom",
+		"scale"
 	],
 	"name" : "UniverseObservationVisualizationSettingsPresenter",
 	"type" : "normal"

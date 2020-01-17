@@ -9,7 +9,7 @@ initializeWidgets
 		gridConfiguration := GridConfiguration
 			withColor: (Color gray alpha: 0.7)
 			size: gridSize
-			andDistance: (UnitProvider soleInstance meter with: 0.1).
+			andDistance: universeObservation scale.
 		canvas color: universeObservation background.
 		(UniverseRenderer basedOn: universeObservation and: gridConfiguration)
 			drawIn: rtView basedOn: universeObservation.

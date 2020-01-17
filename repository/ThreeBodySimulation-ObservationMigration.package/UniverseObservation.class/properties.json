@@ -10,7 +10,8 @@
 		"universeState",
 		"colorMapping",
 		"background",
-		"zoom"
+		"zoom",
+		"scale"
 	],
 	"name" : "UniverseObservation",
 	"type" : "normal"
