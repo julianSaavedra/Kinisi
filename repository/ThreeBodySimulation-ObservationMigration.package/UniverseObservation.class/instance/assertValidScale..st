@@ -1,4 +1,4 @@
-as yet unclassified
+private
 assertValidScale: targetMeasure
 
 	(targetMeasure negative or: [ targetMeasure isZero ])

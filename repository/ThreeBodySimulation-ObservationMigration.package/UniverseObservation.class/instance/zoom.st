@@ -1,4 +1,4 @@
-acessing
+accessing
 zoom
 
 	^zoom

@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 remove: particleObservation
 
 	particleObservation containingUniverseObservation == self

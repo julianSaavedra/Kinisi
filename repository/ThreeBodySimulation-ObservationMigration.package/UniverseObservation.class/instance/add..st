@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 add: particleObservation
 
 	universeState := self newUniverseStateWith: particleObservation particleState.

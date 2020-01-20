@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 zoomIn
 
 	zoom := zoom increaseBy: 0.1

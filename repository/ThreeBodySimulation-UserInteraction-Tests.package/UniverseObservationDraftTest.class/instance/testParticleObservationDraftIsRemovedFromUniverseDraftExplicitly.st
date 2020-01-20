@@ -1,5 +1,5 @@
 tests
-testParticleObservationDraftIsRemoveFromUniverseDraftExplicitly
+testParticleObservationDraftIsRemovedFromUniverseDraftExplicitly
 
 	| universeDraft particleDraft |
 	universeDraft := UniverseObservationDraft new.

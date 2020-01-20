@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 background: targetBackground
 
 	background := targetBackground
