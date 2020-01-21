@@ -3,13 +3,10 @@ initializeButtons
 
 	addButton := self newButton.
 	addButton label: 'Add'.
-	addButton action: [
-		| draftPresenter |
-		draftPresenter := (ParticleObservationDraftPresenter on: universeObservation newParticleObservationDraft).
-		draftPresenter onDraftSaveDo: [ self addButtonPostAction ].
-		draftPresenter openWithSpec ].
+	addButton action: [ self addButtonAction ].
 	removeButton := self newButton.
 	removeButton label: 'Remove'.
+	removeButton action: [ self removeButtonAction ].
 	resetButton := self newButton.
 	resetButton label: 'Reset'.
-	resetButton action: [ universeObservation reset ]
+	resetButton action: [ self resetButtonAction ]

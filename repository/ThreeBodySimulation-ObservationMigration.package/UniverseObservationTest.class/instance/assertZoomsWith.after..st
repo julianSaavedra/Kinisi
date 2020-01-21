@@ -1,4 +1,4 @@
-tests
+asserting
 assertZoomsWith: zoomComparison after: zoomModification
 
 	| universeObservation originalZoom newZoom measureWithOriginalZoom measureWithNewZoom |

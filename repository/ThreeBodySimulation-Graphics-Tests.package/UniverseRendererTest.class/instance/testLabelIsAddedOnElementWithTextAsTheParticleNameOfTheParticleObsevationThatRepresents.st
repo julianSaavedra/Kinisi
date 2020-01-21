@@ -1,10 +1,10 @@
 test
-testLabelIsAddedOnElementWithTextAsTheParticleNameOfTheParticleDraftThatRepresents
+testLabelIsAddedOnElementWithTextAsTheParticleNameOfTheParticleObsevationThatRepresents
 
 	| universeDraft particleDraft renderer labelText |
-	universeDraft := UniverseObservationDraft new.
+	universeDraft := UniverseObservation new.
 	particleDraft := universeDraft newParticleObservationDraft.
-	particleDraft particleName: 'ParticleABCDE'.
+	particleDraft particleName: 'ParticleABCDE'; save.
 	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
 	
 	self
