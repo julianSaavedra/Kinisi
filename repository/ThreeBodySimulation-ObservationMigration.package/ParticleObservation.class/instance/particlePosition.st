@@ -1,4 +1,0 @@
-accessing
-particlePosition
-
-	^particleState position

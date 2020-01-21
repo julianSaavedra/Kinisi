@@ -1,4 +1,6 @@
-as yet unclassified
+user interaction
 particleName: targetName
- 
-	^self class forParticleNamed: targetName
+
+	| targetParticleState |
+	targetParticleState := self newParticleStateWithName: targetName.
+	self updateState: targetParticleState

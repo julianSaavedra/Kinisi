@@ -4,7 +4,7 @@ blueTwoKgOneMeterInEachDirectionParticleDraft
 	| universeDraft draft testResource |
 
 	testResource := PhysicsTestResource new.
-	universeDraft := UniverseObservationDraft new.
+	universeDraft := UniverseObservation new.
 	draft := universeDraft newParticleObservationDraft.
 	draft
 		particleName: #ParticleA;
@@ -12,5 +12,6 @@ blueTwoKgOneMeterInEachDirectionParticleDraft
 		mass: testResource twoKilograms;
 		position: testResource oneMeterInAllComponentsVector;
 		velocity: (testResource velocityVectorWithAllComponentsWithAmount: 2);
-		acceleration: (testResource accelerationVectorWithAllComponentsWithAmount: 3).
+		acceleration: (testResource accelerationVectorWithAllComponentsWithAmount: 3);
+		save.
 	^ draft

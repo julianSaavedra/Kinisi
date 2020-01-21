@@ -2,7 +2,7 @@ support
 newSimulationInformingStepsTo: stepConsumer
 
 	^Simulation
-		startingWith: initialState asUniverseState
+		startingWith: initialState universeState
 		changingBy: [:stepDuration :currentState | (UniverseStateChange from: currentState during: stepDuration) finalState ]
 		over: simulationConfiguration stepDuration
 		during: simulationConfiguration totalDuration

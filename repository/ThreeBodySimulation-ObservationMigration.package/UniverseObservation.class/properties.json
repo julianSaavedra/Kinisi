@@ -7,7 +7,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"visualConfiguration",
-		"universeState"
+		"universeState",
+		"colorMapping",
+		"background",
+		"zoom",
+		"scale"
 	],
 	"name" : "UniverseObservation",
 	"type" : "normal"

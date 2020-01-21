@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "ThreeBodySimulation-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"universeObservation",
+		"zoomIn",
+		"zoomOut",
+		"postModelChangeAction"
+	],
+	"name" : "UniverseObservationZoomPresenter",
+	"type" : "normal"
+}

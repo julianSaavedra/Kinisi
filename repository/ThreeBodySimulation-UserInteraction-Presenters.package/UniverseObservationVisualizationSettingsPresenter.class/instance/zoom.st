@@ -1,0 +1,4 @@
+initialization
+zoom
+
+	^zoom

@@ -1,7 +1,6 @@
 asserting
 should: block raise: exceptionalEvent whoseDescriptionIncludes: message
 
-
 	self
 		should: block
 		raise: exceptionalEvent

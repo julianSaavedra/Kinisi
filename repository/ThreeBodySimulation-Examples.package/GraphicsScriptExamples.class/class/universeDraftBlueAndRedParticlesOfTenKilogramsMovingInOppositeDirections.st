@@ -8,18 +8,20 @@ universeDraftBlueAndRedParticlesOfTenKilogramsMovingInOppositeDirections
 	oneMeterPerSecondVelocity := MeasureVector y: 1 with: unitProvider standardVelocityUnit.
 	tenKilograms := unitProvider kilogram with: 10.
 	
-	universeDraft := UniverseObservationDraft new.
+	universeDraft := UniverseObservation new.
 	blueDraft := universeDraft newParticleObservationDraft.
 	blueDraft
 		color: Color blue;
 		mass: tenKilograms;
 		position: oneMeterInXPosition;
-		velocity: oneMeterPerSecondVelocity.
+		velocity: oneMeterPerSecondVelocity;
+		save.
 	redDraft := universeDraft newParticleObservationDraft.
 	redDraft
 		color: Color red;
 		mass: tenKilograms;
 		position: oneMeterInXPosition * -1;
-		velocity: oneMeterPerSecondVelocity * -1.
+		velocity: oneMeterPerSecondVelocity * -1;
+		save.
 		
 	^universeDraft

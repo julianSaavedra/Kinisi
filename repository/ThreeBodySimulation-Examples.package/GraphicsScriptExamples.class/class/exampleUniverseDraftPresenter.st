@@ -2,8 +2,7 @@ example - UI
 exampleUniverseDraftPresenter
 
 	| universeDraft |
-	universeDraft := UniverseObservationDraft new.
-	universeDraft
-		newParticleObservationDraft;
-		newParticleObservationDraft.
-	(UniverseDraftPresenter on: universeDraft) openWithSpec
+	universeDraft := UniverseObservation new.
+	universeDraft newParticleObservationDraft save.
+	universeDraft newParticleObservationDraft save.
+	(UniverseObservationPresenter on: universeDraft) openWithSpec

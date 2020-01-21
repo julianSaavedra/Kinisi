@@ -23,7 +23,9 @@ baseline: spec
 		
 		spec package: 'ThreeBodySimulation-UserInteraction-Model'.
 		spec package: 'ThreeBodySimulation-UserInteraction-Presenters' with: [ spec requires: 'Roassal2' ].
-		spec package: 'ThreeBodySimulation-UserInteraction-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General-Model') ].		
+		spec package: 'ThreeBodySimulation-UserInteraction-Tests' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General-Model') ].
+		spec package: 'ThreeBodySimulation-ObservationMigration' with: [ spec requires: #('ThreeBodySimulation-Physics-Model' 'ThreeBodySimulation-General-Model') ].		
+
 		spec baseline: 'Aconcagua' with: [
 			spec
 				repository: 'github://ba-st/Aconcagua:v7.0.0/repository';

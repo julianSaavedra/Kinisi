@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleObservationMode",
+	"category" : "ThreeBodySimulation-ObservationMigration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParticleObservationDraftMode",
+	"type" : "normal"
+}

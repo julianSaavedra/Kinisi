@@ -1,4 +1,0 @@
-initialization
-initializePresenter
-
-	properties whenChangedDo: self propertiesChangeAction

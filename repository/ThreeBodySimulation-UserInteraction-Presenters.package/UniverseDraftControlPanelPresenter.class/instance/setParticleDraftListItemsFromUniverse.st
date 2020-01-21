@@ -1,4 +1,0 @@
-private
-setParticleDraftListItemsFromUniverse
-
-	particleDraftList items: universeDraft particleDrafts

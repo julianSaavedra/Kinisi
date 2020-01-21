@@ -1,0 +1,4 @@
+initialization
+zoomOut
+
+	^zoomOut
