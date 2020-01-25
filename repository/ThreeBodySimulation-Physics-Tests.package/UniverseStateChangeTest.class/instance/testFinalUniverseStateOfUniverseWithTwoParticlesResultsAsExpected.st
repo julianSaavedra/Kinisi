@@ -2,10 +2,10 @@ tests
 testFinalUniverseStateOfUniverseWithTwoParticlesResultsAsExpected
 
 	| originalState universeStateChange expectedState |
-	originalState := ObservableUniverseState with: self originalPhysicalStates.
+	originalState := ObservableUniverseState withAll: self originalPhysicalStates.
 	universeStateChange := UniverseStateChange
 		from: originalState
 		during: testResource oneSecond.
 
-	expectedState := ObservableUniverseState with: self expectedPhysicalStates.	
+	expectedState := ObservableUniverseState withAll: self expectedPhysicalStates.	
 	self assert: universeStateChange finalState equals: expectedState

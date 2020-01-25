@@ -1,9 +1,9 @@
 tests
 testElementIsLabeledWithParticleNameIfRendererIsTellToLabelElement
 
-	| view renderer methodWasSent physicalState |
+	| view renderer methodWasSent particle |
 	view := RTView new.
-	physicalState := self physicalStateWithOneKilogramAndPositionWithOneMeterInXAndY.
+	particle := self physicalStateWithOneKilogramAndPositionWithOneMeterInXAndY.
 	renderer := ParticleInUniverseRenderer
 		with:
 			(FigureDecoration
@@ -16,8 +16,8 @@ testElementIsLabeledWithParticleNameIfRendererIsTellToLabelElement
 	methodWasSent := false.
 	self
 		overrideMethodNamed: #particleName
-		in: PhysicalState
+		in: ParticleState
 		with: [:receiver :arguments | methodWasSent := true ]
-		during: [ renderer drawIn: view basedOn: physicalState ].
+		during: [ renderer drawIn: view basedOn: particle ].
 
 	self assert: methodWasSent

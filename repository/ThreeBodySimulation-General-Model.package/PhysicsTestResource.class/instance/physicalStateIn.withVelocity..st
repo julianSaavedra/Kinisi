@@ -2,7 +2,7 @@ utilities
 physicalStateIn: positionVector withVelocity: velocityVector
 
 	^self
-		physicalStateForParticleNamed: 'ParticleA'
+		particleNamed: 'ParticleA'
 		with: self oneKilogram
 		in: positionVector
 		withVelocity: velocityVector

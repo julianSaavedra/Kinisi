@@ -1,5 +1,5 @@
 asserting
-assertIn: collection uniqueElementsGivenBy: oneArgBlock ifNotRaiseSignal: signalString
+assertIn: particles uniqueElementsGivenBy: oneArgBlock ifNotRaiseSignal: signalString
 
-	(collection collect: oneArgBlock) asSet size = collection size
+	(particles collect: oneArgBlock) asSet size = particles size
 		ifFalse: [ PhysicsModelError signal: signalString ]

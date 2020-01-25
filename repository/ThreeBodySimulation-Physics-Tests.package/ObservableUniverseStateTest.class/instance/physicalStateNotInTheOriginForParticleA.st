@@ -1,4 +1,0 @@
-test objects
-physicalStateNotInTheOriginForParticleA
-
-	^testResource physicalStateForParticleNotInTheOriginNamed: 'ParticleA'

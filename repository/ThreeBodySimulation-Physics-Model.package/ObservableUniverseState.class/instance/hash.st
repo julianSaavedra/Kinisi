@@ -1,4 +1,4 @@
 comparing
 hash
 
-	^physicalStates hash
+	^particleStates hash

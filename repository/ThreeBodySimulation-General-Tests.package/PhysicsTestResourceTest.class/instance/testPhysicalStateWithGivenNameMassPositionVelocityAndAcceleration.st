@@ -8,7 +8,7 @@ testPhysicalStateWithGivenNameMassPositionVelocityAndAcceleration
 	acceleration := testResource accelerationVectorWithAllComponentsWithAmount: 3.
 	
 	physicalState := testResource
-		physicalStateForParticleNamed: 'ParticleA'
+		particleNamed: 'ParticleA'
 		with: mass
 		in: position
 		withVelocity: velocity

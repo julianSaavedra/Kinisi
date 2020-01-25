@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"physicalStates"
+		"particleStates"
 	],
 	"name" : "ObservableUniverseState",
 	"type" : "normal"

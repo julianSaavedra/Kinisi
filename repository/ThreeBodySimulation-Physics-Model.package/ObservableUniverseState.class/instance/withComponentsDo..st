@@ -1,4 +1,4 @@
 accessing
 withComponentsDo: aBlock
  
-	self physicalStates do: [:aPhysicalState | aBlock value: aPhysicalState ]
+	self particles do: [:particle | aBlock value: particle ]

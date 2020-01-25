@@ -1,9 +1,9 @@
 tests
 testHash
 
-	| physicalStateCollection |
-	physicalStateCollection := self twoPhysicalStatesCollection.
+	| particles |
+	particles := self twoParticles.
 
 	self
-		assert: (ObservableUniverseState with: physicalStateCollection) hash
-		equals: (ObservableUniverseState with: physicalStateCollection copy) hash
+		assert: (ObservableUniverseState withAll: particles) hash
+		equals: (ObservableUniverseState withAll: particles copy) hash

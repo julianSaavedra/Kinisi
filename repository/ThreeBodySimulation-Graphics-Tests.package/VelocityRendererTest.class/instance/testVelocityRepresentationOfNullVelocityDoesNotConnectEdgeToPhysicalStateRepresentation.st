@@ -1,17 +1,17 @@
 tests
 testVelocityRepresentationOfNullVelocityDoesNotConnectEdgeToPhysicalStateRepresentation
 
-	| view velocity physicalStateElement velocityRenderer |
+	| view velocity particleElement velocityRenderer |
 	view := RTView new.
 	velocity := PhysicsTestResource new nullVelocity.
-	physicalStateElement := RTEllipse new elementOn: #PhysicalState.
-	view add: physicalStateElement.
+	particleElement := RTEllipse new elementOn: #ParticleState.
+	view add: particleElement.
 	
 	velocityRenderer := VelocityRenderer new.
 	
 	velocityRenderer
 		drawIn: view
 		basedOn: velocity
-		holdBy: physicalStateElement.
+		holdBy: particleElement.
 
-	self assert: physicalStateElement connectedEdges isEmpty.
+	self assert: particleElement connectedEdges isEmpty.

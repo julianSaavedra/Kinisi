@@ -1,4 +1,4 @@
-examples - grid - animation
+not working
 exampleEarthAndSunAnimation
 
 	| view viewSize animation draft observableUniverseStates gridConfiguration |

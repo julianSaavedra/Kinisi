@@ -7,7 +7,7 @@ exampleEarthAndSunSimulation
 	duration := day with: 365.
 
 	simulation := Simulation
-		startingWith: self earthAndSunInitialObservableUniverseState
+		startingWith: self earthAndSunUniverse
 		changingBy: [:stepDuration :currentState |
 			(UniverseStateChange from: currentState during: stepDuration) finalState ]
 		over: timeDelta

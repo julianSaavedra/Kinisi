@@ -42,7 +42,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 				show: '----------------------------------------------------------';
 				cr ].
 	simulation := Simulation
-		startingWith: self earthAndSunInitialUniverseDraft asUniverseState
+		startingWith: self earthAndSunInitialUniverseDraft universeState
 		changingBy: [ :stepDuration :currentState | 
 			(UniverseStateChange from: currentState during: stepDuration)
 				finalState ]

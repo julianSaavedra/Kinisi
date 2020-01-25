@@ -2,7 +2,7 @@ tests
 testFinalUniverseStateIsEqualToTheOriginalStateIfItHasNoPhysicalStates
 
 	| originalState universeStateChange |
-	originalState := ObservableUniverseState with: #().
+	originalState := ObservableUniverseState withAll: #().
 	universeStateChange := UniverseStateChange
 		from: originalState
 		during: testResource oneSecond. 

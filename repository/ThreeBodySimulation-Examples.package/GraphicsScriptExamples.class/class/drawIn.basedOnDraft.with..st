@@ -5,7 +5,7 @@ drawIn: view basedOnDraft: universeDraft with: gridConfiguration
 	view canvas clean.
 	"view @ RTZoomableView."
 	GridRenderer new drawIn: view basedOn: gridConfiguration.
-	particleDrafts := universeDraft particleDrafts.
+	particleDrafts := universeDraft particles.
 	massTransformation := RelativeMeasureToNumberTransformation
 		basedOn: (particleDrafts collect: [ :particleDraft | particleDraft mass ])
 		withMinimunAt: 10.

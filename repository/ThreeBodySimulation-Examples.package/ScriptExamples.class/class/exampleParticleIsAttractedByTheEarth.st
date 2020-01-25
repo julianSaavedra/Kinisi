@@ -1,19 +1,19 @@
 examples
 exampleParticleIsAttractedByTheEarth
 
-	| testResource unitProvider second earthState originalParticleState timeDelta duration simulation |
+	| testResource unitProvider second earth particle timeDelta duration simulation |
 
 	unitProvider := UnitProvider soleInstance.
 	second := unitProvider second.
 	testResource := PhysicsTestResource new.
 
-	earthState := PhysicalState
+	earth := ParticleState
 		forParticleNamed: 'Earth'
 		withMass: (unitProvider kilogram with: 5.9722e24)
 		position: (MeasureVector y: -6371 with: unitProvider kilometer)
 		velocity: testResource nullVelocity
 		andAcceleration: testResource nullAcceleration.
-	originalParticleState := PhysicalState
+	particle := ParticleState
 		forParticleNamed: 'ExampleParticle'
 		withMass: testResource oneKilogram
 		position: testResource nullPosition
@@ -24,10 +24,10 @@ exampleParticleIsAttractedByTheEarth
 	duration := second with: 1.1.
 	
 	simulation := Simulation
-		startingWith: originalParticleState
+		startingWith: particle
 		changingBy: [:stepDuration :currentState |
 			| interaction |
-			interaction := Interaction overParticleWith: currentState causedByParticleWith: earthState.
+			interaction := Interaction overParticleWith: currentState causedByParticleWith: earth.
 			(PhysicalStateChange of: currentState during: stepDuration perceiving: interaction result) finalState ]
 		over: timeDelta
 		during: duration.

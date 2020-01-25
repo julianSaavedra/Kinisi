@@ -1,18 +1,18 @@
 tests
 testVelocityRepresentationHasSameDirectonAsTheRealVelocityVector
 
-	| view velocity physicalStateElement velocityRenderer velocityEdge |
+	| view velocity particleElement velocityRenderer velocityEdge |
 	view := RTView new.
 	velocity := PhysicsTestResource new velocityVectorWithAllComponentsWithAmount: 1.
-	physicalStateElement := RTEllipse new elementOn: #PhysicalState.
-	view add: physicalStateElement.
+	particleElement := RTEllipse new elementOn: #ParticleState.
+	view add: particleElement.
 	
 	velocityRenderer := VelocityRenderer new.
 	
 	velocityRenderer
 		drawIn: view
 		basedOn: velocity
-		holdBy: physicalStateElement.
+		holdBy: particleElement.
 
 	"Really bad way of obtaining Velocity edge - it depends on the order of internal storing of shapes.
 	Change to use it with physicalStateElement instead (?)"

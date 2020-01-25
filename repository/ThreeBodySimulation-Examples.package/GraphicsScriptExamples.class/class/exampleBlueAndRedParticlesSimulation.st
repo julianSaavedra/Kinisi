@@ -29,7 +29,7 @@ exampleBlueAndRedParticlesSimulation
 	bufferWriterConsumer := SimulationStepBufferWriterConsumer on: buffer.
 	
 	simulation := Simulation
-		startingWith: universeDraft asUniverseState
+		startingWith: universeDraft universeState
 		changingBy: [:stepDuration :currentState |
 			(UniverseStateChange from: currentState during: stepDuration) finalState ]
 		over: timeDelta
