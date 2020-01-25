@@ -4,10 +4,9 @@ os:
  - linux
 
 smalltalk_vm:
- - Pharo-8.0
- - Pharo-7.0
+ - Pharo64-8.0
+ - Pharo64-7.0
 
 smalltalk:
  - Pharo-8.0
  - Pharo-7.0
-
