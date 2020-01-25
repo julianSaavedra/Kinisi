@@ -12,7 +12,7 @@ SmalltalkCISpec {
   },
   #exclude : {
    #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTests ],
-   #packages : ['ThreeBodySimulation-Playground', 'ThreeBodySimulation-PlaygroundGraphic' ]
+   #packages : ['ThreeBodySimulation-Playground', 'ThreeBodySimulation-PlaygroundGraphic', 'ThreeBodySimulation-PlaygroundUI' ]
     },
   #coverage : {
    #packages : ['ThreeBodySimulation-*-Model']
