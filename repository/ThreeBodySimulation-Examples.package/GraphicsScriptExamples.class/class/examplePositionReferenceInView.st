@@ -5,7 +5,7 @@ examplePositionReferenceInView
 	view := RTView new.
 	view canvas color: Color black.
 	viewSize := 250@250.
-	physicalState := self physicalStateInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent.	
+	physicalState := self particleStateInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent.	
 	"Create shapes for particles"
 	particleShape := RTEllipse new
 		borderColor: Color black;

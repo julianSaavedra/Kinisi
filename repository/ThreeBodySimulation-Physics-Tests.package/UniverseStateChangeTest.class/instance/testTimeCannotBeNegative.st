@@ -2,7 +2,7 @@ tests
 testTimeCannotBeNegative
 
 	| originalState |
-	originalState := ObservableUniverseState with: self originalPhysicalStates.
+	originalState := ObservableUniverseState withAll: self originalPhysicalStates.
 	
 	self
 		should: [ UniverseStateChange

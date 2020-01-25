@@ -5,7 +5,7 @@ examplePositionInXOfEarthInTimeInItsInteractionWithTheSun
 	"Preparing the data"
 	inputArray := self earthAndSunSimulationResult withTimeAndStateCollect: [:time :state |
 		| earthState |
-		earthState := state physicalStates detect: [:particleState | particleState particleName = #Earth].
+		earthState := state particles detect: [:particleState | particleState particleName = #Earth].
 		Array
 			with: time amount
 			with: earthState particleName

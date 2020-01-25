@@ -1,8 +1,8 @@
 utilities
 updateDraft: draft basedOn: observableUniverseState
 
-	draft particleDrafts do: [:particleDraft |
-		observableUniverseState physicalStates
+	draft particles do: [:particleDraft |
+		observableUniverseState particles
 			detect: [:aPhysicalState | aPhysicalState particleName = particleDraft particleName ]
 			ifFound: [:aPhysicalState |
 				particleDraft

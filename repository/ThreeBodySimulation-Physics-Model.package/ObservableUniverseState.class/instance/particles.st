@@ -1,0 +1,4 @@
+accessing
+particles
+
+	^particleStates copy

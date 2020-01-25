@@ -1,7 +1,7 @@
 asserting
-assertParticlePositionsAreUniqueIn: physicalStates
+assertParticlePositionsAreUniqueIn: particleStates
 
 	self
-		assertIn: physicalStates
+		assertIn: particleStates
 		uniqueElementsGivenBy: [:physicalState | physicalState position]
 		ifNotRaiseSignal: 'Two or more particles are in the same point'

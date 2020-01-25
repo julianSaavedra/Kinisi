@@ -3,7 +3,7 @@ testFinalUniverseStateIsEqualToTheOriginalStateIfItHasOnePhysicalStateWithNullVe
 
 	| physicalStates originalState universeStateChange |
 	physicalStates := Array with: testResource physicalStateWithNullVelocity.
-	originalState := ObservableUniverseState with: physicalStates.
+	originalState := ObservableUniverseState withAll: physicalStates.
 	universeStateChange := UniverseStateChange
 		from: originalState
 		during: testResource oneSecond.

@@ -1,13 +1,13 @@
 tests
 testInteractionCannotBeCreatedBetweenPhysicalStatesForTheSameParticle
 
-	| aPhysicalStateForParticleA anotherPhysicalStateForParticleA |
-	aPhysicalStateForParticleA := testResource physicalStateForParticleInTheOriginNamed: #ParticleA.
-	anotherPhysicalStateForParticleA := testResource physicalStateForParticleInTheOriginNamed: #ParticleA.
+	| particleA particleAWithOtherPosition |
+	particleA := testResource physicalStateForParticleInTheOriginNamed: #ParticleA.
+	particleAWithOtherPosition := testResource physicalStateForParticleInTheOriginNamed: #ParticleA.
 
 	self
 		should: [
 			Interaction
-				overParticleWith: aPhysicalStateForParticleA
-				causedByParticleWith: anotherPhysicalStateForParticleA ]
+				overParticleWith: particleA
+				causedByParticleWith: particleAWithOtherPosition ]
 		raise: PhysicsModelError

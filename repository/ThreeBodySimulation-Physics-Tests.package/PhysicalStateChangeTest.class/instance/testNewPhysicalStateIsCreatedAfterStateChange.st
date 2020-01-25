@@ -1,12 +1,12 @@
 tests
 testNewPhysicalStateIsCreatedAfterStateChange
 
-	| originalState aForce stateChange |
-	aForce := testResource oneNewtonInAllComponentsVector.
-	originalState := testResource oneKilogramInTheOriginPhysicalState..
+	| originalState force stateChange |
+	force := testResource oneNewtonInAllComponentsVector.
+	originalState := testResource oneKilogramInTheOriginPhysicalState.
 	stateChange := PhysicalStateChange
 		of: originalState
 		during: testResource oneSecond
-		perceiving: aForce.
+		perceiving: force.
 
 	self deny: stateChange finalState == originalState

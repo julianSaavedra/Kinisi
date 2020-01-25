@@ -3,7 +3,7 @@ testUniverseStateDoesNotChangeIfDurationIsZeroSeconds
 
 	| physicalStates originalState universeStateChange |
 	physicalStates := Array with: testResource physicalStateWithNonNullVelocity.
-	originalState := ObservableUniverseState with: physicalStates.
+	originalState := ObservableUniverseState withAll: physicalStates.
 	universeStateChange := UniverseStateChange
 		from: originalState
 		during: testResource zeroSeconds.

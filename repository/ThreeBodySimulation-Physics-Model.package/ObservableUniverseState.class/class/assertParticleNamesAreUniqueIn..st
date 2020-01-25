@@ -1,7 +1,7 @@
 asserting
-assertParticleNamesAreUniqueIn: physicalStates
+assertParticleNamesAreUniqueIn: particleStates
 
 	self
-		assertIn: physicalStates
+		assertIn: particleStates
 		uniqueElementsGivenBy: [:physicalState | physicalState particleName ]
 		ifNotRaiseSignal: 'Two or more particles are named equally'

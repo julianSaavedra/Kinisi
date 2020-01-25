@@ -1,6 +1,6 @@
 private
-includesAllAndOnly: physicalStateCollection
+includesAllAndOnly: particles
 
-	^physicalStates size = physicalStateCollection size
-		and: [ physicalStates includesAll: physicalStateCollection ]
+	^particleStates size = particles size
+		and: [ particleStates includesAll: particles ]
 	

@@ -1,21 +1,21 @@
 tests
 testVelocityRepresentationIsConnectedToPhysicalStateRepresentation
 
-	| view velocity physicalStateElement velocityRenderer physicalStateElementConnectedEdges velocityEdge |
+	| view velocity particleElement velocityRenderer particleElementConnectedEdges velocityEdge |
 	view := RTView new.
 	velocity := PhysicsTestResource new velocityVectorWithAllComponentsWithAmount: 1.
-	physicalStateElement := RTEllipse new elementOn: #PhysicalState.
-	view add: physicalStateElement.
+	particleElement := RTEllipse new elementOn: #Particle.
+	view add: particleElement.
 	
 	velocityRenderer := VelocityRenderer new.
 	
 	velocityRenderer
 		drawIn: view
 		basedOn: velocity
-		holdBy: physicalStateElement.
+		holdBy: particleElement.
 
-	physicalStateElementConnectedEdges := physicalStateElement connectedEdges.
-	self assert: physicalStateElementConnectedEdges size equals: 1.
-	velocityEdge := physicalStateElementConnectedEdges first.
-	self assert: velocityEdge model key equals: physicalStateElement model.
+	particleElementConnectedEdges := particleElement connectedEdges.
+	self assert: particleElementConnectedEdges size equals: 1.
+	velocityEdge := particleElementConnectedEdges first.
+	self assert: velocityEdge model key equals: particleElement model.
 	self assert: velocityEdge model value equals: #Velocity

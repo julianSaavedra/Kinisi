@@ -6,7 +6,7 @@ calculatedFinalResult
 	nextVelocity := nextAcceleration * deltaTime + originalState velocity.
 	nextPosition := (nextVelocity + originalState velocity) * deltaTime / 2 + originalState position.
 	
-	^ PhysicalState
+	^ParticleState
 		forParticleNamed: originalState particleName
 		withMass: originalState mass
 		position: nextPosition

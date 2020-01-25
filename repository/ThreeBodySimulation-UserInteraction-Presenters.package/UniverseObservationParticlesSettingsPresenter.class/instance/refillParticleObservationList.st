@@ -1,4 +1,4 @@
 private
 refillParticleObservationList
 
-	particleObservationList items: universeObservation particleObservations
+	particleObservationList items: universeObservation particles

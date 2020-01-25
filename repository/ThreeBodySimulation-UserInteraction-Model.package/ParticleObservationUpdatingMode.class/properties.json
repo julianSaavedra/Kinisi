@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleObservationMode",
+	"category" : "ThreeBodySimulation-UserInteraction-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParticleObservationUpdatingMode",
+	"type" : "normal"
+}

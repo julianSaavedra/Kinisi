@@ -21,7 +21,7 @@ exampleBlueAndRedParticlesSimulationWithMonitoring
 			"Transcript show: simulationStepResult time asString"].
 	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 50).
 	simulation := Simulation
-		startingWith: universeDraft asUniverseState
+		startingWith: universeDraft universeState
 		changingBy: [:stepDuration :currentState | (UniverseStateChange from: currentState during: stepDuration) finalState ]
 		over: (second with: 0.1)
 		during: (second with: 100)
