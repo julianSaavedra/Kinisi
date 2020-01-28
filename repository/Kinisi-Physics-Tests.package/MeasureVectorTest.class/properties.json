@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Physics-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"newton",
+		"meter",
+		"oneNewton",
+		"oneMeter",
+		"unitProvider"
+	],
+	"name" : "MeasureVectorTest",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"forwardedConsumer",
+		"packages"
+	],
+	"name" : "AsynchronousForwardingConsumer",
+	"type" : "normal"
+}

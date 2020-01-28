@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"measure",
+		"unitOptions",
+		"measureChangeBlock",
+		"name",
+		"label",
+		"xComponent",
+		"yComponent"
+	],
+	"name" : "VectorMeasurePresenter",
+	"type" : "normal"
+}

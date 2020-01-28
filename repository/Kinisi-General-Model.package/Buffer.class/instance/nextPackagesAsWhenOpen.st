@@ -1,0 +1,4 @@
+private
+nextPackagesAsWhenOpen
+
+	^self nextPackageOrPreviousOneIfNothingNew

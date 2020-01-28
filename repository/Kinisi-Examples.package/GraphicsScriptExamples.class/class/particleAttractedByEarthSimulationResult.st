@@ -1,0 +1,4 @@
+data examples
+particleAttractedByEarthSimulationResult
+
+	^ScriptExamples exampleParticleIsAttractedByTheEarth

@@ -1,0 +1,4 @@
+initialization
+process: simulationMonitoringPackage
+
+	simulationMonitoringPackage beProcessedBy: self

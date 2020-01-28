@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-PlaygroundGraphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"elementLabelling",
+		"figureDecoration",
+		"positionDecoration"
+	],
+	"name" : "ParticleInUniverseRenderer",
+	"type" : "normal"
+}

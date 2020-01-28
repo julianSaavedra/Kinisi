@@ -1,0 +1,4 @@
+support
+methodWithNoPragmas
+
+	"Do nothing"

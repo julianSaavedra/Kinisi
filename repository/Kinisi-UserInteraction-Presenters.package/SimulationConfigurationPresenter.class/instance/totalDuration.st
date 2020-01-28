@@ -1,0 +1,4 @@
+model access
+totalDuration
+
+	^totalDuration

@@ -1,0 +1,4 @@
+actions
+beProcessedBy: monitoringProcess
+
+	self subclassResponsibility

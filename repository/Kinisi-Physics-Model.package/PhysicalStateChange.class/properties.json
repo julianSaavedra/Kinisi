@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Physics-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"originalState",
+		"netForce",
+		"deltaTime"
+	],
+	"name" : "PhysicalStateChange",
+	"type" : "normal"
+}

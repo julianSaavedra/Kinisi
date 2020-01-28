@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"initialState",
+		"simulationConfiguration",
+		"gridConfiguration",
+		"monitoring"
+	],
+	"name" : "UserWorkbench",
+	"type" : "normal"
+}

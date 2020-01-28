@@ -1,0 +1,4 @@
+API
+setModelBeforeInitialization: aParticleObservation
+
+	particleObservation := aParticleObservation

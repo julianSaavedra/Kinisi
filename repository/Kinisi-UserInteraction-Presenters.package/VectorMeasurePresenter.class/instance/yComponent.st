@@ -1,0 +1,4 @@
+initialization
+yComponent
+
+	^yComponent

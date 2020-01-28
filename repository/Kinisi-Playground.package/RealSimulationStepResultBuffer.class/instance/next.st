@@ -1,0 +1,4 @@
+initialization
+next
+
+	^results removeFirst

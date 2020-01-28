@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MethodWrapperMode",
+	"category" : "Kinisi-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"overrideBlock"
+	],
+	"name" : "MethodOverrideWrapperMode",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+initialization
+view
+
+	^view
