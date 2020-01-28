@@ -6,8 +6,8 @@
 Kinisi
 
 "Kinisi" is
-pronunciation of the greek word "κίνηση";
-a particles simulator written in Smalltalk for Pharo.
+- the pronunciation of the greek word "κίνηση";
+- a particles simulator written in Smalltalk for Pharo.
 
 In order to download the progress, please use the following script:
 
