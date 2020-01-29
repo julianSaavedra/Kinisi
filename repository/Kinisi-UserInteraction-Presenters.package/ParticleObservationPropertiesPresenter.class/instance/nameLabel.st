@@ -1,0 +1,4 @@
+accessing
+nameLabel
+
+	^nameLabel

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"consumer",
+		"milliseconds",
+		"packages"
+	],
+	"name" : "DelayForwardingConsumer",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "UserElementsGenerators",
+	"category" : "Kinisi-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"unit",
+		"nextDirection",
+		"nextNorm"
+	],
+	"name" : "SequentialTwoDimensionShiftingVectorGenerator",
+	"type" : "normal"
+}

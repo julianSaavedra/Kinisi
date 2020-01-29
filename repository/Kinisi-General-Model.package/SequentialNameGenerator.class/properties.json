@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "UserElementsGenerators",
+	"category" : "Kinisi-General-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"prefix",
+		"nextSuffix"
+	],
+	"name" : "SequentialNameGenerator",
+	"type" : "normal"
+}

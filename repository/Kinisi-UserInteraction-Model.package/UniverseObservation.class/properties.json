@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"visualConfiguration",
+		"universeState",
+		"colorMapping",
+		"background",
+		"zoom",
+		"scale"
+	],
+	"name" : "UniverseObservation",
+	"type" : "normal"
+}

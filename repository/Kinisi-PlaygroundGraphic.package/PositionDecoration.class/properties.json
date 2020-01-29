@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-PlaygroundGraphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"positionTranformation"
+	],
+	"name" : "PositionDecoration",
+	"type" : "normal"
+}

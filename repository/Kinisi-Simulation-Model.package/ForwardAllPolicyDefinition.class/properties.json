@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepResultForwardingPolicyDefinition",
+	"category" : "Kinisi-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ForwardAllPolicyDefinition",
+	"type" : "normal"
+}

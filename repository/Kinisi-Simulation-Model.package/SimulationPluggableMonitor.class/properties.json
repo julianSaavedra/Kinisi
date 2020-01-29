@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationMonitor",
+	"category" : "Kinisi-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"action",
+		"startAction",
+		"finishAction"
+	],
+	"name" : "SimulationPluggableMonitor",
+	"type" : "normal"
+}

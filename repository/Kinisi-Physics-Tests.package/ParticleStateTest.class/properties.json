@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Physics-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"meter",
+		"second",
+		"kilogram",
+		"testResource",
+		"oneKilogram",
+		"position",
+		"velocity",
+		"acceleration"
+	],
+	"name" : "ParticleStateTest",
+	"type" : "normal"
+}

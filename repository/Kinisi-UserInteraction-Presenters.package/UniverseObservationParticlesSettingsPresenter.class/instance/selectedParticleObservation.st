@@ -1,0 +1,4 @@
+accessing
+selectedParticleObservation
+
+	^selectedParticleObservation

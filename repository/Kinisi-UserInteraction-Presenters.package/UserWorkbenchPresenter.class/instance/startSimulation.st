@@ -1,0 +1,4 @@
+initialization
+startSimulation
+
+	workbench start

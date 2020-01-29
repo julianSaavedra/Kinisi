@@ -1,0 +1,4 @@
+initialization
+processAsSimulationTotalResult: simulationMonitoringPackage
+
+	self terminate

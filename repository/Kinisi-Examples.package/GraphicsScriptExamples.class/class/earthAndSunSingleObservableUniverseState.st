@@ -1,0 +1,4 @@
+data examples
+earthAndSunSingleObservableUniverseState
+
+	^ScriptExamples earthAndSunUniverse

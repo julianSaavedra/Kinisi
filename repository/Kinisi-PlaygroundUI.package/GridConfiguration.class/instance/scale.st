@@ -1,0 +1,4 @@
+accessing
+scale
+
+	^size / distance

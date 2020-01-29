@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "CompoundUnit",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"base",
+		"exponent"
+	],
+	"name" : "ExponentialUnit",
+	"type" : "normal"
+}

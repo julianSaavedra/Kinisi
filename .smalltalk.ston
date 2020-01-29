@@ -1,21 +1,21 @@
 SmalltalkCISpec {
  #loading : [
   SCIMetacelloLoadSpec {
-   #baseline : 'ThreeBodySimulationPlayground',
+   #baseline : 'Kinisi',
    #directory : 'repository',
    #platforms : [ #pharo ]
   }
  ],
  #testing : {
   #include:{
-   #packages : ['ThreeBodySimulation-*-Test']
+   #packages : ['Kinisi-*-Test']
   },
   #exclude : {
    #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTests ],
-   #packages : ['ThreeBodySimulation-Playground', 'ThreeBodySimulation-PlaygroundGraphic', 'ThreeBodySimulation-PlaygroundUI' ]
+   #packages : ['Kinisi-Playground', 'Kinisi-PlaygroundGraphic', 'Kinisi-PlaygroundUI' ]
     },
   #coverage : {
-   #packages : ['ThreeBodySimulation-*-Model']
+   #packages : ['Kinisi-*-Model']
   }
  }
 }

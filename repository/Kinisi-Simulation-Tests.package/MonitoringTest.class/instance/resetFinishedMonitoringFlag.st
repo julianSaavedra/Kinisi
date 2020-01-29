@@ -1,0 +1,4 @@
+support
+resetFinishedMonitoringFlag
+
+	monitorHasFinishedFlag := false

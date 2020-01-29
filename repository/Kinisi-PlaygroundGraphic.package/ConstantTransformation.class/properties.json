@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ModelValuesTransformation",
+	"category" : "Kinisi-PlaygroundGraphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"result"
+	],
+	"name" : "ConstantTransformation",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+example - UI
+exampleParticleDraftPresenter
+
+	(ParticleObservationPresenter on: self blueTwoKgOneMeterInEachDirectionParticleDraft) openWithSpec
