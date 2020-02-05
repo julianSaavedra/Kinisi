@@ -3,7 +3,7 @@ testDraftPositionUpdateFailsIfNewPositionIsAlreadyOccupiedInUniverseObservationA
 
 	| universeObservation draft preUpdateDraftPosition existingParticleObservation |
 	universeObservation := self universeObservationWithOneObservation.
-	draft := universeObservation newParticleObservationDraft.
+	draft := universeObservation newParticleObservation.
 	preUpdateDraftPosition := draft position.
 	
 	existingParticleObservation := universeObservation particles first.	

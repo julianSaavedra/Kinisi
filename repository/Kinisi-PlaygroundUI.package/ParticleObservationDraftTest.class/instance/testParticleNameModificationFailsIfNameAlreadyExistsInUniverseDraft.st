@@ -3,9 +3,9 @@ testParticleNameModificationFailsIfNameAlreadyExistsInUniverseDraft
 
 	| universeDraft aDraft anotherDraft |
 	universeDraft := UniverseObservationDraft new.
-	aDraft := universeDraft newParticleObservationDraft.
+	aDraft := universeDraft newParticleObservation.
 	aDraft particleName: 'ParticleA'.
-	anotherDraft := universeDraft newParticleObservationDraft.	
+	anotherDraft := universeDraft newParticleObservation.	
 	self
 		should: [ anotherDraft particleName: aDraft particleName ]
 		raise: SimulationError

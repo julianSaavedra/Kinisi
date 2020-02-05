@@ -3,7 +3,7 @@ testRemovingDraftBeforeItIsSavedDoesNotAfFail
 
 	| universeObservation draft |
 	universeObservation := UniverseObservation new.
-	draft := universeObservation newParticleObservationDraft.
+	draft := universeObservation newParticleObservation.
 	self assert: universeObservation particles isEmpty.
 
 	self

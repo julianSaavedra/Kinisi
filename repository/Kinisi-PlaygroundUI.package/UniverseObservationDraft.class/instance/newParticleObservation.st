@@ -1,5 +1,5 @@
 accessing
-newParticleObservationDraft
+newParticleObservation
 
 	| newParticleDraft |
 	newParticleDraft := ParticleObservationDraft

@@ -3,7 +3,7 @@ testParticleNameModificationDoesNotFailIfNewNameIsTheSameAsTheCurrentName
 
 	| universeDraft aDraft |
 	universeDraft := UniverseObservationDraft new.
-	aDraft := universeDraft newParticleObservationDraft.
+	aDraft := universeDraft newParticleObservation.
 	aDraft particleName: 'ParticleA'.
 	self
 		shouldnt: [ aDraft particleName: aDraft particleName ]

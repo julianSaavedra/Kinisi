@@ -4,7 +4,7 @@ testUniverseStateIsCreatedFromUniverseDraft
 	| testResource universeDraft blueDraft redDraft expectedPhysicalStates expectedUniverseState |
 	testResource := PhysicsTestResource new.
 	universeDraft := UniverseObservationDraft new.
-	blueDraft := universeDraft newParticleObservationDraft.
+	blueDraft := universeDraft newParticleObservation.
 	blueDraft
 		particleName: 'Blue';
 		color: Color blue;
@@ -12,7 +12,7 @@ testUniverseStateIsCreatedFromUniverseDraft
 		position: testResource oneMeterInXVector;
 		velocity: (testResource velocityVectorWithXComponentOnlyWithAmount: 2);
 		acceleration: (testResource accelerationVectorWithXComponentOnlyWithAmount: 3).
-	redDraft := universeDraft newParticleObservationDraft.
+	redDraft := universeDraft newParticleObservation.
 	redDraft
 		particleName: 'Red';
 		color: Color red;

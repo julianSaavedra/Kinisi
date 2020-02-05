@@ -6,7 +6,7 @@ earthAndSunInitialUniverseDraft
 	testResource := PhysicsTestResource new.
 	universeDraft := UniverseObservation new.
 	
-	earthDraft := universeDraft newParticleObservationDraft.
+	earthDraft := universeDraft newParticleObservation.
 	earthDraft
 		particleName: 'Earth';
 		position: (MeasureVector y: 150e6 with: unitProvider kilometer);
@@ -16,7 +16,7 @@ earthAndSunInitialUniverseDraft
 		color: Color lightBlue;
 		save.
 
-	sunDraft := universeDraft newParticleObservationDraft.
+	sunDraft := universeDraft newParticleObservation.
 	sunDraft
 		particleName: 'Sun';
 		position: testResource nullPosition;

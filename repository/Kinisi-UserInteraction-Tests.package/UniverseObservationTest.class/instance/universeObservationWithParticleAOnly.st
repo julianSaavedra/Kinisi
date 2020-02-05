@@ -3,5 +3,5 @@ universeObservationWithParticleAOnly
 
 	| universeObservation |
 	universeObservation := UniverseObservation new.
-	self populateParticleAObservationsInAndSave: universeObservation newParticleObservationDraft.
+	self populateParticleAObservationsInAndSave: universeObservation newParticleObservation.
 	^universeObservation

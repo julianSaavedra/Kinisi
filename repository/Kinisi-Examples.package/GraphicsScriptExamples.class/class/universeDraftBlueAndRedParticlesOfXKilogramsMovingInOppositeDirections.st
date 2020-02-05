@@ -10,14 +10,14 @@ universeDraftBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections
 	oneTon := unitProvider kilogram with: 1e11.
 	
 	universeDraft := UniverseObservation new.
-	blueDraft := universeDraft newParticleObservationDraft.
+	blueDraft := universeDraft newParticleObservation.
 	blueDraft
 		color: Color blue;
 		mass: oneTon;
 		position: oneMeterInXPosition;
 		velocity: oneMeterPerSecondVelocity;
 		save.
-	redDraft := universeDraft newParticleObservationDraft.
+	redDraft := universeDraft newParticleObservation.
 	redDraft
 		color: Color red;
 		mass: oneTon;

@@ -3,7 +3,7 @@ testPositionIsModified
 
 	| draft universeDraft newPosition |
 	universeDraft := UniverseObservationDraft new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	newPosition := testResource oneMeterInAllComponentsVector.
 	
 	draft position: newPosition.

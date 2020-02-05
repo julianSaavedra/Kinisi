@@ -3,7 +3,7 @@ testAccelerationIsModified
 
 	| draft universeDraft newAcceleration |
 	universeDraft := UniverseObservationDraft new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	newAcceleration := testResource accelerationVectorWithAllComponentsWithAmount: 2.
 	
 	draft acceleration: newAcceleration.

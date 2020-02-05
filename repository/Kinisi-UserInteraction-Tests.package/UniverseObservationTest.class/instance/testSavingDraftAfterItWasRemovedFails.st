@@ -3,7 +3,7 @@ testSavingDraftAfterItWasRemovedFails
 
 	| universeObservation draft |
 	universeObservation := UniverseObservation new.
-	draft := universeObservation newParticleObservationDraft.
+	draft := universeObservation newParticleObservation.
 	self populateParticleAObservationsInAndSave: draft.
 	self
 		assertSingleParticleIn: universeObservation

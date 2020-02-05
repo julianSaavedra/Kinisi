@@ -4,6 +4,6 @@ addButtonAction
 	| draftPresenter |
 
 	draftPresenter := ParticleObservationDraftPresenter
-		on: universeObservation newParticleObservationDraft.
+		on: universeObservation newParticleObservation.
 	draftPresenter onDraftSaveDo: [ self addButtonPostAction ].
 	^ draftPresenter openWithSpec

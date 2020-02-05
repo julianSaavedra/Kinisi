@@ -3,7 +3,7 @@ testElementInViewHasAsModelTheParticleOfTheRenderedUniverse
 
 	| universeDraft particleDraft renderer |
 	universeDraft := UniverseObservation new.
-	particleDraft := universeDraft newParticleObservationDraft.
+	particleDraft := universeDraft newParticleObservation.
 	particleDraft save.
 	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
 

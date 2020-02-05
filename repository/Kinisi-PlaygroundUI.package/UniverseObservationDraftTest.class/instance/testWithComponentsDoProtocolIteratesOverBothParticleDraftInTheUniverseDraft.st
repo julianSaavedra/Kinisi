@@ -4,8 +4,8 @@ testWithComponentsDoProtocolIteratesOverBothParticleDraftInTheUniverseDraft
 	| universeDraft particleDrafts componentsIteratedOver |
 	universeDraft := UniverseObservationDraft new.
 	particleDrafts := Array
-		with: universeDraft newParticleObservationDraft;
-		with: universeDraft newParticleObservationDraft.
+		with: universeDraft newParticleObservation;
+		with: universeDraft newParticleObservation.
 	componentsIteratedOver := OrderedCollection new.
 	
 	universeDraft withComponentsDo: [:particleDraft |

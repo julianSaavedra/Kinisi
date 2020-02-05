@@ -1,5 +1,5 @@
 tests
-testParticleAreNotEqualIfMassesAreDifferent
+testParticlesAreNotEqualIfMassesAreDifferent
 
 	| particle anotherParticle |
 	particle := ParticleState

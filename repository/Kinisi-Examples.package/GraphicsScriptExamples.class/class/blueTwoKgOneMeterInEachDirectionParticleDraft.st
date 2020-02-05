@@ -5,7 +5,7 @@ blueTwoKgOneMeterInEachDirectionParticleDraft
 
 	testResource := PhysicsTestResource new.
 	universeDraft := UniverseObservation new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	draft
 		particleName: #ParticleA;
 		color: Color blue;

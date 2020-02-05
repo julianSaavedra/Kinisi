@@ -7,7 +7,7 @@ testPhysicalStateIsCreatedFromParticleDraftWithSamePropertiesAsTheDraft
 	draftPosition := testResource oneMeterInXVector.
 	draftVelocity := testResource velocityVectorWithXComponentOnlyWithAmount: 2.
 	draftAcceleration := testResource accelerationVectorWithXComponentOnlyWithAmount: 3. 
-	blueDraft := UniverseObservationDraft new newParticleObservationDraft.
+	blueDraft := UniverseObservationDraft new newParticleObservation.
 	blueDraft
 		particleName: particleName;
 		color: Color blue;
