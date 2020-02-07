@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 stateFor: targetParticle
 
 	^universeState particles detect: [:particle | particle particleName = targetParticle particleName]

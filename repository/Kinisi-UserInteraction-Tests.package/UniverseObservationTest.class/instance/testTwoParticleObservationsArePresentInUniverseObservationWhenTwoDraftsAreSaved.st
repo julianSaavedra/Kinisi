@@ -5,8 +5,8 @@ testTwoParticleObservationsArePresentInUniverseObservationWhenTwoDraftsAreSaved
 	universeObservation := UniverseObservation new.
 	self assert: universeObservation particles isEmpty.
 
-	universeObservation newParticleObservation save.
-	universeObservation newParticleObservation save.
+	universeObservation newParticleObservation.
+	universeObservation newParticleObservation.
 
 	self
 		assert: universeObservation particles size

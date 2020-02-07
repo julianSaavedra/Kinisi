@@ -1,7 +1,7 @@
 configuring
 remove: particleObservation
 
-	particleObservation containingUniverseObservation == self
+	particleObservation universeObservation == self
 		ifTrue: [
 			universeState := self newUniverseStateRemoving: particleObservation particleState.
 			colorMapping removeKey: particleObservation particleName.

@@ -10,4 +10,4 @@ testUpdateOfRemovedParticleObservationFails
 		self
 			should: [ updateAction value: observationToBeRemoved ]
 			raise: UserInterfaceError
-			whoseDescriptionIncludes: 'Particle observation has been removed from universe' ]
+			whoseDescriptionIncludes: 'Observation is no longer valid' ]

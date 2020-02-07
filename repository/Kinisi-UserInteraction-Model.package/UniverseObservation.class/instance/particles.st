@@ -1,9 +1,5 @@
 accessing
 particles
 
-	^universeState particles collect: [:particleState |
-		ParticleObservation
-			over: particleState
-			with: (colorMapping at: particleState particleName)
-			in: self
-		]
+	^universeState particles collect: [:particle |
+		ParticlesObservation for: particle particleName in: self ]
