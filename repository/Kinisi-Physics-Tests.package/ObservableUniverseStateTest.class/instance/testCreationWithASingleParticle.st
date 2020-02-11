@@ -1,5 +1,5 @@
 tests
-testCreationFromASingleParticle
+testCreationWithASingleParticle
 
 	|  universe particle |
 	particle := self particleAInTheOrigin.
