@@ -1,7 +1,7 @@
 configuring
 reset
 
-	universeState := ObservableUniverseState withAll: #().
+	universeState := ObservableUniverseState empty.
 	background := Color black.
 	colorMapping := Dictionary new.
 	zoom := FeatureScaling atPercentage: 0.2.
