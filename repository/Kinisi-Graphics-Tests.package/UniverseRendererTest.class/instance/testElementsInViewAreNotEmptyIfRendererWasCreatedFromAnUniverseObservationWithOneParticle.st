@@ -3,7 +3,7 @@ testElementsInViewAreNotEmptyIfRendererWasCreatedFromAnUniverseObservationWithOn
 
 	| universeDraft renderer |
 	universeDraft := UniverseObservation new.
-	universeDraft newParticleObservation save.
+	universeDraft newParticleObservation.
 	self assert: universeDraft particles notEmpty.
 	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
 

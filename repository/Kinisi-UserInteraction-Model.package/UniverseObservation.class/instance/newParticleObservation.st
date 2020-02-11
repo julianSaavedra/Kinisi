@@ -13,4 +13,4 @@ newParticleObservation
 	universeState := self newUniverseStateWith: newParticleState.
 	colorMapping at: newParticleState particleName put: Color red.
 	
-	^ParticlesObservation for: newParticleState particleName in: self
+	^ParticleObservation for: newParticleState particleName in: self

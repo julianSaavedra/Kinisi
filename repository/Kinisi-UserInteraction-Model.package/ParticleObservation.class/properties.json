@@ -10,6 +10,6 @@
 		"universeObservation",
 		"wasRemoved"
 	],
-	"name" : "ParticlesObservation",
+	"name" : "ParticleObservation",
 	"type" : "normal"
 }

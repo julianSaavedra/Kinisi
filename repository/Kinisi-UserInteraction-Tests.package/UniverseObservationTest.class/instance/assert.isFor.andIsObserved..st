@@ -1,5 +1,5 @@
 asserting
-assert: particleObservation has: expectedParticleState and: expectedColor
+assert: particleObservation isFor: expectedParticleState andIsObserved: expectedColor
 
 	self
 		assert: particleObservation particleState

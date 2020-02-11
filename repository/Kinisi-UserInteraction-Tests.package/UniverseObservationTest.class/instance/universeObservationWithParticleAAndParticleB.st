@@ -3,5 +3,5 @@ universeObservationWithParticleAAndParticleB
 
 	| universeObservation |
 	universeObservation := self universeObservationWithParticleAOnly.
-	self populateParticleBObservationsInAndSave: universeObservation newParticleObservation.
-	^universeObservation
+	self populateParticleBObservationsIn: universeObservation newParticleObservation.
+	^ universeObservation

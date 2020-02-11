@@ -1,4 +1,0 @@
-support
-populateParticleAObservationsInAndSave: draft
-
-	self populateParticleAObservationsIn: draft

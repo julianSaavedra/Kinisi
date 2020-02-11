@@ -6,7 +6,6 @@ testParticleInPositionOneMeterInXAndYIsRenderedAtPointTwentyNegativeTwentyIfGrid
 	universeDraft := UniverseObservation new.
 	particleDraft := universeDraft newParticleObservation.
 	particleDraft position: testResource oneMeterInAllComponentsVector.
-	particleDraft save.
 	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
 
 	renderer drawIn: view basedOn: universeDraft.

@@ -5,8 +5,8 @@ testParticleAObservationIsAmendedWithParticleBObservations
 	universeObservation := self universeObservationWithParticleAOnly.
 	self
 		assertSingleParticleIn: universeObservation
-		has: self particleA
-		and: self particleAColor.
+		isFor: self particleA
+		andIsObserved: self particleAColor.
 	
 	particleObservation := universeObservation particles first.
 	self particleBUpdateActions do: [:action |
@@ -17,5 +17,5 @@ testParticleAObservationIsAmendedWithParticleBObservations
 		
 	self
 		assertSingleParticleIn: universeObservation
-		has: self particleB
-		and: self particleBColor.
+		isFor: self particleB
+		andIsObserved: self particleBColor.
