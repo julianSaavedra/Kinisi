@@ -1,5 +1,5 @@
 test
-testLabelIsAddedOnElementWithTextAsTheParticleNameOfTheParticleObsevationThatRepresents
+testNameOfParticleInUniverseBeingRenderedIsDisplayed
 
 	| universeDraft particleDraft renderer labelText |
 	universeDraft := UniverseObservation new.

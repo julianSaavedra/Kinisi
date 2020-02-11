@@ -1,5 +1,5 @@
 test
-testThereAreThreeElementsInViewAfterAnUniverseWithThreeParticlesIsRendered
+testThreeParticlesAreRenderedIfUniverseWithThreeParticlesIsRendered
 
 	| universeDraft renderer |
 	universeDraft := UniverseObservation new.

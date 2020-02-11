@@ -1,5 +1,5 @@
 test
-testElementInViewHasAsModelTheParticleOfTheRenderedUniverse
+testParticleOfUniverseBeingRenderedIsRendered
 
 	| universeDraft particleDraft renderer |
 	universeDraft := UniverseObservation new.
