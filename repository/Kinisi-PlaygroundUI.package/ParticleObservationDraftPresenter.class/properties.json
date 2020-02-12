@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ComposablePresenter",
-	"category" : "Kinisi-UserInteraction-Presenters",
+	"category" : "Kinisi-PlaygroundUI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"particleDraft",
-		"view"
+		"view",
+		"particleObservation"
 	],
 	"name" : "ParticleStateVisualPresenter",
 	"type" : "normal"
