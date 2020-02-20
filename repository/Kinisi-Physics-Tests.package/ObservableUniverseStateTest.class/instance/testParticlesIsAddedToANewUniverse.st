@@ -1,7 +1,7 @@
 tests
 testParticlesIsAddedToANewUniverse
 
-	|  universe particleToBeAdded |
+	| universe particleToBeAdded |
 	universe := ObservableUniverseState empty. 
 	particleToBeAdded := self particleAInTheOrigin.
 
