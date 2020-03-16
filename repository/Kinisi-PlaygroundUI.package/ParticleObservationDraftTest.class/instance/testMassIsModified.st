@@ -3,7 +3,7 @@ testMassIsModified
 
 	| draft universeDraft newMass |
 	universeDraft := UniverseObservationDraft new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	newMass := testResource twoKilograms.
 	
 	draft mass: newMass.

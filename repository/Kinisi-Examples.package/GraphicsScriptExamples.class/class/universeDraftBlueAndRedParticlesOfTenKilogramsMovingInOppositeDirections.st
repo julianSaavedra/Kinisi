@@ -9,14 +9,14 @@ universeDraftBlueAndRedParticlesOfTenKilogramsMovingInOppositeDirections
 	tenKilograms := unitProvider kilogram with: 10.
 	
 	universeDraft := UniverseObservation new.
-	blueDraft := universeDraft newParticleObservationDraft.
+	blueDraft := universeDraft newParticleObservation.
 	blueDraft
 		color: Color blue;
 		mass: tenKilograms;
 		position: oneMeterInXPosition;
 		velocity: oneMeterPerSecondVelocity;
 		save.
-	redDraft := universeDraft newParticleObservationDraft.
+	redDraft := universeDraft newParticleObservation.
 	redDraft
 		color: Color red;
 		mass: tenKilograms;

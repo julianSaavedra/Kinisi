@@ -1,4 +1,4 @@
-tests - in progress
+tests
 testRemovingParticleObservationFromAnotherUniverseFailsEvenIfParticleObservationIsTheSameAsTheParticleObservationInTargetUniverse
 
 	| universeObservation observationToBeRemoved |
@@ -7,6 +7,6 @@ testRemovingParticleObservationFromAnotherUniverseFailsEvenIfParticleObservation
 	
 	self assertSingleParticleIn: universeObservation observesTheSameAs: observationToBeRemoved.
 	self
-			should: [ universeObservation remove: observationToBeRemoved ]
-			raise: UserInterfaceError
-			whoseDescriptionIncludes: 'Particle observation to be removed is from another universe observation'
+		should: [ universeObservation remove: observationToBeRemoved ]
+		raise: UserInterfaceError
+		whoseDescriptionIncludes: 'Particle observation to be removed is from another universe observation'

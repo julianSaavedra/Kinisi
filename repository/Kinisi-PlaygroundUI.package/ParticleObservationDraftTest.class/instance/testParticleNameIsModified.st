@@ -3,7 +3,7 @@ testParticleNameIsModified
 
 	| draft universeDraft |
 	universeDraft := UniverseObservationDraft new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	
 	draft particleName: #ParticleA.
 	

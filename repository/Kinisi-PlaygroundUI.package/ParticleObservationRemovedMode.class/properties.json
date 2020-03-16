@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleObservationMode",
+	"category" : "Kinisi-PlaygroundUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParticleObservationRemovedMode",
+	"type" : "normal"
+}

@@ -1,6 +1,4 @@
-user interaction
+configuring
 velocity: targetVelocity
 
-	| targetParticleState |
-	targetParticleState := self newParticleStateWithVelocity: targetVelocity.
-	self updateState: targetParticleState
+	self updateStateWith: [:currentState | currentState velocity: targetVelocity]

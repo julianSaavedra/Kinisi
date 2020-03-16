@@ -1,6 +1,5 @@
-user interaction
-particleName: targetName
+configuring
+particleName: targetParticleName
 
-	| targetParticleState |
-	targetParticleState := self newParticleStateWithName: targetName.
-	self updateState: targetParticleState
+	self updateStateWith: [:currentState | currentState name: targetParticleName ].
+	particleName := targetParticleName

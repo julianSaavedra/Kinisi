@@ -1,4 +1,4 @@
 accessing
 mass
 
-	^particleState mass
+	^self particleState mass

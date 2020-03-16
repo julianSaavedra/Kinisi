@@ -3,8 +3,8 @@ testParticleObservationDraftIsRemovedFromUniverseDraftExplicitly
 
 	| universeDraft particleDraft |
 	universeDraft := UniverseObservationDraft new.
-	universeDraft newParticleObservationDraft.
-	particleDraft := universeDraft newParticleObservationDraft.
+	universeDraft newParticleObservation.
+	particleDraft := universeDraft newParticleObservation.
 	self assert: (universeDraft particles includes: particleDraft).
 	
 	universeDraft remove: particleDraft.

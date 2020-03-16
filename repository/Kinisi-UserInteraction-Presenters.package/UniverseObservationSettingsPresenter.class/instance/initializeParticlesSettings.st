@@ -9,5 +9,6 @@ initializeParticlesSettings
 	particlesSettingsTab
 		label: 'Particles';
 		closeable: false;
-		icon: Smalltalk ui icons smallObjects.
+		icon: Smalltalk ui icons smallObjects;
+		whenTabSelected: [ particlesSettings updateSelectedParticleObservation ].
 	settingTabs addTab: particlesSettingsTab

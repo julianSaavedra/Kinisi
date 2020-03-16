@@ -1,4 +1,4 @@
 private
 markAsRemoved
 
-	observationMode := ParticleObservationMode removed
+	wasRemoved := true

@@ -3,7 +3,7 @@ testPositionModificationDoesNotFailIfNewPositionIsCurrentlyTheSameForTheModifide
 
 	| universeDraft particleDraft currentPosition |
 	universeDraft := UniverseObservationDraft new.
-	particleDraft := universeDraft newParticleObservationDraft.
+	particleDraft := universeDraft newParticleObservation.
 	currentPosition := particleDraft position.	
 
 	self

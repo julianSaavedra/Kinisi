@@ -3,7 +3,7 @@ testNoParticleObservationDraftIsLeftInTheUniverseDraftWhenReset
 
 	| universeDraft |
 	universeDraft := UniverseObservationDraft new.
-	universeDraft newParticleObservationDraft.
+	universeDraft newParticleObservation.
 	self assert: universeDraft particles notEmpty.
 	
 	universeDraft reset.

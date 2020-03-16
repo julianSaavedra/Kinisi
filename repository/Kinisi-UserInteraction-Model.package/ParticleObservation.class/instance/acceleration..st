@@ -1,6 +1,4 @@
-user interaction
+configuring
 acceleration: targetAcceleration
 
-	| targetParticleState |
-	targetParticleState := self newParticleStateWithAcceleration: targetAcceleration.
-	self updateState: targetParticleState
+	self updateStateWith: [:currentState | currentState acceleration: targetAcceleration ]

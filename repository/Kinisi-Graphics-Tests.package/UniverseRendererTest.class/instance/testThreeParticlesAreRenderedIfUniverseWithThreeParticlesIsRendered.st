@@ -1,0 +1,12 @@
+test
+testThreeParticlesAreRenderedIfUniverseWithThreeParticlesIsRendered
+
+	| universeDraft renderer |
+	universeDraft := UniverseObservation new.
+	universeDraft newParticleObservation; newParticleObservation; newParticleObservation.
+	self assert: universeDraft particles size equals: 3.
+	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
+
+	renderer drawIn: view basedOn: universeDraft.
+
+	self assert: view elements size equals: 3

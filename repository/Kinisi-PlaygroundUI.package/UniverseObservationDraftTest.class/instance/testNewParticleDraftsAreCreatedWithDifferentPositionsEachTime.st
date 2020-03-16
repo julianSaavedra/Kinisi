@@ -3,11 +3,11 @@ testNewParticleDraftsAreCreatedWithDifferentPositionsEachTime
 
 	| universeDraft  newParticleDraft previousParticleDraft |
 	universeDraft := UniverseObservationDraft new.
-	newParticleDraft := universeDraft newParticleObservationDraft.
+	newParticleDraft := universeDraft newParticleObservation.
 	
 	10 timesRepeat: [
 		previousParticleDraft := newParticleDraft.
-		newParticleDraft := universeDraft newParticleObservationDraft.
+		newParticleDraft := universeDraft newParticleObservation.
 		self 
 			deny: previousParticleDraft position
 			equals: newParticleDraft position]

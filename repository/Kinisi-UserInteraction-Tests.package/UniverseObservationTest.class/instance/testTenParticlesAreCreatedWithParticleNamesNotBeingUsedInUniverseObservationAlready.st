@@ -1,0 +1,4 @@
+tests
+testTenParticlesAreCreatedWithParticleNamesNotBeingUsedInUniverseObservationAlready
+
+	self assertTenTimesThatParticlesAreCreatedWithDifferent: [:particle | particle particleName ]

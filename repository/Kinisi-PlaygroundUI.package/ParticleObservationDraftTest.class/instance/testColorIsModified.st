@@ -3,7 +3,7 @@ testColorIsModified
 
 	| draft universeDraft newColor |
 	universeDraft := UniverseObservationDraft new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	newColor := Color blue.
 	
 	draft color: newColor.

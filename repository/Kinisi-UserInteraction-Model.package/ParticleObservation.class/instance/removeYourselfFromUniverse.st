@@ -1,4 +1,4 @@
-user interaction
+configuring
 removeYourselfFromUniverse
 
-	observationMode remove: self
+	wasRemoved ifFalse: [ universeObservation remove: self ]

@@ -2,15 +2,15 @@ tests
 testPositionMarksAreRenderedIfRendererIsToldToDoSo
 
 	| renderer positionMarksWereRendered |
-	particleDraft position: testResource oneMeterInAllComponentsVector.
-	renderer := ParticleRenderer 	basedOn: particleDraft.
+	particle position: testResource oneMeterInAllComponentsVector.
+	renderer := ParticleRenderer 	basedOn: particle.
 	
 	positionMarksWereRendered := false.
 	self
 		before: #drawIn:basedOn:movedFromCenterBy:
 		in: PositionMarksRenderer
 		execute: [:receiver :arguments | positionMarksWereRendered := true]
-		during: [renderer drawIn: view basedOn: particleDraft].
+		during: [renderer drawIn: view basedOn: particle].
 	self deny: positionMarksWereRendered.
 	
 	renderer renderPositionMarksWhenRendering.
@@ -18,6 +18,6 @@ testPositionMarksAreRenderedIfRendererIsToldToDoSo
 		before: #drawIn:basedOn:movedFromCenterBy:
 		in: PositionMarksRenderer
 		execute: [:receiver :arguments | positionMarksWereRendered := true]
-		during: [renderer drawIn: view basedOn: particleDraft].
+		during: [renderer drawIn: view basedOn: particle].
 		
 	self assert: positionMarksWereRendered

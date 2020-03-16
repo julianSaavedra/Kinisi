@@ -1,4 +1,4 @@
 accessing
 position
 
-	^particleState position
+	^self particleState position

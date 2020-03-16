@@ -3,8 +3,8 @@ testPositionModificationFailsIfPositionIsAlreadyOccuppiedInUniverseDraft
 
 	| universeDraft aDraft anotherDraft |
 	universeDraft := UniverseObservationDraft new.
-	aDraft := universeDraft newParticleObservationDraft.
-	anotherDraft := universeDraft newParticleObservationDraft.	
+	aDraft := universeDraft newParticleObservation.
+	anotherDraft := universeDraft newParticleObservation.	
 
 	self
 		should: [ anotherDraft position: aDraft position ]

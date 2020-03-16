@@ -3,6 +3,6 @@ exampleUniverseDraftPresenter
 
 	| universeDraft |
 	universeDraft := UniverseObservation new.
-	universeDraft newParticleObservationDraft save.
-	universeDraft newParticleObservationDraft save.
+	universeDraft newParticleObservation save.
+	universeDraft newParticleObservation save.
 	(UniverseObservationPresenter on: universeDraft) openWithSpec

@@ -1,5 +1,5 @@
 tests
 testPositionFactorCannotBeNegative
 
-	self should: [ ParticleRenderer basedOn: particleDraft usign: self twentyOverMeter negated]
+	self should: [ ParticleRenderer basedOn: particle usign: self twentyOverMeter negated]
 		raise: RenderingError

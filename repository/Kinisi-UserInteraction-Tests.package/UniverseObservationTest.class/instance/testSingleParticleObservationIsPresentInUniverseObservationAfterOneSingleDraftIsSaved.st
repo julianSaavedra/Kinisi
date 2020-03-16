@@ -3,11 +3,10 @@ testSingleParticleObservationIsPresentInUniverseObservationAfterOneSingleDraftIs
 
 	| universeObservation draft |
 	universeObservation := UniverseObservation new.
-	draft := universeObservation newParticleObservationDraft.
 	
 	self assert: universeObservation particles isEmpty.
 
-	draft save.
+	universeObservation newParticleObservation.
 
 	self
 		assert: universeObservation particles size

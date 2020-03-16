@@ -3,7 +3,7 @@ testParticleNameCannotBeEmpty
 
 	| draft universeDraft |
 	universeDraft := UniverseObservationDraft new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	
 	self
 		should: [ draft particleName: '' ]

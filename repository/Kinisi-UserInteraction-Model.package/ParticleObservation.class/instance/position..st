@@ -1,6 +1,4 @@
-user interaction
+configuring
 position: targetPosition
 
-	| targetParticleState |
-	targetParticleState := self newParticleStateWithPosition: targetPosition.
-	self updateState: targetParticleState
+	self updateStateWith: [:currentState | currentState position: targetPosition ]

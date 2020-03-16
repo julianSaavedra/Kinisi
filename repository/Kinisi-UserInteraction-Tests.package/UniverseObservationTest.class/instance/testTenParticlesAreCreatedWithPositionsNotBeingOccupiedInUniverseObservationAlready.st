@@ -1,0 +1,4 @@
+tests
+testTenParticlesAreCreatedWithPositionsNotBeingOccupiedInUniverseObservationAlready
+
+	self assertTenTimesThatParticlesAreCreatedWithDifferent: [:particle | particle position ]

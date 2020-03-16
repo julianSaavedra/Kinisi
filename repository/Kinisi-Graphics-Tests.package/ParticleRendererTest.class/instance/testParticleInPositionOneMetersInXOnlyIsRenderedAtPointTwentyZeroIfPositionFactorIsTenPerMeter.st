@@ -2,9 +2,9 @@ tests
 testParticleInPositionOneMetersInXOnlyIsRenderedAtPointTwentyZeroIfPositionFactorIsTenPerMeter
 
 	| renderer |
-	particleDraft position: testResource oneMeterInYVector.
-	renderer := ParticleRenderer 	basedOn: particleDraft usign: self twentyOverMeter.
+	particle position: testResource oneMeterInYVector.
+	renderer := ParticleRenderer 	basedOn: particle usign: self twentyOverMeter.
 
-	renderer drawIn: view basedOn: particleDraft.
+	renderer drawIn: view basedOn: particle.
 
-	self assertElementIn: 0 @ 20 negated hasModel: particleDraft
+	self assertElementIn: 0 @ 20 negated hasModel: particle

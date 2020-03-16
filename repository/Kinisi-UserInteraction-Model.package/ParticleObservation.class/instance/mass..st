@@ -1,6 +1,4 @@
-user interaction
+configuring
 mass: targetMass
 
-	| targetParticleState |
-	targetParticleState := self newParticleStateWithMass: targetMass.
-	self updateState: targetParticleState
+	self updateStateWith: [:currentState | currentState mass: targetMass ]

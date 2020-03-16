@@ -1,9 +1,8 @@
 tests
 testUniverseStateChangeIfItHasOnePhysicalStateWithNonNullVelocity
 
-	| physicalStates originalState universeStateChange |
-	physicalStates := Array with: testResource physicalStateWithNonNullVelocity.
-	originalState := ObservableUniverseState withAll: physicalStates.
+	| originalState universeStateChange |
+	originalState := ObservableUniverseState with: testResource physicalStateWithNonNullVelocity.
 	universeStateChange := UniverseStateChange
 		from: originalState
 		during: testResource oneSecond.

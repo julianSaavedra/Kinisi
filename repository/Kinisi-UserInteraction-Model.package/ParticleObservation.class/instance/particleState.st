@@ -1,4 +1,4 @@
 accessing
 particleState
 
-	^particleState
+	^universeObservation stateFor: self

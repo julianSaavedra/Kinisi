@@ -8,7 +8,7 @@ addMenuIn: view with: draft
 	menu
 		menu: 'New particle draft'
 		background: Color white
-		callback: [ draft newParticleObservationDraft.
+		callback: [ draft newParticleObservation.
 			self drawWithMenuIn: view basedOnDraft: draft with: (UnitProvider soleInstance meter with: 0.5)];
 		menu: 'Reset draft'
 		background: Color white

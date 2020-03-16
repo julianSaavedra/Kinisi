@@ -1,9 +1,5 @@
-user interaction
+configuring
 color: targetColor
-
-	| targetObservation |
-	targetObservation := ParticleObservation
-		over: particleState
-		with: targetColor
-		in: universeObservation.
-	observationMode update: self basedOn: targetObservation
+ 
+	self assertSelfIsStillValid.
+	universeObservation updateColorOf: self with: targetColor

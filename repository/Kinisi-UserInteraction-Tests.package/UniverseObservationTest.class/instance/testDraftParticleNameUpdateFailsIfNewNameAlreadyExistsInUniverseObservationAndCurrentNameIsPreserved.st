@@ -3,7 +3,7 @@ testDraftParticleNameUpdateFailsIfNewNameAlreadyExistsInUniverseObservationAndCu
 
 	| universeObservation draft preUpdateDraftParticleName existingParticleObservation |
 	universeObservation := self universeObservationWithOneObservation.
-	draft := universeObservation newParticleObservationDraft.
+	draft := universeObservation newParticleObservation.
 	preUpdateDraftParticleName := draft particleName.
 	
 	existingParticleObservation := universeObservation particles first.	

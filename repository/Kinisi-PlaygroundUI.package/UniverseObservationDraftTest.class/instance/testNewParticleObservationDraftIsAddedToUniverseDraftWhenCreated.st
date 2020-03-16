@@ -4,6 +4,6 @@ testNewParticleObservationDraftIsAddedToUniverseDraftWhenCreated
 	| universeDraft particleDraft |
 	universeDraft := UniverseObservationDraft new.
 	
-	particleDraft := universeDraft newParticleObservationDraft.
+	particleDraft := universeDraft newParticleObservation.
 	
 	self assert: (universeDraft particles includes: particleDraft)

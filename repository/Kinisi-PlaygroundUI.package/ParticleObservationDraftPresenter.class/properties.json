@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-PlaygroundUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"particleObservation",
+		"saveButton",
+		"saveAction",
+		"cancelButton",
+		"draftObservation"
+	],
+	"name" : "ParticleObservationDraftPresenter",
+	"type" : "normal"
+}

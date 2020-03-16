@@ -3,7 +3,7 @@ testVelocityIsModified
 
 	| draft universeDraft newVelocity |
 	universeDraft := UniverseObservationDraft new.
-	draft := universeDraft newParticleObservationDraft.
+	draft := universeDraft newParticleObservation.
 	newVelocity := testResource velocityVectorWithAllComponentsWithAmount: 2.
 	
 	draft velocity: newVelocity.
