@@ -1,7 +1,7 @@
 configuring
 newParticleObservation
 
-	| unitProvider newParticleState |
+	| unitProvider newParticleState newObservation | 
 	unitProvider := UnitProvider soleInstance.
 	newParticleState := ParticleState
 		forParticleNamed: self nameForNewParticle
@@ -10,7 +10,7 @@ newParticleObservation
 		velocity: (MeasureVector nullWith: unitProvider standardVelocityUnit)
 		andAcceleration: (MeasureVector nullWith: unitProvider standardAccelerationUnit).
  
-	universeState := self newUniverseStateWith: newParticleState.
-	colorMapping at: newParticleState particleName put: Color red.
+	newObservation := ParticleObservationNewModel for: newParticleState.
+	self add: newObservation.
 	
-	^ParticleObservation for: newParticleState particleName in: self
+	^newObservation

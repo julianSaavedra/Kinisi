@@ -1,4 +1,4 @@
-tests
+test - particle observation
 testParticleAObservationIsAmendedWithParticleBObservations
 
 	| universeObservation particleObservation |

@@ -1,7 +1,7 @@
 tests
 testUniverseObservationBackgroundIsChangedToBlue
 
-	| universeObservation |
+	| universeObservation blue |
 	universeObservation := UniverseObservation new.
 	blue := Color blue.
 	self deny: universeObservation background equals: blue.

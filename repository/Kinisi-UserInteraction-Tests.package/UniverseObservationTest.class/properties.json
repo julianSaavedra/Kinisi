@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"blue"
-	],
+	"instvars" : [ ],
 	"name" : "UniverseObservationTest",
 	"type" : "normal"
 }
