@@ -1,4 +1,4 @@
 accessing
 particleName
 
-	^particleName
+	^particle particleName

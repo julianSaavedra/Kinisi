@@ -1,4 +1,4 @@
 accessing
 color
 
-	^universeObservation colorOf: self
+	^color

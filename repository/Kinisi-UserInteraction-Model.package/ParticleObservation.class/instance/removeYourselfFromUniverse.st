@@ -1,4 +1,4 @@
 configuring
 removeYourselfFromUniverse
 
-	wasRemoved ifFalse: [ universeObservation remove: self ]
+	wasRemoved ifFalse: [universeObservation remove: self]

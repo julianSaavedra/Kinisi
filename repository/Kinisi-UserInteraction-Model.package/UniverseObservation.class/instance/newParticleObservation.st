@@ -10,7 +10,7 @@ newParticleObservation
 		velocity: (MeasureVector nullWith: unitProvider standardVelocityUnit)
 		andAcceleration: (MeasureVector nullWith: unitProvider standardAccelerationUnit).
  
-	newObservation := ParticleObservationNewModel for: newParticleState.
-	self add: newObservation.
+	newObservation := ParticleObservation for: newParticleState in: self.
+	universeState := universeState add: newObservation.
 	
 	^newObservation

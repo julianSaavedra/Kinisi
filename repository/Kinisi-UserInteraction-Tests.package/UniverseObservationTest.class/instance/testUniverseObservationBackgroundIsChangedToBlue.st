@@ -1,4 +1,4 @@
-tests
+test - visual settings
 testUniverseObservationBackgroundIsChangedToBlue
 
 	| universeObservation blue |

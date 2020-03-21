@@ -1,4 +1,4 @@
 configuring
 position: targetPosition
-
-	self updateStateWith: [:currentState | currentState position: targetPosition ]
+ 
+	self updateParticleWith: (particle position: targetPosition)

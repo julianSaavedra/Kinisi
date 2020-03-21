@@ -1,4 +1,4 @@
-tests
+test - visual settings
 testUniverseObservationHasGreaterZoomAfterItIsZoomedIn
 
 	self

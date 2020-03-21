@@ -1,7 +1,8 @@
 test objects
 universeObservationWithParticleAOnly
 
-	| universeObservation |
-	universeObservation := UniverseObservation new.
-	self populateParticleAObservationsIn: universeObservation newParticleObservation.
-	^ universeObservation
+	| universe particle |
+	universe := UniverseObservation new.
+	particle := universe newParticleObservation.
+	self populateParticleAObservationsIn: particle.
+	^universe

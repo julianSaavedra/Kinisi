@@ -1,4 +1,4 @@
 accessing
 acceleration
 
-	^self particleState acceleration
+	^particle acceleration

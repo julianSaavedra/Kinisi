@@ -1,4 +1,4 @@
 accessing
 velocity
 
-	^self particleState velocity 
+	^particle velocity

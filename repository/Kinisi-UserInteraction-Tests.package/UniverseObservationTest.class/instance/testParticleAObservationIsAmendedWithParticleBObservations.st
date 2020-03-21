@@ -1,21 +1,12 @@
-test - particle observation
+tests
 testParticleAObservationIsAmendedWithParticleBObservations
 
-	| universeObservation particleObservation |
-	universeObservation := self universeObservationWithParticleAOnly.
-	self
-		assertSingleParticleIn: universeObservation
-		isFor: self particleA
-		andIsObserved: self particleAColor.
+	| particleObservation |
+	particleObservation := self universeObservationWithParticleAOnly particles first.
+	self assert: particleObservation particleState equals: self particleA.
+	self assert: particleObservation color equals: self particleAColor.
 	
-	particleObservation := universeObservation particles first.
-	self particleBUpdateActions do: [:action |
-		action value: particleObservation.
-		self
-			assertSingleParticleIn: universeObservation
-			observesTheSameAs: particleObservation ].
+	self populateParticleBObservationsIn: particleObservation.
 		
-	self
-		assertSingleParticleIn: universeObservation
-		isFor: self particleB
-		andIsObserved: self particleBColor.
+	self assert: particleObservation particleState equals: self particleB.
+	self assert: particleObservation color equals: self particleBColor

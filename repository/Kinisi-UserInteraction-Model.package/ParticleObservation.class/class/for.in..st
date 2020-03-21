@@ -1,4 +1,4 @@
-instance particle
-for: particleName in: universeObservation
-
-	^self new initializeFor: particleName in: universeObservation
+instance creation
+for: particle in: universe
+ 
+	^self for: particle observed: Color red in: universe
