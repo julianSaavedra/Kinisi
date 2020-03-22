@@ -1,5 +1,5 @@
 private
-resetButtonPostAction
+resetParticlesAndPerformUpdateAction
 
 	self resetParticleObservationList.
 	self performUniverseObservationUpdateAction
