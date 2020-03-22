@@ -1,20 +1,20 @@
 actions
-drawIn: view basedOn: particleState
+drawIn: view basedOn: particle
 
 	| element |
-
-	element := self elementBasedOn: particleState.
-	self addShapeTo: element.
-	view add: element.
-	self translate: element basedOn: particleState.
-	self labeledIfEnabled: element.
-	shouldRenderVelocity
-		ifTrue: [ VelocityRenderer new
-				drawIn: view
-				basedOn: particleState velocity
-				holdBy: element ].
-	shouldRenderPositionMarks
-		ifTrue: [ PositionMarksRenderer new
-				drawIn: view
-				basedOn: particleState position
-				movedFromCenterBy: 100 ]
+	particle isVisible ifTrue: [
+		element := self elementBasedOn: particle.
+		self addShapeTo: element.
+		view add: element.
+		self translate: element basedOn: particle.
+		self labeledIfEnabled: element.
+		shouldRenderVelocity
+			ifTrue: [ VelocityRenderer new
+					drawIn: view
+					basedOn: particle velocity
+					holdBy: element ].
+		shouldRenderPositionMarks
+			ifTrue: [ PositionMarksRenderer new
+					drawIn: view
+					basedOn: particle position
+					movedFromCenterBy: 100 ]]

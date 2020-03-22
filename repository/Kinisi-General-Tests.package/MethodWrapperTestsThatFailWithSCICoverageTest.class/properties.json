@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MethodWrapperTestsThatFailWithSCICoverageTests",
+	"name" : "MethodWrapperTestsThatFailWithSCICoverageTest",
 	"type" : "normal"
 }
