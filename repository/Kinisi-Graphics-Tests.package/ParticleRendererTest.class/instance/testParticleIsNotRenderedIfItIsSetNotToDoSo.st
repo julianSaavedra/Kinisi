@@ -5,7 +5,7 @@ testParticleIsNotRenderedIfItIsSetNotToDoSo
 	renderer := ParticleRenderer basedOn: particle.
 	self assert: view elements isEmpty.
 	
-	particle makeItInvisible.
+	particle makeYourselfInvisible.
 	renderer drawIn: view basedOn: particle.
 
 	self assert: view elements isEmpty

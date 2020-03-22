@@ -1,7 +1,7 @@
 initialization
-initializeBasedOn: particleDraft size: shapeSize using: factor
+initializeBasedOn: particle size: shapeSize using: factor
 
-	color := particleDraft color.
+	color := particle color.
 	positionFactor := factor.
 	size := shapeSize.
 	labelIsEnabled := false.

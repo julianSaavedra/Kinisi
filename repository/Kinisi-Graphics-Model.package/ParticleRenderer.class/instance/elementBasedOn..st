@@ -1,7 +1,7 @@
 private
-elementBasedOn: particleState
+elementBasedOn: particle
 
 	| element |
 	element := RTElement new.
-	element model: particleState.
+	element model: particle.
 	^element

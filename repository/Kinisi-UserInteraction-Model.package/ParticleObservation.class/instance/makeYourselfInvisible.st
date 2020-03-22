@@ -1,4 +1,4 @@
 configuring
-makeItInvisible
+makeYourselfInvisible
 
 	isVisible := false
