@@ -9,4 +9,4 @@ testRemovingParticleObservationFromAnotherUniverseFailsEvenIfParticleObservation
 	self
 		should: [ universeObservation remove: observationToBeRemoved ]
 		raise: UserInterfaceError
-		whoseDescriptionIncludes: 'Particle observation to be removed is from another universe observation'
+		whoseDescriptionIncludes: 'Particle observation is not included in this universe observation'

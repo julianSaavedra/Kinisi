@@ -1,7 +1,8 @@
-private - particle creation
-nonExistentPropertyIn: existingValues using: valuesGenerator
+private
+new: property using: valuesGenerator
 
-	| newValue |
+	| existingValues newValue |
+	existingValues := targetUniverse particles collect: property.
 	newValue := valuesGenerator next.
 	[ existingValues includes: newValue ]
 		whileTrue: [ newValue := valuesGenerator next ].
