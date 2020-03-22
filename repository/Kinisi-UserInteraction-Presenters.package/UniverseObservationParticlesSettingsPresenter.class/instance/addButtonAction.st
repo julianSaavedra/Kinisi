@@ -1,5 +1,4 @@
-initialization
+private
 addButtonAction
 
-	universeObservation newParticleObservation.
-	self addButtonPostAction
+	universeObservation newParticleObservation

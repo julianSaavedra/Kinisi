@@ -1,4 +1,4 @@
 accessing
 universeState
 
-	^universeState
+	^universeState collect: [:particle | particle particleState ]

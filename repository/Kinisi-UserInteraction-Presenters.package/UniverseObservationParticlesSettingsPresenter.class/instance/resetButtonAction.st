@@ -1,4 +1,0 @@
-initialization
-resetButtonAction
-
-	^ universeObservation reset

@@ -1,4 +1,4 @@
 configuring
 acceleration: targetAcceleration
-
-	self updateStateWith: [:currentState | currentState acceleration: targetAcceleration ]
+ 
+	self updateParticleWith: (particle acceleration: targetAcceleration)

@@ -5,8 +5,8 @@ testRemovingParticleObservationFromAnotherUniverseFailsEvenIfParticleObservation
 	universeObservation := self universeObservationWithParticleAOnly.
 	observationToBeRemoved := self universeObservationWithParticleAOnly particles first.
 	
-	self assertSingleParticleIn: universeObservation observesTheSameAs: observationToBeRemoved.
+	self assert: universeObservation particles first observesTheSameAs: observationToBeRemoved.
 	self
 		should: [ universeObservation remove: observationToBeRemoved ]
 		raise: UserInterfaceError
-		whoseDescriptionIncludes: 'Particle observation to be removed is from another universe observation'
+		whoseDescriptionIncludes: 'Particle observation is not included in this universe observation'

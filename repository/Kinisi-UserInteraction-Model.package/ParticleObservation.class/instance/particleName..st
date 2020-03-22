@@ -1,5 +1,4 @@
 configuring
-particleName: targetParticleName
+particleName: targetName
 
-	self updateStateWith: [:currentState | currentState name: targetParticleName ].
-	particleName := targetParticleName
+	self updateParticleWith: (particle name: targetName)

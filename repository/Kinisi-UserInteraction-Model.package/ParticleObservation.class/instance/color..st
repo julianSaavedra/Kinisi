@@ -1,5 +1,5 @@
 configuring
 color: targetColor
- 
-	self assertSelfIsStillValid.
-	universeObservation updateColorOf: self with: targetColor
+
+	self assertObservationIsValid.
+	color := targetColor

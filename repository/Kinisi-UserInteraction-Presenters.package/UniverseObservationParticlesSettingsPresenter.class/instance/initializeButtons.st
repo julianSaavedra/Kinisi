@@ -8,5 +8,5 @@ initializeButtons
 	removeButton label: 'Remove'.
 	removeButton action: [ self removeButtonAction ].
 	resetButton := self newButton.
-	resetButton label: 'Reset'.
-	resetButton action: [ self resetButtonAction ]
+	resetButton label: 'Remove all'.
+	resetButton action: [ self removeAllButtonAction ]
