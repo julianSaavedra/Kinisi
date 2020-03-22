@@ -1,7 +1,9 @@
 actions
 drawIn: view basedOn: universe
 
-	universe particles do: [:particleObservation | 
+	| visibleParticles |
+	visibleParticles := universe particles select: [:particle | particle isVisible ].
+	visibleParticles do: [:particleObservation | 
 		renderersMapping
 			at: particleObservation particleName
 			ifPresent: [:renderer | renderer drawIn: view basedOn: particleObservation ]]

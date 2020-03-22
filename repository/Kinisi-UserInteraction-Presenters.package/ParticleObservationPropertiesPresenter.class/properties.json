@@ -14,7 +14,8 @@
 		"position",
 		"velocity",
 		"acceleration",
-		"postNameChangeBlock"
+		"postNameChangeBlock",
+		"visibilityButton"
 	],
 	"name" : "ParticleObservationPropertiesPresenter",
 	"type" : "normal"
