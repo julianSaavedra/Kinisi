@@ -2,9 +2,10 @@ specs
 defaultSpec
 
 	^SpecColumnLayout composed
-		add: #background;
-		add: #zoom;
-		add: #scale;
-		newRow: [:row | row add: #gridVisibility; add: #gridColor ] height: 20;
+		add: #background height: 30;
+		add: #zoom height: 30;
+		add: #scale height: 30;
+		newRow: [:row | row add: #gridVisibility width: 70 ; add: #gridColor ] height: 30;
+		addSplitter;
 		yourself
 		
