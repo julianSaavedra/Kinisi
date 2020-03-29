@@ -1,20 +1,14 @@
-actions
-drawIn: view basedOn: particleState
+rendering
+drawIn: view basedOn: particle
 
 	| element |
-
-	element := self elementBasedOn: particleState.
-	self addShapeTo: element.
+	element := RTElement new.
+	element model: particle.
+	element addShape: shape.
 	view add: element.
-	self translate: element basedOn: particleState.
-	self labeledIfEnabled: element.
-	shouldRenderVelocity
-		ifTrue: [ VelocityRenderer new
-				drawIn: view
-				basedOn: particleState velocity
-				holdBy: element ].
-	shouldRenderPositionMarks
-		ifTrue: [ PositionMarksRenderer new
-				drawIn: view
-				basedOn: particleState position
-				movedFromCenterBy: 100 ]
+	scaleToMovedParticle ifNotNil: [:scaleToUse |
+		| position |
+		position := particle position.
+		position := (position x * scaleToMovedParticle) @ (position y negated * scaleToMovedParticle).
+		element translateTo: position ].
+	renderers do: [:renderer | renderer drawIn: view basedOn: particle for: element ]

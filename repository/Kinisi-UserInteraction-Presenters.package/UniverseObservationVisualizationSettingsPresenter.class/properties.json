@@ -9,7 +9,9 @@
 		"universeObservation",
 		"background",
 		"zoom",
-		"scale"
+		"scale",
+		"gridColor",
+		"gridVisibility"
 	],
 	"name" : "UniverseObservationVisualizationSettingsPresenter",
 	"type" : "normal"

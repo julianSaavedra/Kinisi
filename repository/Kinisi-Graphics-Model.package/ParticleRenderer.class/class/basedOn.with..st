@@ -1,4 +1,5 @@
 instance creation
-basedOn: particleDraft with: size
+basedOn: particle with: size
 
-	^self basedOn: particleDraft with: size using: self nullPositionFactor
+	self assertValid: size.
+	^self new initializeBasedOn: particle with: size 

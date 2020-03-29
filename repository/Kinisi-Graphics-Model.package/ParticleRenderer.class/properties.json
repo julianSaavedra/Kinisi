@@ -6,12 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"positionFactor",
-		"size",
-		"labelIsEnabled",
-		"shouldRenderVelocity",
-		"shouldRenderPositionMarks",
-		"color"
+		"shape",
+		"renderers",
+		"scaleToMovedParticle"
 	],
 	"name" : "ParticleRenderer",
 	"type" : "normal"

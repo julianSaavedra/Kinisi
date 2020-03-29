@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"view",
+		"particleElement",
+		"velocityRenderer",
+		"particle"
+	],
 	"name" : "VelocityRendererTest",
 	"type" : "normal"
 }

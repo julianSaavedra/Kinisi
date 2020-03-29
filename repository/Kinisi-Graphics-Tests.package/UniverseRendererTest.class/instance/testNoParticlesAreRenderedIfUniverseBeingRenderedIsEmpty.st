@@ -1,11 +1,11 @@
 test
 testNoParticlesAreRenderedIfUniverseBeingRenderedIsEmpty
 
-	| universeDraft renderer |
-	universeDraft := UniverseObservation new.
-	self assert: universeDraft particles isEmpty.
-	renderer := UniverseRenderer basedOn: universeDraft and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
+	| universe renderer |
+	universe := UniverseObservation new.
+	renderer := UniverseRenderer basedOn: universe.
 
-	renderer drawIn: view basedOn: universeDraft.
+	self assert: universe particles isEmpty.
+	renderer drawIn: view basedOn: universe.
 
 	self assert: view elements isEmpty

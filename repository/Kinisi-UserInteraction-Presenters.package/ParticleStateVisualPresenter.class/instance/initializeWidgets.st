@@ -5,8 +5,8 @@ initializeWidgets
 	view script: [:rtView :canvas |
 		canvas color: particleObservation background.
 		(ParticleRenderer basedOn: particleObservation with: 50)
-			renderVelocityWhenRendering;
-			renderPositionMarksWhenRendering;
+			renderVelocityWith: Color red;
+			renderPositionMarksWith: 100;
 			drawIn: rtView basedOn: particleObservation.
 		canvas camera scale: 1; translateTo: 0@0 ].
 	

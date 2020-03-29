@@ -1,9 +1,9 @@
-tests
-assert: velocityEdge wasDrawWithTheSameDirectionAs: velocity
+asserting
+assert: velocityEdge wasDrawWithTheSameDirectionAs: velocityVector
 
 	| velocityEdgeEnd |
-	velocityEdgeEnd := velocityEdge to.
+	velocityEdgeEnd := velocityEdge to position.
 	"velocityEdgeEnd y is negated as canvas draws Y component negated."
 	self
-		assert: velocityEdgeEnd x / velocity x amount
-		equals: velocityEdgeEnd y negated / velocity y amount
+		assert: velocityEdgeEnd x / velocityVector x amount
+		equals: velocityEdgeEnd y negated / velocityVector y amount

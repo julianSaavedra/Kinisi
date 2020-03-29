@@ -9,7 +9,8 @@
 		"particle",
 		"color",
 		"universeObservation",
-		"wasRemoved"
+		"wasRemoved",
+		"isVisible"
 	],
 	"name" : "ParticleObservation",
 	"type" : "normal"

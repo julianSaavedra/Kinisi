@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"particleElement"
+	],
 	"name" : "PositionMarksRendererTest",
 	"type" : "normal"
 }

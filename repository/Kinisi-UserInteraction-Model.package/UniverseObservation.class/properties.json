@@ -11,7 +11,9 @@
 		"colorMapping",
 		"background",
 		"zoom",
-		"scale"
+		"scale",
+		"gridColor",
+		"isGridVisible"
 	],
 	"name" : "UniverseObservation",
 	"type" : "normal"
