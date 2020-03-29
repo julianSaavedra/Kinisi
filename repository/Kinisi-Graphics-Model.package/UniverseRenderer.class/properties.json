@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"renderersMapping"
+		"renderersMapping",
+		"gridRenderer",
+		"background"
 	],
 	"name" : "UniverseRenderer",
 	"type" : "normal"

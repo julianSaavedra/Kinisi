@@ -12,7 +12,7 @@ exampleBlueAndRedParticlesSimulation
 	universeDraft := self universeDraftBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections.
 	gridConfiguration := GridConfiguration withColor: Color gray size: 50 andDistance: (meter with: 1).
 	
-	renderer := UniverseRenderer basedOn: universeDraft and: gridConfiguration.
+	renderer := UniverseRenderer basedOn: universeDraft with: gridConfiguration.
 	renderer drawIn: view basedOn: universeDraft.
 	GridRenderer new drawIn: view basedOn: gridConfiguration.
 	

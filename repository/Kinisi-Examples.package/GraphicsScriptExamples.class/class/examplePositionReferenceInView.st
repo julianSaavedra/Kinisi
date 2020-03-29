@@ -21,7 +21,7 @@ examplePositionReferenceInView
 	PositionMarksRenderer new
 		drawIn: view
 		basedOn: physicalState position
-		movedFromCenterBy: 80.
+		for: 80.
 	AxisReferenceRenderer new drawIn: view movedFromCenterToLeftBottomCornerBy: 80.
 	
 	view openInWindowSized: viewSize titled: 'Position Reference'.

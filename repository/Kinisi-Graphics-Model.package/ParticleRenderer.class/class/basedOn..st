@@ -1,4 +1,4 @@
 instance creation
-basedOn: particleDraft
+basedOn: particle
 
-	^self basedOn: particleDraft with: self defaultSize
+	^self basedOn: particle with: self minimunSize

@@ -1,8 +1,8 @@
 private
-translate: velocityEndPointElement basedOn: velocityVector
+translate: velocityEndPointElement basedOn: velocity
 
 	| normalizedVector vectorEndPointExtension normalizedVectorPoint |
-	normalizedVector := velocityVector normalized.
+	normalizedVector := velocity normalized.
 	vectorEndPointExtension := 100.
 	normalizedVectorPoint := normalizedVector x @ normalizedVector y negated.
 	velocityEndPointElement translateTo: normalizedVectorPoint * vectorEndPointExtension

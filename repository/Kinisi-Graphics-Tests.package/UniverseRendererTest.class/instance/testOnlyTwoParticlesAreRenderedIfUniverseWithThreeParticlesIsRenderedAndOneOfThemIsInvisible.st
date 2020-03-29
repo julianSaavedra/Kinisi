@@ -3,10 +3,12 @@ testOnlyTwoParticlesAreRenderedIfUniverseWithThreeParticlesIsRenderedAndOneOfThe
 
 	| universe renderer |
 	universe := UniverseObservation new.
-	universe newParticleObservation; newParticleObservation; newParticleObservation.
-	self assert: universe particles size equals: 3.
-	universe particles last makeYourselfInvisible. 
-	renderer := UniverseRenderer basedOn: universe and: self gridConfigurationWithGridSizeTenAndHalfMeterScale.
+	universe
+		newParticleObservation;
+		newParticleObservation;
+		newParticleObservation.
+	universe particles last makeYourselfInvisible.
+	renderer := UniverseRenderer basedOn: universe.
 
 	renderer drawIn: view basedOn: universe.
 

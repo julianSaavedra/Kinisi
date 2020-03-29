@@ -7,7 +7,7 @@ exampleBlueAndRedParticlesSimulationWithMonitoring
 	second := unitProvider second.
 	universeDraft := self universeDraftBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections.
 	gridConfiguration := GridConfiguration withColor: Color gray size: 50 andDistance: (meter with: 1).
-	renderer := UniverseRenderer basedOn: universeDraft and: gridConfiguration.
+	renderer := UniverseRenderer basedOn: universeDraft with: gridConfiguration.
 	monitor := SimulationPluggableMonitor
 		onStartDo: [
 			view := RTView new.

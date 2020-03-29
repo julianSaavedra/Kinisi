@@ -1,8 +1,8 @@
 private
-linkFrom: physicalStateElement to: velocityEndPointElement in: aView
+linkFrom: particleElement to: velocityEndPointElement in: view
 
 	RTEdgeBuilder new
-		view: aView;
+		view: view;
 		shape: self arrowShape;
 		label: [:from :to | 'Velocity'];
-		linkElements: (Array with: physicalStateElement with: velocityEndPointElement)
+		linkElements: (Array with: particleElement with: velocityEndPointElement)

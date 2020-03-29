@@ -1,14 +1,17 @@
 tests
 testPositionReferenceMarksAreRenderedInView
 
-	| view position elementModels |
+	| view position elementModels particle renderer |
 	view := RTView new.
-	position := MeasureVector x: 100 y: 37.5 negated z: 0 with: UnitProvider soleInstance meter.
+	position := MeasureVector x: 100 y: -37.5 z: 0 with: UnitProvider soleInstance meter.
+	particle := PhysicsTestResource new physicalStateIn: position.
+	particleElement := RTEllipse new elementOn: particle.
+	renderer := PositionMarksRenderer movedBy: 100.
 	
-	PositionMarksRenderer new
+	renderer
 		drawIn: view
-		basedOn: position
-		movedFromCenterBy: 100.
+		basedOn: particle
+		for: particleElement.
 	
 	elementModels := view elements collect: [:element | element model ].
 	self

@@ -15,7 +15,7 @@ drawIn: view basedOnDraft: universeDraft with: gridConfiguration
 		into: [ :renderersMap :particleDraft | 
 			| renderer |
 			renderer := ParticleInUniverseRenderer
-				with: (FigureDecoration with: particleDraft color and: massTransformation)
+				with: (FigureDecoration basedOn: particleDraft color with: massTransformation)
 				using: (PositionDecoration with: gridConfiguration size / gridConfiguration scale).
 			renderer labelElementWhenRendering.
 			renderersMap at: particleDraft particleName put: renderer.

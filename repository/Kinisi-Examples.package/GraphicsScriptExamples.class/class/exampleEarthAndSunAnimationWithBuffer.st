@@ -10,7 +10,7 @@ exampleEarthAndSunAnimationWithBuffer
 	universeDraft := self earthAndSunInitialUniverseDraft.
 	gridConfiguration := self earthAndSunExampleGridConfiguration.
 	
-	renderer := UniverseRenderer basedOn: universeDraft and: gridConfiguration.
+	renderer := UniverseRenderer basedOn: universeDraft with: gridConfiguration.
 	renderer drawIn: view basedOn: universeDraft.
 	GridRenderer new drawIn: view basedOn: gridConfiguration.
 
