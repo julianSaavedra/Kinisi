@@ -13,4 +13,6 @@ testMonitorProcessesAllSimulationStepResultsOfAGivenSimulation
 
 	self waitUntilMonitoringFinishesWhenRunning: simulation.
 	
-	self assert: simulationStepResults asArray equals: #(0 1 2)
+	self
+		assertCollection: simulationStepResults
+		hasSameElements: #(0 1 2)

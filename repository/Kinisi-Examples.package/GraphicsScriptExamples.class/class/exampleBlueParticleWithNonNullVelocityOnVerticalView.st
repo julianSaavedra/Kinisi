@@ -1,0 +1,4 @@
+example - UI
+exampleBlueParticleWithNonNullVelocityOnVerticalView
+
+	(ParticleObservationPresenter on: self blueTwoKgOneMeterInEachDirectionParticle) openWithSpec

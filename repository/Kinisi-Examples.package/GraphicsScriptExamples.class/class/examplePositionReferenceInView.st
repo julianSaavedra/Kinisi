@@ -1,11 +1,11 @@
-graphic - nice to have
+example - UI
 examplePositionReferenceInView
 
 	| view viewSize physicalState particleShape physicalStateElement |
 	view := RTView new.
 	view canvas color: Color black.
 	viewSize := 250@250.
-	physicalState := self particleStateInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent.	
+	physicalState := self particleInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent.	
 	"Create shapes for particles"
 	particleShape := RTEllipse new
 		borderColor: Color black;
@@ -18,10 +18,10 @@ examplePositionReferenceInView
 	physicalStateElement translateTo: 0@0. "Particle in the origin"
 	physicalStateElement @ RTLabeled.
 
-	PositionMarksRenderer new
+	(PositionMarksRenderer movedBy: 80)
 		drawIn: view
-		basedOn: physicalState position
-		for: 80.
+		basedOn: physicalState
+		for: nil.
 	AxisReferenceRenderer new drawIn: view movedFromCenterToLeftBottomCornerBy: 80.
 	
 	view openInWindowSized: viewSize titled: 'Position Reference'.

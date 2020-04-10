@@ -1,5 +1,5 @@
-data examples
-particleStateInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent
+data -  scenarios
+particleInOriginWithTwoKilogramsAndOneVelocityUnitInEachComponent
 
 	| testResource |
 	testResource := PhysicsTestResource new.

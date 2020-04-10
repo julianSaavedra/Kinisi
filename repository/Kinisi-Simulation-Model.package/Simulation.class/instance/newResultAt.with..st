@@ -1,4 +1,4 @@
-action
+private
 newResultAt: time with: value
 
 	| stepResult |

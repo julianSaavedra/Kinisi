@@ -1,0 +1,4 @@
+example - UI
+exampleBlueParticleWithNonNullVelocityOnHorizontalView
+
+	(ParticleObservationPresenter on: self blueTwoKgOneMeterInEachDirectionParticle) openWithSpec: #rowSpec

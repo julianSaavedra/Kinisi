@@ -17,4 +17,6 @@ testPolicyMakesMonitorToProcessEveryThreeSimulationStepResultsOfAGivenSimulation
 		
 	self waitUntilMonitoringFinishesWhenRunning: simulation.
 	
-	self assert: simulationStepResults asArray equals: #(0 3 6 9)
+	self
+		assertCollection: simulationStepResults
+		hasSameElements: #(0 3 6 9)

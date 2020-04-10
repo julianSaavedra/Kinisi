@@ -1,4 +1,4 @@
-examples - grid - animation
+examples - animation
 exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscriptWithBufferEveryHalfSecond
 
 	| endPointConsumer day simulation timeDelta duration buffer reader bufferWriterConsumer |
@@ -48,7 +48,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscriptWithBu
 		withDataDo: [ :data | endPointConsumer process: data ].
 	bufferWriterConsumer := SimulationStepBufferWriterConsumer on: buffer.
 	simulation := Simulation
-		startingWith: self earthAndSunInitialUniverseDraft universeState
+		startingWith: self earthAndSunInitialUniverseObservation universeState
 		changingBy: [ :stepDuration :currentState | 
 			(UniverseStateChange from: currentState during: stepDuration)
 				finalState ]

@@ -1,7 +1,7 @@
-data examples
-universeDraftBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections
+data -  scenarios
+universeWithBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections
 
-	| universeDraft unitProvider blueDraft redDraft oneMeterInXPosition oneMeterPerSecondVelocity oneTon |
+	| universe unitProvider blueDraft redDraft oneMeterInXPosition oneMeterPerSecondVelocity oneTon |
 	unitProvider := UnitProvider soleInstance.
 	
 	oneMeterInXPosition := MeasureVector x: 1 with: unitProvider meter.
@@ -9,20 +9,18 @@ universeDraftBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections
 	"oneMeterPerSecondVelocity := MeasureVector y: 1.82678406 with: unitProvider standardVelocityUnit."
 	oneTon := unitProvider kilogram with: 1e11.
 	
-	universeDraft := UniverseObservation new.
-	blueDraft := universeDraft newParticleObservation.
+	universe := UniverseObservation new.
+	blueDraft := universe newParticleObservation.
 	blueDraft
 		color: Color blue;
 		mass: oneTon;
 		position: oneMeterInXPosition;
-		velocity: oneMeterPerSecondVelocity;
-		save.
-	redDraft := universeDraft newParticleObservation.
+		velocity: oneMeterPerSecondVelocity.
+	redDraft := universe newParticleObservation.
 	redDraft
 		color: Color red;
 		mass: oneTon;
 		position: oneMeterInXPosition * -1;
-		velocity: oneMeterPerSecondVelocity * -1;
-		save.
+		velocity: oneMeterPerSecondVelocity * -1.
 		
-	^universeDraft
+	^universe

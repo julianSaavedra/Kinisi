@@ -1,4 +1,4 @@
-utilities
+not working
 addMenuIn: view with: draft
 
 	| menu |
@@ -8,9 +8,7 @@ addMenuIn: view with: draft
 	menu
 		menu: 'New particle draft'
 		background: Color white
-		callback: [ draft newParticleObservation.
-			self drawWithMenuIn: view basedOnDraft: draft with: (UnitProvider soleInstance meter with: 0.5)];
+		callback: [ draft newParticleObservation];
 		menu: 'Reset draft'
 		background: Color white
-		callback: [ draft reset.
-			self drawWithMenuIn: view basedOnDraft: draft with: (UnitProvider soleInstance meter with: 0.5)]
+		callback: [ draft reset]

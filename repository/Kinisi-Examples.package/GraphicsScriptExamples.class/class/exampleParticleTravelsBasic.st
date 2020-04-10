@@ -1,5 +1,5 @@
-examples - grid - animation
-exampleParticleTravels
+examples - animation
+exampleParticleTravelsBasic
 
 	| particleShape particleElement view initialPosition currentPosition animation |
 	view := RTView new.

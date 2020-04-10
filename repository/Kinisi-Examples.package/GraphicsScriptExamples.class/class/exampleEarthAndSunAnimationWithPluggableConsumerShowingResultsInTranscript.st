@@ -1,9 +1,12 @@
-examples - grid - animation
+examples - animation
 exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 
 	| consumer day simulation timeDelta duration |
-
-	Transcript
+	day := UnitProvider soleInstance day.
+	timeDelta := day with: 1.
+	duration := day with: 365.
+	consumer := SimulationStepPluggableConsumer
+		onStartDo: [ Transcript
 		open;
 		clear;
 		show: 'Starting simulation named ''Earth and Sun''';
@@ -11,12 +14,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 		show: '----------------------------------------------------------';
 		cr;
 		show: '----------------------------------------------------------';
-		cr.
-	day := UnitProvider soleInstance day.
-	timeDelta := day with: 1.
-	duration := day with: 365.
-	consumer := SimulationStepPluggableConsumer
-		onStartDo: nil
+		cr ]
 		processWith: [ :simulationStep | 
 			Transcript
 				show: ('Time: <1s>' expandMacrosWith: simulationStep time asString);
@@ -42,7 +40,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 				show: '----------------------------------------------------------';
 				cr ].
 	simulation := Simulation
-		startingWith: self earthAndSunInitialUniverseDraft universeState
+		startingWith: self earthAndSunInitialUniverseObservation universeState
 		changingBy: [ :stepDuration :currentState | 
 			(UniverseStateChange from: currentState during: stepDuration)
 				finalState ]
