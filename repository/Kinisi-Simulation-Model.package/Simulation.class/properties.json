@@ -6,12 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stepDuration",
-		"simulationDuration",
 		"stepResults",
-		"changingBlock",
 		"initialState",
-		"consumer"
+		"consumer",
+		"endCondition",
+		"change",
+		"stepDelta"
 	],
 	"name" : "Simulation",
 	"type" : "normal"

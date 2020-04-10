@@ -1,10 +1,10 @@
 instance creation
-startingWith: initialState changingBy: aBlock over: stepDuration during: simulationDuration informingStepsTo: consumer
+startingWith: initialState changingBy: aBlock over: stepDuration during: duration informingStepsTo: consumer
 
-	self assertValid: simulationDuration and: stepDuration. 
-	^self new
-		initializeStartingWith: initialState
+	self assertValid: duration and: stepDuration. 
+	^self
+		startingWith: initialState
 		changingBy: aBlock
 		over: stepDuration
-		during: simulationDuration
+		until: [:step :state | step > duration ]
 		informingStepsTo: consumer

@@ -1,11 +1,14 @@
 simulation
 run
 
-	| currentState |
-	consumer start.
-	self newResultAt: (stepDuration unit with: 0) with: initialState.
+	| currentState currentStep initialStep |
+	self prepareToRun.
+	initialStep := stepDelta unit with: 0.
+	self process: initialState at: initialStep.
 	currentState := initialState.
-	1 to: simulationDuration // stepDuration do: [:stepNumber |
-		currentState := changingBlock value: stepDuration value: currentState.
-		self newResultAt: stepDuration * stepNumber with: currentState ].
-	consumer finishWith: self result
+	currentStep := initialStep.
+	[ currentStep := currentStep + stepDelta.
+	endCondition value: currentStep value: currentState ]
+		whileFalse: [ currentState := change value: currentStep value: currentState.
+			self process: currentState at: currentStep ].
+	self performPostRunActions

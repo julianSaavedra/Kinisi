@@ -1,7 +1,7 @@
 private
-newResultAt: time with: value
+process: value at: time
 
 	| stepResult |
 	stepResult := SimulationStepResult at: time with: value.
-	stepResults add: stepResult.
+	self record: stepResult.
 	self informConsumer: stepResult

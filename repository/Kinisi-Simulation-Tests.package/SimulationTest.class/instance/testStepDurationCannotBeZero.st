@@ -1,4 +1,4 @@
-tests
+test
 testStepDurationCannotBeZero
 
 	self

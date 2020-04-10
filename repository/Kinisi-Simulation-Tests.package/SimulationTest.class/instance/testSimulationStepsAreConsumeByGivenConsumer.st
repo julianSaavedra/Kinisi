@@ -1,4 +1,4 @@
-tests
+test
 testSimulationStepsAreConsumeByGivenConsumer
 
 	| simulationStepResults consumer simulation |
