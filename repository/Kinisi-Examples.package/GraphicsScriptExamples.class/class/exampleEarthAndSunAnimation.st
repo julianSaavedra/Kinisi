@@ -1,27 +1,33 @@
-not working
+examples - animation
 exampleEarthAndSunAnimation
 
-	| view viewSize animation draft observableUniverseStates gridConfiguration |
-
+	| view viewSize day simulation timeDelta duration monitor monitoringConsumer universe renderer |
 	view := RTView new.
-	view canvas color: Color black.
 	viewSize := 1000 @ 1000.
 	view openInWindowSized: viewSize titled: 'Earth and Sun'.
 	view canvas camera focusOnCenter.
-	gridConfiguration := self earthAndSunExampleGridConfiguration.
 
-	draft := self earthAndSunInitialUniverseDraft.
-	observableUniverseStates := OrderedCollection new.
-	ScriptExamples exampleEarthAndSunSimulation
-		withTimeAndStateDo: [:time :observableUniverseState | observableUniverseStates add: observableUniverseState ].
-	observableUniverseStates removeFirst.
+	universe := self earthAndSunInitialUniverseObservation.
+	universe turnGridOff.
+	universe scale: (UnitProvider soleInstance kilometer with: 10e6).
+	renderer := UniverseRenderer basedOn: universe.
+	monitor := SimulationPluggableMonitor
+		processResultsWith: [:simulationStepResult |
+			view clean.
+			renderer drawIn: view basedOn: simulationStepResult value ].
+	monitoringConsumer := SimulationMonitoringConsumer
+		for: monitor
+		every: (Duration milliSeconds: 40)
+		basedOn: ForwardAllPolicyDefinition new.
+		
+	day := UnitProvider soleInstance day.
+	timeDelta := day with: 1.
+	duration := day with: 365.
+	simulation := Simulation
+		startingWith: universe universeState
+		changingBy: [:stepDuration :currentState | (UniverseStateChange from: currentState during: stepDuration) finalState ]
+		over: timeDelta
+		during: duration
+		informingStepsTo: monitoringConsumer.
 
-	animation := RTActiveAnimation new.
-	animation intervalInMilliseconds: 40.
-	animation
-		blockToExecute: [ observableUniverseStates
-				ifNotEmpty: [ self updateDraft: draft basedOn: observableUniverseStates first.
-					self drawIn: view basedOnDraft: draft with: gridConfiguration.
-					observableUniverseStates := observableUniverseStates allButFirst ] ].
-	"Starts animation"
-	animation inView: view
+	simulation run

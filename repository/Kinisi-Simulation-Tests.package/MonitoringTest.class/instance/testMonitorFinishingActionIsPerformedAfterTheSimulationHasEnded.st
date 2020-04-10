@@ -10,7 +10,6 @@ testMonitorFinishingActionIsPerformedAfterTheSimulationHasEnded
 		simulationGenerating: 3
 		stepsInformingThemTo: monitoringConsumer.
 	
-	finishActionWasPerformed := false.
 	self waitUntilMonitoringFinishesWhenRunning: simulation.
 	
 	self assert: finishActionWasPerformed

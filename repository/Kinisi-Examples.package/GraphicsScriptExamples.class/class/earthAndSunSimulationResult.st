@@ -1,4 +1,4 @@
-data examples
+data -  scenarios
 earthAndSunSimulationResult
 
 	^ScriptExamples exampleEarthAndSunSimulation

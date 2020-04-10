@@ -1,18 +1,15 @@
 actions
 transcriptMonitor
 
-	^ SimulationPluggableMonitor
-		onStartDo: [ Transcript
-				open;
-				clear ]
-		processResultsWith: [ :simulationStep | 
+	^SimulationPluggableMonitor
+		onStartDo: [ Transcript open; clear ]
+		processResultsWith: [:simulationStep | 
 			Transcript
 				show: ('Time: <1s>' expandMacrosWith: simulationStep time asString);
 				cr.
 			simulationStep value
 				withComponentsDo: [ :physicalState | 
 					| position measureToStringBlock |
-
 					measureToStringBlock := [ :measure | 
 					'<1s> <2s>'
 						expandMacrosWith: (measure amount truncateTo: 0.01) asString
@@ -26,10 +23,8 @@ transcriptMonitor
 								with: (measureToStringBlock value: position x)
 								with: (measureToStringBlock value: position y));
 						cr ] ]
-		andWhenFinishedDo: [ Transcript
-				show: 'Finishing simulation.';
-				cr;
-				show: '----------------------------------------------------------';
-				cr;
-				show: '----------------------------------------------------------';
-				cr ]
+		andWhenFinishedDo: [
+			Transcript
+				show: 'Finishing simulation.'; cr;
+				show: '----------------------------------------------------------'; cr;
+				show: '----------------------------------------------------------'; cr ]

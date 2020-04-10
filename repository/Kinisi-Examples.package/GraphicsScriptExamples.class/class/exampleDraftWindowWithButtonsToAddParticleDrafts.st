@@ -1,4 +1,4 @@
-graphic - nice to have
+not working
 exampleDraftWindowWithButtonsToAddParticleDrafts
 
 	| view viewSize draft |

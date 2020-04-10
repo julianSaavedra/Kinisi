@@ -1,29 +1,27 @@
 example - data
-earthAndSunInitialUniverseDraft
+earthAndSunInitialUniverseObservation
 
-	| testResource unitProvider universeDraft earthDraft sunDraft |
+	| testResource unitProvider universe earth sun |
 	unitProvider := UnitProvider soleInstance.
 	testResource := PhysicsTestResource new.
-	universeDraft := UniverseObservation new.
+	universe := UniverseObservation new.
 	
-	earthDraft := universeDraft newParticleObservation.
-	earthDraft
+	earth := universe newParticleObservation.
+	earth
 		particleName: 'Earth';
 		position: (MeasureVector y: 150e6 with: unitProvider kilometer);
 		mass: (unitProvider kilogram with: 5.9722e24);
 		velocity: (MeasureVector x: 30000 with: unitProvider standardVelocityUnit);
 		acceleration: testResource nullAcceleration;
-		color: Color lightBlue;
-		save.
+		color: Color lightBlue.
 
-	sunDraft := universeDraft newParticleObservation.
-	sunDraft
+	sun := universe newParticleObservation.
+	sun
 		particleName: 'Sun';
 		position: testResource nullPosition;
 		mass: (unitProvider kilogram with: 2e30);
 		velocity: testResource nullVelocity;
 		acceleration: testResource nullAcceleration;
-		color: Color yellow;
-		save.
+		color: Color yellow.
 	
-	^universeDraft
+	^universe

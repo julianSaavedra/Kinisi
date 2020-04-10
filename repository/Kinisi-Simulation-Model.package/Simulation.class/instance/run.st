@@ -1,4 +1,4 @@
-action
+simulation
 run
 
 	| currentState |

@@ -1,5 +1,5 @@
-data examples
-universeDraftBlueAndRedParticlesOfTenKilogramsMovingInOppositeDirections
+data -  scenarios
+universeWithBlueAndRedParticlesOfTenKilogramsMovingInOppositeDirections
 
 	| universeDraft unitProvider blueDraft redDraft oneMeterInXPosition oneMeterPerSecondVelocity tenKilograms |
 	unitProvider := UnitProvider soleInstance.
@@ -14,14 +14,12 @@ universeDraftBlueAndRedParticlesOfTenKilogramsMovingInOppositeDirections
 		color: Color blue;
 		mass: tenKilograms;
 		position: oneMeterInXPosition;
-		velocity: oneMeterPerSecondVelocity;
-		save.
+		velocity: oneMeterPerSecondVelocity.
 	redDraft := universeDraft newParticleObservation.
 	redDraft
 		color: Color red;
 		mass: tenKilograms;
 		position: oneMeterInXPosition * -1;
-		velocity: oneMeterPerSecondVelocity * -1;
-		save.
+		velocity: oneMeterPerSecondVelocity * -1.
 		
 	^universeDraft
