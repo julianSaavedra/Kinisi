@@ -1,0 +1,4 @@
+examples
+exampleSimulationConfiguration
+
+	self onDefaultWorkbenchOpen: CollatzConjectureSimulationConfigurationPresenter

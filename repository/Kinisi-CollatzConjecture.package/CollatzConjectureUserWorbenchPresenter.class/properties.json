@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-CollatzConjecture",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"initialState",
+		"play",
+		"lastResult"
+	],
+	"name" : "CollatzConjectureUserWorbenchPresenter",
+	"type" : "normal"
+}
