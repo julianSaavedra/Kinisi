@@ -1,4 +1,4 @@
 examples
 exampleWorkbench
 
-	self onDefaultWorkbenchOpen: CollatzConjectureUserWorbenchPresenter
+	self onDefaultWorkbenchOpen: CollatzConjectureUserWorkbenchPresenter

@@ -1,4 +1,0 @@
-widgets
-label
-
-	^label

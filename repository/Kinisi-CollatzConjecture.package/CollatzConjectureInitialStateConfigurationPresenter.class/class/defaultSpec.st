@@ -1,7 +1,7 @@
 specs
 defaultSpec
 
-	^SpBoxLayout newHorizontal
-		add: #label width: 70;
-		add: #input;
+	^SpBoxLayout newVertical
+		add: #label expand: false fill: false padding: 5;
+		add: #input expand: true fill: true padding: 5;
 		yourself

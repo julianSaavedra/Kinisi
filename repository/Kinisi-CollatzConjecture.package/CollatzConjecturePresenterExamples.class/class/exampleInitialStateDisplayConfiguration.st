@@ -1,0 +1,4 @@
+examples
+exampleInitialStateDisplayConfiguration
+
+	self onDefaultWorkbenchOpen: CollatzConjectureInitialStateDisplayConfigurationPresenter
