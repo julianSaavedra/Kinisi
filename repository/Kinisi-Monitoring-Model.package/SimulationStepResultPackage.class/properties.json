@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationMonitoringDataPackage",
+	"category" : "Kinisi-Monitoring-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stepResult"
+	],
+	"name" : "SimulationStepResultPackage",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
-tests
+tests - may no have sense here
 testLastResultIsEmptyBeforeRunningTheSimulation
 
 	| workbench stepResults |

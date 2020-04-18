@@ -1,16 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-CollatzConjecture",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"initialState",
-		"lastResult",
-		"displaySettings",
-		"monitoringSettings"
+		"workbench",
+		"turnOnOffMonitoring"
 	],
-	"name" : "CollatzConjectureUserWorkbench",
+	"name" : "CollatzConjectureMonitoringSettingsPresenter",
 	"type" : "normal"
 }

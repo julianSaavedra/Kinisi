@@ -1,4 +1,4 @@
 instance creation
 onColor: targetColor
  
-	^self new initializeWith: [:setting | setting numberColor: targetColor ]
+	^self modifyWith: [:setting | setting numberColor: targetColor ]

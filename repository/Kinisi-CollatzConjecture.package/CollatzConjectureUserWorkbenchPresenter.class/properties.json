@@ -9,7 +9,8 @@
 		"workbench",
 		"initialState",
 		"initialStateDisplay",
-		"initialStateDisplaySettings"
+		"initialStateDisplaySettings",
+		"monitoringSettings"
 	],
 	"name" : "CollatzConjectureUserWorkbenchPresenter",
 	"type" : "normal"

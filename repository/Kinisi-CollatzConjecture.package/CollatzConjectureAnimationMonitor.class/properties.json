@@ -5,12 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"initialState",
-		"lastResult",
-		"displaySettings",
-		"monitoringSettings"
-	],
-	"name" : "CollatzConjectureUserWorkbench",
+	"instvars" : [ ],
+	"name" : "CollatzConjectureAnimationMonitor",
 	"type" : "normal"
 }

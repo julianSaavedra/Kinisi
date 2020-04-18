@@ -6,11 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"initialState",
-		"lastResult",
-		"displaySettings",
-		"monitoringSettings"
+		"modification"
 	],
-	"name" : "CollatzConjectureUserWorkbench",
+	"name" : "CollatzConjectureMonitoringSettingsModifier",
 	"type" : "normal"
 }

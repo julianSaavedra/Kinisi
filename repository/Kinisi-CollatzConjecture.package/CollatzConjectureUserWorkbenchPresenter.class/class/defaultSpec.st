@@ -5,7 +5,8 @@ defaultSpec
 	settingsLayout := SpBoxLayout newVertical.
 	settingsLayout
 		add: #initialState;
-		add: #initialStateDisplaySettings.
+		add: #initialStateDisplaySettings;
+		addLast: #monitoringSettings withConstraints: [:constraints | constraints padding: 10].
 		
 	^SpBoxLayout newHorizontal
 		add: settingsLayout withConstraints: [:constraints | constraints padding: 5];

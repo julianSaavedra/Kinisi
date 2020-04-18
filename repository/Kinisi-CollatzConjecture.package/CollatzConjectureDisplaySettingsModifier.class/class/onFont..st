@@ -1,4 +1,4 @@
 instance creation
 onFont: targetFont
  
-	^self new initializeWith: [:settings | settings font: targetFont ]
+	^self modifyWith: [:settings | settings font: targetFont ]

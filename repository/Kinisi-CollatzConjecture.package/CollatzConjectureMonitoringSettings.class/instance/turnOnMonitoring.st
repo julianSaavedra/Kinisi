@@ -1,0 +1,4 @@
+setting
+turnOnMonitoring
+
+	monitoringIsOn := true
