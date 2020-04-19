@@ -9,6 +9,6 @@
 		"dataFromBuffer",
 		"data"
 	],
-	"name" : "DataPackage",
+	"name" : "BufferDataPackage",
 	"type" : "normal"
 }

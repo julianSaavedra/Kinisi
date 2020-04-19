@@ -1,5 +1,5 @@
 tests
-testBufferReaderPerformsNotStartedBufferActionWhenNothingHasBeenStoredInBufferYet
+testReaderPerformsNotStartedBufferActionWhenNothingHasBeenStoredInBufferYet
 
 	| buffer reader notStartedBufferActionWasPerformed |
 	buffer := Buffer new.

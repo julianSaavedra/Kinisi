@@ -1,4 +1,4 @@
-accessing
+API
 close
 
 	state := ClosedBufferState new.

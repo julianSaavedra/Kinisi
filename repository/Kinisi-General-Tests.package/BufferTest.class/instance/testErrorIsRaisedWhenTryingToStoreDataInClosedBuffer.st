@@ -6,6 +6,6 @@ testErrorIsRaisedWhenTryingToStoreDataInClosedBuffer
 	buffer close.
 	self
 		should: [ buffer store: 'a' ]
-		raise: Error
+		raise:BufferError
 		whoseDescriptionIncludes: 'Buffer is closed'
-		description: 'Fail'
+		description: 'Test did not failed as expected'

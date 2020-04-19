@@ -1,5 +1,5 @@
 tests
-testBufferReaderReadsRemainingLettersInBufferAndPerformsClosedBufferActionWhenBufferIsClosed
+testReaderReadsRemainingLettersInBufferAndPerformsClosedBufferActionWhenBufferIsClosed
 
 	| buffer reader readData keepReading |
 	buffer := Buffer new.

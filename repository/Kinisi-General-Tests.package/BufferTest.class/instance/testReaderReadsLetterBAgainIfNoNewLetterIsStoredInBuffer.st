@@ -1,5 +1,5 @@
 tests
-testBufferReaderReadsLetterBAgainIfNoNewLetterIsStoredInBuffer
+testReaderReadsLetterBAgainIfNoNewLetterIsStoredInBuffer
 
 	| buffer reader readData |
 	buffer := Buffer new.

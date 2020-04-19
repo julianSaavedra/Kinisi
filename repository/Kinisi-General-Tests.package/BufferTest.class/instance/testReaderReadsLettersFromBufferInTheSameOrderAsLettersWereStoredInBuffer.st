@@ -1,5 +1,5 @@
 tests
-testBufferReaderReadsLettersFromBufferInTheSameOrderAsLettersWereStoredInBuffer
+testReaderReadsLettersFromBufferInTheSameOrderAsLettersWereStoredInBuffer
 
 	| buffer reader readData |
 	buffer := Buffer new.

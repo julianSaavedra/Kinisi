@@ -1,4 +1,4 @@
-accessing
+API
 nextPackage
 
 	^state nextPackageFrom: self

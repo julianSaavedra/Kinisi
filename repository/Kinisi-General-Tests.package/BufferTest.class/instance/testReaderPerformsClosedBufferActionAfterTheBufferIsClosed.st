@@ -1,5 +1,5 @@
 tests
-testBufferReaderPerformsClosedBufferActionAfterTheBufferIsClosed
+testReaderPerformsClosedBufferActionAfterTheBufferIsClosed
 
 	| buffer reader closedBufferActionWasPerformed |
 	buffer := Buffer new.

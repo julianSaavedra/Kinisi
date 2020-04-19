@@ -1,5 +1,5 @@
 tests
-testBufferReaderReadsLetterBAgainUntilLetterCIsStoredInBuffer
+testReaderReadsLetterBAgainUntilLetterCIsStoredInBuffer
 
 	| buffer reader readData |
 	buffer := Buffer new.
