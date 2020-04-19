@@ -1,15 +1,13 @@
 private - to be removed
 monitoringConsumer
 
-
 	| canvas monitor renderer |
 	monitor := SimulationPluggableMonitor
 		onStartDo: [
 			canvas := TRCanvas new.
 			canvas openInWindowSized: 400 @ 400 titled: 'Collatz Conjecture'.
 			renderer := CollatzConjectureStateRenderer basedOn: displaySettings]
-		processResultsWith: [:step | 	renderer draw: step value on: canvas ]
-		andWhenFinishedDo: [].
+		processResultsWith: [:step | 	renderer draw: step value on: canvas ].
 	
 	^SimulationMonitoringConsumer
 		for: monitor
