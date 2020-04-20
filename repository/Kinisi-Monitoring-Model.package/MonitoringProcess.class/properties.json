@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SimulationMonitoringDataPackage",
+	"instvars" : [
+		"source",
+		"monitor",
+		"delay",
+		"process"
+	],
+	"name" : "MonitoringProcess",
 	"type" : "normal"
 }

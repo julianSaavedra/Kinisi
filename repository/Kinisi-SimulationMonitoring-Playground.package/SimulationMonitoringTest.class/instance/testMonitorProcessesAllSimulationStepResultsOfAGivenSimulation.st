@@ -1,4 +1,4 @@
-tests
+tests - simulation coupled
 testMonitorProcessesAllSimulationStepResultsOfAGivenSimulation
 
 	| monitor simulationStepResults simulation monitoringConsumer |

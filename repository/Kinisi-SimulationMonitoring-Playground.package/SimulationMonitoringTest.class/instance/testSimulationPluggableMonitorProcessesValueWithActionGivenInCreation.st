@@ -1,4 +1,4 @@
-tests
+tests - simulation coupled
 testSimulationPluggableMonitorProcessesValueWithActionGivenInCreation
 
 	| monitor timesActionWasPerformed monitoringConsumer simulation |

@@ -1,4 +1,4 @@
-tests
+tests - simulation coupled
 testMonitorProcessesSimulationStepResultsEveryFortyMillisecondsWithToleranceOfFivePercent
 
 	| receivedDataTimes monitor periodInMilliSeconds monitoringConsumer simulation |

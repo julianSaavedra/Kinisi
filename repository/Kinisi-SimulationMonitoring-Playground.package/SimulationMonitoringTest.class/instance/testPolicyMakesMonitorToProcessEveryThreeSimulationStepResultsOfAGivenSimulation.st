@@ -1,4 +1,4 @@
-tests
+tests - simulation coupled
 testPolicyMakesMonitorToProcessEveryThreeSimulationStepResultsOfAGivenSimulation
 
 	| monitor simulationStepResults simulation monitoringConsumer |

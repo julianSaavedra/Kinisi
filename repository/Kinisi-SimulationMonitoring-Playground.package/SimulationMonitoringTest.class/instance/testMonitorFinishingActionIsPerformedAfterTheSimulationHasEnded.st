@@ -1,4 +1,4 @@
-tests
+tests - simulation coupled
 testMonitorFinishingActionIsPerformedAfterTheSimulationHasEnded
 
 	| monitor finishActionWasPerformed simulation monitoringConsumer |

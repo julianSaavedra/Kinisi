@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SimulationStepConsumer",
-	"category" : "Kinisi-Monitoring-Model",
+	"category" : "Kinisi-SimulationMonitoring-Playground",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

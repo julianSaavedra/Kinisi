@@ -1,4 +1,4 @@
-test - new wave
+tests
 testMonitorProcessedDataFromSource
 
 	| dataToBeProcessed source processedData monitor delay monitoring |
@@ -9,7 +9,7 @@ testMonitorProcessedDataFromSource
 	processedData := OrderedCollection new.
 	monitor := DataPluggableMonitor processResultsWith: [:data | processedData add: data].
 	delay := Semaphore new.
-	monitoring := MonitoringNewModelProcess reading: source for: monitor every: delay.
+	monitoring := MonitoringProcess reading: source for: monitor every: delay.
 	monitoring start.
 
 	delay signal.

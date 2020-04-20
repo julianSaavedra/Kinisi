@@ -1,4 +1,4 @@
-tests
+tests - simulation coupled
 waitUntilMonitoringFinishesAfter: block
 
 	self resetFinishedMonitoringFlag.
