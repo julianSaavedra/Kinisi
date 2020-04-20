@@ -1,4 +1,4 @@
 action
-process: stepResult
+process: data
 
 	self subclassResponsibility

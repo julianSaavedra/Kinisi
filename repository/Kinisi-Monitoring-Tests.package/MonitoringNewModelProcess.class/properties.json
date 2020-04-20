@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Monitoring-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"source",
+		"monitor",
+		"delay",
+		"process"
+	],
+	"name" : "MonitoringNewModelProcess",
+	"type" : "normal"
+}

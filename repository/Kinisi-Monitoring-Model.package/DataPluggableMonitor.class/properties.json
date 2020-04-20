@@ -1,15 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "SimulationMonitor",
+	"super" : "DataMonitor",
 	"category" : "Kinisi-Monitoring-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"action",
 		"startAction",
-		"finishAction"
+		"finishAction",
+		"dataAction"
 	],
-	"name" : "SimulationPluggableMonitor",
+	"name" : "DataPluggableMonitor",
 	"type" : "normal"
 }

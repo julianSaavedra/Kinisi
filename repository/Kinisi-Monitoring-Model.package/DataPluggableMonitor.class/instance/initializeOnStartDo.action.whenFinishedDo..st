@@ -2,5 +2,5 @@ initialization
 initializeOnStartDo: anStartAction action: aMonitoringAction whenFinishedDo: aFinishAction
 
 	startAction := anStartAction.
-	action := aMonitoringAction.
+	dataAction := aMonitoringAction.
 	finishAction := aFinishAction

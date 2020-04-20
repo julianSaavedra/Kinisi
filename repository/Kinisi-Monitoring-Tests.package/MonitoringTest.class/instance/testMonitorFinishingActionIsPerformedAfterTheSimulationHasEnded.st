@@ -2,7 +2,7 @@ tests
 testMonitorFinishingActionIsPerformedAfterTheSimulationHasEnded
 
 	| monitor finishActionWasPerformed simulation monitoringConsumer |
-	monitor := SimulationPluggableMonitor
+	monitor := DataPluggableMonitor
 		processResultsWith: [:simulationStepResult | ]
 		andWhenFinishedDo: [ self monitoringHasFinished. finishActionWasPerformed := true ].
 	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 50).

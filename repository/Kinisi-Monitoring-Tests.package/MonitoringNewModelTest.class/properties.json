@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Kinisi-Monitoring-Model",
+	"super" : "TestCase",
+	"category" : "Kinisi-Monitoring-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SimulationMonitor",
+	"name" : "MonitoringNewModelTest",
 	"type" : "normal"
 }

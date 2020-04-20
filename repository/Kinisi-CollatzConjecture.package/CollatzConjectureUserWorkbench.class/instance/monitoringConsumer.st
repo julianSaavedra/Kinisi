@@ -2,7 +2,7 @@ private - to be removed
 monitoringConsumer
 
 	| canvas monitor renderer |
-	monitor := SimulationPluggableMonitor
+	monitor := DataPluggableMonitor
 		onStartDo: [
 			canvas := TRCanvas new.
 			canvas openInWindowSized: 400 @ 400 titled: 'Collatz Conjecture'.

@@ -2,7 +2,7 @@ tests
 testSimulationPluggableMonitorProcessesValueWithActionGivenInCreation
 
 	| monitor timesActionWasPerformed monitoringConsumer simulation |
-	monitor := SimulationPluggableMonitor
+	monitor := DataPluggableMonitor
 		processResultsWith: [:simulationStepResult | timesActionWasPerformed := timesActionWasPerformed + 1 ]
 		andWhenFinishedDo: [ self monitoringHasFinished ].
 	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 40).

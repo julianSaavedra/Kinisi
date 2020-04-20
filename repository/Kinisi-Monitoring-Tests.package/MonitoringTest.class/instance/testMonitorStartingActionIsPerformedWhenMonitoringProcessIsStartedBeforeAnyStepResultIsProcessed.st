@@ -2,7 +2,7 @@ tests
 testMonitorStartingActionIsPerformedWhenMonitoringProcessIsStartedBeforeAnyStepResultIsProcessed
 
 	| monitor monitoringProcess startActionWasPerformed anyStepResultWasProcess |
-	monitor := SimulationPluggableMonitor
+	monitor := DataPluggableMonitor
 		onStartDo: [startActionWasPerformed := true and: [anyStepResultWasProcess not]]
 		processResultsWith: [:simulationResult | anyStepResultWasProcess := true ].
 	monitoringProcess := SimulationMonitoringProcess from: Buffer new to: monitor every: (Duration milliSeconds: 100).

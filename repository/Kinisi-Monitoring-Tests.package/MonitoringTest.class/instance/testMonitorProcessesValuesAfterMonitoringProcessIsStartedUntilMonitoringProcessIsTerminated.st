@@ -3,7 +3,7 @@ testMonitorProcessesValuesAfterMonitoringProcessIsStartedUntilMonitoringProcessI
 
 	| receivedData monitor monitoringProcess |
 	receivedData := OrderedCollection new.
-	monitor := SimulationPluggableMonitor
+	monitor := DataPluggableMonitor
 		processResultsWith: [:simulationResult | receivedData add: simulationResult]
 		andWhenFinishedDo: [ self monitoringHasFinished ].
 	monitoringProcess := SimulationMonitoringProcess from: self bufferWithTenStepResults to: monitor every: (Duration milliSeconds: 100).
