@@ -1,5 +1,5 @@
 instance creation
-onStartDo: startAction processResultsWith: monitoringAction andWhenFinishedDo: finishAction
+onStartDo: startAction processWith: monitoringAction andWhenFinishedDo: finishAction
 
 	^self new
 		initializeOnStartDo: startAction

@@ -1,14 +1,19 @@
 tests
 testMonitorFinishingActionIsPerformedWhenMonitoringProcessIsTerminated
 
-	| monitor monitoring finishActionWasPerformed delay |
-	monitor := DataPluggableMonitor
-		processResultsWith: [:data | ]
-		andWhenFinishedDo: [finishActionWasPerformed := true].
-	delay := Semaphore new.
-	monitoring := MonitoringProcess reading: Buffer new for: monitor every: delay.
+	| monitoring finishActionWasPerformed |
+	monitor := self monitorFinishingWith: [ finishActionWasPerformed := true ].
+	monitoring := MonitoringProcess
+		reading: source
+		for: monitor
+		every: delay.
 
+	finishActionWasPerformed := false.
 	monitoring start.
+	self deny: finishActionWasPerformed.
+	self tickDelayAndWaitMonitorProcessingForAllExpectedData.
+	self deny: finishActionWasPerformed.
+
 	monitoring terminate.
-	
-	self assert: finishActionWasPerformed.
+
+	self assert: finishActionWasPerformed

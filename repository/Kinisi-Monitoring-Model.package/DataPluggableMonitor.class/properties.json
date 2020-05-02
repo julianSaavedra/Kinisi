@@ -8,7 +8,7 @@
 	"instvars" : [
 		"startAction",
 		"finishAction",
-		"dataAction"
+		"monitorAction"
 	],
 	"name" : "DataPluggableMonitor",
 	"type" : "normal"

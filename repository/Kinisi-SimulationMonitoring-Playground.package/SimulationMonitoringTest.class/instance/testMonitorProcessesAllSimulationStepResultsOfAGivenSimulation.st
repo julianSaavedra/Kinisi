@@ -4,7 +4,7 @@ testMonitorProcessesAllSimulationStepResultsOfAGivenSimulation
 	| monitor simulationStepResults simulation monitoringConsumer |
 	simulationStepResults := OrderedCollection new.
 	monitor := DataPluggableMonitor
-		processResultsWith: [:simulationStepResult | simulationStepResults add: simulationStepResult value ]
+		processWith: [:simulationStepResult | simulationStepResults add: simulationStepResult value ]
 		andWhenFinishedDo: [ self monitoringHasFinished ].
 	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 50).
 	simulation := self

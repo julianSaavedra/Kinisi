@@ -3,7 +3,7 @@ transcriptMonitor
 
 	^DataPluggableMonitor
 		onStartDo: [ Transcript open; clear ]
-		processResultsWith: [:simulationStep | 
+		processWith: [:simulationStep | 
 			Transcript
 				show: ('Time: <1s>' expandMacrosWith: simulationStep time asString);
 				cr.

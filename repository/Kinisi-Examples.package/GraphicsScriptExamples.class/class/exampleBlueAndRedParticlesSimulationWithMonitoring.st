@@ -14,7 +14,7 @@ exampleBlueAndRedParticlesSimulationWithMonitoring
 			view := RTView new.
 			view canvas color: Color black.
 			view openInWindowSized: 1000 @ 1000 titled: 'Red and Blue']
-		processResultsWith: [:simulationStepResult |
+		processWith: [:simulationStepResult |
 			view clean.
 			renderer drawIn: view basedOn: simulationStepResult value.
 			view canvas signalUpdate].

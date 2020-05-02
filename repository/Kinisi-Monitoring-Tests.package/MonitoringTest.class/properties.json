@@ -5,7 +5,13 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"source",
+		"monitor",
+		"delay",
+		"allDataToBeMonitored",
+		"monitoredData"
+	],
 	"name" : "MonitoringTest",
 	"type" : "normal"
 }
