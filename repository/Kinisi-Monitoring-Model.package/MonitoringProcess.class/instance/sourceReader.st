@@ -1,5 +1,5 @@
-API
-bufferReader
+initialization
+sourceReader
 
 	^BufferPluggableReader
 		on: source

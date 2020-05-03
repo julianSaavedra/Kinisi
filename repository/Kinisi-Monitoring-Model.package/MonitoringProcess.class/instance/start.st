@@ -1,5 +1,4 @@
 API
 start
 
-	monitor start.
-	self resume
+	monitoringState start: self

@@ -1,5 +1,4 @@
 API
 terminate
 
-	process terminate.
-	monitor terminate
+	monitoringState terminate: self

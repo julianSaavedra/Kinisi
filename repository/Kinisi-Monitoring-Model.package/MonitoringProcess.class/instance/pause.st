@@ -1,4 +1,4 @@
 API
 pause
 
-	process suspend
+	monitoringState pause: self

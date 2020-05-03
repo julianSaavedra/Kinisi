@@ -1,0 +1,4 @@
+private
+terminateAsNotStarted
+
+	self changeToTerminated

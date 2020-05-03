@@ -1,13 +1,14 @@
 initialization
 initializeReading: aSource for: aMonitor every: aDelay 
 
-	| bufferReader |
+	| sourceReader |
 	source := aSource.
 	monitor := aMonitor.
 	delay := aDelay.
-	bufferReader := self bufferReader.
+	monitoringState := MonitoringNotStarted new.
+	sourceReader := self sourceReader.
 	process := [ [ true ]
 		whileTrue: [ delay wait.
-			bufferReader read ] ] newProcess.
+			sourceReader read ] ] newProcess.
 	process name: 'Monitoring'.
 	process priority: Processor timingPriority - 1.
