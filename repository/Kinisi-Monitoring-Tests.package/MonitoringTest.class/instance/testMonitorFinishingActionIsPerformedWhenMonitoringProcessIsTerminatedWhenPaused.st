@@ -1,5 +1,5 @@
 tests
-testMonitorFinishingActionIsNotPerformedWhenMonitoringProcessIsPaused
+testMonitorFinishingActionIsPerformedWhenMonitoringProcessIsTerminatedWhenPaused
 
 	| monitoring finishActionWasPerformed |
 	monitor := self monitorFinishingWith: [ finishActionWasPerformed := true ].

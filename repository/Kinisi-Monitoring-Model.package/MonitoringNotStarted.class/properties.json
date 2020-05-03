@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "MonitoringState",
 	"category" : "Kinisi-Monitoring-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

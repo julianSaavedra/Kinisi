@@ -2,4 +2,4 @@ private
 playAsPaused
 
 	process resume.
-	monitoringState := MonitoringRunning new
+	self changeToRunning

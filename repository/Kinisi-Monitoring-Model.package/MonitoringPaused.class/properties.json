@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MonitoringRunning",
+	"name" : "MonitoringPaused",
 	"type" : "normal"
 }

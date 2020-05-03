@@ -10,7 +10,7 @@
 		"monitor",
 		"delay",
 		"process",
-		"monitoringState"
+		"state"
 	],
 	"name" : "MonitoringProcess",
 	"type" : "normal"

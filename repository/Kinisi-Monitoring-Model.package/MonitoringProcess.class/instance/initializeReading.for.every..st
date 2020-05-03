@@ -5,7 +5,7 @@ initializeReading: aSource for: aMonitor every: aDelay
 	source := aSource.
 	monitor := aMonitor.
 	delay := aDelay.
-	monitoringState := MonitoringNotStarted new.
+	state := MonitoringNotStarted new.
 	sourceReader := self sourceReader.
 	process := [ [ true ]
 		whileTrue: [ delay wait.

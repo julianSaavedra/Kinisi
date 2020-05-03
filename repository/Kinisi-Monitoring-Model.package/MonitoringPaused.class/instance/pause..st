@@ -1,4 +1,4 @@
 monitoring
 pause: process
-
-	process pauseAsRunning
+ 
+	process pauseAsPaused

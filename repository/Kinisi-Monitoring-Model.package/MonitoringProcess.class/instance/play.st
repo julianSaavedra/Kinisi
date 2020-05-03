@@ -1,4 +1,4 @@
 API
 play
 
-	monitoringState play: self
+	state play: self

@@ -1,4 +1,4 @@
 API
 terminate
 
-	monitoringState terminate: self
+	state terminate: self

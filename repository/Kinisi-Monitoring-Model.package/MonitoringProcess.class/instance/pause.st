@@ -1,4 +1,4 @@
 API
 pause
 
-	monitoringState pause: self
+	state pause: self
