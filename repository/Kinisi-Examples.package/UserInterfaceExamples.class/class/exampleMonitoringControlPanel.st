@@ -2,9 +2,7 @@ as yet unclassified
 exampleMonitoringControlPanel
 
 	| source monitor monitoring |
-	source := Buffer new.
-	(1 to: 25) asArray do: [ :dataElement | source store: dataElement ].
-	source close.
+	source := MonitoringFixedSource withAll: (1 to: 25) asArray.
 	monitor := DataPluggableMonitor
 		onStartDo: [ Transcript open; clear ] 
 		processWith: [:number |
