@@ -9,7 +9,7 @@ testMonitorStartingActionIsPerformedWhenMonitoringProcessIsStartedBeforeAnyDataP
 		every: delay.
 
 	startActionWasPerformed := false.
-	monitoring start.
+	monitoring play.
 	
 	self assert: startActionWasPerformed.
 	monitoring terminate

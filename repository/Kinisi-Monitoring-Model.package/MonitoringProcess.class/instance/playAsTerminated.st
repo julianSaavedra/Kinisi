@@ -1,4 +1,4 @@
 private
-pauseAsTerminated
+playAsTerminated
 
 	self raiseTerminatedError

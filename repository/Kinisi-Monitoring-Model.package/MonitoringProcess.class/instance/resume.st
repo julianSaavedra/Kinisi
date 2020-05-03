@@ -1,4 +1,4 @@
 API
 resume
 
-	process resume
+	monitoringState resume: self

@@ -8,10 +8,10 @@ testMonitorStartingActionIsNotPerformedWhenMonitoringProcessIsResumedAfterPaused
 		for: monitor
 		every: delay.
 
-	monitoring start.
+	monitoring play.
 	monitoring pause.
 	startActionWasPerformedWhenResuming := false.
-	monitoring resume.
+	monitoring play.
 	monitoring terminate.
 	
 	self deny: startActionWasPerformedWhenResuming

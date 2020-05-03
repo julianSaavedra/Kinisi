@@ -9,7 +9,7 @@ testMonitorFinishingActionIsPerformedWhenMonitoringProcessIsTerminated
 		every: delay.
 
 	finishActionWasPerformed := false.
-	monitoring start.
+	monitoring play.
 	self deny: finishActionWasPerformed.
 	self tickDelayAndWaitMonitorProcessingForAllExpectedData.
 	self deny: finishActionWasPerformed.

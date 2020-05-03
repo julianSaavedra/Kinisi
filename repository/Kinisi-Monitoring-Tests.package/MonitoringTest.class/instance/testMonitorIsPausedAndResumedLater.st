@@ -7,14 +7,14 @@ testMonitorIsPausedAndResumedLater
 		for: monitor
 		every: delay.
 	
-	monitoring start.
+	monitoring play.
 	self tickDelayForFirstExpectedDataElementAndWaitUntilItIsProcessed.
 	
 	monitoring pause.
 	self tickDelayForAllRemainingData.
 	self assertTimeoutWhen: [ self waitUntilLastExpectedDataIsProcessed ].
 	
-	monitoring resume.
+	monitoring play.
 	self waitUntilLastExpectedDataIsProcessed.
 	
 	monitoring terminate.

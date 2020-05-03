@@ -8,7 +8,7 @@ testMonitorFinishingActionIsNotPerformedWhenMonitoringProcessIsPaused
 		for: monitor
 		every: delay.
 
-	monitoring start.
+	monitoring play.
 	finishActionWasPerformed := false.
 	monitoring pause.
 	self deny: finishActionWasPerformed.

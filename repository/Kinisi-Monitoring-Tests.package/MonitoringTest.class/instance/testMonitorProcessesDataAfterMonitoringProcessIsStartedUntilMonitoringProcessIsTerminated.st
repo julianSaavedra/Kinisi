@@ -9,7 +9,7 @@ testMonitorProcessesDataAfterMonitoringProcessIsStartedUntilMonitoringProcessIsT
 
 	self assertTimeoutWhen: [ self waitUntilFirstExpectedDataIsProcessed ].
 
-	monitoring start.
+	monitoring play.
 	self tickDelayAndWaitMonitorProcessingForAllExpectedDataButLastElement.
 	monitoring terminate.
 

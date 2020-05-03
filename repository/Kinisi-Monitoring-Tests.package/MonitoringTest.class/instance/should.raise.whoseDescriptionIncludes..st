@@ -1,4 +1,4 @@
-tests
+asserting
 should: aBlock raise: errorClass whoseDescriptionIncludes: errorMessage
 
 	self

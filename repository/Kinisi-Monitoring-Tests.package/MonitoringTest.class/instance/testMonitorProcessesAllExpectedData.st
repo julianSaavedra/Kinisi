@@ -10,7 +10,7 @@ testMonitorProcessesAllExpectedData
 	self denyEmpty: allDataToBeMonitored.
 	self assertEmpty: monitoredData.
 
-	monitoring start.
+	monitoring play.
 	self tickDelayAndWaitMonitorProcessingForAllExpectedData.
 	monitoring terminate.
 
