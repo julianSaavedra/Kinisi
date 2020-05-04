@@ -1,4 +1,4 @@
-as yet unclassified
+example
 exampleMonitoringControlPanel
 
 	| source monitor monitoring |
@@ -12,4 +12,6 @@ exampleMonitoringControlPanel
 			andWhenFinishedDo: [ Transcript show: 'Number Monitor has been terminated'].
 
 	monitoring := MonitoringProcess reading: source for: monitor every: 1 asSeconds.
+	
+	(MonitoringControlPanelPresenter on: monitoring) openWithSpec.
 	monitoring inspect

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"process",
+		"play",
+		"pause",
+		"stop"
+	],
+	"name" : "MonitoringControlPanelPresenter",
+	"type" : "normal"
+}
