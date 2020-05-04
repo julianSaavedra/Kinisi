@@ -28,6 +28,7 @@ baseline: spec
 		
 		spec package: 'Kinisi-UserInteraction-Model'.
 		spec package: 'Kinisi-UserInteraction-Presenters' with: [ spec requires: 'Roassal2' ].
+		spec package: 'Kinisi-UserInteraction-Particles-Presenters' with: [ spec requires: 'Roassal2' ].
 		spec package: 'Kinisi-UserInteraction-Menu'.
 		spec package: 'Kinisi-UserInteraction-Tests' with: [ spec requires: #('Kinisi-Physics-Model' 'Kinisi-General-Model') ].
 
