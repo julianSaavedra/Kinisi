@@ -6,4 +6,4 @@ testStateChangesToItselfThreeTimesPlusOneWhenStateIsOdd
 
 	finalState := CollatzConjectureStateChange new finalStateFrom: state.
 	
-	self assert: finalState number equals: 16
+	self assert: finalState equals: (CollatzConjectureState with: 16)

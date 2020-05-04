@@ -1,4 +1,0 @@
-accessing
-terminate
-
-	self halt
