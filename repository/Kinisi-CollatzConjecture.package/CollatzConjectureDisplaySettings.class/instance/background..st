@@ -1,7 +1,7 @@
 setting
 background: targetBackground
 
-	^ self class
+	^self class
 		forNumberIn: color
 		with: font
 		and: size

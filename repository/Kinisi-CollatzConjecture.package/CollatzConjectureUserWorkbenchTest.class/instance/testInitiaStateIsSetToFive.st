@@ -1,11 +1,12 @@
 tests
 testInitiaStateIsSetToFive
 
-	| workbench five |
+	| workbench five stateAtFive |
 	workbench := CollatzConjectureUserWorkbench default.
 	five := 5.
-	self deny: workbench initialState number equals: five.
+	stateAtFive := CollatzConjectureState with: five.
+	self deny: workbench initialState equals: stateAtFive.
 	
 	(CollatzConjectureInitialStateModifier with: five) modify: workbench.
 	
-	self assert: workbench initialState number equals: five
+	self assert: workbench initialState equals: stateAtFive
