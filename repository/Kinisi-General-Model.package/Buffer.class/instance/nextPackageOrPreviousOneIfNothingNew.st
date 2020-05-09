@@ -1,5 +1,6 @@
 private
 nextPackageOrPreviousOneIfNothingNew
 
-	packages ifNotEmpty: [ lastPackage := packages removeFirst ].
-	^lastPackage
+	^packages
+		ifNotEmpty: [ packages removeFirst ]
+		ifEmpty: [ EmptyBufferPackage new ]

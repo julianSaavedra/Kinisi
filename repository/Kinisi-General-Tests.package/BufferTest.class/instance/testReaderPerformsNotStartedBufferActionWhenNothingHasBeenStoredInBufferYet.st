@@ -2,14 +2,16 @@ tests
 testReaderPerformsNotStartedBufferActionWhenNothingHasBeenStoredInBufferYet
 
 	| buffer reader notStartedBufferActionWasPerformed |
+
 	buffer := Buffer new.
 	reader := BufferPluggableReader
 		on: buffer
-		withDataDo: [:data | ]
+		whenReading: [ :data |  ]
 		ifBufferNotStartedDo: [ notStartedBufferActionWasPerformed := true ]
-		ifBufferIsClosed: [].
-	
+		ifEmpty: [  ]
+		ifClosed: [  ].
+
 	notStartedBufferActionWasPerformed := false.
 	reader read.
-	
+
 	self assert: notStartedBufferActionWasPerformed

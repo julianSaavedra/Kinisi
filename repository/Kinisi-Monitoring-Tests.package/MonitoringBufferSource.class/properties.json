@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "Kinisi-Monitoring-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"buffer"
 	],
-	"name" : "MonitoringSourceTests",
+	"name" : "MonitoringBufferSource",
 	"type" : "normal"
 }
