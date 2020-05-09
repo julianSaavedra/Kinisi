@@ -2,7 +2,7 @@ tests
 testMonitoringCannotBePlayedAfterTermination
 
 	| monitoring |
-	monitoring := MonitoringProcess reading: source for: monitor every: delay.
+	monitoring := KinisiMonitor on: source with: monitor waiting: delay.
 	monitoring terminate.
 	
 	self

@@ -9,7 +9,7 @@ exampleBlueAndRedParticlesSimulationWithMonitoring
 	universe scale: (meter with: 1).
 	universe turnGridOff.
 	renderer := UniverseRenderer basedOn: universe.
-	monitor := DataPluggableMonitor
+	monitor := PluggableMonitorInterface
 		onStartDo: [
 			view := RTView new.
 			view canvas color: Color black.

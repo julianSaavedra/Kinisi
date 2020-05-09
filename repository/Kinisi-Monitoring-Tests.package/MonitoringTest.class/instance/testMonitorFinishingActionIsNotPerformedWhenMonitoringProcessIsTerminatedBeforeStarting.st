@@ -3,10 +3,10 @@ testMonitorFinishingActionIsNotPerformedWhenMonitoringProcessIsTerminatedBeforeS
 
 	| monitoring finishActionWasPerformed |
 	monitor := self monitorFinishingWith: [ finishActionWasPerformed := true ].
-	monitoring := MonitoringProcess
-		reading: source
-		for: monitor
-		every: delay.
+	monitoring := KinisiMonitor
+		on: source
+		with: monitor
+		waiting: delay.
 
 	finishActionWasPerformed := false.
 	monitoring terminate.

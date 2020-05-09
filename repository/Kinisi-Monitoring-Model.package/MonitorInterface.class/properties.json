@@ -5,13 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"source",
-		"monitor",
-		"delay",
-		"process",
-		"state"
-	],
-	"name" : "MonitoringProcess",
+	"instvars" : [ ],
+	"name" : "MonitorInterface",
 	"type" : "normal"
 }

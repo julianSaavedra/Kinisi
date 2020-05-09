@@ -1,7 +1,7 @@
 actions
 transcriptMonitor
 
-	^DataPluggableMonitor
+	^PluggableMonitorInterface
 		onStartDo: [ Transcript open; clear ]
 		processWith: [:simulationStep | 
 			Transcript

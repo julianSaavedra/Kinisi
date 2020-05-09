@@ -1,6 +1,6 @@
 private
 terminateAsPaused
 
-	monitor terminate.
+	interface terminate.
 	process terminate.
 	self changeToTerminated

@@ -1,5 +1,5 @@
 running
 setUpMonitor
 
-	monitor := DataPluggableMonitor
+	monitor := PluggableMonitorInterface
 		processWith: [ :dataElement | self monitorHasProcessed: dataElement ]

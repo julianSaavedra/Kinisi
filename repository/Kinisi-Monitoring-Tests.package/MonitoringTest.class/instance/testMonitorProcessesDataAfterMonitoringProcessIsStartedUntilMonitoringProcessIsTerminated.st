@@ -2,10 +2,10 @@ tests
 testMonitorProcessesDataAfterMonitoringProcessIsStartedUntilMonitoringProcessIsTerminated
 
 	| monitoring |
-	monitoring := MonitoringProcess
-		reading: source
-		for: monitor
-		every: delay.
+	monitoring := KinisiMonitor
+		on: source
+		with: monitor
+		waiting: delay.
 
 	self assertTimeoutWhen: [ self waitUntilFirstExpectedDataIsProcessed ].
 

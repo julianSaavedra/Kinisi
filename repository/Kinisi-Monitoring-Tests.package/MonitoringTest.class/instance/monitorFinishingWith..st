@@ -1,6 +1,6 @@
 monitor creation
 monitorFinishingWith: finishingAction
 
-	^DataPluggableMonitor
+	^PluggableMonitorInterface
 		processWith: [:dataElement | self monitorHasProcessed: dataElement ]
 		andWhenFinishedDo: finishingAction

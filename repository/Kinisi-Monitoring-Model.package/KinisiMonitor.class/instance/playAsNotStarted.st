@@ -1,6 +1,6 @@
 private
 playAsNotStarted
 
-	monitor start.
+	interface start.
 	process resume.
 	self changeToRunning

@@ -2,7 +2,7 @@ tests
 testPausingMonitoringBeforeStartingShouldNotProducedAnyError
 
 	| monitoring |
-	monitoring := MonitoringProcess reading: source for: monitor every: delay.
+	monitoring := KinisiMonitor on: source with: monitor waiting: delay.
 	
 	self
 		shouldnt: [ monitoring pause ]

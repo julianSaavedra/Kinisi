@@ -2,7 +2,7 @@ tests - simulation coupled
 testSimulationPluggableMonitorProcessesValueWithActionGivenInCreation
 
 	| monitor timesActionWasPerformed monitoringConsumer simulation |
-	monitor := DataPluggableMonitor
+	monitor := PluggableMonitorInterface
 		processWith: [:simulationStepResult | timesActionWasPerformed := timesActionWasPerformed + 1 ]
 		andWhenFinishedDo: [ self monitoringHasFinished ].
 	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 40).

@@ -5,7 +5,13 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DataMonitor",
+	"instvars" : [
+		"source",
+		"process",
+		"state",
+		"signal",
+		"interface"
+	],
+	"name" : "KinisiMonitor",
 	"type" : "normal"
 }

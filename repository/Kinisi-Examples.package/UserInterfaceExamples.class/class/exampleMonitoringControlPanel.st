@@ -2,10 +2,10 @@ example
 exampleMonitoringControlPanel
 
 	| monitoring |
-	monitoring := MonitoringProcess
-		reading: self naturalNumberProvider
-		for: self transcriptMonitor
-		every: 1 asSeconds.
+	monitoring := KinisiMonitor
+		on: self naturalNumberProvider
+		with: self transcriptMonitor
+		waiting: 1 asSeconds.
 
 	(MonitoringControlPanelPresenter on: monitoring) openWithSpec.
 	monitoring inspect

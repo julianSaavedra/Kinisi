@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DataMonitor",
+	"super" : "MonitorInterface",
 	"category" : "Kinisi-Monitoring-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -10,6 +10,6 @@
 		"finishAction",
 		"monitorAction"
 	],
-	"name" : "DataPluggableMonitor",
+	"name" : "PluggableMonitorInterface",
 	"type" : "normal"
 }

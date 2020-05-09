@@ -3,10 +3,10 @@ testMonitorStartingActionIsPerformedWhenMonitoringProcessIsStartedBeforeAnyDataP
 
 	| monitoring startActionWasPerformed |
 	monitor := self monitorStartingWith: [ startActionWasPerformed := true ].
-	monitoring := MonitoringProcess
-		reading: source
-		for: monitor
-		every: delay.
+	monitoring := KinisiMonitor
+		on: source
+		with: monitor
+		waiting: delay.
 
 	startActionWasPerformed := false.
 	monitoring play.

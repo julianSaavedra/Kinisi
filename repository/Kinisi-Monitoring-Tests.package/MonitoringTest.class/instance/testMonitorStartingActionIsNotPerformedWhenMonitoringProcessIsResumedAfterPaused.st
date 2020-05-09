@@ -3,10 +3,10 @@ testMonitorStartingActionIsNotPerformedWhenMonitoringProcessIsResumedAfterPaused
 
 	| monitoring startActionWasPerformedWhenResuming |
 	monitor := self monitorStartingWith: [ startActionWasPerformedWhenResuming := true ].
-	monitoring := MonitoringProcess
-		reading: source
-		for: monitor
-		every: delay.
+	monitoring := KinisiMonitor
+		on: source
+		with: monitor
+		waiting: delay.
 
 	monitoring play.
 	monitoring pause.

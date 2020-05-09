@@ -1,14 +1,14 @@
 initialization
-initializeReading: aSource for: aMonitor every: aDelay 
+initializeOn: aSource with: anInterface waiting: aSignal 
 
 	source := aSource.
-	monitor := aMonitor.
-	delay := aDelay.
+	interface := anInterface.
+	signal := aSignal.
 	state := MonitoringNotStarted new.
 	process := [
 		[ true ] whileTrue: [
-			delay wait.
-			monitor process: source current ]
+			signal wait.
+			interface process: source current ]
 	 ] newProcess.
 	process name: 'Monitoring'.
 	process priority: Processor timingPriority - 1
