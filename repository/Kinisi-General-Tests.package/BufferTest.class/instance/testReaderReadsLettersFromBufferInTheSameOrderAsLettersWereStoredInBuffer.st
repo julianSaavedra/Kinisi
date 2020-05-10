@@ -4,7 +4,7 @@ testReaderReadsLettersFromBufferInTheSameOrderAsLettersWereStoredInBuffer
 	| buffer reader readData |
 	buffer := Buffer new.
 	readData := OrderedCollection new.
-	reader := BufferPluggableReader on: buffer withDataDo: [:data | readData add: data ].
+	reader := BufferPluggableReader on: buffer whenReading: [:data | readData add: data ].
 	
 	buffer store: 'a'; store: 'b'; store: 'c'.
 	reader read; read; read.

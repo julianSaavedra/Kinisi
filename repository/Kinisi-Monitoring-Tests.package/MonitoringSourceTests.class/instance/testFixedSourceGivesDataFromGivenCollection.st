@@ -6,4 +6,4 @@ testFixedSourceGivesDataFromGivenCollection
 	source := MonitoringFixedSource withAll: dataToBeSourced.
 	
 	dataToBeSourced do: [:dataElement |
-		self assert: dataElement equals: source current ]
+		self assert: dataElement equals: source next ]

@@ -1,5 +1,5 @@
 accessing
-current
+next
 
 	| current |
 	current := data first.

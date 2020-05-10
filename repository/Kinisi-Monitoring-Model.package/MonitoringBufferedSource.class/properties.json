@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Monitoring-Tests",
+	"category" : "Kinisi-Monitoring-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"buffer"
+		"current",
+		"bufferReader"
 	],
-	"name" : "MonitoringBufferSource",
+	"name" : "MonitoringBufferedSource",
 	"type" : "normal"
 }

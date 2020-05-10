@@ -1,5 +1,5 @@
 instance creation
-on: buffer withDataDo: dataAction
+on: buffer whenReading: dataAction
 
 	^self
 		on: buffer

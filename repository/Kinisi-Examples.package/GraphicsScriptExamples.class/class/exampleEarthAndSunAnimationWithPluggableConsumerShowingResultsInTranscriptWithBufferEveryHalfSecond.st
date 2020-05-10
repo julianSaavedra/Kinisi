@@ -45,7 +45,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscriptWithBu
 	buffer := Buffer new.
 	reader := BufferPluggableReader
 		on: buffer
-		withDataDo: [ :data | endPointConsumer process: data ].
+		whenReading: [ :data | endPointConsumer process: data ].
 	bufferWriterConsumer := SimulationStepBufferWriterConsumer on: buffer.
 	simulation := Simulation
 		startingWith: self earthAndSunInitialUniverseObservation universeState

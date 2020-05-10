@@ -1,4 +1,4 @@
-validating
+validation
 assertValidDataAction: targetDataAction
  
 	(targetDataAction numArgs > 1)

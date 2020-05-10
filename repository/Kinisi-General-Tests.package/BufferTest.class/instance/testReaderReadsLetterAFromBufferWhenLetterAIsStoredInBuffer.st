@@ -3,7 +3,7 @@ testReaderReadsLetterAFromBufferWhenLetterAIsStoredInBuffer
 
 	| buffer reader readData |
 	buffer := Buffer new.
-	reader := BufferPluggableReader on: buffer withDataDo: [:data | readData := data ].
+	reader := BufferPluggableReader on: buffer whenReading: [:data | readData := data ].
 
 	buffer store: 'a'.
 	reader read.

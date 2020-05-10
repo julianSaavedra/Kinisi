@@ -7,7 +7,7 @@ monitoringConsumer
 			canvas := TRCanvas new.
 			canvas openInWindowSized: 400 @ 400 titled: 'Collatz Conjecture'.
 			renderer := CollatzConjectureStateRenderer basedOn: displaySettings]
-		processWith: [:step | 	renderer draw: step value on: canvas ].
+		processWith: [:step | renderer draw: step value on: canvas ].
 	
 	^SimulationMonitoringConsumer
 		for: monitor
