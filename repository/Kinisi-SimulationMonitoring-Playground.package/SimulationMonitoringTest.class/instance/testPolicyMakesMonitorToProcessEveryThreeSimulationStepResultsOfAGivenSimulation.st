@@ -3,7 +3,7 @@ testPolicyMakesMonitorToProcessEveryThreeSimulationStepResultsOfAGivenSimulation
 
 	| monitor simulationStepResults simulation monitoringConsumer |
 	simulationStepResults := OrderedCollection new.
-	monitor := PluggableMonitorInterface
+	monitor := PluggableObservationInterface
 		processWith: [ :simulationStepResult | simulationStepResults add: simulationStepResult value ]
 		andWhenFinishedDo: [ self monitoringHasFinished ].
 	monitoringConsumer := SimulationMonitoringConsumer

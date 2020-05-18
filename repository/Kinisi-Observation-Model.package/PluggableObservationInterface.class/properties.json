@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ObservationInterface",
+	"category" : "Kinisi-Observation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startAction",
+		"finishAction",
+		"monitorAction"
+	],
+	"name" : "PluggableObservationInterface",
+	"type" : "normal"
+}

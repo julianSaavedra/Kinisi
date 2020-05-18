@@ -3,7 +3,7 @@ testMonitorSettingsHasANonEmptyCollectionOfPerformsStartProcessingAndFinishActio
 
 	| workbench monitor |
 	workbench := CollatzConjectureUserWorkbench default.
-	monitor := PluggableMonitorInterface processWith: [].
+	monitor := PluggableObservationInterface processWith: [].
 	self assertEmpty: workbench monitoringSettings monitors.
 	
 	(CollatzConjectureMonitoringSettingsModifier add: monitor) modify: workbench.

@@ -1,0 +1,4 @@
+support - waiting
+waitUntilFirstExpectedDataIsObserved
+
+	self waitUntilObservationOf: allDataToBeObserved first

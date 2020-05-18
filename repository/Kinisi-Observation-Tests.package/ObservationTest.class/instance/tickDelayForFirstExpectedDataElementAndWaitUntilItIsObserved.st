@@ -1,0 +1,4 @@
+support
+tickDelayForFirstExpectedDataElementAndWaitUntilItIsObserved
+
+	self tickDelayAndWaitObservationOf: allDataToBeObserved first

@@ -2,7 +2,7 @@ example
 exampleMonitoringControlPanel
 
 	| monitoring |
-	monitoring := KinisiMonitor
+	monitoring := KinisiObservation
 		on: self naturalNumberProvider
 		with: self transcriptMonitor
 		waiting: 1 asSeconds.

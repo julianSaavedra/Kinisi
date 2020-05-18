@@ -1,7 +1,7 @@
 example objects
 transcriptMonitor
 
-	^PluggableMonitorInterface
+	^PluggableObservationInterface
 		onStartDo: [ Transcript open; clear ]
 		processWith: [ :number | 
 			Transcript
