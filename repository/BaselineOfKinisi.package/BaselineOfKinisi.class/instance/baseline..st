@@ -13,8 +13,8 @@ baseline: spec
 
 		spec package: 'Kinisi-Simulation-Model'.
 		spec package: 'Kinisi-Simulation-Tests' with: [ spec requires: 'Aconcagua' ].		
-		spec package: 'Kinisi-Monitoring-Model'.
-		spec package: 'Kinisi-Monitoring-Tests' with: [ spec requires: 'Kinisi-Simulation-Model' ].
+		spec package: 'Kinisi-Observation-Model'.
+		spec package: 'Kinisi-Observation-Tests' with: [ spec requires: 'Kinisi-Simulation-Model' ].
 		
 		spec package: 'Kinisi-CollatzConjecture'.
 		spec package: 'Kinisi-Playground' with: [ spec requires: 'Kinisi-Physics-Model' ].
