@@ -1,4 +1,4 @@
 initialization
-initializeWithAll: dataTobeMonitored
+initializeWithAll: dataTobeObserved
  
-	data := dataTobeMonitored
+	data := dataTobeObserved

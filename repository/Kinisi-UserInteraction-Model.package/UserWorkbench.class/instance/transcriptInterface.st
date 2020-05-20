@@ -1,5 +1,5 @@
 actions
-transcriptMonitor
+transcriptInterface
 
 	^PluggableObservationInterface
 		onStartDo: [ Transcript open; clear ]

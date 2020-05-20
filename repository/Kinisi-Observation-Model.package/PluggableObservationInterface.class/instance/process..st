@@ -1,4 +1,4 @@
 action
 process: data
 
-	monitorAction value: data
+	observingAction value: data

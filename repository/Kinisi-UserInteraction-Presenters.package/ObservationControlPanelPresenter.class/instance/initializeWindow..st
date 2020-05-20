@@ -2,5 +2,5 @@ initialization
 initializeWindow: aWindowPresenter
 
 	aWindowPresenter
-		title: 'Monitoring Control Panel';
+		title: 'Observation Control Panel';
 		initialExtent: 350@40

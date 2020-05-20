@@ -1,6 +1,6 @@
 initialization
-initializeOnStartDo: anStartAction action: aMonitoringAction whenFinishedDo: aFinishAction
+initializeOnStartDo: anStartAction action: anObservingAction whenFinishedDo: aFinishAction
 
 	startAction := anStartAction.
-	monitorAction := aMonitoringAction.
+	observingAction := anObservingAction.
 	finishAction := aFinishAction

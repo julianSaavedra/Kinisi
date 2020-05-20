@@ -11,6 +11,6 @@
 		"pause",
 		"stop"
 	],
-	"name" : "MonitoringControlPanelPresenter",
+	"name" : "ObservationControlPanelPresenter",
 	"type" : "normal"
 }

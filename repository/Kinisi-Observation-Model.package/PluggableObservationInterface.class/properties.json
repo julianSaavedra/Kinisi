@@ -8,7 +8,7 @@
 	"instvars" : [
 		"startAction",
 		"finishAction",
-		"monitorAction"
+		"observingAction"
 	],
 	"name" : "PluggableObservationInterface",
 	"type" : "normal"

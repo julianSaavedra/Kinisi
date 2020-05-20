@@ -4,7 +4,7 @@ startWithMonitoringAlmostVersionWithMonitor
 	| simulation consumers transcriptMonitor finalInspectConsumer monitoringConsumer multipleForwardingConsumer |
 
 	consumers := OrderedCollection new.
-	transcriptMonitor := self transcriptMonitor.
+	transcriptMonitor := self transcriptInterface.
 	monitoringConsumer := SimulationMonitoringConsumer
 		for: transcriptMonitor
 		every: (Duration milliSeconds: 500).
