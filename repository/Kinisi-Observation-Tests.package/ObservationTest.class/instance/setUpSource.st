@@ -1,4 +1,4 @@
 running
 setUpSource
 
-	source := ObsevationFixedSource withAll: allDataToBeObserved
+	source := LoadableObservationSource withAll: allDataToBeObserved

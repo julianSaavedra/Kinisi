@@ -1,4 +1,7 @@
 example objects
 naturalNumberProvider
 
-	^ObsevationFixedSource withAll: (1 to: 25) asArray
+	| source |
+	source := LoadableObservationSource new.
+	1 to: 25 do: [:data | source load: data ].
+	^source

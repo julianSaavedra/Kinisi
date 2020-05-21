@@ -2,4 +2,4 @@ running
 setUpInterface
 
 	interface := PluggableObservationInterface
-		processWith: [ :dataElement | self interfaceHasProcessed: dataElement ]
+		processWith: [:dataElement | self interfaceHasProcessed: dataElement ]

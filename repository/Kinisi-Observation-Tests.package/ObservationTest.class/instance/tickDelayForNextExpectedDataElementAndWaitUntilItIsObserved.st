@@ -1,0 +1,4 @@
+as yet unclassified
+tickDelayForNextExpectedDataElementAndWaitUntilItIsObserved
+
+	self tickDelayAndWaitObservationOf: self nextDataElementToBeObserved

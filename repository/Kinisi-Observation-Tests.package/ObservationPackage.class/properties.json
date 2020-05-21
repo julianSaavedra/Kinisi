@@ -1,18 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "Kinisi-Observation-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"source",
-		"delay",
-		"allDataToBeObserved",
-		"interface",
-		"observedData",
-		"pendingObservations"
+		"observation"
 	],
-	"name" : "ObservationTest",
+	"name" : "ObservationPackage",
 	"type" : "normal"
 }

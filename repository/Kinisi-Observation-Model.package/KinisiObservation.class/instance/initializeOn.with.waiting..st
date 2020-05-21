@@ -8,7 +8,7 @@ initializeOn: aSource with: anInterface waiting: aSignal
 	process := [
 		[ true ] whileTrue: [
 			signal wait.
-			interface process: source next ]
+			source next beProcessedBy: self ]
 	 ] newProcess.
 	process name: 'Observation'.
 	process priority: Processor timingPriority - 1

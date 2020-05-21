@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Observation-Model",
+	"category" : "Kinisi-Observation-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"data"
+		"observations"
 	],
-	"name" : "ObsevationFixedSource",
+	"name" : "LoadableObservationSource",
 	"type" : "normal"
 }

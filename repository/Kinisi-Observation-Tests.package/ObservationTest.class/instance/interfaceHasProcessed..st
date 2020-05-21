@@ -1,4 +1,5 @@
 support
 interfaceHasProcessed: dataElement
 
-	observedData add: dataElement
+	observedData add: dataElement.
+	pendingObservations := pendingObservations copyWithout: dataElement
