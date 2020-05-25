@@ -2,5 +2,5 @@ sourcing
 next
 
 	^observations
-		ifEmpty: [ ObservationPackage null ]
+		ifEmpty: [ ObservationSamplePackage null ]
 		ifNotEmpty: [ self dequeueNextObservation ]

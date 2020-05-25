@@ -7,7 +7,7 @@ newBufferReadingProcess
 		on: sourceBuffer
 		whenReading: [ :data | self process: data ]
 		ifBufferNotStartedDo: [  ]
-		ifEmpty: nil
+		ifEmpty: [ ]
 		ifClosed: [ self terminate ].
 	^ [ [ true ]
 		whileTrue: [ period wait.

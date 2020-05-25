@@ -1,11 +1,11 @@
 example
 exampleObservationControlPanel
 
-	| monitoring |
-	monitoring := KinisiObservation
+	| observation |
+	observation := KinisiObservation
 		on: self naturalNumberProvider
 		with: self transcriptInterface
 		waiting: 1 asSeconds.
 
-	(ObservationControlPanelPresenter on: monitoring) openWithSpec.
-	monitoring inspect
+	(ObservationControlPanelPresenter on: observation) openWithSpec.
+	observation inspect

@@ -1,4 +1,4 @@
 sourcing
 load: observation
  
-	observations add: (ObservationPackage with: observation)
+	observations add: (ObservationSamplePackage with: observation)

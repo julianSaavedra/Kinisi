@@ -1,4 +1,4 @@
 processing
 beProcessedBy: observationProcess
 
-	observationProcess processObservation: observation
+	self subclassResponsibility
