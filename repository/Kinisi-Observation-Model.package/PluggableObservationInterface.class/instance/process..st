@@ -1,4 +1,4 @@
 action
-process: data
+process: sample
 
-	observingAction value: data
+	observingAction value: sample

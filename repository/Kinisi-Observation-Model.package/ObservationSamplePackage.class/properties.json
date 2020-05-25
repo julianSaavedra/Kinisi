@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "ObservationPackage",
-	"category" : "Kinisi-Observation-Tests",
+	"category" : "Kinisi-Observation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ObservationEndPackage",
+	"instvars" : [
+		"observation"
+	],
+	"name" : "ObservationSamplePackage",
 	"type" : "normal"
 }
