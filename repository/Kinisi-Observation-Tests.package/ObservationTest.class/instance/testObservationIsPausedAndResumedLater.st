@@ -1,23 +1,22 @@
 tests
 testObservationIsPausedAndResumedLater
 
-	| monitoring |
-	monitoring := KinisiObservation
+	observationProcess := KinisiObservation
 		on: source
 		with: interface
 		waiting: delay.
 	
-	monitoring play.
-	self tickDelayForFirstExpectedDataElementAndWaitUntilItIsObserved.
+	observationProcess play.
+	self tickDelayForNextExpectedSampleAndWaitUntilItIsObserved.
 	
-	monitoring pause.
-	self tickDelayForAllRemainingData.
+	observationProcess pause.
+	self tickDelayForAllRemainingSamples.
 	self assertTimeoutWhen: [ self waitUntilLastExpectedDataIsObserved ].
 	
-	monitoring play.
+	observationProcess play.
 	self waitUntilLastExpectedDataIsObserved.
 	
-	monitoring terminate.
+	observationProcess terminate.
 	self
-		assertCollection: allDataToBeObserved
-		hasSameElements: observedData
+		assertCollection: allExpectedSamples
+		hasSameElements: processedSamples

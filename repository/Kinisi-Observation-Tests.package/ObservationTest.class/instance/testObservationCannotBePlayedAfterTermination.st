@@ -1,11 +1,10 @@
 tests
 testObservationCannotBePlayedAfterTermination
 
-	| monitoring |
-	monitoring := KinisiObservation on: source with: interface waiting: delay.
-	monitoring terminate.
+	observationProcess := KinisiObservation on: source with: interface waiting: delay.
+	observationProcess terminate.
 	
 	self
-		should: [ monitoring play ]
+		should: [ observationProcess play ]
 		raise: ObservationError
 		whoseDescriptionIncludes: 'Observation has been terminated'

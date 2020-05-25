@@ -1,4 +1,4 @@
 support
-tickDelayForAll: data
+tickDelayForAll: samples
 
-	data size timesRepeat: [ delay signal ]
+	samples size timesRepeat: [ delay signal ]

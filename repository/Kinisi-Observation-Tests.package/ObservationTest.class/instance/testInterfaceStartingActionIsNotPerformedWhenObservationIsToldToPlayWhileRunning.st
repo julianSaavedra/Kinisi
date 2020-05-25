@@ -1,17 +1,17 @@
 tests
-testInterfaceStartingActionIsNotPerformedWhenObservationIsToldToPlayWhenRunning
+testInterfaceStartingActionIsNotPerformedWhenObservationIsToldToPlayWhileRunning
 
-	| monitoring startActionWasPerformed |
+	| startActionWasPerformed |
 	interface := self interfaceStartingWith: [ startActionWasPerformed := true ].
-	monitoring := KinisiObservation
+	observationProcess := KinisiObservation
 		on: source
 		with: interface
 		waiting: delay.
 
 	startActionWasPerformed := false.
-	monitoring play.
+	observationProcess play.
 	self assert: startActionWasPerformed.
 	
 	startActionWasPerformed := false.
-	monitoring play.
+	observationProcess play.
 	self deny: startActionWasPerformed

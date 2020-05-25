@@ -8,10 +8,11 @@
 	"instvars" : [
 		"source",
 		"delay",
-		"allDataToBeObserved",
 		"interface",
-		"observedData",
-		"pendingObservations"
+		"observationProcess",
+		"allExpectedSamples",
+		"processedSamples",
+		"pendingSamples"
 	],
 	"name" : "ObservationTest",
 	"type" : "normal"

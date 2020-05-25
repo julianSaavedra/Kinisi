@@ -1,4 +1,0 @@
-support
-tickDelayAndWaitObservationOfAllExpectedDataButLastElement
-
-	self tickDelayAndWaitObservationOfAllIn: allDataToBeObserved allButLast

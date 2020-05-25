@@ -1,14 +1,14 @@
 tests
 testInterfaceFinishingActionIsNotPerformedWhenObservationIsTerminatedBeforeStarting
 
-	| monitoring finishActionWasPerformed |
+	| finishActionWasPerformed |
 	interface := self interfaceFinishingWith: [ finishActionWasPerformed := true ].
-	monitoring := KinisiObservation
+	observationProcess := KinisiObservation
 		on: source
 		with: interface
 		waiting: delay.
 
 	finishActionWasPerformed := false.
-	monitoring terminate.
+	observationProcess terminate.
 
 	self deny: finishActionWasPerformed

@@ -2,5 +2,5 @@ interface creation
 interfaceFinishingWith: finishingAction
 
 	^PluggableObservationInterface
-		processWith: [:dataElement | self interfaceHasProcessed: dataElement ]
+		processWith: [:sample | self interfaceHasProcessed: sample ]
 		andWhenFinishedDo: finishingAction

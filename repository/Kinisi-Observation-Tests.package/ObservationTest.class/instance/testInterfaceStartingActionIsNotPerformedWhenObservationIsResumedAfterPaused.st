@@ -1,17 +1,16 @@
 tests
 testInterfaceStartingActionIsNotPerformedWhenObservationIsResumedAfterPaused
 
-	| monitoring startActionWasPerformedWhenResuming |
+	| startActionWasPerformedWhenResuming |
 	interface := self interfaceStartingWith: [ startActionWasPerformedWhenResuming := true ].
-	monitoring := KinisiObservation
+	observationProcess := KinisiObservation
 		on: source
 		with: interface
 		waiting: delay.
 
-	monitoring play.
-	monitoring pause.
+	observationProcess play.
+	observationProcess pause.
 	startActionWasPerformedWhenResuming := false.
-	monitoring play.
-	monitoring terminate.
+	observationProcess play.
 	
 	self deny: startActionWasPerformedWhenResuming

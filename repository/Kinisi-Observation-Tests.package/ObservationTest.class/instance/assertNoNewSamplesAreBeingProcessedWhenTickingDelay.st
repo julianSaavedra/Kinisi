@@ -1,0 +1,4 @@
+asserting
+assertNoNewSamplesAreBeingProcessedWhenTickingDelay
+
+	self assertTimeoutWhen: [ self tickDelayForNextExpectedSampleAndWaitUntilItIsObserved ]

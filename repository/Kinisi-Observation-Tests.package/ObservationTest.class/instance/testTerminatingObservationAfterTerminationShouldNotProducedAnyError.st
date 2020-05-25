@@ -1,10 +1,9 @@
 tests
 testTerminatingObservationAfterTerminationShouldNotProducedAnyError
 
-	| monitoring |
-	monitoring := KinisiObservation on: source with: interface waiting: delay.
-	monitoring terminate.
+	observationProcess := KinisiObservation on: source with: interface waiting: delay.
+	observationProcess terminate.
 	
 	self
-		shouldnt: [ monitoring terminate ]
+		shouldnt: [ observationProcess terminate ]
 		raise: Error

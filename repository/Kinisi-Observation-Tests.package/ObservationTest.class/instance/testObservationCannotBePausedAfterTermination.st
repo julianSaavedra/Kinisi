@@ -1,11 +1,10 @@
 tests
 testObservationCannotBePausedAfterTermination
 
-	| monitoring |
-	monitoring := KinisiObservation on: source with: interface waiting: delay.
-	monitoring terminate.
+	observationProcess := KinisiObservation on: source with: interface waiting: delay.
+	observationProcess terminate.
 	
 	self
-		should: [ monitoring pause ]
+		should: [ observationProcess pause ]
 		raise: ObservationError
 		whoseDescriptionIncludes: 'Observation has been terminated'

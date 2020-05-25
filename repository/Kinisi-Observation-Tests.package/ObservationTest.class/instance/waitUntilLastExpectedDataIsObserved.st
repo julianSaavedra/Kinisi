@@ -1,4 +1,4 @@
 support - waiting
 waitUntilLastExpectedDataIsObserved
 
-	self waitUntilObservationOf: allDataToBeObserved last
+	self waitUntilObservationOf: allExpectedSamples last

@@ -1,5 +1,5 @@
 support
-interfaceHasProcessed: dataElement
+interfaceHasProcessed: sample
 
-	observedData add: dataElement.
-	pendingObservations := pendingObservations copyWithout: dataElement
+	processedSamples add: sample.
+	pendingSamples := pendingSamples copyWithout: sample

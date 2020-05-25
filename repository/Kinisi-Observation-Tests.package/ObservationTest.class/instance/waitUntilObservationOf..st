@@ -1,6 +1,6 @@
 support - waiting
-waitUntilObservationOf: dataElement
+waitUntilObservationOf: sample
 
-	[ [ observedData includes: dataElement ] whileFalse ]
+	[ [ processedSamples includes: sample ] whileFalse ]
 		valueWithin: self oneSecond
-		onTimeout: [ Error signal: 'Observation is not processing new data (Timeout)' ]
+		onTimeout: [ Error signal: 'Observation is not processing new samples (Timeout)' ]

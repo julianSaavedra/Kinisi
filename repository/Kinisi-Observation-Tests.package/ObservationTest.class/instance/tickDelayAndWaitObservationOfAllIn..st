@@ -1,5 +1,5 @@
 support
-tickDelayAndWaitObservationOfAllIn: dataToProcess
+tickDelayAndWaitObservationOfAllIn: samples
 
-	dataToProcess do: [:dataElement |
-		self tickDelayAndWaitObservationOf: dataElement ]
+	samples do: [:sample |
+		self tickDelayAndWaitProcessingOf: sample ]

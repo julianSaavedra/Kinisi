@@ -1,4 +1,0 @@
-support
-tickDelayAndWaitObservationOfAllExpectedData
-
-	self tickDelayAndWaitObservationOfAllIn: allDataToBeObserved

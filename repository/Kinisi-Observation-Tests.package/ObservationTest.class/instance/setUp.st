@@ -2,8 +2,6 @@ running
 setUp
 
 	super setUp.
-	self setUpDataToBeObserved.
-	self setUpSource.
+	self setUpSamples.
 	self setUpInterface.
-	delay := Semaphore new.
-	observedData := OrderedCollection new
+	delay := Semaphore new
