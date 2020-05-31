@@ -14,7 +14,7 @@ exampleCollatzConjectureAnimantionInterface
 	source := LoadableObservationSource new.
 	collatzResults withTimeAndStateDo: [:time :state | source load: state ].
 	source finish.
-	self halt.
+	
 	animationInterface := PluggableObservationInterface
 		onStartDo: [
 			canvas := TRCanvas new.
@@ -22,4 +22,4 @@ exampleCollatzConjectureAnimantionInterface
 			renderer := CollatzConjectureStateRenderer basedOn: CollatzConjectureDisplaySettings default]
 		processWith: [:state | renderer draw: state value on: canvas ].
 	observationProcess := KinisiObservation on: source with: animationInterface waiting: (Duration seconds: 1).
-	[observationProcess play] ensure: [ observationProcess terminate ]
+	observationProcess play
