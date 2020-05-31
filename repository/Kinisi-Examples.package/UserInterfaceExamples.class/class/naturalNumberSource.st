@@ -1,5 +1,5 @@
 example objects
-naturalNumberProvider
+naturalNumberSource
 
 	| source |
 	source := LoadableObservationSource new.

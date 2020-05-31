@@ -1,5 +1,5 @@
 example objects
-transcriptInterface
+numberInTtranscriptInterface
 
 	^PluggableObservationInterface
 		onStartDo: [ Transcript open; clear ]
