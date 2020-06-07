@@ -1,6 +1,6 @@
 interface creation
 interfaceStartingWith: startingAction
 
-	^PluggableObservationInterface
-		onStartDo: startingAction
-		processWith: [:sample | self interfaceHasProcessed: sample ]
+	^self
+		interfaceStartingWith: startingAction
+		andFinishingWith: [ ]

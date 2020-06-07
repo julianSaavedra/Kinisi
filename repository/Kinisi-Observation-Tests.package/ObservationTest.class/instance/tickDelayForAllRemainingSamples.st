@@ -2,5 +2,5 @@ support
 tickDelayForAllRemainingSamples
 
 	| remainingSamples |
-	remainingSamples := allExpectedSamples difference: processedSamples.
+	remainingSamples := allExpectedSamples difference: interfaceProcessedSamples.
 	self tickDelayForAll: remainingSamples

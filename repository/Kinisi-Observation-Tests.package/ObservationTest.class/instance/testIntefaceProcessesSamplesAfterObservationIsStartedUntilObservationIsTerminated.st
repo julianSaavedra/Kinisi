@@ -6,14 +6,15 @@ testIntefaceProcessesSamplesAfterObservationIsStartedUntilObservationIsTerminate
 		with: interface
 		waiting: delay.
 
-	self assertEmpty: processedSamples.
-	self assertNoNewSamplesAreBeingProcessedWhenTickingDelay.
+	self assertEmpty: interfaceProcessedSamples.
+	self assertNoNewSampleIsProcessedWhenTickingDelay.
 
 	observationProcess play.
 	
 	self tickDelayAndWaitObservationOfAllExpectedSamplesButLast.
-	self denyEmpty: processedSamples.
+	self denyEmpty: interfaceProcessedSamples.
 	
 	observationProcess terminate.
 
-	self assertNoNewSamplesAreBeingProcessedWhenTickingDelay
+	self denyEmpty: pendingSamples.
+	self assertNextExpectedSampeIsNotProcessedWhenTickingDelay

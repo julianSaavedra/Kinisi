@@ -7,7 +7,7 @@ testObservationObservesAllExpectedSamples
 		waiting: delay.
 
 	self denyEmpty: allExpectedSamples.
-	self assertEmpty: processedSamples.
+	self assertEmpty: interfaceProcessedSamples.
 
 	observationProcess play.
 	self tickDelayAndWaitProcessingOfAllPendingSamples.
@@ -15,4 +15,4 @@ testObservationObservesAllExpectedSamples
 
 	self
 		assertCollection: allExpectedSamples
-		hasSameElements: processedSamples
+		hasSameElements: interfaceProcessedSamples

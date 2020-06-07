@@ -6,14 +6,14 @@ testNoSampleIsObservedIfSourceHasNoNewSampleAvailable
 		with: interface
 		waiting: delay.
 		
-	source flush.
-	self assertEmpty: processedSamples.
 	observationProcess play.
+	self tickDelayAndWaitProcessingOfAllPendingSamples.
 	
-	self assertNoNewSamplesAreBeingProcessedWhenTickingDelay.
+	self assertNoNewSampleIsProcessedWhenTickingDelay.
 	
-	self feedNextSampleInto: source.
-	self tickDelayForNextExpectedSampleAndWaitUntilItIsObserved.
-	self denyEmpty: processedSamples.
 	
-	self assertNoNewSamplesAreBeingProcessedWhenTickingDelay
+	self deny: (interfaceProcessedSamples includes: #ObservationN).
+	self feedTickAndWaitObservationFor: #ObservationN.
+	self assert: (interfaceProcessedSamples includes: #ObservationN).
+	
+	self assertNoNewSampleIsProcessedWhenTickingDelay

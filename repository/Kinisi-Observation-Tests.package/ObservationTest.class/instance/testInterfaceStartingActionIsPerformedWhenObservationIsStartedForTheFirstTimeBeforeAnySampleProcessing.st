@@ -12,4 +12,4 @@ testInterfaceStartingActionIsPerformedWhenObservationIsStartedForTheFirstTimeBef
 	observationProcess play.
 	
 	self assert: startActionWasPerformed.
-	self assertEmpty: processedSamples
+	self assertEmpty: interfaceProcessedSamples

@@ -2,7 +2,6 @@ tests
 testReaderPerformsNotStartedBufferActionWhenNothingHasBeenStoredInBufferYet
 
 	| buffer reader notStartedBufferActionWasPerformed |
-
 	buffer := Buffer new.
 	reader := BufferPluggableReader
 		on: buffer

@@ -1,8 +1,9 @@
 running
 setUpSamples
 
-	allExpectedSamples := #(#Element1 #Element2 #Element3).
+	allExpectedSamples := #(#Observation1 #Observation2 #Observation3).
 	pendingSamples := allExpectedSamples copy.
-	processedSamples := OrderedCollection new.
-	source := LoadableObservationSource 	new.
-	allExpectedSamples do: [:observation | source load: observation ]
+	interfaceProcessedSamples := OrderedCollection new.
+	buffer := Buffer new.
+	source := ObservationSource from: buffer.
+	allExpectedSamples do: [ :observation | buffer store: observation ]

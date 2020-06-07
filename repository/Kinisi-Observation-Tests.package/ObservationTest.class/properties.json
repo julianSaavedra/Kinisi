@@ -11,8 +11,9 @@
 		"interface",
 		"observationProcess",
 		"allExpectedSamples",
-		"processedSamples",
-		"pendingSamples"
+		"pendingSamples",
+		"buffer",
+		"interfaceProcessedSamples"
 	],
 	"name" : "ObservationTest",
 	"type" : "normal"

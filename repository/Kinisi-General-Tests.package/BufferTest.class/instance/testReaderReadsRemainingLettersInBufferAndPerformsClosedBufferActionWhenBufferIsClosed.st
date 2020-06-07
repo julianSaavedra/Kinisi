@@ -2,7 +2,6 @@ tests
 testReaderReadsRemainingLettersInBufferAndPerformsClosedBufferActionWhenBufferIsClosed
 
 	| buffer reader readData keepReading |
-
 	buffer := Buffer new.
 	readData := OrderedCollection new.
 	reader := BufferPluggableReader

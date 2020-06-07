@@ -1,7 +1,9 @@
 example objects
 naturalNumberSource
 
-	| source |
-	source := LoadableObservationSource new.
-	1 to: 25 do: [:sample | source load: sample ].
+	| source buffer |
+	buffer := Buffer new.
+	source := ObservationSource from: buffer.
+	1 to: 25 do: [:sample | buffer store: sample ].
+	buffer close.
 	^source

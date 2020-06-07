@@ -19,4 +19,4 @@ testObservationIsPausedAndResumedLater
 	observationProcess terminate.
 	self
 		assertCollection: allExpectedSamples
-		hasSameElements: processedSamples
+		hasSameElements: interfaceProcessedSamples

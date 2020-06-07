@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepConsumer",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buffer",
+		"monitoringProcess",
+		"forwarder"
+	],
+	"name" : "SimulationMonitoringConsumer",
+	"type" : "normal"
+}

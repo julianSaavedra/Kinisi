@@ -1,5 +1,5 @@
 support
 interfaceHasProcessed: sample
 
-	processedSamples add: sample.
+	interfaceProcessedSamples add: sample.
 	pendingSamples := pendingSamples copyWithout: sample

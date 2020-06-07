@@ -16,11 +16,13 @@ baseline: spec
 		spec package: 'Kinisi-Observation-Model'.
 		spec package: 'Kinisi-Observation-Tests' with: [ spec requires: 'Kinisi-Simulation-Model' ].
 		
+		spec package: 'Kinisi-SimulationObservation-Integration'.
+		
 		spec package: 'Kinisi-CollatzConjecture'.
 		spec package: 'Kinisi-Playground' with: [ spec requires: 'Kinisi-Physics-Model' ].
 		spec package: 'Kinisi-PlaygroundUI' with: [ spec requires: 'Kinisi-Physics-Model' ].
 		spec package: 'Kinisi-PlaygroundGraphic' with: [ spec requires: #('Aconcagua' 'Roassal2')].
-		spec package: 'Kinisi-SimulationMonitoring-Playground'.
+
 		spec package: 'Kinisi-Examples' with: [ spec requires: #('Aconcagua' 'Roassal2') ].
 		
 		spec package: 'Kinisi-Graphics-Model' with: [ spec requires: 'Roassal2' ].

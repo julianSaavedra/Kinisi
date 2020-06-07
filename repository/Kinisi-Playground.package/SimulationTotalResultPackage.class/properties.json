@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationMonitoringDataPackage",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"result"
+	],
+	"name" : "SimulationTotalResultPackage",
+	"type" : "normal"
+}
