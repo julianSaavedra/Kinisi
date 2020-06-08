@@ -5,7 +5,7 @@ testLastResultIsNotEmptyAfterRunningTheSimulation
 	workbench := CollatzConjectureUserWorkbench default.
 	(CollatzConjectureInitialStateModifier with: 4) modify: workbench.
 	
-	workbench play.
+	workbench performExperiment.
 	
 	stepResults := workbench lastResult withTimeAndStateCollect: [:time :state | state number ].
 	self denyEmpty: stepResults

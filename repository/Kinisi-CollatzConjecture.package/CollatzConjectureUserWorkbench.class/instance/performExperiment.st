@@ -1,5 +1,5 @@
 action
-play
+performExperiment
 
 	| simulation simulationConsumer interface observationProcess buffer canvas renderer |
 	simulationConsumer := self isMonitoringOn
