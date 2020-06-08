@@ -9,8 +9,9 @@
 		"buffer",
 		"message",
 		"rawDataAction",
-		"bufferNotStartedAction",
-		"bufferIsClosed"
+		"closedBufferAction",
+		"emptyBufferAction",
+		"notStartedBufferAction"
 	],
 	"name" : "BufferPluggableReader",
 	"type" : "normal"

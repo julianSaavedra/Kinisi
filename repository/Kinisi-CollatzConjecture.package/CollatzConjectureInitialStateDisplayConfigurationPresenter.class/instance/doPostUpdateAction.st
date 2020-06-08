@@ -1,0 +1,4 @@
+initialization
+doPostUpdateAction
+
+	^ postUpdateAction value

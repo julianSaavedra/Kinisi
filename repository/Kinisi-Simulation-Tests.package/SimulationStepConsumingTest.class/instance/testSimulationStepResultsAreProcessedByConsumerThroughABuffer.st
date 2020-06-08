@@ -8,7 +8,7 @@ testSimulationStepResultsAreProcessedByConsumerThroughABuffer
 	buffer := Buffer new.
 	reader := BufferPluggableReader
 		on: buffer
-		withDataDo: [:data | endPointConsumer process: data ].
+		whenReading: [:data | endPointConsumer process: data ].
 	bufferWriterConsumer := SimulationStepBufferWriterConsumer on: buffer.
 	simulation := self
 		simulationGeneratingFrom: 0 to: 2

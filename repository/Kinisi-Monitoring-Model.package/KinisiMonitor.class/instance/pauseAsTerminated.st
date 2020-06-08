@@ -1,0 +1,4 @@
+private
+pauseAsTerminated
+
+	self raiseTerminatedError

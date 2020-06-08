@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-UserInteraction-Particles-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"properties",
+		"view",
+		"particleObservation",
+		"particleObservationUpdatePostAction"
+	],
+	"name" : "ParticleObservationPresenter",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-CollatzConjecture",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"background",
+		"shape"
+	],
+	"name" : "CollatzConjectureStateRenderer",
+	"type" : "normal"
+}

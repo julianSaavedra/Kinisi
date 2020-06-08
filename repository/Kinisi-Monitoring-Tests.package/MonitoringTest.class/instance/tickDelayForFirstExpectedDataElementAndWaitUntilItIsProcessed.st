@@ -1,0 +1,4 @@
+support
+tickDelayForFirstExpectedDataElementAndWaitUntilItIsProcessed
+
+	self tickDelayAndWaitMonitorProcessingFor: allDataToBeMonitored first

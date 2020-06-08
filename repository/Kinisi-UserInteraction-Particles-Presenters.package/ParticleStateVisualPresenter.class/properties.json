@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-UserInteraction-Particles-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"view",
+		"particleObservation"
+	],
+	"name" : "ParticleStateVisualPresenter",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
 private
 raiseBufferIsClosedError
 
-	self error: 'Buffer is closed'
+	BufferError signal: 'Buffer is closed'

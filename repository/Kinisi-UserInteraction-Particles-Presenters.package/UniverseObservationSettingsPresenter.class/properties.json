@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-UserInteraction-Particles-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"universeChangeAction",
+		"universeObservation",
+		"settingTabs",
+		"settings"
+	],
+	"name" : "UniverseObservationSettingsPresenter",
+	"type" : "normal"
+}

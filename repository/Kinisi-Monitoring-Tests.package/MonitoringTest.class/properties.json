@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Monitoring-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"source",
+		"monitor",
+		"delay",
+		"allDataToBeMonitored",
+		"monitoredData"
+	],
+	"name" : "MonitoringTest",
+	"type" : "normal"
+}

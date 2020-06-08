@@ -1,4 +1,4 @@
 private
 storeData: data
 
-	self storePackage: (DataPackage with: data)
+	self storePackage: (BufferDataPackage with: data)

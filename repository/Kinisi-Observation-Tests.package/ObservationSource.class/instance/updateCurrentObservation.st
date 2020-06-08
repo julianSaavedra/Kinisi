@@ -1,0 +1,4 @@
+sourcing
+updateCurrentObservation
+	
+	bufferReader read

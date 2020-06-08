@@ -11,8 +11,8 @@ exampleEarthAndSunAnimation
 	universe turnGridOff.
 	universe scale: (UnitProvider soleInstance kilometer with: 10e6).
 	renderer := UniverseRenderer basedOn: universe.
-	monitor := SimulationPluggableMonitor
-		processResultsWith: [:simulationStepResult |
+	monitor := PluggableObservationInterface
+		processWith: [:simulationStepResult |
 			view clean.
 			renderer drawIn: view basedOn: simulationStepResult value ].
 	monitoringConsumer := SimulationMonitoringConsumer

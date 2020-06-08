@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-UserInteraction-Particles-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"view",
+		"settings",
+		"universeObservation"
+	],
+	"name" : "UniverseObservationPresenter",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "MonitorInterface",
+	"category" : "Kinisi-Monitoring-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startAction",
+		"finishAction",
+		"monitorAction"
+	],
+	"name" : "PluggableMonitorInterface",
+	"type" : "normal"
+}

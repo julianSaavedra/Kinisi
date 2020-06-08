@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Monitoring-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"current",
+		"bufferReader"
+	],
+	"name" : "MonitoringBufferedSource",
+	"type" : "normal"
+}
