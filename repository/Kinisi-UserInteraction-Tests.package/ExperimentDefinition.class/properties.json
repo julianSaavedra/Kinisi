@@ -6,11 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"lastResult",
-		"workbench",
-		"isRunning",
-		"observationIsRunning"
+		"scenario",
+		"change",
+		"stepDelta",
+		"lastStep",
+		"observationDefinition"
 	],
-	"name" : "KinisiLab",
+	"name" : "ExperimentDefinition",
 	"type" : "normal"
 }

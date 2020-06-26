@@ -6,11 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"lastResult",
-		"workbench",
-		"isRunning",
-		"observationIsRunning"
+		"experimentDefinition"
 	],
-	"name" : "KinisiLab",
+	"name" : "LabWorkbench",
 	"type" : "normal"
 }

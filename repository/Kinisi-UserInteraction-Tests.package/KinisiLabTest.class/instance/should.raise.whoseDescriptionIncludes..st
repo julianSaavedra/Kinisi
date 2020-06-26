@@ -1,4 +1,4 @@
-experiment
+asserting
 should: block raise: anExceptionalEvent whoseDescriptionIncludes: substring
 
 	self

@@ -1,7 +1,10 @@
 tests
 testAskingLastResultFailsIfNoExperimentWasPerformedYet
 
+	| lab |
+	lab := KinisiLab using: self workbench.
+	
 	self
-		should: [ KinisiLab new lastResult ]
+		should: [ lab lastResult ]
 		raise: Error
 		whoseDescriptionIncludes: 'No experiment was run yet'
