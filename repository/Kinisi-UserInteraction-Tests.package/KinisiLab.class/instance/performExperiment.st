@@ -24,7 +24,7 @@ performExperiment
 		onStartDo: [isRunning := true]
 		processWith: [:step | ]
 		andWhenFinishedDo: [:result |
-			lastResult := result.
+			experiments add: result.
 			isRunning := false].
 	consumer := SimulationStepMultipleForwardingConsumer withAll: { labConsumer. observationConsumer }.
 	simulation := Simulation

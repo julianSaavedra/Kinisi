@@ -1,4 +1,5 @@
-as yet unclassified
+test objects
 nullObservationDefinition
 
-	^ObservationDefinition fixedWith: self nullInterface
+	^(ObservationDefinition fixedWith: self nullInterface)
+		disableAll

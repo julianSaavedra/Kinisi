@@ -1,4 +1,6 @@
 accessing
 lastResult
 
-	^lastResult ifNil: [ self error: 'No experiment was run yet' ]
+	^experiments
+		ifNotEmpty: [:results | results last  ]
+		ifEmpty: [ self error: 'No experiment was run yet' ]

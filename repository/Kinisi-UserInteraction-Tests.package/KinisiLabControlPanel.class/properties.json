@@ -5,14 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"lastResult",
-		"workbench",
-		"isRunning",
-		"observationIsRunning",
-		"controlPanel",
-		"experiments"
-	],
-	"name" : "KinisiLab",
+	"instvars" : [ ],
+	"name" : "KinisiLabControlPanel",
 	"type" : "normal"
 }

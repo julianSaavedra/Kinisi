@@ -10,7 +10,8 @@
 		"change",
 		"stepDelta",
 		"lastStep",
-		"observationDefinition"
+		"observationDefinition",
+		"simulation"
 	],
 	"name" : "ExperimentDefinition",
 	"type" : "normal"

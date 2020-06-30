@@ -1,5 +1,5 @@
 tests
-testObservationInterfaceIsNotStartedIfObservationIsNotEnable
+testObservationInterfaceIsNotStartedIfObservationIsDisabled
 
 	| lab workbench experimentDefinition interface interfaceWasStarted observationDefinition |
 	interface := PluggableObservationInterface
