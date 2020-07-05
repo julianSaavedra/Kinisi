@@ -1,16 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ObservationInterface",
 	"category" : "Kinisi-UserInteraction-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"workbench",
-		"isRunning",
-		"observationIsRunning",
-		"experiments"
+		"finishAction",
+		"isObserving",
+		"observations"
 	],
-	"name" : "KinisiLab",
+	"name" : "ClerkBANANAObservationInterface",
 	"type" : "normal"
 }

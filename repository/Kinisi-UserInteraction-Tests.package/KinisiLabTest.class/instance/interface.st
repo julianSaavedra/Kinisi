@@ -1,0 +1,4 @@
+test objects
+interface
+
+	^ClerkBANANAObservationInterface withNoFinishingAction
