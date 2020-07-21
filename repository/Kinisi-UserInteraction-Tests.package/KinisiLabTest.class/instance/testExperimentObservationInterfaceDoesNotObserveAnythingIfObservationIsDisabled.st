@@ -1,4 +1,4 @@
-tests
+test - to be moved to ExperimentTest
 testExperimentObservationInterfaceDoesNotObserveAnythingIfObservationIsDisabled
 
 	| lab workbench interface |
@@ -6,6 +6,6 @@ testExperimentObservationInterfaceDoesNotObserveAnythingIfObservationIsDisabled
 	workbench := self workbenchWithDisableObservationUsing: interface.
 	lab := KinisiLab using: workbench.
 
-	self performExperimentAndWaitUntilNewResultIsAvailable: lab.
+	lab performExperiment.
 
 	self assertEmpty: interface observations

@@ -1,8 +1,9 @@
 experiment
 performExperiment
 
-	| simulation experiment buffer observationProcess observationConsumer simulationProcess labConsumer consumer |
-	(isRunning or: [ observationIsRunning ]) ifTrue: [ Error signal: 'Lab cannot start new experiment until the current one is finished' ].
+	| isRunning observationIsRunning simulation experiment buffer observationProcess observationConsumer simulationProcess labConsumer consumer |
+	isRunning := false.
+	observationIsRunning := false.
 	experiment := workbench experimentDefinition.
 	observationConsumer := SimulationStepNullConsumer new.
 	experiment withObservationInterfaceDo: [:interface |
@@ -21,11 +22,8 @@ performExperiment
 			andWhenFinishedDo: [ buffer close ].
 		].
 	labConsumer := SimulationStepPluggableConsumer
-		onStartDo: [isRunning := true]
 		processWith: [:step | ]
-		andWhenFinishedDo: [:result |
-			experiments add: result.
-			isRunning := false].
+		andWhenFinishedDo: [:result | experiments add: result].
 	consumer := SimulationStepMultipleForwardingConsumer withAll: { labConsumer. observationConsumer }.
 	simulation := Simulation
 		startingWith: experiment initialState
@@ -34,8 +32,11 @@ performExperiment
 		during: experiment duration
 		informingStepsTo: consumer.
 	
-	simulationProcess := [ simulation run ] newProcess.
+	simulationProcess := [ simulation run. isRunning := false ] newProcess.
 	simulationProcess name: 'Simulation'.
 	
+	isRunning := true. 
 	simulationProcess resume.
-	observationProcess ifNotNil: [:observation | observation play ]
+	observationProcess ifNotNil: [:observation | observation play ].
+	
+	[isRunning or: [ observationIsRunning ]] whileTrue

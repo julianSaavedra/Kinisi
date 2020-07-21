@@ -4,8 +4,8 @@ testLabHasThreeSavedExperimentsAfterThreeExperimentsArePerformed
 	| lab |
 	lab := KinisiLab using: self workbench.
 	
-	self performExperimentAndWaitUntilNewResultIsAvailable: lab.
-	self performExperimentAndWaitUntilNewResultIsAvailable: lab.
-	self performExperimentAndWaitUntilNewResultIsAvailable: lab.
+	lab performExperiment.
+	lab performExperiment.
+	lab performExperiment.
 	
 	self assert: lab experiments size equals: 3

@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"workbench",
-		"experiments"
+		"definition",
+		"result"
 	],
-	"name" : "KinisiLab",
+	"name" : "Experiment",
 	"type" : "normal"
 }

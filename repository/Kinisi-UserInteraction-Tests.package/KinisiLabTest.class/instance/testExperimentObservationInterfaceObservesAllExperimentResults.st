@@ -1,4 +1,4 @@
-tests
+test - to be moved to ExperimentTest
 testExperimentObservationInterfaceObservesAllExperimentResults
 
 	| lab workbench experimentDefinition interface |

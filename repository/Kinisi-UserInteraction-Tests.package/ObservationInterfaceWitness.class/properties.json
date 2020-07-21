@@ -8,8 +8,9 @@
 	"instvars" : [
 		"finishAction",
 		"isObserving",
-		"observations"
+		"observations",
+		"interface"
 	],
-	"name" : "ClerkBANANAObservationInterface",
+	"name" : "ObservationInterfaceWitness",
 	"type" : "normal"
 }

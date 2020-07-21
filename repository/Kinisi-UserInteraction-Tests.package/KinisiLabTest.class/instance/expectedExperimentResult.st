@@ -1,4 +1,4 @@
-test objects - to be refactrored
+test objects - to be refactored
 expectedExperimentResult
 
 	^(0 to: 5)

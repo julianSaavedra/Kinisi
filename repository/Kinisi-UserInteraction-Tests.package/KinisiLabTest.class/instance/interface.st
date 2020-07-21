@@ -1,4 +1,6 @@
 test objects
 interface
 
-	^ClerkBANANAObservationInterface withNoFinishingAction
+	| interface |
+	interface := PluggableObservationInterface processWith: [:observation | ].
+	^ObservationInterfaceWitness on: interface
