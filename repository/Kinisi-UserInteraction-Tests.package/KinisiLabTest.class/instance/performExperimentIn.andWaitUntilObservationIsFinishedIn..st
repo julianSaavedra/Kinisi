@@ -1,5 +1,5 @@
 support
 performExperimentIn: lab andWaitUntilObservationIsFinishedIn: interface
 
-	lab performExperiment. 
+	lab runExperiment. 
 	self waitWhile: [ interface isObserving ]

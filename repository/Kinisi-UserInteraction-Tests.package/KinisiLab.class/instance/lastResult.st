@@ -1,6 +1,6 @@
 accessing
 lastResult
 
-	^experiments
+	^experimentsResults
 		ifNotEmpty: [:results | results last ]
 		ifEmpty: [ self error: 'No experiment was run yet' ]

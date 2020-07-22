@@ -6,6 +6,6 @@ testExperimentObservationInterfaceDoesNotObserveAnythingIfObservationIsDisabled
 	workbench := self workbenchWithDisableObservationUsing: interface.
 	lab := KinisiLab using: workbench.
 
-	lab performExperiment.
+	lab runExperiment.
 
 	self assertEmpty: interface observations

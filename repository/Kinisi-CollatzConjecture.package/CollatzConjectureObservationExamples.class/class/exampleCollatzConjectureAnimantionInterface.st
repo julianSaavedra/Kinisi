@@ -13,4 +13,4 @@ exampleCollatzConjectureAnimantionInterface
 		on: self sourceWithCollatzSucession
 		with: animationInterface
 		waiting: (Duration seconds: 1).
-	observationProcess performExperiment
+	observationProcess runExperiment

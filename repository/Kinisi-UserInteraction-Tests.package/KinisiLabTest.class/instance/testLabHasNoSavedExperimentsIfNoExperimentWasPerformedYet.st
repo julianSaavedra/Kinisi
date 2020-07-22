@@ -4,4 +4,4 @@ testLabHasNoSavedExperimentsIfNoExperimentWasPerformedYet
 	| lab |
 	lab := KinisiLab using: self workbench.
 	
-	self assertEmpty: lab experiments
+	self assertEmpty: lab experimentsResults

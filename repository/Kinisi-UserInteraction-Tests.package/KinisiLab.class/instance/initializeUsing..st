@@ -2,4 +2,4 @@ instance creation
 initializeUsing: aWorkbench
 
 	workbench := aWorkbench.
-	experiments := OrderedCollection new
+	experimentsResults := OrderedCollection new

@@ -5,6 +5,6 @@ testLabKnowsTheResultAfterExecutingTheExpertiment
 	workbench := self workbenchWith: self experimentDefinition.
 	lab := KinisiLab using: workbench.
 	
-	lab performExperiment.
+	lab runExperiment.
 	
 	self assertLastResultIsAsExpectedFor: lab
