@@ -1,5 +1,5 @@
 tests
-testExperimentIsObservedWithGivenInteface
+testExperimentIsObservedThroughGivenInteface
 
 	| definition experiment interface observations |
 	observations := OrderedCollection new.
@@ -9,7 +9,7 @@ testExperimentIsObservedWithGivenInteface
 		changingWith: [:step :currentState | currentState + 1 ]
 		over: 1
 		until: 5
-		observingBasedOn: (ObservationDefinition fixedWith: interface).
+		observingBasedOn: (ObservationDefinition for: interface every: (Duration milliSeconds: 100)).
 	experiment := Experiment basedOn: definition.
 
 	experiment run.

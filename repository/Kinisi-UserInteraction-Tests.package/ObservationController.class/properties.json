@@ -6,10 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"interface",
-		"enable",
-		"period"
+		"buffer",
+		"process"
 	],
-	"name" : "ObservationDefinition",
+	"name" : "ObservationController",
 	"type" : "normal"
 }

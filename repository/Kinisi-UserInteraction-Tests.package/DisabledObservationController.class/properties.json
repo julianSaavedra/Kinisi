@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"interface",
-		"enable",
-		"period"
-	],
-	"name" : "ObservationDefinition",
+	"instvars" : [ ],
+	"name" : "DisabledObservationController",
 	"type" : "normal"
 }

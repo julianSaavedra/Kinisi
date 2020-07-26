@@ -1,5 +1,5 @@
 tests
-testExperimentProduceExpectedResult
+testExperimentProducesExpectedResult
 
 	| definition experiment expectedSteps |
 	definition := ExperimentDefinition

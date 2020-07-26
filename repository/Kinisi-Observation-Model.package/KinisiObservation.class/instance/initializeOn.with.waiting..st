@@ -6,9 +6,9 @@ initializeOn: aSource with: anInterface waiting: aSignal
 	signal := aSignal.
 	state := ObservationNotStarted new.
 	process := [
-		[ true ] whileTrue: [
-			signal wait.
-			source next beProcessedBy: self ]
-	 ] newProcess.
+		[	self isTerminated ] whileFalse: [
+			source next beProcessedBy: self.
+			signal wait ]
+	] newProcess.
 	process name: 'Observation'.
 	process priority: Processor timingPriority - 1

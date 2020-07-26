@@ -11,7 +11,6 @@ testNoSampleIsObservedIfSourceHasNoNewSampleAvailable
 	
 	self assertNoNewSampleIsProcessedWhenTickingDelay.
 	
-	
 	self deny: (interfaceProcessedSamples includes: #ObservationN).
 	self feedTickAndWaitObservationFor: #ObservationN.
 	self assert: (interfaceProcessedSamples includes: #ObservationN).

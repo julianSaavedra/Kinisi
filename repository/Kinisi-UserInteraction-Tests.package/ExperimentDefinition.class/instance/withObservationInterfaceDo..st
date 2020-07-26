@@ -1,4 +1,0 @@
-accessing
-withObservationInterfaceDo: aBlockClosure
-
-	observationDefinition withObservationInterfaceDo: aBlockClosure
