@@ -6,10 +6,9 @@ testExperimentObservationsAreObservedEveryOneHundredMilliseconds
 	oneHundredMilliseconds := Duration milliSeconds: 100.
 	interface := PluggableObservationInterface processWith: [:observation | observationsTimes add: DateAndTime now ].
 	definition := ExperimentDefinition
-		basedOn: 0
-		changingWith: [:step :currentState | currentState + 1 ]
-		over: 1
-		until: 5
+		startingAt: 0
+		changingWith: [:currentStep :currentState | currentState + 1 ]
+		simulatingBasedOn: (BANANASteppingMode delta: 1 until: 5)
 		observingBasedOn: (ObservationDefinition for: interface every: oneHundredMilliseconds).
 	experiment := Experiment basedOn: definition.
 

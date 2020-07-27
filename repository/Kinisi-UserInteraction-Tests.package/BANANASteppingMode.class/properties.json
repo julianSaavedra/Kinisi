@@ -6,11 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scenario",
-		"change",
-		"observationDefinition",
-		"steppingMode"
+		"delta",
+		"finalState"
 	],
-	"name" : "ExperimentDefinition",
+	"name" : "BANANASteppingMode",
 	"type" : "normal"
 }

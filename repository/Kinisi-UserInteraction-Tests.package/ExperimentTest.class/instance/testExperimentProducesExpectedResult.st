@@ -3,10 +3,9 @@ testExperimentProducesExpectedResult
 
 	| definition experiment expectedSteps |
 	definition := ExperimentDefinition
-		basedOn: 0
-		changingWith: [:step :currentState | currentState + 1 ]
-		over: 1
-		until: 5
+		startingAt: 0
+		changingWith: [:currentStep :currentState | currentState + 1 ]
+		simulatingBasedOn: (BANANASteppingMode delta: 1 until: 5)
 		observingBasedOn: (ObservationDefinition disableWith: (PluggableObservationInterface processWith: [:observation | ])).
 	experiment := Experiment basedOn: definition.
 

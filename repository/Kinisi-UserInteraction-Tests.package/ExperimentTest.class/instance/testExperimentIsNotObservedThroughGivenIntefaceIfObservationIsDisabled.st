@@ -6,10 +6,9 @@ testExperimentIsNotObservedThroughGivenIntefaceIfObservationIsDisabled
 	interface := PluggableObservationInterface processWith: [:observation | observations add: observation ].
 	observationDefinition := ObservationDefinition for: interface every: (Duration milliSeconds: 100).
 	definition := ExperimentDefinition
-		basedOn: 0
-		changingWith: [:step :currentState | currentState + 1 ]
-		over: 1
-		until: 5
+		startingAt: 0
+		changingWith: [:currentStep :currentState | currentState + 1 ]
+		simulatingBasedOn: (BANANASteppingMode delta: 1 until: 5)
 		observingBasedOn: observationDefinition disableAll.
 
 	experiment := Experiment basedOn: definition.

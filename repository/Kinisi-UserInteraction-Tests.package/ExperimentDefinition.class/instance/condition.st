@@ -1,0 +1,4 @@
+accessing
+condition
+
+	^steppingMode endCondition

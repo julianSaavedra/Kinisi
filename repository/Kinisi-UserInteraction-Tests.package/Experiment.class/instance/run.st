@@ -7,7 +7,7 @@ run
 		startingWith: definition initialState
 		changingBy: definition change
 		over: definition stepDelta
-		during: definition duration
+		until: definition condition
 		informingStepsTo: (SimulationStepPluggableConsumer processWith: [:step | observation process: step ] andWhenFinishedDo: [ observation close]).
 
 	observation play.
