@@ -1,13 +1,14 @@
 test - stepping
 testSimulationResultsStartsAtZeroSecondsAndStepsOverOneSecondFiveTimes
 
-	| simulation oneSecond zeroSeconds resultTimes intervals |
+	| simulation oneSecond zeroSeconds resultTimes intervals steppingMode plusOneChange |
 	oneSecond := second with: 1.
+	steppingMode := SteppingDefinition repeat: 5 timesBy: oneSecond.
+	plusOneChange := SimulationStateChange with: [:currentState | currentState + 1].
 	simulation := Simulation
-		startingWith: 0
-		changingBy: [:stepDuration :currentState | currentState + 1]
-		repeating: 5
-		over: oneSecond.
+		with: steppingMode
+		from: 0
+		changingBy: plusOneChange.
 
 	simulation run.
 

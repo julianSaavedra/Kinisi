@@ -1,17 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Simulation-Model",
+	"category" : "Kinisi-Simulation-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stepResults",
-		"initialState",
-		"consumer",
-		"change",
-		"stepper"
+		"condition"
 	],
-	"name" : "Simulation",
+	"name" : "StateBasedPluggableSimulationEndCondition",
 	"type" : "normal"
 }
