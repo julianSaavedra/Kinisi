@@ -16,6 +16,10 @@ baseline: spec
 		spec package: 'Kinisi-Observation-Model'.
 		spec package: 'Kinisi-Observation-Tests' with: [ spec requires: 'Kinisi-Simulation-Model' ].
 		
+		spec package: 'Kinisi-Experiment-Model'.
+		spec package: 'Kinisi-Experiment-Tests' with: [ spec requires: 'Kinisi-Simulation-Model' ].
+		
+		
 		spec package: 'Kinisi-SimulationObservation-Integration'.
 		
 		spec package: 'Kinisi-CollatzConjecture'.

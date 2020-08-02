@@ -1,23 +1,17 @@
 test - stepping
 testSimulationResultsStartsAtZeroSecondsAndStepsOverOneSecondUntilTenSeconds
 
-	| simulation oneSecond tenSeconds zeroSeconds resultTimes steppingMode plusOneChange |
+	| simulation oneSecond tenSeconds steppingDefinition results |
 	oneSecond := second with: 1.
-	tenSeconds := oneSecond * 10.	
-	steppingMode := SteppingDefinition to: tenSeconds by: oneSecond.
-	plusOneChange := SimulationStateChange with: [:currentState | currentState + 1].
+	tenSeconds := oneSecond * 10.
+	steppingDefinition := SteppingDefinition to: tenSeconds by: oneSecond.
 	simulation := Simulation
-		with: steppingMode
+		with: steppingDefinition
 		from: 1
-		changingBy: plusOneChange.
-
+		changingBy: self plusOne.
+		
 	simulation run.
-
-	zeroSeconds := oneSecond * 0.
-	resultTimes := simulation result withTimeAndStateCollect: [:time :state | time].
-	self assert: resultTimes first equals: zeroSeconds.
-	resultTimes overlappingPairsDo: [:step :followingStep |
-		self
-			assert: followingStep - step
-			equals: oneSecond ].	
-	self assert: resultTimes last equals: tenSeconds
+	
+	results := simulation result.
+	self assertIndexesIn: results stepBy: oneSecond.
+	self assertLastIndexIn: results is: tenSeconds

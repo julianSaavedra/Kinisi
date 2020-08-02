@@ -1,4 +1,4 @@
-instance creation
+deprecated
 startingWith: initialState changingBy: aBlock over: stepDuration during: duration informingStepsTo: consumer
 
 	self assertValid: duration and: stepDuration. 

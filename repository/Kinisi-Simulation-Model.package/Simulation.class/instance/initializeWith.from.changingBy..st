@@ -1,7 +1,6 @@
 initialization
 initializeWith: steppingDefinition from: anInitialState changingBy: changeSpecification
  
-	stepper := steppingDefinition stepper.
+	stepper := SimulationStepper basedOn: steppingDefinition.
 	initialState := anInitialState.
-	change := changeSpecification.
-	consumer := SimulationStepNullConsumer new
+	change := changeSpecification

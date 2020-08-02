@@ -1,4 +1,4 @@
-instance creation
+deprecated
 startingWith: initialState changingBy: changingBlock over: stepDuration until: condition informingStepsTo: consumer
 
 	^self new

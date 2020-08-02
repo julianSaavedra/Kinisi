@@ -1,5 +1,5 @@
 initialization
-initializeBy: aStepDelta until: aCondition
+initializeBy: aStepDelta until: anEndCondition
  
 	stepDelta := aStepDelta.
-	endCondition := aCondition
+	endCondition := anEndCondition
