@@ -9,7 +9,7 @@
 		"scenario",
 		"change",
 		"observationDefinition",
-		"steppingMode"
+		"steppingDefinition"
 	],
 	"name" : "ExperimentDefinition",
 	"type" : "normal"

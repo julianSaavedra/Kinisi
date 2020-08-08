@@ -1,7 +1,7 @@
 tests - results
 testFinalStateIsTheResultOfApplyingTheChangeOverTheInitalStateUntilTheEnd
 
-	| simulation finalState steppingDefinition |
+	| simulation steppingDefinition |
 	steppingDefinition := SteppingDefinition repeat: 10.
 	simulation := Simulation
 		with: steppingDefinition

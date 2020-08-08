@@ -11,4 +11,5 @@ initializeOn: aSource with: anInterface waiting: aSignal
 			signal wait ]
 	] newProcess.
 	process name: 'Observation'.
-	process priority: Processor timingPriority - 1
+	process priority: Processor activePriority + 1
+	"process priority: Processor timingPriority - 1"

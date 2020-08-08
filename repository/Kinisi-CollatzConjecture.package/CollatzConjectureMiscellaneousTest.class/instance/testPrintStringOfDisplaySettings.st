@@ -2,5 +2,5 @@ tests
 testPrintStringOfDisplaySettings
 
 	| settings |
-	settings := CollatzConjectureUserWorkbench default displaySettings.
+	settings := CollatzConjectureScenarioWorkbench default displaySettings.
 	self assert: ('Color: * - Font: * - Size: * - Background: *' match: settings printString)

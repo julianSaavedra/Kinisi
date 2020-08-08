@@ -1,4 +1,0 @@
-accessing
-stepDelta
-
-	^steppingMode stepDelta

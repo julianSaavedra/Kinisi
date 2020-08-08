@@ -3,5 +3,5 @@ initializeStartingAt: anInitialState changingWith: aChange simulatingBasedOn: an
 
 	scenario := anInitialState.
 	change := aChange.
-	steppingMode := anSteppingMode.
+	steppingDefinition := anSteppingMode.
 	observationDefinition := anObservationDefinition

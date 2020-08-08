@@ -1,6 +1,8 @@
 specs
 defaultSpec
 
-	^SpBoxLayout newVertical
+	^SpBoxLayout newHorizontal
 		add: #turnOnOffMonitoring;
+		add: #label;
+		add: #period;
 		yourself 

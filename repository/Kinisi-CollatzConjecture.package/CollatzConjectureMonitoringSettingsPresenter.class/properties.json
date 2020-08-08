@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"workbench",
-		"turnOnOffMonitoring"
+		"turnOnOffMonitoring",
+		"period",
+		"label"
 	],
 	"name" : "CollatzConjectureMonitoringSettingsPresenter",
 	"type" : "normal"
