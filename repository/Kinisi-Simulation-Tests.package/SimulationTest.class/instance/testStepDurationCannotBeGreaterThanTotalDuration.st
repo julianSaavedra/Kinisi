@@ -1,10 +1,7 @@
-test
+test - stepping definition
 testStepDurationCannotBeGreaterThanTotalDuration
 
 	self
-		should: [ Simulation
-			startingWith: 0
-			changingBy: [:stepDuration :currentState |  ]
-			over: (second with: 2)
-			during: (second with: 1) ]
-		raise: SimulationError
+		should: [ SteppingDefinition to: 10 by: 12 ]
+		raise: Error
+		whoseDescriptionIncludes: 'Total duration must be equal or greater than the step duration'

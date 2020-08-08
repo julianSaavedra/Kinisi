@@ -1,19 +1,16 @@
 test - stepping
 testSimulationResultsStartsAtZeroAndStepsOverOneUntilFinishConditionIsMet
 
-	| simulation resultTimes finalState |
+	| simulation steppingDefinition results lastStateCondition |
+	lastStateCondition := [ :state | state = 5 ].
+	steppingDefinition := SteppingDefinition untilStateSatifies: lastStateCondition.
 	simulation := Simulation
-		startingWith: 5
-		changingBy: [:stepDuration :currentState | currentState - 1 ]
-		until: [:currentStep :currentState | currentState = 1 ].
-
+		with: steppingDefinition
+		from: 0
+		changingBy: self plusOne.
+		
 	simulation run.
 
-	resultTimes := simulation result withTimeAndStateCollect: [:time :state | time].
-	self assert: resultTimes first equals: 0.
-	resultTimes overlappingPairsDo: [:step :followingStep |
-		self
-			assert: followingStep - step
-			equals: 1 ].
-	finalState := (simulation result withTimeAndStateCollect: [:time :state | state]) last.
-	self assert: finalState equals: 1
+	results := simulation result.
+	self assertIndexesIn: results stepBy: 1.
+	self assertLastStateIn: results satisfies: lastStateCondition

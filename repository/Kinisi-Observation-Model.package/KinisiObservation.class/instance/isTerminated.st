@@ -1,0 +1,4 @@
+testing
+isTerminated
+
+	^state isTerminated

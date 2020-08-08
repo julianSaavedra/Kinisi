@@ -1,4 +1,4 @@
-instance creation
+deprecated
 startingWith: initialState changingBy: changeAction until: endCondition
 
 	^self 

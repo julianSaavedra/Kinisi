@@ -1,10 +1,7 @@
-test
+test - stepping definition
 testTotalDurationCannotBeNegative
 
 	self
-		should: [ Simulation
-			startingWith: 0
-			changingBy: [:stepDuration :currentState |  ]
-			over: (second with: 0.1)
-			during: (second with: -1.1) ]
-		raise: SimulationError
+		should: [ SteppingDefinition to: -10 by: 1 ]
+		raise: Error
+		whoseDescriptionIncludes: 'Total duration cannot be negative'

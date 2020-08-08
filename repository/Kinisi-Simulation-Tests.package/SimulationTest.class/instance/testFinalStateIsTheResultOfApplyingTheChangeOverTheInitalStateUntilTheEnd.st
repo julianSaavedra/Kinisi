@@ -1,14 +1,15 @@
 tests - results
 testFinalStateIsTheResultOfApplyingTheChangeOverTheInitalStateUntilTheEnd
 
-	| simulation finalState |
+	| simulation steppingDefinition |
+	steppingDefinition := SteppingDefinition repeat: 10.
 	simulation := Simulation
-		startingWith: 0
-		changingBy: [:stepDuration :currentState | currentState + 1 ]
-		over: (second with: 1)
-		during: (second with: 10).
+		with: steppingDefinition
+		from: 0
+		changingBy: self plusOne.
 
 	simulation run.
 
-	finalState := (simulation result withTimeAndStateCollect: [:time :state | state]) last.
-	self assert: finalState equals: 10
+	self
+		assertLastStateIn: simulation result
+		satisfies: [:lastState | lastState = 10 ]

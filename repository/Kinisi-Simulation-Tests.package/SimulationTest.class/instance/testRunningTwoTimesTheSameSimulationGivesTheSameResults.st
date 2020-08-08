@@ -1,12 +1,12 @@
 tests - results
 testRunningTwoTimesTheSameSimulationGivesTheSameResults
 
-	| simulation firstResult secondResult firstResultTimes firstResultStates secondResultTimes secondResultStates |
+	| simulation firstResult secondResult firstResultTimes firstResultStates secondResultTimes secondResultStates steppingDefinition |
+	steppingDefinition := SteppingDefinition repeat: 10.
 	simulation := Simulation
-		startingWith: 0
-		changingBy: [:stepDuration :currentState | currentState + 1 ]
-		over: (second with: 1)
-		during: (second with: 10).
+		with: steppingDefinition
+		from: 0
+		changingBy: self plusOne.
 
 	simulation run.
 	firstResult := simulation result.

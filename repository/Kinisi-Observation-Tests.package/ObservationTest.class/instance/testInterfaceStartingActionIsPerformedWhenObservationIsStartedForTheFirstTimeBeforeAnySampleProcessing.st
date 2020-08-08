@@ -1,15 +1,15 @@
 tests
 testInterfaceStartingActionIsPerformedWhenObservationIsStartedForTheFirstTimeBeforeAnySampleProcessing
 
-	| startActionWasPerformed |
-	interface := self interfaceStartingWith: [ startActionWasPerformed := true ].
+	| startActionWasPerformedBeforeAnyObservation |
+	interface := self interfaceStartingWith: [
+		startActionWasPerformedBeforeAnyObservation := interfaceProcessedSamples isEmpty ].
 	observationProcess := KinisiObservation
 		on: source
 		with: interface
 		waiting: delay.
 
-	startActionWasPerformed := false.
+	startActionWasPerformedBeforeAnyObservation := false.
 	observationProcess play.
 	
-	self assert: startActionWasPerformed.
-	self assertEmpty: interfaceProcessedSamples
+	self assert: startActionWasPerformedBeforeAnyObservation

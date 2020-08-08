@@ -4,7 +4,7 @@ exampleObservationControlPanel
 	| observation |
 	observation := KinisiObservation
 		on: self naturalNumberSource
-		with: self numberInTtranscriptInterface
+		with: self numberInTranscriptInterface
 		waiting: 1 asSeconds.
 
 	(ObservationControlPanelPresenter on: observation) openWithSpec.

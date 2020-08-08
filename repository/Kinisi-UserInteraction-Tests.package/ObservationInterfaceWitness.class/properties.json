@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ObservationInterface",
+	"category" : "Kinisi-UserInteraction-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"finishAction",
+		"isObserving",
+		"observations",
+		"interface"
+	],
+	"name" : "ObservationInterfaceWitness",
+	"type" : "normal"
+}

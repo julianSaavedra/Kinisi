@@ -1,0 +1,4 @@
+initialization
+interface
+
+	^interface

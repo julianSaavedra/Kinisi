@@ -8,10 +8,8 @@
 	"instvars" : [
 		"stepResults",
 		"initialState",
-		"consumer",
-		"endCondition",
 		"change",
-		"stepDelta"
+		"stepper"
 	],
 	"name" : "Simulation",
 	"type" : "normal"

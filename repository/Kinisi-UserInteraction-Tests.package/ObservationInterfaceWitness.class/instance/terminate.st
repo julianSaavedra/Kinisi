@@ -1,0 +1,4 @@
+action
+terminate
+
+	isObserving := false

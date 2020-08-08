@@ -1,18 +1,19 @@
-test
+test - consumer
 testSimulationStepsAreConsumeByGivenConsumer
 
-	| simulationStepResults consumer simulation |
+	| simulationStepResults consumer steppingDefinition simulation plusOneChange |
+	steppingDefinition := SteppingDefinition repeat: 5.
+	plusOneChange := SimulationStateChange with: [:currentState | currentState + 1].
+	simulation := Simulation
+		with: steppingDefinition
+		from: 0
+		changingBy: plusOneChange.
+	
 	simulationStepResults := OrderedCollection new.
 	consumer := SimulationStepPluggableConsumer processWith: [:simulationStep | simulationStepResults add: simulationStep value].
-	simulation := Simulation
-		startingWith: 0
-		changingBy: [:stepDuration :currentState | currentState + 1 ]
-		over: (second with: 0.5)
-		during: (second with: 1)
-		informingStepsTo: consumer.
 	
-	self assert: simulationStepResults isEmpty.
-	simulation run.
+	simulation runInforming: consumer.
 
-	0 to: 2 do: [:expectedResult | 
+	self assert: simulationStepResults size equals: 6.
+	0 to: 5 do: [:expectedResult | 
 		self assert: (simulationStepResults includes: expectedResult)]
