@@ -1,0 +1,4 @@
+accessing
+interfaceSpecs
+
+	^interfaceSpecs copy

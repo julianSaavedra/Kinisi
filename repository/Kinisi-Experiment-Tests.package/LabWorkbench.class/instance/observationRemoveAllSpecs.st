@@ -1,0 +1,4 @@
+configuring
+observationRemoveAllSpecs
+
+	observationDefinition := observationDefinition removeAllSpecs

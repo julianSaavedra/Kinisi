@@ -1,18 +1,23 @@
 tests
 testExperimentIsNotObservedThroughGivenIntefaceIfObservationIsDisabled
 
-	| definition experiment interface observations observationDefinition |
+	| observations change steppingDefinition domainModelWorkbench workbench lab observationIsFinished interfaceSpec |
+	change := SimulationStateChange with: [:currentState | currentState + 1 ].
+	steppingDefinition := SteppingDefinition repeat: 5.
+	domainModelWorkbench := FixedDomainModelWorkbench with: 0 and: change by: steppingDefinition.
+	workbench := LabWorkbench using: domainModelWorkbench.
+	lab := KinisiLab using: workbench.
+
 	observations := OrderedCollection new.
-	interface := PluggableObservationInterface processWith: [:observation | observations add: observation ].
-	observationDefinition := ObservationDefinition for: interface every: (Duration milliSeconds: 100).
-	definition := ExperimentDefinition
-		startingAt: 0
-		changingWith: (SimulationStateChange with: [ :currentState | currentState + 1 ])
-		simulatingBasedOn: (SteppingDefinition repeat: 5)
-		observingBasedOn: observationDefinition disableAll.
+	observationIsFinished := Semaphore new.
+	interfaceSpec := PluggableInterfaceSpec
+		with: [:observation | observations add: observation ]
+		andWhenFinishedDo: [ observationIsFinished signal].
 
-	experiment := Experiment basedOn: definition.
-
-	experiment run.
+	workbench
+		observationAdd: interfaceSpec;
+		observationRemoveAllSpecs.
+	
+	lab runExperiment.
 
 	self assertEmpty: observations

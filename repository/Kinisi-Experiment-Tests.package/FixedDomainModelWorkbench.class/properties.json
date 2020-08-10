@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Experiment-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"subject",
+		"change",
+		"steppingDefinition"
+	],
+	"name" : "FixedDomainModelWorkbench",
+	"type" : "normal"
+}

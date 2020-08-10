@@ -1,23 +1,25 @@
 tests
 testExperimentIsObservedThroughGivenInteface
 
-	| definition experiment interface observations observationIsFinished |
+	| observations observationIsFinished workbench lab interfaceSpec change steppingDefinition domainModelWorkbench |
+	change := SimulationStateChange with: [:currentState | currentState + 1 ].
+	steppingDefinition := SteppingDefinition repeat: 5.
+	domainModelWorkbench := FixedDomainModelWorkbench with: 0 and: change by: steppingDefinition.
+	workbench := LabWorkbench using: domainModelWorkbench.
+	lab := KinisiLab using: workbench.
+
 	observations := OrderedCollection new.
 	observationIsFinished := Semaphore new.
-	interface := PluggableObservationInterface
-		processWith: [:observation | observations add: observation ]
-		andWhenFinishedDo: [ observationIsFinished signal ].
-	definition := ExperimentDefinition
-		startingAt: 0
-		changingWith: (SimulationStateChange with: [ :currentState | currentState + 1 ])
-		simulatingBasedOn: (SteppingDefinition repeat: 5)
-		observingBasedOn: (ObservationDefinition for: interface every: (Duration milliSeconds: 100)).
-	experiment := Experiment basedOn: definition.
+	interfaceSpec := PluggableInterfaceSpec
+		with: [:observation | observations add: observation ]
+		andWhenFinishedDo: [ observationIsFinished signal].
 
-	experiment run.
+	workbench observationAdd: interfaceSpec.
+	workbench observationPeriod: (Duration milliSeconds: 100).
+	lab runExperiment.
 
-	observationIsFinished wait.
-	experiment result withTimeAndStateDo: [:time :state |
+	[observationIsFinished wait] valueWithin: 2 seconds onTimeout: [ self fail ].
+	lab lastResult withTimeAndStateDo: [:time :state |
 		observations
 			detect: [:observation | observation time = time ]
 			ifFound: [:matchingObservation | self assert: matchingObservation value equals: state ]

@@ -2,7 +2,7 @@ running
 run
 
 	| simulation observation consumer |
-	observation := ObservationController basedOn: definition observationDefinition.
+	observation := ObservationController basedOn: definition.
 	consumer := SimulationStepPluggableConsumer
 		processWith: [:step | observation process: step ]
 		andWhenFinishedDo: [ observation close ].

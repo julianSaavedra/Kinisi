@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "Kinisi-Experiment-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ExperimentResultTest",
+	"instvars" : [
+		"interfaceSpecs",
+		"period",
+		"enable"
+	],
+	"name" : "ObservationDefinitionBANANA",
 	"type" : "normal"
 }
