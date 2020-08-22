@@ -8,12 +8,12 @@
 	"instvars" : [
 		"source",
 		"delay",
-		"interface",
 		"observationProcess",
 		"allExpectedSamples",
 		"pendingSamples",
 		"buffer",
-		"interfaceProcessedSamples"
+		"interfaceProcessedSamples",
+		"interfaces"
 	],
 	"name" : "ObservationTest",
 	"type" : "normal"

@@ -1,12 +1,11 @@
 tests
 testInterfaceFinishingActionIsPerformedWhenSourcingBufferIsClosedAndAllRemainingSamplesAreProcessed
 
-	| finishActionWasPerformed |
-	interface := self
-		interfaceFinishingWith: [ finishActionWasPerformed := true ].
+	| finishActionWasPerformed interface |
+	interface := self interfaceFinishingWith: [ finishActionWasPerformed := true ].
 	observationProcess := KinisiObservation
 		on: source
-		with: interface
+		with: {interface}
 		waiting: delay.
 
 	finishActionWasPerformed := false.

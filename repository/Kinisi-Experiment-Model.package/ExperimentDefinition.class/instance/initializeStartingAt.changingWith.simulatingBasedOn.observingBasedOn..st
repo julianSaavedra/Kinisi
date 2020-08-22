@@ -1,7 +1,7 @@
 initialization
-initializeStartingAt: anInitialState changingWith: aChange simulatingBasedOn: anSteppingMode observingBasedOn: anObservationDefinition
+initializeStartingAt: domainScenario changingWith: aChange simulatingBasedOn: anSteppingMode observingBasedOn: anObservationDefinition
 
-	scenario := anInitialState.
+	scenario := domainScenario.
 	change := aChange.
 	steppingDefinition := anSteppingMode.
 	observationDefinition := anObservationDefinition

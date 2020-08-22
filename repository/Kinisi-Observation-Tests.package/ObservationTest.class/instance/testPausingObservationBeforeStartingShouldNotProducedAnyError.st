@@ -1,7 +1,7 @@
 tests
 testPausingObservationBeforeStartingShouldNotProducedAnyError
 
-	observationProcess := KinisiObservation on: source with: interface waiting: delay.
+	observationProcess := KinisiObservation on: source with: interfaces waiting: delay.
 	
 	self
 		shouldnt: [ observationProcess pause ]

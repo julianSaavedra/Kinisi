@@ -1,0 +1,4 @@
+as yet unclassified
+interfaceBasedOn: collatzConjectureScenario
+ 
+	^CollatzConjectureAnimationInterface basedOn: collatzConjectureScenario

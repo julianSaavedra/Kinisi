@@ -10,7 +10,7 @@
 		"process",
 		"state",
 		"signal",
-		"interface"
+		"interfaces"
 	],
 	"name" : "KinisiObservation",
 	"type" : "normal"

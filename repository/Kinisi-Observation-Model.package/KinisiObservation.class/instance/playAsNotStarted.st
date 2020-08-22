@@ -1,6 +1,6 @@
 private
 playAsNotStarted
 
-	interface start.
+	interfaces do: [:interface | interface start].
 	process resume.
 	self changeToRunning

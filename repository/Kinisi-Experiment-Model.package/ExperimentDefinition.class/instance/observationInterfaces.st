@@ -1,4 +1,4 @@
 accessing
 observationInterfaces
 
-	^observationDefinition interfaceDefinitions collect: [:interfaceSpec | interfaceSpec interface ]
+	^observationDefinition interfacesBasedOn: scenario

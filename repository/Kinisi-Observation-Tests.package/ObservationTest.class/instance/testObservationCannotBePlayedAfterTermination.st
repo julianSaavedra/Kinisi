@@ -1,7 +1,7 @@
 tests
 testObservationCannotBePlayedAfterTermination
 
-	observationProcess := KinisiObservation on: source with: interface waiting: delay.
+	observationProcess := KinisiObservation on: source with: interfaces waiting: delay.
 	observationProcess terminate.
 	
 	self

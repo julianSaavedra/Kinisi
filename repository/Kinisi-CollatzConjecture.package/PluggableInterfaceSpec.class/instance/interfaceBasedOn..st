@@ -1,5 +1,5 @@
 accessing
-interface
+interfaceBasedOn: anObject
 
 	^PluggableObservationInterface
 		processWith: observationAction

@@ -32,13 +32,7 @@ initializePresenters
 			ifNotNil: [:item |
 				selectedDefinition := self newLabel.
 				selectedDefinition label: item name].
-			self update.
-		].
-	
-	definitions selection selectedItem
-			ifNil: [ selectedDefinition := self newNullPresenter ]
-			ifNotNil: [:interfaceDefinition |
-				selectedDefinition := self newLabel.
-				selectedDefinition label: interfaceDefinition name].
+			self update ].
+	selectedDefinition := self newNullPresenter.
 	
 	self focusOrder add: addDefinition; add: removeDefinition; add: removeAllDefinitions; add: definitions.

@@ -3,7 +3,7 @@ testObservationObservesAllExpectedSamples
 
 	observationProcess := KinisiObservation
 		on: source
-		with: interface
+		with: interfaces
 		waiting: delay.
 
 	self denyEmpty: allExpectedSamples.

@@ -3,7 +3,7 @@ testNoSampleIsObservedIfSourceHasNoNewSampleAvailable
 
 	observationProcess := KinisiObservation
 		on: source
-		with: interface
+		with: interfaces
 		waiting: delay.
 		
 	observationProcess play.
