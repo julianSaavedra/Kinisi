@@ -1,4 +1,0 @@
-initialization
-whenChangedDo: initialStateChangeAction
-
-	input whenTextChangedDo: initialStateChangeAction

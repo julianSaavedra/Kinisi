@@ -1,4 +1,0 @@
-accessubg
-period
-
-	^period

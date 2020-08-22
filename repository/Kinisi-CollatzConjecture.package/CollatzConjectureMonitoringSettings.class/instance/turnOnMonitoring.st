@@ -1,4 +1,0 @@
-setting
-turnOnMonitoring
-
-	monitoringIsOn := true

@@ -2,5 +2,5 @@ initialization
 initializeScenarioView
 
 	scenarioView := self
-		instantiate: CollatzConjectureInitialStateDisplayPresenter
+		instantiate: CollatzConjectureScenarioDisplayPresenter
 		on: workbench

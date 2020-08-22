@@ -1,4 +1,0 @@
-setting
-turnOffMonitoring
-
-	monitoringIsOn := false
