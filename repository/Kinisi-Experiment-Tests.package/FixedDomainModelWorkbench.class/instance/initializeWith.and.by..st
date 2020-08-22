@@ -1,6 +1,6 @@
 initialization
 initializeWith: targetSubject and: targetChange by: targetSteppingDefinition
 
-	subject := targetSubject.
+	subject := FixedDomainScenario with: targetSubject.
 	change := targetChange.
 	steppingDefinition := targetSteppingDefinition

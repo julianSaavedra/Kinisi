@@ -1,7 +1,8 @@
 examples
 exampleCollatzConjecture
 
-	| lab |
-	lab := KinisiLab using: CollatzConjectureScenarioWorkbench default.
+	| lab workbench |
+	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbenchBANANA default.
+	lab := KinisiLab using: workbench.
 	(KinisiLabPresenter on: lab) openWithSpec.
 	lab inspect

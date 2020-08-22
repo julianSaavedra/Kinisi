@@ -1,4 +1,4 @@
 test objects
 disabledObservationDefinition
 
-	^ObservationDefinitionBANANA withNoInterfaceSpecs
+	^ObservationDefinitionBANANA withNoInterfaceDefinitions

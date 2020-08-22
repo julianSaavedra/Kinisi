@@ -1,4 +1,5 @@
 initialization
 initializePresenters
 
-	workbench := self instantiate: CollatzConjectureUserWorkbenchPresenter on: lab workbench
+	workbench := self instantiate: LabWorkbenchPresenter on: lab workbench.
+	workbench using: LabWorkbenchPresenterExamples observationInterfaceSpecsForCollatz.

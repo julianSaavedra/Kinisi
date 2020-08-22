@@ -1,4 +1,0 @@
-examples
-exampleWorkbench
-
-	self onDefaultWorkbenchOpen: CollatzConjectureUserWorkbenchPresenter

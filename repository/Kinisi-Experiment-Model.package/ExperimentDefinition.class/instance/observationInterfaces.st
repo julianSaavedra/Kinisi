@@ -1,4 +1,4 @@
 accessing
 observationInterfaces
 
-	^observationDefinition interfaceSpecs collect: [:interfaceSpec | interfaceSpec interface ]
+	^observationDefinition interfaceDefinitions collect: [:interfaceSpec | interfaceSpec interface ]

@@ -2,5 +2,5 @@ private
 drawOn: canvas
 
 	| renderer |
-	renderer := CollatzConjectureStateRenderer basedOn: workbench displaySettings. 
-	renderer draw: workbench initialState on: canvas 
+	renderer := CollatzConjectureStateRenderer basedOn: workbench scenario. 
+	renderer draw: workbench scenario state on: canvas 

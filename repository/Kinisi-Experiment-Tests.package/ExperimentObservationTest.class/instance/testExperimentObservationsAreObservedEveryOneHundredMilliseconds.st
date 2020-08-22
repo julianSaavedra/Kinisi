@@ -1,7 +1,7 @@
 tests
 testExperimentObservationsAreObservedEveryOneHundredMilliseconds
 
-	| observationsTimes oneHundredMilliseconds timesBetweenObservations observationIsFinished steppingDefinition domainModelWorkbench workbench lab interfaceSpec change |
+	| observationsTimes oneHundredMilliseconds timesBetweenObservations observationIsFinished steppingDefinition domainModelWorkbench workbench lab interfaceSpec change interfaceDefinition |
 	change := SimulationStateChange with: [:currentState | currentState + 1 ].
 	steppingDefinition := SteppingDefinition repeat: 5.
 	domainModelWorkbench := FixedDomainModelWorkbench with: 0 and: change by: steppingDefinition.
@@ -14,9 +14,11 @@ testExperimentObservationsAreObservedEveryOneHundredMilliseconds
 	interfaceSpec := PluggableInterfaceSpec
 		with: [:observation | observationsTimes add: DateAndTime now ]
 		andWhenFinishedDo: [ observationIsFinished signal].
+	interfaceDefinition := InterfaceDefinition named: 'TestTimeRecorder' with: interfaceSpec.
 	
-	workbench observationAdd: interfaceSpec.
-	workbench observationPeriod: oneHundredMilliseconds.
+	workbench observationWorkbench
+		add: interfaceDefinition;
+		period: oneHundredMilliseconds.
 	
 	lab runExperiment.
 
