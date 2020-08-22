@@ -1,0 +1,4 @@
+initialization
+interfacesBasedOn: scenario
+
+	^interface

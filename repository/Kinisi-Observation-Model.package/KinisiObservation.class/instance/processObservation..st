@@ -1,4 +1,4 @@
 private
 processObservation: observation
 
-	interface process: observation
+	interfaces do: [:interface | interface process: observation ]

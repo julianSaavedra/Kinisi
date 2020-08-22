@@ -1,11 +1,11 @@
 tests
 testObservationIsTerminatedWhenSourceBufferIsClosed
 
-	| interfaceHasFinished |
+	| interfaceHasFinished interface |
 	interface := self interfaceFinishingWith: [ interfaceHasFinished := true ].
 	observationProcess := KinisiObservation
 		on: source
-		with: interface
+		with: {interface}
 		waiting: delay.
 	
 	interfaceHasFinished := false.	

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-CollatzConjecture",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"periodLabel",
+		"periodAmount",
+		"periodUnit",
+		"periodUnitTranslator",
+		"interfaceDefinitions"
+	],
+	"name" : "ObservationWorkbenchPresenter",
+	"type" : "normal"
+}

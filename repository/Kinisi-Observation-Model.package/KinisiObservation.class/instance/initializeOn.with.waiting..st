@@ -1,8 +1,8 @@
 initialization
-initializeOn: aSource with: anInterface waiting: aSignal 
+initializeOn: aSource with: bananaInterfaces waiting: aSignal 
 
 	source := aSource.
-	interface := anInterface.
+	interfaces := bananaInterfaces.
 	signal := aSignal.
 	state := ObservationNotStarted new.
 	process := [
@@ -12,4 +12,3 @@ initializeOn: aSource with: anInterface waiting: aSignal
 	] newProcess.
 	process name: 'Observation'.
 	process priority: Processor activePriority + 1
-	"process priority: Processor timingPriority - 1"

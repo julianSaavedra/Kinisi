@@ -1,4 +1,4 @@
 instance creation
-on: source with: interface waiting: signal
+on: source with: interfaces waiting: signal
 
-	^self new initializeOn: source with: interface waiting: signal
+	^self new initializeOn: source with: interfaces waiting: signal

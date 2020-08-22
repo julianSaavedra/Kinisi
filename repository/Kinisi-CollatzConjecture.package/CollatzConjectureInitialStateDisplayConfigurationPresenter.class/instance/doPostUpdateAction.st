@@ -1,4 +1,0 @@
-initialization
-doPostUpdateAction
-
-	^ postUpdateAction value

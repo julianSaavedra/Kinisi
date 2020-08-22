@@ -1,11 +1,11 @@
 tests
 testInterfaceFinishingActionIsPerformedWhenObservationIsTerminatedWhenPaused
 
-	| finishActionWasPerformed |
+	| finishActionWasPerformed interface |
 	interface := self interfaceFinishingWith: [ finishActionWasPerformed := true ].
 	observationProcess := KinisiObservation
 		on: source
-		with: interface
+		with: {interface}
 		waiting: delay.
 
 	observationProcess play.

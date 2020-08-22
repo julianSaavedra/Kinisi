@@ -1,23 +1,27 @@
 tests
 testExperimentObservationsAreObservedEveryOneHundredMilliseconds
 
-	| definition experiment interface observationsTimes oneHundredMilliseconds timesBetweenObservations observationIsFinished |
+	| observationsTimes oneHundredMilliseconds timesBetweenObservations observationIsFinished steppingDefinition domainModelWorkbench workbench lab interfaceSpec change interfaceDefinition |
+	change := SimulationStateChange with: [:currentState | currentState + 1 ].
+	steppingDefinition := SteppingDefinition repeat: 5.
+	domainModelWorkbench := FixedDomainModelWorkbench with: 0 and: change by: steppingDefinition.
+	workbench := LabWorkbench using: domainModelWorkbench.
+	lab := KinisiLab using: workbench.
+
 	observationsTimes := OrderedCollection new.
 	oneHundredMilliseconds := Duration milliSeconds: 100.
 	observationIsFinished := Semaphore new.
-	interface := PluggableObservationInterface
-		processWith: [:observation | observationsTimes add: DateAndTime now ]
+	interfaceSpec := PluggableInterfaceSpec
+		with: [:observation | observationsTimes add: DateAndTime now ]
 		andWhenFinishedDo: [ observationIsFinished signal].
-	definition := ExperimentDefinition
-		startingAt: 0
-		changingWith: (SimulationStateChange with: [ :currentState | currentState + 1 ])
-		simulatingBasedOn: (SteppingDefinition repeat: 5)
-		observingBasedOn: (ObservationDefinition for: interface every: oneHundredMilliseconds).
-	experiment := Experiment basedOn: definition.
-
-	experiment run.
-
+	interfaceDefinition := InterfaceDefinition named: 'TestTimeRecorder' with: interfaceSpec.
 	
-	observationIsFinished wait.
+	workbench observationWorkbench
+		add: interfaceDefinition;
+		period: oneHundredMilliseconds.
+	
+	lab runExperiment.
+
+	[observationIsFinished wait] valueWithin: 2 seconds onTimeout: [ self fail ].
 	timesBetweenObservations := observationsTimes overlappingPairsCollect: [:anObservationTime :nextObservationTime | nextObservationTime - anObservationTime  ].
 	self assert: (1 - (timesBetweenObservations average / oneHundredMilliseconds) < 0.05)

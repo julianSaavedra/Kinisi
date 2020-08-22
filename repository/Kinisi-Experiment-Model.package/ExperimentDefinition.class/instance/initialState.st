@@ -1,4 +1,4 @@
 accessing
 initialState
 
-	^scenario
+	^scenario state

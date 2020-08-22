@@ -1,11 +1,11 @@
 tests
 testInterfaceStartingActionIsNotPerformedWhenObservationIsResumedAfterPaused
 
-	| startActionWasPerformedWhenResuming |
+	| startActionWasPerformedWhenResuming interface |
 	interface := self interfaceStartingWith: [ startActionWasPerformedWhenResuming := true ].
 	observationProcess := KinisiObservation
 		on: source
-		with: interface
+		with: {interface}
 		waiting: delay.
 
 	observationProcess play.

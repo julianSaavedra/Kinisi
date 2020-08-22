@@ -2,8 +2,8 @@ example
 exampleCollatzConjectureResult
 
 	| workbench lab |
-	workbench := CollatzConjectureScenarioWorkbench default.
-	(CollatzConjectureInitialStateModifier with: 5) modify: workbench.
+	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbenchBANANA default.
+	workbench modelWorkbench state: 5.
 	
 	lab := KinisiLab using: workbench.
 	lab runExperiment.

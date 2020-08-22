@@ -1,5 +1,5 @@
 private
 terminateAsRunning
 
-	interface terminate.
+	interfaces do: [:interface | interface terminate].
 	self changeToTerminated

@@ -1,7 +1,7 @@
 tests
 testObservationProcessKnowsIfItWasTerminatedOrNor
 
-	observationProcess := KinisiObservation on: source with: interface waiting: delay.
+	observationProcess := KinisiObservation on: source with: interfaces waiting: delay.
 	
 	self deny: observationProcess isTerminated.
 	

@@ -2,10 +2,10 @@ tests
 testInterfaceFinishingActionIsNotPerformedWhenObservationIsTerminatedBeforeStarting
 
 	| finishActionWasPerformed |
-	interface := self interfaceFinishingWith: [ finishActionWasPerformed := true ].
+	interfaces := self interfaceFinishingWith: [ finishActionWasPerformed := true ].
 	observationProcess := KinisiObservation
 		on: source
-		with: interface
+		with: interfaces
 		waiting: delay.
 
 	finishActionWasPerformed := false.
