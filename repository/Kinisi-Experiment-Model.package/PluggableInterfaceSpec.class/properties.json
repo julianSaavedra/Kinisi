@@ -1,16 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-CollatzConjecture",
+	"category" : "Kinisi-Experiment-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"color",
-		"background",
-		"size",
-		"font"
+		"observationAction",
+		"finishingAction"
 	],
-	"name" : "CollatzConjectureDisplaySettings",
+	"name" : "PluggableInterfaceSpec",
 	"type" : "normal"
 }

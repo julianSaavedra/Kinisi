@@ -1,4 +1,4 @@
 accessing
 font
 
-	^displaySettings font
+	^visualDepiction font

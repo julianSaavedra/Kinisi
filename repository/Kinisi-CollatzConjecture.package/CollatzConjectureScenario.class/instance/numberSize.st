@@ -1,4 +1,4 @@
 accessing
 numberSize
 
-	^displaySettings numberSize
+	^visualDepiction numberSize

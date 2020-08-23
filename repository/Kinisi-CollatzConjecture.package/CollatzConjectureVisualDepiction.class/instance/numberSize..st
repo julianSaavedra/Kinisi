@@ -1,4 +1,4 @@
-setting
+configuring
 numberSize: targetSize
 
 	^self class

@@ -1,4 +1,4 @@
-setting
+configuring
 numberColor: targetColor
 
 	^self class

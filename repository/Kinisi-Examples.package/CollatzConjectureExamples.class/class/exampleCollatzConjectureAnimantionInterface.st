@@ -7,7 +7,7 @@ exampleCollatzConjectureAnimantionInterface
 				openInWindowSized: 400 @ 400
 				titled: 'Collatz Conjecture Example'.
 			renderer := CollatzConjectureStateRenderer
-				basedOn: CollatzConjectureDisplaySettings default ]
+				basedOn: CollatzConjectureVisualDepiction default ]
 		processWith: [ :state | renderer draw: state value on: canvas ].
 	observationProcess := KinisiObservation
 		on: self sourceWithCollatzSucession

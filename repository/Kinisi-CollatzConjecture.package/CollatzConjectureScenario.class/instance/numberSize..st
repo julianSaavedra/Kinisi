@@ -1,4 +1,6 @@
 configuring
 numberSize: targetNumberSize
- 
-	^self copyReplacing: (displaySettings numberSize: targetNumberSize)
+
+	^self
+		newScenarioWith: modelState
+		and: (visualDepiction numberSize: targetNumberSize)

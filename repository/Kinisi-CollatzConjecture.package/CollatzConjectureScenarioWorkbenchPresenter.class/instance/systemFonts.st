@@ -1,4 +1,4 @@
 options
 systemFonts
 
-	^CollatzConjectureDisplaySettings systemFonts
+	^CollatzConjectureVisualDepiction systemFonts

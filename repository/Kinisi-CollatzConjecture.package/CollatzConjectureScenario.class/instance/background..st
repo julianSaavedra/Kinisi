@@ -1,4 +1,6 @@
 configuring
 background: targetBackground
 
-	^self copyReplacing: (displaySettings background: targetBackground)
+	^self
+		newScenarioWith: modelState
+		and: (visualDepiction background: targetBackground)

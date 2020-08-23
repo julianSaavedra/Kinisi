@@ -1,4 +1,4 @@
 instance creation
-basedOn: displaySettings
+basedOn: scenario
 
-	^self new initializeBasedOn: displaySettings
+	^self new initializeBasedOn: scenario

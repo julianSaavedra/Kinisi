@@ -1,4 +1,4 @@
-setting
+configuring
 background: targetBackground
 
 	^self class
