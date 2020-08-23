@@ -2,6 +2,6 @@ examples
 exampleWorkbenchNEWMODEL
 
 	| workbench |
-	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbenchBANANA default.
+	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbench default.
 	(LabWorkbenchPresenter on: workbench) openWithSpec.
 	workbench inspect

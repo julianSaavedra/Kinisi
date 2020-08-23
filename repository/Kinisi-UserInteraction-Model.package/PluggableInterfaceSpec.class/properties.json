@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"observationAction",
+		"finishingAction"
+	],
+	"name" : "PluggableInterfaceSpec",
+	"type" : "normal"
+}
