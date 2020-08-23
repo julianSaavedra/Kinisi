@@ -1,0 +1,4 @@
+configuring
+turnGridOn
+
+	isGridVisible := true
