@@ -1,15 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Experiment-Model",
+	"category" : "Kinisi-Experiment-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"observationAction",
-		"finishingAction",
-		"startingAction"
+		"observations",
+		"times",
+		"terminationSemaphore"
 	],
-	"name" : "PluggableInterfaceSpec",
+	"name" : "ObservationsRecordKeeper",
 	"type" : "normal"
 }

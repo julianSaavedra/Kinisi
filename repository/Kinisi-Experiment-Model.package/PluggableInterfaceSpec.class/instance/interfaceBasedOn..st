@@ -1,6 +1,7 @@
 accessing
-interfaceBasedOn: anObject
+interfaceBasedOn: scenario
 
 	^PluggableObservationInterface
+		onStartDo: startingAction 
 		processWith: observationAction
 		andWhenFinishedDo: finishingAction

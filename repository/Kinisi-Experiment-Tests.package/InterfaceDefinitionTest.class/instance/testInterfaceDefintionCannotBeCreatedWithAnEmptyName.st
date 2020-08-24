@@ -2,7 +2,11 @@ tests
 testInterfaceDefintionCannotBeCreatedWithAnEmptyName
 
 	| spec |
-	spec := PluggableInterfaceSpec with: [:observation | ] andWhenFinishedDo: [].
+
+	spec := PluggableInterfaceSpec
+		onStartDo: [ ]
+		with: [:observation |  ]
+		andWhenFinishedDo: [  ].
 	self
 		should: [ InterfaceDefinition named: '' with: spec ]
 		raise: Error

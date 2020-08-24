@@ -1,4 +1,8 @@
-test objects
+no senders - review
 experimentDefinition
 
-	^self experimentDefinitionUsing: [ :state | state * 2 ]
+	^ExperimentDefinition
+		startingAt: 1
+		changingWith: (SimulationStateChange with: [ :state | state * 2 ])
+		simulatingBasedOn: (SteppingDefinition repeat: 5)
+		observingBasedOn: ObservationDefinition withNoInterfaceDefinitions

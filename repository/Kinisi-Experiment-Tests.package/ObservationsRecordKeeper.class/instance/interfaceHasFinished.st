@@ -1,0 +1,4 @@
+action
+interfaceHasFinished
+
+	terminationSemaphore signal

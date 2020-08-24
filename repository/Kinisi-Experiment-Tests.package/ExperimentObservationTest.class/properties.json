@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"lab",
+		"observationWorkbench",
+		"recordKeepers"
+	],
 	"name" : "ExperimentObservationTest",
 	"type" : "normal"
 }

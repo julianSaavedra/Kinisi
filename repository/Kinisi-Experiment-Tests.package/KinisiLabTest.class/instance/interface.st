@@ -1,6 +1,6 @@
-test objects
+no senders - review
 interface
 
 	| interface |
 	interface := PluggableObservationInterface processWith: [:observation | ].
-	^ObservationInterfaceWitness on: interface
+	^ObservationsRecordKeeper on: interface

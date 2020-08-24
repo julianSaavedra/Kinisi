@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"observationAction",
-		"finishingAction",
-		"startingAction"
+		"period",
+		"enable",
+		"interfaceDefinitions"
 	],
-	"name" : "PluggableInterfaceSpec",
+	"name" : "ObservationDefinition",
 	"type" : "normal"
 }
