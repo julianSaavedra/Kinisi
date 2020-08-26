@@ -1,4 +1,4 @@
-action
+API
 record: observation
 
 	observations add: observation.

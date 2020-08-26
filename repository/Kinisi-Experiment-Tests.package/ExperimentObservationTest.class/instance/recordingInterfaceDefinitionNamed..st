@@ -1,9 +1,11 @@
 test objects
 recordingInterfaceDefinitionNamed: name
 
-	| interfaceSpec |
+	| interfaceSpec recordKeeper|
+	recordKeeper := ObservationsRecordKeeper new.
+	self register: recordKeeper with: name.
 	interfaceSpec := PluggableInterfaceSpec
-		onStartDo: [ self startRecordKeeperFor: name ]
-		with: [:observation | self record: observation for: name ]
-		andWhenFinishedDo:[ self finishedRecordKeeperFor: name ].
+		onStartDo: [ recordKeeper interfaceStarting ]
+		with: [:observation | recordKeeper record: observation ]
+		andWhenFinishedDo:[ recordKeeper interfaceFinishing ].
 	^InterfaceDefinition named: name with: interfaceSpec

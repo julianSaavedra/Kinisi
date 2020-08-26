@@ -1,6 +1,4 @@
-accessing
+results
 timesBetweenObservationsAverage
 
-	| timesBetweenObservations |
-	timesBetweenObservations := times overlappingPairsCollect: [:anObservationTime :nextObservationTime | nextObservationTime - anObservationTime  ].
-	^timesBetweenObservations average
+	^self timesBetweenObservations average

@@ -1,4 +1,4 @@
-action
-interfaceHasFinished
+API
+interfaceFinishing
 
 	terminationSemaphore signal

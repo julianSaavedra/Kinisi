@@ -1,4 +1,4 @@
-tests
+asserting
 assert: labResult containsAll: expectedSteps
 
 	labResult withTimeAndStateDo: [:step :state |

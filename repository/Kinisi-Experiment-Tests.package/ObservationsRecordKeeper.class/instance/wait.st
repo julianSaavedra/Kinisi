@@ -1,4 +1,4 @@
-action
+API
 wait
 
 	terminationSemaphore wait

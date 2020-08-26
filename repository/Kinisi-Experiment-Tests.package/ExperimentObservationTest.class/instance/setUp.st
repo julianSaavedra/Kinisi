@@ -4,4 +4,5 @@ setUp
 	super setUp.
 	lab := KinisiLab using: self workbench.
 	observationWorkbench := lab workbench observationWorkbench.
+	observationWorkbench period: (Duration milliSeconds: 50).
 	recordKeepers := Dictionary new

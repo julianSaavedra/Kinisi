@@ -6,16 +6,12 @@ testExperimentIsNotObservedWithGivenIntefaceSpecsIfItIsRemoved
 	interfaceDefinitionToBeRemoved := self recordingInterfaceDefinitionNamed: 'ObservationsCollectorToBeRemoved'.
 
 	observationWorkbench
-		period: (Duration milliSeconds: 100);
 		add: interfaceDefinitionToBeRemoved;
 		add: interfaceDefinitionToBeUsed;
 		remove: interfaceDefinitionToBeRemoved.
 
 	lab runExperiment.
-
-	[ self waitRecordingIsFinishedFor: interfaceDefinitionToBeUsed ]
-		valueWithin: 2 seconds
-		onTimeout: [ self fail ].
+	self waitRecordingIsFinishedFor: interfaceDefinitionToBeUsed.
 
 	self denyEmpty: (self recordedObservationsFor: interfaceDefinitionToBeUsed).
 	self assertEmpty: (self recordedObservationsFor: interfaceDefinitionToBeRemoved)

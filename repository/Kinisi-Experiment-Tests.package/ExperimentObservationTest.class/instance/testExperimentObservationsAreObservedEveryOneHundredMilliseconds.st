@@ -1,19 +1,17 @@
 tests
 testExperimentObservationsAreObservedEveryOneHundredMilliseconds
 
-	| oneHundredMilliseconds interfaceDefinition |
+	| oneHundredMilliSeconds interfaceDefinition |
 	interfaceDefinition := self recordingInterfaceDefinitionNamed: 'ObservationsTimesRecorer'.
-	oneHundredMilliseconds := Duration milliSeconds: 100.
+	oneHundredMilliSeconds := self oneHundredMilliSeconds.
 	observationWorkbench
 		add: interfaceDefinition;
-		period: oneHundredMilliseconds.
+		period: oneHundredMilliSeconds.
 
 	lab runExperiment.
-
-	[ self waitRecordingIsFinishedFor: interfaceDefinition ]
-		valueWithin: 2 seconds
-		onTimeout: [ self fail ].
+	self waitRecordingIsFinishedFor: interfaceDefinition.
+	
 	self
 		assertTimeBetweenObservationFor: interfaceDefinition
-		isInAverage: oneHundredMilliseconds
+		isInAverage: oneHundredMilliSeconds
 		with: 5

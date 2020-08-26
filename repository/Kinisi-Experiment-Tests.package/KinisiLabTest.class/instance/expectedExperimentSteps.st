@@ -1,4 +1,4 @@
-tests
+test objects
 expectedExperimentSteps
 
 	^(0 to: 5) collect: [:stepIndex |
