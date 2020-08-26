@@ -1,4 +1,4 @@
-accessing
+interface creation
 interfacesBasedOn: scenario
  
 	^interfaceDefinitions collect: [:definition |

@@ -1,4 +1,4 @@
-as yet unclassified
+interface creation
 interfaceBasedOn: scenario
 
 	^spec interfaceBasedOn: scenario

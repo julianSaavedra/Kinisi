@@ -1,4 +1,6 @@
 configuring
 period: newPeriod
 
-	^self class withAll: interfaceDefinitions copy every: newPeriod 
+	^self class
+		withAll: self interfaceDefinitions
+		every: newPeriod 
