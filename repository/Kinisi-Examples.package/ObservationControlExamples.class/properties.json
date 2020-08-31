@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Error",
-	"category" : "Kinisi-CollatzConjecture",
+	"super" : "Object",
+	"category" : "Kinisi-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CollatzConjectureError",
+	"name" : "ObservationControlExamples",
 	"type" : "normal"
 }

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CollatzConjecturePresenterExamples",
+	"name" : "ScenarioWorkbenchExamples",
 	"type" : "normal"
 }

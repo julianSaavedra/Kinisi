@@ -1,5 +1,5 @@
 examples
-exampleScenarioWorkbench
+exampleCollatzConjectureWorkbench
 
 	| workbench |
 	workbench := CollatzConjectureScenarioWorkbench default.
