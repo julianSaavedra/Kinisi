@@ -1,4 +1,0 @@
-initialization
-initializeFixedWith: targetExperimentDefinition
- 
-	experimentDefinition := targetExperimentDefinition

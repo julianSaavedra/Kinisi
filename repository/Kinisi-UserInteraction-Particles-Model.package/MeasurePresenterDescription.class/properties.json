@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Particles-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"measure",
+		"unitOptions",
+		"label",
+		"modelChangingBlock"
+	],
+	"name" : "MeasurePresenterDescription",
+	"type" : "normal"
+}

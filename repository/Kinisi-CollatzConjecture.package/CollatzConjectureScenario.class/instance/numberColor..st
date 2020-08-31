@@ -1,4 +1,6 @@
 configuring
 numberColor: targetColor
- 
-	^self copyReplacing: (displaySettings numberColor: targetColor)
+
+	^self
+		newScenarioWith: modelState
+		and: (visualDepiction numberColor: targetColor)

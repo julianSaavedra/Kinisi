@@ -1,4 +1,4 @@
-initialize-release
+testing
 isTerminated
 
 	^true

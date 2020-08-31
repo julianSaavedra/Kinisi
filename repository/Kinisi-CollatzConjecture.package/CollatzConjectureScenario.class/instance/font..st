@@ -1,4 +1,6 @@
 configuring
 font: targetFont
 
-	^self copyReplacing: (displaySettings font: targetFont)
+	^self
+		newScenarioWith: modelState
+		and: (visualDepiction font: targetFont)

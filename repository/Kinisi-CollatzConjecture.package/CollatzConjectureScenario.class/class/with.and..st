@@ -1,4 +1,4 @@
 instance creation
-with: modelState and: displaySettings
+with: modelState and: visualDepiction
  
-	^self new initializeWith: modelState and: displaySettings
+	^self new initializeWith: modelState and: visualDepiction

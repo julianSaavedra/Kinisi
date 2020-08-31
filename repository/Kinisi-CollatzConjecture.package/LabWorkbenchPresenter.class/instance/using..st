@@ -1,4 +1,0 @@
-configuring
-using: observationInterfaceSpecs
- 
-	observation definitionOptions: observationInterfaceSpecs

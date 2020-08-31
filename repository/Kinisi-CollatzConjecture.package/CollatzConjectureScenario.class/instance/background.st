@@ -1,4 +1,4 @@
 accessing
 background
 
-	^displaySettings background
+	^visualDepiction background

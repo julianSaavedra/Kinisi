@@ -1,27 +1,17 @@
 tests
 testExperimentObservationsAreObservedEveryOneHundredMilliseconds
 
-	| observationsTimes oneHundredMilliseconds timesBetweenObservations observationIsFinished steppingDefinition domainModelWorkbench workbench lab interfaceSpec change interfaceDefinition |
-	change := SimulationStateChange with: [:currentState | currentState + 1 ].
-	steppingDefinition := SteppingDefinition repeat: 5.
-	domainModelWorkbench := FixedDomainModelWorkbench with: 0 and: change by: steppingDefinition.
-	workbench := LabWorkbench using: domainModelWorkbench.
-	lab := KinisiLab using: workbench.
-
-	observationsTimes := OrderedCollection new.
-	oneHundredMilliseconds := Duration milliSeconds: 100.
-	observationIsFinished := Semaphore new.
-	interfaceSpec := PluggableInterfaceSpec
-		with: [:observation | observationsTimes add: DateAndTime now ]
-		andWhenFinishedDo: [ observationIsFinished signal].
-	interfaceDefinition := InterfaceDefinition named: 'TestTimeRecorder' with: interfaceSpec.
-	
-	workbench observationWorkbench
+	| oneHundredMilliSeconds interfaceDefinition |
+	interfaceDefinition := self recordingInterfaceDefinitionNamed: 'ObservationsTimesRecorer'.
+	oneHundredMilliSeconds := self oneHundredMilliSeconds.
+	observationWorkbench
 		add: interfaceDefinition;
-		period: oneHundredMilliseconds.
-	
-	lab runExperiment.
+		period: oneHundredMilliSeconds.
 
-	[observationIsFinished wait] valueWithin: 2 seconds onTimeout: [ self fail ].
-	timesBetweenObservations := observationsTimes overlappingPairsCollect: [:anObservationTime :nextObservationTime | nextObservationTime - anObservationTime  ].
-	self assert: (1 - (timesBetweenObservations average / oneHundredMilliseconds) < 0.05)
+	lab runExperiment.
+	self waitRecordingIsFinishedFor: interfaceDefinition.
+	
+	self
+		assertTimeBetweenObservationFor: interfaceDefinition
+		isInAverage: oneHundredMilliSeconds
+		with: 5

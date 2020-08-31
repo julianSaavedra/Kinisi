@@ -1,7 +1,5 @@
-initialization
+accessing
 initialize
 
 	super initialize.
-	initialState := CollatzConjectureState with: 1.
-	displaySettings := CollatzConjectureDisplaySettings default.
-	monitoringSettings := CollatzConjectureMonitoringSettings default.
+	scenario := CollatzConjectureScenario default

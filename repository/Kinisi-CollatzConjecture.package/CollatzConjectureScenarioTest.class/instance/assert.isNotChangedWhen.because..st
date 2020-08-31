@@ -1,14 +1,13 @@
-support
+assert
 assert: propertyAccessor isNotChangedWhen: propertyConfigurator because: expectedErrorMessage
 
 	| preUpdateProperty |
 	preUpdateProperty := propertyAccessor value: workbench scenario.
-	
+
 	self
 		should: propertyConfigurator
 		raise: Error
-		whoseDescriptionIncludes: expectedErrorMessage
-		description: 'Test did not fail as expected'.
+		whoseDescriptionIncludes: expectedErrorMessage.
 
 	self
 		assert: (propertyAccessor value: workbench scenario)

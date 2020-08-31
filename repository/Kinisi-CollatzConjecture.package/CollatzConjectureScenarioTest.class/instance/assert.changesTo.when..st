@@ -1,4 +1,4 @@
-support
+assert
 assert: propertyReader changesTo: expectedProperty when: propertyConfigurator
 
 	self

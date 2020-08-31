@@ -1,5 +1,5 @@
 initialization
-initializeBasedOn: displaySettings
+initializeBasedOn: scenario
 
 	canvas := TRCanvas new.
-	renderer := CollatzConjectureStateRenderer basedOn: displaySettings
+	renderer := CollatzConjectureStateRenderer basedOn: scenario

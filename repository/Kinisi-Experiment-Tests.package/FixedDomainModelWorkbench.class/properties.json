@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"subject",
 		"change",
-		"steppingDefinition"
+		"steppingDefinition",
+		"scenario"
 	],
 	"name" : "FixedDomainModelWorkbench",
 	"type" : "normal"

@@ -1,4 +1,0 @@
-initialization
-initializeWith: targetCollatzInitialValue
-
-	targetState := targetCollatzInitialValue

@@ -1,4 +1,4 @@
 accessing
 numberColor
 
-	^displaySettings numberColor
+	^visualDepiction numberColor

@@ -1,5 +1,5 @@
 initialization
-initializeWith: aModelState and: displayConfiguration
+initializeWith: aModelState and: aVisualDepiction
  
 	modelState := aModelState.
-	displaySettings := displayConfiguration
+	visualDepiction := aVisualDepiction

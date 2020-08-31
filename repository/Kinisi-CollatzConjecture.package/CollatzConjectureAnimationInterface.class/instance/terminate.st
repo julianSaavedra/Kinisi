@@ -1,2 +1,2 @@
-initialization
+action
 terminate

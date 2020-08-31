@@ -1,4 +1,5 @@
-initialization
+interface creation
 interfacesBasedOn: scenario
-
-	^interface
+ 
+	^interfaceDefinitions collect: [:definition |
+		definition interfaceBasedOn: scenario ]

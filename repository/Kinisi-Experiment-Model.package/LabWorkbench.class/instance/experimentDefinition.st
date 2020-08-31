@@ -2,7 +2,7 @@ accessing
 experimentDefinition
 
 	^ExperimentDefinition
-		startingAt: domainModelWorkbench subject
+		startingAt: domainModelWorkbench scenario
 		changingWith: domainModelWorkbench change
 		simulatingBasedOn: domainModelWorkbench steppingDefinition
 		observingBasedOn: observationWorkbench definition

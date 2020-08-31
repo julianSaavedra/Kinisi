@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"interface",
+		"period",
 		"enable",
-		"period"
+		"interfaceDefinitions"
 	],
 	"name" : "ObservationDefinition",
 	"type" : "normal"
