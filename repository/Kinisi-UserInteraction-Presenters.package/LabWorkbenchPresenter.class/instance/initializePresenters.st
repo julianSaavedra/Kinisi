@@ -3,4 +3,4 @@ initializePresenters
 
 	scenario := self instantiate: CollatzConjectureScenarioWorkbenchPresenter on: workbench modelWorkbench. 
 	observation := self instantiate: ObservationWorkbenchPresenter on: workbench observationWorkbench.
-	observation definitionOptions: InterfaceDefinitionSource observationInterfaceSpecsForCollatz
+	observation definitionOptions: InterfaceDefinitionSource new observationInterfaceSpecsForCollatz
