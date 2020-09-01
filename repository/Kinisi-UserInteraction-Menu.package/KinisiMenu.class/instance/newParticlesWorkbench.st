@@ -1,4 +1,4 @@
 options
-newWorkbench
+newParticlesWorkbench
 
 	(UserWorkbenchPresenter on: UserWorkbench new) openWithSpec
