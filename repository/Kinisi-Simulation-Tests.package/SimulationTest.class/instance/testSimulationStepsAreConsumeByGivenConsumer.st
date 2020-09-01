@@ -3,7 +3,7 @@ testSimulationStepsAreConsumeByGivenConsumer
 
 	| simulationStepResults consumer steppingDefinition simulation plusOneChange |
 	steppingDefinition := SteppingDefinition repeat: 5.
-	plusOneChange := SimulationStateChange with: [:currentState | currentState + 1].
+	plusOneChange := self plusOne.
 	simulation := Simulation
 		with: steppingDefinition
 		from: 0

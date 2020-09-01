@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Simulation-Tests",
+	"category" : "Kinisi-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"change"
+		"delta",
+		"endCondition"
 	],
-	"name" : "SimulationStateChange",
+	"name" : "SimulationStepper",
 	"type" : "normal"
 }
