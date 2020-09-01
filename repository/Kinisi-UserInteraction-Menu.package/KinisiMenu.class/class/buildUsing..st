@@ -1,20 +1,28 @@
 menu construction
 buildUsing: builder
- 
+
 	"See WorldState class>>#pharoItemsOn:"
-	
+
 	| menu |
+
 	menu := self new.
 	(builder item: #Kinisi)
 		label: 'Kinisi';
 		iconName: #remote;
 		order: 2.5;
-		help: 'Particles simulator';
+		help: 'Simulator';
 		withSeparatorAfter;
-		with: [ (builder item: #NewWorkbench)
+		with: [ (builder item: #NewCollatzLab)
 				target: menu;
-				selector: #newWorkbench;
-				help: 'Open a new workbench.';
-				order: 1;
+				selector: #newCollatzLab;
+				help: 'Open lab for Collatz.';
+				order: 2;
 				"keyText: 'Ctrl+K+N';"
-				iconName: #page]
+				iconName: #workspace.
+			(builder item: #NewParticlesWorkbench)
+				target: menu;
+				selector: #newParticlesWorkbench;
+				help: 'Open a new particles workbench.';
+				order: 2;
+				"keyText: 'Ctrl+K+N';"
+					iconName: #page ]
