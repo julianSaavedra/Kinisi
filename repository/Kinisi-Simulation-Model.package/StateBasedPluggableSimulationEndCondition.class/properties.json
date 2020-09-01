@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Simulation-Tests",
+	"category" : "Kinisi-Simulation-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"finalIndex"
+		"condition"
 	],
-	"name" : "IndexBasedSimulationEndCondition",
+	"name" : "StateBasedPluggableSimulationEndCondition",
 	"type" : "normal"
 }
