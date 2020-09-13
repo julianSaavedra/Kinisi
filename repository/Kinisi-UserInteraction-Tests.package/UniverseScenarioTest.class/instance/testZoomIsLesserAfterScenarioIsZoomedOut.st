@@ -3,4 +3,4 @@ testZoomIsLesserAfterScenarioIsZoomedOut
 
 	self
 		assertZoomsWith: [:newZoom :originalZoom | newZoom < originalZoom ]
-		after: [:universeObservation | workbench zoomOut]
+		after: [ workbench zoomOut ]

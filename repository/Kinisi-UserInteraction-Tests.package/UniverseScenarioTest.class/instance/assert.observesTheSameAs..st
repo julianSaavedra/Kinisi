@@ -1,4 +1,4 @@
-asserting
+test - old - to removed
 assert: particleObservation observesTheSameAs: expectedParticleObservation
 
 	self assert: particleObservation particleName equals: expectedParticleObservation particleName.

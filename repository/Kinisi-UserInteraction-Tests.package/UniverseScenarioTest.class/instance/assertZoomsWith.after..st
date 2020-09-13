@@ -1,10 +1,10 @@
 asserting
 assertZoomsWith: zoomComparison after: zoomModification
 
-	| universeObservation originalZoom newZoom measureWithOriginalZoom measureWithNewZoom |
+	| originalZoom newZoom measureWithOriginalZoom measureWithNewZoom |
 	originalZoom := workbench scenario zoom.
 	
-	zoomModification value: universeObservation.
+	zoomModification value.
 	
 	newZoom := workbench scenario zoom.
 	measureWithOriginalZoom := originalZoom measureBetween: 0 and: 100.
