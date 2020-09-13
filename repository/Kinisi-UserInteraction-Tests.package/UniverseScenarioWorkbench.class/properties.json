@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scenario"
+	],
+	"name" : "UniverseScenarioWorkbench",
+	"type" : "normal"
+}
