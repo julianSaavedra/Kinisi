@@ -23,17 +23,17 @@ baseline: spec
 		spec package: 'Kinisi-CollatzConjecture'.
 		spec package: 'Kinisi-Playground' with: [ spec requires: 'Kinisi-Physics-Model' ].
 		spec package: 'Kinisi-PlaygroundUI' with: [ spec requires: 'Kinisi-Physics-Model' ].
-		spec package: 'Kinisi-PlaygroundGraphic' with: [ spec requires: #('Aconcagua' 'Roassal2')].
+		spec package: 'Kinisi-PlaygroundGraphic' with: [ spec requires: #('Aconcagua' 'Roassal3')].
 
-		spec package: 'Kinisi-Examples' with: [ spec requires: #('Aconcagua' 'Roassal2') ].
+		spec package: 'Kinisi-Examples' with: [ spec requires: #('Aconcagua' 'Roassal3') ].
 		
 		spec package: 'Kinisi-Graphics-Model' with: [ spec requires: 'Roassal2' ].
-		spec package: 'Kinisi-Graphics-Tests' with: [ spec requires: #('Kinisi-Graphics-Model' 'Roassal2') ].	
+		spec package: 'Kinisi-Graphics-Tests' with: [ spec requires: #('Kinisi-Graphics-Model' 'Roassal3') ].	
 		
 		spec package: 'Kinisi-UserInteraction-Model'.
-		spec package: 'Kinisi-UserInteraction-Presenters' with: [ spec requires: 'Roassal2' ].
-		spec package: 'Kinisi-UserInteraction-Particles-Model' with: [ spec requires: 'Roassal2' ].
-		spec package: 'Kinisi-UserInteraction-Particles-Presenters' with: [ spec requires: 'Roassal2' ].
+		spec package: 'Kinisi-UserInteraction-Presenters' with: [ spec requires: 'Roassal3' ].
+		spec package: 'Kinisi-UserInteraction-Particles-Model' with: [ spec requires: 'Roassal3' ].
+		spec package: 'Kinisi-UserInteraction-Particles-Presenters' with: [ spec requires: 'Roassal3' ].
 		spec package: 'Kinisi-UserInteraction-Menu'.
 		spec package: 'Kinisi-UserInteraction-Tests' with: [ spec requires: #('Kinisi-Physics-Model' 'Kinisi-General-Model') ].
 
