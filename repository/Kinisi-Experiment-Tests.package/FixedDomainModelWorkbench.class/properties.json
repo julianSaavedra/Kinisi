@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"change",
-		"steppingDefinition",
 		"scenario"
 	],
 	"name" : "FixedDomainModelWorkbench",

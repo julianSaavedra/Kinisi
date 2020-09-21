@@ -1,9 +1,11 @@
 test objects
 workbench
 
-	| domainModelWorkbench |
+	| domainModelWorkbench workbench |
 	domainModelWorkbench := FixedDomainModelWorkbench
 		with: 1
-		and: (SimulationStateChange with: [ :currentState | currentState * 2 ])
-		by: (SteppingDefinition repeat: 5).
-	^LabWorkbench using: domainModelWorkbench
+		and: (SimulationStateChange with: [ :currentState | currentState * 2 ]).
+	workbench := LabWorkbench using: domainModelWorkbench with: ParticlesSteppingWorkbench default.
+	workbench steppingWorkbench repeat: 5.
+	
+	^workbench

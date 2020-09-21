@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationChange",
+	"category" : "Kinisi-UserInteraction-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"change"
+	],
+	"name" : "SimulationStateDeltaChange",
+	"type" : "normal"
+}

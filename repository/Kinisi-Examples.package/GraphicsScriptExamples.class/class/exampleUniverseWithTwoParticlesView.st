@@ -5,4 +5,4 @@ exampleUniverseWithTwoParticlesView
 	universe := UniverseObservation new.
 	universe newParticleObservation.
 	universe newParticleObservation.
-	(UniverseObservationPresenter on: universe) openWithSpec
+	(UniverseScenarioWorkbenchPresenter on: universe) openWithSpec

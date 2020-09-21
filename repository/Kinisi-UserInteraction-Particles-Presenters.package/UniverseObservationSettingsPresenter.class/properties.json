@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposablePresenter",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-UserInteraction-Particles-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"universeChangeAction",
-		"universeObservation",
-		"settingTabs",
+		"notebook",
+		"workbench",
 		"settings"
 	],
 	"name" : "UniverseObservationSettingsPresenter",

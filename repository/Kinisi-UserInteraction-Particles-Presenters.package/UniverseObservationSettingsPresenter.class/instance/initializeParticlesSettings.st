@@ -2,9 +2,9 @@ initialization
 initializeParticlesSettings
 
 	| setting |
-	setting := UniverseObservationParticlesSettingsPresenter on: universeObservation.
+	setting := UniverseObservationParticlesSettingsPresenter on: workbench.
 	self
-		addTabFor: setting
-		as: 'Particles'
+		addPageFor: setting
+		named: 'Particles'
 		with: #smallObjects
 		performing: [ setting updateSelectedParticleObservation ]

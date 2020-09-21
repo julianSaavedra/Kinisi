@@ -3,7 +3,7 @@ testLabProducesExpectedExperimenResult
 
 	| lab domainModelWorkbench workbench expectedSteps |
 	domainModelWorkbench := CollatzConjectureScenarioWorkbench default.
-	workbench := LabWorkbench using: domainModelWorkbench.
+	workbench := LabWorkbench using: domainModelWorkbench with: CollatzConjectureSteppingWorkbench new.
 	workbench modelWorkbench state: 5.
 	lab := KinisiLab using: workbench.
 

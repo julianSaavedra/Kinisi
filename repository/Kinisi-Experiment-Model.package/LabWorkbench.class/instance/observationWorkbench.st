@@ -1,4 +1,4 @@
-workbenchs
+workbenches
 observationWorkbench
 
 	^observationWorkbench
