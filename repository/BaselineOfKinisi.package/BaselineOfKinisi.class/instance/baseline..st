@@ -27,7 +27,7 @@ baseline: spec
 
 		spec package: 'Kinisi-Examples' with: [ spec requires: #('Aconcagua' 'Roassal3') ].
 		
-		spec package: 'Kinisi-Graphics-Model' with: [ spec requires: 'Roassal2' ].
+		spec package: 'Kinisi-Graphics-Model' with: [ spec requires: 'Roassal3' ].
 		spec package: 'Kinisi-Graphics-Tests' with: [ spec requires: #('Kinisi-Graphics-Model' 'Roassal3') ].	
 		
 		spec package: 'Kinisi-UserInteraction-Model'.
