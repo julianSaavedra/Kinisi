@@ -1,6 +1,6 @@
 specs
 defaultSpec
 
-	^SpecColumnLayout composed
-		add: #settings;
+	^SpBoxLayout newVertical
+		add: #notebook;
 		yourself

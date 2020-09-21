@@ -2,7 +2,7 @@ initialization
 initializeVisualizationSettings
 
 	self
-		addTabFor: (UniverseObservationVisualizationSettingsPresenter on: universeObservation)
-		as: 'Visualization'
+		addPageFor: (UniverseObservationVisualizationSettingsPresenter on: workbench)
+		named: 'Visualization'
 		with: #haloView
 		performing: [ ]

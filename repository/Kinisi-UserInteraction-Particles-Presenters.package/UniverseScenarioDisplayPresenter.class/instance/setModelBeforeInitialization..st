@@ -1,4 +1,4 @@
-initialization
+accessing model
 setModelBeforeInitialization: universeWorkbench
 
 	workbench := universeWorkbench

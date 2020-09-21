@@ -2,16 +2,16 @@ initialization
 initializeWidgets
 
 	| gridVisibilityLabel |
-	background := ColorSettingPresenter on: universeObservation background.
+	background := ColorSettingPresenter on: universeObservation scenario background.
 	background label: 'Background'.
 	background changeModelWith: [:newColor | universeObservation background: newColor ].
 	zoom := UniverseObservationZoomPresenter on: universeObservation.
 	scale := self instantiate: ScalarMeasurePresenter on: self scalePresenterDescription.
-	gridColor := ColorSettingPresenter on: universeObservation gridColor.
+	gridColor := ColorSettingPresenter on: universeObservation scenario gridColor.
 	gridColor label: 'Grid Color'.
 	gridColor changeModelWith: [:newColor | universeObservation gridColor: newColor ].
 	gridVisibility := self newButton.
-	gridVisibilityLabel := universeObservation isGridVisible ifTrue: [ 'Visible Grid' ] ifFalse: [ 'Invisible Grid' ].
+	gridVisibilityLabel := universeObservation scenario isGridVisible ifTrue: [ 'Visible Grid' ] ifFalse: [ 'Invisible Grid' ].
 	gridVisibility label: gridVisibilityLabel.
 	gridVisibility action: [
 		universeObservation isGridVisible

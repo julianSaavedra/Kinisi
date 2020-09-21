@@ -1,4 +1,4 @@
 initialization
-initializePresenter
+connectPresenters
 
 	settings whenUniverseObservationChangeDo: [ view refresh ]

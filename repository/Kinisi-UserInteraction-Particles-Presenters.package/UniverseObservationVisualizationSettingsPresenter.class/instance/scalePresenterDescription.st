@@ -10,7 +10,7 @@ scalePresenterDescription
 		
 	^MeasurePresenterDescription
 		labeled: 'Scale'
-		with: universeObservation scale
+		with: universeObservation scenario scale
 		changingModelWith: [:targetScale | universeObservation scale: targetScale ]
 		and: scaleUnitsArray
 	

@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposablePresenter",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-UserInteraction-Particles-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"view",
-		"settings",
-		"universeObservation"
+		"workbench",
+		"display"
 	],
-	"name" : "UniverseObservationPresenter",
+	"name" : "UniverseScenarioDisplayPresenter",
 	"type" : "normal"
 }

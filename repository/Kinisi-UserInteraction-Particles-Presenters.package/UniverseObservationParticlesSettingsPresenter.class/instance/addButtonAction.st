@@ -1,4 +1,4 @@
 private
 addButtonAction
 
-	universeObservation newParticleObservation
+	universeObservation newParticle

@@ -1,7 +1,7 @@
 initialization
-initializeWidgets
+initializePresenters
 
 	settings := OrderedCollection new.
-	settingTabs := self newTabManager.
+	notebook := self newNotebook.
 	self initializeParticlesSettings.
 	self initializeVisualizationSettings

@@ -6,11 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"universeChangeAction",
-		"notebook",
-		"workbench",
-		"settings"
+		"view",
+		"settings",
+		"workbench"
 	],
-	"name" : "UniverseObservationSettingsPresenter",
+	"name" : "UniverseScenarioWorkbenchPresenter",
 	"type" : "normal"
 }
