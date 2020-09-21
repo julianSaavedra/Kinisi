@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Experiment-Model",
+	"category" : "Kinisi-UserInteraction-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"domainModelWorkbench",
-		"observationWorkbench",
-		"steppingWorkbench"
+		"steppingDefinition"
 	],
-	"name" : "LabWorkbench",
+	"name" : "ParticlesSteppingWorkbench",
 	"type" : "normal"
 }

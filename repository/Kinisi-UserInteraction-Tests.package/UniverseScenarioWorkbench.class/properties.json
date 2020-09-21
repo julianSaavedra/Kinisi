@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scenario",
-		"steppingDefinition"
+		"scenario"
 	],
 	"name" : "UniverseScenarioWorkbench",
 	"type" : "normal"

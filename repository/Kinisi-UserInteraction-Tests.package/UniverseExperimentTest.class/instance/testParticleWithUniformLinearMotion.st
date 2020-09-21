@@ -1,22 +1,16 @@
 tests
 testParticleWithUniformLinearMotion
 
-	| lab domainModelWorkbench workbench expectedSteps particle |
+	| lab domainModelWorkbench workbench particle |
 	domainModelWorkbench := UniverseScenarioWorkbench default.
-	workbench := LabWorkbench using: domainModelWorkbench.
+	workbench := LabWorkbench using: domainModelWorkbench with: ParticlesSteppingWorkbench default.
 	particle := workbench modelWorkbench newParticle.
 	self populateWithInitialStateProperties: particle.
-	domainModelWorkbench
-		steppingBy: resource oneSecond
+	workbench steppingWorkbench
+		stepBy: resource oneSecond
 		over: resource oneSecond * 10.
-
 	lab := KinisiLab using: workbench.
+	
 	lab runExperiment.
-
-	expectedSteps := self expectedSteps.
-	lab lastResult
-		withTimeAndStateDo: [ :step :state | 
-			expectedSteps
-				detect: [ :result | result time = step ]
-				ifFound: [ :matchingResult | self assert: matchingResult value equals: state ]
-				ifNone: [ self fail ] ]
+	
+	self assert: self expectedSteps hasAll: lab lastResult

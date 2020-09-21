@@ -4,5 +4,5 @@ experimentDefinition
 	^ExperimentDefinition
 		startingAt: domainModelWorkbench scenario
 		changingWith: domainModelWorkbench change
-		simulatingBasedOn: domainModelWorkbench steppingDefinition
+		simulatingBasedOn: steppingWorkbench steppingDefinition
 		observingBasedOn: observationWorkbench definition

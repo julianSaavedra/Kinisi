@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-Experiment-Tests",
+	"category" : "Kinisi-CollatzConjecture",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"change",
-		"scenario"
-	],
-	"name" : "FixedDomainModelWorkbench",
+	"instvars" : [ ],
+	"name" : "CollatzConjectureSteppingWorkbench",
 	"type" : "normal"
 }

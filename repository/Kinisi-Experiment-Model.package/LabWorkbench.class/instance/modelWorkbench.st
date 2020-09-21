@@ -1,4 +1,4 @@
-accessing
+workbenches
 modelWorkbench
 
 	^domainModelWorkbench
