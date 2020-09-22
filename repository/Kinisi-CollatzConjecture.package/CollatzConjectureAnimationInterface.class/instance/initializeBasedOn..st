@@ -1,5 +1,7 @@
 initialization
 initializeBasedOn: scenario
 
-	canvas := TRCanvas new.
-	renderer := CollatzConjectureStateRenderer basedOn: scenario
+	canvas := SpRoassalPresenter new.
+	currentObservation := scenario state.
+	renderer := CollatzConjectureStateRenderer basedOn: scenario.
+	canvas script: [:aCanvas | renderer draw: currentObservation on: aCanvas ]

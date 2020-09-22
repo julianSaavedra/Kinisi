@@ -11,5 +11,5 @@ initializeState
 				on: Error
 				do: [ :error | 
 					self showWindowFor: error.
-					state number: workbench state number.
+					state number: workbench scenario state number.
 					false ] ]
