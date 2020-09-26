@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-UserInteraction-Particles-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"universeChangeAction",
+		"notebook",
+		"workbench",
+		"settings"
+	],
+	"name" : "UniverseScenarioSettingsPresenter",
+	"type" : "normal"
+}

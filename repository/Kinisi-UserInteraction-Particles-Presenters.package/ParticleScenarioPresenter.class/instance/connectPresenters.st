@@ -1,0 +1,4 @@
+initialization
+connectPresenters
+
+	properties whenModelChangesDo: self propertiesChangeAction

@@ -1,4 +1,4 @@
-examples - animation
+not working - simulation model migration
 exampleParticleTravelsBasic
 
 	| particleShape particleElement view initialPosition currentPosition animation |

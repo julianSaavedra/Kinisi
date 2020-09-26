@@ -1,13 +1,12 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposablePresenter",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-UserInteraction-Particles-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"currentColor",
-		"label",
 		"list",
 		"modelChangingBlock",
 		"postColorChangeBlock"

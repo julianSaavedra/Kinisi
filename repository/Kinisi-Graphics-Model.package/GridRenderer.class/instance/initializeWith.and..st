@@ -1,7 +1,8 @@
 initialization
 initializeWith: color and: size
 
-	grid := RTGridView new.
+	"grid := RTGridView new.
 	grid
 		color: color;
 		gridSize: size
+"

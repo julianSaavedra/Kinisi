@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"shape",
 		"renderers",
-		"scaleToMovedParticle"
+		"scaleToMovedParticle",
+		"baseShape"
 	],
 	"name" : "ParticleRenderer",
 	"type" : "normal"

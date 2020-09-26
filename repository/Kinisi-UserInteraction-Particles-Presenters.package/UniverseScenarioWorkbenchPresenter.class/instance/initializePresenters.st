@@ -2,7 +2,7 @@ initialization
 initializePresenters
 
 	settings := self
-		instantiate: UniverseObservationSettingsPresenter
+		instantiate: UniverseScenarioSettingsPresenter
 		on: workbench.
 	view := self
 		instantiate: UniverseScenarioDisplayPresenter

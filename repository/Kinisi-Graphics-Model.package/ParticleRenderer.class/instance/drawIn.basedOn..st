@@ -1,14 +1,13 @@
 rendering
-drawIn: view basedOn: particle
+drawIn: canvas basedOn: particle
 
-	| element |
-	element := RTElement new.
-	element model: particle.
-	element addShape: shape.
-	view add: element.
+	| newShape |
+	newShape := baseShape copy.
+	newShape model: particle.
+	canvas addShape: newShape.
 	scaleToMovedParticle ifNotNil: [:scaleToUse |
 		| position |
 		position := particle position.
 		position := (position x * scaleToMovedParticle) @ (position y negated * scaleToMovedParticle).
-		element translateTo: position ].
-	renderers do: [:renderer | renderer drawIn: view basedOn: particle for: element ]
+		newShape position: position ].
+	renderers do: [:renderer | renderer drawIn: canvas basedOn: particle for: newShape ]

@@ -1,4 +1,13 @@
 actions
-drawIn: aView
+drawIn: canvas
 
-	self drawIn: aView movedFromCenterBy: 0@0
+	| origin xAxisEnd yAxisEnd |
+	origin := self originPointIn: canvas.
+	xAxisEnd := self xAxisEndPointIn: canvas.
+	yAxisEnd := self yAxisEndPointIn: canvas.
+
+	self
+		drawAxisFrom: origin
+		to: xAxisEnd
+		and: yAxisEnd
+		in: canvas

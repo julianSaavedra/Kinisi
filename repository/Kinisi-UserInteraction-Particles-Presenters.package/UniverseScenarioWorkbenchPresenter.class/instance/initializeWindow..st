@@ -3,4 +3,4 @@ initializeWindow: aWindowPresenter
 
 	aWindowPresenter
 		title: 'Universe scenario workbench';
-		initialExtent: 1250@750
+		initialExtent: 1250@785

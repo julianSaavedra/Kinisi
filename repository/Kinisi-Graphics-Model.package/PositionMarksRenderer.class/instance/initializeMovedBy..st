@@ -1,4 +1,5 @@
 initialization
 initializeMovedBy: distanceFromCenter
 
-	distance := distanceFromCenter
+	distance := distanceFromCenter.
+	color := Color white

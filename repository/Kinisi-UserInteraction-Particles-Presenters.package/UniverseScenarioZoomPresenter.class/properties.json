@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-UserInteraction-Particles-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"universeObservation",
+		"zoomIn",
+		"zoomOut",
+		"postModelChangeAction"
+	],
+	"name" : "UniverseScenarioZoomPresenter",
+	"type" : "normal"
+}

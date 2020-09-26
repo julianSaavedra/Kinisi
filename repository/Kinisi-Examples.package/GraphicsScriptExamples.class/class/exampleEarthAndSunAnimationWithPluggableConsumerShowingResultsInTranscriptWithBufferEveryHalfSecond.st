@@ -1,4 +1,4 @@
-examples - animation
+not working - simulation model migration
 exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscriptWithBufferEveryHalfSecond
 
 	| endPointConsumer day simulation timeDelta duration buffer reader bufferWriterConsumer |

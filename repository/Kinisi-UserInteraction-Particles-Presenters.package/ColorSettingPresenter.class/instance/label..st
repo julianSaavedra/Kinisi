@@ -1,4 +1,4 @@
-initialization
+API
 label: targetLabel
 
-	label label: targetLabel
+	list label: targetLabel

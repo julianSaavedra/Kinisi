@@ -1,4 +1,4 @@
-examples - animation
+not working - simulation model migration
 exampleBlueAndRedParticlesSimulationWithMonitoring
 
 	| view universe renderer unitProvider meter second monitor monitoringConsumer simulation |

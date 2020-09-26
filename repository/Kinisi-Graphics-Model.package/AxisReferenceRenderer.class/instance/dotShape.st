@@ -1,7 +1,7 @@
 shapes
 dotShape
 
-	^ RTEllipse new
-		borderColor: Color white;
-		color: Color white;
+	^RSEllipse new
+		border: (RSBorder new color: color);
+		color: color;
 		size: 0

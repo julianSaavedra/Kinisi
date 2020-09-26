@@ -1,4 +1,4 @@
-initialization
+API
 whenModelChangesDo: block
 
 	postColorChangeBlock := block

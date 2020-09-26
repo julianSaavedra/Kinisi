@@ -1,4 +1,0 @@
-constants
-defaultAxisSize
-
-	^20

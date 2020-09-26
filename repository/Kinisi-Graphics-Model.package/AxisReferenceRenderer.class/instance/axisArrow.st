@@ -1,7 +1,7 @@
 shapes
 axisArrow
 
-	^ RTArrowedLine new
+	^RSArrowedLine new
 		width: 1;
-		color: Color white;
+		color: color;
 		yourself

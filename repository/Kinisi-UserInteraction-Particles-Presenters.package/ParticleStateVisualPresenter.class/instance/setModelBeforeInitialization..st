@@ -1,4 +1,4 @@
 accessing
-setModelBeforeInitialization: aParticleObservation
+setModelBeforeInitialization: particleScenario
 
-	particleObservation := aParticleObservation
+	particle := particleScenario

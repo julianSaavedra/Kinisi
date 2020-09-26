@@ -2,7 +2,7 @@ asserting
 assertAxisReferencePointsAreMovedBy: expectedMovement fromTheCenterOfCanvasIn: aView
 
 	| canvas axisSize expectedOriginPointPosition expectedXAxisPoint expectedYAxisPoint |
-	axisSize := self defaultAxisSize.
+	axisSize := self axisEndDistance.
 	expectedOriginPointPosition := 0@0 + expectedMovement.
 	expectedXAxisPoint := axisSize@0 + expectedMovement.
 	expectedYAxisPoint := 0@axisSize negated + expectedMovement.

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-UserInteraction-Particles-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"universeObservation",
+		"background",
+		"zoom",
+		"scale",
+		"gridColor",
+		"gridVisibility"
+	],
+	"name" : "UniverseScenarioVisualizationSettingsPresenter",
+	"type" : "normal"
+}

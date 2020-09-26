@@ -1,6 +1,6 @@
 initialization
 colorChangeTo: newColor
 
-	currentColor := newColor.
 	modelChangingBlock value: newColor.
+	currentColor := newColor.
 	postColorChangeBlock value

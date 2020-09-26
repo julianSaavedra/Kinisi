@@ -1,5 +1,5 @@
 accessing model
 refresh
 
-	self drawOn: display morph trachelCanvas.
-	display update
+	self drawOn: display canvas.
+	display refresh
