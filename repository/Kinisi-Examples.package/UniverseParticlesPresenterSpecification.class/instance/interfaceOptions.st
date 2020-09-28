@@ -1,0 +1,4 @@
+accessing
+interfaceOptions
+
+	^InterfaceDefinitionSource new observationInterfaceSpecsForParticles

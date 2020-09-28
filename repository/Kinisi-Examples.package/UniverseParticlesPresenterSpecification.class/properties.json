@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"lab"
+	],
+	"name" : "UniverseParticlesPresenterSpecification",
+	"type" : "normal"
+}

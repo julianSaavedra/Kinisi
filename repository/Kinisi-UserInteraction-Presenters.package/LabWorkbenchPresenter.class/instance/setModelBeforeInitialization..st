@@ -1,5 +1,6 @@
 accessing model
-setModelBeforeInitialization: labWorkbench
+setModelBeforeInitialization: presenterConfiguration
 
-	super setModelBeforeInitialization: labWorkbench.
-	workbench := labWorkbench
+	super setModelBeforeInitialization: presenterConfiguration.
+	workbench := presenterConfiguration workbench.
+	configuration := presenterConfiguration domainSpecification
