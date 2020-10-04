@@ -11,8 +11,8 @@
 		"measureChangeBlock",
 		"name",
 		"label",
-		"xComponent",
-		"yComponent"
+		"componentX",
+		"componentY"
 	],
 	"name" : "VectorMeasurePresenter",
 	"type" : "normal"

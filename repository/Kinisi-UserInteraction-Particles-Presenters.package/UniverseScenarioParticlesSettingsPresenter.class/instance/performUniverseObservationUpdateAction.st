@@ -1,4 +1,4 @@
 private
 performUniverseObservationUpdateAction
 
-	universeObservationUpdateAction value
+	universeUpdateAction value

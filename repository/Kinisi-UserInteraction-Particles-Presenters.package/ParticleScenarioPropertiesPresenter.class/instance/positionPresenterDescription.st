@@ -1,4 +1,4 @@
-description
+private - description
 positionPresenterDescription
 
 	| unitProvider description positionUnitsArray |

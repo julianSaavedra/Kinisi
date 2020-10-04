@@ -7,5 +7,6 @@ initializePresenters
 		selectItem: currentColor;
 		display: [ :selectedColor | selectedColor name ];
 		whenSelectedItemChangedDo: [ :newColor | self colorChangeTo: newColor ].
-	modelChangingBlock := [:newColor |  ].
-	postColorChangeBlock := [  ]
+	modelChangingBlock := [ :newColor |  ].
+	postColorChangeBlock := [  ].
+	self initializeFocusOrder

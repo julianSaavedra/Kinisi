@@ -11,6 +11,6 @@ defaultSpec
 	^SpBoxLayout newVertical
 		spacing: 3;
 		add: buttons height: 30;
-		add: #particleObservationList height: 100;
-		add: #selectedParticleObservation expand: true fill: true padding: 5;
+		add: #particleList height: 100;
+		add: #selectedParticle expand: true fill: true padding: 5;
 		yourself

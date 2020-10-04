@@ -1,4 +1,4 @@
-description
+private - description
 velocityPresenterDescription
 
 	| unitProvider description velocityUnitsArray |

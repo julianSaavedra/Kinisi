@@ -1,4 +1,4 @@
-actions
+rendering
 drawIn: canvas
 
 	| origin xAxisEnd yAxisEnd |

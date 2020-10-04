@@ -1,4 +1,5 @@
-accessing
-setModelBeforeInitialization: particleScenario
+initialization
+setModelBeforeInitialization: particleWorkbench
 
-	particle := particleScenario
+	super setModelBeforeInitialization: particleWorkbench.
+	particle := particleWorkbench

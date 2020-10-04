@@ -3,10 +3,10 @@ testViewCanvasIsSetGreenAsTheUniverseObservationBackground
 
 	| universe renderer green |
 	green := Color green.
-	universe := UniverseObservation new.
+	universe := UniverseScenario new.
 	universe background: green.
 	renderer := UniverseRenderer basedOn: universe.
 
-	renderer drawIn: view basedOn: universe.
+	renderer drawIn: canvas basedOn: universe.
 
-	self assert: view canvas color equals: green
+	self assert: canvas canvas color equals: green

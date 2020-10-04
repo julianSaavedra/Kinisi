@@ -1,4 +1,4 @@
-initialization
+private
 scalePresenterDescription
 
 	| unitProvider scaleUnitsArray |
@@ -10,7 +10,7 @@ scalePresenterDescription
 		
 	^MeasurePresenterDescription
 		labeled: 'Scale'
-		with: universeObservation scenario scale
-		changingModelWith: [:targetScale | universeObservation scale: targetScale ]
+		with: workbench scenario scale
+		changingModelWith: [:targetScale | workbench scale: targetScale ]
 		and: scaleUnitsArray
 	

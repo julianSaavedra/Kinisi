@@ -1,10 +1,7 @@
 initialization
 initializeParticlesSettings
 
-	| setting |
-	setting := UniverseScenarioParticlesSettingsPresenter on: workbench.
 	self
-		addPageFor: setting
+		addPageFor: (UniverseScenarioParticlesSettingsPresenter on: workbench)
 		named: 'Particles'
 		with: #smallObjects
-		performing: [ setting updateSelectedParticleObservation ]

@@ -1,4 +1,4 @@
-actions
+rendering
 drawIn: canvas basedOn: particle for: shape
 
 	self drawXPositionMarkBasedOn: particle position in: canvas.

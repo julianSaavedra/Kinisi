@@ -1,4 +1,4 @@
-test - new model
+test - decorations
 testLabelWithFixTextBananaIsDisplayedWhenRenderingTheParticle
 
 	| renderer labelText label |
@@ -8,8 +8,8 @@ testLabelWithFixTextBananaIsDisplayedWhenRenderingTheParticle
 	
 	self
 		before: #text:
-		in: TRLabelShape
+		in: RSLabel
 		execute: [:receiver :arguments | labelText := arguments first]
-		during: [renderer drawIn: view basedOn: particle].
+		during: [renderer drawIn: canvas basedOn: particle].
 
 	self assert: labelText equals: 'Banana'

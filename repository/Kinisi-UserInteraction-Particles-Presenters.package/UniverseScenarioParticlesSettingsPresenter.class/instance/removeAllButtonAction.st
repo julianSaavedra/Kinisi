@@ -1,4 +1,4 @@
 private
 removeAllButtonAction
 
-	^universeObservation removeAllParticles
+	workbench removeAllParticles

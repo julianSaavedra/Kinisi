@@ -1,4 +1,4 @@
-accessing model
+private
 drawOn: canvas
 
 	| renderer |

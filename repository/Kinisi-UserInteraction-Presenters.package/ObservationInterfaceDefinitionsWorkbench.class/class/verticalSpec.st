@@ -3,9 +3,9 @@ verticalSpec
 
 	| buttons |
 	buttons := SpBoxLayout newHorizontal
-		add: #addDefinition width: 50;
-		add: #removeDefinition width: 50;
-		add: #removeAllDefinitions width: 50;
+		add: #addDefinition;
+		add: #removeDefinition;
+		add: #removeAllDefinitions;
 		yourself.
 		
 	"pane := SpPanedLayout newHorizontal

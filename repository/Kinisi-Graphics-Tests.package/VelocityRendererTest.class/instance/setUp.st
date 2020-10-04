@@ -3,7 +3,7 @@ setUp
 
 	super setUp.
 	velocityRenderer := VelocityRenderer with: Color red.
-	view := RTView new.
+	view := RSCanvas new.
 	particle := PhysicsTestResource new physicalStateWithNonNullVelocity.
-	particleElement := RTEllipse new elementOn: particle.
+	particleElement := RSEllipse new model: particle.
 	view add: particleElement

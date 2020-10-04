@@ -1,4 +1,4 @@
 instance creation
-movedTo: movement
+movedTo: position
 
-	^self new initializeMovedTo: movement
+	^self new initializeMovedTo: position

@@ -1,4 +1,4 @@
-initialization
+API
 definitionOptions: options
 
 	definitionOptions := options

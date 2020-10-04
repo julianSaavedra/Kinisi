@@ -1,4 +1,4 @@
-description
+private - description
 accelerationPresenterDescription
 
 	| unitProvider description accelerationUnitsArray |

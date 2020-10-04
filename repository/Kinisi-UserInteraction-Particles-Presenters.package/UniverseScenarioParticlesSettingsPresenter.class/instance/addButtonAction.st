@@ -1,4 +1,4 @@
 private
 addButtonAction
 
-	universeObservation newParticle
+	workbench newParticle

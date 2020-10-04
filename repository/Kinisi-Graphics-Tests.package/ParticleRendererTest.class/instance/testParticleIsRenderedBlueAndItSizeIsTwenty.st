@@ -1,14 +1,16 @@
-test - new model
+test
 testParticleIsRenderedBlueAndItSizeIsTwenty
 
 	| renderer size |
+
 	size := 20.
 	particle color: Color blue.
 	renderer := ParticleRenderer basedOn: particle with: size.
-		
-	renderer drawIn: view basedOn: particle.
-	
-	self assert: view elements size equals: 1.
-	self assert: view elements first color equals: particle color.
-	self assert: view elements first height equals: size.
-	self assert: view elements first width equals: size 
+
+	renderer drawIn: canvas basedOn: particle.
+
+	self
+		withShapeFor: particle
+		do: [ :shape | 
+			self assert: shape color equals: particle color.
+			self assert: shape extent equals: size @ size ]

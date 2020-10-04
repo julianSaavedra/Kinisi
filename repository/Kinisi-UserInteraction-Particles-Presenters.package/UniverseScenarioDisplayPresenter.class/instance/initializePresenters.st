@@ -1,5 +1,5 @@
-accessing model
+initialization
 initializePresenters
 
-	display := self instantiate: SpRoassalPresenter.
-	display script: [:view | self drawOn: view ]
+	self initializeDisplay.
+	self initializeFocusOrder

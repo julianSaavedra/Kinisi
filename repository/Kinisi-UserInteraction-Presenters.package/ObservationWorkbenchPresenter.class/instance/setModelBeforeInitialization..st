@@ -1,5 +1,6 @@
-accessing model
-setModelBeforeInitialization: observationWorkbench
+initialization
+setModelBeforeInitialization: aSpecification
 
-	super setModelBeforeInitialization: observationWorkbench.
-	workbench := observationWorkbench
+	super setModelBeforeInitialization: specification.
+	workbench := aSpecification workbench observationWorkbench.
+	specification := aSpecification

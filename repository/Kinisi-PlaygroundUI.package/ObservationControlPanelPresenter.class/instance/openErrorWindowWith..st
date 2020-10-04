@@ -1,6 +1,6 @@
 interaction
-openErrorWindowWith: error
+openErrorWindowWith: message
  
 	ErrorDialogWindow new
-		text: error messageText;
+		text: message;
 		open

@@ -1,4 +1,6 @@
 initialization
 setModelBeforeInitialization: universeWorkbench
 
-	workbench := universeWorkbench
+	super setModelBeforeInitialization: universeWorkbench.
+	workbench := universeWorkbench.
+	settings := OrderedCollection new

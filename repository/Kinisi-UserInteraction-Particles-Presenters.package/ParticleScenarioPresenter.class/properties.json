@@ -8,8 +8,8 @@
 	"instvars" : [
 		"properties",
 		"view",
-		"particleObservationUpdatePostAction",
-		"particle"
+		"particle",
+		"particleUpdatePostAction"
 	],
 	"name" : "ParticleScenarioPresenter",
 	"type" : "normal"

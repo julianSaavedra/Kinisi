@@ -1,4 +1,6 @@
 initialization
 connectPresenters
 
-	properties whenModelChangesDo: self propertiesChangeAction
+	properties whenModelChangesDo: [
+		particleUpdatePostAction value.
+		view refresh ]

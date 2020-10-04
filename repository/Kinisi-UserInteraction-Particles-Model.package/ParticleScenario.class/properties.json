@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Particles-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"particle",
+		"color",
+		"universeObservation",
+		"wasRemoved",
+		"isVisible"
+	],
+	"name" : "ParticleScenario",
+	"type" : "normal"
+}

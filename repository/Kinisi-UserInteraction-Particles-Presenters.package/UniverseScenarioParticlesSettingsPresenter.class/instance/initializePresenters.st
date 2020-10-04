@@ -3,4 +3,5 @@ initializePresenters
 
 	self initializeButtons.
 	self initializeParticleObservationList.
-	self setFocusOrder
+	self initializeSelectedParticle.
+	self initializeFocusOrder

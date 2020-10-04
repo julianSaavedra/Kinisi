@@ -5,4 +5,4 @@ initializePresenters
 	self initializeColorWidgets.
 	self initializeVisibilityWidgets.
 	self initializeMeasureWidgets.
-	self setFocusOrder
+	self initializeFocusOrder

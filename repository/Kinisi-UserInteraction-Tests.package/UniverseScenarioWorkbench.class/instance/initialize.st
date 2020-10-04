@@ -2,4 +2,4 @@ acessing
 initialize
 
 	super initialize.
-	scenario := UniverseObservation default
+	scenario := UniverseScenario default

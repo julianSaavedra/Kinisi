@@ -1,4 +1,0 @@
-initialization
-workbench
-
-	^lab workbench

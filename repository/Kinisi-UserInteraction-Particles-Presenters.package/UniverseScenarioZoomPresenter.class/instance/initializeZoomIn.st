@@ -1,7 +1,8 @@
 initialization
 initializeZoomIn
 
-	zoomIn := self
-		newButtonWith: Smalltalk ui icons glamorousZoomIn
-		and: [ universeObservation zoomIn.
-			self doModelChangeAction ]
+	zoomIn := self newButton.
+	zoomIn
+		icon: Smalltalk ui icons glamorousZoomIn;
+		action: [ workbench zoomIn ];
+		whenActionPerformedDo: [ self performModelChangeAction ]

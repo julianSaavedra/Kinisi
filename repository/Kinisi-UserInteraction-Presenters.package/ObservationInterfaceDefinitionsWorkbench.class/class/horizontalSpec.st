@@ -1,20 +1,16 @@
 specs
 horizontalSpec
 
-	| pane buttons |
-
+	| buttons |
 	buttons := SpBoxLayout newVertical
 		add: #addDefinition height: 25;
 		add: #removeDefinition height: 25;
 		add: #removeAllDefinitions height: 25;
 		yourself.
-
-	pane := SpPanedLayout newHorizontal
-		add: #definitions;
-		add: #selectedDefinition;
-		yourself.
-
+		
 	^SpBoxLayout newHorizontal
 		add: buttons expand: false;
-		add: pane withConstraints: [ :contraints | contraints padding: 5 ];
+		add: buttons height: 30;
+		add: #definitions width: 100;
+		add: #selectedDefinition expand: true fill: true padding: 5;
 		yourself

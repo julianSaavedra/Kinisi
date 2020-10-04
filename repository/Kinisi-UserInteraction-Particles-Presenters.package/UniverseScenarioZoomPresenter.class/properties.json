@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"universeObservation",
 		"zoomIn",
 		"zoomOut",
-		"postModelChangeAction"
+		"postModelChangeAction",
+		"workbench"
 	],
 	"name" : "UniverseScenarioZoomPresenter",
 	"type" : "normal"

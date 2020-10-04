@@ -1,4 +1,0 @@
-accessing - scenario
-scenarioPresenterClass
-
-	^UniverseScenarioWorkbenchPresenter

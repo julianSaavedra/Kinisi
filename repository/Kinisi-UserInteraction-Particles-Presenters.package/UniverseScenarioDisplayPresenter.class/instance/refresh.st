@@ -1,5 +1,4 @@
-accessing model
+API
 refresh
 
-	self drawOn: display canvas.
 	display refresh

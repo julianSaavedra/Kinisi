@@ -1,4 +1,4 @@
-test - new model
+test
 testParticleInPositionOneMetersInXAndYIsRenderedAtPointTwentyNegativeTwentyIfScaleFactorIsTwentyPerMeter
 
 	| renderer |
@@ -6,6 +6,6 @@ testParticleInPositionOneMetersInXAndYIsRenderedAtPointTwentyNegativeTwentyIfSca
 	renderer renderPositionWith: self twentyOverMeter.
 	particle position: testResource oneMeterInAllComponentsVector.
 
-	renderer drawIn: view basedOn: particle.
+	renderer drawIn: canvas basedOn: particle.
 
-	self assertElementIn: 20 @ 20 negated hasModel: particle
+	self assertShapeFor: particle isIn: 20 @ 20 negated

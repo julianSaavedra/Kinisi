@@ -1,7 +1,7 @@
 initialization
 initializePresenters
 
-	settings := OrderedCollection new.
-	notebook := self newNotebook.
+	self initializeNotebook.
 	self initializeParticlesSettings.
-	self initializeVisualizationSettings
+	self initializeVisualizationSettings.
+	self initializeFocusOrder

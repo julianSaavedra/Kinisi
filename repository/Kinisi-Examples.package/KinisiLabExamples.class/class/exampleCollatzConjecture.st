@@ -1,4 +1,4 @@
 examples
 exampleCollatzConjecture
 
-	self openLabBasedOn: LabPresenterConfiguration forCollatzConjecture
+	self openLabBasedOn: LabPresenterSpecification forCollatzConjecture

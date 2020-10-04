@@ -8,11 +8,11 @@
 	"instvars" : [
 		"addButton",
 		"removeButton",
-		"particleObservationList",
-		"selectedParticleObservation",
-		"universeObservation",
-		"universeObservationUpdateAction",
-		"removeAllButton"
+		"removeAllButton",
+		"universeUpdateAction",
+		"particleList",
+		"selectedParticle",
+		"workbench"
 	],
 	"name" : "UniverseScenarioParticlesSettingsPresenter",
 	"type" : "normal"

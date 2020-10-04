@@ -1,14 +1,7 @@
 private
 updateSelectedParticleObservation
 
-	particleObservationList selection selectedItem
-		ifNil:
-			[ selectedParticleObservation := self instantiate: SpRoassalPresenter ]
-		ifNotNil: [ :selection | 
-			selectedParticleObservation := self
-				instantiate: ParticleScenarioPresenter
-				on: selection.
-			selectedParticleObservation
-				onChangeDo: universeObservationUpdateAction.
-			self rebuild.
-			particleObservationList selectItem: selection ]
+	particleList selectedItems
+		ifEmpty: [ self resetSelectedParticle ]
+		ifNotEmpty:[:selectedParticles | self setSelectedParticleWith: selectedParticles first].
+	self update

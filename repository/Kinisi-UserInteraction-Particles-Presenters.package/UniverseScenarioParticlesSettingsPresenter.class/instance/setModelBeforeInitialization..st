@@ -1,4 +1,5 @@
 initialization
-setModelBeforeInitialization: anUniverseObservation
+setModelBeforeInitialization: universeWorkbench
 
-	universeObservation := anUniverseObservation
+	super setModelBeforeInitialization: universeWorkbench.
+	workbench := universeWorkbench

@@ -14,15 +14,15 @@ buildUsing: builder
 		withSeparatorAfter;
 		with: [ (builder item: #NewCollatzLab)
 				target: menu;
-				selector: #newCollatzLab;
+				selector: #openCollatzLab;
 				help: 'Open lab for Collatz.';
 				order: 2;
 				"keyText: 'Ctrl+K+N';"
 				iconName: #workspace.
-			(builder item: #NewParticlesWorkbench)
+			(builder item: #NewParticlesLab)
 				target: menu;
-				selector: #newParticlesWorkbench;
-				help: 'Open a new particles workbench.';
+				selector: #openParticlesLab;
+				help: 'Open a lab for Particles.';
 				order: 2;
 				"keyText: 'Ctrl+K+N';"
-					iconName: #page ]
+				iconName: #workspace ]

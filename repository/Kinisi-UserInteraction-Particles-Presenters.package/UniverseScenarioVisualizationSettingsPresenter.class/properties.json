@@ -6,12 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"universeObservation",
 		"background",
 		"zoom",
 		"scale",
 		"gridColor",
-		"gridVisibility"
+		"gridVisibility",
+		"workbench"
 	],
 	"name" : "UniverseScenarioVisualizationSettingsPresenter",
 	"type" : "normal"

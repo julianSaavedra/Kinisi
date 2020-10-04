@@ -3,6 +3,6 @@ setUp
 
 	super setUp.
 	testResource := PhysicsTestResource new.
-	view := RTView new.	
-	particle := UniverseObservation new newParticleObservation.
+	canvas := RSCanvas new.	
+	particle := UniverseScenario new newParticleObservation.
 	particle position: testResource oneMeterInXVector.

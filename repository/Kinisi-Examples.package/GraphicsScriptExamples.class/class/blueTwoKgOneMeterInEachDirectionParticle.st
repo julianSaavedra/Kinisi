@@ -3,7 +3,7 @@ blueTwoKgOneMeterInEachDirectionParticle
 
 	| universe particle testResource |
 	testResource := PhysicsTestResource new.
-	universe := UniverseObservation new.
+	universe := UniverseScenario new.
 	particle := universe newParticleObservation.
 	particle
 		particleName: #ParticleA;

@@ -1,4 +1,4 @@
-shapes
+private - shapes
 dotShape
 
 	^RSEllipse new

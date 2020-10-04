@@ -9,5 +9,5 @@ drawIn: canvas basedOn: particle
 		| position |
 		position := particle position.
 		position := (position x * scaleToMovedParticle) @ (position y negated * scaleToMovedParticle).
-		newShape position: position ].
+		newShape translateTo: position ].
 	renderers do: [:renderer | renderer drawIn: canvas basedOn: particle for: newShape ]

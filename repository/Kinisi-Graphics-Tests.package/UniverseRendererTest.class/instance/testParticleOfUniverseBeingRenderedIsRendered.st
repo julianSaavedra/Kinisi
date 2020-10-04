@@ -3,12 +3,12 @@ testParticleOfUniverseBeingRenderedIsRendered
 
 	| universeDraft particleDraft renderer |
 
-	universeDraft := UniverseObservation new.
+	universeDraft := UniverseScenario new.
 	particleDraft := universeDraft newParticleObservation.
 	renderer := UniverseRenderer basedOn: universeDraft.
 
-	renderer drawIn: view basedOn: universeDraft.
+	renderer drawIn: canvas basedOn: universeDraft.
 
 	self
-		assert: view elements first model particleName
+		assert: canvas shapes first model particleName
 		equals: particleDraft particleName

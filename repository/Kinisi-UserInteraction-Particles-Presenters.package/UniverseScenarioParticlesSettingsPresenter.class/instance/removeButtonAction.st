@@ -1,5 +1,5 @@
 private
 removeButtonAction
 
-	particleObservationList selectedItem ifNotNil: [:selection |
-		selection removeYourselfFromUniverse ].
+	particleList selection selectedItems
+		do: [:particle | particle removeYourselfFromUniverse ]

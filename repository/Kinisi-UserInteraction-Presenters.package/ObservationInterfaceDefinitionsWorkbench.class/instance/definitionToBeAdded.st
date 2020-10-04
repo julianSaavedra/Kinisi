@@ -1,4 +1,4 @@
-initialization
+private
 definitionToBeAdded
 
 	^PopupChoiceDialogWindow

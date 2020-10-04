@@ -1,4 +1,4 @@
-accessing model
+initialization
 setModelBeforeInitialization: observationWorkbench
 
 	super setModelBeforeInitialization: observationWorkbench.

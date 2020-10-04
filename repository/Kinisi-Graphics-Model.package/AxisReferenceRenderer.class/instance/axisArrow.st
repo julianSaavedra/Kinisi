@@ -1,4 +1,4 @@
-shapes
+private - shapes
 axisArrow
 
 	^RSArrowedLine new

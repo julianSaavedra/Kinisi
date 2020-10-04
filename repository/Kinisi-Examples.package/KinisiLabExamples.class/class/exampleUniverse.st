@@ -1,4 +1,4 @@
 examples
 exampleUniverse
 
-	self openLabBasedOn: LabPresenterConfiguration forUniverseParticles
+	self openLabBasedOn: LabPresenterSpecification forUniverseParticles
