@@ -1,10 +1,10 @@
 test
 testViewCanvasIsSetGreenAsTheUniverseObservationBackground
 
-	| universe renderer green |
+	| green universe renderer |
 	green := Color green.
-	universe := UniverseScenario new.
-	universe background: green.
+	universeWorkbench background: green.
+	universe := universeWorkbench scenario.
 	renderer := UniverseRenderer basedOn: universe.
 
 	renderer drawIn: canvas basedOn: universe.

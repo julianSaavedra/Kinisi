@@ -4,5 +4,5 @@ setUp
 	super setUp.
 	testResource := PhysicsTestResource new.
 	canvas := RSCanvas new.	
-	particle := UniverseScenario new newParticleObservation.
+	particle := UniverseScenarioWorkbench default newParticle.
 	particle position: testResource oneMeterInXVector.

@@ -1,10 +1,10 @@
 support
-withVelocityEdgeFor: element do: block
+withVelocityEdgeFor: shape do: block
 
-	| particleElementConnectedEdges |
-	particleElementConnectedEdges := element connectedEdges.
+	| particleConnectedEdges |
+	particleConnectedEdges := shape connectedEdges.
 	self
-		assert: particleElementConnectedEdges size = 1
+		assert: particleConnectedEdges size = 1
 		description: 'More than one edge; not possible to figure out velocity element'.
-	block value: particleElementConnectedEdges first.
+	block value: particleConnectedEdges first.
 	

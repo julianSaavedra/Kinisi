@@ -3,4 +3,8 @@ testAxisReferenceIsDrawnInTheOriginOfTheCanvas
 
 	| renderer |
 	renderer := AxisReferenceRenderer inOrigin.
-	self assertNoErrorIsRaisedWhenRenderingWith: renderer
+	
+	renderer drawIn: canvas.
+	
+	self withShapeFor: 'origin' do: [:originShape |
+		self assert: originShape position isZero ]

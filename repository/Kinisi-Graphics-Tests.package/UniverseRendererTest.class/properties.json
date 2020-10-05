@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"canvas"
+		"canvas",
+		"universeWorkbench"
 	],
 	"name" : "UniverseRendererTest",
 	"type" : "normal"

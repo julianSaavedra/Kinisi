@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Kinisi-PlaygroundUI",
+	"category" : "Kinisi-PlaygroundGraphic",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"testResource",
-		"view",
-		"particle"
+		"particleElement"
 	],
-	"name" : "ParticleRendererTest_Roassal2",
+	"name" : "PositionMarksRendererTest_Roassal2",
 	"type" : "normal"
 }

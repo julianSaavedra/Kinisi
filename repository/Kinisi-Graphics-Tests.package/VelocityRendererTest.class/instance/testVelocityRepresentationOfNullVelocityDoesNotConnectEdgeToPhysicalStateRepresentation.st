@@ -3,8 +3,8 @@ testVelocityRepresentationOfNullVelocityDoesNotConnectEdgeToPhysicalStateReprese
 	
 	particle := PhysicsTestResource new physicalStateWithNullVelocity. 
 	velocityRenderer
-		drawIn: view
+		drawIn: canvas
 		basedOn: particle
-		for: particleElement.
+		for: particleShape.
 
-	self assert: particleElement connectedEdges isEmpty.
+	self assert: particleShape connectedEdges isEmpty.

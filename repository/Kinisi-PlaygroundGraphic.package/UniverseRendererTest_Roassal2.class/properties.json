@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Kinisi-PlaygroundUI",
+	"category" : "Kinisi-PlaygroundGraphic",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "GridRendererTest_Roassal2",
+	"instvars" : [
+		"canvas"
+	],
+	"name" : "UniverseRendererTest_Roassal2",
 	"type" : "normal"
 }

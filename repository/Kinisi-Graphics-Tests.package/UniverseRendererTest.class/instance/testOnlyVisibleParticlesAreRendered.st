@@ -1,12 +1,12 @@
 test
 testOnlyVisibleParticlesAreRendered
 
-	| universe renderer visiblesParticles invisibleParticle |
-	universe := UniverseScenario new.
-	visiblesParticles := OrderedCollection with: universe newParticleObservation with: universe newParticleObservation.
+	| visiblesParticles invisibleParticle universe renderer |
+	visiblesParticles := OrderedCollection with: universeWorkbench newParticle with: universeWorkbench newParticle.
 	visiblesParticles do: [:particle | particle makeYourselfVisible ].
-	invisibleParticle := universe newParticleObservation.
+	invisibleParticle := universeWorkbench newParticle.
 	invisibleParticle makeYourselfInvisible.
+	universe := universeWorkbench scenario.
 	renderer := UniverseRenderer basedOn: universe.
 
 	renderer drawIn: canvas basedOn: universe.

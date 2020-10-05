@@ -1,10 +1,10 @@
 test
 testNameOfParticleInUniverseBeingRenderedIsDisplayed
 
-	| universe particle renderer labelText |
-	universe := UniverseScenario new.
-	particle := universe newParticleObservation.
+	| particle renderer labelText universe |
+	particle := universeWorkbench newParticle.
 	particle particleName: 'ParticleABCDE'.
+	universe := universeWorkbench scenario.
 	renderer := UniverseRenderer basedOn: universe.
 
 	self

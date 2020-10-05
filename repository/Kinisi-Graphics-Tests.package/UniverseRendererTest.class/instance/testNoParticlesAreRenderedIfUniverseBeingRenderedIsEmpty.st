@@ -1,11 +1,11 @@
 test
 testNoParticlesAreRenderedIfUniverseBeingRenderedIsEmpty
 
-	| universe renderer |
-	universe := UniverseScenario new.
+	| renderer universe |
+	universe := universeWorkbench scenario.
 	renderer := UniverseRenderer basedOn: universe.
 
-	self assert: universe particles isEmpty.
+	self assertEmpty: universe particles.
 	renderer drawIn: canvas basedOn: universe.
 
 	self assert: canvas shapes isEmpty

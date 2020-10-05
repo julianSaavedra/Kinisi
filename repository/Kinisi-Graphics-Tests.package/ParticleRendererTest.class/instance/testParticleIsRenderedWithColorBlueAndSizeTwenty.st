@@ -1,8 +1,7 @@
 test
-testParticleIsRenderedBlueAndItSizeIsTwenty
+testParticleIsRenderedWithColorBlueAndSizeTwenty
 
 	| renderer size |
-
 	size := 20.
 	particle color: Color blue.
 	renderer := ParticleRenderer basedOn: particle with: size.
