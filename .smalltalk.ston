@@ -12,7 +12,7 @@ SmalltalkCISpec {
    #packages : ['Kinisi-Playground', 'Kinisi-PlaygroundGraphic', 'Kinisi-PlaygroundUI' ]
     },
   #coverage : {
-   #packages : ['Kinisi-.*-Model']
+   #packages : ['Kinisi-*']
   }
  }
 }
