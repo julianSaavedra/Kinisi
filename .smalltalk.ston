@@ -7,15 +7,13 @@ SmalltalkCISpec {
   }
  ],
  #testing : {
-  #include:{
-   #packages : ['Kinisi-*-Tests']
-  },
   #exclude : {
-   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTests ],
+   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTest ],
    #packages : ['Kinisi-Playground', 'Kinisi-PlaygroundGraphic', 'Kinisi-PlaygroundUI' ]
     },
   #coverage : {
-   #packages : ['Kinisi-*-Model']
+   #packages : ['Kinisi-Physics-Model', 'Kinisi-General-Model', 'Kinisi-Simulation-Model', 'Kinisi-Observation-Model', 'Kinisi-Observation-Tests', 'Kinisi-Experiment-Model' ,
+'Kinisi-Graphics-Model', 'Kinisi-UserInteraction-Model', 'Kinisi-UserInteraction-Particles-Model']
   }
  }
 }
