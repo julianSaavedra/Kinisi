@@ -11,7 +11,7 @@ SmalltalkCISpec {
    #packages : ['Kinisi-*-Tests']
   },
   #exclude : {
-   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTests ],
+   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTest ],
    #packages : ['Kinisi-Playground', 'Kinisi-PlaygroundGraphic', 'Kinisi-PlaygroundUI' ]
     },
   #coverage : {
