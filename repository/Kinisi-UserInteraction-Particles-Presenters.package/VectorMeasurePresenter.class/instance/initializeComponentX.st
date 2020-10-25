@@ -3,4 +3,10 @@ initializeComponentX
 
 	componentX := self
 		instantiate: ScalarMeasurePresenter
-		on: self componentXPresenterDescription
+		on: measure x.
+	componentX
+		label: 'X';
+		units: unitOptions;
+		changeModelWith: [:newComponentX |
+			self updateModelWith: newComponentX and: measure y]
+	

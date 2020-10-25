@@ -1,9 +1,7 @@
 tests
 testParticleWithUniformLinearMotion
 
-	| lab domainModelWorkbench workbench particle |
-	domainModelWorkbench := UniverseScenarioWorkbench default.
-	workbench := LabWorkbench using: domainModelWorkbench with: ParticlesSteppingWorkbench default.
+	| lab particle |
 	particle := workbench modelWorkbench newParticle.
 	self populateWithInitialStateProperties: particle.
 	workbench steppingWorkbench

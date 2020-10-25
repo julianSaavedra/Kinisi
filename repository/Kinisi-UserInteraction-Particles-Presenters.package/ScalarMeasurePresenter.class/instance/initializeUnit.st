@@ -1,4 +1,4 @@
-initialization
+private
 initializeUnit
 
 	unit := self newDropList.

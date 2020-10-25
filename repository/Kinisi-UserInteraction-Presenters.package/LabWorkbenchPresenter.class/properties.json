@@ -9,7 +9,8 @@
 		"workbench",
 		"observation",
 		"scenario",
-		"configuration"
+		"configuration",
+		"stepping"
 	],
 	"name" : "LabWorkbenchPresenter",
 	"type" : "normal"

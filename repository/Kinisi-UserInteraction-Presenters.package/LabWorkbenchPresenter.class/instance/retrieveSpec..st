@@ -1,4 +1,4 @@
-accessing model
+APi
 retrieveSpec: aSelector
 
 	^configuration workbenchLayout

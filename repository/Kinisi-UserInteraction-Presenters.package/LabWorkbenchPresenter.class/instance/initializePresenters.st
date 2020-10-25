@@ -1,5 +1,6 @@
-accessing model
+initialization
 initializePresenters
 
 	self initializeScenarioWorkbench.
-	self initializeObservationWorkbench
+	self initializeObservationWorkbench.
+	self initializeSteppingWorkbench

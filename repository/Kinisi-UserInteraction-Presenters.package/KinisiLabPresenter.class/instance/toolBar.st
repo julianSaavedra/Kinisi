@@ -1,4 +1,4 @@
-initialization
+widgets
 toolBar
 
 	| toolBar |

@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"change",
-		"scenario"
+		"scenario",
+		"domain"
 	],
 	"name" : "FixedDomainModelWorkbench",
 	"type" : "normal"

@@ -1,4 +1,4 @@
-test - stepping definition
+test - migrated
 testStepDurationCannotBeGreaterThanTotalDuration
 
 	self

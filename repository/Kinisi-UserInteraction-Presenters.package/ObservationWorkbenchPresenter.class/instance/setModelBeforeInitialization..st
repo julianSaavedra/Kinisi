@@ -1,4 +1,4 @@
-initialization
+accessing model
 setModelBeforeInitialization: aSpecification
 
 	super setModelBeforeInitialization: specification.

@@ -1,4 +1,4 @@
-accessing model
+initialization
 initializeObservationWorkbench
 
 	observation := self

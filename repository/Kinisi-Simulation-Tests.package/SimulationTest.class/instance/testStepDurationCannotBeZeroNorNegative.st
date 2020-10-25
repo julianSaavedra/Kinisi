@@ -1,4 +1,4 @@
-test - stepping definition
+test - migrated
 testStepDurationCannotBeZeroNorNegative
 
 	#(-1 0) do: [:invalidStepDuration |

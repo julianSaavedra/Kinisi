@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delta",
+		"endingMode",
+		"endingModeAndDeltaConsistencyValidator"
+	],
+	"name" : "SteppingModeValidator",
+	"type" : "normal"
+}

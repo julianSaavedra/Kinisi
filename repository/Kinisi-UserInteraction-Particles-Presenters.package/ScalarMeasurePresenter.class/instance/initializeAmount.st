@@ -1,7 +1,7 @@
 initialization
 initializeAmount
 
-	amount := self newTextInput.
+	amount := self newNumberInput.
 	amount text: measure amount asString.
 	amount
 		whenTextIsAcceptedDo: [ :newAmountText | 

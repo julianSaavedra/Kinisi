@@ -1,4 +1,4 @@
-initialization
+accessing model
 setModelBeforeInitialization: presenterConfiguration
 
 	super setModelBeforeInitialization: presenterConfiguration.

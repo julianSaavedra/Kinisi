@@ -1,4 +1,4 @@
-accessing model
+initialization
 initializeScenarioWorkbench
 
 	scenario := self

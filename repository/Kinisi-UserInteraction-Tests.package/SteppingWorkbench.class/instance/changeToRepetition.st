@@ -1,0 +1,4 @@
+configuration
+changeToRepetition
+
+	steppingMode endingMode changeToRepetitionWith: self
