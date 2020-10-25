@@ -3,10 +3,11 @@ initializePresenters
 
 	specification deltaStepUnits
 		ifEmpty: [
-			delta := self instantiate: SpLabelledTextInput on: workbench deltaMode.
+			delta := self instantiate: SpLabelledTextInput.
+			delta text: workbench deltaMode asString.
 			delta
 				label: 'Delta';
-				whenTextChangedDo: [ :newDelta | workbench delta: newDelta ] ]
+				whenTextChangedDo: [ :newDelta | workbench delta: newDelta asNumber ] ]
 		ifNotEmpty: [
 			delta := self instantiate: ScalarMeasurePresenter on: workbench deltaMode.
 			delta
@@ -22,7 +23,13 @@ initializePresenters
 		display: [:modeHelper | modeHelper modeName ];
 		whenSelectedItemChanged: [ :selectedHelper | 
 			currentHelper change: workbench to: selectedHelper.
-			workbench accept: self ].
-
+			workbench accept: self.
+			self update ].
 	workbench accept: self.
+
+	specification isFixed ifTrue: [
+		delta enabled: false.
+		modeList enabled: false.
+		selectedMode enabled: false].
+	
 	self setFocusOrder

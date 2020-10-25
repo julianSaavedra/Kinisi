@@ -1,10 +1,8 @@
 as yet unclassified
 visitAsUniverseDomain: domain
 
-	| unitProvider deltaUnits helpers |
+	| unitProvider |
 	unitProvider := UnitProvider soleInstance.
-	deltaUnits := { unitProvider second. unitProvider minute. unitProvider hour. unitProvider day}.
-	helpers := { TotalDurationEndingModeHelper new. RepetitionEndingModeHelper new }.
 	^SteppingWorkbenchSpecification
-		with: deltaUnits
-		and: helpers
+		with: { unitProvider second. unitProvider minute. unitProvider hour. unitProvider day}
+		and: { TotalDurationEndingModeHelper new. RepetitionEndingModeHelper new }
