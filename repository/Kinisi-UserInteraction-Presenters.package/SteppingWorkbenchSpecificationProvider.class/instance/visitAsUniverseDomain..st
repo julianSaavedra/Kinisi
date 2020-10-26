@@ -1,8 +1,8 @@
-as yet unclassified
+private
 visitAsUniverseDomain: domain
 
 	| unitProvider |
 	unitProvider := UnitProvider soleInstance.
 	^SteppingWorkbenchSpecification
 		with: { unitProvider second. unitProvider minute. unitProvider hour. unitProvider day}
-		and: { TotalDurationEndingModeHelper new. RepetitionEndingModeHelper new }
+		using: { TotalDurationEndingModeHelper new. RepetitionEndingModeHelper new }

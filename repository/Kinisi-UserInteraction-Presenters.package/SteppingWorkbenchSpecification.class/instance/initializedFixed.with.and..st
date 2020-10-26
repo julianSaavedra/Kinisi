@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializedFixed: isFixed with: units and: targetHelpers
 
 	deltaStepUnits := units.

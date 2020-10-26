@@ -1,4 +1,4 @@
-instance creation
+private
 visitAsStateConditionEndingMode: mode
 
 	currentHelper := helperMap at: ConditionEndingModeHelper modeName.

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"totalDuration",
+		"stepDuration"
+	],
+	"name" : "SimulationConfiguration",
+	"type" : "normal"
+}

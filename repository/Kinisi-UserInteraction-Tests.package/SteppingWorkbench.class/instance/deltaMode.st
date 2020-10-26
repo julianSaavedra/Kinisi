@@ -1,4 +1,0 @@
-accessing
-deltaMode
-
-	^steppingMode delta

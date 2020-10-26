@@ -1,4 +1,0 @@
-configuration
-changeToTotalDuration
-
-	steppingMode endingMode changeToTotalDurationWith: self

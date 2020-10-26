@@ -1,6 +1,6 @@
 initialization
-initializeWith: steppingDefinition from: anInitialState changingBy: changeSpecification
+initializeWith: steppingMode from: anInitialState changingBy: changeSpecification
  
-	stepper := SimulationStepper basedOn: steppingDefinition.
+	stepper := SimulationStepper basedOn: steppingMode.
 	initialState := anInitialState.
 	change := changeSpecification

@@ -1,4 +1,4 @@
-as yet unclassified
+providing
 specification
 
 	^targetDomain accept: self

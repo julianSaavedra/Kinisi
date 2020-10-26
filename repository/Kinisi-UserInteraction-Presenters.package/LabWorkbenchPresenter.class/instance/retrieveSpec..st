@@ -1,4 +1,4 @@
-APi
+API
 retrieveSpec: aSelector
 
 	^configuration workbenchLayout

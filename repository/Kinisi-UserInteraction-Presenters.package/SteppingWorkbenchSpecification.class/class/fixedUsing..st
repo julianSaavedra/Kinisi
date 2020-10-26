@@ -1,4 +1,4 @@
 instance creation
 fixedUsing: helpers
  
-	^self fixedWith: {} and: helpers
+	^self fixed: true with: { } using: helpers

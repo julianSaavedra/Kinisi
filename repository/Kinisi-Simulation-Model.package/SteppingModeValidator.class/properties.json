@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delta",
+		"endingModeAndDeltaConsistencyValidator"
+	],
+	"name" : "SteppingModeValidator",
+	"type" : "normal"
+}

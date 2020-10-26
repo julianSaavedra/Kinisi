@@ -8,7 +8,7 @@ run
 		andWhenFinishedDo: [ observation close ].
 
 	simulation := Simulation
-		with: definition steppingDefinition
+		with: definition steppingMode
 		from: definition initialState
 		changingBy: definition change.
 	

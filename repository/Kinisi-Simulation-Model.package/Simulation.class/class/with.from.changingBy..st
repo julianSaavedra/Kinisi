@@ -1,7 +1,7 @@
 instance creation
-with: steppingDefinition from: initialState changingBy: changeSpecification
+with: steppingMode from: initialState changingBy: changeSpecification
  
 	^self new
-		initializeWith: steppingDefinition
+		initializeWith: steppingMode
 		from: initialState
 		changingBy: changeSpecification

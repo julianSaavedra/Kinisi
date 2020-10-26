@@ -1,4 +1,4 @@
-API
+initialization
 initializePresenters
 
 	name := self newLabel.

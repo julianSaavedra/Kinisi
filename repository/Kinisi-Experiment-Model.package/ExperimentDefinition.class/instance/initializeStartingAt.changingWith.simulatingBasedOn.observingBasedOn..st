@@ -3,5 +3,5 @@ initializeStartingAt: domainScenario changingWith: aChange simulatingBasedOn: an
 
 	scenario := domainScenario.
 	change := aChange.
-	steppingDefinition := anSteppingMode.
+	steppingMode := anSteppingMode.
 	observationDefinition := anObservationDefinition

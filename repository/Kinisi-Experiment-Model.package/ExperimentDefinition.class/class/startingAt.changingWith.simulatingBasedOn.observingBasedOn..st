@@ -1,8 +1,8 @@
 instance creation
-startingAt: initialState changingWith: change simulatingBasedOn: steppingDefinition observingBasedOn: observationDefinition
+startingAt: initialState changingWith: change simulatingBasedOn: steppingMode observingBasedOn: observationDefinition
 
 	^self new
 		initializeStartingAt: initialState
 		changingWith: change
-		simulatingBasedOn: steppingDefinition
+		simulatingBasedOn: steppingMode
 		observingBasedOn: observationDefinition
