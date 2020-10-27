@@ -4,12 +4,12 @@ testNotNullVelocityIsRenderedInView
 	self deny: particle velocity isZero.
 	
 	velocityRenderer
-		drawIn: view
+		drawIn: canvas
 		basedOn: particle
-		for: particleElement.
+		for: particleShape.
 
 	self
-		withVelocityEdgeFor: particleElement
+		withVelocityEdgeFor: particleShape
 		do: [:velocityinView |
-			self assert: velocityinView model key equals: particleElement model.
+			self assert: velocityinView model key equals: particleShape model.
 			self assert: velocityinView model value equals: #Velocity ]

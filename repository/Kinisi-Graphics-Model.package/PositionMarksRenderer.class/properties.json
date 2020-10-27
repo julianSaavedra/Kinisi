@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"distance"
+		"distance",
+		"color"
 	],
 	"name" : "PositionMarksRenderer",
 	"type" : "normal"

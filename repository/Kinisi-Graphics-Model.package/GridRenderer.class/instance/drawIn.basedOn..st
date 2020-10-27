@@ -1,4 +1,5 @@
-actions
-drawIn: aView basedOn: configuration
+rendering
+drawIn: canvas basedOn: configurationBANANA
 
-	aView @ grid
+	self toDoFlag.
+	self flag: 'is configruation used? should be removed'

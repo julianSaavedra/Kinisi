@@ -1,0 +1,4 @@
+initialization
+initializeSelectedDefinition
+
+	self resetSelectedDefinition

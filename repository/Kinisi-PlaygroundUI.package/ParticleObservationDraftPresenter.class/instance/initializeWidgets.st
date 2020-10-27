@@ -1,7 +1,7 @@
 initialization
 initializeWidgets
 
-	draftObservation := ParticleObservationPresenter on: particleObservation.
+	draftObservation := ParticleScenarioPresenter on: particleObservation.
 	saveButton := self newButton.
 	saveButton label: 'Save'.
 	saveButton action: [ particleObservation save. saveAction value. self window close ].

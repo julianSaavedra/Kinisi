@@ -1,0 +1,4 @@
+accessing
+domain
+
+	^domainModelWorkbench domain

@@ -1,0 +1,4 @@
+examples
+exampleUniverse
+
+	self openLabBasedOn: LabPresenterSpecification forUniverseParticles

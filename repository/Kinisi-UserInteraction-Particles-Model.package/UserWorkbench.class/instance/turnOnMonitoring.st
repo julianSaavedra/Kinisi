@@ -1,4 +1,0 @@
-configuring
-turnOnMonitoring
-
-	monitoring := true

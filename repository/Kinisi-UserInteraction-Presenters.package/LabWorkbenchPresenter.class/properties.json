@@ -8,7 +8,9 @@
 	"instvars" : [
 		"workbench",
 		"observation",
-		"scenario"
+		"scenario",
+		"configuration",
+		"stepping"
 	],
 	"name" : "LabWorkbenchPresenter",
 	"type" : "normal"

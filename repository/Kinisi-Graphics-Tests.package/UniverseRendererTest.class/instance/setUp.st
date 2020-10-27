@@ -2,4 +2,5 @@ test
 setUp
 
 	super setUp.
-	view := RTView new
+	canvas := RSCanvas new.
+	universeWorkbench := UniverseScenarioWorkbench default

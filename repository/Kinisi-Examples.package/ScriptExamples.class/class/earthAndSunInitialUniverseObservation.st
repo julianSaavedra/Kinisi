@@ -4,7 +4,7 @@ earthAndSunInitialUniverseObservation
 	| testResource unitProvider universe earth sun |
 	unitProvider := UnitProvider soleInstance.
 	testResource := PhysicsTestResource new.
-	universe := UniverseObservation new.
+	universe := UniverseScenario new.
 	
 	earth := universe newParticleObservation.
 	earth

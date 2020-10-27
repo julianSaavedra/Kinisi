@@ -1,4 +1,4 @@
-accessing
+API
 whenModelChangesDo: aBlock
 
 	postModelChangeAction := aBlock.

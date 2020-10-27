@@ -1,4 +1,6 @@
-initialization
-setModelBeforeInitialization: aLab
+accessing model
+setModelBeforeInitialization: presenterConfiguration
 
-	lab := aLab
+	super setModelBeforeInitialization: presenterConfiguration.
+	lab := presenterConfiguration lab.
+	configuration := presenterConfiguration

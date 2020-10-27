@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposablePresenter",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-UserInteraction-Particles-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -11,8 +11,8 @@
 		"measureChangeBlock",
 		"name",
 		"label",
-		"xComponent",
-		"yComponent"
+		"componentX",
+		"componentY"
 	],
 	"name" : "VectorMeasurePresenter",
 	"type" : "normal"

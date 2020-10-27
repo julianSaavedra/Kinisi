@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepResultForwardingPolicy",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"threshold",
+		"currentPackageCount",
+		"forwarder"
+	],
+	"name" : "SimulationPackagesForwardingPolicy",
+	"type" : "normal"
+}

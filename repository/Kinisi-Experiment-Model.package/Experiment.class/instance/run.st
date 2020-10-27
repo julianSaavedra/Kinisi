@@ -7,10 +7,7 @@ run
 		processWith: [:step | observation process: step ]
 		andWhenFinishedDo: [ observation close ].
 
-	simulation := Simulation
-		with: definition steppingDefinition
-		from: definition initialState
-		changingBy: definition change.
+	simulation := Simulation basedOn: definition.
 	
 	"simulationProcess := [simulation runInforming:consumer.
 	result := simulation result] newProcess.

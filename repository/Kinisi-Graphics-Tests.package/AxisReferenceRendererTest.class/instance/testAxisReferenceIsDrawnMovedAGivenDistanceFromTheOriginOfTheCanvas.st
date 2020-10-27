@@ -1,11 +1,10 @@
 tests
 testAxisReferenceIsDrawnMovedAGivenDistanceFromTheOriginOfTheCanvas
 
-	| view |
-	view := RTView new.
-
-	AxisReferenceRenderer new drawIn: view movedFromCenterToLeftBottomCornerBy: 100.
+	| renderer |
+	renderer := AxisReferenceRenderer movedFromCenterBy: 50.
 	
-	self
-		assertAxisReferencePointsAreMovedBy: (100 negated @ 100)
-		fromTheCenterOfCanvasIn: view
+	renderer drawIn: canvas.
+	
+	self withShapeFor: 'origin' do: [:originShape |
+		self assert: originShape position equals: -50@50 ]

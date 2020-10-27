@@ -1,4 +1,4 @@
-initialization
+private
 updateModelWith: newXComponent and: newYComponent
 
 	| newMeasure |

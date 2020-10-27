@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposablePresenter",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-UserInteraction-Particles-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -12,7 +12,6 @@
 		"unit",
 		"measureChangeBlock",
 		"unitOptions",
-		"label",
 		"postModelChangeAction"
 	],
 	"name" : "ScalarMeasurePresenter",

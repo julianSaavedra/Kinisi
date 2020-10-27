@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationEndCondition",
+	"category" : "Kinisi-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modelCondition"
+	],
+	"name" : "StateBasedSimulationEndCondition",
+	"type" : "normal"
+}

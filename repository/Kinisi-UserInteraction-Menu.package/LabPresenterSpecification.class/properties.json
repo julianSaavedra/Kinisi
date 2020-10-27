@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Menu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"windowTitle",
+		"windowsInitialExtent",
+		"domainSpecification",
+		"lab"
+	],
+	"name" : "LabPresenterSpecification",
+	"type" : "normal"
+}

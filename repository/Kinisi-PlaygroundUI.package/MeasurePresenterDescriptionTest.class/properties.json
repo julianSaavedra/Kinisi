@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-PlaygroundUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"meter",
+		"oneMeter",
+		"options",
+		"label",
+		"changeBlock"
+	],
+	"name" : "MeasurePresenterDescriptionTest",
+	"type" : "normal"
+}

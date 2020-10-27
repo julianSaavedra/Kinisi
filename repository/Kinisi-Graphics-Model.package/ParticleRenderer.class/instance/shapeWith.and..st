@@ -1,7 +1,7 @@
 initialization
 shapeWith: color and: size
 
-	^RTEllipse new
+	^RSEllipse new
 		color: color;
 		size: size;
 		yourself

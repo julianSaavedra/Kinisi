@@ -1,10 +1,8 @@
-graphic - nice to have
+graphic - decorations
 exampleAxisReferenceCenteredInView
 
-	| view viewSize |
-	view := RTView new.
-	view canvas color: Color black.
-	viewSize := 250@250.
-	AxisReferenceRenderer new drawIn: view.
-	
-	view openInWindowSized: viewSize titled: 'Axis Reference - Center'
+	self
+		openWindowNamed: 'Axis Reference - Center'
+		inCanvasDraw: [:canvas | 
+			canvas color: Color black.
+			AxisReferenceRenderer inOrigin drawIn: canvas ]

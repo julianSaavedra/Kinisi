@@ -1,11 +1,5 @@
-actions
-drawIn: aView basedOn: particle for: particleElement
+rendering
+drawIn: canvas basedOn: particle for: shape
 
-	self
-		drawXPositionMarkBasedOn: particle position
-		in: aView
-		movedFromCenterBy: distance.
-	self
-		drawYPositionMarkBasedOn: particle position
-		in: aView
-		movedFromCenterBy: distance
+	self drawXPositionMarkBasedOn: particle position in: canvas.
+	self drawYPositionMarkBasedOn: particle position in: canvas

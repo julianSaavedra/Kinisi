@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"endingMode",
+		"repetitions"
+	],
+	"name" : "RepetitionEndingModeSpresenter",
+	"type" : "normal"
+}

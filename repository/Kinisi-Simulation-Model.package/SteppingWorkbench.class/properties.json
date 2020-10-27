@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Simulation-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"steppingMode",
+		"domainModelWorkbench"
+	],
+	"name" : "SteppingWorkbench",
+	"type" : "normal"
+}

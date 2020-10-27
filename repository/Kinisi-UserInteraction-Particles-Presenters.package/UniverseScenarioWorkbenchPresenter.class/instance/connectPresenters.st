@@ -1,4 +1,4 @@
 initialization
 connectPresenters
 
-	settings whenUniverseObservationChangeDo: [ view refresh ]
+	settings whenModelChangesDo: [ view refresh ]

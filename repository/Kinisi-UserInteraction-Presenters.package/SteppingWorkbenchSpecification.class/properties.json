@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"deltaStepUnits",
+		"helpers",
+		"fixed"
+	],
+	"name" : "SteppingWorkbenchSpecification",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
-test - new model
+test
 testParticlePositionScaleCannotBeNegative
 
 	| renderer |

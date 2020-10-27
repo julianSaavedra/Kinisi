@@ -1,5 +1,5 @@
 initialization
-initializeBasedOn: steppingDefinition
+initializeBasedOn: steppingMode
  
-	delta := steppingDefinition stepDelta.
-	endCondition := steppingDefinition endCondition
+	delta := steppingMode delta.
+	endCondition := (StepperEndConditionResolver for: steppingMode) resolve

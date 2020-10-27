@@ -1,9 +1,10 @@
 private
-drawLabelIn: aView for: axisName using: oneDimensionPosition movedTo: aPoint
+drawLabelIn: canvas for: axis using: oneDimensionPosition movedTo: point
 
-	| labelMarkerPoint markLabel |
-	markLabel := self labelFor: axisName with: oneDimensionPosition.
-	labelMarkerPoint := self dotShapeElementOn: markLabel.
-	aView add: labelMarkerPoint.
-	labelMarkerPoint @ RTLabeled.
-	labelMarkerPoint translateTo: aPoint
+	| baseShape text |
+	baseShape := self dotShape.
+	text := self labelTextFor: axis with: oneDimensionPosition.
+	baseShape model: text.
+	self setLabelOn: baseShape.
+	canvas add: baseShape.
+	baseShape translateTo: point

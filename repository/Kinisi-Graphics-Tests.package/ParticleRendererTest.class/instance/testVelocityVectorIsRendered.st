@@ -1,4 +1,4 @@
-test - new model
+test - decorations
 testVelocityVectorIsRendered
 
 	| renderer velocityWasRendered |
@@ -11,6 +11,6 @@ testVelocityVectorIsRendered
 		before: #drawIn:basedOn:for:
 		in: VelocityRenderer
 		execute: [:receiver :arguments | velocityWasRendered := true]
-		during: [renderer drawIn: view basedOn: particle].
+		during: [renderer drawIn: canvas basedOn: particle].
 		
 	self assert: velocityWasRendered

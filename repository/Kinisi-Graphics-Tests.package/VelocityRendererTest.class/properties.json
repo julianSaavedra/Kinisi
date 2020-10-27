@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"view",
-		"particleElement",
 		"velocityRenderer",
-		"particle"
+		"particle",
+		"particleShape",
+		"canvas"
 	],
 	"name" : "VelocityRendererTest",
 	"type" : "normal"

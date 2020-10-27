@@ -1,8 +1,5 @@
-accessing model
+initialization
 initializePresenters
 
-	| canvas |
-	display := self newMorph.
-	canvas := TRCanvas new.
-	self drawOn: canvas.
-	display morph: canvas buildMorph
+	self initializeDisplay.
+	self initializeFocusOrder

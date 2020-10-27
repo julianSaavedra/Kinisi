@@ -1,8 +1,10 @@
-example - UI
+not working - Graphics migration
 exampleUniverseWithTwoParticlesView
 
 	| universe |
-	universe := UniverseObservation new.
-	universe newParticleObservation.
-	universe newParticleObservation.
+	universe := UniverseScenarioWorkbench default.
+	universe
+		newParticle;
+		newParticle.
+
 	(UniverseScenarioWorkbenchPresenter on: universe) openWithSpec

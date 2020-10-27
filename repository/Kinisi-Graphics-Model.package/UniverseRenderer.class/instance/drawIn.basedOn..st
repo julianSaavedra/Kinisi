@@ -1,9 +1,9 @@
 actions
-drawIn: view basedOn: universe
+drawIn: canvas basedOn: universe
 
-	view canvas color: background.
+	canvas color: background.
 	universe particles do: [:particleObservation | 
 		renderersMapping
 			at: particleObservation particleName
-			ifPresent: [:renderer | renderer drawIn: view basedOn: particleObservation ]].
-	gridRenderer ifNotNil: [ gridRenderer drawIn: view basedOn: nil ]
+			ifPresent: [:renderer | renderer drawIn: canvas basedOn: particleObservation ]].
+	gridRenderer ifNotNil: [ gridRenderer drawIn: canvas basedOn: nil ]

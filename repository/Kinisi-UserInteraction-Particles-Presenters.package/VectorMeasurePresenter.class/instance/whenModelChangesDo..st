@@ -1,5 +1,5 @@
-accessing
+API
 whenModelChangesDo: aBlock
 
-	xComponent whenModelChangesDo: aBlock.
-	yComponent whenModelChangesDo: aBlock
+	componentX whenModelChangesDo: aBlock.
+	componentY whenModelChangesDo: aBlock

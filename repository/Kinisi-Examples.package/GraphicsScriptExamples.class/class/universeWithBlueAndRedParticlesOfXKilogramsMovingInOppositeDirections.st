@@ -9,7 +9,7 @@ universeWithBlueAndRedParticlesOfXKilogramsMovingInOppositeDirections
 	"oneMeterPerSecondVelocity := MeasureVector y: 1.82678406 with: unitProvider standardVelocityUnit."
 	oneTon := unitProvider kilogram with: 1e11.
 	
-	universe := UniverseObservation new.
+	universe := UniverseScenario new.
 	blueDraft := universe newParticleObservation.
 	blueDraft
 		color: Color blue;

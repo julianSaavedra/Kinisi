@@ -1,4 +1,4 @@
-test - new model
+test - decorations
 testNameOfParticleBeingRenderedIsDisplayed
 
 	| renderer labelText |
@@ -7,8 +7,8 @@ testNameOfParticleBeingRenderedIsDisplayed
 	
 	self
 		before: #text:
-		in: TRLabelShape
+		in: RSLabel
 		execute: [:receiver :arguments | labelText := arguments first]
-		during: [renderer drawIn: view basedOn: particle].
+		during: [renderer drawIn: canvas basedOn: particle].
 		
 	self assert: labelText equals: particle particleName

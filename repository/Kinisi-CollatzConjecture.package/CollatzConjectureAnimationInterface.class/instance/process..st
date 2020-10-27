@@ -1,4 +1,5 @@
 action
 process: observation 
 
-	renderer draw: observation value on: canvas
+	currentObservation := observation value.
+	canvas refresh

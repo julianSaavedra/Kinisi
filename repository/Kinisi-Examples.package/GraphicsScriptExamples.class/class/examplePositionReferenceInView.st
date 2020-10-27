@@ -1,4 +1,4 @@
-example - UI
+deprecated
 examplePositionReferenceInView
 
 	| view viewSize physicalState particleShape physicalStateElement |

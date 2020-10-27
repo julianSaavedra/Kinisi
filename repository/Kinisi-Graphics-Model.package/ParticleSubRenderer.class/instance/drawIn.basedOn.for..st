@@ -1,4 +1,4 @@
 rendering
-drawIn: view basedOn: particle for: particleElement
+drawIn: canvas basedOn: particle for: shape
 
 	self subclassResponsibility

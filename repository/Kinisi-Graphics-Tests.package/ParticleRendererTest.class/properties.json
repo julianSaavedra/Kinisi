@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"testResource",
-		"view",
-		"particle"
+		"particle",
+		"canvas"
 	],
 	"name" : "ParticleRendererTest",
 	"type" : "normal"

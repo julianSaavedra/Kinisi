@@ -5,5 +5,5 @@ newButtonLabeled: label with: iconName doing: action
 		iconName: iconName;
 		label: label;
 		action: [ action
-				on: Error do: [ :error | self openErrorWindowWith: error ] ];
+				on: Error do: [ :error | self openErrorWindowWith: error messageText ] ];
 		yourself

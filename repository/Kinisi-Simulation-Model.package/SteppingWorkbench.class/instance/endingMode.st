@@ -1,0 +1,4 @@
+accessing
+endingMode
+
+	^steppingMode endingMode

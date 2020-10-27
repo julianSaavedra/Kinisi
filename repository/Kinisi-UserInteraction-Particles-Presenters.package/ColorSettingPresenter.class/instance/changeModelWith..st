@@ -1,4 +1,4 @@
-configuring
+API
 changeModelWith: block
 
 	modelChangingBlock := block

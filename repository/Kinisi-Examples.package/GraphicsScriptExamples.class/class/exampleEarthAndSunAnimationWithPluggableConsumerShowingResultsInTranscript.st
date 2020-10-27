@@ -1,4 +1,4 @@
-examples - animation
+not working - simulation model migration
 exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 
 	| consumer day simulation timeDelta duration |

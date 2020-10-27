@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"position",
+		"color"
+	],
 	"name" : "AxisReferenceRenderer",
 	"type" : "normal"
 }

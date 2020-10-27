@@ -1,4 +1,0 @@
-private
-removeAllButtonAction
-
-	^universeObservation removeAllParticles

@@ -1,4 +1,0 @@
-configuring
-turnOffMonitoring
-
-	monitoring := false

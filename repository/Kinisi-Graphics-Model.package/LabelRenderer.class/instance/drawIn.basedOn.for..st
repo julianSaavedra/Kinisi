@@ -1,7 +1,7 @@
 rendering
-drawIn: view basedOn: particle for: particleElement
+drawIn: canvas basedOn: particle for: shape
 
 	| label |
-	label := RTLabeled new.
+	label := RSLabeled new.
 	label text: text.
-	particleElement addInteraction: label
+	label onShape: shape

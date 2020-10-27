@@ -2,6 +2,6 @@ initialization
 initializeWindow: aWindowPresenter
 
 	aWindowPresenter
-		title: 'Lab';
+		title: configuration windowTitle;
 		toolBar: self toolBar;
-		initialExtent: 850@400
+		initialExtent: configuration windowInitialExtent

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SteppingEndingModeHelper",
+	"category" : "Kinisi-UserInteraction-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ConditionEndingModeHelper",
+	"type" : "normal"
+}

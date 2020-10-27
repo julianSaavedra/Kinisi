@@ -1,4 +1,4 @@
-examples - animation
+not working - simulation model migration
 exampleEarthAndSunAnimation
 
 	| view viewSize day simulation timeDelta duration monitor monitoringConsumer universe renderer |

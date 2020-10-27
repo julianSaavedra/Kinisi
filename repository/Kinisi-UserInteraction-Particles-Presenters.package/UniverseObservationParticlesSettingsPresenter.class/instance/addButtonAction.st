@@ -1,4 +1,0 @@
-private
-addButtonAction
-
-	universeObservation newParticle

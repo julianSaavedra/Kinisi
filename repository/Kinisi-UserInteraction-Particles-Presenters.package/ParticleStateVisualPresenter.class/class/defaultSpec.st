@@ -1,6 +1,6 @@
 specs
 defaultSpec
 
-	^SpecLayout composed
+	^SpBoxLayout newVertical
 		add: #view;
 		yourself

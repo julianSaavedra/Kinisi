@@ -11,7 +11,8 @@
 		"periodAmount",
 		"periodUnit",
 		"periodUnitTranslator",
-		"interfaceDefinitions"
+		"interfaceDefinitions",
+		"specification"
 	],
 	"name" : "ObservationWorkbenchPresenter",
 	"type" : "normal"

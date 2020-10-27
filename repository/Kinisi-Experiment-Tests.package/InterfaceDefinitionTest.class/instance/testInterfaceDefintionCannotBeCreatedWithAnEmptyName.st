@@ -2,7 +2,6 @@ tests
 testInterfaceDefintionCannotBeCreatedWithAnEmptyName
 
 	| spec |
-
 	spec := PluggableInterfaceSpec
 		onStartDo: [ ]
 		with: [:observation |  ]

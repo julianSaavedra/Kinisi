@@ -1,11 +1,10 @@
 tests
 testAxisReferenceIsDrawnInTheOriginOfTheCanvas
 
-	| view |
-	view := RTView new.	
-
-	AxisReferenceRenderer new drawIn: view.
+	| renderer |
+	renderer := AxisReferenceRenderer inOrigin.
 	
-	self
-		assertAxisReferencePointsAreMovedBy: 0@0
-		fromTheCenterOfCanvasIn: view
+	renderer drawIn: canvas.
+	
+	self withShapeFor: 'origin' do: [:originShape |
+		self assert: originShape position isZero ]
