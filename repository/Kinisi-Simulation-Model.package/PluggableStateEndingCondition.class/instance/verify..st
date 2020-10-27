@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 verify: state
  
 	^conditionBlock value: state
