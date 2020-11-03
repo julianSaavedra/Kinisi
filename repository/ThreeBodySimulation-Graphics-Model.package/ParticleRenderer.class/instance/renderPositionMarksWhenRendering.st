@@ -1,4 +1,0 @@
-configuring
-renderPositionMarksWhenRendering
-
-	shouldRenderPositionMarks := true

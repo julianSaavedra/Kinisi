@@ -1,4 +1,0 @@
-monitoring
-terminate
-
-	finishAction value

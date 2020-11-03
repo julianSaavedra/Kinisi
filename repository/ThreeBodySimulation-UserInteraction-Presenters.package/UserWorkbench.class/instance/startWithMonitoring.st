@@ -1,4 +1,0 @@
-actions
-startWithMonitoring
-
-	self startWithMonitoringAlmostVersionWithMonitor

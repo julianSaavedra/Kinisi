@@ -1,4 +1,0 @@
-instanceCreation
-real
-
-	^RealSimulationStepResultBuffer new

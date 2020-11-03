@@ -1,4 +1,0 @@
-data examples
-earthAndSunSimulationResult
-
-	^ScriptExamples exampleEarthAndSunSimulation

@@ -1,4 +1,0 @@
-model access
-stepDuration
-
-	^stepDuration

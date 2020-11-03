@@ -1,4 +1,0 @@
-initialization
-scale
-
-	^scale

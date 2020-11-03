@@ -1,4 +1,0 @@
-proxy
-pragmas
-
-	^wrappedMethod pragmas

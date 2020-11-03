@@ -1,4 +1,0 @@
-private
-refillParticleObservationList
-
-	particleObservationList items: universeObservation particles

@@ -1,4 +1,0 @@
-accessing
-setModelBeforeInitialization: anUniverseObservation
-
-	universeObservation := anUniverseObservation

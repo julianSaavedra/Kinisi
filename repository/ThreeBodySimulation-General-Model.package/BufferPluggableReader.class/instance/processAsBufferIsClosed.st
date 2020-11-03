@@ -1,4 +1,0 @@
-actions
-processAsBufferIsClosed
-
-	bufferIsClosed value
