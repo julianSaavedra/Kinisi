@@ -1,16 +1,11 @@
 test - decorations
 testVelocityVectorIsRendered
 
-	| renderer velocityWasRendered |
+	| renderer |
 	particle velocity: (testResource velocityVectorWithAllComponentsWithAmount: 1).
 	renderer := ParticleRenderer basedOn: particle with: 10.
 	renderer renderVelocityWith: Color blue.
-	
-	velocityWasRendered := false.
-	self
-		before: #drawIn:basedOn:for:
-		in: VelocityRenderer
-		execute: [:receiver :arguments | velocityWasRendered := true]
-		during: [renderer drawIn: canvas basedOn: particle].
 		
-	self assert: velocityWasRendered
+	self
+		shouldnt: [ renderer drawIn: canvas basedOn: particle ]
+		raise: Error
