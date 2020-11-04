@@ -1,4 +1,0 @@
-initialization
-next
-
-	^results removeFirst

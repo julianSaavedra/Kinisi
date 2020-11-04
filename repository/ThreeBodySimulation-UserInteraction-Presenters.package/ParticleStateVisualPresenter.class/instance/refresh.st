@@ -1,4 +1,0 @@
-actions
-refresh
-
-	view refresh

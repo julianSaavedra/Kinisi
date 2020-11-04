@@ -1,4 +1,0 @@
-initialization
-setModelBeforeInitialization: aParticleObservation
-
-	particleObservation := aParticleObservation

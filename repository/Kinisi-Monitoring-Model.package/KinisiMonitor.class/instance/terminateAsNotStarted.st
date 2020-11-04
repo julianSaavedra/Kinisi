@@ -1,4 +1,0 @@
-private
-terminateAsNotStarted
-
-	self changeToTerminated

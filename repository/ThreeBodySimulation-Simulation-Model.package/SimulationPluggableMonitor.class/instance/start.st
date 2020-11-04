@@ -1,4 +1,0 @@
-monitoring
-start
-
-	startAction value

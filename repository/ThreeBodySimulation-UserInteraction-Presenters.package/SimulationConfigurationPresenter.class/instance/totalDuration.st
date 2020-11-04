@@ -1,4 +1,0 @@
-model access
-totalDuration
-
-	^totalDuration

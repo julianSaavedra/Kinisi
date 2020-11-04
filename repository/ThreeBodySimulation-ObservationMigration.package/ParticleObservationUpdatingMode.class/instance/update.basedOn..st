@@ -1,4 +1,0 @@
-action
-update: particleObservation basedOn: targetParticleObservation
-
-	particleObservation updateUniverseWith: targetParticleObservation

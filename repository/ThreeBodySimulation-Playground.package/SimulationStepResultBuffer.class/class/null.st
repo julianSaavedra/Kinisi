@@ -1,4 +1,0 @@
-instanceCreation
-null
-
-	^NullSimulationStepResultBuffer new

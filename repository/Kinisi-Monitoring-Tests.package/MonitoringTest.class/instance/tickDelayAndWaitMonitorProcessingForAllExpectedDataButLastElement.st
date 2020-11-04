@@ -1,4 +1,0 @@
-support
-tickDelayAndWaitMonitorProcessingForAllExpectedDataButLastElement
-
-	self tickDelayAndWaitMonitorProcessingForAllIn: allDataToBeMonitored allButLast

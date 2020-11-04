@@ -1,4 +1,0 @@
-private
-nextPackageAsWhenClosed
-
-	^self nextPackageOrPreviousOneIfNothingNew

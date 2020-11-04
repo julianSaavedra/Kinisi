@@ -1,4 +1,0 @@
-accessing
-velocity
-
-	^particleState velocity

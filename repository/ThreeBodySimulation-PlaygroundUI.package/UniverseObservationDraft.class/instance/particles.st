@@ -1,4 +1,0 @@
-accessing
-particles
-
-	^particleDrafts copy

@@ -1,4 +1,0 @@
-accessing
-acceleration
-
-	^particleState acceleration

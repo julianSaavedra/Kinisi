@@ -1,4 +1,0 @@
-initialization
-label
-
-	^label

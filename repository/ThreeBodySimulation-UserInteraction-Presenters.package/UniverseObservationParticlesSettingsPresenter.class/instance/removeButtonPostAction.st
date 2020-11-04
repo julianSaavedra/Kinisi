@@ -1,5 +1,0 @@
-private
-removeButtonPostAction
-
-	self resetParticleObservationList.
-	self performUniverseObservationUpdateAction
