@@ -1,5 +1,5 @@
 rendering
-draw: state on: canvas
+drawIn: canvas basedOn: state
 
 	canvas color: background.
 	shape text: state number asString.

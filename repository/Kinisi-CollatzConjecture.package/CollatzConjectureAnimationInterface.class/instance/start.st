@@ -1,4 +1,0 @@
-action
-start
-
-	canvas openWithSpec

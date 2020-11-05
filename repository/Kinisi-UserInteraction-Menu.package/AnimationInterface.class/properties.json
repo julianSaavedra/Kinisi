@@ -6,10 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"canvas",
+		"renderer",
 		"currentObservation",
-		"renderer"
+		"canvas",
+		"extent"
 	],
-	"name" : "UniverseAnimationInterface",
+	"name" : "AnimationInterface",
 	"type" : "normal"
 }

@@ -1,8 +1,8 @@
-as yet unclassified
+action
 start
 
 	canvas openWithSpec.
 	canvas withWindowDo: [:window |
 		window
 			title: 'Animation';
-			extent: 1200@700].
+			extent: extent].
