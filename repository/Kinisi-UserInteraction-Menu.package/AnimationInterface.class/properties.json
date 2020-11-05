@@ -1,15 +1,16 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-CollatzConjecture",
+	"category" : "Kinisi-UserInteraction-Menu",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"canvas",
 		"renderer",
-		"currentObservation"
+		"currentObservation",
+		"canvas",
+		"extent"
 	],
-	"name" : "CollatzConjectureAnimationInterface",
+	"name" : "AnimationInterface",
 	"type" : "normal"
 }

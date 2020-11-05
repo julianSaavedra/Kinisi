@@ -1,7 +1,7 @@
 definition - all
 observationInterfaceSpecsForParticles
 	
-	| transcriptSpec transcriptDefinition |
+	| transcriptSpec transcriptDefinition animationDefinition |
 	transcriptSpec := PluggableInterfaceSpec
 		onStartDo: [ Transcript clear; open ]
 		with: [:observation |
@@ -21,5 +21,6 @@ observationInterfaceSpecsForParticles
 						cr ] ]
 		andWhenFinishedDo: [ Transcript show: 'END of Particles simulation'; cr ].
 	transcriptDefinition := InterfaceDefinition named: 'Transcript - Position' with: transcriptSpec.
-
-	^Array 	with: transcriptDefinition
+	animationDefinition := InterfaceDefinition named: 'Animation' with: UniverseAnimationInterfaceSpec new.
+	
+	^Array 	with: transcriptDefinition with: animationDefinition
