@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Physics-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"testResource",
+		"unitProvider"
+	],
+	"name" : "UniverseChangeTest",
+	"type" : "normal"
+}

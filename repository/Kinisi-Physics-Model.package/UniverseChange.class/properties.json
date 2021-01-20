@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Physics-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"initialState",
+		"delta",
+		"acceleration",
+		"environment"
+	],
+	"name" : "UniverseChange",
+	"type" : "normal"
+}

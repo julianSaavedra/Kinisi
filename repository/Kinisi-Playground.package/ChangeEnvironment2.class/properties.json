@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"components",
+		"componentsMap"
+	],
+	"name" : "ChangeEnvironment2",
+	"type" : "normal"
+}

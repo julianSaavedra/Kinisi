@@ -25,7 +25,7 @@ exampleEarthAndSunAnimation
 	duration := day with: 365.
 	simulation := Simulation
 		startingWith: universe universeState
-		changingBy: [:stepDuration :currentState | (UniverseStateChange from: currentState during: stepDuration) finalState ]
+		changingBy: [:stepDuration :currentState | (UniverseGravitationalChange from: currentState during: stepDuration) finalState ]
 		over: timeDelta
 		during: duration
 		informingStepsTo: monitoringConsumer.
