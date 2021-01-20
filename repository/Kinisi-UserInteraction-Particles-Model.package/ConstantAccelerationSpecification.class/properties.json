@@ -1,18 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ChangeComponentSpecification",
 	"category" : "Kinisi-UserInteraction-Particles-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"particle",
-		"color",
-		"universeObservation",
-		"wasRemoved",
-		"isVisible",
-		"changeSpecifications"
+		"acceleration",
+		"name"
 	],
-	"name" : "ParticleScenario",
+	"name" : "ConstantAccelerationSpecification",
 	"type" : "normal"
 }

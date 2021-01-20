@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scenario"
+		"scenario",
+		"allChangeComponents"
 	],
 	"name" : "UniverseScenarioWorkbench",
 	"type" : "normal"

@@ -5,14 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"particle",
-		"color",
-		"universeObservation",
-		"wasRemoved",
-		"isVisible",
-		"changeSpecifications"
-	],
-	"name" : "ParticleScenario",
+	"instvars" : [ ],
+	"name" : "ChangeComponentSpecification",
 	"type" : "normal"
 }

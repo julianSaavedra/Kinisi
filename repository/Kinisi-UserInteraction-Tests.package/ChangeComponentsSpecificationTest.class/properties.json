@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"workbench",
-		"resource"
+		"resource",
+		"particle"
 	],
-	"name" : "UniverseScenarioTest",
+	"name" : "ChangeComponentsSpecificationTest",
 	"type" : "normal"
 }
