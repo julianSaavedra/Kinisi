@@ -1,0 +1,4 @@
+initialization
+initializeSelectedParticleChangeSpecifications
+
+	self cleanSelectedParticleChangeSpecifications
