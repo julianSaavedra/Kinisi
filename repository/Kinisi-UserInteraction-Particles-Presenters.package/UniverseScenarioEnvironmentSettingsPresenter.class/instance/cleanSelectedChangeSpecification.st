@@ -1,0 +1,4 @@
+private
+cleanSelectedChangeSpecification
+
+	selectedChangeSpecification := self newNullPresenter

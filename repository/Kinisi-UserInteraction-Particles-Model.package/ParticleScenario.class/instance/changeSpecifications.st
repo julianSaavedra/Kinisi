@@ -1,0 +1,4 @@
+accessing
+changeSpecifications
+
+	^changeSpecifications values

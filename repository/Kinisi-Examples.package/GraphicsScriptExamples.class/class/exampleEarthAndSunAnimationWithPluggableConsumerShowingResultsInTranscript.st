@@ -42,7 +42,7 @@ exampleEarthAndSunAnimationWithPluggableConsumerShowingResultsInTranscript
 	simulation := Simulation
 		startingWith: self earthAndSunInitialUniverseObservation universeState
 		changingBy: [ :stepDuration :currentState | 
-			(UniverseStateChange from: currentState during: stepDuration)
+			(UniverseGravitationalChange from: currentState during: stepDuration)
 				finalState ]
 		over: timeDelta
 		during: duration

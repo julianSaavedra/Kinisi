@@ -10,7 +10,8 @@
 		"color",
 		"universeObservation",
 		"wasRemoved",
-		"isVisible"
+		"isVisible",
+		"changeSpecifications"
 	],
 	"name" : "ParticleScenario",
 	"type" : "normal"

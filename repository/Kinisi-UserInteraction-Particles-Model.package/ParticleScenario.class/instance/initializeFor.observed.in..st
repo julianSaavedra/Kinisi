@@ -5,4 +5,5 @@ initializeFor: observedParticle observed: observedColor in: observedUniverse
 	color := observedColor.
 	universeObservation := observedUniverse.
 	wasRemoved := false.
-	isVisible := true
+	isVisible := true.
+	changeSpecifications := Dictionary new

@@ -2,7 +2,7 @@ test - scenario depiction
 testScaleUpdateFailsIfTargetScaleIsNotPositive
 
 	| oneMeter originalScale |
-	oneMeter := UnitProvider soleInstance meter with: 1.
+	oneMeter := resource oneMeter.
 	originalScale := workbench scenario scale.
 	
 	self

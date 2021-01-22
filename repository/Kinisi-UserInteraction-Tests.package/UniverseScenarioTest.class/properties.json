@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"workbench"
+		"workbench",
+		"resource"
 	],
 	"name" : "UniverseScenarioTest",
 	"type" : "normal"

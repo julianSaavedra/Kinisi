@@ -9,7 +9,7 @@ exampleEarthAndSunSimulation
 	simulation := Simulation
 		startingWith: self earthAndSunUniverse
 		changingBy: [:stepDuration :currentState |
-			(UniverseStateChange from: currentState during: stepDuration) finalState ]
+			(UniverseGravitationalChange from: currentState during: stepDuration) finalState ]
 		over: timeDelta
 		during: duration.
 

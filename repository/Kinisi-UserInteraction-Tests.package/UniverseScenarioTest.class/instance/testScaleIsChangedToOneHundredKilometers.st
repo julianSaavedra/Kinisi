@@ -2,7 +2,7 @@ test - scenario depiction
 testScaleIsChangedToOneHundredKilometers
 
 	| oneHundredKilometers |
-	oneHundredKilometers := UnitProvider soleInstance kilometer with: 100.
+	oneHundredKilometers := resource kilometerWith: 100.
 	self deny: workbench scenario scale equals: oneHundredKilometers.
 	
 	workbench scale: oneHundredKilometers.

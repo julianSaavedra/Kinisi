@@ -1,11 +1,9 @@
 test objects
 particleA
 
-	| physicsResource |
-	physicsResource := PhysicsTestResource new.
 	^ParticleState
 		forParticleNamed: 'ParticleA'
-		withMass: physicsResource oneKilogram
-		position: physicsResource oneMeterInAllComponentsVector
-		velocity: (physicsResource velocityVectorWithAllComponentsWithAmount: 2)
-		andAcceleration: (physicsResource accelerationVectorWithAllComponentsWithAmount: 2)
+		withMass: resource oneKilogram
+		position: resource oneMeterInAllComponentsVector
+		velocity: (resource velocityVectorWithAllComponentsWithAmount: 2)
+		andAcceleration: (resource accelerationVectorWithAllComponentsWithAmount: 2)
