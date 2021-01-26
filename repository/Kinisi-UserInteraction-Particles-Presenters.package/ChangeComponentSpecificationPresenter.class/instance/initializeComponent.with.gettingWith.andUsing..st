@@ -5,7 +5,7 @@ initializeComponent: componentTypeName with: units gettingWith: componentExtract
 		instantiate: VectorMeasurePresenter
 		on: (componentExtractor value: currentSpecification).
 	component
-		label: ('Type: <s1>' expandMacrosWith: componentTypeName) asText allBold;
+		label: ('Type: <1s>' expandMacrosWith: componentTypeName);
 		units: units;
 		changeModelWith:[:newComponent | 
 			| newSpecification |
