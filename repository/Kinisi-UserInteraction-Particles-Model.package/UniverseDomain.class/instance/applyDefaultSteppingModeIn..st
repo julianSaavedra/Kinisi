@@ -1,8 +1,9 @@
 domain specification
 applyDefaultSteppingModeIn: steppingWorkbench
  
-	| resource |
-	resource := PhysicsTestResource new.
+	| second oneSecond |
+	second := UnitProvider soleInstance second.
+	oneSecond := second with: 1.
 	^steppingWorkbench
-		stepBy: resource oneSecond
-		over: resource oneSecond * 10
+		stepBy: oneSecond
+		over: oneSecond * 10
