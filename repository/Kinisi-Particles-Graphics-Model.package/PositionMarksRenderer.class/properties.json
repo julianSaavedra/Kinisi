@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleSubRenderer",
+	"category" : "Kinisi-Particles-Graphics-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"distance",
+		"color"
+	],
+	"name" : "PositionMarksRenderer",
+	"type" : "normal"
+}

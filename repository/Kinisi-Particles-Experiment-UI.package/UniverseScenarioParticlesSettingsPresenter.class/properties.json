@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"addButton",
+		"removeButton",
+		"removeAllButton",
+		"universeUpdateAction",
+		"particleList",
+		"selectedParticle",
+		"workbench"
+	],
+	"name" : "UniverseScenarioParticlesSettingsPresenter",
+	"type" : "normal"
+}

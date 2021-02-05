@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Graphics-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"renderers",
+		"scaleToMovedParticle",
+		"baseShape"
+	],
+	"name" : "ParticleRenderer",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+initialization
+initializeSelectedParticle
+
+	self resetSelectedParticle
