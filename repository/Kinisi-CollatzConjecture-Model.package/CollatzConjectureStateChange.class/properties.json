@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-CollatzConjecture-Model-Kinisi-CollatzConjecture-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CollatzConjectureStateChange",
+	"type" : "normal"
+}

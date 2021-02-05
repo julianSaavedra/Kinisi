@@ -1,0 +1,4 @@
+accessing
+numberColor
+
+	^visualDepiction numberColor

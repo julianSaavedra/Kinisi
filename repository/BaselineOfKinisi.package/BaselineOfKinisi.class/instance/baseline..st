@@ -20,7 +20,14 @@ baseline: spec
 		spec package: 'Kinisi-Experiment-Tests' with: [ spec requires: 'Kinisi-Simulation-Model' ].
 
 		
-		spec package: 'Kinisi-CollatzConjecture'.
+		spec package: 'Kinisi-CollatzConjecture-Model'.
+		spec package: 'Kinisi-CollatzConjecture-Tests' with: [ spec requires: #('Kinisi-CollatzConjecture-Model') ].
+		spec package: 'Kinisi-CollatzConjecture-Experiment-Model'.
+		spec package: 'Kinisi-CollatzConjecture-Experiment-Test' with: [ spec requires: #('Kinisi-CollatzConjucture-Test') ].
+		spec package: 'Kinisi-CollatzConjecture-Experiment-UI'.
+		spec package: 'Kinisi-CollatzConjecture-Experiment-Graphics' with: [ spec requires: 'Roassal3' ].
+		
+		
 		spec package: 'Kinisi-Playground' with: [ spec requires: 'Kinisi-Physics-Model' ].
 		spec package: 'Kinisi-PlaygroundUI' with: [ spec requires: 'Kinisi-Physics-Model' ].
 		spec package: 'Kinisi-PlaygroundGraphic' with: [ spec requires: #('Aconcagua' 'Roassal3')].

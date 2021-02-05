@@ -1,4 +1,4 @@
-as yet unclassified
+domain specification
 applyDefaultSteppingModeIn: steppingWorkbench
  
 	steppingConfigurator value: steppingWorkbench
