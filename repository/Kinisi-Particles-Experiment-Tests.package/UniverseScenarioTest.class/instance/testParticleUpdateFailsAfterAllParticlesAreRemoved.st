@@ -8,5 +8,5 @@ testParticleUpdateFailsAfterAllParticlesAreRemoved
 	self particleAUpdateActions do: [:updateAction |
 		self
 			should: [ updateAction value: observationToBeRemoved ]
-			raise: UserInterfaceError
+			raise: ExperimentError
 			whoseDescriptionIncludes: 'Particle is no longer valid' ]

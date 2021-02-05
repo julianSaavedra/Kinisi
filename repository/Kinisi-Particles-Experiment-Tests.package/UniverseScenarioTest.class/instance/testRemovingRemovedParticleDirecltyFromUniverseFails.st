@@ -7,5 +7,5 @@ testRemovingRemovedParticleDirecltyFromUniverseFails
 		
 	self
 		should: [ workbench remove: particleToBeRemoved ]
-		raise: UserInterfaceError
+		raise: ExperimentError
 		whoseDescriptionIncludes: 'Particle is not included in this universe'

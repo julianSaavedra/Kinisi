@@ -7,12 +7,12 @@ testScaleUpdateFailsIfTargetScaleIsNotPositive
 	
 	self
 		should: [workbench scale: oneMeter negated]
-		raise: UserInterfaceError
+		raise: ExperimentError
 		whoseDescriptionIncludes: 'Scale must be positive'.
 	self assert: workbench scenario scale equals: originalScale.
 
 	self
 		should: [workbench scale: oneMeter * 0]
-		raise: UserInterfaceError
+		raise: ExperimentError
 		whoseDescriptionIncludes: 'Scale must be positive'.
 	self assert: workbench scenario scale equals: originalScale

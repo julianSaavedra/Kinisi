@@ -9,5 +9,5 @@ testRemovingParticleFromAnotherUniverseFailsEvenIfTargetUniverseHasAnEqualPartic
 	self assert: universeObservation particles first observesTheSameAs: observationToBeRemoved.
 	self
 		should: [ universeObservation remove: observationToBeRemoved ]
-		raise: UserInterfaceError
+		raise: ExperimentError
 		whoseDescriptionIncludes: 'Particle is not included in this universe'

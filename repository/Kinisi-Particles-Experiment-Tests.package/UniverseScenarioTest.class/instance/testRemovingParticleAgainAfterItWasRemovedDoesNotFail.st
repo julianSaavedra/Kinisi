@@ -8,4 +8,4 @@ testRemovingParticleAgainAfterItWasRemovedDoesNotFail
 	
 	self
 		shouldnt: [ particleToBeRemoved removeYourselfFromUniverse ]
-		raise: UserInterfaceError
+		raise: ExperimentError

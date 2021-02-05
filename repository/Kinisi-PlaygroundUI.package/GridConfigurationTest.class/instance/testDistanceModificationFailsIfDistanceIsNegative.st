@@ -6,4 +6,4 @@ testDistanceModificationFailsIfDistanceIsNegative
 
 	self
 		should: [ configuration distance: (meter with: -10) ]
-		raise: UserInterfaceError
+		raise: ExperimentError

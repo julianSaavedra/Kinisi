@@ -5,4 +5,4 @@ remove: particleObservation
 		ifTrue: [
 			universeState := universeState remove: particleObservation.
 			particleObservation markAsRemoved ]
-		ifFalse: [ UserInterfaceError signal: 'Particle is not included in this universe']
+		ifFalse: [ ExperimentError signal: 'Particle is not included in this universe']

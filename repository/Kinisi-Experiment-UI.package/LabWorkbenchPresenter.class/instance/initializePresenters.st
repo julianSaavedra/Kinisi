@@ -1,0 +1,6 @@
+initialization
+initializePresenters
+
+	self initializeScenarioWorkbench.
+	self initializeObservationWorkbench.
+	self initializeSteppingWorkbench

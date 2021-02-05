@@ -9,5 +9,5 @@ testParticleFailsToRemoveChangeSpecificationIfItIsNotIncludedInParticlesSpecific
 	self assertEmpty: particleWithoutSpecifications changeSpecifications. 
 	self
 		should: [ particleWithoutSpecifications remove: particleWithSpecifications changeSpecifications first ]
-		raise: UserInterfaceError
+		raise: ExperimentError
 		whoseDescriptionIncludes: 'Specification that is being removed does not exist in particle'

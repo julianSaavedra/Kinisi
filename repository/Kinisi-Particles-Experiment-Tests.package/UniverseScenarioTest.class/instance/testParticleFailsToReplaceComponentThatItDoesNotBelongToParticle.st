@@ -11,5 +11,5 @@ testParticleFailsToReplaceComponentThatItDoesNotBelongToParticle
 	
 	self
 		should: [ particle replace: specificationToBeRemoved with: newSpecification ]
-		raise: UserInterfaceError
+		raise: ExperimentError
 		whoseDescriptionIncludes: 'Specification that is being removed does not exist in particle'

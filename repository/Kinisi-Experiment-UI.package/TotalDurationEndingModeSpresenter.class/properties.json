@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"totalDuration",
+		"endingMode",
+		"modelChangeAction"
+	],
+	"name" : "TotalDurationEndingModeSpresenter",
+	"type" : "normal"
+}
