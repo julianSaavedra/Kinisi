@@ -1,0 +1,4 @@
+accessing
+particleName
+
+	^particle particleName

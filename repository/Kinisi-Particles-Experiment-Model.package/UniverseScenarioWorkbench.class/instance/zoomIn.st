@@ -1,0 +1,4 @@
+configuring
+zoomIn
+
+	scenario zoomIn

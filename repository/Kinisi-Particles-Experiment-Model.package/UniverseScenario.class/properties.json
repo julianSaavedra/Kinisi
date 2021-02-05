@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Experiment-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"visualConfiguration",
+		"universeState",
+		"colorMapping",
+		"background",
+		"zoom",
+		"scale",
+		"gridColor",
+		"isGridVisible"
+	],
+	"name" : "UniverseScenario",
+	"type" : "normal"
+}

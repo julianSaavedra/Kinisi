@@ -1,0 +1,4 @@
+configuring
+turnGridOff
+
+	isGridVisible := false

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Experiment-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scenario",
+		"allChangeComponents"
+	],
+	"name" : "UniverseScenarioWorkbench",
+	"type" : "normal"
+}
