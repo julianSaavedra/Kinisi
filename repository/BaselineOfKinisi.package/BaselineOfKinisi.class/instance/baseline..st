@@ -5,10 +5,13 @@ baseline: spec
 	
 	spec for: #common do:[
 		
-		spec package: 'Kinisi-Physics-Model' with: [ spec requires: 'Aconcagua' ].
-		spec package: 'Kinisi-Physics-Tests' with: [ spec requires: #('Kinisi-Physics-Model' 'Kinisi-General-Model') ].
+		spec package: 'Kinisi-Particles-Model' with: [ spec requires: 'Aconcagua' ].
+		spec package: 'Kinisi-Particles-Tests' with: [ spec requires: #('Kinisi-Particles-Model') ].
 		
-		spec package: 'Kinisi-General-Model' with: [ spec requires: 'Kinisi-Physics-Model' ].
+		spec package: 'Kinisi-Particles-Experiment-Model'.
+		spec package: 'Kinisi-Particles-Experiment-Tests' with: [ spec requires: #('Kinisi-Particles-Experiment-Model') ].
+		
+		spec package: 'Kinisi-General-Model'.
 		spec package: 'Kinisi-General-Tests' with: [ spec requires: 'Kinisi-General-Model' ].
 
 		spec package: 'Kinisi-Simulation-Model'.
@@ -23,7 +26,7 @@ baseline: spec
 		spec package: 'Kinisi-CollatzConjecture-Model'.
 		spec package: 'Kinisi-CollatzConjecture-Tests' with: [ spec requires: #('Kinisi-CollatzConjecture-Model') ].
 		spec package: 'Kinisi-CollatzConjecture-Experiment-Model'.
-		spec package: 'Kinisi-CollatzConjecture-Experiment-Tests' with: [ spec requires: #('Kinisi-CollatzConjucture-Experiment-Model') ].
+		spec package: 'Kinisi-CollatzConjecture-Experiment-Tests' with: [ spec requires: #('Kinisi-CollatzConjecture-Experiment-Model') ].
 		spec package: 'Kinisi-CollatzConjecture-Experiment-UI'.
 		spec package: 'Kinisi-CollatzConjecture-Experiment-Graphics' with: [ spec requires: 'Roassal3' ].
 		
@@ -42,7 +45,7 @@ baseline: spec
 		spec package: 'Kinisi-UserInteraction-Particles-Model' with: [ spec requires: 'Roassal3' ].
 		spec package: 'Kinisi-UserInteraction-Particles-Presenters' with: [ spec requires: 'Roassal3' ].
 		spec package: 'Kinisi-UserInteraction-Menu'.
-		spec package: 'Kinisi-UserInteraction-Tests' with: [ spec requires: #('Kinisi-Physics-Model' 'Kinisi-General-Model') ].
+		spec package: 'Kinisi-UserInteraction-Tests' with: [ spec requires: #('Kinisi-Particles-Model' 'Kinisi-General-Model') ].
 
 		spec baseline: 'Aconcagua' with: [
 			spec
