@@ -6,4 +6,4 @@ testColorModificationFailsIfColorisNil
 
 	self
 		should: [ configuration color: nil ]
-		raise: UserInterfaceError
+		raise: ExperimentError

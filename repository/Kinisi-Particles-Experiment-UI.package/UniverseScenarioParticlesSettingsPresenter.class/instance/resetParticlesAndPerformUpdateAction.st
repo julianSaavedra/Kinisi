@@ -1,0 +1,5 @@
+private
+resetParticlesAndPerformUpdateAction
+
+	self resetParticleObservationList.
+	self performUniverseObservationUpdateAction

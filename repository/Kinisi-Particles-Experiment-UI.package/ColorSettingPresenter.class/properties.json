@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"currentColor",
+		"list",
+		"modelChangingBlock",
+		"postColorChangeBlock"
+	],
+	"name" : "ColorSettingPresenter",
+	"type" : "normal"
+}

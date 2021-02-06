@@ -1,0 +1,4 @@
+constants
+sizeMinimun
+
+	^10

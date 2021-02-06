@@ -6,4 +6,4 @@ testSizeModificationFailsIfSizeIsLessThanTen
 	
 	self
 		should: [ configuration size: 9 ]
-		raise: 	UserInterfaceError
+		raise: 	ExperimentError

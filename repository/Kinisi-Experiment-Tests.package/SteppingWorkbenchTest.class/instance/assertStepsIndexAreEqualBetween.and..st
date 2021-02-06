@@ -1,4 +1,4 @@
-tests
+asserting
 assertStepsIndexAreEqualBetween: result and: firstRepetitionModeResult
 
 	| firstRepetitionModeTimes secondRepetitionModeTimes |

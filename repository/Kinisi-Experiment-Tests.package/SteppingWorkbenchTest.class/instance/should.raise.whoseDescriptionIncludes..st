@@ -1,4 +1,4 @@
-tests
+asserting
 should: block raise: exceptionalEvent whoseDescriptionIncludes: errorMessage
 
 	self

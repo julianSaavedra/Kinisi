@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"position",
+		"velocity",
+		"acceleration",
+		"mass",
+		"particleName"
+	],
+	"name" : "ParticleState",
+	"type" : "normal"
+}

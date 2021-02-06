@@ -1,0 +1,4 @@
+utilities
+clearSoleInstance
+
+	instance := nil

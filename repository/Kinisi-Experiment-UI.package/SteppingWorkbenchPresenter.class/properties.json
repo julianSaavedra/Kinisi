@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"delta",
+		"selectedMode",
+		"helperMap",
+		"modeList",
+		"currentHelper",
+		"specification"
+	],
+	"name" : "SteppingWorkbenchPresenter",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SteppingEndingMode",
+	"category" : "Kinisi-Experiment-Model-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"numberOfTimes"
+	],
+	"name" : "RepetitionEndingMode",
+	"type" : "normal"
+}

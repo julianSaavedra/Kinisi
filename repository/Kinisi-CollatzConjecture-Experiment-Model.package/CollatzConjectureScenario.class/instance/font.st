@@ -1,0 +1,4 @@
+accessing
+font
+
+	^visualDepiction font

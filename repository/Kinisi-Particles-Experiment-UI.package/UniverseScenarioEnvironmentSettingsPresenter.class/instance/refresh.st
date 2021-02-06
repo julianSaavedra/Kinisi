@@ -1,0 +1,4 @@
+private
+refresh
+
+	self resetParticleObservationList

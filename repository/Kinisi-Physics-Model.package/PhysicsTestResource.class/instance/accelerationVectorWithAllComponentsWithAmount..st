@@ -1,0 +1,4 @@
+utilities
+accelerationVectorWithAllComponentsWithAmount: aNumber
+
+	^self vectorWithAllComponentsIn: unitProvider standardAccelerationUnit withAmount: aNumber

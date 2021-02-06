@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"observation",
+		"scenario",
+		"configuration",
+		"stepping"
+	],
+	"name" : "LabWorkbenchPresenter",
+	"type" : "normal"
+}

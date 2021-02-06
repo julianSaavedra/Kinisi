@@ -4,6 +4,6 @@ testTotalDurationCannotBeZeroNorNegative
 
 	#(-1 0) do: [:invalidStepDuration |
 		self
-			should: [ workbench steppingWorkbench stepBy: resource oneSecond over: invalidStepDuration * resource oneSecond ]
+			should: [ workbench steppingWorkbench stepBy: steppingDelta over: invalidStepDuration * steppingDelta ]
 			raise: Error
 			whoseDescriptionIncludes: 'Total duration must be greater than zero' ]

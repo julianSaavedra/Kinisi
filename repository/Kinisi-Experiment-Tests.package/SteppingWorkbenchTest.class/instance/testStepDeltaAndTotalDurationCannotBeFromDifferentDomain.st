@@ -1,12 +1,11 @@
 tests
 testStepDeltaAndTotalDurationCannotBeFromDifferentDomain
 
-	| oneSecond totalDuration |
-	oneSecond := resource oneSecond.
-	totalDuration := 10 * oneSecond.
-	workbench steppingWorkbench stepBy: oneSecond over: totalDuration.
+	| totalDurationFromDifferentDomain |
+	totalDurationFromDifferentDomain := self unitFromAnotherDomain with: 10.
+	self deny: (steppingDelta sameDomainAs: totalDurationFromDifferentDomain).
 
 	self
-		should: [ workbench steppingWorkbench stepBy: resource oneSecond over: 10 ]
+		should: [ workbench steppingWorkbench stepBy: steppingDelta over: totalDurationFromDifferentDomain ]
 		raise: Error
 		whoseDescriptionIncludes: 'Total duration and step duration must be from the same domain'

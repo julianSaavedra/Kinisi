@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SteppingEndingModeAndDeltaConsistencyValidator",
+	"category" : "Kinisi-Experiment-Model-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NullSteppingEndingModeAndDeltaConsistencyValidator",
+	"type" : "normal"
+}

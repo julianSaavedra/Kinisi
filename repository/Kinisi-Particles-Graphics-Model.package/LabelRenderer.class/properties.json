@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleSubRenderer",
+	"category" : "Kinisi-Particles-Graphics-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text"
+	],
+	"name" : "LabelRenderer",
+	"type" : "normal"
+}

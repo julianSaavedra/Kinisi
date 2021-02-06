@@ -1,4 +1,4 @@
 validation
 assertValidColor: aColor
 
-	aColor ifNil: [ UserInterfaceError signal: 'Color cannot be nil.' ]
+	aColor ifNil: [ ExperimentError signal: 'Color cannot be nil.' ]

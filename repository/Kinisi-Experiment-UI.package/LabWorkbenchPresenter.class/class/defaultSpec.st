@@ -1,0 +1,4 @@
+specs
+defaultSpec
+
+	^self horizontalSpec

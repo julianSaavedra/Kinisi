@@ -1,0 +1,4 @@
+testing
+even
+
+	^number even

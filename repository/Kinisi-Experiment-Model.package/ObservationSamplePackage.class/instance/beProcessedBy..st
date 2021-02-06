@@ -1,0 +1,4 @@
+processing
+beProcessedBy: observationProcess
+
+	observationProcess processObservation: observation

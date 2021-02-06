@@ -1,0 +1,4 @@
+private
+playAsTerminated
+
+	self raiseTerminatedError

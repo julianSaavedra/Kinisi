@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ChangeComponent",
+	"category" : "Kinisi-Particles-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"force"
+	],
+	"name" : "ConstantForceComponent",
+	"type" : "normal"
+}

@@ -1,11 +1,11 @@
-tests
+running
 setUp
 
 	| domainModelWorkbench |
 	super setUp.
-	resource := PhysicsTestResource new.
+	steppingDelta := 1.
 	domainModelWorkbench := FixedDomainModelWorkbench
 		startingAt: 1
 		changingWith: (SimulationStateChange with: [ :currentState | currentState * 2 ])
-		settingInitialStepsWith: [:steppingWorkbench | steppingWorkbench repeat: 5 steppingBy: resource oneSecond ].
+		configuringSteppingWith: [:steppingWorkbench | steppingWorkbench repeat: 5 steppingBy: steppingDelta ].
 	workbench := LabWorkbench using: domainModelWorkbench

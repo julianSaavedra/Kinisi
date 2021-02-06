@@ -1,0 +1,4 @@
+private
+removeAllButtonAction
+
+	workbench removeAllParticles
