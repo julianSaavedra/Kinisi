@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationStepConsumer",
+	"category" : "Kinisi-Experiment-Model-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"consumingAction",
+		"finishingAction",
+		"startingAction"
+	],
+	"name" : "SimulationStepPluggableConsumer",
+	"type" : "normal"
+}

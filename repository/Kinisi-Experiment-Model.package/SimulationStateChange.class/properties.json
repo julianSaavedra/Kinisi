@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimulationChange",
+	"category" : "Kinisi-Experiment-Model-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"change"
+	],
+	"name" : "SimulationStateChange",
+	"type" : "normal"
+}
