@@ -2,5 +2,5 @@ tests
 testStepCannotBeCreatedWithNegativeTime
 	
 	self
-		should: [ SimulationStepResult at: testResource negativeTime with: rawResult]
+		should: [ SimulationStepResult at: stepTime negated  with: stepResult]
 		raise: SimulationError

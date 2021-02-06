@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"resource",
-		"workbench"
+		"workbench",
+		"steppingDelta"
 	],
 	"name" : "SteppingWorkbenchTest",
 	"type" : "normal"

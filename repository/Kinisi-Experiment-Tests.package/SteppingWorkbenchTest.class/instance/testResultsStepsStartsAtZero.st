@@ -1,12 +1,11 @@
 tests
 testResultsStepsStartsAtZero
 
-	| halfSecond lab times repetitions |
-	halfSecond := resource oneSecond / 2.
+	| lab times repetitions |
 	repetitions := 5.
 	workbench steppingWorkbench
 		repeat: repetitions
-		steppingBy: halfSecond.
+		steppingBy: steppingDelta.
 	lab := KinisiLab using: workbench.
 	
 	lab runExperiment.

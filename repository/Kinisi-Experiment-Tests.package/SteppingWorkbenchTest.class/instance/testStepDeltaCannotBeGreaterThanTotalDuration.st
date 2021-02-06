@@ -1,10 +1,9 @@
 tests
 testStepDeltaCannotBeGreaterThanTotalDuration
 
-	| oneSecond totalDuration |
-	oneSecond := resource oneSecond.
-	totalDuration := 10 * oneSecond.
-	workbench steppingWorkbench stepBy: oneSecond over: totalDuration.
+	| totalDuration |
+	totalDuration := 10 * steppingDelta.
+	workbench steppingWorkbench stepBy: steppingDelta over: totalDuration.
 
 	self
 		should: [ workbench steppingWorkbench stepBy: 2 * totalDuration over: totalDuration ]

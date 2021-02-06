@@ -1,12 +1,11 @@
 tests
-testResultsStepsGoByHalfSecondRepeatingFiveTimes
+testResultsStepsGoByOneRepeatingFiveTimes
 
-	| halfSecond lab times repetitions |
-	halfSecond := resource oneSecond / 2.
+	| lab times repetitions |
 	repetitions := 5.
 	workbench steppingWorkbench
 		repeat: repetitions
-		steppingBy: halfSecond.
+		steppingBy: steppingDelta.
 	lab := KinisiLab using: workbench.
 	
 	lab runExperiment.
@@ -14,5 +13,5 @@ testResultsStepsGoByHalfSecondRepeatingFiveTimes
 	times := lab lastResult withTimeAndStateCollect: [:time :state | time ].
 	self assert: times size equals: 6.
 	times overlappingPairsDo: [:aPreviousResultIndex :aFollowingResultIndex |
-		self assert: aFollowingResultIndex - aPreviousResultIndex equals: halfSecond ].
-	self assert: times last equals: repetitions * halfSecond. 
+		self assert: aFollowingResultIndex - aPreviousResultIndex equals: steppingDelta ].
+	self assert: times last equals: repetitions * steppingDelta. 

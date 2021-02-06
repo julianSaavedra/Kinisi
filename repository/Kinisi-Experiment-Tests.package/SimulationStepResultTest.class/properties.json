@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"testResource",
-		"rawResult"
+		"stepTime",
+		"stepResult"
 	],
 	"name" : "SimulationStepResultTest",
 	"type" : "normal"

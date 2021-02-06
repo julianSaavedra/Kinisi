@@ -2,5 +2,5 @@ tests
 setUp
 
 	super setUp.
-	rawResult := #ObtainedResult.
-	testResource := PhysicsTestResource new
+	stepResult := #ObtainedResult.
+	stepTime := 1

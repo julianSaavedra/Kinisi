@@ -2,7 +2,7 @@ tests
 testWithTimeAndStateCollectCreatesAResultFromGivenBlockWithEachTimeAndStatePairAsArguments
 
 	| steps simulationResult collectResult |
-	steps := self stepResultsWithTimeInSecondsBasedOn: #(1 2 3).
+	steps := self stepResultsWithTimeBasedOn: #(1 2 3).
 	simulationResult := SimulationTotalResult from: steps.
 	
 	collectResult := simulationResult withTimeAndStateCollect: [:time :state | state * 2 ].

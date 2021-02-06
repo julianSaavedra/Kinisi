@@ -4,7 +4,7 @@ testWithTimeAndStateDoExceutesGivenBlockWithEachTimeAndStatePairAsArguments
 	| steps simulationResult timeAmounts results iterationCount |
 	timeAmounts := #(1 2 3).
 	results := #(A B C).
-	steps := self stepResultsWithTimeInSecondsBasedOn: timeAmounts andResultsBasedOn: results.
+	steps := self stepResultsWithTimeBasedOn: timeAmounts andResultsBasedOn: results.
 	simulationResult := SimulationTotalResult from: steps.
 	
 	iterationCount := 0.

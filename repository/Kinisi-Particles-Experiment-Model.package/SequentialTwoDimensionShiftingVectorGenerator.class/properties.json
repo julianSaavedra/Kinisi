@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "UserElementsGenerators",
-	"category" : "Kinisi-General-Model",
+	"category" : "Kinisi-Particles-Experiment-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
