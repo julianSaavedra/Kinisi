@@ -1,4 +1,0 @@
-private
-removeButtonPostAction
-
-	self resetParticlesAndPerformUpdateAction

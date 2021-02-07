@@ -1,4 +1,0 @@
-API
-refresh
-
-	view refresh

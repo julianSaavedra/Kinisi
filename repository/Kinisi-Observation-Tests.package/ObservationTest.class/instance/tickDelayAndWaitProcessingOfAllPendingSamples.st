@@ -1,4 +1,0 @@
-support
-tickDelayAndWaitProcessingOfAllPendingSamples
-
-	self tickDelayAndWaitObservationOfAllIn: allExpectedSamples

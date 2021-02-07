@@ -1,4 +1,0 @@
-configuring
-turnGridOff
-
-	scenario turnGridOff

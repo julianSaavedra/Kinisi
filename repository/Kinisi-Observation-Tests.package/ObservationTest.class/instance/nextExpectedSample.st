@@ -1,4 +1,0 @@
-support
-nextExpectedSample
-	
-	^pendingSamples first	

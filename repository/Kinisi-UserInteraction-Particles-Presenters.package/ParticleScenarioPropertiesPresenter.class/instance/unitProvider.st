@@ -1,4 +1,0 @@
-private
-unitProvider
-
-	^UnitProvider soleInstance

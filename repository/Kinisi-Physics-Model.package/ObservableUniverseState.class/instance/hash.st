@@ -1,4 +1,0 @@
-comparing
-hash
-
-	^particleStates hash

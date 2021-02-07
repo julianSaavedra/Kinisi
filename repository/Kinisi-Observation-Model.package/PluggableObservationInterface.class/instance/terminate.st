@@ -1,4 +1,0 @@
-action
-terminate
-
-	finishAction value

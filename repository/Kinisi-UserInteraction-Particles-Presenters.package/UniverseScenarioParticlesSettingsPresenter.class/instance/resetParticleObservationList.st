@@ -1,5 +1,0 @@
-private
-resetParticleObservationList
-
-	self refillParticleObservationList.
-	self updateSelectedParticleObservation

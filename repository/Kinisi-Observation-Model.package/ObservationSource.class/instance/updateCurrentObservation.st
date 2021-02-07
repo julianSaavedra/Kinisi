@@ -1,4 +1,0 @@
-sourcing
-updateCurrentObservation
-	
-	bufferReader read

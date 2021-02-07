@@ -1,4 +1,0 @@
-private
-assertConsistentDeltaAndEndingMode
-
-	endingModeAndDeltaConsistencyValidator assertValid: delta
