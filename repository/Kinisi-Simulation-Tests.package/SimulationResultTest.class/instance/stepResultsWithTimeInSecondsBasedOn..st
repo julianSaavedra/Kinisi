@@ -1,4 +1,0 @@
-support
-stepResultsWithTimeInSecondsBasedOn: timeAmounts
-
-	^self stepResultsWithTimeInSecondsBasedOn: timeAmounts andResultsBasedOn: timeAmounts

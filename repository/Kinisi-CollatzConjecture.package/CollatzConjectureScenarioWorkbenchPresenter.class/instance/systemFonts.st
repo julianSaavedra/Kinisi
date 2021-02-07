@@ -1,4 +1,0 @@
-options
-systemFonts
-
-	^CollatzConjectureVisualDepiction systemFonts

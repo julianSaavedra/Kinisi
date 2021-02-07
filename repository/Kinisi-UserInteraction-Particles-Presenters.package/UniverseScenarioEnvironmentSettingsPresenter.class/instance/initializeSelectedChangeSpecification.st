@@ -1,4 +1,0 @@
-initialization
-initializeSelectedChangeSpecification
-
-	self cleanSelectedChangeSpecification

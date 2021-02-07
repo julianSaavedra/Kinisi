@@ -1,4 +1,0 @@
-configuring
-zoomOut
-
-	scenario zoomOut

@@ -1,4 +1,0 @@
-configuring
-turnGridOn
-
-	scenario turnGridOn 

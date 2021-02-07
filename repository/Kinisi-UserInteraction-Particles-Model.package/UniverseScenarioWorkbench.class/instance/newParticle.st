@@ -1,4 +1,0 @@
-configuring
-newParticle
-
-	^scenario newParticleObservation

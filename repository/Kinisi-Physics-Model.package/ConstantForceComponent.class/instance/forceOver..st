@@ -1,4 +1,0 @@
-calculation
-forceOver: particle
- 
-	^force

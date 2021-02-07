@@ -1,4 +1,0 @@
-unit names
-kilometerName
-
-	^#Kilometer

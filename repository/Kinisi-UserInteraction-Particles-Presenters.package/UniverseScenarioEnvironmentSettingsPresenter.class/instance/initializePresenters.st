@@ -1,7 +1,0 @@
-initialization
-initializePresenters
-
-	self initializeParticleObservationList.
-	self initializeSelectedParticleChangeSpecifications.
-	self initializeSelectedChangeSpecification.
-	self initializeFocusOrder

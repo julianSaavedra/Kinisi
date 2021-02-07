@@ -1,4 +1,0 @@
-testing
-even
-
-	^number even

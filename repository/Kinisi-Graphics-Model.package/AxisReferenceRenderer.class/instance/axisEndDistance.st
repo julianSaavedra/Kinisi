@@ -1,4 +1,0 @@
-constants
-axisEndDistance
-
-	^20

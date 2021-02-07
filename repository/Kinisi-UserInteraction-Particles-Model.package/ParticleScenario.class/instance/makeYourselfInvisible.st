@@ -1,4 +1,0 @@
-configuring
-makeYourselfInvisible
-
-	isVisible := false
