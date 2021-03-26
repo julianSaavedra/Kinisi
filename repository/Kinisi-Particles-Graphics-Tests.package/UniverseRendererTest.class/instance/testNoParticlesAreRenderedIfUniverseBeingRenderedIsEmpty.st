@@ -8,4 +8,4 @@ testNoParticlesAreRenderedIfUniverseBeingRenderedIsEmpty
 	self assertEmpty: universe particles.
 	renderer drawIn: canvas basedOn: universe.
 
-	self assert: canvas shapes isEmpty
+	self assertEmpty: canvas shapes
