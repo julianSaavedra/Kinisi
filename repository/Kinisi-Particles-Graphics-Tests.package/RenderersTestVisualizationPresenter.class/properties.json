@@ -1,13 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-Particles-Graphics-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"classes",
+		"selectedClassTests",
 		"canvas"
 	],
-	"name" : "GridRendererTest",
+	"name" : "RenderersTestVisualizationPresenter",
 	"type" : "normal"
 }

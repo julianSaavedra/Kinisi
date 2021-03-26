@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "GridRenderer",
 	"category" : "Kinisi-Particles-Graphics-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"grid",
-		"color",
-		"separation"
-	],
-	"name" : "GridRenderer",
+	"instvars" : [ ],
+	"name" : "GridNullRenderer",
 	"type" : "normal"
 }
