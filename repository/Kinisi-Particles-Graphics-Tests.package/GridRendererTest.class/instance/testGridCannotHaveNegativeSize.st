@@ -1,4 +1,4 @@
-tests
+test - no sense when encapsualted
 testGridCannotHaveNegativeSize
 
 	self

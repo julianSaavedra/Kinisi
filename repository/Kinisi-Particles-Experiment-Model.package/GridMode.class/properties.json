@@ -5,13 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"universeState",
-		"background",
-		"zoom",
-		"scale",
-		"gridMode"
-	],
-	"name" : "UniverseScenario",
+	"instvars" : [ ],
+	"name" : "GridMode",
 	"type" : "normal"
 }

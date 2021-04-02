@@ -7,4 +7,4 @@ drawIn: canvas basedOn: universe
 			renderersMapping
 				at: particleObservation particleName
 				ifPresent: [ :renderer | renderer drawIn: canvas basedOn: particleObservation ] ].
-	gridRenderer ifNotNil: [ gridRenderer drawIn: canvas basedOn: nil ]
+	gridRenderer drawIn: canvas

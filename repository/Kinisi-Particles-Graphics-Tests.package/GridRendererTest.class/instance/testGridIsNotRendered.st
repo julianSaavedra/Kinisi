@@ -1,7 +1,6 @@
 tests
 testGridIsNotRendered
-
-	| renderer |
-	renderer := GridRenderer noGrid.
 	
-	self assertNoErrorIsRaisedWhenRenderingWith: renderer
+	universeWorkbench noGrid.
+	
+	self assertNoErrorIsRaisedWhenRendering: universeWorkbench scenario

@@ -1,17 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "GridMode",
 	"category" : "Kinisi-Particles-Experiment-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"universeState",
-		"background",
-		"zoom",
-		"scale",
-		"gridMode"
+		"color"
 	],
-	"name" : "UniverseScenario",
+	"name" : "QuadrantGridMode",
 	"type" : "normal"
 }

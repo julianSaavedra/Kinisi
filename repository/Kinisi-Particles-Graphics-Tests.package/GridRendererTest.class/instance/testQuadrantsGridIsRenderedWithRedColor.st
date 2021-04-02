@@ -1,7 +1,6 @@
 tests
 testQuadrantsGridIsRenderedWithRedColor
 
-	| renderer |
-	renderer := GridRenderer quadrantWith: Color red.
+	universeWorkbench quadrantGridWith: Color red.
 	
-	self assertNoErrorIsRaisedWhenRenderingWith: renderer
+	self assertNoErrorIsRaisedWhenRendering: universeWorkbench scenario
