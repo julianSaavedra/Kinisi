@@ -12,4 +12,4 @@ initializedBasedOn: universe
 		particleRenderer renderLabelWith: [:renderedParticle | renderedParticle particleName].
 		particleRenderer renderPositionWith: positionFactor.
 		renderersMapping at: particle particleName put: particleRenderer ].
-	gridRenderer := GridRenderer basedOn: universe gridMode and: absoluteZoomUnit
+	gridRenderer := (GridRendererFactory basedOn: universe gridMode and: absoluteZoomUnit) renderer

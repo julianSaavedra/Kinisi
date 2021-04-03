@@ -1,4 +1,4 @@
 instance creation
 noGrid
 
-	^GridNullRenderer new
+	^self with: Color transparent using: NullGridLinesGenerator new

@@ -1,4 +1,4 @@
 visiting
 accept: aVisitor
 
-	aVisitor visitAsNoGridMode: self
+	^aVisitor visitAsNoGridMode: self

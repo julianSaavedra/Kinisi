@@ -1,4 +1,4 @@
 visiting
 accept: visitor
 
-	visitor visitAsUniformGridMode: self
+	^visitor visitAsUniformGridMode: self

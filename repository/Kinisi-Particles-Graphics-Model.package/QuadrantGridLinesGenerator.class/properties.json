@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GridLinesGenerator",
+	"category" : "Kinisi-Particles-Graphics-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "QuadrantGridLinesGenerator",
+	"type" : "normal"
+}

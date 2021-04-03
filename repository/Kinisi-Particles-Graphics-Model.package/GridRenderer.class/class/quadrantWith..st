@@ -1,4 +1,4 @@
 instance creation
 quadrantWith: color
 
-	^self with: color
+	^self with: color using: QuadrantGridLinesGenerator new

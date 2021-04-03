@@ -8,7 +8,8 @@
 	"instvars" : [
 		"grid",
 		"color",
-		"separation"
+		"separation",
+		"linesGenerator"
 	],
 	"name" : "GridRenderer",
 	"type" : "normal"
