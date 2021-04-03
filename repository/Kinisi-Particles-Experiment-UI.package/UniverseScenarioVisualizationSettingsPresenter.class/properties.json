@@ -9,9 +9,8 @@
 		"background",
 		"zoom",
 		"scale",
-		"gridColor",
-		"gridVisibility",
-		"workbench"
+		"workbench",
+		"grid"
 	],
 	"name" : "UniverseScenarioVisualizationSettingsPresenter",
 	"type" : "normal"

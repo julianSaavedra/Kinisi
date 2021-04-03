@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"grid"
+		"grid",
+		"color",
+		"separation",
+		"linesGenerator"
 	],
 	"name" : "GridRenderer",
 	"type" : "normal"

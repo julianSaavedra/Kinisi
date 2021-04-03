@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"canvas",
+		"universeWorkbench"
+	],
 	"name" : "GridRendererTest",
 	"type" : "normal"
 }

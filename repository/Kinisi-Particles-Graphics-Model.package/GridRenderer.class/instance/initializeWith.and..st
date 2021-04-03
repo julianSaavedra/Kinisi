@@ -1,4 +1,5 @@
 initialization
-initializeWith: color and: size
+initializeWith: aColor and: gridSeparation
 
-	self toDoFlag
+	color := aColor.
+	separation := gridSeparation

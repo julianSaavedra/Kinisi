@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modeSelection",
+		"mode",
+		"workbench",
+		"currentHelper",
+		"postModelChangeAction",
+		"helpersMap"
+	],
+	"name" : "GridModePresenter",
+	"type" : "normal"
+}

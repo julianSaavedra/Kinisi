@@ -6,14 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"visualConfiguration",
 		"universeState",
-		"colorMapping",
 		"background",
 		"zoom",
 		"scale",
-		"gridColor",
-		"isGridVisible"
+		"gridMode"
 	],
 	"name" : "UniverseScenario",
 	"type" : "normal"
