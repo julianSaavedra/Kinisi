@@ -1,8 +1,8 @@
 # Kinisi
 
-[![example workflow](https://github.com/julianSaavedra/Kinisi/actions/workflows/tests.yml/badge.svg?branch=master)]
-[![Build Status](https://travis-ci.org/julianSaavedra/Kinisi.png?branch=master)](https://travis-ci.org/julianSaavedra/Kinisi)
-[![Coverage Status](https://coveralls.io/repos/github/julianSaavedra/Kinisi/badge.png?branch=master)](https://coveralls.io/github/julianSaavedra/Kinisi?branch=master)
+[![Build](https://github.com/julianSaavedra/Kinisi/actions/workflows/tests.yml/badge.svg)](https://github.com/julianSaavedra/Kinisi/actions/workflows/tests.yml)
+[![Build Status](https://travis-ci.org/julianSaavedra/Kinisi.png)](https://travis-ci.org/julianSaavedra/Kinisi)
+[![Coverage Status](https://coveralls.io/repos/github/julianSaavedra/Kinisi/badge.png)](https://coveralls.io/github/julianSaavedra/Kinisi)
 
 Kinisi
 
