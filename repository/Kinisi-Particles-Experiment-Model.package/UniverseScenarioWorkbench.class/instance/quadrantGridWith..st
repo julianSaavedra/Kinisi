@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 quadrantGridWith: color
 
 	scenario quadrantGridWith: color

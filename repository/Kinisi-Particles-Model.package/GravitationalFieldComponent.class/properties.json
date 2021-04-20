@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"descriptionPerParticle",
-		"gravitationComponent"
+		"mass",
+		"position"
 	],
-	"name" : "ChangeDescription",
+	"name" : "GravitationalFieldComponent",
 	"type" : "normal"
 }

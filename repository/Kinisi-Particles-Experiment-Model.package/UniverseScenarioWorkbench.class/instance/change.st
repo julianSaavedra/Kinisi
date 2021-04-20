@@ -1,4 +1,4 @@
-acessing
+accessing
 change
 
 	| changeEnvironment changeDescription |
