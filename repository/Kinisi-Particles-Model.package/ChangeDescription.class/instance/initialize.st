@@ -2,4 +2,4 @@ configuring
 initialize
 
 	super initialize.
-	descriptionPerParticle := Dictionary new
+	componentsPerParticle := Dictionary new

@@ -1,7 +1,9 @@
 API
 withEachParticleAndNetForceIn: universe do: block
 
-	universe particles do: [:particle |
-		| netForce |
-		netForce := self netForceOver: particle.
-		block value: particle value: netForce ]
+	| allParticlesInUniverse |
+	allParticlesInUniverse := universe particles.
+	allParticlesInUniverse do: [ :particle | 
+			| netForce |
+			netForce := self netForceOver: particle causedBy: (allParticlesInUniverse copyWithout: particle).
+			block value: particle value: netForce ]

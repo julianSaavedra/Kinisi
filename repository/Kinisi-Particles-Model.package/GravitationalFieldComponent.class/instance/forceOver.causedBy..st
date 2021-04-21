@@ -1,5 +1,5 @@
 as yet unclassified
-forceOver: particle
+forceOver: particle causedBy: anObject
 
 	| distanceVector squaredDistance forceModule |
 	distanceVector := position - particle position.

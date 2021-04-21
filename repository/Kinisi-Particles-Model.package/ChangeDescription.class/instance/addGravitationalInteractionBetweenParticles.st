@@ -1,0 +1,4 @@
+as yet unclassified
+addGravitationalInteractionBetweenParticles
+
+	gravitationalComponent := GravitationalInteractionComponent new

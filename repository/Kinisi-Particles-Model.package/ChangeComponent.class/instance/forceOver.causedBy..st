@@ -1,4 +1,4 @@
 calculation
-forceOver: particle
+forceOver: particle causedBy: anObject
 
 	self subclassResponsibility 

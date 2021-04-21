@@ -2,8 +2,8 @@ private
 componentsFor: particle
 
 	| components |
-	components := descriptionPerParticle
+	components := componentsPerParticle
 		at: particle particleName
 		ifAbsent: [ OrderedCollection new ].
-	components add: gravitationComponent.
+	gravitationalComponent ifNotNil: [ components add: gravitationalComponent ].
 	^components

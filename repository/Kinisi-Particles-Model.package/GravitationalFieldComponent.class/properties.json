@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ChangeComponent",
 	"category" : "Kinisi-Particles-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
