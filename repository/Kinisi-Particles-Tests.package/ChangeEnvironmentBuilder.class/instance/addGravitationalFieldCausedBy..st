@@ -1,4 +1,4 @@
-as yet unclassified
+building configuration
 addGravitationalFieldCausedBy: particle
  
 	self assertPaticleIsIncludedInSubjectUniverse: particle.

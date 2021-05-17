@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ChangeComponent",
+	"category" : "Kinisi-Particles-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NullChangeComponent",
+	"type" : "normal"
+}

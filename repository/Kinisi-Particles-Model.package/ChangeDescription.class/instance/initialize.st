@@ -2,4 +2,5 @@ configuring
 initialize
 
 	super initialize.
-	componentsPerParticle := Dictionary new
+	componentsPerParticle := Dictionary new.
+	gravitationalComponent := NullChangeComponent new
