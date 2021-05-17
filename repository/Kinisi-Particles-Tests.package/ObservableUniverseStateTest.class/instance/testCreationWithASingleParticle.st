@@ -6,4 +6,4 @@ testCreationWithASingleParticle
 	
 	universe := ObservableUniverseState with: particle.
 	
-	self assert: (universe particles includes: particle)
+	self assert: (universe includes: particle)

@@ -1,8 +1,13 @@
-as yet unclassified
-forceOver: particle causedBy: anObject
+calculation
+forceOver: particle causedBy: otherParticles
 
-	| distanceVector squaredDistance forceModule |
-	distanceVector := position - particle position.
-	squaredDistance := distanceVector norm * distanceVector norm.
-	forceModule := self gravitationalConstant * particle mass * mass / squaredDistance.
-	^distanceVector normalized * forceModule
+	| distanceVector squaredDistance forceModule causingParticle |
+	^particle particleName = fieldCausingParticleName
+		ifFalse: [
+			causingParticle := self causingParticleAmong: otherParticles.
+			distanceVector := causingParticle position - particle position.
+			squaredDistance := distanceVector norm * distanceVector norm.
+			forceModule := self gravitationalConstant * particle mass * causingParticle mass / squaredDistance.
+			distanceVector normalized * forceModule ]
+		ifTrue: [ MeasureVector nullWith: UnitProvider soleInstance newton ]
+	

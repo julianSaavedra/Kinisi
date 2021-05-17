@@ -1,13 +1,13 @@
 test - gravitational
 testUniverseWithTwoParticlesWithGravitationalInteractionBetweenThem
 
-	| initialState change expectedState changeDescription changeEnvironment |
-	initialState := ObservableUniverseState.
-	
-	changeDescription := ChangeDescription empty.
-	changeDescription addGravitationalInteractionBetweenParticles.
-	changeEnvironment := ChangeEnvironment from: changeDescription.
+	| initialState change expectedState changeEnvironment environmentBuilder |
 	initialState := ObservableUniverseState withAll: self originalPhysicalStates.
+
+	environmentBuilder := ChangeEnvironmentBuilder for: initialState.
+	environmentBuilder addGravitationalInteractionBetweenParticles.
+	changeEnvironment := environmentBuilder environment.
+	
 	change := UniverseChange
 		from: initialState
 		with: changeEnvironment
