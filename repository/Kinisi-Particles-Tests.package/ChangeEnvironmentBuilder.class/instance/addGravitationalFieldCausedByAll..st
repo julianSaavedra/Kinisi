@@ -1,0 +1,3 @@
+building configuration
+addGravitationalFieldCausedByAll: aCollection 
+	self shouldBeImplemented.
