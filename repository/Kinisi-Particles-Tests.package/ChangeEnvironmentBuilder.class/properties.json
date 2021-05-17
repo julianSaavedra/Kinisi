@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"subjectUniverse",
+		"description"
+	],
+	"name" : "ChangeEnvironmentBuilder",
+	"type" : "normal"
+}

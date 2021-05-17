@@ -1,7 +1,7 @@
 test - constant force
 testUniverseWithThreeParticlesDifferentConstantForcesActingOnThemAndDifferentInitialVelocities
 
-	| particleA originalState change finalState particleB particleC finalPositionA finalPositionB finalPositionC changeEnvironment particleAForce particleCForce changeDescription |
+	| particleA originalState change finalState particleB particleC finalPositionA finalPositionB finalPositionC changeEnvironment particleAForce particleCForce environmentBuilder |
 	particleA := testResource physicalStateForParticleInTheOriginNamed: #ParticleA.
 	self assert: particleA velocity isZero.
 	particleB := testResource
@@ -14,12 +14,12 @@ testUniverseWithThreeParticlesDifferentConstantForcesActingOnThemAndDifferentIni
 		with: (testResource meterPerSecondVectorWith: #(-1 -1 -1)).
 	originalState := ObservableUniverseState withAll: {particleA. particleB. particleC}.
 
-	changeDescription := ChangeDescription empty.
+	environmentBuilder := ChangeEnvironmentBuilder for: originalState.
 	particleAForce := testResource oneNewtonInAllComponentsVector.
-	changeDescription addConstantForce: particleAForce for: particleA.
+	environmentBuilder addConstantForce: particleAForce for: particleA.
 	particleCForce := testResource newtonVectorWith: #(-1 0 1).
-	changeDescription addConstantForce: particleCForce for: particleC.
-	changeEnvironment := ChangeEnvironment from: changeDescription.
+	environmentBuilder addConstantForce: particleCForce for: particleC.
+	changeEnvironment := environmentBuilder environment.
 	change := UniverseChange from: originalState with: changeEnvironment during: testResource oneSecond / 2.
 
 	finalState := change finalState.
