@@ -1,4 +1,4 @@
-building configuration
+building - configuration
 addConstantForce: targetForce for: particle
 
 	self assertSubjectUniverseIncludes: particle.

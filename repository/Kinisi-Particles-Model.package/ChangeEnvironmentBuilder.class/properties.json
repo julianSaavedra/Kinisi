@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "ChangeComponent",
+	"super" : "Object",
 	"category" : "Kinisi-Particles-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "GravitationalInteractionComponent",
+	"instvars" : [
+		"subjectUniverse",
+		"description"
+	],
+	"name" : "ChangeEnvironmentBuilder",
 	"type" : "normal"
 }

@@ -1,4 +1,4 @@
 calculation
-forceOver: particle causedBy: anObject
+forceOver: particle causedBy: causingParticles
  
 	^force

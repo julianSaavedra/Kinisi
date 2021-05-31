@@ -1,4 +1,4 @@
-building configuration
+building - configuration
 addConstantAcceleration: targetAcceleration for: particle
 
 	self assertSubjectUniverseIncludes: particle.

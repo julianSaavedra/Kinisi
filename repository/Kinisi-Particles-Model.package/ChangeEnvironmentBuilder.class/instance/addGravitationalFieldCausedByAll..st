@@ -1,4 +1,4 @@
-building configuration
+building - configuration
 addGravitationalFieldCausedByAll: particles
 
 	self assertSubjectUniverseIncludesAll: particles.

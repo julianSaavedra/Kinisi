@@ -15,4 +15,4 @@ testResultOfInteractionIsAForce
 
 	self
 		assert: interaction result norm
-		equals: (testResource newtonWith: 1.3348e-10)
+		equals: (testResource newtonWith: 1.3348603e-10)

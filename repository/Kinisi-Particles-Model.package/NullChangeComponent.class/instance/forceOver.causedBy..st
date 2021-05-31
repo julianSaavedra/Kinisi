@@ -1,4 +1,4 @@
 calculation
-forceOver: particle causedBy: otherParticles
+forceOver: particle causedBy: causingParticles
 
 	^MeasureVector nullWith: UnitProvider soleInstance newton

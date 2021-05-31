@@ -1,4 +1,4 @@
-building configuration
+building - asserting
 assertSubjectUniverseIncludes: particle
 
 	(subjectUniverse includes: particle) ifFalse: [

@@ -1,4 +1,0 @@
-configuring
-addGravitationalInteractionBetweenParticles
-
-	gravitationalComponent := GravitationalInteractionComponent new
