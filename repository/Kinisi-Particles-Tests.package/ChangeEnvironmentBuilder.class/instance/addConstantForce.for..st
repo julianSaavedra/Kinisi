@@ -1,5 +1,5 @@
 building configuration
 addConstantForce: targetForce for: particle
 
-	self assertPaticleIsIncludedInSubjectUniverse: particle.
+	self assertSubjectUniverseIncludes: particle.
 	description addConstantForce: targetForce for: particle

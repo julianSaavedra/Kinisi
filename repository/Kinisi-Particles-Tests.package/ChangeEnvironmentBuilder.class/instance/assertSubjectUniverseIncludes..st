@@ -1,5 +1,5 @@
 building configuration
-assertPaticleIsIncludedInSubjectUniverse: particle
+assertSubjectUniverseIncludes: particle
 
 	(subjectUniverse includes: particle) ifFalse: [
 		| errorMessage |

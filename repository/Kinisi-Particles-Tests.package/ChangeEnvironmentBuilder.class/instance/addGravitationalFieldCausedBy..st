@@ -1,5 +1,5 @@
 building configuration
 addGravitationalFieldCausedBy: particle
  
-	self assertPaticleIsIncludedInSubjectUniverse: particle.
+	self assertSubjectUniverseIncludes: particle.
 	description addGravitationalFieldCausedBy: particle
