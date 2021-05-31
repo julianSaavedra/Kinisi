@@ -2,7 +2,7 @@ test - gravitational
 testUniverseWithTwoParticlesWithGravitationalInteractionBetweenThem
 
 	| initialState change expectedState changeEnvironment environmentBuilder |
-	initialState := ObservableUniverseState withAll: self originalPhysicalStates.
+	initialState := ObservableUniverseState withAll: self originalParticlesBeforeGravitationalAttraction.
 
 	environmentBuilder := ChangeEnvironmentBuilder for: initialState.
 	environmentBuilder addGravitationalInteractionBetweenParticles.
@@ -11,7 +11,7 @@ testUniverseWithTwoParticlesWithGravitationalInteractionBetweenThem
 	change := UniverseChange
 		from: initialState
 		with: changeEnvironment
-		during: testResource oneSecond.
+		during: testResource halfSecond.
 
-	expectedState := ObservableUniverseState withAll: self expectedPhysicalStates.	
-	self assert: change finalState equals: expectedState
+	expectedState := ObservableUniverseState withAll: self expectedParticlesAfterGravitationalAttraction.
+	self assertParticlesIn: change finalState areCloseTo: expectedState

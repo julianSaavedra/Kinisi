@@ -1,3 +1,4 @@
 building configuration
-addGravitationalFieldCausedByAll: aCollection 
-	self shouldBeImplemented.
+addGravitationalFieldCausedByAll: particles
+ 
+	description addGravitationalFieldCausedByAll: particles

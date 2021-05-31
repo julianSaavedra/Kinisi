@@ -15,7 +15,7 @@ testUniverseWithSingleParticleWithConstantAccelerationAndInitialVelocity
 	change := UniverseChange
 		from: initialState
 		with: changeEnvironment
-		during: testResource oneSecond / 2.
+		during: testResource halfSecond.
 
 	self
 		assertPositionOf: particle

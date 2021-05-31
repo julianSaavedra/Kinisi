@@ -20,7 +20,7 @@ testUniverseWithThreeParticlesDifferentConstantForcesActingOnThemAndDifferentIni
 	particleCForce := testResource newtonVectorWith: #(-1 0 1).
 	environmentBuilder addConstantForce: particleCForce for: particleC.
 	changeEnvironment := environmentBuilder environment.
-	change := UniverseChange from: originalState with: changeEnvironment during: testResource oneSecond / 2.
+	change := UniverseChange from: originalState with: changeEnvironment during: testResource halfSecond.
 
 	finalState := change finalState.
 	finalPositionA := testResource meterVectorWith: #(0.125 0.125 0.125).

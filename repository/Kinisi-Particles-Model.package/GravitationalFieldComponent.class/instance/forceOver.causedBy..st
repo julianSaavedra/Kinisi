@@ -1,13 +1,9 @@
 calculation
 forceOver: particle causedBy: otherParticles
 
-	| distanceVector squaredDistance forceModule causingParticle |
-	^particle particleName = fieldCausingParticleName
-		ifFalse: [
-			causingParticle := self causingParticleAmong: otherParticles.
-			distanceVector := causingParticle position - particle position.
-			squaredDistance := distanceVector norm * distanceVector norm.
-			forceModule := self gravitationalConstant * particle mass * causingParticle mass / squaredDistance.
-			distanceVector normalized * forceModule ]
-		ifTrue: [ MeasureVector nullWith: UnitProvider soleInstance newton ]
-	
+	| causingParticles nullForce |
+	causingParticles := self causingParticlesAmong: otherParticles.
+	causingParticles remove: particle ifAbsent: [  ].
+	nullForce := MeasureVector nullWith: UnitProvider soleInstance newton.
+	^causingParticles inject: nullForce into: [:totalForce :causingParticle |
+			self forceCausedBy: causingParticle over: particle ]
