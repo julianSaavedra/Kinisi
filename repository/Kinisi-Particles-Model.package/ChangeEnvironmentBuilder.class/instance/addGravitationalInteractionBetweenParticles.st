@@ -1,0 +1,5 @@
+building - configuration
+addGravitationalInteractionBetweenParticles
+
+	self addGravitationalFieldCausedByAll: subjectUniverse particles
+ 

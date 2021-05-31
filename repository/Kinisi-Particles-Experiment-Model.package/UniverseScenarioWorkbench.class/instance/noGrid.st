@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 noGrid
 
 	scenario noGrid 

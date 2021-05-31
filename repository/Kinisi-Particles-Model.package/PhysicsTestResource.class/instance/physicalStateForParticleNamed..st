@@ -1,0 +1,4 @@
+utilities
+physicalStateForParticleNamed: particleName 
+
+	^self physicalStateForParticleInTheOriginNamed: particleName

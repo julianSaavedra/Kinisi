@@ -1,19 +1,20 @@
 test - constant force
 testUniverseWithSingleParticleWithConstantForceActingOnItAndNoInitialVelocity
 
-	| particle initialState change changeEnvironment oneNewtonForce changeDescription |
+	| particle initialState change changeEnvironment oneNewtonForce environmentBuilder |
 	particle := testResource physicalStateWithNullVelocity.
 	self assert: particle position isZero.
 	
-	oneNewtonForce := testResource oneNewtonInAllComponentsVector.
-	changeDescription := ChangeDescription empty.
-	changeDescription addConstantForce: oneNewtonForce for: particle.
-	changeEnvironment := ChangeEnvironment from: changeDescription.
 	initialState := ObservableUniverseState with: particle.
+	oneNewtonForce := testResource oneNewtonInAllComponentsVector.
+	environmentBuilder := ChangeEnvironmentBuilder for: initialState.
+	environmentBuilder addConstantForce: oneNewtonForce for: particle.
+	changeEnvironment := environmentBuilder environment.
+	
 	change := UniverseChange
 		from: initialState
 		with: changeEnvironment
-		during: testResource oneSecond / 2.
+		during: testResource halfSecond.
 
 	self
 		assertPositionOf: particle

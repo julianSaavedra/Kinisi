@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 uniformGridWith: color
 
 	scenario uniformGridWith: color

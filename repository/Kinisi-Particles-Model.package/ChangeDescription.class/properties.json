@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"descriptionPerParticle"
+		"componentsPerParticle",
+		"gravitationalComponent"
 	],
 	"name" : "ChangeDescription",
 	"type" : "normal"

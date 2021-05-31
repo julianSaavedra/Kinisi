@@ -1,18 +1,20 @@
 test - constant acceleration
 testUniverseWithSingleParticleWithConstantAccelerationAndNoInitialVelocity
 
-	| particle initialState change changeEnvironment changeDescription |
+	| particle initialState change changeEnvironment environmentBuilder |
 	particle := testResource physicalStateWithNullVelocity.
 	self assert: particle position isZero.
 	initialState := ObservableUniverseState with: particle.
 	
-	changeDescription := ChangeDescription empty.
-	changeDescription addConstantAcceleration: self oneMeterPerSquareSecondAcceleration for: particle.
-	changeEnvironment := ChangeEnvironment from: changeDescription.
+	environmentBuilder := ChangeEnvironmentBuilder for: initialState.
+	environmentBuilder
+		addConstantAcceleration: self oneMeterPerSquareSecondAcceleration
+		for: particle.
+	changeEnvironment := environmentBuilder environment.
 	change := UniverseChange
 		from: initialState
 		with: changeEnvironment
-		during: testResource oneSecond / 2.
+		during: testResource halfSecond.
 
 	self
 		assertPositionOf: particle

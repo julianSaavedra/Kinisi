@@ -1,8 +1,7 @@
 test - constant acceleration
 testUniverseWithThreeParticlesDifferentConstantAccelerationsAndDifferentInitialVelocities
 
-	| particleA originalState change finalState particleB particleC finalPositionA finalPositionB finalPositionC particleAAcceleration particleCAcceleration changeEnvironment changeDescription |
-	changeDescription := ChangeDescription empty.
+	| particleA initialState change finalState particleB particleC finalPositionA finalPositionB finalPositionC particleAAcceleration particleCAcceleration changeEnvironment environmentBuilder |
 	particleA := testResource physicalStateForParticleInTheOriginNamed: #ParticleA.
 	self assert: particleA velocity isZero.
 	particleB := testResource
@@ -13,15 +12,16 @@ testUniverseWithThreeParticlesDifferentConstantAccelerationsAndDifferentInitialV
 		physicalStateForParticleNamed: #ParticleC
 		in: (testResource meterVectorWith: #(-2 -2 -2))
 		with: (testResource meterPerSecondVectorWith: #(-1 -1 -1)).
-	originalState := ObservableUniverseState withAll: {particleA. particleB. particleC}.	
+	initialState := ObservableUniverseState withAll: {particleA. particleB. particleC}.	
 	
+	environmentBuilder := ChangeEnvironmentBuilder for: initialState.
 	particleAAcceleration := self oneMeterPerSquareSecondAcceleration.
-	changeDescription addConstantAcceleration: particleAAcceleration for: particleA.
+	environmentBuilder addConstantAcceleration: particleAAcceleration for: particleA.
 	particleCAcceleration := testResource meterPerSquareSecondVectorWith: #(-1 0 1).
-	changeDescription addConstantAcceleration: particleCAcceleration for: particleC.
+	environmentBuilder addConstantAcceleration: particleCAcceleration for: particleC.
 	
-	changeEnvironment := ChangeEnvironment from: changeDescription.
-	change := UniverseChange from: originalState with: changeEnvironment during: testResource oneSecond / 2.
+	changeEnvironment := environmentBuilder environment.
+	change := UniverseChange from: initialState with: changeEnvironment during: testResource halfSecond.
 
 	finalState := change finalState.
 	finalPositionA := testResource meterVectorWith: #(0.125 0.125 0.125).
