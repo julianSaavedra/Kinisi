@@ -1,7 +1,7 @@
 # Kinisi
 
 [![Build](https://github.com/julianSaavedra/Kinisi/actions/workflows/tests.yml/badge.svg)](https://github.com/julianSaavedra/Kinisi/actions/workflows/tests.yml)
-[![Build Status](https://travis-ci.org/julianSaavedra/Kinisi.png)](https://travis-ci.org/julianSaavedra/Kinisi)
+[![Build Status](https://travis-ci.com/julianSaavedra/Kinisi.png)](https://travis-ci.com/julianSaavedra/Kinisi)
 [![Coverage Status](https://coveralls.io/repos/github/julianSaavedra/Kinisi/badge.png)](https://coveralls.io/github/julianSaavedra/Kinisi)
 
 Kinisi
