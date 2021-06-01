@@ -7,11 +7,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"workbench",
-		"particleList",
-		"selectedChangeSpecification",
-		"selectedParticleChangeSpecifications",
-		"gravityComponentSpecification"
+		"helpersMap",
+		"modeSelection",
+		"currentHelper",
+		"mode"
 	],
-	"name" : "UniverseScenarioEnvironmentSettingsPresenter",
+	"name" : "GravityComponentSpecificationPresenter",
 	"type" : "normal"
 }
