@@ -1,0 +1,4 @@
+as yet unclassified
+addGravitationalInteractionBetweenParticles
+
+	gravitationalSpecification := GravitationalInteractionBetweenParticlesSpecification new

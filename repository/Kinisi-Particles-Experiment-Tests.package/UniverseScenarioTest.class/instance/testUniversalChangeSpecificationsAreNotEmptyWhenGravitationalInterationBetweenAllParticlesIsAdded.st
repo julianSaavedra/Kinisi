@@ -1,0 +1,8 @@
+test - change components
+testUniversalChangeSpecificationsAreNotEmptyWhenGravitationalInterationBetweenAllParticlesIsAdded
+
+	self assertEmpty: workbench scenario universalChangeSpecifications.
+	
+	workbench addGravitationalInteractionBetweenParticles.
+			
+	self denyEmpty: workbench scenario universalChangeSpecifications 

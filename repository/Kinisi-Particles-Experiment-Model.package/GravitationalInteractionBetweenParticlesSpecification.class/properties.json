@@ -5,14 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"universeState",
-		"background",
-		"zoom",
-		"scale",
-		"gridMode",
-		"gravitationalSpecification"
-	],
-	"name" : "UniverseScenario",
+	"instvars" : [ ],
+	"name" : "GravitationalInteractionBetweenParticlesSpecification",
 	"type" : "normal"
 }
