@@ -1,0 +1,4 @@
+configuring
+addGravitationalFieldCausedByAll: particles
+ 
+	gravitationalSpecification := GravitationalInteractionWithGravityFields causedByAll: particles

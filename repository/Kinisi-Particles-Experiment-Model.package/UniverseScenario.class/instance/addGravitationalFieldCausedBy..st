@@ -1,4 +1,4 @@
 configuring
 addGravitationalFieldCausedBy: particle
  
-	gravitationalSpecification := GravitationalInteractionWithGravityFields causedByAll: { particle }
+	self addGravitationalFieldCausedByAll: { particle }
