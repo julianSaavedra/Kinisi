@@ -1,7 +1,7 @@
 test - gravity
-testThreeStillParticlesEquidistantFromTheOriginGetCloserToTheOriginBecasueOfGravity
+testThreeStillParticlesEquidistantFromTheOriginRemainTheSameIfGravityIsDisabled
 
-	| particleA particleB lab lastUniverseState experimentResultStates coordinateX coordinateY particleC mass |
+	| particleA particleB lab experimentResultStates coordinateX coordinateY particleC mass |
 	mass := resource oneKilogram * 1000.
 	particleA := workbench modelWorkbench newParticle.	
 	particleA
@@ -33,13 +33,13 @@ testThreeStillParticlesEquidistantFromTheOriginGetCloserToTheOriginBecasueOfGrav
 		stepBy: resource oneSecond
 		over: resource oneSecond * 10.
 
-	workbench modelWorkbench addGravitationalInteractionBetweenParticles.
+	workbench modelWorkbench
+		addGravitationalInteractionBetweenParticles;
+		disableGravitationalInteraction.
 	lab := KinisiLab using: workbench.
 
 	lab runExperiment.
 
 	experimentResultStates := lab lastResult
 		withTimeAndStateCollect: [ :step :state | state ].
-	lastUniverseState := experimentResultStates last.
-	lastUniverseState particles do: [:particle |
-		self assert: particle position norm < resource oneMeter ]
+	self assert: experimentResultStates first equals: experimentResultStates last

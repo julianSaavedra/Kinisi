@@ -1,4 +1,4 @@
-tests
+test - gravity
 testTwoStillParticlesSimetricallyLocatedFromTheOriginGetCloserToTheOriginBecasueOfGravity
 
 	| particleA particleB lab lastUniverseState experimentResultStates |

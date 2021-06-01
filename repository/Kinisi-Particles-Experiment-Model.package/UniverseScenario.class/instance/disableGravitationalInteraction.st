@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 disableGravitationalInteraction
 
-	gravitationalSpecification := nil
+	gravitationalSpecification := NullChangeComponentSpecification new

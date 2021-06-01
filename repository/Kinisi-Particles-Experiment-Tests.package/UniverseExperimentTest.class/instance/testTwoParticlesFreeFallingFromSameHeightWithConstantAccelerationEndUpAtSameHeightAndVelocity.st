@@ -1,5 +1,5 @@
-tests
-testTwoParticlesFreeFallingFromTheSameHeightWithConstantGravityForceEndUpAtSameEndHeightAndVelocity
+test
+testTwoParticlesFreeFallingFromSameHeightWithConstantAccelerationEndUpAtSameHeightAndVelocity
 
 	| lab gravityAcceleration lastUniverseState experimentResultStates leftParticle leftParticlePosition rightParticle rightParticlePosition |
 	leftParticle := workbench modelWorkbench newParticle.
