@@ -1,4 +1,4 @@
-as yet unclassified
+constant
 modeName
 
 	^'Uniform grid'

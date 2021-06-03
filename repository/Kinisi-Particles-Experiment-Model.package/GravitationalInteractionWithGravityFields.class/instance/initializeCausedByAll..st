@@ -1,4 +1,4 @@
 initialization
 initializeCausedByAll: particles
  
-	fieldCausingParticles := particles
+	fieldCausingParticles := particles copyWithoutDuplicates

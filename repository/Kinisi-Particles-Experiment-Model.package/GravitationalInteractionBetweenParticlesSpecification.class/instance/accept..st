@@ -1,4 +1,4 @@
-as yet unclassified
+visitor
 accept: aVisitor
 
 	^aVisitor visitAsGravitationalInteractioBetweenParticles: self

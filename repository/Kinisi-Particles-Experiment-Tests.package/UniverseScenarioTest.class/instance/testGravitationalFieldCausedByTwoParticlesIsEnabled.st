@@ -5,6 +5,8 @@ testGravitationalFieldCausedByTwoParticlesIsEnabled
 	particle := workbench newParticle.
 	anotherParticle := workbench newParticle.
 	
+	workbench addGravitationalFieldCausedByAll: {particle. anotherParticle}.
+	
 	self
-		shouldnt: [ workbench addGravitationalFieldCausedByAll: {particle. anotherParticle} ]
-		raise: Error
+		assertCollection: workbench scenario gravitySpecification fieldCausingParticles
+		hasSameElements: {particle. anotherParticle}

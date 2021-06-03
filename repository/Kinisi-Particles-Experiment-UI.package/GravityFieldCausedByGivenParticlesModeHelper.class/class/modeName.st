@@ -1,4 +1,4 @@
 constant
 modeName
 
-	^'No Grid'
+	^'Gravity Fields'

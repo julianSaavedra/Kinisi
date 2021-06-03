@@ -5,6 +5,7 @@ testGravitationalFieldCausedByGivenParticleIsEnabled
 	fieldCausingParticle := workbench newParticle.
 	anotherParticle := workbench newParticle.
 	
-	self
-		shouldnt: [ workbench addGravitationalFieldCausedBy: fieldCausingParticle ]
-		raise: Error
+	workbench addGravitationalFieldCausedBy: fieldCausingParticle.
+	
+	self assert: (workbench scenario gravitySpecification isFieldCausedBy: fieldCausingParticle).
+	self deny: (workbench scenario gravitySpecification isFieldCausedBy: anotherParticle)
