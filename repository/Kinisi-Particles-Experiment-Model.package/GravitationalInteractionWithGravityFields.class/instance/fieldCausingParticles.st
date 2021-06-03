@@ -1,0 +1,4 @@
+accessing
+fieldCausingParticles
+
+	^fieldCausingParticles copy

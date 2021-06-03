@@ -11,5 +11,6 @@ defaultSpec
 		spacing: 3;
 		add: 'Individual Change Specifications' asText allBold height: 25;
 		add: particleAndChangeSpecifications height: 100;
-		add: #selectedChangeSpecification expand: true fill: true padding: 5;
+		add: #selectedChangeSpecification height: 120;
+		add: #gravityComponentSpecification expand: true fill: true padding: 5;
 		yourself

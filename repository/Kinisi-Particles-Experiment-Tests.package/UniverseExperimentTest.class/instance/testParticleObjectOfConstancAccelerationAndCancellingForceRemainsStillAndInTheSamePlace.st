@@ -1,4 +1,4 @@
-tests
+test
 testParticleObjectOfConstancAccelerationAndCancellingForceRemainsStillAndInTheSamePlace
 
 	| lab particle initialPosition acceleration force experimentResultStates |

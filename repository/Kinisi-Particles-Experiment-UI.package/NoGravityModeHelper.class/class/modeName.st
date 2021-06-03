@@ -1,0 +1,4 @@
+constant
+modeName
+
+	^'No Gravity'

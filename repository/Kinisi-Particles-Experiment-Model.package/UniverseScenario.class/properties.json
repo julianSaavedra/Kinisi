@@ -10,7 +10,8 @@
 		"background",
 		"zoom",
 		"scale",
-		"gridMode"
+		"gridMode",
+		"gravitationalSpecification"
 	],
 	"name" : "UniverseScenario",
 	"type" : "normal"

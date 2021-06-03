@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"helpersMap",
+		"modeSelection",
+		"currentHelper",
+		"mode"
+	],
+	"name" : "GravityComponentSpecificationPresenter",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 addGravitationalFieldCausedByAll: particles
  
 	gravitationalComponent := GravitationalFieldComponent causedByAll: particles

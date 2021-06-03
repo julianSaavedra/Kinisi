@@ -9,7 +9,8 @@
 		"workbench",
 		"particleList",
 		"selectedChangeSpecification",
-		"selectedParticleChangeSpecifications"
+		"selectedParticleChangeSpecifications",
+		"gravityComponentSpecification"
 	],
 	"name" : "UniverseScenarioEnvironmentSettingsPresenter",
 	"type" : "normal"

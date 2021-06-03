@@ -1,5 +1,5 @@
-tests
-testParticleFreeFalling
+test
+testParticleFreeFallingWithConstantAcceleration
 
 	| lab particle gravityAcceleration lastUniverseState lastPosition experimentResultStates |
 	particle := workbench modelWorkbench newParticle.

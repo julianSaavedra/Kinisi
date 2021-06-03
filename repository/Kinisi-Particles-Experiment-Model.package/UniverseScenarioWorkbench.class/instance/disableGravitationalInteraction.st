@@ -1,0 +1,4 @@
+as yet unclassified
+disableGravitationalInteraction
+
+	scenario disableGravitationalInteraction
