@@ -1,5 +1,5 @@
 test - gravitational
-testUniverseWithSingleParticleWithGravitationalForceGeneratedByAnotherBodyActingOnItAndNoInitialVelocity
+testUniverseWithGivenParticleGeneratingGravityFieldOverAParticleWithNoInitialVelocity
 
 	| particle initialState change changeEnvironment reallyBigMass bigMassPosition fieldGeneratingParticle environmentBuilder |
 
