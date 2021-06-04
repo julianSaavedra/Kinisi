@@ -4,3 +4,4 @@ observationInterfaceSpecsForCollatz
 	^Array
 		with: self transcriptDefinition
 		with: self animationDefinition
+		with: (InterfaceDefinition named: 'CollatzSequenceMonitor' with: CollatzConjectureSequenceMonitorInterfaceSpec new)

@@ -1,6 +1,6 @@
 definitions
 animationDefinition
 
-	^ InterfaceDefinition
+	^InterfaceDefinition
 		named: 'Animation'
 		with: CollatzConjectureAnimationInterfaceSpec new
