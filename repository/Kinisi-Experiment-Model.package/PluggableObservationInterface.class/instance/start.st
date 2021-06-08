@@ -1,4 +1,5 @@
 action
 start
 
-	startAction value
+	startAction value.
+	display start

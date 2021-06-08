@@ -1,4 +1,5 @@
 action
 terminate
 
-	finishAction value
+	finishAction value.
+	display terminate

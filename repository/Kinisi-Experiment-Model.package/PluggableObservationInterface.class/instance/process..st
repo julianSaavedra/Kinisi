@@ -1,4 +1,6 @@
 action
 process: sample
 
-	observingAction value: sample
+	| picture |
+	picture := observingAction value: sample.
+	display show: picture

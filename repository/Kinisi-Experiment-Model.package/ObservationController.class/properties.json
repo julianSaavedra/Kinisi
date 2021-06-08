@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"buffer",
-		"process"
+		"process",
+		"displays",
+		"interfaces"
 	],
 	"name" : "ObservationController",
 	"type" : "normal"

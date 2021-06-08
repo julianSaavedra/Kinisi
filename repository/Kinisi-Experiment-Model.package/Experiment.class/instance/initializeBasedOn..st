@@ -1,4 +1,5 @@
 initialization
 initializeBasedOn: aDefinition
  
-	definition := aDefinition
+	definition := aDefinition.
+	observation := ObservationController basedOn: definition
