@@ -2,7 +2,7 @@ tests - simulation coupled
 testMonitorFinishingActionIsPerformedAfterTheSimulationHasEnded
 
 	| monitor finishActionWasPerformed simulation monitoringConsumer |
-	monitor := PluggableObservationInterface
+	monitor := PluggableObservationInterfaceProcessor
 		processWith: [:simulationStepResult | ]
 		andWhenFinishedDo: [ self monitoringHasFinished. finishActionWasPerformed := true ].
 	monitoringConsumer := SimulationMonitoringConsumer for: monitor every: (Duration milliSeconds: 50).

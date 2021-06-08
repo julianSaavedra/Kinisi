@@ -1,7 +1,7 @@
 interface creation
 interfaceStartingWith: startingAction andFinishingWith: finishingAction
 
-	^PluggableObservationInterface
+	^PluggableObservationInterfaceProcessor
 		onStartDo: startingAction
 		processWith: [:sample | self interfaceHasProcessed: sample ]
 		andWhenFinishedDo: finishingAction

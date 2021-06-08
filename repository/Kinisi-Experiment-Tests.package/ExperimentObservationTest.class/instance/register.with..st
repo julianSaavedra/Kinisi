@@ -1,6 +1,6 @@
 support
 register: observationsRecordKeeper with: name
  
-	recordKeepers
+	recorders
 		at: name
 		put: observationsRecordKeeper
