@@ -1,8 +1,7 @@
 running
 run
 
-	| simulation observation consumer |
-	observation := ObservationController basedOn: definition.
+	| simulation consumer |
 	consumer := SimulationStepPluggableConsumer
 		processWith: [:step | observation process: step ]
 		andWhenFinishedDo: [ observation close ].
@@ -16,5 +15,6 @@ run
 	simulationProcess resume."
 	simulation runInforming:consumer.
 	result := simulation result.
+	lab recordResultOf: self.
 	observation play.
 	"[observation isTerminated] whileFalse"

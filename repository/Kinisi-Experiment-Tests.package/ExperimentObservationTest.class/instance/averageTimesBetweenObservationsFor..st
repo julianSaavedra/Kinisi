@@ -1,5 +1,5 @@
 support
 averageTimesBetweenObservationsFor: interfaceDefinition
 
-	^(recordKeepers at: interfaceDefinition name)
+	^(recorders at: interfaceDefinition name)
 		timesBetweenObservationsAverage

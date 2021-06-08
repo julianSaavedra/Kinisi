@@ -1,4 +1,0 @@
-API
-interfaceFinishing
-
-	terminationSemaphore signal

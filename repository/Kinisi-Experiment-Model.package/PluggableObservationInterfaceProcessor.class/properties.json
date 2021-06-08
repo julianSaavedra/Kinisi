@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ObservationInterfaceProcessor",
+	"category" : "Kinisi-Experiment-Model-Observation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startAction",
+		"finishAction",
+		"observingAction"
+	],
+	"name" : "PluggableObservationInterfaceProcessor",
+	"type" : "normal"
+}

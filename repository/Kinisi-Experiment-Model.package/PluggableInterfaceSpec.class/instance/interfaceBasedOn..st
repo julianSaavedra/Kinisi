@@ -1,7 +1,9 @@
 interface creation
 interfaceBasedOn: scenario
 
-	^PluggableObservationInterface
+	| processor |
+	processor := PluggableObservationInterfaceProcessor
 		onStartDo: startingAction 
 		processWith: observationAction
-		andWhenFinishedDo: finishingAction
+		andWhenFinishedDo: finishingAction.
+	^ObservationInterface using: processor

@@ -1,4 +1,0 @@
-API
-interfaceStarting
-
-	self resetRecords

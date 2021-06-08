@@ -3,7 +3,7 @@ testMonitorProcessesSimulationStepResultsEveryFortyMillisecondsWithToleranceOfFi
 
 	| receivedDataTimes monitor periodInMilliSeconds monitoringConsumer simulation |
 	receivedDataTimes := OrderedCollection new.
-	monitor := PluggableObservationInterface
+	monitor := PluggableObservationInterfaceProcessor
 		processWith: [:stepResult | receivedDataTimes add: Time now ]
 		andWhenFinishedDo: [ self monitoringHasFinished ].
 	periodInMilliSeconds := 40.

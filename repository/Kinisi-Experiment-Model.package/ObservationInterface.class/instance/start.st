@@ -1,4 +1,5 @@
 action
 start
 
-	self subclassResponsibility
+	processor start.
+	display start

@@ -1,4 +1,6 @@
 action
 process: sample
 
-	self subclassResponsibility
+	| resultToBeDisplayed |
+	resultToBeDisplayed := processor process: sample.
+	display show: resultToBeDisplayed

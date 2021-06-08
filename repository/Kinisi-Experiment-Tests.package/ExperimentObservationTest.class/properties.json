@@ -8,7 +8,7 @@
 	"instvars" : [
 		"lab",
 		"observationWorkbench",
-		"recordKeepers"
+		"recorders"
 	],
 	"name" : "ExperimentObservationTest",
 	"type" : "normal"

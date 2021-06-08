@@ -1,0 +1,4 @@
+action
+terminate
+
+	self subclassResponsibility

@@ -1,7 +1,7 @@
 example objects
 numberInTranscriptInterface
 
-	^PluggableObservationInterface
+	^PluggableObservationInterfaceProcessor
 		onStartDo: [ Transcript open; clear ]
 		processWith: [ :number | 
 			Transcript
