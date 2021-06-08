@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"observations",
-		"times",
-		"terminationSemaphore"
+		"recordKeeper"
 	],
-	"name" : "ObservationsRecordKeeper",
+	"name" : "ObservationsRecorderDisplay",
 	"type" : "normal"
 }

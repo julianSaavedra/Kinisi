@@ -1,5 +1,5 @@
 tests
-testExperimentIsObservedThroughTwoInterfaces
+testExperimentObservationsAreProcessedByGivenTwoInterfaces
 
 	| interfaceADefinition interfaceBDefinition |
 	interfaceADefinition := self recordingInterfaceDefinitionNamed: 'InterfaceA'.
@@ -10,8 +10,8 @@ testExperimentIsObservedThroughTwoInterfaces
 		add: interfaceBDefinition.
 
 	lab runExperiment.
-	self waitRecordingIsFinishedFor:interfaceADefinition.
-	self waitRecordingIsFinishedFor:interfaceBDefinition.
+	self waitRecordingIsFinishedForInterfaceBasedOn:interfaceADefinition.
+	self waitRecordingIsFinishedForInterfaceBasedOn:interfaceBDefinition.
 		
 	self denyEmpty: (self recordedObservationsFor: interfaceADefinition).
 	self denyEmpty: (self recordedObservationsFor: interfaceBDefinition)

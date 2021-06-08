@@ -1,5 +1,5 @@
 tests
-testExperimentObservationsAreObservedEveryOneHundredMilliseconds
+testExperimentObservationsAreProcessedEveryOneHundredMilliseconds
 
 	| oneHundredMilliSeconds interfaceDefinition |
 	interfaceDefinition := self recordingInterfaceDefinitionNamed: 'ObservationsTimesRecorer'.
@@ -9,7 +9,7 @@ testExperimentObservationsAreObservedEveryOneHundredMilliseconds
 		period: oneHundredMilliSeconds.
 
 	lab runExperiment.
-	self waitRecordingIsFinishedFor: interfaceDefinition.
+	self waitRecordingIsFinishedForInterfaceBasedOn: interfaceDefinition.
 	
 	self
 		assertTimeBetweenObservationFor: interfaceDefinition

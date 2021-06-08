@@ -1,5 +1,5 @@
 tests
-testExperimentIsNotObservedWithGivenIntefaceSpecsIfItIsRemoved
+testExperimentObservationsAreNotProcessedByGivenIntefaceIfItsSpecIsRemoved
 
 	| interfaceDefinitionToBeUsed interfaceDefinitionToBeRemoved |
 	interfaceDefinitionToBeUsed := self recordingInterfaceDefinitionNamed: 'ObservationsCollectorToBeUsed'.
@@ -11,7 +11,7 @@ testExperimentIsNotObservedWithGivenIntefaceSpecsIfItIsRemoved
 		remove: interfaceDefinitionToBeRemoved.
 
 	lab runExperiment.
-	self waitRecordingIsFinishedFor: interfaceDefinitionToBeUsed.
+	self waitRecordingIsFinishedForInterfaceBasedOn: interfaceDefinitionToBeUsed.
 
 	self denyEmpty: (self recordedObservationsFor: interfaceDefinitionToBeUsed).
 	self assertEmpty: (self recordedObservationsFor: interfaceDefinitionToBeRemoved)

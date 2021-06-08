@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "Kinisi-Experiment-Tests-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"lab",
-		"observationWorkbench",
-		"recorders"
-	],
-	"name" : "ExperimentObservationTest",
+	"instvars" : [ ],
+	"name" : "RecorderDisplayManager",
 	"type" : "normal"
 }
