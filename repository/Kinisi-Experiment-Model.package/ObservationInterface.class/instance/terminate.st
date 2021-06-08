@@ -1,4 +1,5 @@
 action
 terminate
 
-	self subclassResponsibility
+	processor terminate.
+	display terminate

@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"processor",
-		"display"
-	],
-	"name" : "ObservationInterface",
+	"instvars" : [ ],
+	"name" : "ObservationInterfaceProcessor",
 	"type" : "normal"
 }

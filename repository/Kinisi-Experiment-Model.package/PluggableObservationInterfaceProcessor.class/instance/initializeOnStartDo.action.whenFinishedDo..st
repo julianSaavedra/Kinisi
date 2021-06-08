@@ -3,5 +3,4 @@ initializeOnStartDo: anStartAction action: anObservingAction whenFinishedDo: aFi
 
 	startAction := anStartAction.
 	observingAction := anObservingAction.
-	finishAction := aFinishAction.
-	display := NullDisplay new
+	finishAction := aFinishAction

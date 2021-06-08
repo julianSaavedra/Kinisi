@@ -6,7 +6,7 @@ testObservationProcessAllStepsAndStatesProducedBySimulation
 		processWith: [ :stepResult | buffer store: stepResult ]
 		andWhenFinishedDo: [ buffer close ].
 	simulation := self simulationInforming: observationConsumer.
-	interface := PluggableObservationInterface
+	interface := PluggableObservationInterfaceProcessor
 		onStartDo: [ observations := OrderedCollection new ]
 		processWith: [ :anObservation | observations add: anObservation ]
 		andWhenFinishedDo: [ observationHasFinished := true ].
