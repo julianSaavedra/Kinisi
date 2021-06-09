@@ -2,5 +2,5 @@ tests
 waitUnilIsFinished: display
 
 	[ display wait ]
-		valueWithin: 2 seconds
+		valueWithin: period * 20
 		onTimeout: [ self fail ]
