@@ -1,14 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "SpPresenter",
 	"category" : "Kinisi-CollatzConjecture-Experiment-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"displayManager",
-		"period"
+		"classes",
+		"selectedClassTests",
+		"canvas"
 	],
-	"name" : "CollatzConjectureExperimentObservationTest",
+	"name" : "CollatzExperimentInterfacesTestVisualizationPresenter",
 	"type" : "normal"
 }

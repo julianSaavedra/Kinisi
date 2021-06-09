@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "Kinisi-CollatzConjecture-Experiment-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"displayManager",
-		"period"
-	],
-	"name" : "CollatzConjectureExperimentObservationTest",
+	"instvars" : [ ],
+	"name" : "TranscriptInterfaceSpec",
 	"type" : "normal"
 }

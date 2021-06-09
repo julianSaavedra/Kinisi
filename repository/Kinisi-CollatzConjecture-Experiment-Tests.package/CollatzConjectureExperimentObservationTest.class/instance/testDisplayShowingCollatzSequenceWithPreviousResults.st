@@ -1,7 +1,7 @@
 tests
-testMonitorShowingCollatzSequenceWithPreviousResults
+testDisplayShowingCollatzSequenceWithPreviousResults
 
-	| lab workbench observationWorkbench interfaceSpec interfaceDefinition |
+	| lab workbench observationWorkbench interfaceSpec interfaceDefinition experiment display |
 	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbench default.
 	workbench modelWorkbench state: 5.
 	lab := KinisiLab using: workbench.
@@ -11,11 +11,10 @@ testMonitorShowingCollatzSequenceWithPreviousResults
 	
 	observationWorkbench := lab workbench observationWorkbench.
 	observationWorkbench
-		period: (Duration milliSeconds: 50);
+		period: period;
 		add: interfaceDefinition.
-	
-	self 
-		shouldnt: [ lab runExperiment ]
-		raise: Error
 
+	experiment := lab newExperiment.
+	display := (displayManager displaysFor: experiment) first.
 	
+	experiment run

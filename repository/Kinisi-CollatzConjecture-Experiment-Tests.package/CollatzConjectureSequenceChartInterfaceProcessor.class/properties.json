@@ -1,14 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "ObservationInterfaceProcessor",
 	"category" : "Kinisi-CollatzConjecture-Experiment-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"displayManager",
-		"period"
+		"color",
+		"observationIndices",
+		"observationStates"
 	],
-	"name" : "CollatzConjectureExperimentObservationTest",
+	"name" : "CollatzConjectureSequenceChartInterfaceProcessor",
 	"type" : "normal"
 }
