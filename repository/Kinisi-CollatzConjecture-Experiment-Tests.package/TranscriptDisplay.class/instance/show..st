@@ -1,4 +1,5 @@
 as yet unclassified
 show: text
  
-	transcript show: text; cr
+	transcript nextPutAll: text; cr.
+	screen text: transcript contents

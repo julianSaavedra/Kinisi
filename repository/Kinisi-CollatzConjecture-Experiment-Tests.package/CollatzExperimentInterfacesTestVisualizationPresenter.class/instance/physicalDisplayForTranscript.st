@@ -1,6 +1,6 @@
 as yet unclassified
 physicalDisplayForTranscript
 
-	canvas := self newMorph.
+	canvas := self newText.
 	self update.
 	^canvas

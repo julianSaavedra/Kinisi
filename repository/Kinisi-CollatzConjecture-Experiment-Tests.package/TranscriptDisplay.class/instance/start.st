@@ -1,4 +1,4 @@
 as yet unclassified
 start
 
-	transcript clear
+	transcript := WriteStream on: ''
