@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"roassalPresenter",
-		"currentPicture"
-	],
-	"name" : "SpRoassalDisplay",
+	"instvars" : [ ],
+	"name" : "TranscriptInterfaceSpec",
 	"type" : "normal"
 }

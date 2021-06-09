@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"roassalPresenter",
-		"currentPicture"
+		"transcript"
 	],
-	"name" : "SpRoassalDisplay",
+	"name" : "TranscriptDisplay",
 	"type" : "normal"
 }

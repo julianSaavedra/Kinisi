@@ -1,0 +1,4 @@
+action
+start
+
+	self resetRecords
