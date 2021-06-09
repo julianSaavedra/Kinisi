@@ -1,13 +1,14 @@
 interface creation
 interfaceBasedOn: scenario
 
-	| observationIndices observationStates chart canvas |
-	^PluggableObservationInterface
+	| observationIndices observationStates chart canvas processor |
+	processor := PluggableObservationInterfaceProcessor
 		onStartDo: [
 			observationIndices := OrderedCollection new.
 			observationStates := OrderedCollection new.
 			canvas := SpRoassalPresenter new.
-			canvas script: [:aCanvas | observationIndices ifNotEmpty: [
+			canvas script: [:aCanvas |
+				observationIndices ifNotEmpty: [
 					chart := RSChart new.
 					chart
 						addPlot: (RSLinePlot new x: observationIndices y: observationStates; color: scenario numberColor);
@@ -28,4 +29,6 @@ interfaceBasedOn: scenario
 			observationIndices add: observation time. 
 			observationStates add: observation value number.
 			canvas refresh ]
-		andWhenFinishedDo: [ ]
+		andWhenFinishedDo: [ ].
+	
+	^ObservationInterface using: processor
