@@ -1,4 +1,4 @@
 connecting
 displayFor: interfaceProcessor
  
-	^interfaceProcessor displayFrom: self
+	^displayProviderSpecification displayFor: interfaceProcessor

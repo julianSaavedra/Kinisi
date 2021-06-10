@@ -1,4 +1,6 @@
 action
 process: observation andShowIn: display
 
-	display show: (self process: observation)
+	observationIndices add: observation time.
+	observationStates add: observation value number.
+	display show: self chartBasedOnObservations

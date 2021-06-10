@@ -1,4 +1,4 @@
 action
 startAndShowIn: display
 
-	self start
+	self subclassResponsibility

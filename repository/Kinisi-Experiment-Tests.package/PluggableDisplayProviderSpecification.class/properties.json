@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-CollatzConjecture-Experiment-Tests",
+	"category" : "Kinisi-Experiment-Tests-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"screenProvider",
-		"displayProviderSpecification"
+		"displayCreationBlock"
 	],
-	"name" : "DisplayProvider",
+	"name" : "PluggableDisplayProviderSpecification",
 	"type" : "normal"
 }

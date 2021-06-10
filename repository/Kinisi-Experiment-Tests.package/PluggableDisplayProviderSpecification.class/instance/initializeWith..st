@@ -1,0 +1,4 @@
+initialization
+initializeWith: aDisplayCreationBlock
+
+	displayCreationBlock := aDisplayCreationBlock

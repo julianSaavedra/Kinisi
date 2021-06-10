@@ -1,13 +1,13 @@
 tests
 testExperimentIsObservedThroughASingleDisplay
 
-	| interfaceDefinition displayManager experiment display |
+	| interfaceDefinition displayProvider experiment display |
 	interfaceDefinition := self simplePassthroughInterfaceNamed: 'ObservationsCollector'.
 	observationWorkbench add: interfaceDefinition.
 	experiment := lab newExperiment.
 	
-	displayManager := DisplayProvider new.
-	display := (displayManager displaysFor: experiment) first.
+	displayProvider := DisplayProvider using: (PluggableDisplayProviderSpecification with: [ ObservationsRecorderDisplay new ]).
+	display := (displayProvider displaysFor: experiment) first.
 	self assertEmpty: display shownObservations.
 	
 	experiment run.
