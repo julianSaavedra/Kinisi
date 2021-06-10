@@ -9,8 +9,8 @@
 		"period",
 		"observationWorkbench",
 		"lab",
-		"displayConnector",
-		"displayHolder"
+		"displayHolder",
+		"displayProvider"
 	],
 	"name" : "CollatzConjectureExperimentObservationTest",
 	"type" : "normal"

@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 withScreenFrom: screenProvider
 
 	^self new initializeWithScreenFrom: screenProvider

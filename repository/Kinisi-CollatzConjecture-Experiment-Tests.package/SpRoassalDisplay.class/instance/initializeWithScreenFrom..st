@@ -1,5 +1,5 @@
 initialization
 initializeWithScreenFrom: screenProvider
 
-	currentPicture := NullPicture new.
+	currentPicture := NullRenderizablePicture new.
 	roassalPresenter := screenProvider canvasScreen

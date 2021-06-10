@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "NullDisplayProvider",
+	"instvars" : [
+		"screenProvider"
+	],
+	"name" : "DisplayProvider",
 	"type" : "normal"
 }

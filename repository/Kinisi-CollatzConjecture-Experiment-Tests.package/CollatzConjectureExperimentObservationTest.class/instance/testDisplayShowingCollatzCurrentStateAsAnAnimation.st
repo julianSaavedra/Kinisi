@@ -7,7 +7,7 @@ testDisplayShowingCollatzCurrentStateAsAnAnimation
 	observationWorkbench add: interfaceDefinition.
 
 	experiment := lab newExperiment.
-	display := (displayConnector displaysFor: experiment) first.
+	display := (displayProvider displaysFor: experiment) first.
 	displayHolder display: display.
 	
 	experiment run

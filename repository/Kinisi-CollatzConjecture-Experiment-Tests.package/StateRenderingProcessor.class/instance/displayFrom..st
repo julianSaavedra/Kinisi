@@ -1,4 +1,4 @@
 connecting
-acceptDisplayConnector: displayConnector
+displayFrom: displayConnector
 
 	^displayConnector displayForCanvas

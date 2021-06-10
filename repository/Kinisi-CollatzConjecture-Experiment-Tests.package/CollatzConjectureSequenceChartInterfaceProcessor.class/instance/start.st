@@ -2,4 +2,4 @@ action
 start
 
 	self resetRecords.
-	^NullPicture new
+	^NullRenderizablePicture new

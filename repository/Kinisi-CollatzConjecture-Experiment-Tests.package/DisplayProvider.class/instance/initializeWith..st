@@ -1,4 +1,4 @@
 initialization
 initializeWith: aDisplayProvider
  
-	displayProvider := aDisplayProvider
+	screenProvider := aDisplayProvider

@@ -1,4 +1,0 @@
-connecting
-acceptDisplayConnector: displayConnector
-
-	^ displayConnector displayForCanvas
