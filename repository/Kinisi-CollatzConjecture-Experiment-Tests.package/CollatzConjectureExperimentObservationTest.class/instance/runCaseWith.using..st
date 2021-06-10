@@ -1,6 +1,6 @@
-as yet unclassified
-runCaseWith: aDisplayManager using: aPeriod
+running
+runCaseWith: aDisplayHolder using: aPeriod
  
-	displayManager := aDisplayManager.
+	displayHolder := aDisplayHolder.
 	period := aPeriod.
 	self runCase

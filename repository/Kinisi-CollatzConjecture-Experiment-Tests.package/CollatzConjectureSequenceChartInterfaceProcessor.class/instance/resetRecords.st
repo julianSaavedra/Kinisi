@@ -1,4 +1,4 @@
-initialization
+private
 resetRecords
 
 	observationIndices := OrderedCollection new.

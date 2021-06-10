@@ -2,5 +2,5 @@ running test
 run: selectedTest
 
 	selectedTest
-		runCaseWith: (FixCanvasDisplayManager with: self)
+		runCaseWith: self
 		using: (Duration milliSeconds: 500)

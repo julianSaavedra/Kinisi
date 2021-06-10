@@ -1,9 +1,10 @@
-tests
+running
 setUp
 	
 	| workbench |
 	super setUp.
-	displayManager ifNil: [ displayManager := RecorderDisplayManager new ].
+	displayConnector := DisplayProviderBANANA with: ScreenProvider new.
+	displayHolder ifNil: [ displayHolder := NullDisplayHolder new ].
 	period ifNil: [ period := Duration milliSeconds: 50 ].
 	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbench default.
 	workbench modelWorkbench state: 5.

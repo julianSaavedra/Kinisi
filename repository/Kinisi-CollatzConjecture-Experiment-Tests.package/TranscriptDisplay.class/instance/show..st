@@ -1,4 +1,4 @@
-as yet unclassified
+action
 show: text
  
 	transcript nextPutAll: text; cr.

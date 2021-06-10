@@ -1,17 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "Kinisi-CollatzConjecture-Experiment-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"period",
-		"observationWorkbench",
-		"lab",
-		"displayConnector",
-		"displayHolder"
+		"displayProvider"
 	],
-	"name" : "CollatzConjectureExperimentObservationTest",
+	"name" : "DisplayProviderBANANA",
 	"type" : "normal"
 }

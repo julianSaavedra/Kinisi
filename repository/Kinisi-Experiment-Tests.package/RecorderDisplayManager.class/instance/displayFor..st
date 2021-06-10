@@ -1,4 +1,4 @@
 connecting
-displayFor: interface
+displayFor: processor
 
 	^ObservationsRecorderDisplay new

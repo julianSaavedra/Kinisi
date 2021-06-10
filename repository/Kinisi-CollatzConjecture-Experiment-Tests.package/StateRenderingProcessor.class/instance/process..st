@@ -1,5 +1,5 @@
-as yet unclassified
+action
 process: observation
 
 	currentState := observation value.
-	^RenderizablePicture on: currentState with: renderer
+	^self currentPicture

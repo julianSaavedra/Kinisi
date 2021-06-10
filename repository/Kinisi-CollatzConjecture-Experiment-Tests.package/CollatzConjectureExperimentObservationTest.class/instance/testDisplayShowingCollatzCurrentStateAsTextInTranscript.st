@@ -7,6 +7,7 @@ testDisplayShowingCollatzCurrentStateAsTextInTranscript
 	observationWorkbench add: interfaceDefinition.
 
 	experiment := lab newExperiment.
-	display := (displayManager displaysFor: experiment) first.
+	display := (displayConnector displaysFor: experiment) first.
+	displayHolder display: display.
 	
 	experiment run

@@ -1,4 +1,4 @@
-initialization
+action
 start
 
-	^RenderizablePicture on: currentState with: renderer
+	^self currentPicture

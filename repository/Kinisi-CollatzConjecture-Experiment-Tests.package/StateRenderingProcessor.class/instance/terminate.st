@@ -1,4 +1,4 @@
-as yet unclassified
+action
 terminate
 
-	^RenderizablePicture on: currentState with: renderer
+	^self currentPicture
