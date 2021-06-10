@@ -6,7 +6,7 @@ testExperimentIsObservedThroughASingleDisplay
 	observationWorkbench add: interfaceDefinition.
 	experiment := lab newExperiment.
 	
-	displayManager := RecorderDisplayManager new.
+	displayManager := DisplayProvider new.
 	display := (displayManager displaysFor: experiment) first.
 	self assertEmpty: display shownObservations.
 	

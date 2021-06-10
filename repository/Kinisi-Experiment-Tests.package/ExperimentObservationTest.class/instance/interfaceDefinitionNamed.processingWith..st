@@ -13,5 +13,5 @@ interfaceDefinitionNamed: name processingWith: observationProcessingBlock
 			display show: processingResult.
 			processingResult ]
 		andWhenFinishedDo: [ recordKeeper terminate ]
-		choosingDisplayWith: [  ].
+		choosingDisplayWith: [ ObservationsRecorderDisplay new ].
 	^ InterfaceDefinition named: name with: interfaceSpec

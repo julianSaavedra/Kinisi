@@ -9,7 +9,7 @@ testExperimentIsObservedThroughTwoDisplays
 		add: interfaceBDefinition.
 	
 	experiment := lab newExperiment.
-	displayManager := RecorderDisplayManager new.
+	displayManager := DisplayProvider new.
 	displays := displayManager displaysFor: experiment.
 	
 	experiment run.
