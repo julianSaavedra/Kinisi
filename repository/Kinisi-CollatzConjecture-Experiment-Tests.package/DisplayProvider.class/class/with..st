@@ -1,6 +1,6 @@
 instance creation
-with: canvasDisplay
+with: screenProvider
 
-	^self new initializeWith: canvasDisplay
+	^self new initializeWith: screenProvider
 
 	

@@ -5,4 +5,4 @@ onStartDo: startAction processWith: monitoringAction andWhenFinishedDo: finishAc
 		onStartDo: startAction
 		processWith: monitoringAction
 		andWhenFinishedDo: finishAction
-		connectingDisplayWith: [:displayConnector | displayConnector nullDisplay ]
+		displayingIn: [:displayProvider | displayProvider nullDisplay ]

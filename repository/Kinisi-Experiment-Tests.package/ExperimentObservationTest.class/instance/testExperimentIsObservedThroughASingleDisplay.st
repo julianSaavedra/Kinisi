@@ -5,6 +5,7 @@ testExperimentIsObservedThroughASingleDisplay
 	interfaceDefinition := self simplePassthroughInterfaceNamed: 'ObservationsCollector'.
 	observationWorkbench add: interfaceDefinition.
 	experiment := lab newExperiment.
+	
 	displayManager := RecorderDisplayManager new.
 	display := (displayManager displaysFor: experiment) first.
 	self assertEmpty: display shownObservations.

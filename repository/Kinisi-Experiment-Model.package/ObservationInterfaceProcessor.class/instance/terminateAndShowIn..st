@@ -1,4 +1,4 @@
 action
-start
+terminateAndShowIn: display
 
 	self subclassResponsibility

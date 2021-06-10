@@ -6,10 +6,12 @@ interfaceDefinitionNamed: name processingWith: observationProcessingBlock
 	self register: recordKeeper with: name.
 	interfaceSpec := PluggableInterfaceSpec
 		onStartDo: [ recordKeeper start ]
-		with: [:observation | 
+		with: [:observation :display |
 			| processingResult |
 			processingResult := observationProcessingBlock value: observation.
 			recordKeeper record: processingResult.
+			display show: processingResult.
 			processingResult ]
-		andWhenFinishedDo: [ recordKeeper terminate ].
-	^InterfaceDefinition named: name with: interfaceSpec
+		andWhenFinishedDo: [ recordKeeper terminate ]
+		choosingDisplayWith: [  ].
+	^ InterfaceDefinition named: name with: interfaceSpec

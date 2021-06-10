@@ -2,7 +2,7 @@ tests
 testExperimentIsObservedThroughDisplayWithInterfaceProcessingResult
 
 	| interfaceDefinition displayManager experiment display |
-	interfaceDefinition := self numberToLabelRecordingInterfaceNamed: 'NumberToNamer'.
+	interfaceDefinition := self numberToLabelRecordingInterfaceNamed: 'NumberToName'.
 	observationWorkbench add: interfaceDefinition.
 	experiment := lab newExperiment.
 	displayManager := RecorderDisplayManager new.

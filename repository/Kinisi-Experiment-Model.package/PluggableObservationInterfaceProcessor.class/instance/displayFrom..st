@@ -1,4 +1,4 @@
 connecting
 displayFrom: displayProvider
  
-	^displayEligibility value: displayProvider
+	^displayEligibility cull: displayProvider

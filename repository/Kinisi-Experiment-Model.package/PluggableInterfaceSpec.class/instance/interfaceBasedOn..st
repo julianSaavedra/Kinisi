@@ -5,5 +5,6 @@ interfaceBasedOn: scenario
 	processor := PluggableObservationInterfaceProcessor
 		onStartDo: startingAction 
 		processWith: observationAction
-		andWhenFinishedDo: finishingAction.
+		andWhenFinishedDo: finishingAction
+		displayingIn: displayEligibility.
 	^ObservationInterface using: processor

@@ -1,7 +1,5 @@
 action
 terminate
 
-	| resultToBeDisplayed |
-	resultToBeDisplayed := processor terminate.
-	display show: resultToBeDisplayed.
+	processor terminateAndShowIn: display.
 	display terminate
