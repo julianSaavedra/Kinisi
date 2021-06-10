@@ -1,9 +1,7 @@
 accessing
 interfaceBasedOn: collatzConjectureScenario
 
-	| renderer |
+	| renderer processor |
 	renderer := CollatzConjectureStateRenderer basedOn: collatzConjectureScenario.
-	^AnimationInterface
-		using: renderer
-		extent: 300@300
-		startingWith: collatzConjectureScenario state
+	processor := StateRenderingProcessor with: renderer basedOn: collatzConjectureScenario.		
+	^ObservationInterface using: processor

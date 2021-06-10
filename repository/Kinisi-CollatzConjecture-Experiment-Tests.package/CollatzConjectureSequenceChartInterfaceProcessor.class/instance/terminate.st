@@ -1,4 +1,5 @@
 action
 terminate
 
+	^self chartBasedOnObservations
 	

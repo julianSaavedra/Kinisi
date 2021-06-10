@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CollatzConjectureSequenceMonitorInterfaceSpec",
+	"name" : "CollatzConjectureSequenceChartInterfaceSpec",
 	"type" : "normal"
 }

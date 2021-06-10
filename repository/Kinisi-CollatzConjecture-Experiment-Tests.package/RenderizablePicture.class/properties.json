@@ -1,16 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "Kinisi-CollatzConjecture-Experiment-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"displayManager",
-		"period",
-		"observationWorkbench",
-		"lab"
+		"subject",
+		"renderer"
 	],
-	"name" : "CollatzConjectureExperimentObservationTest",
+	"name" : "RenderizablePicture",
 	"type" : "normal"
 }

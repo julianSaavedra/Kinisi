@@ -1,5 +1,7 @@
 action
 start
 
-	processor start.
-	display start
+	| resultToBeDisplayed |
+	resultToBeDisplayed := processor start.
+	display start.
+	display show: resultToBeDisplayed

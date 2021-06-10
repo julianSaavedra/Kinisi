@@ -1,0 +1,12 @@
+tests
+testDisplayShowingCollatzCurrentStateAsTextInTranscript
+	
+	| interfaceSpec interfaceDefinition experiment display |
+	interfaceSpec := TranscriptInterfaceSpec new.
+	interfaceDefinition := InterfaceDefinition named: 'Transcript' with: interfaceSpec.
+	observationWorkbench add: interfaceDefinition.
+
+	experiment := lab newExperiment.
+	display := (displayManager displaysFor: experiment) first.
+	
+	experiment run

@@ -1,4 +1,5 @@
 action
 start
 
-	self resetRecords
+	self resetRecords.
+	^NullPicture new

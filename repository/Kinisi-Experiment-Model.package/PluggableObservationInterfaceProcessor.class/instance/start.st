@@ -1,4 +1,4 @@
 action
 start
 
-	startAction value
+	^startAction value

@@ -1,4 +1,4 @@
 action
 terminate
 
-	finishAction value
+	^finishAction value
