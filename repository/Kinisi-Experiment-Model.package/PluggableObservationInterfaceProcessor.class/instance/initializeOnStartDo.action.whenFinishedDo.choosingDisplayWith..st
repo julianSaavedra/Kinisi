@@ -1,5 +1,5 @@
 initialization
-initializeOnStartDo: anStartAction action: anObservingAction whenFinishedDo: aFinishAction displayingIn: aDisplayEligibility 
+initializeOnStartDo: anStartAction action: anObservingAction whenFinishedDo: aFinishAction choosingDisplayWith: aDisplayEligibility 
 
 	startAction := anStartAction.
 	observingAction := anObservingAction.

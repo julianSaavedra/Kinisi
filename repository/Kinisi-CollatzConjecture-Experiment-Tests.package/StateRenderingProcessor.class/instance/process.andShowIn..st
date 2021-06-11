@@ -1,4 +1,4 @@
-as yet unclassified
+action
 process: observation andShowIn: display 
 
 	currentState := observation value.

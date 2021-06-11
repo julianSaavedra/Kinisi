@@ -3,7 +3,7 @@ setUp
 	
 	| workbench |
 	super setUp.
-	displayProvider := DisplayProvider with: ScreenProvider new.
+	displayProvider := DisplayProvider using: (PresenterDisplayProviderSpecification with: ScreenProvider new).
 	displayHolder ifNil: [ displayHolder := NullDisplayHolder new ].
 	period ifNil: [ period := Duration milliSeconds: 50 ].
 	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbench default.

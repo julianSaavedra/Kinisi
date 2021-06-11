@@ -6,5 +6,5 @@ interfaceBasedOn: scenario
 		onStartDo: startingAction 
 		processWith: observationAction
 		andWhenFinishedDo: finishingAction
-		displayingIn: displayEligibility.
+		choosingDisplayWith: displayEligibility.
 	^ObservationInterface using: processor

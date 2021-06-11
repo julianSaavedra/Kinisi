@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"displayProviderSpecification"
+		"screenProvider"
 	],
-	"name" : "DisplayProvider",
+	"name" : "PresenterDisplayProviderSpecification",
 	"type" : "normal"
 }

@@ -5,4 +5,4 @@ onStartDo: startAction processWith: monitoringAction andWhenFinishedDo: finishAc
 		onStartDo: startAction
 		processWith: monitoringAction
 		andWhenFinishedDo: finishAction
-		displayingIn: [:displayProvider | displayProvider nullDisplay ]
+		choosingDisplayWith: [:displayProvider | ]
