@@ -8,7 +8,7 @@
 	"instvars" : [
 		"classes",
 		"selectedClassTests",
-		"canvas"
+		"display"
 	],
 	"name" : "CollatzExperimentInterfacesTestVisualizationPresenter",
 	"type" : "normal"

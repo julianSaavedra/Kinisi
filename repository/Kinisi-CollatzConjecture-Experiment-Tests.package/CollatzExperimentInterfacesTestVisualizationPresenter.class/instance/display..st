@@ -1,5 +1,5 @@
 display creation
 display: displayToShow
 
-	canvas := displayToShow screen.
+	display := displayToShow screen.
 	self update

@@ -4,4 +4,4 @@ initializeFocusOrder
 	self focusOrder
 		add: classes;
 		add: selectedClassTests;
-		add: canvas
+		add: display
