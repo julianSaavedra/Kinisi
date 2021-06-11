@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"roassalPresenter",
+		"semaphore",
+		"currentPicture"
+	],
+	"name" : "SpRoassalDisplay",
+	"type" : "normal"
+}

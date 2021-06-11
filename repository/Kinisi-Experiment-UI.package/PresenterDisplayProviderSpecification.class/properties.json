@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"screenProvider"
+	],
+	"name" : "PresenterDisplayProviderSpecification",
+	"type" : "normal"
+}

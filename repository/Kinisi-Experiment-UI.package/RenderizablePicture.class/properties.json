@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"subject",
+		"renderer"
+	],
+	"name" : "RenderizablePicture",
+	"type" : "normal"
+}

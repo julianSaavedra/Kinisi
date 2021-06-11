@@ -2,7 +2,7 @@ tests
 testDisplayShowingCollatzCurrentStateAsTextInTranscript
 	
 	| interfaceSpec interfaceDefinition experiment display |
-	interfaceSpec := TranscriptInterfaceSpec new.
+	interfaceSpec := CollatzConjectureTranscriptInterfaceSpec new.
 	interfaceDefinition := InterfaceDefinition named: 'Transcript' with: interfaceSpec.
 	observationWorkbench add: interfaceDefinition.
 
