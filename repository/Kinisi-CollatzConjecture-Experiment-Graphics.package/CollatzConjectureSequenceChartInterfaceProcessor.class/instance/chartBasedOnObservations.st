@@ -10,4 +10,4 @@ chartBasedOnObservations
 		addDecoration: (RSYLabelDecoration new title: 'State'; fontSize: 13; offset: -20 @ 0);
 		addDecoration: (RSVerticalTick new integer doNotUseNiceLabel fontSize: 8);
 		addPlot: (RSLinePlot new x: observationIndices y: observationStates; 	color: color).
-	^chart
+	^ZoomToFitDecoration on: chart

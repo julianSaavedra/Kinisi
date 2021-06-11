@@ -6,11 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"renderer",
-		"currentObservation",
-		"canvas",
-		"extent"
+		"subject"
 	],
-	"name" : "AnimationInterface",
+	"name" : "ZoomToFitDecoration",
 	"type" : "normal"
 }

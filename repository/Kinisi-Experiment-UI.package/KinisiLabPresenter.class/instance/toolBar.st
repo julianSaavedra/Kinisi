@@ -7,7 +7,7 @@ toolBar
 		addButtonLabel: 'Play'
 		iconNamed: #glamorousGo
 		help: 'Experiment is performed based on current settings'
-		action: [lab runExperiment].
+		action: [self runExperimentWithDisplays].
 	toolBar
 		addButtonLabel: 'Result'
 		iconNamed: #glamorousTable
