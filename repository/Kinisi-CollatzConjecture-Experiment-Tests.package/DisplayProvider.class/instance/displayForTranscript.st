@@ -1,4 +1,4 @@
 displays
 displayForTranscript
 
-	^TranscriptDisplay withScreenFrom: screenProvider
+	^displayProviderSpecification displayForTranscript

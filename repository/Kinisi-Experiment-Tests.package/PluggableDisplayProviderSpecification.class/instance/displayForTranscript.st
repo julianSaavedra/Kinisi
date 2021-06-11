@@ -1,0 +1,4 @@
+displays
+displayForTranscript
+
+	^transcriptDisplayCreation value

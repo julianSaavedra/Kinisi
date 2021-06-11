@@ -9,7 +9,7 @@ testExperimentIsObservedThroughTwoDisplays
 		add: interfaceBDefinition.
 	
 	experiment := lab newExperiment.
-	displayProvider := DisplayProvider using: (PluggableDisplayProviderSpecification with: [ ObservationsRecorderDisplay new ]).
+	displayProvider := DisplayProvider using: (PluggableDisplayProviderSpecification allDisplaysAs: [ ObservationsRecorderDisplay new ]).
 	displays := displayProvider displaysFor: experiment.
 	
 	experiment run.

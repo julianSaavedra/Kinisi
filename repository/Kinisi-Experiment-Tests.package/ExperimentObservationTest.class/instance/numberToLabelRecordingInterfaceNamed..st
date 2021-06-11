@@ -1,6 +1,7 @@
 test objects - interface specs
 numberToLabelRecordingInterfaceNamed: name
 
-	^ self
+	^self
 		interfaceDefinitionNamed: name
-		processingWith: [ :anObservation | 'Number_<1s>' expandMacrosWith: anObservation value asString ]
+		processingWith: [:anObservation | 'Number_<1s>' expandMacrosWith: anObservation value asString ]
+		andDisplayingUsing: [:displayProvider | displayProvider displayForTranscript ]

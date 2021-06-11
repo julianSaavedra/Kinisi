@@ -1,7 +1,7 @@
 test objects - interface specs
-recordingInterfaceDefinitionNamed: name
-
+simplePassthroughInterfaceNamed: name displayingWith: displayEligibility  
+	
 	^self
 		interfaceDefinitionNamed: name
 		processingWith: [ :observation | observation ]
-		andDisplayingUsing: [:displayProvider | displayProvider displayForCanvas ]
+		andDisplayingUsing: displayEligibility

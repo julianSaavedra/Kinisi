@@ -1,4 +1,4 @@
 displays
 displayForCanvas
 
-	^SpRoassalDisplay withScreenFrom: screenProvider
+	^displayProviderSpecification  displayForCanvas

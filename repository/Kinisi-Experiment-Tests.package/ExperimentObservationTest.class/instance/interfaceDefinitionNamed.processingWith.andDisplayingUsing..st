@@ -1,5 +1,5 @@
 test objects - interface specs
-interfaceDefinitionNamed: name processingWith: observationProcessingBlock
+interfaceDefinitionNamed: name processingWith: observationProcessingBlock andDisplayingUsing: displayEligibility
 
 	| recordKeeper interfaceSpec |
 	recordKeeper := ObservationsRecorder new.
@@ -13,5 +13,5 @@ interfaceDefinitionNamed: name processingWith: observationProcessingBlock
 			display show: processingResult.
 			processingResult ]
 		andWhenFinishedDo: [ recordKeeper terminate ]
-		choosingDisplayWith: [ ObservationsRecorderDisplay new ].
-	^ InterfaceDefinition named: name with: interfaceSpec
+		choosingDisplayWith: displayEligibility.
+	^InterfaceDefinition named: name with: interfaceSpec

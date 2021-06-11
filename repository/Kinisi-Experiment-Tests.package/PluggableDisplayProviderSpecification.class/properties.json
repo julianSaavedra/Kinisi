@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"displayCreationBlock"
+		"canvasDisplayCreation",
+		"transcriptDisplayCreation"
 	],
 	"name" : "PluggableDisplayProviderSpecification",
 	"type" : "normal"
