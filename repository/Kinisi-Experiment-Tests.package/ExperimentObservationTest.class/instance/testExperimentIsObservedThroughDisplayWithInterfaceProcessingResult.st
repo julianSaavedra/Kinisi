@@ -1,17 +1,19 @@
 tests
 testExperimentIsObservedThroughDisplayWithInterfaceProcessingResult
 
-	| interfaceDefinition displayManager experiment display |
-	interfaceDefinition := self numberToLabelRecordingInterfaceNamed: 'NumberToNamer'.
+	| interfaceDefinition displayProvider experiment display displayProviderSpec |
+	interfaceDefinition := self numberToLabelRecordingInterfaceNamed: 'NumberToName'.
 	observationWorkbench add: interfaceDefinition.
-	experiment := lab newExperiment.
-	displayManager := RecorderDisplayManager new.
-	display := (displayManager displaysFor: experiment) first.
-	self assertEmpty: display shownObservations.
 	
+	experiment := lab newExperiment.
+	displayProviderSpec := PluggableDisplayProviderSpecification allDisplaysAs: [ ObservationsRecorderDisplay new ].
+	displayProvider := DisplayProvider using: displayProviderSpec.
+	display := (displayProvider displaysFor: experiment) first.
+	self assertEmpty: display shownObservations.
+
 	experiment run.
 	self waitUnilIsFinished: display.
-	
+
 	self
 		assert: (self recordedObservationsFor: interfaceDefinition)
-		equals: display shownObservations 
+		equals: display shownObservations

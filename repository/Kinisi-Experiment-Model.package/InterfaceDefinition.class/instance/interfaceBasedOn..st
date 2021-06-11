@@ -1,4 +1,6 @@
 interface creation
 interfaceBasedOn: scenario
 
-	^spec interfaceBasedOn: scenario
+	| processor |
+	processor := spec interfaceProcessorBasedOn: scenario.
+	^ObservationInterface using: processor 

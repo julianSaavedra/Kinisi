@@ -1,0 +1,4 @@
+displays
+displayForCanvas
+
+	^displayProviderSpecification  displayForCanvas

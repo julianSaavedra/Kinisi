@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-CollatzConjecture-Experiment-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"period",
+		"observationWorkbench",
+		"lab",
+		"displayHolder",
+		"displayProvider"
+	],
+	"name" : "CollatzConjectureExperimentObservationTest",
+	"type" : "normal"
+}

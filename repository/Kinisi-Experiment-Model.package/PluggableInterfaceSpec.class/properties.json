@@ -8,7 +8,8 @@
 	"instvars" : [
 		"observationAction",
 		"finishingAction",
-		"startingAction"
+		"startingAction",
+		"displayEligibility"
 	],
 	"name" : "PluggableInterfaceSpec",
 	"type" : "normal"

@@ -1,5 +1,5 @@
 action
 start
-
-	processor start.
-	display start
+	
+	display start.
+	processor startAndShowIn: display

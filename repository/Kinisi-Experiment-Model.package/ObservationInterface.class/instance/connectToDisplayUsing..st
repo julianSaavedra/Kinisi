@@ -1,5 +1,5 @@
 connecting
-connectToDisplayUsing: displayManager
+connectToDisplayUsing: displayProvider
  
-	display := displayManager displayFor: processor.
+	display := displayProvider displayFor: processor.
 	^display

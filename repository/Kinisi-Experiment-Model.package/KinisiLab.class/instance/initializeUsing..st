@@ -1,4 +1,4 @@
-instance creation
+initialization
 initializeUsing: aWorkbench
 
 	workbench := aWorkbench.

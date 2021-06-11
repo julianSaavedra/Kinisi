@@ -1,7 +1,7 @@
 tests
 testExperimentIsObservedThroughTwoDisplays
 
-	| interfaceADefinition interfaceBDefinition experiment displayManager displays |
+	| interfaceADefinition interfaceBDefinition experiment displayProvider displays |
 	interfaceADefinition := self simplePassthroughInterfaceNamed: 'InterfaceA'.
 	interfaceBDefinition := self simplePassthroughInterfaceNamed: 'InterfaceB'.
 	observationWorkbench
@@ -9,8 +9,8 @@ testExperimentIsObservedThroughTwoDisplays
 		add: interfaceBDefinition.
 	
 	experiment := lab newExperiment.
-	displayManager := RecorderDisplayManager new.
-	displays := displayManager displaysFor: experiment.
+	displayProvider := DisplayProvider using: (PluggableDisplayProviderSpecification allDisplaysAs: [ ObservationsRecorderDisplay new ]).
+	displays := displayProvider displaysFor: experiment.
 	
 	experiment run.
 	

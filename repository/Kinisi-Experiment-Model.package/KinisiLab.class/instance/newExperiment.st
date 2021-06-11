@@ -1,4 +1,4 @@
-as yet unclassified
+experiment
 newExperiment
 
 	^Experiment basedOn: workbench experimentDefinition in: self

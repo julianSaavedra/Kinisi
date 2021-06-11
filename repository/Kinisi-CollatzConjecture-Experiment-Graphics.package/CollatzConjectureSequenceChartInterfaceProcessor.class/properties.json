@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ObservationInterfaceProcessor",
+	"category" : "Kinisi-CollatzConjecture-Experiment-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color",
+		"observationIndices",
+		"observationStates"
+	],
+	"name" : "CollatzConjectureSequenceChartInterfaceProcessor",
+	"type" : "normal"
+}

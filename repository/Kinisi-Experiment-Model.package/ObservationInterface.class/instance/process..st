@@ -1,6 +1,4 @@
 action
 process: sample
 
-	| resultToBeDisplayed |
-	resultToBeDisplayed := processor process: sample.
-	display show: resultToBeDisplayed
+	processor process: sample andShowIn: display

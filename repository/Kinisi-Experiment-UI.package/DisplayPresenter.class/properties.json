@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Experiment-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"display",
+		"screen"
+	],
+	"name" : "DisplayPresenter",
+	"type" : "normal"
+}

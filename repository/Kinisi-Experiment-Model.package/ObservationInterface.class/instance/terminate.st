@@ -1,5 +1,5 @@
 action
 terminate
 
-	processor terminate.
+	processor terminateAndShowIn: display.
 	display terminate
