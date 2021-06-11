@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"processor",
-		"display"
+		"display",
+		"isStarted",
+		"isConnected"
 	],
 	"name" : "ObservationInterface",
 	"type" : "normal"
