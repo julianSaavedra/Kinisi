@@ -1,4 +1,4 @@
 initialization
-initializeCanvas
+initializeDisplay
 
 	display := self instantiate: SpRoassalPresenter

@@ -3,5 +3,5 @@ initializePresenters
 
 	self initializeClasses.
 	self initializeSelectedClassTests.
-	self initializeCanvas.
+	self initializeDisplay.
 	self initializeFocusOrder

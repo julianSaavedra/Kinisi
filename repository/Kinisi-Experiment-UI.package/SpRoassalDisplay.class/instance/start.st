@@ -2,5 +2,4 @@ API
 start
 
 	roassalPresenter script: [:canvas |
-		currentPicture renderIn: canvas.
-		"canvas zoomToFit" ]
+		currentPicture renderIn: canvas ]
