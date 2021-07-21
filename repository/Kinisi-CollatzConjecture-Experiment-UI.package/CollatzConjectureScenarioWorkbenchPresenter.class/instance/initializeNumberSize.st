@@ -3,7 +3,7 @@ initializeNumberSize
 
 	size := self newNumberInput.
 	size number: workbench scenario numberSize.
-	size acceptBlock: [:targetNumber |
+	size whenSubmitDo: [:targetNumber |
 		[ workbench numberSize: targetNumber asNumber.
 			self doPostUpdateAction.
 			true ] on: Error do: [ :error |	

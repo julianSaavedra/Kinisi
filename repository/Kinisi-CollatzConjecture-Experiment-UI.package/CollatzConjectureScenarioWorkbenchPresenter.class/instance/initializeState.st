@@ -3,8 +3,7 @@ initializeState
 
 	state := self newNumberInput.
 	state number: workbench scenario state number.
-	state
-		acceptBlock: [ :targetNumber | 
+	state whenSubmitDo: [ :targetNumber | 
 			[ workbench state: targetNumber asNumber.
 			self doPostUpdateAction.
 			true ]
