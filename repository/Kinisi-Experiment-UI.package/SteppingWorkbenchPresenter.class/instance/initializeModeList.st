@@ -1,9 +1,8 @@
 initialization
 initializeModeList
 
-	modeList := self instantiate: SpLabelledDropList.
-	modeList
-		label: 'Ending Mode';
+	modeList := SpLabeledPresenter label: 'Ending Mode' input: self newDropList.
+	modeList input
 		items: helperMap values;
 		display: [:modeHelper | modeHelper modeName ];
-		whenSelectedItemChanged: [:selectedHelper | self changeSelectedModeWith: selectedHelper ]
+		whenSelectedItemChangedDo: [:selectedHelper | self changeSelectedModeWith: selectedHelper ]

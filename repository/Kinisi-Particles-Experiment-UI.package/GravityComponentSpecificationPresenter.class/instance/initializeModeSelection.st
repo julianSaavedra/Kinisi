@@ -1,9 +1,8 @@
 initialization
 initializeModeSelection
 
-	modeSelection := self instantiate: SpLabelledDropList.
-	modeSelection
-		label: 'Gravity Mode';
+	modeSelection := SpLabeledPresenter label: 'Gravity Mode' input: self newDropList.
+	modeSelection input
 		items: helpersMap values;
 		display:[:helper | helper modeName ];
-		whenSelectedItemChanged:[:selectedModeHelper | self changeSelectedModeWith: selectedModeHelper ]
+		whenSelectedItemChangedDo:[:selectedModeHelper | self changeSelectedModeWith: selectedModeHelper ]

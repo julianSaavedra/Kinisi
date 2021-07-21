@@ -2,15 +2,14 @@ initialization
 initializeDelta
 
 	specification deltaStepUnits
-		ifEmpty: [ delta := self instantiate: SpLabelledTextInput.
-			delta text: workbench delta asString.
+		ifEmpty: [
+			delta := SpLabeledPresenter label: 'Delta' input: self newTextInput.
+			delta input
+				text: workbench delta asString;
+				whenTextChangedDo: [:newDelta | workbench delta: newDelta asNumber ] ]
+		ifNotEmpty: [:units |
+			delta := self instantiate: ScalarMeasurePresenter on: workbench delta.
 			delta
 				label: 'Delta';
-				whenTextChangedDo: [ :newDelta | workbench delta: newDelta asNumber ] ]
-		ifNotEmpty: [ delta := self
-				instantiate: ScalarMeasurePresenter
-				on: workbench delta.
-			delta
-				label: 'Delta';
-				units: specification deltaStepUnits;
+				units: units;
 				changeModelWith: [ :newDelta | workbench delta: newDelta ] ]

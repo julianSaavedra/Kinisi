@@ -1,9 +1,8 @@
 initialization
 initializeModeSelection
 
-	modeSelection := self instantiate: SpLabelledDropList.
-	modeSelection
-		label: 'Grid Mode';
+	modeSelection := SpLabeledPresenter label: 'Grid Mode' input: self newDropList.
+	modeSelection input
 		items: helpersMap values;
 		display:[:helper | helper modeName ];
-		whenSelectedItemChanged:[:selectedModeHelper | self changeSelectedModeWith: selectedModeHelper ]
+		whenSelectedItemChangedDo:[:selectedModeHelper | self changeSelectedModeWith: selectedModeHelper ]
