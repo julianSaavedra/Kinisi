@@ -11,29 +11,29 @@ configurationsSpec
 			withConstraints: [ :constraints | 
 			constraints
 				position: 2 @ 1;
-				beHorizontalAlignmentEnd ];
+				hAlignEnd ];
 		add: 'Color' at: 1 @ 2;
 		add: #color
 			withConstraints: [ :constraints | 
 			constraints
 				position: 2 @ 2;
-				beHorizontalAlignmentEnd ];
+				hAlignEnd ];
 		add: 'Size' at: 1 @ 3;
 		add: #size
 			withConstraints: [ :constraints | 
 			constraints
 				position: 2 @ 3;
-				beHorizontalAlignmentEnd ];
+				hAlignEnd ];
 		add: 'Font' at: 1 @ 4;
 		add: #font
 			withConstraints: [ :constraints | 
 			constraints
 				position: 2 @ 4;
-				beHorizontalAlignmentEnd ];
+				hAlignEnd ];
 		add: 'Background' at: 1 @ 5;
 		add: #background
 			withConstraints: [ :constraints | 
 			constraints
 				position: 2 @ 5;
-				beHorizontalAlignmentEnd ];
+				hAlignEnd ];
 		yourself

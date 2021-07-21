@@ -1,9 +1,7 @@
 private
 definitionToBeAdded
 
-	^PopupChoiceDialogWindow
-		chooseIn: World
-		title: 'Interface Definition options'
-		labels: (definitionOptions collect: [:option | option name ])
+	^UIManager default
+		chooseFrom: (definitionOptions collect: [:option | option name ])
 		values: definitionOptions
-		lines: #()
+		title: 'Interface Definition options'
