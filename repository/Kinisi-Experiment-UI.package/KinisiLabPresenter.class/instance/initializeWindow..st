@@ -3,5 +3,5 @@ initializeWindow: aWindowPresenter
 
 	aWindowPresenter
 		title: configuration windowTitle;
-		toolBar: self toolBar;
+		toolbar: self toolbar;
 		initialExtent: configuration windowInitialExtent
