@@ -7,10 +7,12 @@ jobs:
    fail-fast: false
    matrix:
     operating-system: [ubuntu-latest, macos-latest, windows-latest]
-    smalltalk: [Pharo64-9.0, Pharo32-9.0]
+    smalltalk: [Pharo64-stable, Pharo32-stable]
     exclude:
      - operating-system: macos-latest
-       smalltalk: Pharo32-9.0
+       smalltalk: Pharo32-stable
+     - operating-system: windows-latest
+       smalltalk: Pharo32-stable
   env:
    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   steps:
