@@ -1,6 +1,7 @@
 running test
 run: selectedTest
 
-	selectedTest
-		runCaseWith: self
-		using: (Duration milliSeconds: 500)
+	selectedTest ifNotNil: [
+		selectedTest
+			runCaseWith: self
+			using: (Duration milliSeconds: 500) ]

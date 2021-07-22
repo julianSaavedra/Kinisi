@@ -11,5 +11,5 @@ defaultSpec
 	^SpBoxLayout newVertical
 		spacing: 10;
 		add: classesAndTests height: 150;
-		add: #canvas ;
+		add: #display ;
 		yourself	

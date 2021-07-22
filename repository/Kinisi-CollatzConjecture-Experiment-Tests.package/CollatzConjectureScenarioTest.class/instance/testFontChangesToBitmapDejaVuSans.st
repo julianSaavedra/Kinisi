@@ -1,7 +1,7 @@
 tests
-testFontChangesToLato
+testFontChangesToBitmapDejaVuSans
 
 	self
 		assert: [:scenario | scenario font ]
-		changesTo: #Lato
+		changesTo: #'Bitmap DejaVu Sans'
 		when: [:property | workbench font: property ]

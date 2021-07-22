@@ -2,6 +2,9 @@ specs
 defaultSpec
 
 	^SpBoxLayout newHorizontal
-		add: self configurationsSpec;
-		add: #scenarioView
+		beNotHomogeneous;
+		borderWidth: 5;
+		spacing: 5;
+		add: self scenarioConfigurationLayout;
+		add: #scenarioView;
 		yourself

@@ -3,7 +3,7 @@ connectPresenters
 
 	name
 		text: particle particleName;
-		acceptBlock: [ :newName | 
+		whenSubmitDo: [ :newName | 
 			[ particle particleName: newName.
 			postNameChangeBlock value.
 			true ] 	on: Error do: [:error | 
