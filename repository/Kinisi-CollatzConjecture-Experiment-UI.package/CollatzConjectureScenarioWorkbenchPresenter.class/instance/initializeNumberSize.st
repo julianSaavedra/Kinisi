@@ -3,8 +3,8 @@ initializeNumberSize
 
 	size := self newNumberInput.
 	size number: workbench scenario numberSize.
-	size whenSubmitDo: [:targetNumber |
-		[ workbench numberSize: targetNumber asNumber.
+	size whenSubmitDo: [
+		[ workbench numberSize: size number.
 			self doPostUpdateAction.
 			true ] on: Error do: [ :error |	
 			self showWindowFor: error.

@@ -3,8 +3,8 @@ initializeState
 
 	state := self newNumberInput.
 	state number: workbench scenario state number.
-	state whenSubmitDo: [ :targetNumber | 
-			[ workbench state: targetNumber asNumber.
+	state whenSubmitDo: [
+		[ workbench state: state number.
 			self doPostUpdateAction.
 			true ]
 				on: Error
