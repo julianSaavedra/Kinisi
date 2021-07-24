@@ -1,4 +1,7 @@
 initialization
 initializeSteppingWorkbench
 
-	stepping := self instantiate: SteppingWorkbenchPresenter on: workbench steppingWorkbench
+	self
+		addPageFor: (SteppingWorkbenchPresenter on: workbench steppingWorkbench)
+		named: 'Stepping'
+		with: #glamorousAlarm

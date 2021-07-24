@@ -1,6 +1,7 @@
 initialization
 initializeScenarioWorkbench
 
-	scenario := self
-		instantiate: configuration scenarioPresenterClass
-		on: workbench modelWorkbench
+	self
+		addPageFor: (configuration scenarioPresenterClass on: workbench modelWorkbench)
+		named: 'Scenario'
+		with: #workspace
