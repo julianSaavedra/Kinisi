@@ -2,4 +2,4 @@ private
 resetSelectedMode
 
 	workbench scenario gridMode accept: self.
-	modeSelection selectItem: currentHelper
+	modeSelection input selectItem: currentHelper

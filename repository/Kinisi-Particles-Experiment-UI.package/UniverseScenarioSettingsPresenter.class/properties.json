@@ -8,8 +8,7 @@
 	"instvars" : [
 		"universeChangeAction",
 		"notebook",
-		"workbench",
-		"settings"
+		"workbench"
 	],
 	"name" : "UniverseScenarioSettingsPresenter",
 	"type" : "normal"
