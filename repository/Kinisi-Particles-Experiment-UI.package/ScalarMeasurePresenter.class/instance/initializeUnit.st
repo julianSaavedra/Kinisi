@@ -5,4 +5,4 @@ initializeUnit
 	unit
 		items: unitOptions;
 		selectItem: measure unit;
-		whenSelectedItemChangedDo: [ :newUnit | self updateModelWith: newUnit and: measure amount ]
+		whenSelectedItemChangedDo: [:newUnit | newUnit ifNotNil: [ self updateModelWith: newUnit and: measure amount ] ]
