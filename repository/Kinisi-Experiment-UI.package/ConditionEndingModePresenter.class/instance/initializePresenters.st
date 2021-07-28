@@ -1,5 +1,5 @@
 initialization
 initializePresenters
 
-	name := self newLabel.
-	name label: 'FixedCondition'
+	message := self newLabel.
+	message label: 'FixedCondition'
