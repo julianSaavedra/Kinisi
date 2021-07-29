@@ -5,4 +5,5 @@ initializeFocusOrder
 		add: addButton;
 		add: removeButton;
 		add: removeAllButton;
-		add: particleList
+		add: particleList;
+		add: selectedParticle
