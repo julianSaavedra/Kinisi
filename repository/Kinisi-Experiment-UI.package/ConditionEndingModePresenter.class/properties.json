@@ -8,7 +8,7 @@
 	"instvars" : [
 		"modelChangeAction",
 		"endingMode",
-		"name"
+		"message"
 	],
 	"name" : "ConditionEndingModePresenter",
 	"type" : "normal"

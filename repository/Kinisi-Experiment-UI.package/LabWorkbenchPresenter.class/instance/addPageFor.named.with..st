@@ -1,4 +1,4 @@
-private
+initialization
 addPageFor: setting named: label with: iconName
 
 	| tab |

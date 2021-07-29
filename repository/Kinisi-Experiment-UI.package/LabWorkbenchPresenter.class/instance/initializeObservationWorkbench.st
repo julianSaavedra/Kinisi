@@ -1,6 +1,7 @@
 initialization
 initializeObservationWorkbench
 
-	observation := self
-		instantiate: ObservationWorkbenchPresenter
-		on: configuration
+	self
+		addPageFor: (ObservationWorkbenchPresenter on: configuration)
+		named: 'Observation'
+		with: #haloView

@@ -10,7 +10,7 @@ initializePresenters
 					| currentParticles |
 					currentParticles := workbench scenario gravitySpecification fieldCausingParticles.
 					workbench addGravitationalFieldCausedByAll: (currentParticles copyWith: particle) ];
-				onDesactivation: [:particle |
+				onDeactivation: [:particle |
 					| currentParticles |
 					currentParticles := workbench scenario gravitySpecification fieldCausingParticles.
 					workbench addGravitationalFieldCausedByAll: (currentParticles copyWithout: particle)];

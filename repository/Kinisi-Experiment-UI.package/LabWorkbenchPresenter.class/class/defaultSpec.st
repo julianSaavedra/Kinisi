@@ -1,4 +1,6 @@
 specs
 defaultSpec
 
-	^self horizontalSpec
+	^SpBoxLayout newVertical
+		add: #notebook;
+		yourself

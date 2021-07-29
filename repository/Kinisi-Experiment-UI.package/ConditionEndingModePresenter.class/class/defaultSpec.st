@@ -2,5 +2,5 @@ specs
 defaultSpec
 
 	^SpBoxLayout newVertical
-		add: #name;
+		add: #message;
 		yourself

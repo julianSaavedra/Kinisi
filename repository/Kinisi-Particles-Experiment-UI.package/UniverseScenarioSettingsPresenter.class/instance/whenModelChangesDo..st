@@ -1,4 +1,5 @@
 API
 whenModelChangesDo: anUniverseChangeAction
  
-	settings do: [:setting | setting whenModelChangesDo: anUniverseChangeAction ]
+	notebook pages do: [:page |
+		page presenterProvider whenModelChangesDo: anUniverseChangeAction ]

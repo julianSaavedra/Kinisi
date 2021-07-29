@@ -5,6 +5,6 @@ defaultSpec
 		beNotHomogeneous;
 		borderWidth: 5;
 		spacing: 5;
-		add: self scenarioConfigurationLayout;
+		add: self scenarioConfigurationLayout width: 250;
 		add: #scenarioView;
 		yourself
