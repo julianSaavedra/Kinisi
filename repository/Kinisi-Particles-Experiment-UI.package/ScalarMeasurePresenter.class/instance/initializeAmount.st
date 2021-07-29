@@ -2,8 +2,8 @@ initialization
 initializeAmount
 
 	amount := self newNumberInput.
-	amount text: measure amount asString.
-	amount whenSubmitDo: [ :newAmountText | 
-			(self isValidNumberText: newAmountText)
-				ifTrue: [ self updateModelWith: measure unit and: newAmountText asNumber ]
+	amount number: measure amount.
+	amount whenSubmitDo: [
+			(self isValidNumberText: amount number)
+				ifTrue: [ self updateModelWith: measure unit and: amount number ]
 				ifFalse: [ amount text: measure amount asString ] ]
