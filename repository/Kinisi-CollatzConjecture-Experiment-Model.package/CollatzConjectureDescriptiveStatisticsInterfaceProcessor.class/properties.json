@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ObservationInterfaceProcessor",
+	"category" : "Kinisi-CollatzConjecture-Experiment-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"renderer",
+		"statsCollector"
+	],
+	"name" : "CollatzConjectureDescriptiveStatisticsInterfaceProcessor",
+	"type" : "normal"
+}

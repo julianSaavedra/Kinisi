@@ -1,9 +1,9 @@
 tests
-testDisplayShowingCollatzCurrentStateAsAnAnimation
+testDisplayShowingCollatzDescriptiveStatistics
 	
 	| interfaceSpec interfaceDefinition experiment display |
-	interfaceSpec := CollatzConjectureAnimationInterfaceSpec new.
-	interfaceDefinition := InterfaceDefinition named: 'Animation' with: interfaceSpec.
+	interfaceSpec := CollatzConjectureDescriptiveStatisticsInterfaceSpec new.
+	interfaceDefinition := InterfaceDefinition named: 'Descriptive Statistics' with: interfaceSpec.
 	observationWorkbench add: interfaceDefinition.
 
 	experiment := lab newExperiment.
