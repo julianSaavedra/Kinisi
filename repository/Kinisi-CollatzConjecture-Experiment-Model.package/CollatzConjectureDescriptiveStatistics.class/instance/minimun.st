@@ -1,0 +1,4 @@
+accessing
+minimun
+
+	^minimun
