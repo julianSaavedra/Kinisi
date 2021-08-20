@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Experiment-Tests-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"targetWorkbench"
+	],
+	"name" : "LabWorkbenchExampleSettingTestingClerk",
+	"type" : "normal"
+}
