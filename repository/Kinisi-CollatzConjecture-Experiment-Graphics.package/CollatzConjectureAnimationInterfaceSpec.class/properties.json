@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"includeAdditionalInformation"
+	],
 	"name" : "CollatzConjectureAnimationInterfaceSpec",
 	"type" : "normal"
 }
