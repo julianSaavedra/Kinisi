@@ -1,4 +1,4 @@
-instance creation
+private
 title: title extent: initialExtent with: domainSpecification
 
 	^self new

@@ -1,4 +1,4 @@
 instance creation
 default
 
-	^self new
+	^self basedOn: NullWorkbenchSetting new

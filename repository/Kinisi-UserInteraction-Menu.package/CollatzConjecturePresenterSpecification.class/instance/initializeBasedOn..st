@@ -1,7 +1,7 @@
 initialization
-initializeBasedOn: example
+initializeBasedOn: workbenchSetting
  
 	| workbench |
 	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbench default.
-	example applyOn: workbench.
+	workbenchSetting applyOn: workbench.
 	lab := KinisiLab using: workbench

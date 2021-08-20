@@ -1,4 +1,4 @@
 instance creation
-basedOn: example
+basedOn: workbenchSetting
 
-	^self new initializeBasedOn: example
+	^self new initializeBasedOn: workbenchSetting

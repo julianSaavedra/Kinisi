@@ -1,8 +1,6 @@
 options
 openCollatzLabWith: example
 
-	| presenterConfiguration lab |
+	| presenterConfiguration |
 	presenterConfiguration := LabPresenterSpecification forCollatzConjectureWith: example.
-	lab := KinisiLabPresenter on: presenterConfiguration.
-	"lab apply: example."
-	lab openWithSpec
+	self openLabBasedOn: presenterConfiguration
