@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scenarioSetting",
-		"observationSetting",
-		"steppingSetting"
+		"settingBlock"
 	],
-	"name" : "LabWorkbenchExampleSetting",
+	"name" : "SteppingWorkbenchSetting",
 	"type" : "normal"
 }

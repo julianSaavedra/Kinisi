@@ -1,4 +1,4 @@
 test objects
 twoSeconds
 
-	^ Duration seconds: 2
+	^Duration seconds: 2
