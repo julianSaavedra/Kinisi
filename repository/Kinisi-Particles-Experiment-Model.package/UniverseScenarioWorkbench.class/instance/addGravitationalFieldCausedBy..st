@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 addGravitationalFieldCausedBy: particle
 
 	scenario addGravitationalFieldCausedBy: particle

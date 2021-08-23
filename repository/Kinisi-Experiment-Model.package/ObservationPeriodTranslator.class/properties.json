@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"translation"
+		"unitName",
+		"periodTranslation",
+		"amountTranslation"
 	],
 	"name" : "ObservationPeriodTranslator",
 	"type" : "normal"

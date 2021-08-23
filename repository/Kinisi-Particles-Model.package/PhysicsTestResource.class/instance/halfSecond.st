@@ -1,4 +1,4 @@
-as yet unclassified
+constants
 halfSecond
 
 	^self oneSecond / 2

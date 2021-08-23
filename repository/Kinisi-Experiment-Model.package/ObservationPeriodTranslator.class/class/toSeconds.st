@@ -1,4 +1,7 @@
 instance creation
 toSeconds
 
-	^self using: [:amount | Duration seconds: amount]
+	^self
+		with: 'Seconds'
+		using: [:amount | Duration seconds: amount]
+		and: [:period | period seconds + (period wholeMilliseconds / 1000) ]

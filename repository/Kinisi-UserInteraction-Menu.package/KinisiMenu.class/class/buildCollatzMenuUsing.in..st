@@ -4,6 +4,7 @@ buildCollatzMenuUsing: builder in: menu
 	(builder item: #CollatzConjecture)
 		label: 'Collatz Conjecture';
 		target: menu;
+		order: 1;
 		iconName: #smallNew;
 		with: [
 			(builder item: 'Open new lab')
@@ -13,7 +14,8 @@ buildCollatzMenuUsing: builder in: menu
 				order: 1;
 				iconName: #workspace;
 				withSeparatorAfter.
-			(builder item: 'Examples')
+			(builder item: 'ExamplesCollatz')
+				label: 'Examples';
 				order: 2;
 				iconName: #glamorousOpen;
 				with: [

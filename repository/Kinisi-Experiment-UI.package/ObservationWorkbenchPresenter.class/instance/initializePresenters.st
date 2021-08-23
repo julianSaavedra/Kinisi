@@ -1,8 +1,6 @@
 initialization
 initializePresenters
 
-	self initialziePeriodLabel.
-	self initializePeriodAmount.
-	self initializePeriodUnit.
+	self initializePeriod.
 	self initializeInterfaceDefinitions.
 	self initializeFocusOrder

@@ -1,4 +1,4 @@
 translation
 translate: amount
  
-	^translation value: amount
+	^amountTranslation value: amount
