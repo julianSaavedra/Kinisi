@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ObservationInterfaceProcessor",
-	"category" : "Kinisi-CollatzConjecture-Experiment-Model",
+	"category" : "Kinisi-CollatzConjecture-Experiment-Model-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

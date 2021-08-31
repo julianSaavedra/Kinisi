@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ChangeComponentSpecification",
-	"category" : "Kinisi-Particles-Experiment-Model",
+	"category" : "Kinisi-Particles-Experiment-Model-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

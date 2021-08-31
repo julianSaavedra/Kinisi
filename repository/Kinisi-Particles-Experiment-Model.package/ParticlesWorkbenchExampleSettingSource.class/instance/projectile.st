@@ -1,15 +1,15 @@
 settings
 projectile
 
-	| period interfaceDefinition modelSetting fortyMilliseconds fiveSeconds steppingSetting |
+	| period interfaceDefinition modelSetting fortyMilliseconds tenSeconds steppingSetting |
 	period := Duration milliSeconds: 40.
 	interfaceDefinition := InterfaceDefinition
 		                       named: 'Animation'
 		                       with: UniverseAnimationInterfaceSpec new.
 	modelSetting := ParticlesWorkbenchExampleSetting new.
 	fortyMilliseconds := UnitProvider soleInstance millisecond with: 40.
-	fiveSeconds := UnitProvider soleInstance second with: 5.
-	steppingSetting := SteppingWorkbenchSetting stepBy: fortyMilliseconds over: fiveSeconds. 
+	tenSeconds := UnitProvider soleInstance second with: 10.
+	steppingSetting := SteppingWorkbenchSetting stepBy: fortyMilliseconds over: tenSeconds. 
 	^LabWorkbenchExampleSetting
 		apply: modelSetting
 		applyStepping: steppingSetting 
