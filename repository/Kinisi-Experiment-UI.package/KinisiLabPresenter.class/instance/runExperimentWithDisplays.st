@@ -6,7 +6,8 @@ runExperimentWithDisplays
 	displayProvider := DisplayProvider using: (PresenterDisplayProviderSpecification with: ScreenProvider new).
 	displays := displayProvider displaysFor: experiment.
 	displays do: [:display |
-		| displayPresenter |
+		| displayPresenter window |
 		displayPresenter := self instantiate: DisplayPresenter on: display.
-		displayPresenter openWithSpec ].
+		window := displayPresenter openWithSpec.
+		window extent: configuration windowInitialExtent ].
 	experiment run

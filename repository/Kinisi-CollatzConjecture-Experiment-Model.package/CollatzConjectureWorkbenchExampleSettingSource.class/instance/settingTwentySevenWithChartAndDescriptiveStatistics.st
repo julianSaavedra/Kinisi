@@ -2,7 +2,7 @@ settings
 settingTwentySevenWithChartAndDescriptiveStatistics
 
 	| period interfaceDefinitions modelSetting |
-	period := Duration seconds: 1.5.
+	period := Duration milliSeconds: 500.
 	interfaceDefinitions := { 
 		                        (InterfaceDefinition
 			                         named: 'CollatzSequenceMonitor'
