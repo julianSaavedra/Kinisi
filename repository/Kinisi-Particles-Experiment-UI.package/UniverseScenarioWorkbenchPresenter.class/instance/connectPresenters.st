@@ -1,4 +1,4 @@
 initialization
 connectPresenters
 
-	settings whenModelChangesDo: [ view refresh ]
+	settings whenModelChangesDo: [ self refresh ]

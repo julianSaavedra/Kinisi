@@ -3,6 +3,5 @@ initializePeriodAmount
 
 	periodAmount := self newNumberInput.
 	periodAmount beFloat.
-	periodAmount number: workbench period asSeconds.
-	periodAmount whenSubmitDo: [
-		workbench period: (periodUnitTranslator translate: periodAmount number)]
+	periodAmount number: (periodUnitTranslator translateFrom: workbench period).
+	periodAmount whenSubmitDo: [ self updateModelPeriod ]

@@ -1,7 +1,8 @@
 tests
 testPeriodAsSeconds
 
-	| translation |
-	translation := ObservationPeriodTranslator toSeconds.
+	| translator |
+	translator := ObservationPeriodTranslator toSeconds.
 	
-	self assert: (translation translate: 10) equals: 10 asSeconds
+	self assert: translator unitName equals: 'Seconds'.
+	self assert: (translator translate: 10) equals: 10 asSeconds

@@ -1,4 +1,4 @@
-as yet unclassified
+configuring
 addGravitationalInteractionBetweenParticles
 
 	scenario addGravitationalInteractionBetweenParticles

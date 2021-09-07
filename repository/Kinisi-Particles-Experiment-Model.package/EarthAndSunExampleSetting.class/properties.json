@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticlesWorkbenchExampleSetting",
+	"category" : "Kinisi-Particles-Experiment-Model-ExampleSetting",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resource",
+		"unitProvider"
+	],
+	"name" : "EarthAndSunExampleSetting",
+	"type" : "normal"
+}

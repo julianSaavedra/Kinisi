@@ -1,5 +1,5 @@
 initialization
-initialziePeriodLabel
+initializePeriodLabel
 
 	periodLabel := self newLabel.
 	periodLabel label: 'Period'

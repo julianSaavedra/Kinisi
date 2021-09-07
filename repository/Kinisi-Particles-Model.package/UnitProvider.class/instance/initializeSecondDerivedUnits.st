@@ -4,6 +4,12 @@ initializeSecondDerivedUnits
 	| second |
 	second := self second.
 	unitDictionary
+		at: self millisecondName
+		put: (ProportionalDerivedUnit
+				baseUnit: second
+				conversionFactor: 0.001
+				named: self millisecondName asString
+				sign: 'ms');
 		at: self minuteName
 		put: (ProportionalDerivedUnit
 				baseUnit: second

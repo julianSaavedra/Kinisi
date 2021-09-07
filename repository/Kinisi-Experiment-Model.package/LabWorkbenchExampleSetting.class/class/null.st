@@ -1,4 +1,7 @@
 instance creation
 null
 
-	^self apply: NullWorkbenchSetting new and: NullWorkbenchSetting new
+	^self
+		applying: NullWorkbenchSetting new
+		steppingWith: NullWorkbenchSetting new
+		andObservingWith: NullWorkbenchSetting new

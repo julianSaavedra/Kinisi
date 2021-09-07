@@ -2,13 +2,10 @@ initialization
 initializePeriodUnit
 
 	periodUnit := self newDropList.
-	periodUnit
-		addItemLabeled: 'Seconds'
-		do: [
-			periodUnitTranslator := ObservationPeriodTranslator toSeconds.
-			periodAmount number: periodAmount number ];
-		addItemLabeled: 'Milliseconds'
-		do: [
-			periodUnitTranslator := ObservationPeriodTranslator toMilliseconds.
-			periodAmount number: periodAmount number ];
-		selectItem: 'Seconds'
+	self unitTranslators do: [ :translator | 
+		periodUnit
+			addItemLabeled: translator unitName
+			do: [ 
+				periodUnitTranslator := translator.
+				self updateModelPeriod ] ].
+	periodUnit selectItem: periodUnitTranslator unitName

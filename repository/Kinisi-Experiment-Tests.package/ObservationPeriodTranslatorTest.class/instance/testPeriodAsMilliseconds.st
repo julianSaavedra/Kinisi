@@ -1,7 +1,8 @@
 tests
 testPeriodAsMilliseconds
 
-	| translation |
-	translation := ObservationPeriodTranslator toMilliseconds.
-	
-	self assert: (translation translate: 100) equals: (Duration milliSeconds: 100)
+	| translator |
+	translator := ObservationPeriodTranslator toMilliseconds.
+
+	self assert: translator unitName equals: 'Milliseconds'.
+	self assert: (translator translate: 100) equals: (Duration milliSeconds: 100)
