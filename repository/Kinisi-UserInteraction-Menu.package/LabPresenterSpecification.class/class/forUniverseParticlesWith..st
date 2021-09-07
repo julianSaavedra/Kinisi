@@ -1,7 +1,7 @@
-instance creation
-forUniverseParticlesWith: example
+private
+forUniverseParticlesWith: specification
 
 	^self
-		title: 'Lab - Particles'
-		extent: 1500 @ 830
-		with: (UniverseParticlesPresenterSpecification basedOn: example)
+		  title: 'Lab - Particles'
+		  extent: 1500 @ 1000
+		  with: specification

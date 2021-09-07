@@ -2,5 +2,5 @@ options
 openCollatzLabWith: example
 
 	| presenterConfiguration |
-	presenterConfiguration := LabPresenterSpecification forCollatzConjectureWith: example.
+	presenterConfiguration := LabPresenterSpecification forCollatzConjectureShowing: example.
 	self openLabBasedOn: presenterConfiguration

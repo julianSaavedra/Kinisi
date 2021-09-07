@@ -26,6 +26,18 @@ buildParticlesMenUsing: builder in: menu
 						target: menu;
 						iconName: #menuPin;
 						selector: #openParticlesLabWith:;
-						arguments: {exampleSource projectile}
+						arguments: {exampleSource projectile}.
+					(builder item: #example2)
+						label: 'Earth and Sun';
+						target: menu;
+						iconName: #menuPin;
+						selector: #openParticlesLabWith:;
+						arguments: {exampleSource earthAndSun}.
+					(builder item: #example3)
+						label: 'Two planets spinning around';
+						target: menu;
+						iconName: #menuPin;
+						selector: #openParticlesLabWith:;
+						arguments: {exampleSource twoPlanetsSpinningAround}
 						]
 					]

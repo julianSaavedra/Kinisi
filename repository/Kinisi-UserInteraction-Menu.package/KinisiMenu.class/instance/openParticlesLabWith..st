@@ -2,5 +2,5 @@ options
 openParticlesLabWith: example
 
 	| presenterConfiguration |
-	presenterConfiguration := LabPresenterSpecification forUniverseParticlesWith: example.
+	presenterConfiguration := LabPresenterSpecification forUniverseParticlesShowing: example.
 	self openLabBasedOn: presenterConfiguration

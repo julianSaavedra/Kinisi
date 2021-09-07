@@ -1,6 +1,7 @@
 private
 changeSelectedModeWith: newHelper
 
-	newHelper change: workbench.
-	self resetSelectedMode.
-	self update
+	currentHelper ~= newHelper ifTrue: [
+		newHelper change: workbench.
+		self resetSelectedMode.
+		self update ]
