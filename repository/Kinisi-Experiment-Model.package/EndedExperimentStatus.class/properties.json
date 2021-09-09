@@ -5,13 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"definition",
-		"result",
-		"observation",
-		"lab",
-		"status"
-	],
-	"name" : "Experiment",
+	"instvars" : [ ],
+	"name" : "EndedExperimentStatus",
 	"type" : "normal"
 }

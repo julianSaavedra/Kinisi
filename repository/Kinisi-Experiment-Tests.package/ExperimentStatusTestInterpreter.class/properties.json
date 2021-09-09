@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"notStarted",
+		"running",
+		"ended"
+	],
 	"name" : "ExperimentStatusTestInterpreter",
 	"type" : "normal"
 }

@@ -1,4 +1,4 @@
 accessing
 status
 
-	^NotStartedExperimentStatus new
+	^status

@@ -1,5 +1,5 @@
 tests - revisit
-testExperimentStatusIndicatesThatSimulationHasEndedIfExperimentHasEndedBANANA
+testExperimentStatusIndicatesThatSimulationHasEndedIfExperimentHasEnded
 
 	| domainModelWorkbench workbench lab experiment |
 	domainModelWorkbench := FixedDomainModelWorkbench

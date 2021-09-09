@@ -1,4 +1,4 @@
 instance creation
 on: experimentStatus
  
-	^self new
+	^self new initializeOn: experimentStatus 

@@ -1,4 +1,4 @@
-accessing
+interpreting
 simulationHasEnded
 
 	^true

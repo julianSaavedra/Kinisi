@@ -3,8 +3,9 @@ run
 
 	| simulation consumer |
 	consumer := SimulationStepPluggableConsumer
+		onStartDo: [ status := RunningExperimentStatus new ]
 		processWith: [:step | observation process: step ]
-		andWhenFinishedDo: [ observation close ].
+		andWhenFinishedDo: [ observation close. 	status := EndedExperimentStatus new].
 
 	simulation := Simulation basedOn: definition.
 	
