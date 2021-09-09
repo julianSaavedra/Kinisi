@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ExperimentProcessStatus",
 	"category" : "Kinisi-Experiment-Model-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
