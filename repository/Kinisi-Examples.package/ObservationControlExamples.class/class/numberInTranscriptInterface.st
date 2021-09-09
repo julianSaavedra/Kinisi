@@ -8,3 +8,4 @@ numberInTranscriptInterface
 				show: ('Number was observed [<1s>]' expandMacrosWith: number asString);
 				cr ]
 		andWhenFinishedDo: [ Transcript show: 'Number Observation has been terminated' ]
+		choosingDisplayWith: [:displayProvider | displayProvider displayForTranscript ]
