@@ -1,5 +1,5 @@
-tests
-testExperimentStatusIndicatesThatSimulationHasNotStartedIfExperimentHasNotStarted
+tests - simultaneous
+test_IndependentProcess_Serial_ExperimentStatusIndicatesThatExperimentHasNotStartedIfExperimentHasNotStarted
 
 	| domainModelWorkbench workbench lab experiment |
 	domainModelWorkbench := FixedDomainModelWorkbench
@@ -7,8 +7,9 @@ testExperimentStatusIndicatesThatSimulationHasNotStartedIfExperimentHasNotStarte
 		changingWith: (SimulationStateChange with: [ :currentState | currentState * 2 ])
 		configuringSteppingWith: [:steppingWorkbench | steppingWorkbench repeat: 5 steppingBy: 1 ].
 	workbench := LabWorkbench using: domainModelWorkbench.
+	workbench useIndependentProcessSerialRunningMode.
 	lab := KinisiLab using: workbench.
 	
 	experiment := lab newExperiment.
 
-	self assertSimulationHasNotStartedIn: experiment
+	self assertExperimentHasNotStartedIn: experiment

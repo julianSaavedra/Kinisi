@@ -1,4 +1,4 @@
 accessing
 status
 
-	^status
+	^KinisiExperimentStatus with: status and: observation status

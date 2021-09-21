@@ -8,7 +8,8 @@
 	"instvars" : [
 		"domainModelWorkbench",
 		"observationWorkbench",
-		"steppingWorkbench"
+		"steppingWorkbench",
+		"runningMode"
 	],
 	"name" : "LabWorkbench",
 	"type" : "normal"

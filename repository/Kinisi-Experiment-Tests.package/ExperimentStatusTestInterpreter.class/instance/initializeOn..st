@@ -1,4 +1,5 @@
 initialization
 initializeOn: experimentStatus
 
-	experimentStatus accept: self
+	experimentStatus accept: self.
+	experimentIsBeingObserved := false

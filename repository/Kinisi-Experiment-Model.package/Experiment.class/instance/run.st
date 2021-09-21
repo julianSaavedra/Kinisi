@@ -1,21 +1,25 @@
 running
 run
 
-	| simulation consumer |
-	consumer := SimulationStepPluggableConsumer
-		onStartDo: [ status := RunningExperimentStatus new ]
-		processWith: [:step | observation process: step ]
-		andWhenFinishedDo: [ observation close. 	status := EndedExperimentStatus new].
+	experimentProcess := [
+		| simulation consumer |
+		consumer := SimulationStepPluggableConsumer
+			onStartDo: [ status := RunningExperimentStatus new ]
+			processWith: [:step | observation process: step ]
+			andWhenFinishedDo: [ observation close. 	status := EndedExperimentStatus new].
 
-	simulation := Simulation basedOn: definition.
-	
-	"simulationProcess := [simulation runInforming:consumer.
-	result := simulation result] newProcess.
-	simulationProcess name: 'Simulation'.
-	simulationProcess priority: Processor activePriority - 2.
-	simulationProcess resume."
-	simulation runInforming:consumer.
-	result := simulation result.
-	lab recordResultOf: self.
-	observation play.
-	"[observation isTerminated] whileFalse"
+		simulation := Simulation basedOn: definition.
+		simulation runInforming:consumer.
+		result := simulation result.
+		lab recordResultOf: self.
+		observation play.
+		] forkAt:  Processor activePriority - 1
+			named: 'Experiment'
+	"newProcess.
+	experimentProcess
+		priority: Processor activePriority - 1;
+		name: 'Experiment';
+		resume"
+
+			"forkAt:  Processor activePriority - 1
+			named: 'Experiment'"

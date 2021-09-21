@@ -1,5 +1,5 @@
-tests
-testExperimentStatusIndicatesThatSimulationIsRunningIfExperimentIsRunningAndSimulationhasNotreachItsEnd
+tests - simultaneous
+test_IndependentProcess_Serial_ExperimentStatusIndicatesThatExperimentIsRunningIfSimulationIsRunning
 
 	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps testHasAlreadyAsserted experimentHasEnded |
 	simulationHasReachedThreeSteps := Semaphore new.
@@ -14,17 +14,17 @@ testExperimentStatusIndicatesThatSimulationIsRunningIfExperimentIsRunningAndSimu
 			newState])
 		configuringSteppingWith: [:steppingWorkbench | steppingWorkbench repeat: 5 steppingBy: 1 ].
 	workbench := LabWorkbench using: domainModelWorkbench.
+	workbench useIndependentProcessSerialRunningMode.
 	lab := KinisiLab using: workbench.
 	
 	experiment := lab newExperiment.
 	
-	self assertSimulationHasNotStartedIn: experiment.
+	self assertExperimentHasNotStartedIn: experiment.
 	[experiment run. experimentHasEnded signal ] fork.
 	simulationHasReachedThreeSteps wait.
+	self assertExperimentIsRunningIn: experiment.
 	self assertSimulationIsRunningIn: experiment.
 	testHasAlreadyAsserted signal.
-	experimentHasEnded wait.
-	self denySimulationIsRunningIn: experiment
-			
-
-	
+	experimentHasEnded wait. "self waitUnilIsFinished: experiment."
+	self denySimulationIsRunningIn: experiment.
+	self assertExperimentHasEndedIn: experiment.	

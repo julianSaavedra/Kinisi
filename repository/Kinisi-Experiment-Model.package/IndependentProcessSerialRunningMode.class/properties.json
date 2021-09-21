@@ -5,15 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"definition",
-		"result",
-		"observation",
-		"lab",
-		"status",
-		"runInNewProcess",
-		"experimentProcess"
-	],
-	"name" : "Experiment",
+	"instvars" : [ ],
+	"name" : "IndependentProcessSerialRunningMode",
 	"type" : "normal"
 }

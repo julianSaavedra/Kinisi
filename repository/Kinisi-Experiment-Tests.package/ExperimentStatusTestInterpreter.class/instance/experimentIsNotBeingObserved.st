@@ -1,0 +1,4 @@
+interpreting
+experimentIsNotBeingObserved
+
+	^experimentIsBeingObserved not
