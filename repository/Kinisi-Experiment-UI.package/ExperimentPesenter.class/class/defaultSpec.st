@@ -7,7 +7,7 @@ defaultSpec
 	observation := SpBoxLayout newHorizontal
 		add: 'Observation'; add: #observation.
 	^SpBoxLayout newVertical
-		add: #controlPanel;
+		add: #controlPanel height: 70;
 		add: simulation;
 		add: observation;
 		yourself 
