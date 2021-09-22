@@ -1,4 +1,4 @@
 interpreting
 experimentHasEnded
 
-	^ended
+	^simulationHasEnded and: [ self experimentIsNotBeingObserved or: [ observationHasEnded ] ]

@@ -1,5 +1,5 @@
 visiting
 visitAsSimulationStatus: simulationStatus
 
-	visitAsObservationStatus := false.
+	visitingAsObservationStatus := false.
 	simulationStatus accept: self

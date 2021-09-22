@@ -1,4 +1,4 @@
 interpreting
 simulationIsRunning
 
-	^running
+	^simulationIsRunning

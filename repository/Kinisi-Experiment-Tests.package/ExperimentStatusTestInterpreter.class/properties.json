@@ -6,15 +6,15 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"notStarted",
-		"running",
-		"ended",
 		"experimentIsBeingObserved",
-		"paused",
-		"visitAsObservationStatus",
-		"observationNotStarted",
-		"observationRunning",
-		"observationEnded"
+		"visitingAsObservationStatus",
+		"simulationHasEnded",
+		"simulationHasNotStarted",
+		"simulationIsPaused",
+		"observationHasEnded",
+		"observationHasNotStarted",
+		"simulationIsRunning",
+		"observationIsRunning"
 	],
 	"name" : "ExperimentStatusTestInterpreter",
 	"type" : "normal"

@@ -1,5 +1,5 @@
 visiting
 visitAsObservationStatus: observationStatus
  
-	visitAsObservationStatus := true.
-	^observationStatus accept: self
+	visitingAsObservationStatus := true.
+	observationStatus accept: self

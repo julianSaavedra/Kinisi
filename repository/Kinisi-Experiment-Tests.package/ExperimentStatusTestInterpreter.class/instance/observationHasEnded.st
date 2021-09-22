@@ -1,4 +1,4 @@
 interpreting
 observationHasEnded
 
-	^true
+	^observationHasEnded

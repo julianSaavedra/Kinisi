@@ -1,12 +1,13 @@
 visiting
 visitAsEndedStatus: experimentStatus
  
-	visitAsObservationStatus
+	visitingAsObservationStatus
 		ifTrue: [
-			observationEnded := true.
+			observationHasNotStarted := false.
+			observationHasEnded := true.
 			experimentIsBeingObserved := true ]
 		ifFalse: [
-			notStarted := false.
-			running := false.
-			ended := true ]
+			simulationHasNotStarted := false.
+			simulationIsRunning := false.
+			simulationHasEnded := true ]
 	

@@ -1,4 +1,4 @@
 interpreting
 experimentIsRunning
 
-	^running
+	^simulationIsRunning or: [ observationIsRunning ]

@@ -1,4 +1,4 @@
 interpreting
 simulationIsPaused
 
-	^paused
+	^simulationIsPaused

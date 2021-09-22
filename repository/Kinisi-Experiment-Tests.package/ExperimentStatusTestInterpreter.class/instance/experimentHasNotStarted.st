@@ -1,4 +1,4 @@
 interpreting
 experimentHasNotStarted
 
-	^notStarted
+	^simulationHasNotStarted and: [ self experimentIsNotBeingObserved or: [ observationHasNotStarted ] ]

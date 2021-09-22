@@ -1,4 +1,4 @@
 interpreting
 experimentIsPaused
 
-	^paused
+	^simulationIsPaused "or: [ experimentIsBeingObserved and: [ observationIsPaused ] ]"

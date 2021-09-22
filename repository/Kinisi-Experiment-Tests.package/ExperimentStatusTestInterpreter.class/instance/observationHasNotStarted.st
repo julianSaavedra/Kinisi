@@ -1,4 +1,4 @@
 interpreting
 observationHasNotStarted
 
-	^true
+	^observationHasNotStarted
