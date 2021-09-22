@@ -4,5 +4,5 @@ initializeWindow: aWindowPresenter
 	aWindowPresenter
 		title: 'Experiment';
 		askOkToClose: true;
-		initialExtent: 350@150;
+		initialExtent: 250@100;
 		whenWillCloseDo: [ refreshing terminate ]

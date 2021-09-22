@@ -1,10 +1,9 @@
 specs
 defaultSpec
 
-	^SpGridLayout new
-		beColumnNotHomogeneous;
-		beRowNotHomogeneous;
-		add: #play at: 1@1;
-		add: #pause at: 2@1;
-		add: #stop at: 3@1;
+	^SpBoxLayout newHorizontal
+		spacing: 3;
+		add: #play;
+		add: #pause;
+		add: #stop;
 		yourself
