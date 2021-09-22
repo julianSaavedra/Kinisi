@@ -9,5 +9,6 @@ initializeDefaults
 	experimentIsBeingObserved := false.
 	observationHasNotStarted := false.
 	observationIsRunning := false.
+	observationIsPaused := false.
 	observationHasEnded := false.
 	

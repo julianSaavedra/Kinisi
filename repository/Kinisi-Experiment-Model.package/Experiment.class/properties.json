@@ -12,7 +12,8 @@
 		"lab",
 		"status",
 		"runInNewProcess",
-		"experimentProcess"
+		"experimentProcess",
+		"observationHasStated"
 	],
 	"name" : "Experiment",
 	"type" : "normal"

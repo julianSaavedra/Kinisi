@@ -3,7 +3,6 @@ visitAsEndedStatus: experimentStatus
  
 	visitingAsObservationStatus
 		ifTrue: [
-			observationHasNotStarted := false.
 			observationHasEnded := true.
 			experimentIsBeingObserved := true ]
 		ifFalse: [

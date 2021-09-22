@@ -1,5 +1,7 @@
 asdasd
 pause
 
-	experimentProcess suspend.
-	status := PausedExperimentStatus new
+	status class = EndedExperimentStatus ifFalse: [
+		experimentProcess suspend.
+		status := PausedExperimentStatus new.].
+	observation pause

@@ -14,7 +14,8 @@
 		"observationHasEnded",
 		"observationHasNotStarted",
 		"simulationIsRunning",
-		"observationIsRunning"
+		"observationIsRunning",
+		"observationIsPaused"
 	],
 	"name" : "ExperimentStatusTestInterpreter",
 	"type" : "normal"

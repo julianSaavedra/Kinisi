@@ -1,4 +1,5 @@
 API
 terminate
 
-	buffer close
+	buffer close.
+	process terminate

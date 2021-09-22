@@ -1,5 +1,5 @@
 test - serial run
-test_SerialRunning_SimulationWithObservation_ExperimentAndSimulationAreRunningButNotTheObservation
+test_SerialRunning_SimulationWithObservation_ExperimentAndSimulationAreRunningAndObservationHasNotStarted
 
 	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps testHasAlreadyAsserted experimentHasEnded interfaceDefinition |
 	simulationHasReachedThreeSteps := Semaphore new.

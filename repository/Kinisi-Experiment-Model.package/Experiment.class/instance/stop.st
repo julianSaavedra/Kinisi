@@ -2,4 +2,5 @@ accessing
 stop
 
 	experimentProcess terminate.
-	status := EndedExperimentStatus new
+	status := EndedExperimentStatus new.
+	observation terminate

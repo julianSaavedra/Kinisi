@@ -1,4 +1,4 @@
 visiting
 accept: visitor
 
-	self subclassResponsibility
+	^visitor visitAsPausedStatus: self
