@@ -1,5 +1,5 @@
-accessing
-stop
+running
+terminate
 
 	experimentProcess terminate.
 	status := EndedExperimentStatus new.

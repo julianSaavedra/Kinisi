@@ -1,4 +1,4 @@
-asdasd
+running
 pause
 
 	status class = EndedExperimentStatus ifFalse: [

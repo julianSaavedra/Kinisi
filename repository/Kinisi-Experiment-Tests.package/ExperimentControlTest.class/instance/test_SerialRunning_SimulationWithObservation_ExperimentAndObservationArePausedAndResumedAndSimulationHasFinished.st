@@ -28,7 +28,7 @@ test_SerialRunning_SimulationWithObservation_ExperimentAndObservationArePausedAn
 	self assertSimulationHasNotStartedIn: experiment.
 	self assertObservationHasNotStartedIn: experiment.
 	
-	experiment run.
+	experiment play.
 	
 	self waitUnilSimulationIsFinished: experiment.
 	observationHasProcessedThreeResults wait.
@@ -41,7 +41,7 @@ test_SerialRunning_SimulationWithObservation_ExperimentAndObservationArePausedAn
 	self assertSimulationHasEndedIn: experiment.
 	self assertObservationIsPausedIn: experiment.
 	
-	experiment resume.	
+	experiment play.	
 	
 	self assertExperimentIsRunningIn: experiment.
 	self assertSimulationHasEndedIn: experiment.

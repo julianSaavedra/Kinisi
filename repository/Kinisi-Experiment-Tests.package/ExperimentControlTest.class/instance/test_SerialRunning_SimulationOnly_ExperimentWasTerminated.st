@@ -20,13 +20,13 @@ test_SerialRunning_SimulationOnly_ExperimentWasTerminated
 	self assertExperimentHasNotStartedIn: experiment.
 	self assertSimulationHasNotStartedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment.
-	experiment run.
+	experiment play.
 	simulationHasReachedThreeSteps wait.
 	self assertExperimentIsRunningIn: experiment.
 	self assertSimulationIsRunningIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment.
 	
-	experiment stop.
+	experiment terminate.
 	self waitUnilIsFinished: experiment.
 
 	self assertSimulationHasEndedIn: experiment.

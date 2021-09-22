@@ -22,7 +22,7 @@ test_SerialRunning_SimulationWithObservation_ExperimentHasFinished
 	self assertSimulationHasNotStartedIn: experiment.
 	self assertObservationHasNotStartedIn: experiment.
 	
-	experiment run.
+	experiment play.
 	self waitUnilIsFinished: experiment.
 	
 	self assertExperimentHasEndedIn: experiment.

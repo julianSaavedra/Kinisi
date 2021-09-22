@@ -20,7 +20,7 @@ test_SerialRunning_SimulationOnly_ExperimentIsPausedAndResumed
 	self assertExperimentHasNotStartedIn: experiment.
 	self assertSimulationHasNotStartedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment.
-	experiment run.
+	experiment play.
 	simulationHasReachedThreeSteps wait.
 	self assertExperimentIsRunningIn: experiment.
 	self assertSimulationIsRunningIn: experiment.
@@ -31,7 +31,7 @@ test_SerialRunning_SimulationOnly_ExperimentIsPausedAndResumed
 	self assertSimulationIsPausedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment.
 	
-	experiment resume.
+	experiment play.
 
 	self assertExperimentIsRunningIn: experiment.
 	self assertSimulationIsRunningIn: experiment.

@@ -4,4 +4,4 @@ initializePlay
 	play := self
 		newButtonLabeled: 'Play'
 		with: #smallDoIt
-		doing: [ process play ]
+		doing: [ experiment play ]

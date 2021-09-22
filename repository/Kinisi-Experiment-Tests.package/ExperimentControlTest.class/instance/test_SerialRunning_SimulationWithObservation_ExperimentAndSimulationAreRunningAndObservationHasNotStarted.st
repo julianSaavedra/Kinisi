@@ -26,7 +26,7 @@ test_SerialRunning_SimulationWithObservation_ExperimentAndSimulationAreRunningAn
 	self assertSimulationHasNotStartedIn: experiment.
 	self assertObservationHasNotStartedIn: experiment.
 	
-	experiment run.
+	experiment play.
 	
 	simulationHasReachedThreeSteps wait.
 	self assertExperimentIsRunningIn: experiment.

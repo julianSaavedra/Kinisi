@@ -1,5 +1,5 @@
-controlling
-resume
+running
+play
 
 	status class = EndedExperimentStatus ifFalse: [
 		experimentProcess resume.

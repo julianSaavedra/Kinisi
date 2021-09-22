@@ -11,7 +11,7 @@ test_SerialRunning_SimulationOnly_ExperimentHasFinished
 	workbench useSerialRunningMode.
 	experiment := lab newExperiment.
 	
-	experiment run.
+	experiment play.
 	self waitUnilIsFinished: experiment.
 	
 	self assertExperimentHasEndedIn: experiment.
