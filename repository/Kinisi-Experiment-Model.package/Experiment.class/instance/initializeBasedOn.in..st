@@ -2,8 +2,9 @@ initialization
 initializeBasedOn: aDefinition in: aLab
  
 	definition := aDefinition.
-	observation := ObservationController basedOn: definition.
 	lab := aLab.
-	self prepareExperimentProcess.
+	runner := ExperimentRunner for: self.
+	"observation := ObservationController basedOn: definition."
+	"self prepareExperimentProcess.
 	status := NotStartedExperimentStatus new.
-	observationHasStated := false
+	observationHasStated := false"

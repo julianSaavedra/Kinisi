@@ -1,7 +1,6 @@
-running
+API
 terminate
 
-	runner terminate
-	"experimentProcess terminate.
+	simulation terminate."
 	status := EndedExperimentStatus new.
 	observation terminate"

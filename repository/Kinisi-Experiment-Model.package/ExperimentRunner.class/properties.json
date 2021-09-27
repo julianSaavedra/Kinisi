@@ -6,16 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"experiment",
+		"simulation",
 		"definition",
-		"result",
-		"observation",
-		"lab",
-		"status",
-		"runInNewProcess",
-		"experimentProcess",
-		"observationHasStated",
-		"runner"
+		"observation"
 	],
-	"name" : "Experiment",
+	"name" : "ExperimentRunner",
 	"type" : "normal"
 }

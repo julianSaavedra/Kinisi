@@ -1,4 +1,4 @@
 accessing
 status
 
-	^runner status
+	^status
