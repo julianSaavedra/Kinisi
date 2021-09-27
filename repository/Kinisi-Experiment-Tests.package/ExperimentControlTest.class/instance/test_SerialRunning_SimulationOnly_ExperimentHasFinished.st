@@ -15,5 +15,5 @@ test_SerialRunning_SimulationOnly_ExperimentHasFinished
 	self waitUnilIsFinished: experiment.
 	
 	self assertExperimentHasEndedIn: experiment.
-	self assertSimulationHasNotStartedIn: experiment.
+	self assertSimulationHasEndedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment
