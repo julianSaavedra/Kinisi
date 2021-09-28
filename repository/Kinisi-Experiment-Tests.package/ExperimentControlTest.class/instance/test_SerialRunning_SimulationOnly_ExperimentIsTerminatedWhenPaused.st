@@ -1,15 +1,14 @@
 test - serial run
 test_SerialRunning_SimulationOnly_ExperimentIsTerminatedWhenPaused
 
-	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps testHasAlreadyAsserted |
+	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps |
 	simulationHasReachedThreeSteps := Semaphore new.
-	testHasAlreadyAsserted := Semaphore new.
 	domainModelWorkbench := FixedDomainModelWorkbench
 		startingAt: 1
 		changingWith: (SimulationStateChange with: [:currentState |
 			| newState |
 			newState := currentState * 2.
-			newState = 8 ifTrue: [ simulationHasReachedThreeSteps signal. testHasAlreadyAsserted wait ].
+			newState = 8 ifTrue: [ simulationHasReachedThreeSteps signal ].
 			newState])
 		configuringSteppingWith: [:steppingWorkbench | steppingWorkbench repeat: 5 steppingBy: 1 ].
 	workbench := LabWorkbench using: domainModelWorkbench.
@@ -30,9 +29,9 @@ test_SerialRunning_SimulationOnly_ExperimentIsTerminatedWhenPaused
 	self assertExperimentIsPausedIn: experiment.
 	self assertSimulationIsPausedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment.
-	
-	experiment terminate.
 
+	experiment terminate.
+	self waitUnilIsFinished: experiment.
 	self assertSimulationHasEndedIn: experiment.
 	self assertExperimentHasEndedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment

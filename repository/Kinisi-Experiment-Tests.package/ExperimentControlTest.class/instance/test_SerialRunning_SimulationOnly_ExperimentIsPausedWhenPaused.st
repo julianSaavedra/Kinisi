@@ -35,5 +35,12 @@ test_SerialRunning_SimulationOnly_ExperimentIsPausedWhenPaused
 
 	self assertExperimentIsPausedIn: experiment.
 	self assertSimulationIsPausedIn: experiment.
+	self assertThereAreNoObservationsInStatusFor: experiment.
+	
+	experiment play.
+	testHasAlreadyAsserted signal.
+	self waitUnilIsFinished: experiment.
+	self assertSimulationHasEndedIn: experiment.
+	self assertExperimentHasEndedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment
 	

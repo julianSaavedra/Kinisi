@@ -1,5 +1,5 @@
 test - serial run
-test_SerialRunning_SimulationOnly_ExperimentHasStartedAndItsRunning
+test_SerialRunning_SimulationOnly_ExperimentIsPlayedAndItsRunning
 
 	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps testHasAlreadyAsserted |
 	simulationHasReachedThreeSteps := Semaphore new.

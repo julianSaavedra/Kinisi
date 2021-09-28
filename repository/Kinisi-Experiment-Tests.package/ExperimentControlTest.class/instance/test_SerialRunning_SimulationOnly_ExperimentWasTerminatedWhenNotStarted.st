@@ -22,7 +22,8 @@ test_SerialRunning_SimulationOnly_ExperimentWasTerminatedWhenNotStarted
 	self assertThereAreNoObservationsInStatusFor: experiment.
 	
 	experiment terminate.
-
+	self waitUnilIsFinished: experiment.
+	
 	self assertSimulationHasEndedIn: experiment.
 	self assertExperimentHasEndedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment

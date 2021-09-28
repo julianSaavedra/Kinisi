@@ -30,4 +30,10 @@ test_SerialRunning_SimulationOnly_ExperimentIsPlayedWhileRunning
 
 	self assertExperimentIsRunningIn: experiment.
 	self assertSimulationIsRunningIn: experiment.
+	self assertThereAreNoObservationsInStatusFor: experiment.
+	
+	testHasAlreadyAsserted signal.
+	self waitUnilIsFinished: experiment.
+	self assertSimulationHasEndedIn: experiment.
+	self assertExperimentHasEndedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment
