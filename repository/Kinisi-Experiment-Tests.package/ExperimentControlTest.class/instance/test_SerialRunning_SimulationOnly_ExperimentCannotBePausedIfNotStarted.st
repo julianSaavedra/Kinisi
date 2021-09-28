@@ -1,16 +1,12 @@
 test - serial run
-test_SerialRunning_SimulationOnly_ExperimentWasTerminatedWhileRunning
+test_SerialRunning_SimulationOnly_ExperimentCannotBePausedIfNotStarted
 
 	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps testHasAlreadyAsserted |
 	simulationHasReachedThreeSteps := Semaphore new.
 	testHasAlreadyAsserted := Semaphore new.
 	domainModelWorkbench := FixedDomainModelWorkbench
 		startingAt: 1
-		changingWith: (SimulationStateChange with: [:currentState |
-			| newState |
-			newState := currentState * 2.
-			newState = 8 ifTrue: [ simulationHasReachedThreeSteps signal. testHasAlreadyAsserted wait ].
-			newState])
+		changingWith: (SimulationStateChange with: [:currentState | currentState * 2 ])
 		configuringSteppingWith: [:steppingWorkbench | steppingWorkbench repeat: 5 steppingBy: 1 ].
 	workbench := LabWorkbench using: domainModelWorkbench.
 	lab := KinisiLab using: workbench.
@@ -20,15 +16,12 @@ test_SerialRunning_SimulationOnly_ExperimentWasTerminatedWhileRunning
 	self assertExperimentHasNotStartedIn: experiment.
 	self assertSimulationHasNotStartedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment.
-	experiment play.
-	simulationHasReachedThreeSteps wait.
-	self assertExperimentIsRunningIn: experiment.
-	self assertSimulationIsRunningIn: experiment.
-	self assertThereAreNoObservationsInStatusFor: experiment.
 	
-	experiment terminate.
-	self waitUnilIsFinished: experiment.
+	self
+		should: [ experiment pause ]
+		raise: Error
+		whoseDescriptionIncludes: 'Experiment has not started.'.
 
-	self assertSimulationHasEndedIn: experiment.
-	self assertExperimentHasEndedIn: experiment.
+	self assertExperimentHasNotStartedIn: experiment.
+	self assertSimulationHasNotStartedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment

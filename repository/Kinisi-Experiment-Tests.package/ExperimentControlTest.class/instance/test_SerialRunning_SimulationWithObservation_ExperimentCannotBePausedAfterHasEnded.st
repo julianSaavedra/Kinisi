@@ -1,5 +1,5 @@
 test - serial run
-test_SerialRunning_SimulationWithObservation_ExperimentHasFinished
+test_SerialRunning_SimulationWithObservation_ExperimentCannotBePausedAfterHasEnded
 
 	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps testHasAlreadyAsserted experimentHasEnded interfaceDefinition |
 	simulationHasReachedThreeSteps := Semaphore new.
@@ -27,5 +27,13 @@ test_SerialRunning_SimulationWithObservation_ExperimentHasFinished
 	
 	self assertExperimentHasEndedIn: experiment.
 	self assertSimulationHasEndedIn: experiment.
-	self assertObservationsHasEndedIn: experiment	
+	self assertObservationsHasEndedIn: experiment.
 	
+	self
+		should: [ experiment pause ]
+		raise: Error
+		whoseDescriptionIncludes: 'Experiment has already ended.'.
+
+	self assertExperimentHasEndedIn: experiment.
+	self assertSimulationHasEndedIn: experiment.
+	self assertObservationsHasEndedIn: experiment

@@ -8,12 +8,8 @@
 	"instvars" : [
 		"definition",
 		"result",
-		"observation",
 		"lab",
 		"status",
-		"runInNewProcess",
-		"experimentProcess",
-		"observationHasStated",
 		"runner"
 	],
 	"name" : "Experiment",

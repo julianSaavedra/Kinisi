@@ -1,5 +1,5 @@
 test - serial run
-test_SerialRunning_SimulationOnly_ExperimentWasTerminatedWhenNotStarted
+test_SerialRunning_SimulationOnly_ExperimentRemainsPausedIfPausedWhenPaused
 
 	| domainModelWorkbench workbench lab experiment simulationHasReachedThreeSteps testHasAlreadyAsserted |
 	simulationHasReachedThreeSteps := Semaphore new.
@@ -20,10 +20,27 @@ test_SerialRunning_SimulationOnly_ExperimentWasTerminatedWhenNotStarted
 	self assertExperimentHasNotStartedIn: experiment.
 	self assertSimulationHasNotStartedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment.
+	experiment play.
+	simulationHasReachedThreeSteps wait.
+	self assertExperimentIsRunningIn: experiment.
+	self assertSimulationIsRunningIn: experiment.
+	self assertThereAreNoObservationsInStatusFor: experiment.
 	
-	experiment terminate.
+	experiment pause.
+	self assertExperimentIsPausedIn: experiment.
+	self assertSimulationIsPausedIn: experiment.
+	self assertThereAreNoObservationsInStatusFor: experiment.
+	
+	self shouldnt: [ experiment pause ] raise: Error.
+
+	self assertExperimentIsPausedIn: experiment.
+	self assertSimulationIsPausedIn: experiment.
+	self assertThereAreNoObservationsInStatusFor: experiment.
+	
+	experiment play.
+	testHasAlreadyAsserted signal.
 	self waitUnilIsFinished: experiment.
-	
 	self assertSimulationHasEndedIn: experiment.
 	self assertExperimentHasEndedIn: experiment.
 	self assertThereAreNoObservationsInStatusFor: experiment
+	

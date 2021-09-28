@@ -1,5 +1,5 @@
 test - serial run
-test_SerialRunning_SimulationOnly_ExperimentHasFinished
+test_SerialRunning_SimulationOnly_ExperimentResultIsAvailableAfterSimulationHasFinished
 
 	| domainModelWorkbench workbench lab experiment |
 	domainModelWorkbench := FixedDomainModelWorkbench
@@ -12,8 +12,8 @@ test_SerialRunning_SimulationOnly_ExperimentHasFinished
 	experiment := lab newExperiment.
 	
 	experiment play.
-	self waitUnilIsFinished: experiment.
+	self waitUnilSimulationIsFinished: experiment.
 	
 	self assertExperimentHasEndedIn: experiment.
 	self assertSimulationHasEndedIn: experiment.
-	self assertThereAreNoObservationsInStatusFor: experiment
+	self assert: experiment result notNil
