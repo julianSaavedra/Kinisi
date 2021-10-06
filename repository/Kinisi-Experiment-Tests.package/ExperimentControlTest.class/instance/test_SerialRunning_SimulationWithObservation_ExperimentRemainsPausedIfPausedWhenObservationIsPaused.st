@@ -1,5 +1,5 @@
 test - serial run
-test_SerialRunning_SimulationWithObservation_ExperimentAndObservationArePausedAndResumedAndSimulationHasFinished
+test_SerialRunning_SimulationWithObservation_ExperimentRemainsPausedIfPausedWhenObservationIsPaused
 
 	| domainModelWorkbench workbench lab experiment observationHasProcessedThreeResults testHasAlreadyAsserted experimentHasEnded interfaceDefinition |
 	observationHasProcessedThreeResults := Semaphore new.
@@ -41,15 +41,16 @@ test_SerialRunning_SimulationWithObservation_ExperimentAndObservationArePausedAn
 	self assertSimulationHasEndedIn: experiment.
 	self assertObservationIsPausedIn: experiment.
 	
-	experiment play.	
-	
-	self assertExperimentIsRunningIn: experiment.
-	self assertSimulationHasEndedIn: experiment.
-	self assertObservationIsRunningIn: experiment.
+	self shouldnt: [ experiment pause ] raise: Error.
 
-	testHasAlreadyAsserted signal.
-	self waitUnilIsFinished: experiment.
+	self assertExperimentIsPausedIn: experiment.
+	self assertSimulationHasEndedIn: experiment.
+	self assertObservationIsPausedIn: experiment.
 	
+	testHasAlreadyAsserted signal.
+	experiment play.	
+	self waitUnilIsFinished: experiment.
+		
 	self assertExperimentHasEndedIn: experiment.
 	self assertSimulationHasEndedIn: experiment.
 	self assertObservationsHasEndedIn: experiment
