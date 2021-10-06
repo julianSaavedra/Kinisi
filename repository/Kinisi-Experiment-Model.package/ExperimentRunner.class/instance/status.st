@@ -1,4 +1,4 @@
 accessing
 status
 
-	^KinisiExperimentStatus with: simulation status and: NoObservationStatus new
+	^KinisiExperimentStatus with: simulation status and: observation status
