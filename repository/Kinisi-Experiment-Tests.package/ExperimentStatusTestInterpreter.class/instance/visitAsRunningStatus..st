@@ -1,11 +1,7 @@
 visiting
 visitAsRunningStatus: status
- 	
-	visitingAsObservationStatus
-		ifTrue: [
-			observationIsRunning := true.
-			experimentIsBeingObserved := true  ]
-		ifFalse: [
-			simulationHasNotStarted := false.
-			simulationIsRunning := true.
-			simulationHasEnded := false ]
+
+	self
+		ifVisitingGeneralDo: [ experimentIsRunning := true ]
+		ifSimulationDo: [ simulationIsRunning := true ]
+		ifObservationDo: [ observationIsRunning := true. experimentIsBeingObserved := true ]

@@ -1,11 +1,6 @@
 initialization
 initializeDefaults
 
-	experimentHasNotStarted := false.
-	experimentIsRunning := false.
-	experimentIsPaused := false.
-	experimentHasEnded := false.
-
 	simulationHasNotStarted := false.
 	simulationIsRunning := false.
 	simulationIsPaused := false.

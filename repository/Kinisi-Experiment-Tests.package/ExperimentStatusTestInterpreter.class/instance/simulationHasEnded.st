@@ -1,4 +1,4 @@
 interpreting
 simulationHasEnded
 
-	^true
+	^simulationHasEnded
