@@ -9,6 +9,6 @@ testParticleWithUniformLinearMotion
 		over: resource oneSecond * 10.
 	lab := KinisiLab using: workbench.
 	
-	lab runExperiment.
+	self runExperimentUntilHasFinishedIn: lab.
 	
 	self assert: self expectedSteps hasAll: lab lastResult

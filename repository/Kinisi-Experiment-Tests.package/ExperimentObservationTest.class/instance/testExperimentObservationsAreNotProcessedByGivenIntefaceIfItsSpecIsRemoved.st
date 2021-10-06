@@ -10,7 +10,7 @@ testExperimentObservationsAreNotProcessedByGivenIntefaceIfItsSpecIsRemoved
 		add: interfaceDefinitionToBeUsed;
 		remove: interfaceDefinitionToBeRemoved.
 
-	lab runExperiment.
+	lab newExperiment run.
 	self waitRecordingIsFinishedForInterfaceBasedOn: interfaceDefinitionToBeUsed.
 
 	self denyEmpty: (self recordedObservationsFor: interfaceDefinitionToBeUsed).

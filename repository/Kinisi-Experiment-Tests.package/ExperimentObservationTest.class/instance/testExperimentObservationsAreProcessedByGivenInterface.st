@@ -5,7 +5,7 @@ testExperimentObservationsAreProcessedByGivenInterface
 	interfaceDefinition := self recordingInterfaceDefinitionNamed: 'ObservationsCollector'.
 	observationWorkbench add: interfaceDefinition.
 
-	lab runExperiment.
+	lab newExperiment run.
 	self waitRecordingIsFinishedForInterfaceBasedOn: interfaceDefinition.
 	
 	self assert: lab lastResult wasProcessedBasedOn: interfaceDefinition

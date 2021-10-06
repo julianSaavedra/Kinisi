@@ -2,6 +2,3 @@ running
 terminate
 
 	runner terminate
-	"experimentProcess terminate.
-	status := EndedExperimentStatus new.
-	observation terminate"

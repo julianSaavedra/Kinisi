@@ -20,7 +20,7 @@ testParticleBeingAttractedByEarthModelledAsParticle
 	workbench modelWorkbench addGravitationalFieldCausedBy: earth.
 	lab := KinisiLab using: workbench.
 	
-	lab runExperiment.
+	self runExperimentUntilHasFinishedIn: lab.
 	
 	experimentResultStates := lab lastResult withTimeAndStateCollect: [:step :state | state ].
 	lastUniverseState := experimentResultStates last.

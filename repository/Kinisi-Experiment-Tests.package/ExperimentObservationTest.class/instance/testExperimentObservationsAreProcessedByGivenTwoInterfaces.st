@@ -9,7 +9,7 @@ testExperimentObservationsAreProcessedByGivenTwoInterfaces
 		add: interfaceADefinition;
 		add: interfaceBDefinition.
 
-	lab runExperiment.
+	lab newExperiment run.
 	self waitRecordingIsFinishedForInterfaceBasedOn:interfaceADefinition.
 	self waitRecordingIsFinishedForInterfaceBasedOn:interfaceBDefinition.
 		
