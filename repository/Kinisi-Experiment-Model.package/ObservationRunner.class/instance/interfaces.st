@@ -1,4 +1,4 @@
-acessing
+accessing
 interfaces
 
 	^process interfaces
