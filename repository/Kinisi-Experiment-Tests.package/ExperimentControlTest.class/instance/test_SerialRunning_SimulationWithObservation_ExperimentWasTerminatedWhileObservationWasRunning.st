@@ -21,7 +21,6 @@ test_SerialRunning_SimulationWithObservation_ExperimentWasTerminatedWhileObserva
 		add: interfaceDefinition;
 		period: (Duration milliSeconds: 50).
 	lab := KinisiLab using: workbench.
-	workbench useSerialRunningMode.
 	experiment := lab newExperiment.
 	
 	self assertExperimentHasNotStartedIn: experiment.

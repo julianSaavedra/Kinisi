@@ -14,7 +14,6 @@ test_SerialRunning_SimulationOnly_ExperimentIsPausedAndResumed
 		configuringSteppingWith: [:steppingWorkbench | steppingWorkbench repeat: 5 steppingBy: 1 ].
 	workbench := LabWorkbench using: domainModelWorkbench.
 	lab := KinisiLab using: workbench.
-	workbench useSerialRunningMode.
 	experiment := lab newExperiment.
 	
 	self assertExperimentHasNotStartedIn: experiment.

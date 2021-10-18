@@ -1,4 +1,0 @@
-configuring
-useIndependentProcessSerialRunningMode
-
-	runningMode := IndependentProcessSerialRunningMode new
