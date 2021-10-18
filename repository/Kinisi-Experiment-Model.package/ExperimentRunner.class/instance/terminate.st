@@ -1,6 +1,5 @@
 API
 terminate
 
-	simulation terminate."
-	status := EndedExperimentStatus new."
+	simulation terminate.
 	observation terminate

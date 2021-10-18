@@ -9,4 +9,4 @@ testAskingForExperimentResultFailsIfExperimentHasNotBeenRun
 	self
 		should: [ experiment result ]
 		raise: Error
-		whoseDescriptionIncludes: 'Experiment was not run yet'
+		whoseDescriptionIncludes: 'Result is not available yet'

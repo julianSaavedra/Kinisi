@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DisabledObservationController",
+	"name" : "NoObservationRunner",
 	"type" : "normal"
 }

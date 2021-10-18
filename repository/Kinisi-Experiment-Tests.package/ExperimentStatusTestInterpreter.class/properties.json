@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"experimentIsBeingObserved",
-		"visitingAsObservationStatus",
 		"simulationHasEnded",
 		"simulationHasNotStarted",
 		"simulationIsPaused",
@@ -19,8 +18,7 @@
 		"visitingStatus",
 		"experimentHasNotStarted",
 		"experimentIsRunning",
-		"experimentIsPaused",
-		"experimentHasEnded"
+		"experimentIsPaused"
 	],
 	"name" : "ExperimentStatusTestInterpreter",
 	"type" : "normal"

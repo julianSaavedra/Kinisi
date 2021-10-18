@@ -2,6 +2,6 @@ visiting
 visitAsEndedStatus: experimentStatus
 
 	self
-		ifVisitingGeneralDo: [ experimentHasEnded := true ]
+		ifVisitingGeneralDo: [ ]
 		ifSimulationDo: [ simulationHasEnded := true ]
 		ifObservationDo: [ observationHasEnded := true. experimentIsBeingObserved := true ]

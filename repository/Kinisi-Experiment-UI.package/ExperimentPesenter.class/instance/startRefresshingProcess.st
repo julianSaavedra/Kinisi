@@ -5,6 +5,5 @@ startRefresshingProcess
 		[ 
 			0.5 seconds wait.
 			self refresh.
-			(ExperimentStatusTestInterpreter on: experiment status)
-				experimentHasEnded ] whileFalse
+			experiment hasEnded ] whileFalse
 		] forkNamed: 'Experiment Status'

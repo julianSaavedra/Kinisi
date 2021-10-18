@@ -1,4 +1,4 @@
-API
+private
 simulationHasFinishedWith: result
 
 	experiment simulationHasFinishedWith: result.

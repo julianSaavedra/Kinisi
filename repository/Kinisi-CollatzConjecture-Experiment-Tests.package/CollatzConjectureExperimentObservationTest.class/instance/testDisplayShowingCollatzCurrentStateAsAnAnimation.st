@@ -10,4 +10,6 @@ testDisplayShowingCollatzCurrentStateAsAnAnimation
 	display := (displayProvider displaysFor: experiment) first.
 	displayHolder display: display.
 	
-	experiment run
+	self runExperimentUntilHasFinished: experiment.
+	
+	self assert: experiment hasEnded

@@ -11,6 +11,6 @@
 		"experimentDefinition",
 		"experimentRunner"
 	],
-	"name" : "ObservationController",
+	"name" : "ObservationRunner",
 	"type" : "normal"
 }
