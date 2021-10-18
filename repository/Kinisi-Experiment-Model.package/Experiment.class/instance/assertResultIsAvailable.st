@@ -1,4 +1,4 @@
 private
 assertResultIsAvailable
 
-	result ifNil: [ Error signal: 'Experiment was not run yet' ]
+	result ifNil: [ Error signal: 'Result is not available yet' ]

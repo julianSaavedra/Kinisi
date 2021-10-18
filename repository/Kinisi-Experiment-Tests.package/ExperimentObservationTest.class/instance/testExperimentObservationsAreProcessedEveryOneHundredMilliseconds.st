@@ -8,7 +8,7 @@ testExperimentObservationsAreProcessedEveryOneHundredMilliseconds
 		add: interfaceDefinition;
 		period: oneHundredMilliSeconds.
 
-	lab runExperiment.
+	lab newExperiment run.
 	self waitRecordingIsFinishedForInterfaceBasedOn: interfaceDefinition.
 	
 	self

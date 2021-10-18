@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ExperimentProcessStatus",
+	"category" : "Kinisi-Experiment-Model-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NotStartedExperimentStatus",
+	"type" : "normal"
+}

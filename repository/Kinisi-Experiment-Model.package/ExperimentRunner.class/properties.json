@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Experiment-Model-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"experiment",
+		"simulation",
+		"observation"
+	],
+	"name" : "ExperimentRunner",
+	"type" : "normal"
+}

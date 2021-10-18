@@ -2,5 +2,5 @@ initialization
 initializeBasedOn: aDefinition in: aLab
  
 	definition := aDefinition.
-	observation := ObservationController basedOn: definition.
-	lab := aLab
+	lab := aLab.
+	runner := ExperimentRunner for: self

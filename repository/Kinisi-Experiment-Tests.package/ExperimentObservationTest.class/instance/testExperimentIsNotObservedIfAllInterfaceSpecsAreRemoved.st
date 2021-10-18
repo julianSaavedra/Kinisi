@@ -7,6 +7,6 @@ testExperimentIsNotObservedIfAllInterfaceSpecsAreRemoved
 		add: interfaceDefinition;
 		removeAllSpecs.
 
-	lab runExperiment.
+	lab newExperiment run.
 
 	self assertEmpty: (self recordedObservationsFor: interfaceDefinition)

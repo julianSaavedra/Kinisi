@@ -23,7 +23,7 @@ testTwoStillParticlesSimetricallyLocatedFromTheOriginGetCloserToTheOriginBecasue
 	workbench modelWorkbench addGravitationalInteractionBetweenParticles.
 	lab := KinisiLab using: workbench.
 	
-	lab runExperiment.
+	self runExperimentUntilHasFinishedIn: lab.
 	
 	experimentResultStates := lab lastResult withTimeAndStateCollect: [:step :state | state ].
 	lastUniverseState := experimentResultStates last.

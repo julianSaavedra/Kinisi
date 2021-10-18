@@ -11,6 +11,7 @@ testDisplayCannotBeConnectedToInterfaceIfAlreadyStarted
 	displayProvider := DisplayProvider using: displayProviderSpec.
 	
 	experiment run.
+	self waitUnilSimulationIsFinished: experiment.
 	
 	self
 		should: [displayProvider displaysFor: experiment]

@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Experiment-Tests-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"experimentIsBeingObserved",
+		"simulationHasEnded",
+		"simulationHasNotStarted",
+		"simulationIsPaused",
+		"observationHasEnded",
+		"observationHasNotStarted",
+		"simulationIsRunning",
+		"observationIsRunning",
+		"observationIsPaused",
+		"visitingStatus",
+		"experimentHasNotStarted",
+		"experimentIsRunning",
+		"experimentIsPaused"
+	],
+	"name" : "ExperimentStatusTestInterpreter",
+	"type" : "normal"
+}

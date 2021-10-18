@@ -25,7 +25,7 @@ testParticleBeingAttractedBySameMassParticlesSimetricallyLocatedKeepsStill
 	workbench modelWorkbench addGravitationalFieldCausedByAll: {leftParticle. rightParticle}.
 	lab := KinisiLab using: workbench.
 	
-	lab runExperiment.
+	self runExperimentUntilHasFinishedIn: lab.
 	
 	experimentResultStates := lab lastResult withTimeAndStateCollect: [:step :state | state ].
 	particleInTheOriginStates := experimentResultStates collect: [:universeState |

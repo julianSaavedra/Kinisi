@@ -8,7 +8,7 @@ testResultsStepsGoByOneRepeatingFiveTimes
 		steppingBy: steppingDelta.
 	lab := KinisiLab using: workbench.
 	
-	lab runExperiment.
+	self runExperimentUntilHasFinishedIn: lab.
 	
 	times := lab lastResult withTimeAndStateCollect: [:time :state | time ].
 	self assert: times size equals: 6.

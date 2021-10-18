@@ -4,7 +4,7 @@ testLabProducesExpectedExperimenResult
 	| lab |
 	lab := KinisiLab using: self workbench.
 
-	lab runExperiment.
+	self runExperimentUntilHasFinishedIn: lab.
 	
 	self
 		assert: lab lastResult

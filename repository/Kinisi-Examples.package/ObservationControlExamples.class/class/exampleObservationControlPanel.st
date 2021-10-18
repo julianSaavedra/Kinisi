@@ -7,5 +7,5 @@ exampleObservationControlPanel
 		with: self numberInTranscriptInterface
 		waiting: 1 asSeconds.
 
-	(ObservationControlPanelPresenter on: observation) openWithSpec.
+	(ExperimentControlPanelPresenter on: observation) openWithSpec.
 	observation inspect

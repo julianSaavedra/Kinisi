@@ -6,7 +6,7 @@ testDescriptiveStatisticsAreProduceFromExperimenResult
 	workbench modelWorkbench state: 15.
 	lab := KinisiLab using: workbench.
 
-	lab runExperiment.
+	self runExperimentUntilHasFinishedIn: lab.
 	
 	statsCollector := CollatzConjectureDescriptiveStatisticsCollector new.
 	observations := OrderedCollection new.

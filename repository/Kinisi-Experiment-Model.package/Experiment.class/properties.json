@@ -8,8 +8,8 @@
 	"instvars" : [
 		"definition",
 		"result",
-		"observation",
-		"lab"
+		"lab",
+		"runner"
 	],
 	"name" : "Experiment",
 	"type" : "normal"
