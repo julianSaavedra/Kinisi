@@ -1,4 +1,4 @@
 tests
 testSoleInstance
 
-	self assert: UnitProvider soleInstance == UnitProvider soleInstance
+	self assert: UnitProvider soleInstance identicalTo: UnitProvider soleInstance
