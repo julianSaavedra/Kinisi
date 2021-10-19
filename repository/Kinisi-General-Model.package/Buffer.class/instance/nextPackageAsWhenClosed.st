@@ -1,4 +1,4 @@
 private
 nextPackageAsWhenClosed
 
-	^self nextPackageOrPreviousOneIfNothingNew
+	^self nextPackageOrEmptyOneIfNothingNew

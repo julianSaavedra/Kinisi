@@ -1,4 +1,4 @@
 processing
 beProcessedBy: reader
 
-	self subclassResponsibility
+	reader processAsBufferIsEmpty
