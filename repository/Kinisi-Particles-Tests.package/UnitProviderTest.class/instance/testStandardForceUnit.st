@@ -1,4 +1,4 @@
 tests
 testStandardForceUnit
 	
-	self assert: unitProvider standardForceUnit == unitProvider newton
+	self assert: unitProvider standardForceUnit equals: unitProvider newton

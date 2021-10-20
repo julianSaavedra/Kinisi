@@ -6,4 +6,4 @@ testClearSoleInstance
 	
 	UnitProvider clearSoleInstance.
 	
-	self deny: aProvider == UnitProvider soleInstance
+	self deny: aProvider identicalTo: UnitProvider soleInstance
