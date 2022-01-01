@@ -1,7 +1,9 @@
 initialization
 colorListWith: colorAccess and: modifierCreation
 
-	^self
-		newDropListOn: self systemColors
-		with: modifierCreation
-		using: colorAccess
+	| colorSetting |
+	colorSetting := ColorSettingPresenter on: colorAccess value.
+	colorSetting whenModelChangesDo: [:newColor |
+		modifierCreation value: newColor.
+		self doPostUpdateAction ].
+	^colorSetting
