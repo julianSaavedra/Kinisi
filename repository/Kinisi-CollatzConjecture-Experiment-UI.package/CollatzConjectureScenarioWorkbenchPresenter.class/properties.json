@@ -2,7 +2,9 @@
 	"commentStamp" : "",
 	"super" : "SpPresenter",
 	"category" : "Kinisi-CollatzConjecture-Experiment-UI",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"fontChooser"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

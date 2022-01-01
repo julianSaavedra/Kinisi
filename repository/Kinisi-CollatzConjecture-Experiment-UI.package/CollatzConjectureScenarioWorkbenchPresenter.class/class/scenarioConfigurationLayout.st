@@ -6,9 +6,7 @@ scenarioConfigurationLayout
 		beRowNotHomogeneous;
 		borderWidth: 2;
 		column: 1 withConstraints: [ :constraints | constraints beNotExpand ];
-		"row: 1 withConstraints: [ :constraints | constraints beNotExpand ];"
 		column: 2 withConstraints: [ :constraints | constraints beNotExpand ];
-"		row: 2 withConstraints: [ :constraints | constraints beNotExpand ];"
 		add: 'State' at: 1 @ 1;
 		add: #state at: 2 @ 1;
 		add: 'Color' at: 1 @ 2;
