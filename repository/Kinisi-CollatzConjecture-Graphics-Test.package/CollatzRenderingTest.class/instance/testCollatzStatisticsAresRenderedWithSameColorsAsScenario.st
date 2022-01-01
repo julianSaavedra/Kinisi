@@ -8,7 +8,6 @@ testCollatzStatisticsAresRenderedWithSameColorsAsScenario
 	
 	observation := SimulationStepResult at: 1 with: (CollatzConjectureState with: 16).
 	statistics := CollatzConjectureDescriptiveStatistics during: observation with: 16 with: 5 with: 1 with: 1.
-	"self assertNoErrorIsRaisedWhenRendering: collatzWorkbench scenario."
 	renderer := CollatzConjectureDescriptiveStatisticsRenderer basedOn: collatzWorkbench scenario.
 
 	self shouldnt: [ renderer drawIn: canvas basedOn: statistics] raise: Error
