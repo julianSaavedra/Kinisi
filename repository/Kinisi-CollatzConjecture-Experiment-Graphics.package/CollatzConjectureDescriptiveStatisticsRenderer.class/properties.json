@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"mainIndicatorBoxSize"
+		"mainIndicatorBoxSize",
+		"color",
+		"background"
 	],
 	"name" : "CollatzConjectureDescriptiveStatisticsRenderer",
 	"type" : "normal"
