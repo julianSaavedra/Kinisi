@@ -5,7 +5,8 @@ mainIndicatorBox
 	indicatorBox := RSCircle new.
 	indicatorBox
 		withBorder;
-		color: Color white;
+		borderColor: color;
+		color: background;
 		size: mainIndicatorBoxSize;
 		position: 0 @ 0.
 	indicatorBox border width: 10.

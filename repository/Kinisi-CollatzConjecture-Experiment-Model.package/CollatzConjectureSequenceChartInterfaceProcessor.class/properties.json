@@ -8,7 +8,11 @@
 	"instvars" : [
 		"color",
 		"observationIndices",
-		"observationStates"
+		"observationStates",
+		"title",
+		"xLabel",
+		"yLabel",
+		"verticalTick"
 	],
 	"name" : "CollatzConjectureSequenceChartInterfaceProcessor",
 	"type" : "normal"

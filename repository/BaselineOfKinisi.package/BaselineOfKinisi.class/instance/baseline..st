@@ -26,6 +26,7 @@ baseline: spec
 		spec package: 'Kinisi-CollatzConjecture-Experiment-Tests' with: [ spec requires: 'Kinisi-CollatzConjecture-Experiment-Model' ].
 		spec package: 'Kinisi-CollatzConjecture-Experiment-UI' with: [ spec requires: #('Kinisi-Experiment-UI' 'Kinisi-Experiment-UI') ].
 		spec package: 'Kinisi-CollatzConjecture-Experiment-Graphics' with: [ spec requires: #('Kinisi-CollatzConjecture-Experiment-Model' 'Roassal3')].
+		spec package: 'Kinisi-CollatzConjecture-Graphics-Test' with: [ spec requires: #('Kinisi-CollatzConjecture-Experiment-Graphics')].
 
 		spec package: 'Kinisi-UserInteraction-Menu' with: [
 			spec requires: #('Kinisi-Experiment-UI' 'Kinisi-Experiment-UI') ].

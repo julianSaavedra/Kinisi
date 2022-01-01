@@ -1,5 +1,5 @@
 initialization
 initializeBasedOn: scenario
 
-	renderer := CollatzConjectureDescriptiveStatisticsRenderer new.
+	renderer := CollatzConjectureDescriptiveStatisticsRenderer basedOn: scenario.
 	statsCollector := CollatzConjectureDescriptiveStatisticsCollector new

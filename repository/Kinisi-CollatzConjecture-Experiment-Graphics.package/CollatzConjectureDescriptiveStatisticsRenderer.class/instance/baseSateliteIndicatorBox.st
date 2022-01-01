@@ -5,7 +5,8 @@ baseSateliteIndicatorBox
 	indicatorBox := RSBox new.
 	indicatorBox
 		withBorder;
-		color: Color white;
+		borderColor: color;
+		color: background;
 		extent: self sateliteIndicatorExtent.
 	indicatorBox border width: 3.
 	^ indicatorBox

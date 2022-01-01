@@ -1,4 +1,4 @@
-options
+initialization
 systemFonts
 
-	^CollatzConjectureVisualDepiction systemFonts
+	^self class systemFonts
