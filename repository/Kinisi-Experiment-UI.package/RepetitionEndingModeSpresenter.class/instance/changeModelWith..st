@@ -1,4 +1,4 @@
 API
 changeModelWith: block
  
-	self whenModelChangesDo: block
+	repetitions changeModelWith: block

@@ -1,0 +1,4 @@
+private
+currentInputAmount
+
+	^ numberInput number

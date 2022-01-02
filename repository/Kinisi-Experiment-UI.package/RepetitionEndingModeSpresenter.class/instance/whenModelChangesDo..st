@@ -1,4 +1,4 @@
 API
 whenModelChangesDo: block 
 	
-	repetitions whenNumberChangedDo: block
+	repetitions whenModelChangesDo: block
