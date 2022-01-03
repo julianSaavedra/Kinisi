@@ -1,7 +1,8 @@
 initialization
 initializePeriodAmount
 
-	periodAmount := self newNumberInput.
+	periodAmount := self
+		instantiate: KinisiNumberInputFieldPresenter
+		on: (periodUnitTranslator translateFrom: workbench period).
 	periodAmount beFloat.
-	periodAmount number: (periodUnitTranslator translateFrom: workbench period).
-	periodAmount whenSubmitDo: [ self updateModelPeriod ]
+	periodAmount changeModelWith: [:newPeriodAmount | self updateModelPeriod: newPeriodAmount]

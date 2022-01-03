@@ -4,8 +4,8 @@ initializeName
 	name := SpLabeledPresenter label: 'Name:' input: self newTextInput.
 	name input
 		text: currentSpecification name;
-		whenTextChangedDo: [:newName | 
+		whenSubmitDo: [:newName | 
 			| newSpecification |
-			newSpecification := currentSpecification name: newName.
+			newSpecification := currentSpecification name: newName text asString.
 			specificationUpdateAction value: newSpecification.
 			currentSpecification := newSpecification ]

@@ -12,4 +12,4 @@ initializeDelta
 			delta
 				label: 'Delta';
 				units: units;
-				changeModelWith: [ :newDelta | workbench delta: newDelta ] ]
+				changeModelWith: [ :newDelta | workbench delta: newDelta ]]

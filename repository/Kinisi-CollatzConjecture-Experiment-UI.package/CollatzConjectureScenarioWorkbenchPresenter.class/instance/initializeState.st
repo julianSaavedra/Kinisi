@@ -1,14 +1,6 @@
 initialization
 initializeState
 
-	state := self newNumberInput.
-	state number: workbench scenario state number.
-	state whenSubmitDo: [
-		[ workbench state: state number.
-			self doPostUpdateAction.
-			true ]
-				on: Error
-				do: [ :error | 
-					self showWindowFor: error.
-					state number: workbench scenario state number.
-					false ] ]
+	state := self instantiate: KinisiNumberInputFieldPresenter on: workbench scenario state number.
+	state changeModelWith: [:newNumber | workbench state: newNumber ].
+	state whenModelChangesDo: [ self doPostUpdateAction ]

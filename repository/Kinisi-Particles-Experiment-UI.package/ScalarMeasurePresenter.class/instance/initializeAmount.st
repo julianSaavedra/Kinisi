@@ -1,9 +1,5 @@
 initialization
 initializeAmount
 
-	amount := self newNumberInput.
-	amount number: measure amount.
-	amount whenSubmitDo: [
-			(self isValidNumberText: amount number)
-				ifTrue: [ self updateModelWith: measure unit and: amount number ]
-				ifFalse: [ amount text: measure amount asString ] ]
+	amount := self instantiate: KinisiNumberInputFieldPresenter on: measure amount.
+	amount changeModelWith: [:newAmount | self updateModelWith: measure unit and: newAmount ]
