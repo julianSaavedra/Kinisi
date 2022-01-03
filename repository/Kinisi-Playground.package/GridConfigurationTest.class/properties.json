@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Playground-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"meter",
+		"red"
+	],
+	"name" : "GridConfigurationTest",
+	"type" : "normal"
+}

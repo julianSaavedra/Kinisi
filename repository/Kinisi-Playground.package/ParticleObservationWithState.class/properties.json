@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"universeObservation",
+		"observationMode",
+		"particleName"
+	],
+	"name" : "ParticleObservationWithState",
+	"type" : "normal"
+}

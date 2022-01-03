@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground-Graphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color",
+		"massTransformation"
+	],
+	"name" : "FigureDecoration",
+	"type" : "normal"
+}
