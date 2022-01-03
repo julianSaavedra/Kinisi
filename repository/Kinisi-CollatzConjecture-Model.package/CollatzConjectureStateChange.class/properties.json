@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-CollatzConjecture-Model-Kinisi-CollatzConjecture-Model",
+	"category" : "Kinisi-CollatzConjecture-Model-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

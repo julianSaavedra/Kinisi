@@ -1,0 +1,4 @@
+accessing
+numberSize
+
+	^visualDepiction numberSize

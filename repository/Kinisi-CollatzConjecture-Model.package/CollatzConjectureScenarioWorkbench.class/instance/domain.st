@@ -1,0 +1,4 @@
+accessing
+domain
+
+	^CollatzConjectureDomain new

@@ -5,13 +5,13 @@ baseline: spec
 	
 	spec for: #common do:[
 		
-		spec package: 'Kinisi-Experiment-Model'.
-		spec package: 'Kinisi-Experiment-Tests' with: [ spec requires: #('Kinisi-Experiment-Model' 'Aconcagua') ].
-		spec package: 'Kinisi-Experiment-UI' with: [ spec requires: #('Kinisi-Experiment-Model' 'Roassal3') ]. 
-		
 		spec package: 'Kinisi-General-Model'.
 		spec package: 'Kinisi-General-Tests' with: [ spec requires: 'Kinisi-General-Model' ].
 		
+		spec package: 'Kinisi-Experiment-Model'.
+		spec package: 'Kinisi-Experiment-Tests' with: [ spec requires: #('Kinisi-Experiment-Model' 'Aconcagua') ].
+		spec package: 'Kinisi-Experiment-UI' with: [ spec requires: #('Kinisi-Experiment-Model' 'Roassal3') ].
+			
 		spec package: 'Kinisi-Particles-Model' with: [ spec requires: 'Aconcagua' ].
 		spec package: 'Kinisi-Particles-Tests' with: [ spec requires: 'Kinisi-Particles-Model' ].
 		spec package: 'Kinisi-Particles-Experiment-Model' with: [ spec requires: 'Kinisi-Experiment-Model' ].
@@ -22,10 +22,8 @@ baseline: spec
 		
 		spec package: 'Kinisi-CollatzConjecture-Model'.
 		spec package: 'Kinisi-CollatzConjecture-Tests' with: [ spec requires: 'Kinisi-CollatzConjecture-Model' ].
-		spec package: 'Kinisi-CollatzConjecture-Experiment-Model' with: [ spec requires: 'Kinisi-Experiment-Model' ].
-		spec package: 'Kinisi-CollatzConjecture-Experiment-Tests' with: [ spec requires: 'Kinisi-CollatzConjecture-Experiment-Model' ].
-		spec package: 'Kinisi-CollatzConjecture-Experiment-UI' with: [ spec requires: #('Kinisi-Experiment-UI' 'Kinisi-Experiment-UI') ].
-		spec package: 'Kinisi-CollatzConjecture-Experiment-Graphics' with: [ spec requires: #('Kinisi-CollatzConjecture-Experiment-Model' 'Roassal3')].
+		spec package: 'Kinisi-CollatzConjecture-Experiment-UI' with: [ spec requires: #('Kinisi-CollatzConjecture-Model' 'Kinisi-Experiment-UI') ].
+		spec package: 'Kinisi-CollatzConjecture-Experiment-Graphics' with: [ spec requires: #('Kinisi-CollatzConjecture-Model' 'Roassal3')].
 		spec package: 'Kinisi-CollatzConjecture-Graphics-Test' with: [ spec requires: #('Kinisi-CollatzConjecture-Experiment-Graphics')].
 
 		spec package: 'Kinisi-UserInteraction-Menu' with: [
