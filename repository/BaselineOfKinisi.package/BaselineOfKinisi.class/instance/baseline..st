@@ -25,7 +25,7 @@ baseline: spec
 		spec baseline: 'Aconcagua' with: [
 			spec
 				repository: 'github://ba-st/Aconcagua:v7.0.0/repository';
-				loads: #('Development') ].
+				loads: #('Deployment') ].
 
 		spec baseline: 'Roassal3' with: [
 			spec repository: 'github://ObjectProfile/Roassal3/src' ]	
