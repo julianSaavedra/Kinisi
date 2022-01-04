@@ -8,7 +8,7 @@ baseline: spec
 		spec package: 'Kinisi-General-Model'.
 		spec package: 'Kinisi-General-Tests' with: [ spec requires: 'Kinisi-General-Model' ].
 		
-		spec package: 'Kinisi-Experiment-Model' with: [ spec requires: #('Kinisi-CollatzConjecture-Model' 'Aconcagua' 'Roassal3') ].
+		spec package: 'Kinisi-Experiment-Model' with: [ spec requires: #('Kinisi-General-Model' 'Aconcagua' 'Roassal3') ].
 		spec package: 'Kinisi-Experiment-Tests' with: [ spec requires: #('Kinisi-Experiment-Model') ].
 		spec package: 'Kinisi-Experiment-UI' with: [ spec requires: #('Kinisi-Experiment-Model') ].
 			
