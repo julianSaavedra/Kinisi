@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-CollatzConjecture-UI",
+	"classinstvars" : [
+		"fontChooser"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"color",
+		"size",
+		"background",
+		"font",
+		"postUpdateAction",
+		"state",
+		"scenarioView"
+	],
+	"name" : "CollatzConjectureScenarioWorkbenchPresenter",
+	"type" : "normal"
+}
