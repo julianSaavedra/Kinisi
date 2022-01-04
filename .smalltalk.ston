@@ -3,6 +3,7 @@ SmalltalkCISpec {
   SCIMetacelloLoadSpec {
    #baseline : 'Kinisi',
    #directory : 'repository',
+   #load : [ 'CI' ],
    #platforms : [ #pharo ]
   }
  ],
