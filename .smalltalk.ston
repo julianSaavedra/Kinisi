@@ -9,7 +9,6 @@ SmalltalkCISpec {
  ],
  #testing : {
   #exclude : {
-   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTest ],
    #packages : ['Kinisi-Playground']
     },
   #coverage : {
