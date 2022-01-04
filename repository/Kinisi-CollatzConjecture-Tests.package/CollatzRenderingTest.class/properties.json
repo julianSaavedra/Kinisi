@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-CollatzConjecture-Tests-Graphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"canvas",
+		"collatzWorkbench"
+	],
+	"name" : "CollatzRenderingTest",
+	"type" : "normal"
+}

@@ -20,20 +20,14 @@ baseline: spec
 		spec package: 'Kinisi-Particles-Graphics-Model' with: [ spec requires: #('Kinisi-Particles-Model' 'Roassal3') ].
 		spec package: 'Kinisi-Particles-Graphics-Tests' with: [ spec requires: 'Kinisi-Particles-Graphics-Model' ].
 		
-		spec package: 'Kinisi-CollatzConjecture-Model'.
-		spec package: 'Kinisi-CollatzConjecture-Tests' with: [ spec requires: 'Kinisi-CollatzConjecture-Model' ].
-		spec package: 'Kinisi-CollatzConjecture-Experiment-UI' with: [ spec requires: #('Kinisi-CollatzConjecture-Model' 'Kinisi-Experiment-UI') ].
-		spec package: 'Kinisi-CollatzConjecture-Experiment-Graphics' with: [ spec requires: #('Kinisi-CollatzConjecture-Model' 'Roassal3')].
-		spec package: 'Kinisi-CollatzConjecture-Graphics-Test' with: [ spec requires: #('Kinisi-CollatzConjecture-Experiment-Graphics')].
+		spec package: 'Kinisi-CollatzConjecture-Model' with: [ spec requires: #('Kinisi-Experiment-Model' 'Roassal3') ].
+		spec package: 'Kinisi-CollatzConjecture-Tests' with: [ spec requires: #('Kinisi-CollatzConjecture-Model') ].
+		spec package: 'Kinisi-CollatzConjecture-UI' with: [ spec requires: #('Kinisi-CollatzConjecture-Model' 'Kinisi-Experiment-UI') ].
 
-		spec package: 'Kinisi-UserInteraction-Menu' with: [
-			spec requires: #('Kinisi-Experiment-UI' 'Kinisi-Experiment-UI') ].
+		spec package: 'Kinisi-UserInteraction-Menu' with: [ spec requires: 'Kinisi-Experiment-UI' ].
 		
 		spec package: 'Kinisi-Examples' with: [ spec requires: #('Aconcagua' 'Roassal3') ].
-
 		spec package: 'Kinisi-Playground' with: [ spec requires: 'Kinisi-Particles-Model' ].
-		spec package: 'Kinisi-PlaygroundUI' with: [ spec requires: #('Kinisi-Experiment-UI' 'Kinisi-Particles-Experiment-Model') ].
-		spec package: 'Kinisi-PlaygroundGraphic' with: [ spec requires: #('Kinisi-Particles-Graphics-Model')].
 		
 		spec baseline: 'Aconcagua' with: [
 			spec
