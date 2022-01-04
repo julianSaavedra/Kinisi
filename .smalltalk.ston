@@ -12,7 +12,7 @@ SmalltalkCISpec {
    #packages : ['Kinisi-Playground', 'Kinisi-PlaygroundGraphic', 'Kinisi-PlaygroundUI' ]
     },
   #coverage : {
-   #packages : ['Kinisi-Experiment-Model', 'Kinisi-General-Model', 'Kinisi-Particles-Model', 'Kinisi-Particles-Experiment-Model', 'Kinisi-Particles-Graphics-Model', 'Kinisi-CollatzConjecture-Model', 'Kinisi-CollatzConjecture-Experiment-Graphics']
+   #packages : ['Kinisi-Experiment-Model', 'Kinisi-General-Model', 'Kinisi-Particles-Model', 'Kinisi-Particles-Experiment-Model', 'Kinisi-Particles-Graphics-Model', 'Kinisi-CollatzConjecture-Model']
   }
  }
 }
