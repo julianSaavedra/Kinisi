@@ -1,0 +1,4 @@
+configuring
+addGravitationalFieldCausedBy: particle
+
+	scenario addGravitationalFieldCausedBy: particle

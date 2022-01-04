@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SpPresenter",
-	"category" : "Kinisi-CollatzConjecture-Tests-Graphic",
+	"category" : "Kinisi-CollatzConjecture-Tests-Graphics",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

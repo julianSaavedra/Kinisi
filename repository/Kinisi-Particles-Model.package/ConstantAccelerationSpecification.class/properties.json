@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ChangeComponentSpecification",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"acceleration",
+		"name"
+	],
+	"name" : "ConstantAccelerationSpecification",
+	"type" : "normal"
+}

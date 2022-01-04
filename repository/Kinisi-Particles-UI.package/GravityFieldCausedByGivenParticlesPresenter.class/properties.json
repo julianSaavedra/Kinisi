@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"particlesTable"
+	],
+	"name" : "GravityFieldCausedByGivenParticlesPresenter",
+	"type" : "normal"
+}

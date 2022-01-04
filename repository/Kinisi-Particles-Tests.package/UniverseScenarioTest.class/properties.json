@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Particles-Tests-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"resource"
+	],
+	"name" : "UniverseScenarioTest",
+	"type" : "normal"
+}

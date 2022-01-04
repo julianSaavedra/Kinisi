@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Particles-Tests-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"velocityRenderer",
+		"particle",
+		"particleShape",
+		"canvas"
+	],
+	"name" : "VelocityRendererTest",
+	"type" : "normal"
+}

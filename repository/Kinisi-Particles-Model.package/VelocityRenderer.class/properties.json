@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleSubRenderer",
+	"category" : "Kinisi-Particles-Model-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color"
+	],
+	"name" : "VelocityRenderer",
+	"type" : "normal"
+}

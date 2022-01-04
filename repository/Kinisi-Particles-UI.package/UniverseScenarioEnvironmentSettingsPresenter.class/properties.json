@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"particleList",
+		"selectedChangeSpecification",
+		"selectedParticleChangeSpecifications",
+		"gravityComponentSpecification"
+	],
+	"name" : "UniverseScenarioEnvironmentSettingsPresenter",
+	"type" : "normal"
+}

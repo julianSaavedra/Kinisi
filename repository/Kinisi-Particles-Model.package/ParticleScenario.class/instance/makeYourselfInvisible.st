@@ -1,0 +1,4 @@
+configuring
+makeYourselfInvisible
+
+	isVisible := false

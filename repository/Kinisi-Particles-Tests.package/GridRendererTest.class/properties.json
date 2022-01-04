@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Particles-Tests-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"canvas",
+		"universeWorkbench"
+	],
+	"name" : "GridRendererTest",
+	"type" : "normal"
+}

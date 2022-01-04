@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Particles-Tests-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"canvas"
+	],
+	"name" : "AxisReferenceRendererTest",
+	"type" : "normal"
+}

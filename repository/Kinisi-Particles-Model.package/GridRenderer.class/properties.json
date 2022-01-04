@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Model-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grid",
+		"color",
+		"separation",
+		"linesGenerator"
+	],
+	"name" : "GridRenderer",
+	"type" : "normal"
+}

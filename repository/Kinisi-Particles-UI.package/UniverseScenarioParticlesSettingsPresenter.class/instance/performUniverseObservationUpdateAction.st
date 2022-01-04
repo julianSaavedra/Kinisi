@@ -1,0 +1,4 @@
+private
+performUniverseObservationUpdateAction
+
+	universeUpdateAction value

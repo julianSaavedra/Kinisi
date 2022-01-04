@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-Tests-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classes",
+		"selectedClassTests",
+		"canvas"
+	],
+	"name" : "RenderersTestVisualizationPresenter",
+	"type" : "normal"
+}

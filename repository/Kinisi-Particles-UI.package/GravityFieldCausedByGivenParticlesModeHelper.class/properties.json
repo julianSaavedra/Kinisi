@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GravityModeHelper",
+	"category" : "Kinisi-Particles-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GravityFieldCausedByGivenParticlesModeHelper",
+	"type" : "normal"
+}

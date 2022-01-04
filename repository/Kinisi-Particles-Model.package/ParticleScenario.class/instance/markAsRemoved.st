@@ -1,0 +1,4 @@
+private
+markAsRemoved
+
+	wasRemoved := true

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-CollatzConjecture-Model-Graphic",
+	"category" : "Kinisi-CollatzConjecture-Model-Graphics",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

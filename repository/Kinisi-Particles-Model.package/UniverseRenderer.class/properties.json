@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Model-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"renderersMapping",
+		"gridRenderer",
+		"background"
+	],
+	"name" : "UniverseRenderer",
+	"type" : "normal"
+}
