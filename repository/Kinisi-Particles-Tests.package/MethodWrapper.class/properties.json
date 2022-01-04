@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Tests-MethodWrapping",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wrappingMode",
+		"wrappedSelector",
+		"targetClass",
+		"wrappedMethod",
+		"methodWasPresent"
+	],
+	"name" : "MethodWrapper",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+private
+processAsBufferIsEmpty
+
+	emptyBufferAction value

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MethodWrapperMode",
+	"category" : "Kinisi-Particles-Tests-MethodWrapping",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"preMethodBlock"
+	],
+	"name" : "MethodBeforeWrapperMode",
+	"type" : "normal"
+}

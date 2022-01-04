@@ -1,0 +1,4 @@
+accessing - pragmas & properties
+cachePragmas
+
+	
