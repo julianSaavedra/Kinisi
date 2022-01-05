@@ -1,4 +1,4 @@
 baselines
-modelPackageFor: corePackage
+modelPackageFor: domain
 
-	^ self packageFor: corePackage of: 'Model'
+	^self packageFor: domain of: 'Model'
