@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Lab-Tests-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"testResource",
+		"stepTime",
+		"stepResult"
+	],
+	"name" : "SimulationStepResultTest",
+	"type" : "normal"
+}

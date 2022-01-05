@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Model-General",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buffer",
+		"message",
+		"rawDataAction",
+		"closedBufferAction",
+		"emptyBufferAction",
+		"notStartedBufferAction"
+	],
+	"name" : "BufferPluggableReader",
+	"type" : "normal"
+}

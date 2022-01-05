@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Lab-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"play",
+		"pause",
+		"stop",
+		"experiment"
+	],
+	"name" : "ExperimentControlPanelPresenter",
+	"type" : "normal"
+}

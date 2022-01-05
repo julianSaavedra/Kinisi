@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Lab-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"label",
+		"initialColor",
+		"colorSetting"
+	],
+	"name" : "LabeledColorSettingPresenter",
+	"type" : "normal"
+}

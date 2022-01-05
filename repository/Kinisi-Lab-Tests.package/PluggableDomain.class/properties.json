@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Tests-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"steppingConfigurator"
+	],
+	"name" : "PluggableDomain",
+	"type" : "normal"
+}

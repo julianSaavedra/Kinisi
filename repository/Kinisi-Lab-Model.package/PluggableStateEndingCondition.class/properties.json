@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Model-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"conditionBlock"
+	],
+	"name" : "PluggableStateEndingCondition",
+	"type" : "normal"
+}

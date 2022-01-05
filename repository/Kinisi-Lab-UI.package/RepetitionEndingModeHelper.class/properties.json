@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SteppingEndingModeHelper",
+	"category" : "Kinisi-Lab-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RepetitionEndingModeHelper",
+	"type" : "normal"
+}

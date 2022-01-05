@@ -1,0 +1,4 @@
+accessing
+status
+
+	^NoObservationStatus new

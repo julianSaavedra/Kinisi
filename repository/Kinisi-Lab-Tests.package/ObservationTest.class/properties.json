@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Lab-Tests-Observation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"source",
+		"delay",
+		"observationProcess",
+		"allExpectedSamples",
+		"pendingSamples",
+		"buffer",
+		"interfaceProcessedSamples",
+		"interfaces"
+	],
+	"name" : "ObservationTest",
+	"type" : "normal"
+}

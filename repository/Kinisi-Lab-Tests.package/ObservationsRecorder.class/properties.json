@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Tests-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"observations",
+		"times",
+		"terminationSemaphore"
+	],
+	"name" : "ObservationsRecorder",
+	"type" : "normal"
+}

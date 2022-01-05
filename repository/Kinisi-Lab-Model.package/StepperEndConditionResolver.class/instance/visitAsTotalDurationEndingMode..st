@@ -1,0 +1,4 @@
+private
+visitAsTotalDurationEndingMode: endingMode
+ 
+	^IndexBasedSimulationEndCondition finalIndexIs: endingMode totalDuration

@@ -1,0 +1,4 @@
+API
+terminate
+
+	terminationSemaphore signal

@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Lab-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"removeAllDefinitions",
+		"removeDefinition",
+		"selectedDefinition",
+		"addDefinition",
+		"definitionOptions",
+		"definitions"
+	],
+	"name" : "ObservationInterfaceDefinitionsWorkbench",
+	"type" : "normal"
+}

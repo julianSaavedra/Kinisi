@@ -1,0 +1,4 @@
+interpreting
+simulationIsRunning
+
+	^simulationIsRunning

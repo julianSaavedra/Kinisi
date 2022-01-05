@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Model-Observation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"source",
+		"process",
+		"state",
+		"signal",
+		"interfaces"
+	],
+	"name" : "KinisiObservation",
+	"type" : "normal"
+}

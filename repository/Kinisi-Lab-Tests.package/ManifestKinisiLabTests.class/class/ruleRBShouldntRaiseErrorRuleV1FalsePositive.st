@@ -1,0 +1,3 @@
+code-critics
+ruleRBShouldntRaiseErrorRuleV1FalsePositive
+	^ #(#(#(#RGMethodDefinition #(#ObservationTest #testPausingObservationBeforeStartingShouldNotProducedAnyError #false)) #'2020-05-20T22:48:00.0312-03:00') #(#(#RGMethodDefinition #(#ObservationTest #testPausingObservationWhenItIsPausedShouldNotProducedAnyError #false)) #'2020-05-20T22:48:10.727303-03:00') #(#(#RGMethodDefinition #(#ObservationTest #testTerminatingObservationAfterTerminationShouldNotProducedAnyError #false)) #'2020-05-25T15:43:58.083188-03:00') )

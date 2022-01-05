@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SteppingEndingMode",
+	"category" : "Kinisi-Lab-Model-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"condition"
+	],
+	"name" : "StateConditionEndingMode",
+	"type" : "normal"
+}

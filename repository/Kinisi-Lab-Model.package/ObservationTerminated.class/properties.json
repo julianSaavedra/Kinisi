@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ObservationState",
+	"category" : "Kinisi-Lab-Model-Observation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ObservationTerminated",
+	"type" : "normal"
+}

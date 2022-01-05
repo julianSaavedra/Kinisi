@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Lab-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resource",
+		"workbench",
+		"steppingDelta"
+	],
+	"name" : "SteppingWorkbenchTest",
+	"type" : "normal"
+}

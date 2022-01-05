@@ -1,0 +1,4 @@
+initialization
+initializeSelectedMode
+
+	self resetSelectedMode

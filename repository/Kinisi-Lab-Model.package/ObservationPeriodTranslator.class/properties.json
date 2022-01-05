@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Model-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"unitName",
+		"periodTranslation",
+		"amountTranslation"
+	],
+	"name" : "ObservationPeriodTranslator",
+	"type" : "normal"
+}

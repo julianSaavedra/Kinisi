@@ -1,0 +1,4 @@
+results
+timesBetweenObservationsAverage
+
+	^self timesBetweenObservations average

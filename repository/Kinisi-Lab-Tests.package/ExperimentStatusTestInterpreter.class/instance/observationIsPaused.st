@@ -1,0 +1,4 @@
+interpreting
+observationIsPaused
+
+	^observationIsPaused
