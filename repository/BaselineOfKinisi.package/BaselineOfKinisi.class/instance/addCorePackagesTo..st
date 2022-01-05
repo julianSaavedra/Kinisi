@@ -5,7 +5,7 @@ addCorePackagesTo: spec
 	modelPackage := self coreModel.
 	spec
 		package: modelPackage
-		with: [ spec requires: self projectDepencencies ].
+		with: [ spec requires: self projectDependencies ].
 	modelPackages add: modelPackage.
 	testsPackage := self coreTests.
 	spec

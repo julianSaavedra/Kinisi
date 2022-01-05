@@ -20,7 +20,7 @@ baseline: spec
 				   'Kinisi-CollatzConjecture-UI' ) ].
 		spec
 			package: 'Kinisi-Examples'
-			with: [ spec requires: self projectDepencencies ].
+			with: [ spec requires: self projectDependencies ].
 		spec
 			package: 'Kinisi-Playground'
 			with: [ spec requires: 'Kinisi-Particles-Model' ].
