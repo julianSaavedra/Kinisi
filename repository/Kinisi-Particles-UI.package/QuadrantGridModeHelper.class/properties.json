@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GridModeHelper",
+	"category" : "Kinisi-Particles-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "QuadrantGridModeHelper",
+	"type" : "normal"
+}

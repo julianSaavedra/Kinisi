@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Model-Simulation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stepResults",
+		"initialState",
+		"change",
+		"stepper"
+	],
+	"name" : "Simulation",
+	"type" : "normal"
+}

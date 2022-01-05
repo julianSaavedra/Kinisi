@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BufferState",
+	"category" : "Kinisi-Experiment-Model-General",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClosedBufferState",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-Playground-Graphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gridConfiguration",
+		"color",
+		"size",
+		"distance"
+	],
+	"name" : "GridConfigurationPresenter",
+	"type" : "normal"
+}

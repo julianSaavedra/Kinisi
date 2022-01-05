@@ -1,0 +1,4 @@
+package names
+collatzConjecture
+
+	^'CollatzConjecture'

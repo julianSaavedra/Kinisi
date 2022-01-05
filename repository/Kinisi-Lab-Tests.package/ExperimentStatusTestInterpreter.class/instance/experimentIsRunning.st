@@ -1,0 +1,4 @@
+interpreting
+experimentIsRunning
+
+	^experimentIsRunning

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SimulationMonitoringDataPackage",
-	"category" : "Kinisi-Playground",
+	"category" : "Kinisi-Playground-Experiment",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

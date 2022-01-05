@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "UserElementsGenerators",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"unit",
+		"nextDirection",
+		"nextNorm"
+	],
+	"name" : "SequentialTwoDimensionShiftingVectorGenerator",
+	"type" : "normal"
+}

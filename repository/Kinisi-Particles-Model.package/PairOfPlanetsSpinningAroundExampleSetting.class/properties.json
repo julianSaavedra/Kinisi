@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticlesWorkbenchExampleSetting",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resource",
+		"unitProvider"
+	],
+	"name" : "PairOfPlanetsSpinningAroundExampleSetting",
+	"type" : "normal"
+}

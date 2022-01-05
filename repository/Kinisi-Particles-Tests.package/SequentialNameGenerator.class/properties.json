@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "UserElementsGenerators",
+	"category" : "Kinisi-Particles-Tests-MethodWrapping",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"prefix",
+		"nextSuffix"
+	],
+	"name" : "SequentialNameGenerator",
+	"type" : "normal"
+}

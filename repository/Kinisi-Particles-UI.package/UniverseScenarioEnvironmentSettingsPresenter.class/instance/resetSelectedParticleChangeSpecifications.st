@@ -1,0 +1,4 @@
+private
+resetSelectedParticleChangeSpecifications
+
+	self refillSelectedParticleChangeSpecifications

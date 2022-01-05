@@ -1,0 +1,4 @@
+configuring
+addGravitationalInteractionBetweenParticles
+
+	gravitationalSpecification := GravitationalInteractionBetweenParticlesSpecification new

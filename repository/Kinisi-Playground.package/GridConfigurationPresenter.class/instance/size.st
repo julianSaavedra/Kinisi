@@ -1,0 +1,4 @@
+initialization
+size
+
+	^size

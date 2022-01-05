@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SimulationStepConsumer",
-	"category" : "Kinisi-Playground",
+	"category" : "Kinisi-Playground-Experiment",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

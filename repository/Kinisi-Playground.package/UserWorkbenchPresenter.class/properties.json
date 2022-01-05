@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-Playground-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"initialState",
+		"simulationConfiguration",
+		"monitoringFlag",
+		"start"
+	],
+	"name" : "UserWorkbenchPresenter",
+	"type" : "normal"
+}

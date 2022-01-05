@@ -1,0 +1,4 @@
+private
+removeAllDefinitionsAction
+
+	workbench removeAllSpecs

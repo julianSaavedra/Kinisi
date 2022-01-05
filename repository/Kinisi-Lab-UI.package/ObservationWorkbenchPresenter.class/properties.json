@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Lab-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"periodLabel",
+		"periodAmount",
+		"periodUnit",
+		"periodUnitTranslator",
+		"interfaceDefinitions",
+		"specification"
+	],
+	"name" : "ObservationWorkbenchPresenter",
+	"type" : "normal"
+}

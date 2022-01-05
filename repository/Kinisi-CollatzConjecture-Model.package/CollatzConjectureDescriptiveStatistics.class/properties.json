@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-CollatzConjecture-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"observation",
+		"maximun",
+		"minimun",
+		"evens",
+		"odds"
+	],
+	"name" : "CollatzConjectureDescriptiveStatistics",
+	"type" : "normal"
+}

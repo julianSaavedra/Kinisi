@@ -1,0 +1,4 @@
+displays
+displayForTranscript
+
+	^TranscriptDisplay withScreenFrom: screenProvider

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Kinisi-Playground-Graphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"testResource",
+		"view",
+		"particle"
+	],
+	"name" : "ParticleRendererTest_Roassal2",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"particleName",
+		"universeObservation",
+		"wasRemoved"
+	],
+	"name" : "ParticleObservationOldModel",
+	"type" : "normal"
+}

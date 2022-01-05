@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GridMode",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NoGridMode",
+	"type" : "normal"
+}

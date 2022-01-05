@@ -3,16 +3,16 @@ SmalltalkCISpec {
   SCIMetacelloLoadSpec {
    #baseline : 'Kinisi',
    #directory : 'repository',
+   #load : [ 'CI' ],
    #platforms : [ #pharo ]
   }
  ],
  #testing : {
   #exclude : {
-   #classes : [ #MethodWrapperTestsThatFailWithSCICoverageTest ],
-   #packages : ['Kinisi-Playground', 'Kinisi-PlaygroundGraphic', 'Kinisi-PlaygroundUI' ]
+   #packages : ['Kinisi-Playground']
     },
   #coverage : {
-   #packages : ['Kinisi-Experiment-Model', 'Kinisi-General-Model', 'Kinisi-Particles-Model', 'Kinisi-Particles-Experiment-Model', 'Kinisi-Particles-Graphics-Model', 'Kinisi-CollatzConjecture-Model', 'Kinisi-CollatzConjecture-Experiment-Model', 'Kinisi-CollatzConjecture-Experiment-Graphics']
+   #packages : ['Kinisi-Lab-Model', 'Kinisi-CollatzConjecture-Model', 'Kinisi-Particles-Model']
   }
  }
 }

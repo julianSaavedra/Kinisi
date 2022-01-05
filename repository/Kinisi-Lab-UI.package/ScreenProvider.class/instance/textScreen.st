@@ -1,0 +1,4 @@
+screens
+textScreen
+
+	^presenter newText

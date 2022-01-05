@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Kinisi-Playground-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"simulationConfiguration",
+		"stepDuration",
+		"totalDuration"
+	],
+	"name" : "SimulationConfigurationPresenter",
+	"type" : "normal"
+}

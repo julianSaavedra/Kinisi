@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Playground-Graphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"positionFactor",
+		"size",
+		"labelIsEnabled",
+		"shouldRenderVelocity",
+		"shouldRenderPositionMarks",
+		"color"
+	],
+	"name" : "ParticleRendererOldModel",
+	"type" : "normal"
+}

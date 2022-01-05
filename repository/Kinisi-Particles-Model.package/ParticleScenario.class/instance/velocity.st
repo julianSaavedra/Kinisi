@@ -1,0 +1,4 @@
+accessing
+velocity
+
+	^particle velocity

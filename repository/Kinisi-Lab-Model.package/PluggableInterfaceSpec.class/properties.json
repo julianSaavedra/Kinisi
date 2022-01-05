@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Lab-Model-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"observationAction",
+		"finishingAction",
+		"startingAction",
+		"displayEligibility"
+	],
+	"name" : "PluggableInterfaceSpec",
+	"type" : "normal"
+}

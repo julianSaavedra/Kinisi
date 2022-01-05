@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-CollatzConjecture-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"initialState",
+		"visualDepiction"
+	],
+	"name" : "CollatzConjectureWorkbenchExampleSetting",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+configuring
+makeYourselfVisible
+
+	isVisible := true

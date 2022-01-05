@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GridLinesGenerator",
+	"category" : "Kinisi-Particles-Model-Graphics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"linesDistance"
+	],
+	"name" : "UniformGridLinesGenerator",
+	"type" : "normal"
+}

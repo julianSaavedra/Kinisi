@@ -1,0 +1,4 @@
+package names
+coreDomain
+
+	^'Lab'
