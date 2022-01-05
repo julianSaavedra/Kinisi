@@ -1,0 +1,4 @@
+accessing
+workbench
+
+	^domainSpecification workbench
