@@ -7,7 +7,7 @@ baseline: spec
 		self addPackagedOf: 'Particles' to: spec.
 		spec
 			package: 'Kinisi-CollatzConjecture-Model'
-			with: [ spec requires: #( #package ) ].
+			with: [ spec requires: self coreModel ].
 		spec
 			package: 'Kinisi-CollatzConjecture-Tests'
 			with: [ spec requires: #( 'Kinisi-CollatzConjecture-Model' ) ].
