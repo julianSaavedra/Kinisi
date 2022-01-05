@@ -12,8 +12,7 @@ baseline: spec
 			package: 'Kinisi-CollatzConjecture-Tests'
 			with: [ spec requires: #( 'Kinisi-CollatzConjecture-Model' ) ].
 		spec package: 'Kinisi-CollatzConjecture-UI' with: [ 
-			spec requires:
-				#( 'Kinisi-Experiment-UI' 'Kinisi-CollatzConjecture-Model' ) ].
+			spec requires: #( 'Kinisi-Experiment-UI' 'Kinisi-CollatzConjecture-Model' ) ].
 		spec package: 'Kinisi-UI-Menu' with: [ 
 			spec requires:
 				#( 'Kinisi-Experiment-UI' 'Kinisi-Particles-UI'
@@ -26,8 +25,7 @@ baseline: spec
 			with: [ spec requires: 'Kinisi-Particles-Model' ].
 		spec
 			group: 'Model'
-			with:
-			#( #package 'Kinisi-Particles-Model' 'Kinisi-CollatzConjecture-Model' ).
+			with: #( 'Kinisi-Experiment-Model' 'Kinisi-Particles-Model' 'Kinisi-CollatzConjecture-Model' ).
 		spec
 			group: 'UI'
 			with:
