@@ -1,6 +1,4 @@
 package names
 allDomains
 
-	^(Array with: self coreDomain)
-		  withAll: self experimentSpecificDomains;
-		  yourself
+	^self experimentSpecificDomains copyWithFirst: self coreDomain
