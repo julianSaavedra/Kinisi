@@ -1,4 +1,4 @@
-baselines
+utilities
 uiPackageFor: corePackage
 
-	^ self packageFor: corePackage of: 'UI'
+	^self packageFor: corePackage of: 'UI'
