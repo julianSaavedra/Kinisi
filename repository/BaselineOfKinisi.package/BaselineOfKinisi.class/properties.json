@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"modelPackages",
+		"testsPackages",
+		"uiPackages"
+	],
 	"name" : "BaselineOfKinisi",
 	"type" : "normal"
 }
