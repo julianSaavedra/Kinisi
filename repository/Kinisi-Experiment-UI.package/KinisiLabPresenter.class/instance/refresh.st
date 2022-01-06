@@ -1,4 +1,0 @@
-initialization
-refresh
-
-	workbench refresh

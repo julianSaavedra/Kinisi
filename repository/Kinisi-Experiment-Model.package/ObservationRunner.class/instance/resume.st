@@ -1,4 +1,0 @@
-controlling
-resume
-
-	process play

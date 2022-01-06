@@ -1,4 +1,0 @@
-accessing
-draftObservation
-
-	^draftObservation

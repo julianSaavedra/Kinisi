@@ -1,4 +1,0 @@
-accessing
-domain
-
-	^domain

@@ -1,4 +1,0 @@
-settings
-workbench
-
-	^lab workbench

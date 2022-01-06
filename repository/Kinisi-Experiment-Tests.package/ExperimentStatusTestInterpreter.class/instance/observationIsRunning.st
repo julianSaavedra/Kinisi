@@ -1,4 +1,0 @@
-interpreting
-observationIsRunning
-
-	^observationIsRunning

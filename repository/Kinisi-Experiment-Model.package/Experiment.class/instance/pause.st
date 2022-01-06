@@ -1,4 +1,0 @@
-running
-pause
-
-	runner pause

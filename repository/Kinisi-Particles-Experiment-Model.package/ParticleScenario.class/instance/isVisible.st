@@ -1,4 +1,0 @@
-accessing
-isVisible
-
-	^isVisible

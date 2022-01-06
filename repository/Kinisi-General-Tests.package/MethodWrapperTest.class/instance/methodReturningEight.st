@@ -1,6 +1,0 @@
-support
-methodReturningEight
-
-	^8
-
-	

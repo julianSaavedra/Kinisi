@@ -1,4 +1,0 @@
-accessing
-initialState
-
-	^scenario state

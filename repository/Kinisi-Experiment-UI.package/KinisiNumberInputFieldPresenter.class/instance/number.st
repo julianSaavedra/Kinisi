@@ -1,4 +1,0 @@
-accessing
-number
-
-	^numberInput number

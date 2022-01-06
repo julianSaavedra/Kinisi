@@ -1,4 +1,0 @@
-configuring
-renderVelocityWhenRendering
-
-	shouldRenderVelocity := true

@@ -1,4 +1,0 @@
-constant
-modeName
-
-	^'No Gravity'

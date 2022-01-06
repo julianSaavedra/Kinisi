@@ -1,4 +1,0 @@
-configuring
-removeAllChangeComponents
-
-	changeSpecifications removeAll

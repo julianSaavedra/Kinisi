@@ -1,4 +1,0 @@
-interface creation
-interfaceProcessorBasedOn: scenario
-
-	^CollatzConjectureSequenceChartInterfaceProcessor basedOn: scenario

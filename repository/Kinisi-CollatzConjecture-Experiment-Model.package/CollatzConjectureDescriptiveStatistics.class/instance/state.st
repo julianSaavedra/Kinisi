@@ -1,4 +1,0 @@
-accessing
-state
-
-	^observation value

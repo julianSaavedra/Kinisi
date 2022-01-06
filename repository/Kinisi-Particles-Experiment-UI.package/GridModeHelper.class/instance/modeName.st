@@ -1,4 +1,0 @@
-accessing
-modeName
-
-	self subclassResponsibility

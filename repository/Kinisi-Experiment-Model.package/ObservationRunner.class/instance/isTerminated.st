@@ -1,4 +1,0 @@
-testing
-isTerminated
-
-	^process isTerminated

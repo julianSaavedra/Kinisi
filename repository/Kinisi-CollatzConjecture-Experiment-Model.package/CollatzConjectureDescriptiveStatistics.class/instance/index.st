@@ -1,4 +1,0 @@
-accessing
-index
-
-	^observation time

@@ -1,4 +1,0 @@
-results
-shownObservations
-
-	^recordKeeper observations

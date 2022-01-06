@@ -1,4 +1,0 @@
-accessing
-lab
-
-	^domainSpecification lab

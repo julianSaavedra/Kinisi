@@ -1,4 +1,0 @@
-private
-cleanSelectedParticleChangeSpecifications
-
-	selectedParticleChangeSpecifications := self newNullPresenter

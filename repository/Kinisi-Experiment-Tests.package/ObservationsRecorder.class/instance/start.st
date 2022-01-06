@@ -1,4 +1,0 @@
-API
-start
-
-	self resetRecords

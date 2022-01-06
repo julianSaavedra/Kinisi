@@ -1,5 +1,0 @@
-asserting
-assertValidity
-
-	self assertValidDelta.
-	self assertConsistentDeltaAndEndingMode

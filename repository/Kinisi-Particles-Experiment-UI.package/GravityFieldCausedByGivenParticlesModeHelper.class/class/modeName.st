@@ -1,4 +1,0 @@
-constant
-modeName
-
-	^'Gravity Fields'

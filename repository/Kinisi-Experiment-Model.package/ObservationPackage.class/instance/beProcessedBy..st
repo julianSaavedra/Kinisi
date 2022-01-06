@@ -1,4 +1,0 @@
-processing
-beProcessedBy: observationProcess
-
-	self subclassResponsibility

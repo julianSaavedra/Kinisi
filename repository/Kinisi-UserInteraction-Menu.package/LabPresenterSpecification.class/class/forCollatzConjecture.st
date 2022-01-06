@@ -1,5 +1,0 @@
-instance creation
-forCollatzConjecture
-
-	^self forCollatzConjectureWith:
-		CollatzConjecturePresenterSpecification default

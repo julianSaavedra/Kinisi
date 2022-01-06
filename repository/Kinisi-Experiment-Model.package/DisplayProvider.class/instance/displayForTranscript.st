@@ -1,4 +1,0 @@
-displays
-displayForTranscript
-
-	^displayProviderSpecification displayForTranscript

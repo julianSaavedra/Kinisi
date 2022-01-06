@@ -1,4 +1,0 @@
-testing
-hasEnded
-	
-	self subclassResponsibility

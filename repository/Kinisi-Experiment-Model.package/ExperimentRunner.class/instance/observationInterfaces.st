@@ -1,4 +1,0 @@
-API
-observationInterfaces
-
-	^observation interfaces

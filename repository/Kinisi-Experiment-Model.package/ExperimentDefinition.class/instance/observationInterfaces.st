@@ -1,4 +1,0 @@
-accessing
-observationInterfaces
-
-	^observationDefinition interfacesBasedOn: scenario

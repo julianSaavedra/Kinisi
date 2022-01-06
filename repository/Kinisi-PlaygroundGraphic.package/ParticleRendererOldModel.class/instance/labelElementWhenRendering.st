@@ -1,4 +1,0 @@
-configuring
-labelElementWhenRendering
-
-	labelIsEnabled := true

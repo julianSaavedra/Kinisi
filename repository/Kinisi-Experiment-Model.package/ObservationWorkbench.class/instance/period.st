@@ -1,4 +1,0 @@
-accessing
-period
-
-	^definition period

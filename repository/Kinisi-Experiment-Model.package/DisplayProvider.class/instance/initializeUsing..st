@@ -1,4 +1,0 @@
-initialization
-initializeUsing: aDisplayProviderSpecification
-
-	displayProviderSpecification := aDisplayProviderSpecification

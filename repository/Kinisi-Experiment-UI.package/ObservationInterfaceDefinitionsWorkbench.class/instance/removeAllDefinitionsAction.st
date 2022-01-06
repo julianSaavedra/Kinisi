@@ -1,4 +1,0 @@
-private
-removeAllDefinitionsAction
-
-	workbench removeAllSpecs

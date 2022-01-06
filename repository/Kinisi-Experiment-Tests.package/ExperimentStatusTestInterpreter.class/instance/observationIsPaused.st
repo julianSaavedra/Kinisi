@@ -1,4 +1,0 @@
-interpreting
-observationIsPaused
-
-	^observationIsPaused

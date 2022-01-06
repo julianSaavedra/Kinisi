@@ -1,4 +1,0 @@
-domain specification
-applyDefaultSteppingModeIn: steppingWorkbench
- 
-	steppingConfigurator value: steppingWorkbench

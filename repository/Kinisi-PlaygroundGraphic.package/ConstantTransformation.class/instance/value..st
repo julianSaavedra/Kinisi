@@ -1,4 +1,0 @@
-action
-value: argument
- 
-	^result

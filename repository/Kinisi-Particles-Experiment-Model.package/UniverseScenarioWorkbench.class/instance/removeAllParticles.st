@@ -1,4 +1,0 @@
-configuring
-removeAllParticles
-
-	scenario removeAllParticles

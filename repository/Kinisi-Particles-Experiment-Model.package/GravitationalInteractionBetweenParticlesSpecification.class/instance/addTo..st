@@ -1,4 +1,0 @@
-adding
-addTo: environmentBuilder
-
-	environmentBuilder addGravitationalInteractionBetweenParticles

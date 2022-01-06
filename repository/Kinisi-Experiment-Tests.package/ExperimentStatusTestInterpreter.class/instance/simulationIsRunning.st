@@ -1,4 +1,0 @@
-interpreting
-simulationIsRunning
-
-	^simulationIsRunning
