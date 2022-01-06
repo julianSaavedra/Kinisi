@@ -1,5 +1,0 @@
-private
-resetSelectedParticleChangeSpecificationsAfter: block
-
-	self withSelectedParticleDo: block.
-	self resetSelectedParticleChangeSpecifications

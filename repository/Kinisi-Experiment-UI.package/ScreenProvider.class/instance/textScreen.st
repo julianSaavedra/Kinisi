@@ -1,4 +1,0 @@
-screens
-textScreen
-
-	^presenter newText

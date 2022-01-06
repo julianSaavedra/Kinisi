@@ -1,4 +1,0 @@
-accessing
-domain
-
-	^domainModelWorkbench domain

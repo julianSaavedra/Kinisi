@@ -1,4 +1,0 @@
-constants
-axisEndDistance
-
-	^AxisReferenceRenderer new axisEndDistance

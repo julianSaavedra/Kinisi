@@ -1,4 +1,0 @@
-configuration
-labelElementWhenRendering
-
-	elementLabelling := true

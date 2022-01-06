@@ -1,4 +1,0 @@
-API
-refresh
-
-	scenarioView refresh

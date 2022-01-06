@@ -1,4 +1,0 @@
-initialization
-title
-
-	^'User workbench'

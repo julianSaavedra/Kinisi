@@ -1,4 +1,0 @@
-monitoring
-isTerminated
-
-	self subclassResponsibility

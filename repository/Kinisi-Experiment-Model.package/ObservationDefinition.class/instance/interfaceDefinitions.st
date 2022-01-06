@@ -1,4 +1,0 @@
-accessing
-interfaceDefinitions
-
-	^interfaceDefinitions copy

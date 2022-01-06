@@ -1,4 +1,0 @@
-accessing
-background
-
-	^universeObservation background

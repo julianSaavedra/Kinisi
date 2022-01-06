@@ -1,4 +1,0 @@
-interpreting
-simulationIsPaused
-
-	^simulationIsPaused

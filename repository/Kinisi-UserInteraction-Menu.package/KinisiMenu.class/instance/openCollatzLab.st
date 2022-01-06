@@ -1,4 +1,0 @@
-options
-openCollatzLab
-
-	self openLabBasedOn: LabPresenterSpecification forCollatzConjecture

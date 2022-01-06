@@ -1,4 +1,0 @@
-constants
-sizeMaximun
-
-	^100

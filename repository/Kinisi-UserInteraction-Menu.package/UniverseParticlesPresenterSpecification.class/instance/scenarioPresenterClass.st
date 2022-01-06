@@ -1,4 +1,0 @@
-settings
-scenarioPresenterClass
-
-	^UniverseScenarioWorkbenchPresenter

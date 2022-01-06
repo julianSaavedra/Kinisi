@@ -1,4 +1,0 @@
-accessing
-experimentsResults
-
-	^experimentsResults copy

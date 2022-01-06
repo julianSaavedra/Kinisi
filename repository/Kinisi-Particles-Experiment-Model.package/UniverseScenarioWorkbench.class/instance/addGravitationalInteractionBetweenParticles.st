@@ -1,4 +1,0 @@
-configuring
-addGravitationalInteractionBetweenParticles
-
-	scenario addGravitationalInteractionBetweenParticles

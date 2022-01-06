@@ -1,4 +1,0 @@
-private
-playAsTerminated
-
-	self signalErrorExperimentHasEnded

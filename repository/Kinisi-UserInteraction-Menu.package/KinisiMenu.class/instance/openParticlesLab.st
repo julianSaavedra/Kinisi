@@ -1,4 +1,0 @@
-options
-openParticlesLab
-
-	self openLabBasedOn: LabPresenterSpecification forUniverseParticles

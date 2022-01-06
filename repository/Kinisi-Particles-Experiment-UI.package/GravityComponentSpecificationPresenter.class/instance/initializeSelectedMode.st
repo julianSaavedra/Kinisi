@@ -1,4 +1,0 @@
-initialization
-initializeSelectedMode
-
-	self resetSelectedMode

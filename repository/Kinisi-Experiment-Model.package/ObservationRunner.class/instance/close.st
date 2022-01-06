@@ -1,4 +1,0 @@
-API
-close
-
-	buffer close

@@ -1,4 +1,0 @@
-actions
-pause
-
-	process pause

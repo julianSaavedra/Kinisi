@@ -1,4 +1,0 @@
-interpreting
-observationHasEnded
-
-	^observationHasEnded

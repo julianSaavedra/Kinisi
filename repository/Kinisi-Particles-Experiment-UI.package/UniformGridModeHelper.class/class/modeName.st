@@ -1,4 +1,0 @@
-constant
-modeName
-
-	^'Uniform grid'

@@ -1,4 +1,0 @@
-interface creation
-interfaceProcessorBasedOn: scenario
-
-	^CollatzConjectureDescriptiveStatisticsInterfaceProcessor basedOn: scenario

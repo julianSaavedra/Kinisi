@@ -1,4 +1,0 @@
-private
-addButtonAction
-
-	workbench newParticle

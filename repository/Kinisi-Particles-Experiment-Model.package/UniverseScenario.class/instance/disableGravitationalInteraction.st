@@ -1,4 +1,0 @@
-configuring
-disableGravitationalInteraction
-
-	gravitationalSpecification := NullChangeComponentSpecification new

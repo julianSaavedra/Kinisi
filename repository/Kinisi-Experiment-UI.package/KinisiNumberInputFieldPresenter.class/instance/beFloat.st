@@ -1,4 +1,0 @@
-api
-beFloat
-
-	numberInput beFloat

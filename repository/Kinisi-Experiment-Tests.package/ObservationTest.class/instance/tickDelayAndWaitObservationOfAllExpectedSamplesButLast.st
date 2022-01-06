@@ -1,4 +1,0 @@
-support
-tickDelayAndWaitObservationOfAllExpectedSamplesButLast
-
-	self tickDelayAndWaitObservationOfAllIn: pendingSamples allButLast

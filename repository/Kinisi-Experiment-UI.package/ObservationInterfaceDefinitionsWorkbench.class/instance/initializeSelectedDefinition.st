@@ -1,4 +1,0 @@
-initialization
-initializeSelectedDefinition
-
-	self resetSelectedDefinition

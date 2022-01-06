@@ -1,4 +1,0 @@
-initialization
-initializeSelectedParticle
-
-	self resetSelectedParticle

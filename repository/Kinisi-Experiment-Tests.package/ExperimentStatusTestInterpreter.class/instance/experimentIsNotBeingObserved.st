@@ -1,4 +1,0 @@
-interpreting
-experimentIsNotBeingObserved
-
-	^experimentIsBeingObserved not

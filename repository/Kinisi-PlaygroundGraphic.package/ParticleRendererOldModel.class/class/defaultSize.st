@@ -1,4 +1,0 @@
-constants
-defaultSize
-
-	^10

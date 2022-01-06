@@ -1,4 +1,0 @@
-instance creation - private
-nullValidator
-
-	^NullSteppingEndingModeAndDeltaConsistencyValidator new

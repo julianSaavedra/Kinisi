@@ -1,4 +1,0 @@
-private
-processAsBufferIsEmpty
-
-	emptyBufferAction value

@@ -1,4 +1,0 @@
-private
-assertValidityInTargetUniverseObservationOf: targetParticleObservation
-
-	universeObservation copy add: targetParticleObservation

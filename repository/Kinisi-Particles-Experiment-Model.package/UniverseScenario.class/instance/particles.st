@@ -1,4 +1,0 @@
-accessing
-particles
-
-	^universeState particles

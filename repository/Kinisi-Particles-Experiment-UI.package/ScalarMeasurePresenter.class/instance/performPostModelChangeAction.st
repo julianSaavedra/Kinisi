@@ -1,4 +1,0 @@
-private
-performPostModelChangeAction
-
-	postModelChangeAction value
