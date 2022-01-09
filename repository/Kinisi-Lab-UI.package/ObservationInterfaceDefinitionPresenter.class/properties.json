@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Lab-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"definition",
+		"domainSpecification",
+		"name",
+		"spec"
+	],
+	"name" : "ObservationInterfaceDefinitionPresenter",
+	"type" : "normal"
+}

@@ -3,4 +3,4 @@ setModelBeforeInitialization: observationWorkbench
 
 	super setModelBeforeInitialization: observationWorkbench.
 	workbench := observationWorkbench.
-	definitionOptions := #()
+	domainSpecification := self owner domainSpecification

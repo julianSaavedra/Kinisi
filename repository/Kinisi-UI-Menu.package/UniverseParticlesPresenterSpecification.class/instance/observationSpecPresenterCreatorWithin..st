@@ -1,0 +1,4 @@
+private
+observationSpecPresenterCreatorWithin: ownerPresenter
+
+	^UniverseParticlesObservationSpecPresenterResolver within: ownerPresenter

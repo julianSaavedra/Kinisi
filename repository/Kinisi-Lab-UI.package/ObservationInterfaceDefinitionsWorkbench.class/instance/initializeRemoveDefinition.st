@@ -3,5 +3,5 @@ initializeRemoveDefinition
 
 	removeDefinition := self newButton.
 	removeDefinition label: 'Remove'.
-	removeDefinition action: [ self removeDefinitonAction ].
+	removeDefinition action: [ self removeDefinitionAction ].
 	removeDefinition whenActionPerformedDo: [ self refillDefinitionList ]
