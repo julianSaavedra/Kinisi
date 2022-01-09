@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"basePlot",
+		"accumulatedValues"
+	],
+	"name" : "ParticleChartPlotAccumulator",
+	"type" : "normal"
+}

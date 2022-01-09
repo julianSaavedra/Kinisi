@@ -11,8 +11,8 @@
 		"removeDefinition",
 		"selectedDefinition",
 		"addDefinition",
-		"definitionOptions",
-		"definitions"
+		"definitions",
+		"domainSpecification"
 	],
 	"name" : "ObservationInterfaceDefinitionsWorkbench",
 	"type" : "normal"

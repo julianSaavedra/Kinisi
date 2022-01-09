@@ -1,0 +1,4 @@
+visiting
+visitAsParticleChartInterfaceSpec: interfaceSpec
+
+	^ownerPresenter instantiate: ParticleChartInterfaceSpecPresenter on: interfaceSpec

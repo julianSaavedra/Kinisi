@@ -1,0 +1,4 @@
+support
+visitAsCollatzConjectureSequenceChartInterfaceSpec: interfaceSpec
+ 
+	visitingResultCode := self sequenceChartSpecVisitingCode

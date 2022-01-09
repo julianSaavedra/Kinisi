@@ -1,0 +1,4 @@
+private
+descriptionSpecWith: description
+
+	^ownerPresenter instantiate: ObservationInterfaceSpecDesctiptionPresenter on: description

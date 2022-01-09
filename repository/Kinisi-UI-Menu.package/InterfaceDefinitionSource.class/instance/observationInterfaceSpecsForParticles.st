@@ -1,7 +1,7 @@
 definition - all
 observationInterfaceSpecsForParticles
 
-	| transcriptSpec transcriptDefinition animationDefinition |
+	| transcriptSpec transcriptDefinition animationDefinition chartDefinition |
 	transcriptSpec := PluggableInterfaceSpec
 		onStartDo: [:display | display show: '----- Particles Experiment - Position - START -----  ' ]
 		with: [:observation :display | 
@@ -18,4 +18,8 @@ observationInterfaceSpecsForParticles
 		choosingDisplayWith: [:displayProvider | displayProvider displayForTranscript ].
 	transcriptDefinition := InterfaceDefinition named: 'Transcript - Position' with: transcriptSpec.
 	animationDefinition := InterfaceDefinition named: 'Animation' with: UniverseAnimationInterfaceSpec new.
-	^Array  with: transcriptDefinition with: animationDefinition
+	chartDefinition := InterfaceDefinition named: 'Chart' with: (ParticleChartInterfaceSpec
+		over: ParticleProperty position
+		on: MeasureDimension y
+		plottingWith: ParticleChartPlotType scatter).
+	^Array  with: transcriptDefinition with: animationDefinition with: chartDefinition
