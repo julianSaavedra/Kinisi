@@ -1,4 +1,4 @@
 constants
 oneKilogram
 
-	^unitProvider kilogram with: 1
+	^self kilogramWith: 1
