@@ -1,4 +1,4 @@
 presenter creation
 newPresenterFor: interfaceSpec
 
-	^interfaceSpec accept: self 
+	^interfaceSpec accept: self

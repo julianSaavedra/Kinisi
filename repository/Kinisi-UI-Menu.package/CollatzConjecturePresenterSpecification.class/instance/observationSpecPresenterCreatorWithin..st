@@ -1,0 +1,4 @@
+private
+observationSpecPresenterCreatorWithin: ownerPresenter
+
+	^CollatzConjectureObservationSpecPresenterResolver within: ownerPresenter

@@ -11,6 +11,6 @@ horizontalSpec
 	^SpBoxLayout newHorizontal
 		add: buttons expand: false;
 		add: buttons height: 30;
-		add: #definitions width: 100;
+		add: #definitions width: 50;
 		add: #selectedDefinition expand: true fill: true padding: 5;
 		yourself

@@ -1,0 +1,4 @@
+accessing
+domainSpecification
+
+	^specification

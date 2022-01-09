@@ -9,7 +9,8 @@
 		"observationAction",
 		"finishingAction",
 		"startingAction",
-		"displayEligibility"
+		"displayEligibility",
+		"description"
 	],
 	"name" : "PluggableInterfaceSpec",
 	"type" : "normal"

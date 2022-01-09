@@ -1,7 +1,6 @@
-resutls
+visiting
 visitAsUniverseAnimationSpec: interfaceSpec
- 
-	| specPresenter |
-	specPresenter := ownerPresenter newLabel.
-	specPresenter label: 'This observation will show the particles moving based on given initial and environmental conditions'.
-	^specPresenter
+
+	| description |
+	description := 'This observation will show the particles moving based on given initial and environmental conditions'.
+	^self descriptionSpecWith: description
