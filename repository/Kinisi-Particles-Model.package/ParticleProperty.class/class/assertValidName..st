@@ -1,4 +1,4 @@
 validation
 assertValidName: targetName
 
-	targetName ifEmpty: [ Error signal: 'Property empty cannot be empty' ]
+	targetName ifEmpty: [ Error signal: 'Property name cannot be empty' ]

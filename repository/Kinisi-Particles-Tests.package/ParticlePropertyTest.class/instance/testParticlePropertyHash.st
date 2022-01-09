@@ -1,5 +1,5 @@
 tests
-testPostionPropertyHash
+testParticlePropertyHash
 
 	| position anotherPosition |
 	position := ParticleProperty position.

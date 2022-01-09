@@ -1,4 +1,4 @@
 visiting
 visitAsScatterPlot: plotType
 
-	^[ RSScatterPlot new ]
+	^[RSScatterPlot new]

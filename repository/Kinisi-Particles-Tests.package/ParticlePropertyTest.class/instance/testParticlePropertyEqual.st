@@ -1,5 +1,5 @@
 tests
-testPostionPropertyEqual
+testParticlePropertyEqual
 
 	| position anotherPosition |
 	position := ParticleProperty position.
@@ -7,5 +7,4 @@ testPostionPropertyEqual
 	
 	self assert: position equals: anotherPosition.
 	self deny: position identicalTo: anotherPosition.
-	self deny: position equals: ParticleProperty velocity.
-	self deny: position equals: ParticleProperty acceleration
+	self deny: position equals: ParticleProperty velocity

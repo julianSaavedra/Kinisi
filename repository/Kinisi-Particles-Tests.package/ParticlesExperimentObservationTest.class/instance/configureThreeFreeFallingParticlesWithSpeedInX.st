@@ -22,4 +22,3 @@ configureThreeFreeFallingParticlesWithSpeedInX
 	acceleration := testResource meterPerSquareSecondVectorWith: #( 0 -9.82 0 ).
 	modelWorkbench scenario particles do: [:particle |
 		particle addConstantAcceleration: acceleration named: 'Acceleration']
-	"lab workbench steppingWorkbench delta: testResource oneSecond / 10."

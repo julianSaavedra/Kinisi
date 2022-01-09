@@ -3,4 +3,4 @@ runExperimentUntilHasFinished: experiment
  
 	ExperimentTestAssistant new
 		runExperimentUntilHasFinished: experiment
-		withTimeout: period * 15
+		withTimeout: period * 20

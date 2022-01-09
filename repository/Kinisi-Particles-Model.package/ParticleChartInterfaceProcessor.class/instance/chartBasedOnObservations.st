@@ -5,9 +5,9 @@ chartBasedOnObservations
 	chart := RSChart new.
 	chart
 		addDecoration: title;
-		addDecoration: xLabel;
-		addDecoration: self verticalTick;
-		addDecoration: yLabel.
+		addDecoration: xLabel.
+	self ifThereAreAccumulatorsDo: [ chart addDecoration: self verticalTick ].
+	chart addDecoration: yLabel.
 	self addPlotsTo: chart.
-	chart maxValueX: observationIndices last + 5.
+	self ifThereAreAccumulatorsDo: [ chart maxValueX: observationIndices last + 5].
 	^ ZoomToFitDecoration on: chart
