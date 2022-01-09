@@ -1,5 +1,5 @@
 tests
-testDisplayChartShowingPositionOfSingleRedParticleInDimensionYOnlyWithLinePlot
+testDisplayChartShowingVelocityOfSingleRedParticleInDimensionXOnlyWithLinePlot
 
 	| interfaceSpec |
 	self configureFreeFallingParticleWithSpeedInX.
@@ -9,4 +9,4 @@ testDisplayChartShowingPositionOfSingleRedParticleInDimensionYOnlyWithLinePlot
 		                 plottingWith: ParticleChartPlotType line.
 	self
 		runExperimentUsing: interfaceSpec
-		named: 'Position_SingleRedParticle_DimensionYOnly_Line'
+		named: 'Velocity_SingleRedParticle_DimensionYOnly_Line'

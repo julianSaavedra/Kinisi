@@ -1,0 +1,4 @@
+private
+newPlot
+
+	^particlePlotProvider value

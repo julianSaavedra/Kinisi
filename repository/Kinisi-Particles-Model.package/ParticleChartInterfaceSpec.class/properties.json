@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dimension",
+		"property",
+		"plotType"
+	],
+	"name" : "ParticleChartInterfaceSpec",
+	"type" : "normal"
+}

@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "ObservationInterfaceProcessor",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"observationIndices",
+		"title",
+		"xLabel",
+		"yLabel",
+		"measureDimension",
+		"property",
+		"accumulatorsMap"
+	],
+	"name" : "ParticleChartInterfaceProcessor",
+	"type" : "normal"
+}

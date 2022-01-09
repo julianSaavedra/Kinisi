@@ -3,7 +3,10 @@ testDisplayChartShowingPositionOfSingleRedParticleInDimensionXOnlyWithScatterPlo
 
 	| interfaceSpec |
 	self configureFreeFallingParticleWithSpeedInX.
-	interfaceSpec := ParticlePositionChartInterfaceSpec on: MeasureDimension x plottingWith: PlotTypeSelector scatter.
+	interfaceSpec := ParticleChartInterfaceSpec
+		                 over: ParticleProperty position
+		                 on: MeasureDimension x
+		                 plottingWith: ParticleChartPlotType scatter.
 	self
 		runExperimentUsing: interfaceSpec
 		named: 'Position_SingleRedParticle_DimensionXOnly_Scatter'

@@ -1,4 +1,0 @@
-private
-resolveAsLinePlot
-
-	^RSLinePlot new

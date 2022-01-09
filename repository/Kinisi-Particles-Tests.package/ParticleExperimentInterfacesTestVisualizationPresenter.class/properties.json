@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SpPresenter",
-	"category" : "Kinisi-Particles-Tests",
+	"category" : "Kinisi-Particles-Tests-Experiment",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

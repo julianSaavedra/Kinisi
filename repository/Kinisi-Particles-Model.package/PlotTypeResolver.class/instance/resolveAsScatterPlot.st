@@ -1,4 +1,0 @@
-private
-resolveAsScatterPlot
-
-	^RSScatterPlot new
