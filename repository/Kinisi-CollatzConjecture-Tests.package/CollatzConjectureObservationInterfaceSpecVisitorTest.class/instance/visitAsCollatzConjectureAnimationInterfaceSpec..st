@@ -1,0 +1,4 @@
+support
+visitAsCollatzConjectureAnimationInterfaceSpec: interfaceSpec
+ 
+	visitingResultCode := self animationSpecVisitingCode

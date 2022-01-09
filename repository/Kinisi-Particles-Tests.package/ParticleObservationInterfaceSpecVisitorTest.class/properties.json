@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ParticlesExperimentObservationInterfaceSpecTest",
+	"instvars" : [
+		"visitingResultCode"
+	],
+	"name" : "ParticleObservationInterfaceSpecVisitorTest",
 	"type" : "normal"
 }

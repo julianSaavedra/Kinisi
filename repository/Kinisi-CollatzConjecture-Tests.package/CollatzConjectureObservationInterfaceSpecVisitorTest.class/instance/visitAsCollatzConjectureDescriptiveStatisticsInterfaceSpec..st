@@ -1,0 +1,4 @@
+support
+visitAsCollatzConjectureDescriptiveStatisticsInterfaceSpec: interfaceSpec
+ 
+	visitingResultCode := self statisticsSpecVisitingCode

@@ -7,5 +7,4 @@ testInterfaceDefintionCannotBeCreatedWithAnEmptyName
 	self
 		should: [ InterfaceDefinition named: '' with: spec ]
 		raise: Error
-		whoseDescriptionIncludes:
-		'Interface definition name cannot be empty'
+		whoseDescriptionIncludes: 'Interface definition name cannot be empty'

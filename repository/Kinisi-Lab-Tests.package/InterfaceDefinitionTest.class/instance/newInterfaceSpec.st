@@ -1,7 +1,7 @@
 tests
 newInterfaceSpec
 
-	^ PluggableInterfaceSpec
+	^PluggableInterfaceSpec
 		  onStartDo: [  ]
 		  with: [ :observation |  ]
 		  andWhenFinishedDo: [  ]

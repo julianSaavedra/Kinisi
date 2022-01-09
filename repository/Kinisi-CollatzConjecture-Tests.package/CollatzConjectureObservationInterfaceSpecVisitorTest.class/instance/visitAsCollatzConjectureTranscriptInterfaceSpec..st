@@ -1,0 +1,4 @@
+support
+visitAsCollatzConjectureTranscriptInterfaceSpec: interfaceSpec
+ 
+	visitingResultCode := self transcriptSpecVisitingCode

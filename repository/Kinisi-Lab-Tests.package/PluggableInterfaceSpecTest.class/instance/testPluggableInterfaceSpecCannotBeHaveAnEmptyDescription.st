@@ -10,5 +10,4 @@ testPluggableInterfaceSpecCannotBeHaveAnEmptyDescription
 				choosingDisplayWith: [  ] 
 				description: '' ]
 		raise: Error
-		whoseDescriptionIncludes:
-		'Specification description cannot be empty'
+		whoseDescriptionIncludes: 'Specification description cannot be empty'
