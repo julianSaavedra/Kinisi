@@ -1,4 +1,4 @@
 instance creation
 line
 
-	^self with: [:plotType :visitor | visitor visitAsLinePlot: plotType ]
+	^self named: 'Line' with: [:plotType :visitor | visitor visitAsLinePlot: plotType ]

@@ -1,4 +1,4 @@
 instance creation
 scatter
 
-	^self with: [:plotType :visitor | visitor visitAsScatterPlot: plotType ]
+	^self named: 'Scatter' with: [:plotType :visitor | visitor visitAsScatterPlot: plotType ]

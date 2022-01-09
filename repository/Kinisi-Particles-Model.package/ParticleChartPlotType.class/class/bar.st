@@ -1,4 +1,4 @@
 instance creation
 bar
 
-	^self with: [:plotType :visitor | visitor visitAsBarPlot: plotType ]
+	^self named: 'Bar' with: [:plotType :visitor | visitor visitAsBarPlot: plotType ]

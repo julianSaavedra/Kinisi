@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Kinisi-Particles-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"interfaceSpec",
+		"property",
+		"dimension",
+		"plotType",
+		"description",
+		"modelChangeAction"
+	],
+	"name" : "ParticleChartInterfaceSpecPresenter",
+	"type" : "normal"
+}

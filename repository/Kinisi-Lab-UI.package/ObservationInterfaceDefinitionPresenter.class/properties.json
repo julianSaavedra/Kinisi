@@ -9,7 +9,8 @@
 		"definition",
 		"domainSpecification",
 		"name",
-		"spec"
+		"spec",
+		"modelChangesAction"
 	],
 	"name" : "ObservationInterfaceDefinitionPresenter",
 	"type" : "normal"

@@ -1,4 +1,4 @@
 instance creation
 velocity
 
-	^self forPropertyNamed: 'Velocity' with: [:particle | particle velocity ]
+	^self named: 'Velocity' with: [:particle | particle velocity ]

@@ -1,4 +1,4 @@
 instance creation
 acceleration
 
-	^self forPropertyNamed: 'Acceleration' with: [:particle | particle acceleration ]
+	^self named: 'Acceleration' with: [:particle | particle acceleration ]

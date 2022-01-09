@@ -1,4 +1,4 @@
 resolving
-resolve: particle
+extractFrom: particle
 
 	^extractorBlock value: particle
