@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ChangeComponentSpecification",
+	"category" : "Kinisi-Particles-Model-Experiment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"forceModule",
+		"forceOrientation"
+	],
+	"name" : "ForcePerpendicularToVelocitySpecification",
+	"type" : "normal"
+}
