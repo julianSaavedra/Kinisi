@@ -1,5 +1,5 @@
 tests
-testNewSpecificationIsCreatedWithGivenName
+testNewSpecificationIsCreatedWhenConfiguringNewName
 
 	| newSpecification newName originalSpecification |
 	originalSpecification := ForcePerpendicularToVelocitySpecification named: 'OriginalSpecification' with: self twoNewtons with: ForceOrientationSpecification clockwise.
