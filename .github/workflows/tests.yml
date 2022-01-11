@@ -9,7 +9,7 @@ jobs:
     operating-system: [ubuntu-latest, macos-11, windows-latest]
     smalltalk: [Pharo64-9.0, Pharo32-stable]
     exclude:
-     - operating-system: macos-latest
+     - operating-system: macos-11
        smalltalk: Pharo32-stable
      - operating-system: windows-latest
        smalltalk: Pharo32-stable
