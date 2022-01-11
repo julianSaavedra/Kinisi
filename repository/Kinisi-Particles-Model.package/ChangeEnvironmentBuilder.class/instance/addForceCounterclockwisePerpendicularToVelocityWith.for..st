@@ -1,0 +1,5 @@
+building - configuration
+addForceCounterclockwisePerpendicularToVelocityWith: forceModule for: particle
+
+	self assertSubjectUniverseIncludes: particle.
+	description addForceCounterclockwisePerpendicularToVelocityWith: forceModule for: particle

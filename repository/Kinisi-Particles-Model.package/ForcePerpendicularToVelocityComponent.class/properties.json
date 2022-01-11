@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ChangeComponent",
+	"category" : "Kinisi-Particles-Model-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"forceModule",
+		"perpendicularTransformation"
+	],
+	"name" : "ForcePerpendicularToVelocityComponent",
+	"type" : "normal"
+}

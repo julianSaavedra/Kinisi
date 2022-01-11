@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "VectorPerpendicularTransformation",
+	"category" : "Kinisi-Particles-Model-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CounterclockwiseVectorPerpendicularTransformation",
+	"type" : "normal"
+}

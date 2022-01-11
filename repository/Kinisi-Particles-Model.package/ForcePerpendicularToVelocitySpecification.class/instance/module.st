@@ -1,0 +1,4 @@
+accessing
+module
+
+	^forceModule

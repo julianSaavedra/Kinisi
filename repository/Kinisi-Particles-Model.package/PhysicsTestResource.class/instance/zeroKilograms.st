@@ -1,4 +1,4 @@
 constants
 zeroKilograms
 
-	^unitProvider kilogram with: 0
+	^self kilogramWith: 0

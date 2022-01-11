@@ -6,13 +6,15 @@ jobs:
   strategy:
    fail-fast: false
    matrix:
-    operating-system: [ubuntu-latest, macos-latest, windows-latest]
+    operating-system: [ubuntu-latest]
     smalltalk: [Pharo64-9.0, Pharo32-stable]
-    exclude:
+    include:
      - operating-system: macos-latest
-       smalltalk: Pharo32-stable
+       smalltalk: Pharo64-9.0
+       experimental: true
      - operating-system: windows-latest
-       smalltalk: Pharo32-stable
+       smalltalk: Pharo64-9.0
+       experimental: true
   env:
    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   steps:
