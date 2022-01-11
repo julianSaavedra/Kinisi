@@ -8,11 +8,13 @@ jobs:
    matrix:
     operating-system: [ubuntu-latest, macos-11, windows-latest]
     smalltalk: [Pharo64-9.0, Pharo32-stable]
-    exclude:
-     - operating-system: macos-11
-       smalltalk: Pharo32-stable
+    include:
+     - operating-system: macos-latest
+       smalltalk: Pharo64-9.0
+       experimental: true
      - operating-system: windows-latest
-       smalltalk: Pharo32-stable
+       smalltalk: Pharo64-9.0
+       experimental: true
   env:
    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   steps:
