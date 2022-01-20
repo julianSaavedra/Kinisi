@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Kinisi-CollatzConjecture-Model-ExampleSetting",
+	"category" : "Kinisi-Particles-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CollatzConjectureWorkbenchExampleSettingSource",
+	"name" : "ParticleModelScenarioSettingForTests",
 	"type" : "normal"
 }

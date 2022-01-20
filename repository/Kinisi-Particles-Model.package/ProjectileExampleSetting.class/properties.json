@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ParticlesWorkbenchExampleSetting",
-	"category" : "Kinisi-Particles-Model-Experiment",
+	"category" : "Kinisi-Particles-Model-ExampleSetting",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
