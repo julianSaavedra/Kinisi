@@ -1,0 +1,4 @@
+instance creation
+projectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension
+
+	^ProjectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension new

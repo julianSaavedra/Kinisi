@@ -1,4 +1,4 @@
 instance creation
 particleWithConstantForceInXandYDimensions
 
-	^ParticleWithConstantForceInXandYDimensionsSettings new
+	^ParticleWithConstantForceInXandYDimensionsSetting new

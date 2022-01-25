@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ParticleWithConstantForceInXandYDimensionsSettings",
+	"name" : "ParticlesMovingWithUniformCircularMovementSetting",
 	"type" : "normal"
 }

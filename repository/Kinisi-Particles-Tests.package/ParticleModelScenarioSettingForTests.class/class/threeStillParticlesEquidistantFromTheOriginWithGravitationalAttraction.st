@@ -1,0 +1,4 @@
+instance creation
+threeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction
+
+	^ThreeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction new

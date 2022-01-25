@@ -7,6 +7,4 @@ applyOn: workbench
 	particle
 		particleName: 'ParticleA';
 		position: (resource meterVectorWith: {-5. -5. 0});
-		velocity: (resource meterPerSecondVectorWith: {1. 1. 0}).
-	
-	^particle
+		velocity: (resource meterPerSecondVectorWith: {1. 1. 0})

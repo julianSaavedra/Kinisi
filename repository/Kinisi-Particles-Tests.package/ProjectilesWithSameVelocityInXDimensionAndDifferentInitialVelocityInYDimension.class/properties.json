@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParticleModelScenarioSettingForTests",
+	"category" : "Kinisi-Particles-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ProjectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension",
+	"type" : "normal"
+}
