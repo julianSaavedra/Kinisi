@@ -1,0 +1,6 @@
+sourcing
+particleWithConstantAccelerationMovingAlongXOnly
+
+	| scenarioSetting |
+	scenarioSetting := ParticleModelScenarioSetting particleWithConstantAccelerationMovingAlongXOnly.
+	^self standardSmallParticlesExampleWith: scenarioSetting

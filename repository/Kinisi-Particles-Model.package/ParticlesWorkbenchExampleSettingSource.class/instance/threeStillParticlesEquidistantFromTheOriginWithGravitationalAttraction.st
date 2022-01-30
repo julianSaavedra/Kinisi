@@ -1,0 +1,6 @@
+sourcing
+threeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction
+
+	| scenarioSetting |
+	scenarioSetting := ParticleModelScenarioSetting threeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction.
+	^self standardSmallParticlesExampleWith: scenarioSetting

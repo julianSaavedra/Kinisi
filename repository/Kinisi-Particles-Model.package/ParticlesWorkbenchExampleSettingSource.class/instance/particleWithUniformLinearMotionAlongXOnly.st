@@ -1,0 +1,6 @@
+sourcing
+particleWithUniformLinearMotionAlongXOnly
+
+	| modelScenarioSetting |
+	modelScenarioSetting := ParticleModelScenarioSetting particleWithUniformLinearMotionAlongXOnly.
+	^self standardSmallParticlesExampleWith: modelScenarioSetting

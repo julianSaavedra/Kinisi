@@ -2,7 +2,7 @@ test - new approach
 testParticleWithUniformLinearMotionAlongXOnly
 
 	| lab particle experimentModel result resultStates particleStates modelWorkbench |
-	experimentModel := ParticleModelScenarioSettingForTests particleWithUniformLinearMotionAlongXOnly.
+	experimentModel := ParticleModelScenarioSetting particleWithUniformLinearMotionAlongXOnly.
 	modelWorkbench := workbench modelWorkbench.
 	experimentModel applyOn: modelWorkbench.
 	workbench steppingWorkbench

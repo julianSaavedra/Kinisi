@@ -1,0 +1,6 @@
+sourcing
+particleWithConstantForceInXandYDimensions
+
+	| scenarioSetting |
+	scenarioSetting := ParticleModelScenarioSetting particleWithConstantForceInXandYDimensions.
+	^self standardSmallParticlesExampleWith: scenarioSetting

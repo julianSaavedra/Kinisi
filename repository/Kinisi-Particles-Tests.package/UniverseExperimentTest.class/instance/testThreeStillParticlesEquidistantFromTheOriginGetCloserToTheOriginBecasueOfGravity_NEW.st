@@ -2,7 +2,7 @@ test - new approach
 testThreeStillParticlesEquidistantFromTheOriginGetCloserToTheOriginBecasueOfGravity_NEW
 
 	| lab lastUniverseState experimentResultStates experimentSetting modelWorkbench originalParticles |
-	experimentSetting := ParticleModelScenarioSettingForTests threeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction.
+	experimentSetting := ParticleModelScenarioSetting threeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction.
 	modelWorkbench := workbench modelWorkbench.
 	experimentSetting applyOn: modelWorkbench.
 
@@ -18,5 +18,6 @@ testThreeStillParticlesEquidistantFromTheOriginGetCloserToTheOriginBecasueOfGrav
 	lastUniverseState := experimentResultStates last.
 	lastUniverseState particles do: [:particle |
 		| originalParticleState |
-		originalParticleState := originalParticles detect: [:originalParticle | originalParticle particleName = particle particleName ].
+		originalParticleState := originalParticles detect: [:originalParticle |
+			originalParticle particleName = particle particleName ].
 		self assert: particle position norm < originalParticleState position norm ]

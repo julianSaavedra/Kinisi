@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"resource",
+		"unitProvider"
+	],
 	"name" : "ParticlesWorkbenchExampleSettingSource",
 	"type" : "normal"
 }

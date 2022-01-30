@@ -2,7 +2,7 @@ test - new approach
 testParticleFreeFallingWithConstantAcceleration_NEW
 
 	| lab lastUniverseState lastPosition experimentResultStates experimentModel modelWorkbench |
-	experimentModel := ParticleModelScenarioSettingForTests particleFreeFallingWithConstantAcceleration.
+	experimentModel := ParticleModelScenarioSetting particleFreeFallingWithConstantAcceleration.
 	modelWorkbench := workbench modelWorkbench.
 	experimentModel applyOn: modelWorkbench.
 	workbench steppingWorkbench

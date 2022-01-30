@@ -2,7 +2,7 @@ test - new approach
 testParticleWithUniformLinearMotionInXandYDimensions
 
 	| lab particle experimentModel result resultStates particleStates modelWorkbench |
-	experimentModel := ParticleModelScenarioSettingForTests particleWithUniformLinearMotionInXAndYDimensions.
+	experimentModel := ParticleModelScenarioSetting particleWithUniformLinearMotionInXAndYDimensions.
 	modelWorkbench := workbench modelWorkbench.
 	experimentModel applyOn: modelWorkbench.
 	workbench steppingWorkbench

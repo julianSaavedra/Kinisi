@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"workbench"
+		"workbench",
+		"exampleSource"
 	],
 	"name" : "ParticlesWorkbenchExampleSettingTest",
 	"type" : "normal"

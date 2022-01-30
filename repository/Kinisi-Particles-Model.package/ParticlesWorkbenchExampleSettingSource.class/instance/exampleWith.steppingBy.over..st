@@ -2,12 +2,10 @@ private
 exampleWith: modelSetting steppingBy: delta over: finalDuration
 
 	| interfaceDefinition steppingSetting period |
-	steppingSetting := SteppingWorkbenchSetting
-		                   stepBy: delta
-		                   over: finalDuration.
+	steppingSetting := SteppingWorkbenchSetting stepBy: delta over: finalDuration.
 	period := self fortyMilliseconds.
 	interfaceDefinition := self animationInterfaceDefinition.
-	^ LabWorkbenchExampleSetting
+	^LabWorkbenchExampleSetting
 		  apply: modelSetting
 		  applyStepping: steppingSetting
 		  withPeriod: period

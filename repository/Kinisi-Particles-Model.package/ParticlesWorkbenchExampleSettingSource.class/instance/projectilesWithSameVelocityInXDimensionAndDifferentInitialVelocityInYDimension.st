@@ -1,0 +1,6 @@
+sourcing
+projectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension
+
+	| scenarioSetting |
+	scenarioSetting := ParticleModelScenarioSetting projectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension.
+	^self standardSmallParticlesExampleWith: scenarioSetting

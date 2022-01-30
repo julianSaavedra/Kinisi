@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ParticlesWorkbenchExampleSetting",
+	"super" : "ParticleModelScenarioSetting",
 	"category" : "Kinisi-Particles-Model-ExampleSetting",
 	"classinstvars" : [ ],
 	"pools" : [ ],

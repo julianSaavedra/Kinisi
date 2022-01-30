@@ -2,7 +2,7 @@ test - new approach
 testMultipleProjectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension
 
 	| lab experimentSetting result resultStates modelWorkbench originalParticles originalParticlesSortedByVelocityY originalLowerParticle originalMiddleParticle originalHigherParticle lastLowerParticleState lastMiddleParticleState lastHigherParticleState |
-	experimentSetting := ParticleModelScenarioSettingForTests
+	experimentSetting := ParticleModelScenarioSetting
 		        projectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension.
 	modelWorkbench := workbench modelWorkbench.
 	experimentSetting applyOn: modelWorkbench.
@@ -12,11 +12,11 @@ testMultipleProjectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityIn
 	lab := KinisiLab using: workbench.
 	self runExperimentUntilHasFinishedIn: lab.
 	result := lab lastResult.
-	resultStates := result withTimeAndStateCollect: [ :arg1 :arg2 | arg2 ].
+	resultStates := result withTimeAndStateCollect: [ :time :state | state ].
 	self denyEmpty: resultStates.
 	originalParticles := modelWorkbench scenario particles.
-	originalParticlesSortedByVelocityY := originalParticles asSortedCollection: [ :arg3 :arg4 | 
-		         arg3 velocity y < arg4 velocity y ].
+	originalParticlesSortedByVelocityY := originalParticles asSortedCollection: [ :particleA :particleB | 
+		         particleA velocity y < particleB velocity y ].
 	originalLowerParticle := originalParticlesSortedByVelocityY first.
 	originalMiddleParticle := originalParticlesSortedByVelocityY second.
 	originalHigherParticle := originalParticlesSortedByVelocityY third.

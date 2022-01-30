@@ -2,7 +2,7 @@ test - new approach
 testParticleWithConstantAccelerationAlongXOnly
 
 	| lab particle experimentModel result resultStates particleStates modelWorkbench |
-	experimentModel := ParticleModelScenarioSettingForTests particleWithConstantAccelerationMovingAlongXOnly.
+	experimentModel := ParticleModelScenarioSetting particleWithConstantAccelerationMovingAlongXOnly.
 	modelWorkbench := workbench modelWorkbench.
 	experimentModel applyOn: modelWorkbench.
 	workbench steppingWorkbench

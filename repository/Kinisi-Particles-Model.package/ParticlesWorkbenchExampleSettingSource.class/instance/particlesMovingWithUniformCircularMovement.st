@@ -1,0 +1,6 @@
+sourcing
+particlesMovingWithUniformCircularMovement
+
+	| scenarioSetting |
+	scenarioSetting := ParticleModelScenarioSetting particlesMovingWithUniformCircularMovement.
+	^self standardSmallParticlesExampleWith: scenarioSetting

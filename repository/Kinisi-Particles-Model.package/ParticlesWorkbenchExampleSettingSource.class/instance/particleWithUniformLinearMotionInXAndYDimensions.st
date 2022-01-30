@@ -1,0 +1,6 @@
+sourcing
+particleWithUniformLinearMotionInXAndYDimensions
+
+	| scenarioSetting |
+	scenarioSetting := ParticleModelScenarioSetting particleWithUniformLinearMotionInXAndYDimensions.
+	^self standardSmallParticlesExampleWith: scenarioSetting

@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"modelSetting",
+		"visualizationSetting"
+	],
 	"name" : "ParticlesWorkbenchExampleSetting",
 	"type" : "normal"
 }

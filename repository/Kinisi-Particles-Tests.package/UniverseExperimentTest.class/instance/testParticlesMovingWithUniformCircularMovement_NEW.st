@@ -2,7 +2,7 @@ test - new approach
 testParticlesMovingWithUniformCircularMovement_NEW
 
 	| lab experimentResultStates experimentSetting modelWorkbench originalParticles |
-	experimentSetting := ParticleModelScenarioSettingForTests particlesMovingWithUniformCircularMovement.
+	experimentSetting := ParticleModelScenarioSetting particlesMovingWithUniformCircularMovement.
 	modelWorkbench := workbench modelWorkbench.
 	experimentSetting applyOn: modelWorkbench.
 	workbench steppingWorkbench

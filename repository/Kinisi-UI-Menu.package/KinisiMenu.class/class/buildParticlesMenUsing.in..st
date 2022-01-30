@@ -26,7 +26,7 @@ buildParticlesMenUsing: builder in: menu
 						target: menu;
 						iconName: #menuPin;
 						selector: #openParticlesLabWith:;
-						arguments: {exampleSource projectile}.
+						arguments: {exampleSource projectileGoingUpAndDown}.
 					(builder item: #example2)
 						label: 'Earth and Sun';
 						target: menu;

@@ -1,0 +1,6 @@
+sourcing
+particleFreeFallingWithConstantAcceleration
+
+	| scenarioSetting |
+	scenarioSetting := ParticleModelScenarioSetting particleFreeFallingWithConstantAcceleration.
+	^self standardSmallParticlesExampleWith: scenarioSetting

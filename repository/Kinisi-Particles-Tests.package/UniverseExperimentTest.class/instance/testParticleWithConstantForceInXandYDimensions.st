@@ -2,7 +2,7 @@ test - new approach
 testParticleWithConstantForceInXandYDimensions
 
 	| lab particle experimentModel result resultStates particleStates modelWorkbench |
-	experimentModel := ParticleModelScenarioSettingForTests particleWithConstantForceInXandYDimensions.
+	experimentModel := ParticleModelScenarioSetting particleWithConstantForceInXandYDimensions.
 	modelWorkbench := workbench modelWorkbench.
 	experimentModel applyOn: modelWorkbench.
 	workbench steppingWorkbench
