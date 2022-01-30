@@ -1,9 +1,8 @@
 tests
 testExampleStartingFromTwentysevenWithChartAndDescriptiveStatistics
 	
-	| workbench example scenario interfaceDefinitions interfaceDefinitionsNames |
-	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbench default.
-	example := CollatzConjectureWorkbenchExampleSettingSource new settingTwentySevenWithChartAndDescriptiveStatistics.
+	| example scenario interfaceDefinitions interfaceDefinitionsNames |
+	example := exampleSource settingTwentySevenWithChartAndDescriptiveStatistics.
 	
 	example applyOn: workbench.
 

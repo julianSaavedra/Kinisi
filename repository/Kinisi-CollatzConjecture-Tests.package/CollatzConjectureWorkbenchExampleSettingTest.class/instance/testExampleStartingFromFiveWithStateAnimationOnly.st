@@ -1,9 +1,8 @@
 tests
 testExampleStartingFromFiveWithStateAnimationOnly
 	
-	| workbench example scenario interfaceDefinitions |
-	workbench := LabWorkbench using: CollatzConjectureScenarioWorkbench default.
-	example := CollatzConjectureWorkbenchExampleSettingSource new settingFromFiveWithStateAnimationOnly.
+	| example scenario interfaceDefinitions |
+	example := exampleSource settingFromFiveWithStateAnimationOnly.
 		
 	example applyOn: workbench.
 

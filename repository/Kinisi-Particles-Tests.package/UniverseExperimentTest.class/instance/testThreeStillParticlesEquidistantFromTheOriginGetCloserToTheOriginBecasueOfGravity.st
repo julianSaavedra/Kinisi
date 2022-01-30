@@ -1,29 +1,33 @@
 test - gravity
 testThreeStillParticlesEquidistantFromTheOriginGetCloserToTheOriginBecasueOfGravity
 
-	| particleA particleB lab lastUniverseState experimentResultStates coordinateX coordinateY particleC mass |
+	| particleA particleB lab lastUniverseState experimentResultStates particleC mass triangleSideFactor pi triangleOrientationAngle particleAAngle particleBAngle particleCAngle |
 	mass := resource oneKilogram * 1000.
+	pi := Float pi.
+	triangleSideFactor := 1 / 3 sqrt.
+	triangleOrientationAngle := pi / 4.
+	particleAAngle := triangleOrientationAngle.
 	particleA := workbench modelWorkbench newParticle.	
 	particleA
 		particleName: 'ParticleA';
 		mass: mass;
-		position: (resource meterVectorWith: #(1 0 0)).
+		position: (resource meterVectorWith: {particleAAngle cos. particleAAngle sin. 0}) * triangleSideFactor.
 	self assert: particleA velocity isZero.
 
-	coordinateX := 3 sqrt / 2.
-	coordinateY := -0.5.
+	particleBAngle := triangleOrientationAngle + ((2 * pi) / 3).
 	particleB := workbench modelWorkbench newParticle.
 	particleB
 		particleName: 'ParticleB';
 		mass: mass;
-		position: (resource meterVectorWith: {coordinateX. coordinateY. 0}).
+		position: (resource meterVectorWith: {particleBAngle cos. particleBAngle sin. 0}) * triangleSideFactor.
 	self assert: particleB velocity isZero.
 
+	particleCAngle := triangleOrientationAngle + ((4 * pi) / 3).
 	particleC := workbench modelWorkbench newParticle.
 	particleC
 		particleName: 'ParticleC';
 		mass: mass;
-		position: (resource meterVectorWith: {coordinateX negated. coordinateY. 0}).
+		position: (resource meterVectorWith: {particleCAngle cos. particleCAngle sin. 0}) * triangleSideFactor.
 	self assert: particleC velocity isZero.
 	
 	self assert: (particleA position norm closeTo: particleB position norm).

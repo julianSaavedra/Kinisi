@@ -6,6 +6,6 @@ applyOn: workbench
 	particle := workbench newParticle.
 	particle
 		particleName: 'ParticleA';
-		position: (resource meterVectorWith: {-5. 5. 0});
+		position: (resource meterVectorWith: {-20. 1. 0});
 		velocity: resource nullVelocity;
 		addConstantAcceleration: (resource meterPerSquareSecondVectorWith: {1. 0. 0}) named: 'ConstantAcceleration'

@@ -7,18 +7,18 @@ applyOn: workbench
 	lowerParticle := workbench newParticle.
 	lowerParticle
 		particleName: 'LowerParticle';
-		position: (resource meterVectorWith: {-50. 0. 0.});
+		position: (resource meterVectorWith: {-25. 0. 0.});
 		velocity: (resource meterPerSecondVectorWith: {10. 49.1. 0.});
 		addConstantAcceleration: gravityAcceleration named: 'Gravity'.
 	middleParticle := workbench newParticle.
 	middleParticle
-		particleName: 'MiddleParticleA';
-		position: (resource meterVectorWith: {-50. 1. 0.});
+		particleName: 'MiddleParticle';
+		position: (resource meterVectorWith: {-50. 0. 0.});
 		velocity: (resource meterPerSecondVectorWith: {10. 75. 0.});
 		addConstantAcceleration: gravityAcceleration named: 'Gravity'.
 	higherParticle := workbench newParticle.
 	higherParticle
-		particleName: 'HigherParticleA';
-		position: (resource meterVectorWith: {-50. 2. 0.});
+		particleName: 'HigherParticle';
+		position: (resource meterVectorWith: {-75. 0. 0.});
 		velocity: (resource meterPerSecondVectorWith: {10. 100. 0.});
 		addConstantAcceleration: gravityAcceleration named: 'Gravity'
