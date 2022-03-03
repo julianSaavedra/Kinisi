@@ -1,0 +1,6 @@
+tests
+testThreeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction
+
+	| example |
+	example := exampleSource threeStillParticlesEquidistantFromTheOriginWithGravitationalAttraction.
+	self assertExampleIsAppliedOnWorkbench: example

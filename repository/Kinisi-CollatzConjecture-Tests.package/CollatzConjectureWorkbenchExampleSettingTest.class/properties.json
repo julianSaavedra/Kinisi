@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"workbench",
+		"exampleSource"
+	],
 	"name" : "CollatzConjectureWorkbenchExampleSettingTest",
 	"type" : "normal"
 }

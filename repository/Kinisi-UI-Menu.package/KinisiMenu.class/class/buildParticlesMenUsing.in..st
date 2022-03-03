@@ -1,4 +1,4 @@
-menu cosntruction - private
+private - menu construction
 buildParticlesMenUsing: builder in: menu
 
 	(builder item: #Particles)
@@ -19,25 +19,9 @@ buildParticlesMenUsing: builder in: menu
 				order: 2;
 				iconName: #glamorousOpen;
 				with: [
-					| exampleSource |
-					exampleSource := ParticlesWorkbenchExampleSettingSource new.
-					(builder item: #example1)
-						label: 'Projectile';
-						target: menu;
-						iconName: #menuPin;
-						selector: #openParticlesLabWith:;
-						arguments: {exampleSource projectile}.
-					(builder item: #example2)
-						label: 'Earth and Sun';
-						target: menu;
-						iconName: #menuPin;
-						selector: #openParticlesLabWith:;
-						arguments: {exampleSource earthAndSun}.
-					(builder item: #example3)
-						label: 'Two planets spinning around';
-						target: menu;
-						iconName: #menuPin;
-						selector: #openParticlesLabWith:;
-						arguments: {exampleSource twoPlanetsSpinningAround}
-						]
+					self
+						add: self particlesExampleItemDefinitions
+						with: #openParticlesLabWith:
+						to: menu
+						using: builder ]
 					]

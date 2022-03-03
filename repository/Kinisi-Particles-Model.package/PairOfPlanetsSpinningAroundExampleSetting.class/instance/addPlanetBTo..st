@@ -9,4 +9,4 @@ addPlanetBTo: workbench
 		mass: self planetMass;
 		velocity: self planetVelocity;
 		acceleration: resource nullAcceleration;
-		color: Color yellow
+		color: Color magenta

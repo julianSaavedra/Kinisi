@@ -1,0 +1,4 @@
+instance creation
+projectileGoingUpAndDown
+
+	^ProjectileGoingUpAndDownSetting new

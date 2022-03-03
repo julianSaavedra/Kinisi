@@ -1,0 +1,4 @@
+accessing
+exampleSetting
+
+	^exampleSetting

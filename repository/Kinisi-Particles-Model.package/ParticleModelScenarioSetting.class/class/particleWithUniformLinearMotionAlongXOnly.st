@@ -1,0 +1,4 @@
+instance creation
+particleWithUniformLinearMotionAlongXOnly
+
+	^ParticleWithUniformLinearMotionAlongXOnlySetting new

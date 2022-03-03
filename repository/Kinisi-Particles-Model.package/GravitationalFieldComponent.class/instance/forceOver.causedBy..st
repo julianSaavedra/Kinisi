@@ -1,9 +1,9 @@
 calculation
 forceOver: particle causedBy: otherParticles
 
-	| causingParticles nullForce |
+	| causingParticles |
 	causingParticles := self causingParticlesAmong: otherParticles.
 	causingParticles remove: particle ifAbsent: [  ].
-	nullForce := MeasureVector nullWith: UnitProvider soleInstance newton.
-	^causingParticles inject: nullForce into: [:totalForce :causingParticle |
-			self forceCausedBy: causingParticle over: particle ]
+	^causingParticles
+		sum: [:causingParticle | self forceCausedBy: causingParticle over: particle ]
+		ifEmpty: [ self nullForce ]

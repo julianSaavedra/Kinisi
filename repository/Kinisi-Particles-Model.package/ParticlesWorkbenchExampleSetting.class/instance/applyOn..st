@@ -1,4 +1,5 @@
 applying
 applyOn: workbench
-
-	self subclassResponsibility
+ 
+	modelSetting applyOn: workbench.
+	visualizationSetting value: workbench

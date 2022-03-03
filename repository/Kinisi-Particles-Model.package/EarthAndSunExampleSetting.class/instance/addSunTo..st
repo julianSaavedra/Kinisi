@@ -6,7 +6,7 @@ addSunTo: workbench
 	sun
 		particleName: 'Sun';
 		position: resource nullPosition;
-		mass: (unitProvider kilogram with: 2000000000000000000000000000000);
+		mass: (unitProvider kilogram with: 1.989e30);
 		velocity: resource nullVelocity;
 		acceleration: resource nullAcceleration;
 		color: Color yellow.

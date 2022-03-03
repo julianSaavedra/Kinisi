@@ -1,10 +1,14 @@
-settings
+sourcing
 earthAndSun
 
-	| twelveHours oneYear |
-	twelveHours := UnitProvider soleInstance hour with: 12.
-	oneYear := UnitProvider soleInstance day with: 365.
-	^self
-		  exampleWith: EarthAndSunExampleSetting new
+	| twelveHours oneYear scenarioSetting modelScenarioSetting |
+	modelScenarioSetting := EarthAndSunExampleSetting new.
+	twelveHours := unitProvider hour with: 12.
+	oneYear := unitProvider day with: 365.
+	scenarioSetting := ParticlesWorkbenchExampleSetting
+		                   applying: modelScenarioSetting
+		                   and: self standardPlanetaryVisualizationSetting.
+	^ self
+		  exampleWith: scenarioSetting
 		  steppingBy: twelveHours
 		  over: oneYear

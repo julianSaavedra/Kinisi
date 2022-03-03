@@ -1,0 +1,6 @@
+tests
+testProjectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension
+
+	| example |
+	example := exampleSource projectilesWithSameVelocityInXDimensionAndDifferentInitialVelocityInYDimension.
+	self assertExampleIsAppliedOnWorkbench: example
