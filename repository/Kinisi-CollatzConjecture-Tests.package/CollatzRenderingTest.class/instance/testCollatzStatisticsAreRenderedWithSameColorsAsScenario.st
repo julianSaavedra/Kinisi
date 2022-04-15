@@ -1,5 +1,5 @@
 tests
-testCollatzStatisticsAresRenderedWithSameColorsAsScenario
+testCollatzStatisticsAreRenderedWithSameColorsAsScenario
 
 	| observation statistics renderer |
 	collatzWorkbench

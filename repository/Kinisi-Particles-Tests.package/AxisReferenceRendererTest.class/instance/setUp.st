@@ -2,4 +2,5 @@ running
 setUp
 
 	super setUp.
-	canvas := RSCanvas new
+	canvas ifNil: [ canvas := RSCanvas new ].
+	canvas color: Color black
