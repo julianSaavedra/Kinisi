@@ -6,6 +6,6 @@ testParticleAtTheOriginIsRenderedAtPointZeroZeroWhenScaleIsTwentyOverMeter
 	particle position: testResource nullPosition.
 	renderer renderPositionWith: self twentyOverMeter.
 
-	renderer drawIn: canvas basedOn: particle.
+	self assertNoErrorIsRaisedWhenRendering: particle using: renderer.
 
 	self assertShapeFor: particle isIn: 0 @ 0

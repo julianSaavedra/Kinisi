@@ -1,4 +1,4 @@
 private
 setEligibleClasses
 
-	classes items: {GridRendererTest}
+	classes items: {GridRendererTest. UniverseRendererTest. ParticleRendererTest. AxisReferenceRendererTest}

@@ -6,6 +6,6 @@ testParticleInPositionOneMetersInXAndYIsRenderedAtPointTwentyNegativeTwentyIfSca
 	renderer renderPositionWith: self twentyOverMeter.
 	particle position: testResource oneMeterInAllComponentsVector.
 
-	renderer drawIn: canvas basedOn: particle.
+	self assertNoErrorIsRaisedWhenRendering: particle using: renderer.
 
 	self assertShapeFor: particle isIn: 20 @ 20 negated

@@ -1,6 +1,7 @@
-test
+running
 setUp
 
 	super setUp.
-	canvas := RSCanvas new.
-	universeWorkbench := UniverseScenarioWorkbench default
+	universeWorkbench := UniverseScenarioWorkbench default.
+	universeWorkbench background: Color black.
+	canvas ifNil: [ canvas := RSCanvas new ]
